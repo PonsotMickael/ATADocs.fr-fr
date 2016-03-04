@@ -4,8 +4,8 @@
  Property | Value 
  -------- | ----- 
  Total Files | 193
-[ Handoff Failed Files ](#handoff-failed-list)| 1
-[ Handoff Success Files ](#handoff-success-list)| 166
+[ Handoff Failed Files ](#handoff-failed-list)| 3
+[ Handoff Success Files ](#handoff-success-list)| 164
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
@@ -16,7 +16,9 @@
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
+ [ATADocs\DeployUse\media\ATA-Domain-Connectivity-User.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-Domain-Connectivity-User.JPG) | HandedOffFailed | [Details](#5381c4c0d584f8697c8053ef5c9ee7b1ab576be324)
  [ATADocs\DeployUse\working-with-detection-settings.md](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/working-with-detection-settings.md) | HandedOffFailed | [Details](#48da69f3fb8edd5bb2d55052f63560940f94367947)
+ [ATADocs\Image\ATA-Domain-Connectivity-User.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Domain-Connectivity-User.JPG) | HandedOffFailed | [Details](#5381c4c0d584f8697c8053ef5c9ee7b1ab576be366)
 
 ## <a name='handoff-success-list'></a> Handoff Success File List
  Source File | Status | Details 
@@ -39,7 +41,6 @@
  [ATADocs\DeployUse\media\ATA-config-icon.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-config-icon.JPG) | HandedOffSuccess | [Details](#28bff0237cf9625b464859bd7f3dc309779c7fcb21)
  [ATADocs\DeployUse\media\ATA-console-change-IP-bindings.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-console-change-IP-bindings.jpg) | HandedOffSuccess | [Details](#3edd04df7a3cad90fcf5a10adcf7533490caa6eb22)
  [ATADocs\DeployUse\media\ATA-DNS-Suffix.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-DNS-Suffix.png) | HandedOffSuccess | [Details](#d44b3a04b32a061ffbd7e04912834ac56044f65223)
- [ATADocs\DeployUse\media\ATA-Domain-Connectivity-User.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-Domain-Connectivity-User.JPG) | HandedOffSuccess | [Details](#5381c4c0d584f8697c8053ef5c9ee7b1ab576be324)
  [ATADocs\DeployUse\media\ATA-Gateway-Configuration.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-Gateway-Configuration.JPG) | HandedOffSuccess | [Details](#b79a81b193f258cfee46d1a6478d89e46c7eecdc25)
  [ATADocs\DeployUse\media\ATA-GW-change-DC-password.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-GW-change-DC-password.JPG) | HandedOffSuccess | [Details](#caffb72088ae1244fe4dc8010a33fa66ffab9cac26)
  [ATADocs\DeployUse\media\ATAGWDomainController.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATAGWDomainController.png) | HandedOffSuccess | [Details](#dddd652fb096923a6ac044e9d8c151dc1af2982f39)
@@ -79,7 +80,6 @@
  [ATADocs\Image\ATA-console-change-IP-bindings.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-console-change-IP-bindings.jpg) | HandedOffSuccess | [Details](#3edd04df7a3cad90fcf5a10adcf7533490caa6eb63)
  [ATADocs\Image\ATA-console-search.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-console-search.png) | HandedOffSuccess | [Details](#18204afb92c709be98646c610653d47b6625e11b64)
  [ATADocs\Image\ATA-DNS-Suffix.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-DNS-Suffix.png) | HandedOffSuccess | [Details](#d44b3a04b32a061ffbd7e04912834ac56044f65265)
- [ATADocs\Image\ATA-Domain-Connectivity-User.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Domain-Connectivity-User.JPG) | HandedOffSuccess | [Details](#5381c4c0d584f8697c8053ef5c9ee7b1ab576be366)
  [ATADocs\Image\ATA-enable-siem-forward-events.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-enable-siem-forward-events.png) | HandedOffSuccess | [Details](#0b15335fec1868fca0cf265b525bc7223a25e85968)
  [ATADocs\Image\ATA-Gateway-Configuration.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Gateway-Configuration.JPG) | HandedOffSuccess | [Details](#b79a81b193f258cfee46d1a6478d89e46c7eecdc71)
  [ATADocs\Image\ATA-Gateway-perf-counters.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Gateway-perf-counters.png) | HandedOffSuccess | [Details](#3a5b4e5c2de5a6e109cd66dd94a37f40b02fa5df72)
@@ -376,8 +376,8 @@
 ##### <a name='84421bf7f4ba657e685239fb27f4798a46485f7112'></a> Source: [ATADocs\DeployUse\media\150x150.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/150x150.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [84421bf7f4ba657e685239fb27f4798a46485f71.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/84421bf7f4ba657e685239fb27f4798a46485f71.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [84421bf7f4ba657e685239fb27f4798a46485f71.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/84421bf7f4ba657e685239fb27f4798a46485f71.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -389,8 +389,8 @@
 ##### <a name='f8847c09ae291ce8fb83cb013a7e5f5f3a4b627913'></a> Source: [ATADocs\DeployUse\media\ATA-alerts-verbosity-language.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-alerts-verbosity-language.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -402,8 +402,8 @@
 ##### <a name='3b63dc0cff85980cb632069d4c34cc8894ecfc7c14'></a> Source: [ATADocs\DeployUse\media\ATA-architecture-topology.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-architecture-topology.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [3b63dc0cff85980cb632069d4c34cc8894ecfc7c.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3b63dc0cff85980cb632069d4c34cc8894ecfc7c.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [3b63dc0cff85980cb632069d4c34cc8894ecfc7c.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3b63dc0cff85980cb632069d4c34cc8894ecfc7c.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -415,8 +415,8 @@
 ##### <a name='377436ada10ce7d4412b6b256396ea85ad93c5af15'></a> Source: [ATADocs\DeployUse\media\ATA-Center-Configuration.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-Center-Configuration.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [377436ada10ce7d4412b6b256396ea85ad93c5af.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/377436ada10ce7d4412b6b256396ea85ad93c5af.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [377436ada10ce7d4412b6b256396ea85ad93c5af.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/377436ada10ce7d4412b6b256396ea85ad93c5af.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -428,8 +428,8 @@
 ##### <a name='6349405da0cc5437d4907c1b377ebe448ef3810d16'></a> Source: [ATADocs\DeployUse\media\ATA-center-fullpartial.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-center-fullpartial.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [6349405da0cc5437d4907c1b377ebe448ef3810d.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/6349405da0cc5437d4907c1b377ebe448ef3810d.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [6349405da0cc5437d4907c1b377ebe448ef3810d.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/6349405da0cc5437d4907c1b377ebe448ef3810d.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -441,8 +441,8 @@
 ##### <a name='3779d05774a96f85f009cc401f08a47d742951e617'></a> Source: [ATADocs\DeployUse\media\ATA-center-outdated.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-center-outdated.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [3779d05774a96f85f009cc401f08a47d742951e6.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3779d05774a96f85f009cc401f08a47d742951e6.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [3779d05774a96f85f009cc401f08a47d742951e6.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3779d05774a96f85f009cc401f08a47d742951e6.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -454,8 +454,8 @@
 ##### <a name='0932dedf4e4f231714a6072c12093c6678b0810018'></a> Source: [ATADocs\DeployUse\media\ATA-change-console-IP.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-change-console-IP.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [0932dedf4e4f231714a6072c12093c6678b08100.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/0932dedf4e4f231714a6072c12093c6678b08100.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [0932dedf4e4f231714a6072c12093c6678b08100.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/0932dedf4e4f231714a6072c12093c6678b08100.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -467,8 +467,8 @@
 ##### <a name='ea504d039c81989138676445a3ab7172415a1ef419'></a> Source: [ATADocs\DeployUse\media\ATA-chge-IP-after-clicking-save.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-chge-IP-after-clicking-save.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [ea504d039c81989138676445a3ab7172415a1ef4.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ea504d039c81989138676445a3ab7172415a1ef4.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [ea504d039c81989138676445a3ab7172415a1ef4.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ea504d039c81989138676445a3ab7172415a1ef4.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -480,8 +480,8 @@
 ##### <a name='28b811e014fbf38741d81c7418c6bb70ead5df7420'></a> Source: [ATADocs\DeployUse\media\ATA-Config-GW-Settings.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-Config-GW-Settings.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [28b811e014fbf38741d81c7418c6bb70ead5df74.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/28b811e014fbf38741d81c7418c6bb70ead5df74.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [28b811e014fbf38741d81c7418c6bb70ead5df74.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/28b811e014fbf38741d81c7418c6bb70ead5df74.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -493,8 +493,8 @@
 ##### <a name='28bff0237cf9625b464859bd7f3dc309779c7fcb21'></a> Source: [ATADocs\DeployUse\media\ATA-config-icon.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-config-icon.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [28bff0237cf9625b464859bd7f3dc309779c7fcb.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/28bff0237cf9625b464859bd7f3dc309779c7fcb.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [28bff0237cf9625b464859bd7f3dc309779c7fcb.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/28bff0237cf9625b464859bd7f3dc309779c7fcb.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -506,8 +506,8 @@
 ##### <a name='3edd04df7a3cad90fcf5a10adcf7533490caa6eb22'></a> Source: [ATADocs\DeployUse\media\ATA-console-change-IP-bindings.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-console-change-IP-bindings.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [3edd04df7a3cad90fcf5a10adcf7533490caa6eb.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3edd04df7a3cad90fcf5a10adcf7533490caa6eb.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [3edd04df7a3cad90fcf5a10adcf7533490caa6eb.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3edd04df7a3cad90fcf5a10adcf7533490caa6eb.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -519,8 +519,8 @@
 ##### <a name='d44b3a04b32a061ffbd7e04912834ac56044f65223'></a> Source: [ATADocs\DeployUse\media\ATA-DNS-Suffix.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-DNS-Suffix.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [d44b3a04b32a061ffbd7e04912834ac56044f652.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d44b3a04b32a061ffbd7e04912834ac56044f652.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [d44b3a04b32a061ffbd7e04912834ac56044f652.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d44b3a04b32a061ffbd7e04912834ac56044f652.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -530,23 +530,23 @@
 * [Back to Top](#report-top)
 
 ##### <a name='5381c4c0d584f8697c8053ef5c9ee7b1ab576be324'></a> Source: [ATADocs\DeployUse\media\ATA-Domain-Connectivity-User.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-Domain-Connectivity-User.JPG)
-* Status: HandedOffSuccess
+* Status: HandedOffFailed
 * Target File: 
-* Handoff File: [5381c4c0d584f8697c8053ef5c9ee7b1ab576be3.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/5381c4c0d584f8697c8053ef5c9ee7b1ab576be3.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
-* Handoff Reason: IsDependency
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Handoff Error: [handoff_transform_failed](#5381c4c0d584f8697c8053ef5c9ee7b1ab576be324handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: ATADocs\DeployUse\install-ata.md
 * [Back to Top](#report-top)
 
 ##### <a name='b79a81b193f258cfee46d1a6478d89e46c7eecdc25'></a> Source: [ATADocs\DeployUse\media\ATA-Gateway-Configuration.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-Gateway-Configuration.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [b79a81b193f258cfee46d1a6478d89e46c7eecdc.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/b79a81b193f258cfee46d1a6478d89e46c7eecdc.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [b79a81b193f258cfee46d1a6478d89e46c7eecdc.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/b79a81b193f258cfee46d1a6478d89e46c7eecdc.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -558,8 +558,8 @@
 ##### <a name='caffb72088ae1244fe4dc8010a33fa66ffab9cac26'></a> Source: [ATADocs\DeployUse\media\ATA-GW-change-DC-password.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-GW-change-DC-password.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [caffb72088ae1244fe4dc8010a33fa66ffab9cac.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/caffb72088ae1244fe4dc8010a33fa66ffab9cac.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [caffb72088ae1244fe4dc8010a33fa66ffab9cac.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/caffb72088ae1244fe4dc8010a33fa66ffab9cac.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -571,8 +571,8 @@
 ##### <a name='dddd652fb096923a6ac044e9d8c151dc1af2982f39'></a> Source: [ATADocs\DeployUse\media\ATAGWDomainController.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATAGWDomainController.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [dddd652fb096923a6ac044e9d8c151dc1af2982f.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/dddd652fb096923a6ac044e9d8c151dc1af2982f.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [dddd652fb096923a6ac044e9d8c151dc1af2982f.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/dddd652fb096923a6ac044e9d8c151dc1af2982f.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -584,8 +584,8 @@
 ##### <a name='73222a255bcea2b987c049da4c47fde78815527327'></a> Source: [ATADocs\DeployUse\media\ATA-GW-error.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-GW-error.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [73222a255bcea2b987c049da4c47fde788155273.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/73222a255bcea2b987c049da4c47fde788155273.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [73222a255bcea2b987c049da4c47fde788155273.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/73222a255bcea2b987c049da4c47fde788155273.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -597,8 +597,8 @@
 ##### <a name='84844fbeab61dc307350394e1071c1bad6e2065928'></a> Source: [ATADocs\DeployUse\media\ATA-GW-uninstall-bug.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-GW-uninstall-bug.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [84844fbeab61dc307350394e1071c1bad6e20659.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/84844fbeab61dc307350394e1071c1bad6e20659.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [84844fbeab61dc307350394e1071c1bad6e20659.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/84844fbeab61dc307350394e1071c1bad6e20659.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -610,8 +610,8 @@
 ##### <a name='897dfb81c69563bcdb1239566b4a47f1e8a060cd29'></a> Source: [ATADocs\DeployUse\media\ATA-gw-updated.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-gw-updated.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [897dfb81c69563bcdb1239566b4a47f1e8a060cd.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/897dfb81c69563bcdb1239566b4a47f1e8a060cd.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [897dfb81c69563bcdb1239566b4a47f1e8a060cd.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/897dfb81c69563bcdb1239566b4a47f1e8a060cd.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -623,8 +623,8 @@
 ##### <a name='d2b6088dd989cb01d54c714b18b23fdac454c71c30'></a> Source: [ATADocs\DeployUse\media\ATA-Health-Center-Alert-red-dot.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-Health-Center-Alert-red-dot.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [d2b6088dd989cb01d54c714b18b23fdac454c71c.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d2b6088dd989cb01d54c714b18b23fdac454c71c.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [d2b6088dd989cb01d54c714b18b23fdac454c71c.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d2b6088dd989cb01d54c714b18b23fdac454c71c.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -636,8 +636,8 @@
 ##### <a name='c4f3b468905bca6e23f5835219459a7e3af5b84e31'></a> Source: [ATADocs\DeployUse\media\ATA-Health-Issue.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-Health-Issue.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [c4f3b468905bca6e23f5835219459a7e3af5b84e.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/c4f3b468905bca6e23f5835219459a7e3af5b84e.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [c4f3b468905bca6e23f5835219459a7e3af5b84e.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/c4f3b468905bca6e23f5835219459a7e3af5b84e.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -649,8 +649,8 @@
 ##### <a name='9b28cbe44f594229da64d756ca97cbfa1b1c82c532'></a> Source: [ATADocs\DeployUse\media\ATA-Input.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-Input.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [9b28cbe44f594229da64d756ca97cbfa1b1c82c5.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/9b28cbe44f594229da64d756ca97cbfa1b1c82c5.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [9b28cbe44f594229da64d756ca97cbfa1b1c82c5.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/9b28cbe44f594229da64d756ca97cbfa1b1c82c5.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -662,8 +662,8 @@
 ##### <a name='a89424369313176e864ab91f5518cae5a9ca2ff833'></a> Source: [ATADocs\DeployUse\media\ATA-mongoDB-moveDB.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-mongoDB-moveDB.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [a89424369313176e864ab91f5518cae5a9ca2ff8.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/a89424369313176e864ab91f5518cae5a9ca2ff8.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [a89424369313176e864ab91f5518cae5a9ca2ff8.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/a89424369313176e864ab91f5518cae5a9ca2ff8.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -675,8 +675,8 @@
 ##### <a name='bb82c0e8ef39951a2f35466d9912fe622fdac06e34'></a> Source: [ATADocs\DeployUse\media\ATA-performance-monitoring-add-counters.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-performance-monitoring-add-counters.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [bb82c0e8ef39951a2f35466d9912fe622fdac06e.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/bb82c0e8ef39951a2f35466d9912fe622fdac06e.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [bb82c0e8ef39951a2f35466d9912fe622fdac06e.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/bb82c0e8ef39951a2f35466d9912fe622fdac06e.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -688,8 +688,8 @@
 ##### <a name='efd559ab69debefb5f3e2fb6fd1a0f293070fbf135'></a> Source: [ATADocs\DeployUse\media\ATA-red-dot.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-red-dot.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [efd559ab69debefb5f3e2fb6fd1a0f293070fbf1.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/efd559ab69debefb5f3e2fb6fd1a0f293070fbf1.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [efd559ab69debefb5f3e2fb6fd1a0f293070fbf1.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/efd559ab69debefb5f3e2fb6fd1a0f293070fbf1.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -701,8 +701,8 @@
 ##### <a name='3fdf7fa3a650e1b704edea8ef72a15bdf4fe52bb36'></a> Source: [ATADocs\DeployUse\media\ATA-Suspicious-Activity-Timeline.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-Suspicious-Activity-Timeline.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [3fdf7fa3a650e1b704edea8ef72a15bdf4fe52bb.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3fdf7fa3a650e1b704edea8ef72a15bdf4fe52bb.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [3fdf7fa3a650e1b704edea8ef72a15bdf4fe52bb.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3fdf7fa3a650e1b704edea8ef72a15bdf4fe52bb.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -714,8 +714,8 @@
 ##### <a name='2693f2a42f01bacc6651248a0113d575c12054c337'></a> Source: [ATADocs\DeployUse\media\ATA-uninstall-center-bug.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-uninstall-center-bug.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [2693f2a42f01bacc6651248a0113d575c12054c3.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/2693f2a42f01bacc6651248a0113d575c12054c3.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [2693f2a42f01bacc6651248a0113d575c12054c3.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/2693f2a42f01bacc6651248a0113d575c12054c3.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -727,8 +727,8 @@
 ##### <a name='ce4a21e892357049d70b5ff1aa708547ca715b1738'></a> Source: [ATADocs\DeployUse\media\ATA-VPN-Subnets.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/DeployUse/media/ATA-VPN-Subnets.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [ce4a21e892357049d70b5ff1aa708547ca715b17.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ce4a21e892357049d70b5ff1aa708547ca715b17.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [ce4a21e892357049d70b5ff1aa708547ca715b17.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ce4a21e892357049d70b5ff1aa708547ca715b17.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -861,8 +861,8 @@
 ##### <a name='84421bf7f4ba657e685239fb27f4798a46485f7150'></a> Source: [ATADocs\Image\150x150.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/150x150.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [84421bf7f4ba657e685239fb27f4798a46485f71.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/84421bf7f4ba657e685239fb27f4798a46485f71.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [84421bf7f4ba657e685239fb27f4798a46485f71.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/84421bf7f4ba657e685239fb27f4798a46485f71.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -874,8 +874,8 @@
 ##### <a name='6349405da0cc5437d4907c1b377ebe448ef3810d107'></a> Source: [ATADocs\Image\ATA_center_fullpartial.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA_center_fullpartial.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [6349405da0cc5437d4907c1b377ebe448ef3810d.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/6349405da0cc5437d4907c1b377ebe448ef3810d.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [6349405da0cc5437d4907c1b377ebe448ef3810d.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/6349405da0cc5437d4907c1b377ebe448ef3810d.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -887,8 +887,8 @@
 ##### <a name='3779d05774a96f85f009cc401f08a47d742951e6108'></a> Source: [ATADocs\Image\ATA_center_outdated.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA_center_outdated.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [3779d05774a96f85f009cc401f08a47d742951e6.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3779d05774a96f85f009cc401f08a47d742951e6.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [3779d05774a96f85f009cc401f08a47d742951e6.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3779d05774a96f85f009cc401f08a47d742951e6.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -900,8 +900,8 @@
 ##### <a name='897dfb81c69563bcdb1239566b4a47f1e8a060cd109'></a> Source: [ATADocs\Image\ATA_gw_updated.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA_gw_updated.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [897dfb81c69563bcdb1239566b4a47f1e8a060cd.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/897dfb81c69563bcdb1239566b4a47f1e8a060cd.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [897dfb81c69563bcdb1239566b4a47f1e8a060cd.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/897dfb81c69563bcdb1239566b4a47f1e8a060cd.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -913,8 +913,8 @@
 ##### <a name='f8847c09ae291ce8fb83cb013a7e5f5f3a4b627955'></a> Source: [ATADocs\Image\ATA-alerts.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-alerts.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -938,8 +938,8 @@
 ##### <a name='f8847c09ae291ce8fb83cb013a7e5f5f3a4b627952'></a> Source: [ATADocs\Image\ATA-Alerts-laguage.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Alerts-laguage.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -963,8 +963,8 @@
 ##### <a name='f8847c09ae291ce8fb83cb013a7e5f5f3a4b627954'></a> Source: [ATADocs\Image\ATA-alerts-verbosity-language.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-alerts-verbosity-language.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -976,8 +976,8 @@
 ##### <a name='3b63dc0cff85980cb632069d4c34cc8894ecfc7c56'></a> Source: [ATADocs\Image\ATA-architecture-topology.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-architecture-topology.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [3b63dc0cff85980cb632069d4c34cc8894ecfc7c.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3b63dc0cff85980cb632069d4c34cc8894ecfc7c.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [3b63dc0cff85980cb632069d4c34cc8894ecfc7c.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3b63dc0cff85980cb632069d4c34cc8894ecfc7c.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -989,8 +989,8 @@
 ##### <a name='377436ada10ce7d4412b6b256396ea85ad93c5af57'></a> Source: [ATADocs\Image\ATA-Center-Configuration.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Center-Configuration.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [377436ada10ce7d4412b6b256396ea85ad93c5af.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/377436ada10ce7d4412b6b256396ea85ad93c5af.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [377436ada10ce7d4412b6b256396ea85ad93c5af.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/377436ada10ce7d4412b6b256396ea85ad93c5af.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1014,8 +1014,8 @@
 ##### <a name='0932dedf4e4f231714a6072c12093c6678b0810058'></a> Source: [ATADocs\Image\ATA-change-console-IP.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-change-console-IP.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [0932dedf4e4f231714a6072c12093c6678b08100.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/0932dedf4e4f231714a6072c12093c6678b08100.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [0932dedf4e4f231714a6072c12093c6678b08100.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/0932dedf4e4f231714a6072c12093c6678b08100.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1039,8 +1039,8 @@
 ##### <a name='ea504d039c81989138676445a3ab7172415a1ef460'></a> Source: [ATADocs\Image\ATA-chge-IP-after-clicking-save.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-chge-IP-after-clicking-save.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [ea504d039c81989138676445a3ab7172415a1ef4.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ea504d039c81989138676445a3ab7172415a1ef4.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [ea504d039c81989138676445a3ab7172415a1ef4.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ea504d039c81989138676445a3ab7172415a1ef4.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1052,8 +1052,8 @@
 ##### <a name='28b811e014fbf38741d81c7418c6bb70ead5df7461'></a> Source: [ATADocs\Image\ATA-Config-GW-Settings.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Config-GW-Settings.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [28b811e014fbf38741d81c7418c6bb70ead5df74.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/28b811e014fbf38741d81c7418c6bb70ead5df74.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [28b811e014fbf38741d81c7418c6bb70ead5df74.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/28b811e014fbf38741d81c7418c6bb70ead5df74.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1065,8 +1065,8 @@
 ##### <a name='28bff0237cf9625b464859bd7f3dc309779c7fcb62'></a> Source: [ATADocs\Image\ATA-config-icon.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-config-icon.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [28bff0237cf9625b464859bd7f3dc309779c7fcb.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/28bff0237cf9625b464859bd7f3dc309779c7fcb.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [28bff0237cf9625b464859bd7f3dc309779c7fcb.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/28bff0237cf9625b464859bd7f3dc309779c7fcb.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1078,8 +1078,8 @@
 ##### <a name='3edd04df7a3cad90fcf5a10adcf7533490caa6eb63'></a> Source: [ATADocs\Image\ATA-console-change-IP-bindings.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-console-change-IP-bindings.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [3edd04df7a3cad90fcf5a10adcf7533490caa6eb.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3edd04df7a3cad90fcf5a10adcf7533490caa6eb.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [3edd04df7a3cad90fcf5a10adcf7533490caa6eb.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3edd04df7a3cad90fcf5a10adcf7533490caa6eb.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1091,8 +1091,8 @@
 ##### <a name='18204afb92c709be98646c610653d47b6625e11b64'></a> Source: [ATADocs\Image\ATA-console-search.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-console-search.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [18204afb92c709be98646c610653d47b6625e11b.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/18204afb92c709be98646c610653d47b6625e11b.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [18204afb92c709be98646c610653d47b6625e11b.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/18204afb92c709be98646c610653d47b6625e11b.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1104,8 +1104,8 @@
 ##### <a name='d44b3a04b32a061ffbd7e04912834ac56044f65265'></a> Source: [ATADocs\Image\ATA-DNS-Suffix.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-DNS-Suffix.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [d44b3a04b32a061ffbd7e04912834ac56044f652.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d44b3a04b32a061ffbd7e04912834ac56044f652.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [d44b3a04b32a061ffbd7e04912834ac56044f652.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d44b3a04b32a061ffbd7e04912834ac56044f652.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1115,16 +1115,16 @@
 * [Back to Top](#report-top)
 
 ##### <a name='5381c4c0d584f8697c8053ef5c9ee7b1ab576be366'></a> Source: [ATADocs\Image\ATA-Domain-Connectivity-User.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Domain-Connectivity-User.JPG)
-* Status: HandedOffSuccess
+* Status: HandedOffFailed
 * Target File: 
-* Handoff File: [5381c4c0d584f8697c8053ef5c9ee7b1ab576be3.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/5381c4c0d584f8697c8053ef5c9ee7b1ab576be3.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
-* Handoff Reason: IsDependency
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Handoff Error: [handoff_transform_failed](#5381c4c0d584f8697c8053ef5c9ee7b1ab576be366handoff_transform_failed)
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: ATADocs\DeployUse\install-ata.md
 * [Back to Top](#report-top)
 
 ##### <a name='ca7c5b4bf7bf2e8aed02b59e709733d5cbbae65d67'></a> Source: [ATADocs\Image\ATA-edit-site-binding.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-edit-site-binding.jpg)
@@ -1142,8 +1142,8 @@
 ##### <a name='0b15335fec1868fca0cf265b525bc7223a25e85968'></a> Source: [ATADocs\Image\ATA-enable-siem-forward-events.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-enable-siem-forward-events.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [0b15335fec1868fca0cf265b525bc7223a25e859.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/0b15335fec1868fca0cf265b525bc7223a25e859.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [0b15335fec1868fca0cf265b525bc7223a25e859.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/0b15335fec1868fca0cf265b525bc7223a25e859.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1179,8 +1179,8 @@
 ##### <a name='b79a81b193f258cfee46d1a6478d89e46c7eecdc71'></a> Source: [ATADocs\Image\ATA-Gateway-Configuration.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Gateway-Configuration.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [b79a81b193f258cfee46d1a6478d89e46c7eecdc.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/b79a81b193f258cfee46d1a6478d89e46c7eecdc.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [b79a81b193f258cfee46d1a6478d89e46c7eecdc.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/b79a81b193f258cfee46d1a6478d89e46c7eecdc.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1192,8 +1192,8 @@
 ##### <a name='3a5b4e5c2de5a6e109cd66dd94a37f40b02fa5df72'></a> Source: [ATADocs\Image\ATA-Gateway-perf-counters.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Gateway-perf-counters.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [3a5b4e5c2de5a6e109cd66dd94a37f40b02fa5df.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3a5b4e5c2de5a6e109cd66dd94a37f40b02fa5df.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [3a5b4e5c2de5a6e109cd66dd94a37f40b02fa5df.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3a5b4e5c2de5a6e109cd66dd94a37f40b02fa5df.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1205,8 +1205,8 @@
 ##### <a name='caffb72088ae1244fe4dc8010a33fa66ffab9cac73'></a> Source: [ATADocs\Image\ATA-GW-change-DC-password.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-GW-change-DC-password.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [caffb72088ae1244fe4dc8010a33fa66ffab9cac.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/caffb72088ae1244fe4dc8010a33fa66ffab9cac.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [caffb72088ae1244fe4dc8010a33fa66ffab9cac.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/caffb72088ae1244fe4dc8010a33fa66ffab9cac.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1218,8 +1218,8 @@
 ##### <a name='dddd652fb096923a6ac044e9d8c151dc1af2982f111'></a> Source: [ATADocs\Image\ATAGWDomainController.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATAGWDomainController.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [dddd652fb096923a6ac044e9d8c151dc1af2982f.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/dddd652fb096923a6ac044e9d8c151dc1af2982f.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [dddd652fb096923a6ac044e9d8c151dc1af2982f.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/dddd652fb096923a6ac044e9d8c151dc1af2982f.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1231,8 +1231,8 @@
 ##### <a name='73222a255bcea2b987c049da4c47fde78815527374'></a> Source: [ATADocs\Image\ATA-GW-error.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-GW-error.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [73222a255bcea2b987c049da4c47fde788155273.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/73222a255bcea2b987c049da4c47fde788155273.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [73222a255bcea2b987c049da4c47fde788155273.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/73222a255bcea2b987c049da4c47fde788155273.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1244,8 +1244,8 @@
 ##### <a name='84844fbeab61dc307350394e1071c1bad6e2065975'></a> Source: [ATADocs\Image\ATA-GW-uninstall-bug.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-GW-uninstall-bug.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [84844fbeab61dc307350394e1071c1bad6e20659.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/84844fbeab61dc307350394e1071c1bad6e20659.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [84844fbeab61dc307350394e1071c1bad6e20659.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/84844fbeab61dc307350394e1071c1bad6e20659.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1257,8 +1257,8 @@
 ##### <a name='d2b6088dd989cb01d54c714b18b23fdac454c71c76'></a> Source: [ATADocs\Image\ATA-Health-Center-Alert-red-dot.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Health-Center-Alert-red-dot.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [d2b6088dd989cb01d54c714b18b23fdac454c71c.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d2b6088dd989cb01d54c714b18b23fdac454c71c.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [d2b6088dd989cb01d54c714b18b23fdac454c71c.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d2b6088dd989cb01d54c714b18b23fdac454c71c.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1270,8 +1270,8 @@
 ##### <a name='c4f3b468905bca6e23f5835219459a7e3af5b84e77'></a> Source: [ATADocs\Image\ATA-Health-Issue.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Health-Issue.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [c4f3b468905bca6e23f5835219459a7e3af5b84e.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/c4f3b468905bca6e23f5835219459a7e3af5b84e.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [c4f3b468905bca6e23f5835219459a7e3af5b84e.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/c4f3b468905bca6e23f5835219459a7e3af5b84e.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1283,8 +1283,8 @@
 ##### <a name='9b28cbe44f594229da64d756ca97cbfa1b1c82c578'></a> Source: [ATADocs\Image\ATA-Input.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Input.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [9b28cbe44f594229da64d756ca97cbfa1b1c82c5.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/9b28cbe44f594229da64d756ca97cbfa1b1c82c5.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [9b28cbe44f594229da64d756ca97cbfa1b1c82c5.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/9b28cbe44f594229da64d756ca97cbfa1b1c82c5.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1296,8 +1296,8 @@
 ##### <a name='cbde5c3d1a3b2ee4dad661739ded7c1e909eca4879'></a> Source: [ATADocs\Image\ATA-Kerberos-background.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Kerberos-background.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [cbde5c3d1a3b2ee4dad661739ded7c1e909eca48.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/cbde5c3d1a3b2ee4dad661739ded7c1e909eca48.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [cbde5c3d1a3b2ee4dad661739ded7c1e909eca48.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/cbde5c3d1a3b2ee4dad661739ded7c1e909eca48.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1322,8 +1322,8 @@
 ##### <a name='5a014a150f29b097053eae951f7ed49ce65518d081'></a> Source: [ATADocs\Image\ATA-mini-profile.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-mini-profile.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [5a014a150f29b097053eae951f7ed49ce65518d0.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/5a014a150f29b097053eae951f7ed49ce65518d0.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [5a014a150f29b097053eae951f7ed49ce65518d0.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/5a014a150f29b097053eae951f7ed49ce65518d0.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1335,8 +1335,8 @@
 ##### <a name='a89424369313176e864ab91f5518cae5a9ca2ff882'></a> Source: [ATADocs\Image\ATA-mongoDB-moveDB.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-mongoDB-moveDB.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [a89424369313176e864ab91f5518cae5a9ca2ff8.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/a89424369313176e864ab91f5518cae5a9ca2ff8.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [a89424369313176e864ab91f5518cae5a9ca2ff8.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/a89424369313176e864ab91f5518cae5a9ca2ff8.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1360,8 +1360,8 @@
 ##### <a name='f5bfb600963437f26bbf2b098184ff12159c31fe84'></a> Source: [ATADocs\Image\ATA-performance-counters.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-performance-counters.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [f5bfb600963437f26bbf2b098184ff12159c31fe.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/f5bfb600963437f26bbf2b098184ff12159c31fe.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [f5bfb600963437f26bbf2b098184ff12159c31fe.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/f5bfb600963437f26bbf2b098184ff12159c31fe.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1373,8 +1373,8 @@
 ##### <a name='bb82c0e8ef39951a2f35466d9912fe622fdac06e85'></a> Source: [ATADocs\Image\ATA-performance-monitoring-add-counters.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-performance-monitoring-add-counters.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [bb82c0e8ef39951a2f35466d9912fe622fdac06e.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/bb82c0e8ef39951a2f35466d9912fe622fdac06e.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [bb82c0e8ef39951a2f35466d9912fe622fdac06e.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/bb82c0e8ef39951a2f35466d9912fe622fdac06e.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1386,8 +1386,8 @@
 ##### <a name='da52b59d7fcfd91fcbdbdce60af548d4ef87964387'></a> Source: [ATADocs\Image\ATA-Port-Mirroring-Capture.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Port-Mirroring-Capture.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [da52b59d7fcfd91fcbdbdce60af548d4ef879643.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/da52b59d7fcfd91fcbdbdce60af548d4ef879643.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [da52b59d7fcfd91fcbdbdce60af548d4ef879643.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/da52b59d7fcfd91fcbdbdce60af548d4ef879643.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1399,8 +1399,8 @@
 ##### <a name='9dca677c2775d44f0f8f3aeceb1d4df1afc8aa5e86'></a> Source: [ATADocs\Image\ATA-Port-Mirroring-Capture-traffic.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Port-Mirroring-Capture-traffic.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [9dca677c2775d44f0f8f3aeceb1d4df1afc8aa5e.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/9dca677c2775d44f0f8f3aeceb1d4df1afc8aa5e.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [9dca677c2775d44f0f8f3aeceb1d4df1afc8aa5e.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/9dca677c2775d44f0f8f3aeceb1d4df1afc8aa5e.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1412,8 +1412,8 @@
 ##### <a name='d53cb342697190ab7611e40be4f8d31e8dc9ac1588'></a> Source: [ATADocs\Image\ATA-Port-Mirroring-filter-settings.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Port-Mirroring-filter-settings.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [d53cb342697190ab7611e40be4f8d31e8dc9ac15.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d53cb342697190ab7611e40be4f8d31e8dc9ac15.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [d53cb342697190ab7611e40be4f8d31e8dc9ac15.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d53cb342697190ab7611e40be4f8d31e8dc9ac15.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1425,8 +1425,8 @@
 ##### <a name='efd559ab69debefb5f3e2fb6fd1a0f293070fbf189'></a> Source: [ATADocs\Image\ATA-red-dot.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-red-dot.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [efd559ab69debefb5f3e2fb6fd1a0f293070fbf1.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/efd559ab69debefb5f3e2fb6fd1a0f293070fbf1.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [efd559ab69debefb5f3e2fb6fd1a0f293070fbf1.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/efd559ab69debefb5f3e2fb6fd1a0f293070fbf1.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1475,8 +1475,8 @@
 ##### <a name='3fdf7fa3a650e1b704edea8ef72a15bdf4fe52bb93'></a> Source: [ATADocs\Image\ATA-Suspicious-Activity-Timeline.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Suspicious-Activity-Timeline.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [3fdf7fa3a650e1b704edea8ef72a15bdf4fe52bb.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3fdf7fa3a650e1b704edea8ef72a15bdf4fe52bb.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [3fdf7fa3a650e1b704edea8ef72a15bdf4fe52bb.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3fdf7fa3a650e1b704edea8ef72a15bdf4fe52bb.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1488,8 +1488,8 @@
 ##### <a name='418aa302bb034a3b0ccf734d1daa8c9b04784fe394'></a> Source: [ATADocs\Image\ATA-traffic-estimation-1.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-traffic-estimation-1.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [418aa302bb034a3b0ccf734d1daa8c9b04784fe3.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/418aa302bb034a3b0ccf734d1daa8c9b04784fe3.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [418aa302bb034a3b0ccf734d1daa8c9b04784fe3.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/418aa302bb034a3b0ccf734d1daa8c9b04784fe3.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1501,8 +1501,8 @@
 ##### <a name='ff5b3f014794c191287e88b25ad04bf6c404db1a95'></a> Source: [ATADocs\Image\ATA-traffic-estimation-12.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-traffic-estimation-12.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [ff5b3f014794c191287e88b25ad04bf6c404db1a.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ff5b3f014794c191287e88b25ad04bf6c404db1a.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [ff5b3f014794c191287e88b25ad04bf6c404db1a.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ff5b3f014794c191287e88b25ad04bf6c404db1a.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1514,8 +1514,8 @@
 ##### <a name='7038048d28b17ba2335f1ecb3249e27d7f58d7fb96'></a> Source: [ATADocs\Image\ATA-traffic-estimation-14.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-traffic-estimation-14.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [7038048d28b17ba2335f1ecb3249e27d7f58d7fb.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/7038048d28b17ba2335f1ecb3249e27d7f58d7fb.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [7038048d28b17ba2335f1ecb3249e27d7f58d7fb.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/7038048d28b17ba2335f1ecb3249e27d7f58d7fb.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1527,8 +1527,8 @@
 ##### <a name='dc3fd1abf7b4588be5bd4f9de7a4dba5752f3f5297'></a> Source: [ATADocs\Image\ATA-traffic-estimation-2.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-traffic-estimation-2.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [dc3fd1abf7b4588be5bd4f9de7a4dba5752f3f52.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/dc3fd1abf7b4588be5bd4f9de7a4dba5752f3f52.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [dc3fd1abf7b4588be5bd4f9de7a4dba5752f3f52.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/dc3fd1abf7b4588be5bd4f9de7a4dba5752f3f52.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1540,8 +1540,8 @@
 ##### <a name='d04a656dc82be230ec69d453646fa24700eb617e98'></a> Source: [ATADocs\Image\ATA-traffic-estimation-3.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-traffic-estimation-3.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [d04a656dc82be230ec69d453646fa24700eb617e.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d04a656dc82be230ec69d453646fa24700eb617e.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [d04a656dc82be230ec69d453646fa24700eb617e.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d04a656dc82be230ec69d453646fa24700eb617e.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1553,8 +1553,8 @@
 ##### <a name='de6d3f7e3e8b87b25fab613f6b5f33b543d86fb299'></a> Source: [ATADocs\Image\ATA-traffic-estimation-5.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-traffic-estimation-5.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [de6d3f7e3e8b87b25fab613f6b5f33b543d86fb2.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/de6d3f7e3e8b87b25fab613f6b5f33b543d86fb2.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [de6d3f7e3e8b87b25fab613f6b5f33b543d86fb2.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/de6d3f7e3e8b87b25fab613f6b5f33b543d86fb2.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1566,8 +1566,8 @@
 ##### <a name='de4f0db38fdd16422e151b6759f276985c123437100'></a> Source: [ATADocs\Image\ATA-traffic-estimation-7.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-traffic-estimation-7.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [de4f0db38fdd16422e151b6759f276985c123437.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/de4f0db38fdd16422e151b6759f276985c123437.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [de4f0db38fdd16422e151b6759f276985c123437.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/de4f0db38fdd16422e151b6759f276985c123437.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1579,8 +1579,8 @@
 ##### <a name='71172af8b9ffaf66bdf7bc8ef1db6aee70f2a2ca101'></a> Source: [ATADocs\Image\ATA-traffic-flow.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-traffic-flow.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [71172af8b9ffaf66bdf7bc8ef1db6aee70f2a2ca.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/71172af8b9ffaf66bdf7bc8ef1db6aee70f2a2ca.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [71172af8b9ffaf66bdf7bc8ef1db6aee70f2a2ca.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/71172af8b9ffaf66bdf7bc8ef1db6aee70f2a2ca.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1604,8 +1604,8 @@
 ##### <a name='2693f2a42f01bacc6651248a0113d575c12054c3103'></a> Source: [ATADocs\Image\ATA-uninstall-center-bug.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-uninstall-center-bug.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [2693f2a42f01bacc6651248a0113d575c12054c3.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/2693f2a42f01bacc6651248a0113d575c12054c3.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [2693f2a42f01bacc6651248a0113d575c12054c3.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/2693f2a42f01bacc6651248a0113d575c12054c3.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1617,8 +1617,8 @@
 ##### <a name='4fc9df3058f295d41f80db89e3805003cd18a9b7104'></a> Source: [ATADocs\Image\ATA-Unresolved-Profile.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-Unresolved-Profile.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [4fc9df3058f295d41f80db89e3805003cd18a9b7.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/4fc9df3058f295d41f80db89e3805003cd18a9b7.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [4fc9df3058f295d41f80db89e3805003cd18a9b7.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/4fc9df3058f295d41f80db89e3805003cd18a9b7.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1630,8 +1630,8 @@
 ##### <a name='ce4a21e892357049d70b5ff1aa708547ca715b17105'></a> Source: [ATADocs\Image\ATA-VPN-Subnets.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/ATA-VPN-Subnets.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [ce4a21e892357049d70b5ff1aa708547ca715b17.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ce4a21e892357049d70b5ff1aa708547ca715b17.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [ce4a21e892357049d70b5ff1aa708547ca715b17.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ce4a21e892357049d70b5ff1aa708547ca715b17.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1743,8 +1743,8 @@
 ##### <a name='52452ea87355476bda32308ec38a95c6f75a99ef119'></a> Source: [ATADocs\Image\wef_4776.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/wef_4776.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [52452ea87355476bda32308ec38a95c6f75a99ef.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/52452ea87355476bda32308ec38a95c6f75a99ef.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [52452ea87355476bda32308ec38a95c6f75a99ef.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/52452ea87355476bda32308ec38a95c6f75a99ef.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1756,8 +1756,8 @@
 ##### <a name='1c19abba75023e7073977641e2674ddd62d20326121'></a> Source: [ATADocs\Image\wef_ad_eventlogreaders.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/wef_ad_eventlogreaders.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [1c19abba75023e7073977641e2674ddd62d20326.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/1c19abba75023e7073977641e2674ddd62d20326.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [1c19abba75023e7073977641e2674ddd62d20326.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/1c19abba75023e7073977641e2674ddd62d20326.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1769,8 +1769,8 @@
 ##### <a name='ae46394f83c94ae0f48d6a7d9a7cd6d18b58adf0120'></a> Source: [ATADocs\Image\wef_ad-event-log-reader-popup.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/wef_ad-event-log-reader-popup.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [ae46394f83c94ae0f48d6a7d9a7cd6d18b58adf0.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ae46394f83c94ae0f48d6a7d9a7cd6d18b58adf0.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [ae46394f83c94ae0f48d6a7d9a7cd6d18b58adf0.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ae46394f83c94ae0f48d6a7d9a7cd6d18b58adf0.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1782,8 +1782,8 @@
 ##### <a name='d4d9ac890b80451972fbe194c30577b0655be0cd122'></a> Source: [ATADocs\Image\wef_http.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/wef_http.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [d4d9ac890b80451972fbe194c30577b0655be0cd.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d4d9ac890b80451972fbe194c30577b0655be0cd.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [d4d9ac890b80451972fbe194c30577b0655be0cd.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d4d9ac890b80451972fbe194c30577b0655be0cd.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1795,8 +1795,8 @@
 ##### <a name='9b8562feafa85324c9a6e3e9020450535df920c6123'></a> Source: [ATADocs\Image\wef_subscription-prop.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Image/wef_subscription-prop.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [9b8562feafa85324c9a6e3e9020450535df920c6.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/9b8562feafa85324c9a6e3e9020450535df920c6.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [9b8562feafa85324c9a6e3e9020450535df920c6.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/9b8562feafa85324c9a6e3e9020450535df920c6.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1892,8 +1892,8 @@
 ##### <a name='84421bf7f4ba657e685239fb27f4798a46485f71131'></a> Source: [ATADocs\PlanDesign\media\150x150.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/150x150.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [84421bf7f4ba657e685239fb27f4798a46485f71.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/84421bf7f4ba657e685239fb27f4798a46485f71.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [84421bf7f4ba657e685239fb27f4798a46485f71.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/84421bf7f4ba657e685239fb27f4798a46485f71.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1905,8 +1905,8 @@
 ##### <a name='3b63dc0cff85980cb632069d4c34cc8894ecfc7c132'></a> Source: [ATADocs\PlanDesign\media\ATA-architecture-topology.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/ATA-architecture-topology.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [3b63dc0cff85980cb632069d4c34cc8894ecfc7c.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3b63dc0cff85980cb632069d4c34cc8894ecfc7c.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [3b63dc0cff85980cb632069d4c34cc8894ecfc7c.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3b63dc0cff85980cb632069d4c34cc8894ecfc7c.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1918,8 +1918,8 @@
 ##### <a name='d44b3a04b32a061ffbd7e04912834ac56044f652133'></a> Source: [ATADocs\PlanDesign\media\ATA-DNS-Suffix.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/ATA-DNS-Suffix.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [d44b3a04b32a061ffbd7e04912834ac56044f652.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d44b3a04b32a061ffbd7e04912834ac56044f652.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [d44b3a04b32a061ffbd7e04912834ac56044f652.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d44b3a04b32a061ffbd7e04912834ac56044f652.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1931,8 +1931,8 @@
 ##### <a name='0b15335fec1868fca0cf265b525bc7223a25e859134'></a> Source: [ATADocs\PlanDesign\media\ATA-enable-siem-forward-events.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/ATA-enable-siem-forward-events.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [0b15335fec1868fca0cf265b525bc7223a25e859.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/0b15335fec1868fca0cf265b525bc7223a25e859.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [0b15335fec1868fca0cf265b525bc7223a25e859.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/0b15335fec1868fca0cf265b525bc7223a25e859.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1944,8 +1944,8 @@
 ##### <a name='da52b59d7fcfd91fcbdbdce60af548d4ef879643136'></a> Source: [ATADocs\PlanDesign\media\ATA-Port-Mirroring-Capture.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/ATA-Port-Mirroring-Capture.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [da52b59d7fcfd91fcbdbdce60af548d4ef879643.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/da52b59d7fcfd91fcbdbdce60af548d4ef879643.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [da52b59d7fcfd91fcbdbdce60af548d4ef879643.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/da52b59d7fcfd91fcbdbdce60af548d4ef879643.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1957,8 +1957,8 @@
 ##### <a name='9dca677c2775d44f0f8f3aeceb1d4df1afc8aa5e135'></a> Source: [ATADocs\PlanDesign\media\ATA-Port-Mirroring-Capture-traffic.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/ATA-Port-Mirroring-Capture-traffic.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [9dca677c2775d44f0f8f3aeceb1d4df1afc8aa5e.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/9dca677c2775d44f0f8f3aeceb1d4df1afc8aa5e.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [9dca677c2775d44f0f8f3aeceb1d4df1afc8aa5e.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/9dca677c2775d44f0f8f3aeceb1d4df1afc8aa5e.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1970,8 +1970,8 @@
 ##### <a name='d53cb342697190ab7611e40be4f8d31e8dc9ac15137'></a> Source: [ATADocs\PlanDesign\media\ATA-Port-Mirroring-filter-settings.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/ATA-Port-Mirroring-filter-settings.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [d53cb342697190ab7611e40be4f8d31e8dc9ac15.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d53cb342697190ab7611e40be4f8d31e8dc9ac15.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [d53cb342697190ab7611e40be4f8d31e8dc9ac15.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d53cb342697190ab7611e40be4f8d31e8dc9ac15.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1983,8 +1983,8 @@
 ##### <a name='418aa302bb034a3b0ccf734d1daa8c9b04784fe3138'></a> Source: [ATADocs\PlanDesign\media\ATA-traffic-estimation-1.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/ATA-traffic-estimation-1.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [418aa302bb034a3b0ccf734d1daa8c9b04784fe3.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/418aa302bb034a3b0ccf734d1daa8c9b04784fe3.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [418aa302bb034a3b0ccf734d1daa8c9b04784fe3.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/418aa302bb034a3b0ccf734d1daa8c9b04784fe3.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -1996,8 +1996,8 @@
 ##### <a name='ff5b3f014794c191287e88b25ad04bf6c404db1a139'></a> Source: [ATADocs\PlanDesign\media\ATA-traffic-estimation-12.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/ATA-traffic-estimation-12.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [ff5b3f014794c191287e88b25ad04bf6c404db1a.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ff5b3f014794c191287e88b25ad04bf6c404db1a.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [ff5b3f014794c191287e88b25ad04bf6c404db1a.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ff5b3f014794c191287e88b25ad04bf6c404db1a.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2009,8 +2009,8 @@
 ##### <a name='7038048d28b17ba2335f1ecb3249e27d7f58d7fb140'></a> Source: [ATADocs\PlanDesign\media\ATA-traffic-estimation-14.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/ATA-traffic-estimation-14.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [7038048d28b17ba2335f1ecb3249e27d7f58d7fb.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/7038048d28b17ba2335f1ecb3249e27d7f58d7fb.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [7038048d28b17ba2335f1ecb3249e27d7f58d7fb.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/7038048d28b17ba2335f1ecb3249e27d7f58d7fb.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2022,8 +2022,8 @@
 ##### <a name='dc3fd1abf7b4588be5bd4f9de7a4dba5752f3f52141'></a> Source: [ATADocs\PlanDesign\media\ATA-traffic-estimation-2.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/ATA-traffic-estimation-2.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [dc3fd1abf7b4588be5bd4f9de7a4dba5752f3f52.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/dc3fd1abf7b4588be5bd4f9de7a4dba5752f3f52.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [dc3fd1abf7b4588be5bd4f9de7a4dba5752f3f52.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/dc3fd1abf7b4588be5bd4f9de7a4dba5752f3f52.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2035,8 +2035,8 @@
 ##### <a name='d04a656dc82be230ec69d453646fa24700eb617e142'></a> Source: [ATADocs\PlanDesign\media\ATA-traffic-estimation-3.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/ATA-traffic-estimation-3.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [d04a656dc82be230ec69d453646fa24700eb617e.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d04a656dc82be230ec69d453646fa24700eb617e.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [d04a656dc82be230ec69d453646fa24700eb617e.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d04a656dc82be230ec69d453646fa24700eb617e.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2048,8 +2048,8 @@
 ##### <a name='de6d3f7e3e8b87b25fab613f6b5f33b543d86fb2143'></a> Source: [ATADocs\PlanDesign\media\ATA-traffic-estimation-5.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/ATA-traffic-estimation-5.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [de6d3f7e3e8b87b25fab613f6b5f33b543d86fb2.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/de6d3f7e3e8b87b25fab613f6b5f33b543d86fb2.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [de6d3f7e3e8b87b25fab613f6b5f33b543d86fb2.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/de6d3f7e3e8b87b25fab613f6b5f33b543d86fb2.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2061,8 +2061,8 @@
 ##### <a name='de4f0db38fdd16422e151b6759f276985c123437144'></a> Source: [ATADocs\PlanDesign\media\ATA-traffic-estimation-7.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/ATA-traffic-estimation-7.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [de4f0db38fdd16422e151b6759f276985c123437.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/de4f0db38fdd16422e151b6759f276985c123437.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [de4f0db38fdd16422e151b6759f276985c123437.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/de4f0db38fdd16422e151b6759f276985c123437.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2074,8 +2074,8 @@
 ##### <a name='52452ea87355476bda32308ec38a95c6f75a99ef145'></a> Source: [ATADocs\PlanDesign\media\wef_4776.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/wef_4776.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [52452ea87355476bda32308ec38a95c6f75a99ef.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/52452ea87355476bda32308ec38a95c6f75a99ef.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [52452ea87355476bda32308ec38a95c6f75a99ef.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/52452ea87355476bda32308ec38a95c6f75a99ef.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2087,8 +2087,8 @@
 ##### <a name='1c19abba75023e7073977641e2674ddd62d20326147'></a> Source: [ATADocs\PlanDesign\media\wef_ad_eventlogreaders.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/wef_ad_eventlogreaders.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [1c19abba75023e7073977641e2674ddd62d20326.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/1c19abba75023e7073977641e2674ddd62d20326.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [1c19abba75023e7073977641e2674ddd62d20326.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/1c19abba75023e7073977641e2674ddd62d20326.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2100,8 +2100,8 @@
 ##### <a name='ae46394f83c94ae0f48d6a7d9a7cd6d18b58adf0146'></a> Source: [ATADocs\PlanDesign\media\wef_ad-event-log-reader-popup.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/wef_ad-event-log-reader-popup.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [ae46394f83c94ae0f48d6a7d9a7cd6d18b58adf0.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ae46394f83c94ae0f48d6a7d9a7cd6d18b58adf0.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [ae46394f83c94ae0f48d6a7d9a7cd6d18b58adf0.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ae46394f83c94ae0f48d6a7d9a7cd6d18b58adf0.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2113,8 +2113,8 @@
 ##### <a name='d4d9ac890b80451972fbe194c30577b0655be0cd148'></a> Source: [ATADocs\PlanDesign\media\wef_http.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/wef_http.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [d4d9ac890b80451972fbe194c30577b0655be0cd.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d4d9ac890b80451972fbe194c30577b0655be0cd.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [d4d9ac890b80451972fbe194c30577b0655be0cd.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d4d9ac890b80451972fbe194c30577b0655be0cd.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2126,8 +2126,8 @@
 ##### <a name='9b8562feafa85324c9a6e3e9020450535df920c6149'></a> Source: [ATADocs\PlanDesign\media\wef_subscription-prop.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/PlanDesign/media/wef_subscription-prop.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [9b8562feafa85324c9a6e3e9020450535df920c6.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/9b8562feafa85324c9a6e3e9020450535df920c6.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [9b8562feafa85324c9a6e3e9020450535df920c6.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/9b8562feafa85324c9a6e3e9020450535df920c6.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2235,8 +2235,8 @@
 ##### <a name='84421bf7f4ba657e685239fb27f4798a46485f71158'></a> Source: [ATADocs\Troubleshoot\media\150x150.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Troubleshoot/media/150x150.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [84421bf7f4ba657e685239fb27f4798a46485f71.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/84421bf7f4ba657e685239fb27f4798a46485f71.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [84421bf7f4ba657e685239fb27f4798a46485f71.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/84421bf7f4ba657e685239fb27f4798a46485f71.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2248,8 +2248,8 @@
 ##### <a name='3a5b4e5c2de5a6e109cd66dd94a37f40b02fa5df159'></a> Source: [ATADocs\Troubleshoot\media\ATA-Gateway-perf-counters.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Troubleshoot/media/ATA-Gateway-perf-counters.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [3a5b4e5c2de5a6e109cd66dd94a37f40b02fa5df.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3a5b4e5c2de5a6e109cd66dd94a37f40b02fa5df.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [3a5b4e5c2de5a6e109cd66dd94a37f40b02fa5df.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3a5b4e5c2de5a6e109cd66dd94a37f40b02fa5df.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2261,8 +2261,8 @@
 ##### <a name='f5bfb600963437f26bbf2b098184ff12159c31fe160'></a> Source: [ATADocs\Troubleshoot\media\ATA-performance-counters.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Troubleshoot/media/ATA-performance-counters.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [f5bfb600963437f26bbf2b098184ff12159c31fe.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/f5bfb600963437f26bbf2b098184ff12159c31fe.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [f5bfb600963437f26bbf2b098184ff12159c31fe.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/f5bfb600963437f26bbf2b098184ff12159c31fe.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2406,8 +2406,8 @@
 ##### <a name='84421bf7f4ba657e685239fb27f4798a46485f71172'></a> Source: [ATADocs\Understand\media\150x150.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Understand/media/150x150.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [84421bf7f4ba657e685239fb27f4798a46485f71.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/84421bf7f4ba657e685239fb27f4798a46485f71.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [84421bf7f4ba657e685239fb27f4798a46485f71.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/84421bf7f4ba657e685239fb27f4798a46485f71.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2419,8 +2419,8 @@
 ##### <a name='3b63dc0cff85980cb632069d4c34cc8894ecfc7c173'></a> Source: [ATADocs\Understand\media\ATA-architecture-topology.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Understand/media/ATA-architecture-topology.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [3b63dc0cff85980cb632069d4c34cc8894ecfc7c.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3b63dc0cff85980cb632069d4c34cc8894ecfc7c.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [3b63dc0cff85980cb632069d4c34cc8894ecfc7c.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/3b63dc0cff85980cb632069d4c34cc8894ecfc7c.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2432,8 +2432,8 @@
 ##### <a name='28bff0237cf9625b464859bd7f3dc309779c7fcb174'></a> Source: [ATADocs\Understand\media\ATA-config-icon.JPG](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Understand/media/ATA-config-icon.JPG)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [28bff0237cf9625b464859bd7f3dc309779c7fcb.JPG](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/28bff0237cf9625b464859bd7f3dc309779c7fcb.JPG)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [28bff0237cf9625b464859bd7f3dc309779c7fcb.JPG](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/28bff0237cf9625b464859bd7f3dc309779c7fcb.JPG)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2445,8 +2445,8 @@
 ##### <a name='18204afb92c709be98646c610653d47b6625e11b175'></a> Source: [ATADocs\Understand\media\ATA-console-search.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Understand/media/ATA-console-search.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [18204afb92c709be98646c610653d47b6625e11b.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/18204afb92c709be98646c610653d47b6625e11b.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [18204afb92c709be98646c610653d47b6625e11b.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/18204afb92c709be98646c610653d47b6625e11b.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2458,8 +2458,8 @@
 ##### <a name='d2b6088dd989cb01d54c714b18b23fdac454c71c176'></a> Source: [ATADocs\Understand\media\ATA-Health-Center-Alert-red-dot.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Understand/media/ATA-Health-Center-Alert-red-dot.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [d2b6088dd989cb01d54c714b18b23fdac454c71c.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d2b6088dd989cb01d54c714b18b23fdac454c71c.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [d2b6088dd989cb01d54c714b18b23fdac454c71c.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/d2b6088dd989cb01d54c714b18b23fdac454c71c.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2471,8 +2471,8 @@
 ##### <a name='cbde5c3d1a3b2ee4dad661739ded7c1e909eca48177'></a> Source: [ATADocs\Understand\media\ATA-Kerberos-background.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Understand/media/ATA-Kerberos-background.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [cbde5c3d1a3b2ee4dad661739ded7c1e909eca48.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/cbde5c3d1a3b2ee4dad661739ded7c1e909eca48.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [cbde5c3d1a3b2ee4dad661739ded7c1e909eca48.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/cbde5c3d1a3b2ee4dad661739ded7c1e909eca48.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2484,8 +2484,8 @@
 ##### <a name='ede40a9e48ad2fdc2dc9a635adc503cd8d599fa1178'></a> Source: [ATADocs\Understand\media\ATA-log-in-screen.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Understand/media/ATA-log-in-screen.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [ede40a9e48ad2fdc2dc9a635adc503cd8d599fa1.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ede40a9e48ad2fdc2dc9a635adc503cd8d599fa1.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [ede40a9e48ad2fdc2dc9a635adc503cd8d599fa1.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ede40a9e48ad2fdc2dc9a635adc503cd8d599fa1.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2497,8 +2497,8 @@
 ##### <a name='5a014a150f29b097053eae951f7ed49ce65518d0179'></a> Source: [ATADocs\Understand\media\ATA-mini-profile.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Understand/media/ATA-mini-profile.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [5a014a150f29b097053eae951f7ed49ce65518d0.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/5a014a150f29b097053eae951f7ed49ce65518d0.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [5a014a150f29b097053eae951f7ed49ce65518d0.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/5a014a150f29b097053eae951f7ed49ce65518d0.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2510,8 +2510,8 @@
 ##### <a name='bd35194345e7704542aa52afcce464901ec13325180'></a> Source: [ATADocs\Understand\media\ATA-server-icon.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Understand/media/ATA-server-icon.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [bd35194345e7704542aa52afcce464901ec13325.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/bd35194345e7704542aa52afcce464901ec13325.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [bd35194345e7704542aa52afcce464901ec13325.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/bd35194345e7704542aa52afcce464901ec13325.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2523,8 +2523,8 @@
 ##### <a name='71172af8b9ffaf66bdf7bc8ef1db6aee70f2a2ca181'></a> Source: [ATADocs\Understand\media\ATA-traffic-flow.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Understand/media/ATA-traffic-flow.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [71172af8b9ffaf66bdf7bc8ef1db6aee70f2a2ca.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/71172af8b9ffaf66bdf7bc8ef1db6aee70f2a2ca.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [71172af8b9ffaf66bdf7bc8ef1db6aee70f2a2ca.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/71172af8b9ffaf66bdf7bc8ef1db6aee70f2a2ca.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2536,8 +2536,8 @@
 ##### <a name='4fc9df3058f295d41f80db89e3805003cd18a9b7182'></a> Source: [ATADocs\Understand\media\ATA-Unresolved-Profile.jpg](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Understand/media/ATA-Unresolved-Profile.jpg)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [4fc9df3058f295d41f80db89e3805003cd18a9b7.jpg](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/4fc9df3058f295d41f80db89e3805003cd18a9b7.jpg)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [4fc9df3058f295d41f80db89e3805003cd18a9b7.jpg](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/4fc9df3058f295d41f80db89e3805003cd18a9b7.jpg)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2549,8 +2549,8 @@
 ##### <a name='7ed12b436fccf9d40ecd76f13697812c159f69a3183'></a> Source: [ATADocs\Understand\media\attack-timeline.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Understand/media/attack-timeline.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [7ed12b436fccf9d40ecd76f13697812c159f69a3.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/7ed12b436fccf9d40ecd76f13697812c159f69a3.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [7ed12b436fccf9d40ecd76f13697812c159f69a3.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/7ed12b436fccf9d40ecd76f13697812c159f69a3.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2562,8 +2562,8 @@
 ##### <a name='92803f3318fdfdbf17528b747b13f715ee40b7fe184'></a> Source: [ATADocs\Understand\media\computer-profile.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Understand/media/computer-profile.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [92803f3318fdfdbf17528b747b13f715ee40b7fe.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/92803f3318fdfdbf17528b747b13f715ee40b7fe.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [92803f3318fdfdbf17528b747b13f715ee40b7fe.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/92803f3318fdfdbf17528b747b13f715ee40b7fe.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2575,8 +2575,8 @@
 ##### <a name='2b57f03ff7f6b23f604e7ef93efa4bc72c1a544a185'></a> Source: [ATADocs\Understand\media\health-center.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Understand/media/health-center.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [2b57f03ff7f6b23f604e7ef93efa4bc72c1a544a.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/2b57f03ff7f6b23f604e7ef93efa4bc72c1a544a.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [2b57f03ff7f6b23f604e7ef93efa4bc72c1a544a.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/2b57f03ff7f6b23f604e7ef93efa4bc72c1a544a.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2588,8 +2588,8 @@
 ##### <a name='5a5c773c62ea63438b12536bfdb91f0b2a6866bf186'></a> Source: [ATADocs\Understand\media\notification-bar.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Understand/media/notification-bar.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [5a5c773c62ea63438b12536bfdb91f0b2a6866bf.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/5a5c773c62ea63438b12536bfdb91f0b2a6866bf.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [5a5c773c62ea63438b12536bfdb91f0b2a6866bf.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/5a5c773c62ea63438b12536bfdb91f0b2a6866bf.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2601,8 +2601,8 @@
 ##### <a name='746cfa4a7266e89f4083291f6903b6aea0509917187'></a> Source: [ATADocs\Understand\media\user-profile.png](https://github.com/Microsoft/ATADocs-pr/blob/e288db2346e005ee6346f64dee904f097b26f3ef/ATADocs/Understand/media/user-profile.png)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [746cfa4a7266e89f4083291f6903b6aea0509917.png](https://github.com/Microsoft/EM.handoff/blob/df855c5af92a6bbeb6ddde5df1694f2e3ce16812/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/746cfa4a7266e89f4083291f6903b6aea0509917.png)
-* Handoff Datetime: 2016-03-04 18:04:18
+* Handoff File: [746cfa4a7266e89f4083291f6903b6aea0509917.png](https://github.com/Microsoft/EM.handoff/blob/5790d9e48aca1058a25c5f311a9b05dc64ee9ae4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/746cfa4a7266e89f4083291f6903b6aea0509917.png)
+* Handoff Datetime: 2016-03-04 20:11:05
 * Handoff Reason: IsDependency
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -2673,11 +2673,23 @@
 
 
 ## Error Details
+##### <a name='5381c4c0d584f8697c8053ef5c9ee7b1ab576be324handoff_transform_failed'></a> Source: [ATADocs\DeployUse\media\ATA-Domain-Connectivity-User.JPG](#5381c4c0d584f8697c8053ef5c9ee7b1ab576be324)
+* Error Code: handoff_transform_failed
+* Error Message: Handoff source file: C:\ol\master\EM.handoff\ae6fe6\ol-handoff\Microsoft\ATADocs-pr.fr-fr\master\5381c4c0d584f8697c8053ef5c9ee7b1ab576be3.JPG transformed failed.
+* Retriable: False
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: C:\\ol\\master\\EM.handoff\\ae6fe6\\ol-handoff\\Microsoft\\ATADocs-pr.fr-fr\\master\\5381c4c0d584f8697c8053ef5c9ee7b1ab576be3.JPG transformed failed.","internal_error_retriable":false,"exception_message":"The index is locked. This might be due to a concurrent or crashed process","exception_type":"LibGit2Sharp.LockedFileException","stack_trace":"   at LibGit2Sharp.Core.Ensure.HandleError(Int32 result) in c:\\projects\\libgit2sharp\\LibGit2Sharp\\Core\\Ensure.cs:line 160\r\n   at LibGit2Sharp.Repository.Stage(IEnumerable`1 paths, StageOptions stageOptions) in c:\\projects\\libgit2sharp\\LibGit2Sharp\\Repository.cs:line 1772\r\n   at Microsoft.OpenLocalization.Git.GitRepoExtensions.StageFile(GitRepo gitLocal, String filePath) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Git\\GitRepoExtensions.cs:line 360\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 377","extended_information":null}
+
 ##### <a name='48da69f3fb8edd5bb2d55052f63560940f94367947handoff_transform_failed'></a> Source: [ATADocs\DeployUse\working-with-detection-settings.md](#48da69f3fb8edd5bb2d55052f63560940f94367947)
 * Error Code: handoff_transform_failed
 * Error Message: Handoff source file: ATADocs\working-with-detection-settings.md transformed failed.
 * Retriable: False
 * Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: ATADocs\\working-with-detection-settings.md transformed failed.","internal_error_retriable":false,"exception_message":"Object reference not set to an instance of an object.","exception_type":"System.NullReferenceException","stack_trace":"   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass9_0.<GetHandoffFiles>b__0(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 331","extended_information":null}
+
+##### <a name='5381c4c0d584f8697c8053ef5c9ee7b1ab576be366handoff_transform_failed'></a> Source: [ATADocs\Image\ATA-Domain-Connectivity-User.JPG](#5381c4c0d584f8697c8053ef5c9ee7b1ab576be366)
+* Error Code: handoff_transform_failed
+* Error Message: Handoff source file: C:\ol\master\EM.handoff\ae6fe6\ol-handoff\Microsoft\ATADocs-pr.fr-fr\master\5381c4c0d584f8697c8053ef5c9ee7b1ab576be3.JPG transformed failed.
+* Retriable: False
+* Error Details: {"internal_error_code":"handoff_transform_failed","internal_error_message":"Handoff source file: C:\\ol\\master\\EM.handoff\\ae6fe6\\ol-handoff\\Microsoft\\ATADocs-pr.fr-fr\\master\\5381c4c0d584f8697c8053ef5c9ee7b1ab576be3.JPG transformed failed.","internal_error_retriable":false,"exception_message":"The index is locked. This might be due to a concurrent or crashed process","exception_type":"LibGit2Sharp.LockedFileException","stack_trace":"   at LibGit2Sharp.Core.Ensure.HandleError(Int32 result) in c:\\projects\\libgit2sharp\\LibGit2Sharp\\Core\\Ensure.cs:line 160\r\n   at LibGit2Sharp.Repository.Stage(IEnumerable`1 paths, StageOptions stageOptions) in c:\\projects\\libgit2sharp\\LibGit2Sharp\\Repository.cs:line 1772\r\n   at Microsoft.OpenLocalization.Git.GitRepoExtensions.StageFile(GitRepo gitLocal, String filePath) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Git\\GitRepoExtensions.cs:line 360\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.GetHandoffFiles(GitRepo sourceRepo, GitRepo targetRepo, GitRepo handoffRepo, TranslationState translationState, TranslationOptions config, Dictionary`2 filePathInfo) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 377","extended_information":null}
 
 
 Generated by OpenLocalization.
