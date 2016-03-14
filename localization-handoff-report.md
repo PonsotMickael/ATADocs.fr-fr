@@ -6,11 +6,11 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [ATADocs\DeployUse\working-with-detection-settings.md](https://github.com/Microsoft/ATADocs-pr/blob/3e82f207fdda7569258944c86cbb41e9616cf57c/ATADocs/DeployUse/working-with-detection-settings.md) | HandedOffFailed | [Details](#48da69f3fb8edd5bb2d55052f63560940f94367947)
- [ATADocs\index.html](https://github.com/Microsoft/ATADocs-pr/blob/3e82f207fdda7569258944c86cbb41e9616cf57c/ATADocs/index.html) | HandedOffSuccess | [Details](#78175e5e559433f50389d54a92da5c5ad179583b124)
+ [ATADocs\DeployUse\working-with-detection-settings.md](https://github.com/Microsoft/ATADocs-pr/blob/0af57a1da6c16b5aae5896debda20710ffb3bb71/ATADocs/DeployUse/working-with-detection-settings.md) | HandedOffFailed | [Details](#48da69f3fb8edd5bb2d55052f63560940f94367947)
+ [ATADocs\Understand\what-is-ata.md](https://github.com/Microsoft/ATADocs-pr/blob/0af57a1da6c16b5aae5896debda20710ffb3bb71/ATADocs/Understand/what-is-ata.md) | HandedOffSuccess | [Details](#21dcba1fb595d26ab1a330546f079527a9b74fa9190)
 
 ## Item Details
-##### <a name='48da69f3fb8edd5bb2d55052f63560940f94367947'></a> Source: [ATADocs\DeployUse\working-with-detection-settings.md](https://github.com/Microsoft/ATADocs-pr/blob/3e82f207fdda7569258944c86cbb41e9616cf57c/ATADocs/DeployUse/working-with-detection-settings.md)
+##### <a name='48da69f3fb8edd5bb2d55052f63560940f94367947'></a> Source: [ATADocs\DeployUse\working-with-detection-settings.md](https://github.com/Microsoft/ATADocs-pr/blob/0af57a1da6c16b5aae5896debda20710ffb3bb71/ATADocs/DeployUse/working-with-detection-settings.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
@@ -23,11 +23,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='78175e5e559433f50389d54a92da5c5ad179583b124'></a> Source: [ATADocs\index.html](https://github.com/Microsoft/ATADocs-pr/blob/3e82f207fdda7569258944c86cbb41e9616cf57c/ATADocs/index.html)
+##### <a name='21dcba1fb595d26ab1a330546f079527a9b74fa9190'></a> Source: [ATADocs\Understand\what-is-ata.md](https://github.com/Microsoft/ATADocs-pr/blob/0af57a1da6c16b5aae5896debda20710ffb3bb71/ATADocs/Understand/what-is-ata.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [78175e5e559433f50389d54a92da5c5ad179583b.html](https://github.com/Microsoft/EM.handoff/blob/c789acac4d1500466024512618c9ccd74c79f3d8/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/78175e5e559433f50389d54a92da5c5ad179583b.html)
-* Handoff Datetime: 2016-03-14 18:23:46
+* Handoff File: [what-is-ata.26e22f3b3bdc705961558ab294bf44dabd1ee498.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/3c6b52fd3b5062376a4a8ca37a7c61a41653a128/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/what-is-ata.26e22f3b3bdc705961558ab294bf44dabd1ee498.fr-fr.xlf)
+* Handoff Datetime: 2016-03-14 19:23:34
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
