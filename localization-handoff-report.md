@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [ATADocs\index.md](https://github.com/Microsoft/ATADocs-pr/blob/fa45b7953ee126fa742a5d0e34a5949aca49a222/ATADocs/index.md) | HandedOffSuccess | [Details](#e8e47b76a006b1ad96279055d6b5c59001661a2d136)
+ [ATADocs\index.md](https://github.com/Microsoft/ATADocs-pr/blob/354ce3c420d394f63d701db91d668bef06248057/ATADocs/index.md) | HandedOffSuccess | [Details](#0662a43633c1c0f8b67ca5eb24fbe6a2a9e1b17d136)
 
 ## Item Details
-##### <a name='e8e47b76a006b1ad96279055d6b5c59001661a2d136'></a> Source: [ATADocs\index.md](https://github.com/Microsoft/ATADocs-pr/blob/fa45b7953ee126fa742a5d0e34a5949aca49a222/ATADocs/index.md)
+##### <a name='0662a43633c1c0f8b67ca5eb24fbe6a2a9e1b17d136'></a> Source: [ATADocs\index.md](https://github.com/Microsoft/ATADocs-pr/blob/354ce3c420d394f63d701db91d668bef06248057/ATADocs/index.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [index.cc3e62ac6c9901731450d753a0ecebc990048809.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/27ec6f1c48615a027112f5cfbf429bd5b67db342/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/index.cc3e62ac6c9901731450d753a0ecebc990048809.fr-fr.xlf)
-* Handoff Datetime: 2016-04-26 21:18:23
+* Handoff File: [index.cc3e62ac6c9901731450d753a0ecebc990048809.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/840db27c2c4bbc895fd1e7bec3543f11b20bd51e/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/index.cc3e62ac6c9901731450d753a0ecebc990048809.fr-fr.xlf)
+* Handoff Datetime: 2016-04-26 21:41:14
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
