@@ -1,35 +1,19 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [ATADocs\Troubleshoot\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/345f73f751cfd6e0ce189d3489f713f5c3b3a9fc/ATADocs/Troubleshoot/ata-technical-faq.md) | OutofSyncHandedBackSuccess | [Details](#6003fcc8e48d206960bd8b6e3489e36bb68c25d8167)
- [ATADocs\Troubleshoot\troubleshooting-ata-using-ata-database.md](https://github.com/Microsoft/ATADocs-pr/blob/62ebda3dc5551319349bfe640914b71742c59ecf/ATADocs/Troubleshoot/troubleshooting-ata-using-ata-database.md) | OutofSyncHandedBackSuccess | [Details](#32694dac750b87a5a07b3a04a51c11054c50917f174)
+ [ATADocs\Troubleshoot\troubleshooting-ata-using-ata-database.md](https://github.com/Microsoft/ATADocs-pr/blob/959d1138b7270b87fd28387bd857cf8f8a28ce7f/ATADocs/Troubleshoot/troubleshooting-ata-using-ata-database.md) | OutofSyncHandedBackSuccess | [Details](#ca4834c8727a5b742f410df0375ad6b5b6ef7b3b174)
 
 ## Item Details
-##### <a name='6003fcc8e48d206960bd8b6e3489e36bb68c25d8167'></a> Source: [ATADocs\Troubleshoot\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/345f73f751cfd6e0ce189d3489f713f5c3b3a9fc/ATADocs/Troubleshoot/ata-technical-faq.md)
+##### <a name='ca4834c8727a5b742f410df0375ad6b5b6ef7b3b174'></a> Source: [ATADocs\Troubleshoot\troubleshooting-ata-using-ata-database.md](https://github.com/Microsoft/ATADocs-pr/blob/959d1138b7270b87fd28387bd857cf8f8a28ce7f/ATADocs/Troubleshoot/troubleshooting-ata-using-ata-database.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [ata-technical-faq.fa1f89c776292e09c1d93eaa37cecd7df0b4a836.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/3b5d29b44f6f6a55ea59ab3af36c54b3755ddddd/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ata-technical-faq.fa1f89c776292e09c1d93eaa37cecd7df0b4a836.fr-fr.xlf)
-* Handoff Datetime: 2016-04-28 21:42:18
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [ATADocs\Troubleshoot\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/d77425f4aec6992c743b630be26762214256f2f2/ATADocs/Troubleshoot/ata-technical-faq.md)
-* Current Handback File: [ata-technical-faq.fa1f89c776292e09c1d93eaa37cecd7df0b4a836.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/b13d69f8c1b80f409d86f9103e0b0ec008026761/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/ata-technical-faq.fa1f89c776292e09c1d93eaa37cecd7df0b4a836.fr-fr.xlf)
-* Current Handback Datetime: 2016-04-28 18:50:59
-* [Back to Top](#report-top)
-
-##### <a name='32694dac750b87a5a07b3a04a51c11054c50917f174'></a> Source: [ATADocs\Troubleshoot\troubleshooting-ata-using-ata-database.md](https://github.com/Microsoft/ATADocs-pr/blob/62ebda3dc5551319349bfe640914b71742c59ecf/ATADocs/Troubleshoot/troubleshooting-ata-using-ata-database.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [troubleshooting-ata-using-ata-database.59180de16ff041e4081a27aa3918a2ea95a29245.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/3b5d29b44f6f6a55ea59ab3af36c54b3755ddddd/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/troubleshooting-ata-using-ata-database.59180de16ff041e4081a27aa3918a2ea95a29245.fr-fr.xlf)
-* Handoff Datetime: 2016-04-28 21:42:18
+* Handoff File: [troubleshooting-ata-using-ata-database.59180de16ff041e4081a27aa3918a2ea95a29245.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/1c103ec0ed49bee93bf92939103cb07df9d87d52/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/troubleshooting-ata-using-ata-database.59180de16ff041e4081a27aa3918a2ea95a29245.fr-fr.xlf)
+* Handoff Datetime: 2016-04-28 23:40:47
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
