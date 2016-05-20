@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [ATADocs\template.md](https://github.com/Microsoft/ATADocs-pr/blob/066bef2bcf2658b5be8e64c5ecd0ed406be4adbf/ATADocs/template.md) | HandedOffSuccess | [Details](#209dae9a43681e32238bf90c3d500d9db4d0ae2e321)
+ [ATADocs\template.md](https://github.com/Microsoft/ATADocs-pr/blob/ce02b7f6d36035af66b8fe3380dc61dd1ec1caac/ATADocs/template.md) | HandedOffSuccess | [Details](#c4b9eb1106ff6ce6bf516cad665d49df5a5ee2d2321)
 
 ## Item Details
-##### <a name='209dae9a43681e32238bf90c3d500d9db4d0ae2e321'></a> Source: [ATADocs\template.md](https://github.com/Microsoft/ATADocs-pr/blob/066bef2bcf2658b5be8e64c5ecd0ed406be4adbf/ATADocs/template.md)
+##### <a name='c4b9eb1106ff6ce6bf516cad665d49df5a5ee2d2321'></a> Source: [ATADocs\template.md](https://github.com/Microsoft/ATADocs-pr/blob/ce02b7f6d36035af66b8fe3380dc61dd1ec1caac/ATADocs/template.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [template.5bdcb9582e246047532a26eee5064c933576bdd2.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/29c83ae88f302b1055032c27dc022cf8ff1ba6bf/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/template.5bdcb9582e246047532a26eee5064c933576bdd2.fr-fr.xlf)
-* Handoff Datetime: 2016-05-20 00:05:33
+* Handoff File: [template.5bdcb9582e246047532a26eee5064c933576bdd2.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/c5d39818a18a7c960defe58418fc0b52772c7e7b/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/template.5bdcb9582e246047532a26eee5064c933576bdd2.fr-fr.xlf)
+* Handoff Datetime: 2016-05-20 00:22:30
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
