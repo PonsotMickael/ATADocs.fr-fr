@@ -1,39 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [ATADocs\DeployUse\configure-event-collection.md](https://github.com/Microsoft/ATADocs-pr/blob/5407cb4b98860b41b2c6f062cf47504f6d001b23/ATADocs/DeployUse/configure-event-collection.md) | InSyncHandedBackSuccess | [Details](#c7b315dfa77713f20f35d675079429119baa65089)
- [ATADocs\Understand\whats-new-version-1.5.md](https://github.com/Microsoft/ATADocs-pr/blob/283d8383a6e7674e3a9fba06f3a8f73dcb038ea2/ATADocs/Understand/whats-new-version-1.5.md) | InSyncHandedBackSuccess | [Details](#c2a4a52abfdc6a7cb88f4aff57821feeb9b85c4a525)
 
 ## Item Details
-##### <a name='c7b315dfa77713f20f35d675079429119baa65089'></a> Source: [ATADocs\DeployUse\configure-event-collection.md](https://github.com/Microsoft/ATADocs-pr/blob/5407cb4b98860b41b2c6f062cf47504f6d001b23/ATADocs/DeployUse/configure-event-collection.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [ATADocs\DeployUse\configure-event-collection.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/0799b302c237bb7002f26593521767956f17cf09/ATADocs/DeployUse/configure-event-collection.md)
-* Handoff File: [configure-event-collection.76d422c1eaa8e04689ce451d7a7bb84d119fda52.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/53be9fdf8950b2f34cd745bff7468065ec784b9f/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/configure-event-collection.76d422c1eaa8e04689ce451d7a7bb84d119fda52.fr-fr.xlf)
-* Handoff Datetime: 2016-05-05 17:54:20
-* Handoff Reason: Include
-* Archive File: [configure-event-collection.76d422c1eaa8e04689ce451d7a7bb84d119fda52.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/fbf5c32a1b0b1da75dd0af5e912b42afaca78655/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/archive/configure-event-collection.76d422c1eaa8e04689ce451d7a7bb84d119fda52.fr-fr.xlf)
-* Archive Datetime: 2016-05-20 00:31:41
-* Handback File: [configure-event-collection.76d422c1eaa8e04689ce451d7a7bb84d119fda52.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/04d144b78220163776b97bd3993d913f5b38d509/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/configure-event-collection.76d422c1eaa8e04689ce451d7a7bb84d119fda52.fr-fr.xlf)
-* Handback Datetime: 2016-05-26 15:49:34
-* [Back to Top](#report-top)
-
-##### <a name='c2a4a52abfdc6a7cb88f4aff57821feeb9b85c4a525'></a> Source: [ATADocs\Understand\whats-new-version-1.5.md](https://github.com/Microsoft/ATADocs-pr/blob/283d8383a6e7674e3a9fba06f3a8f73dcb038ea2/ATADocs/Understand/whats-new-version-1.5.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [ATADocs\Understand\whats-new-version-1.5.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/0799b302c237bb7002f26593521767956f17cf09/ATADocs/Understand/whats-new-version-1.5.md)
-* Handoff File: [whats-new-version-1.5.ba2a9f8802670c08962d29771ae25ae6abc76477.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/4346aaf88b2797077d16129ebec53216d38b5af2/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/whats-new-version-1.5.ba2a9f8802670c08962d29771ae25ae6abc76477.fr-fr.xlf)
-* Handoff Datetime: 2016-05-18 17:34:48
-* Handoff Reason: Include
-* Archive File: [whats-new-version-1.5.ba2a9f8802670c08962d29771ae25ae6abc76477.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/fbf5c32a1b0b1da75dd0af5e912b42afaca78655/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/archive/whats-new-version-1.5.ba2a9f8802670c08962d29771ae25ae6abc76477.fr-fr.xlf)
-* Archive Datetime: 2016-05-20 00:31:41
-* Handback File: [whats-new-version-1.5.ba2a9f8802670c08962d29771ae25ae6abc76477.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/04d144b78220163776b97bd3993d913f5b38d509/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/whats-new-version-1.5.ba2a9f8802670c08962d29771ae25ae6abc76477.fr-fr.xlf)
-* Handback Datetime: 2016-05-26 15:49:34
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
