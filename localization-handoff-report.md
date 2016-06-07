@@ -1,11 +1,29 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [ATADocs\DeployUse\setting-ata-alerts.md](https://github.com/Microsoft/ATADocs-pr/blob/3e8caf366d7121e83e5726375c8e1eb9a49b0b12/ATADocs/DeployUse/setting-ata-alerts.md) | OutofSyncHandedBackSuccess | [Details](#6fc3c03e0933203437b0b3885f0b9f19539fed05120)
 
 ## Item Details
+##### <a name='6fc3c03e0933203437b0b3885f0b9f19539fed05120'></a> Source: [ATADocs\DeployUse\setting-ata-alerts.md](https://github.com/Microsoft/ATADocs-pr/blob/3e8caf366d7121e83e5726375c8e1eb9a49b0b12/ATADocs/DeployUse/setting-ata-alerts.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/d7efa58da742bd61c881d392d3c1a7eee68dad39/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.fr-fr.xlf)
+* Handoff Datetime: 2016-06-07 23:04:13
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [ATADocs\DeployUse\setting-ata-alerts.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/d77425f4aec6992c743b630be26762214256f2f2/ATADocs/DeployUse/setting-ata-alerts.md)
+* Current Handback File: [setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/b13d69f8c1b80f409d86f9103e0b0ec008026761/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.fr-fr.xlf)
+* Current Handback Datetime: 2016-04-28 18:50:59
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
