@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Mise à jour d’ATA vers la version 1.6 : guide de migration | Microsoft Advanced Threat Analytics
-description: Procédures pour mettre à jour ATA vers la version 1.6
+title: "Mise à jour d’ATA vers la version 1.6 : guide de migration | Microsoft Advanced Threat Analytics"
+description: "Procédures pour mettre à jour ATA vers la version 1.6"
 keywords:
 author: rkarlin
 manager: stevenpo
