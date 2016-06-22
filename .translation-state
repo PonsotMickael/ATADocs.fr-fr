@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "4f2cdf452f6027c1354fb4442099cced817d0a11",
-  "LastTranslatedCommit": "b18ba1fdf19e32d057be5a05d3fb08465e503b25",
+  "LastTranslatedCommit": "86926d01ed992e89267bbb8b3eb2415e6a47f6db",
   "Items": {
     "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6": {
       "FileHash": "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6",
@@ -23074,14 +23074,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": "b16954fab2bd8a2449afa95d5cb66144eece7343",
+      "TargetFileCommit": "86926d01ed992e89267bbb8b3eb2415e6a47f6db",
       "TargetFilePath": "ATADocs\\Understand\\ata-update-1.6-migration-guide.md",
       "HandbackFilePath": "ol-handback\\Microsoft\\ATADocs-pr.fr-fr\\master\\ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.fr-fr.xlf",
-      "HandbackFileCommit": "47b0a38e0b90fa3df1f7a5e081a7fdaecbaefba7",
-      "HandbackDateTime": "2016-06-07T23:52:09.7262411Z",
+      "HandbackFileCommit": "40c8a41782d41fdbb03701923efd61b69c669687",
+      "HandbackDateTime": "2016-06-22T08:48:57.7628848Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "2016-06-07T23:52:09.7262411Z",
+      "UpdatedDateTime": "2016-06-22T08:48:57.7628848Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.fr-fr\\master\\archive\\ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.fr-fr.xlf",
       "ArchiveFileCommit": "55db42d61a40fa2942a6398afac5f91e60783531",
       "ArchiveFileDateTime": "2016-06-02T02:35:58.8394599Z",

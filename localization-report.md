@@ -5944,9 +5944,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [ATADocs\Understand\ata-update-1.6-migration-guide.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/b16954fab2bd8a2449afa95d5cb66144eece7343/ATADocs/Understand/ata-update-1.6-migration-guide.md)
-* Current Handback File: [ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/47b0a38e0b90fa3df1f7a5e081a7fdaecbaefba7/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.fr-fr.xlf)
-* Current Handback Datetime: 2016-06-07 23:52:09
+* Current Target File: [ATADocs\Understand\ata-update-1.6-migration-guide.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/86926d01ed992e89267bbb8b3eb2415e6a47f6db/ATADocs/Understand/ata-update-1.6-migration-guide.md)
+* Current Handback File: [ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/40c8a41782d41fdbb03701923efd61b69c669687/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.fr-fr.xlf)
+* Current Handback Datetime: 2016-06-22 08:48:57
 * [Back to Top](#report-top)
 
 ##### <a name='bcbcb9074aa7bee2e889f125212417f9cae1e3d1426'></a> Source: [ATADocs\Understand\docfx.json](https://github.com/Microsoft/ATADocs-pr/blob/4f2cdf452f6027c1354fb4442099cced817d0a11/ATADocs/Understand/docfx.json)
