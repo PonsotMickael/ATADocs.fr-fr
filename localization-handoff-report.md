@@ -1,27 +1,43 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [ATADocs\DeployUse\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/df98a12a558a1247a5f4c4c9950ade55aad69f7b/ATADocs/DeployUse/TOC.md) | OutofSyncHandedBackSuccess | [Details](#7007fdee78565b7e29f15b05d430887c5d9bd268122)
+ [ATADocs\PlanDesign\ata-capacity-planning.md](https://github.com/Microsoft/ATADocs-pr/blob/44979cede97b3901bd2882c73a76a93d549168fb/ATADocs/PlanDesign/ata-capacity-planning.md) | OutofSyncHandedBackSuccess | [Details](#663c023e895dea81a0079d6bb445a1a87cb0917b224)
+ [ATADocs\PlanDesign\ata-prerequisites.md](https://github.com/Microsoft/ATADocs-pr/blob/44979cede97b3901bd2882c73a76a93d549168fb/ATADocs/PlanDesign/ata-prerequisites.md) | OutofSyncHandedBackSuccess | [Details](#072eba12d14940aaa01824a8ec3899e721484f49225)
 
 ## Item Details
-##### <a name='7007fdee78565b7e29f15b05d430887c5d9bd268122'></a> Source: [ATADocs\DeployUse\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/df98a12a558a1247a5f4c4c9950ade55aad69f7b/ATADocs/DeployUse/TOC.md)
+##### <a name='663c023e895dea81a0079d6bb445a1a87cb0917b224'></a> Source: [ATADocs\PlanDesign\ata-capacity-planning.md](https://github.com/Microsoft/ATADocs-pr/blob/44979cede97b3901bd2882c73a76a93d549168fb/ATADocs/PlanDesign/ata-capacity-planning.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/df8e03dce219fd6f0b5608cfa11e88e50f450494/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.fr-fr.xlf)
-* Handoff Datetime: 2016-06-21 17:46:47
+* Handoff File: [ata-capacity-planning.7dded00c6a8ca713a36c240993fc56aa469bbb4b.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/d92c7a8605ac1475c04fb14077c845ecb2f76845/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ata-capacity-planning.7dded00c6a8ca713a36c240993fc56aa469bbb4b.fr-fr.xlf)
+* Handoff Datetime: 2016-06-22 16:48:11
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [ATADocs\DeployUse\TOC.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/74955d535a27afcb37692e5237f18d1aa65927eb/ATADocs/DeployUse/TOC.md)
-* Current Handback File: [TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/87e77d86278cdaf1f62c888160b635a89bea10f1/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.fr-fr.xlf)
-* Current Handback Datetime: 2016-06-02 23:35:35
+* Current Target File: [ATADocs\PlanDesign\ata-capacity-planning.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/d77425f4aec6992c743b630be26762214256f2f2/ATADocs/PlanDesign/ata-capacity-planning.md)
+* Current Handback File: [ata-capacity-planning.7dded00c6a8ca713a36c240993fc56aa469bbb4b.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/b13d69f8c1b80f409d86f9103e0b0ec008026761/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/ata-capacity-planning.7dded00c6a8ca713a36c240993fc56aa469bbb4b.fr-fr.xlf)
+* Current Handback Datetime: 2016-04-28 18:50:59
+* [Back to Top](#report-top)
+
+##### <a name='072eba12d14940aaa01824a8ec3899e721484f49225'></a> Source: [ATADocs\PlanDesign\ata-prerequisites.md](https://github.com/Microsoft/ATADocs-pr/blob/44979cede97b3901bd2882c73a76a93d549168fb/ATADocs/PlanDesign/ata-prerequisites.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/d92c7a8605ac1475c04fb14077c845ecb2f76845/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.fr-fr.xlf)
+* Handoff Datetime: 2016-06-22 16:48:11
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [ATADocs\PlanDesign\ata-prerequisites.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/b16954fab2bd8a2449afa95d5cb66144eece7343/ATADocs/PlanDesign/ata-prerequisites.md)
+* Current Handback File: [ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/47b0a38e0b90fa3df1f7a5e081a7fdaecbaefba7/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.fr-fr.xlf)
+* Current Handback Datetime: 2016-06-07 23:52:09
 * [Back to Top](#report-top)
 
 
