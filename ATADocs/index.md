@@ -2,8 +2,8 @@
 asset_id: c4a97980-6e19-4d10-bf69-f0b338266efa
 layout: HubPage
 
-title: Advanced Threat Analytics Documentation
-description: Technical documentation for Microsoft Intune - Mobile Device and Application Management
+title: Documentation Advanced Threat Analytics
+description: Documentation technique pour Microsoft Intune - Gestion des applications et des appareils mobiles
 keywords: Advanced Threat Analytics Documentation, ATA documentation
 author: msstevenpo
 manager: stevenpo
@@ -16,48 +16,42 @@ ms.suite: ems
 ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
 
 ---
-# Microsoft Advanced Threat Analytics Documentation
+# Documentation Microsoft Advanced Threat Analytics
 <article id="main">
     <section id="hero-content">
-      <h1>Microsoft Advanced Threat Analytics Documentation</h1>
-      <h2>Learn how to deploy and manage Microsoft Advanced Threat Analytics (ATA), an on-premises product that helps IT security professionals protect their enterprise from advanced targeted attacks.</h2>
-      <h3>New to ATA? <a href="https://www.microsoft.com/en-us/server-cloud/products/advanced-threat-analytics/" target="_blank">Visit our product page &rarr;</a></h3>
+      <h1>Documentation Microsoft Advanced Threat Analytics</h1>
+      <h2>Apprenez à déployer et à gérer Microsoft Advanced Threat Analytics (ATA), solution locale qui permet aux professionnels de la sécurité informatique de protéger leur entreprise contre les attaques ciblées avancées.</h2>
+      <h3>Vous débutez avec ATA ? <a href="https://www.microsoft.com/en-us/server-cloud/products/advanced-threat-analytics/" target="_blank">Visitez la page de présentation de nos produits &rarr;</a></h3>
     </section>
-
     <aside class="alert section-border">
-      <p>Ready to get hands-on?</p>
+      <p>Prêt à vous lancer ?</p>
       <ol class="action-list">
-        <li><a href="https://www.microsoft.com/en-us/evalcenter/evaluate-microsoft-advanced-threat-analytics" target="_blank" class="button-bordered button-translucent">Try Now</a></li>
+        <li><a href="https://www.microsoft.com/en-us/evalcenter/evaluate-microsoft-advanced-threat-analytics" target="_blank" class="button-bordered button-translucent">Essayer maintenant</a></li>
       </ol>
     </aside>
-
     <section id="featured" class="container">
-      <h2 class="section-heading"><span class="icon icon-warning"></span> Featured Content</h2>
+      <h2 class="section-heading"><span class="icon icon-warning"></span> Contenu proposé</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/advanced-threat-analytics/understand-explore/what-is-ata">What is Advanced Threat Analytics?</a></li>
-          <li><a href="/advanced-threat-analytics/deploy-use/install-ata">Installing ATA</a></li>
+          <li><a href="/advanced-threat-analytics/understand-explore/what-is-ata">Qu’est-ce qu’Advanced Threat Analytics ?</a></li>
+          <li><a href="/advanced-threat-analytics/understand-explore/ata-technical-faq">Forum aux questions</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="/advanced-threat-analytics/deploy-use/manage-telemetry-settings">Managing ATA telemetry</a></li>
-        </ul>
+          <li><a href="/advanced-threat-analytics/plan-design/ata-architecture">Architecture ATA</a></li>
+          <li><a href="/advanced-threat-analytics/plan-design/ata-capacity-planning">Planification de la capacité ATA</a></li>        </ul>
       </div>
     </section>
-
     <div id="journeys">
       <section class="container">
-    
         <ul class="journeys-list">
-
           <li class="journey-step">
-
             <header class="journey-step-header row">
               <a href="/advanced-threat-analytics/understand-explore/what-is-ata">
                 <div class="title column-third">
                   <span class="step-number">1</span>
-                  <p>Understand &amp; Explore</p>
+                  <p>Comprendre &amp; explorer</p>
                 </div>
-                <p class="description column-two-thirds">Learn the high-level concepts, features, and capabilities of Microsoft Advanced Threat Analytics.
+                <p class="description column-two-thirds">Découvrez les principaux concepts, fonctionnalités et capacités de Microsoft Advanced Threat Analytics.
                 </p>
               </a>
             </header>
@@ -65,127 +59,121 @@ ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
               <ul class="row">
                 <li class="column-third">
                   <a href="/advanced-threat-analytics/understand-explore/what-is-ata">
-                    <h3>What is ATA?</h3>
-                    <p>Learn how ATA helps IT security professionals protect their enterprise from advanced targeted attacks.</p>
+                    <h3>Qu’est-ce qu’ATA ?</h3>
+                    <p>Découvrez comment ATA aide les professionnels de la sécurité informatique à protéger leur entreprise contre les attaques ciblées avancées.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/advanced-threat-analytics/understand-explore/ata-architecture">
-                    <h3>ATA architecture</h3>
-                    <p>Learn about the components of ATA and their functions.</p>
+                  <a href="/advanced-threat-analytics/understand-explore/ata-technical-faq">
+                    <h3>Forum aux questions</h3>
+                    <p>Obtenez des réponses à toutes vos questions techniques sur ATA.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/advanced-threat-analytics/understand-explore/working-with-ata-console">
-                    <h3>The ATA console</h3>
-                    <p>Become familiar with the ATA console before you jump in.</p>
+                  <a href="/advanced-threat-analytics/understand-explore/ata-release-notes">
+                    <h3>Notes de publication ATA</h3>
+                    <p>Consultez la liste de ce qui a été mis à jour dans la version la plus récente, ainsi que les problèmes connus et les guides de migration.</p>
                   </a>
                 </li>
               </ul>
             </section>
           </li>
-
           <li class="journey-step">
-
             <header class="journey-step-header row">
-              <a href="/advanced-threat-analytics/plan-design/ata-capacity-planning">
+              <a href="/advanced-threat-analytics/plan-design/ata-architecture">
                 <div class="title column-third">
                   <span class="step-number">2</span>
-                  <p>Plan &amp; Design</p>
+                  <p>Planifier &amp; concevoir</p>
                 </div>
-                <p class="description column-two-thirds">Plan and design ATA.
+                <p class="description column-two-thirds">Planifiez et concevez ATA.
                 </p>
               </a>
             </header>
-
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
+                  <a href="/advanced-threat-analytics/plan-design/ata-architecture">
+                    <h3>Architecture ATA</h3>
+                    <p>Comprenez l’aspect que doit présenter votre architecture pour prendre en charge ATA.</p>
+                  </a>
+                </li>
+                <li class="column-third">
                   <a href="/advanced-threat-analytics/plan-design/ata-capacity-planning">
-                    <h3>Planning your ATA capacity</h3>
-                    <p>Determine how many ATA servers will be needed to support your network.</p>
+                    <h3>Planification des capacités</h3>
+                    <p>Déterminez le nombre de serveurs ATA nécessaires pour prendre en charge votre réseau.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/advanced-threat-analytics/plan-design/ata-prerequisites">
-                    <h3>ATA prerequisites</h3>
-                    <p>Determine whether your environment is ready for ATA.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/advanced-threat-analytics/plan-design/configure-port-mirroring">
-                    <h3>Configuring port mirroring</h3>
-                    <p>Configure ATA to alert you when it detects a suspicious activity.</p>
+                    <h3>Conditions préalables au déploiement d’ATA<h3>
+                    <p>Planifiez la configuration requise pour réussir le déploiement d’ATA dans votre environnement</p>
                   </a>
                 </li>
               </ul>
             </section>
-
           </li>
-
           <li class="journey-step">
             <header class="journey-step-header row">
-              <a href="/advanced-threat-analytics/deploy-use/install-ata">
+              <a href="/advanced-threat-analytics/deploy-use/preinstall-ata">
                 <div class="title column-third">
                   <span class="step-number">3</span>
-                  <p>Deploy &amp; Use</p>
+                  <p>Déployer &amp; utiliser</p>
                 </div>
-                <p class="description column-two-thirds">Deploy and use ATA.
+                <p class="description column-two-thirds">Déployer et utiliser ATA.
                 </p>
               </a>
             </header>
-
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
+                  <a href="/advanced-threat-analytics/deploy-use/preinstall-ata">
+                    <h3>Avant d’installer ATA</h3>
+                    <p>Procédez comme suit avant d’installer ATA.</p>
+                  </a>
+                </li>
+                <li class="column-third">
                   <a href="/advanced-threat-analytics/deploy-use/install-ata">
-                    <h3>Installing ATA</h3>
-                    <p>Follow the detailed step-by-step installation guide.</p>
+                    <h3>Installer ATA</h3>
+                    <p>Suivez le guide d’installation pas à pas.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/advanced-threat-analytics/deploy-use/modifying-ata-configuration">
-                    <h3>Changing ATA configuration</h3>
-                    <p>Update or change your configuration after initial installation and deployment of ATA.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/advanced-threat-analytics/deploy-use/setting-ata-alerts">
-                    <h3>Setting ATA alerts</h3>
-                    <p>Configure ATA to alert you when it detects suspicious activities.</p>
+                  <a href="/advanced-threat-analytics/deploy-use/operate-ata">
+                    <h3>Exploiter ATA</h3>
+                    <p>Modifiez la configuration d’ATA et effectuez des opérations de surveillance quotidiennes à l’aide d’ATA.</p>
                   </a>
                 </li>
             </section>
           </li>
           <li class="journey-step">
             <header class="journey-step-header row">
-              <a href="/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs">
+              <a href="/advanced-threat-analytics/troubleshoot/troubleshooting-ata-known-errors">
                 <div class="title column-third">
                   <span class="step-number">4</span>
-                  <p>Troubleshoot</p>
+                  <p>Dépannage</p>
                 </div>
-                <p class="description column-two-thirds">Troubleshoot ATA.
+                <p class="description column-two-thirds">Dépannez ATA.
                 </p>
               </a>
             </header>
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
+                  <a href="/advanced-threat-analytics/troubleshoot/troubleshooting-ata-known-errors">
+                    <h3>Résoudre les erreurs connues liées à ATA</h3>
+                    <p>Passez en revue les étapes pour résoudre les erreurs connues liées à ATA.</p>
+                  </a>
+                </li>
+                <li class="column-third">
                   <a href="/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs">
-                    <h3>Use logs to troubleshoot</h3>
-                    <p>Understand what each component of ATA is doing at any giving point in time.</p>
+                    <h3>Utiliser les journaux pour résoudre les problèmes</h3>
+                    <p>Comprenez ce que fait chaque composant ATA à un moment donné.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-perf-counters">
-                    <h3>Use performance counters to troubleshoot</h3>
-                    <p>Understand how well each component of ATA is performing.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-ata-database">
-                    <h3>Use the database to troubleshoot</h3>
-                    <p>Understand how to perform advanced tasks and troubleshooting.</p>
+                    <h3>Utiliser les compteurs de performances pour résoudre les problèmes</h3>
+                    <p>Comprenez les performances d’exécution de chaque composant ATA.</p>
                   </a>
                 </li>
               </ul>
@@ -195,9 +183,14 @@ ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
       </section>
     </div>
     <aside class="alert alert-social">
-      <p>Keep up with news about ATA</p>
+      <p>Restez informé au sujet d’ATA</p>
       <ol class="action-list">
-        <li><a href="http://blogs.technet.com/b/ata/" target="_blank" class="button-bordered button-translucent">official Microsoft ATA blog</a></li>
+        <li><a href="http://blogs.technet.com/b/ata/" target="_blank" class="button-bordered button-translucent">Blog officiel de Microsoft ATA</a></li>
       </ol>
     </aside>
 </article>
+
+
+<!--HONumber=May16_HO3-->
+
+
