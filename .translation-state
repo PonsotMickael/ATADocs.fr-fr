@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "9dd9cf214d51f5750a8e91b86824784304b86e64",
-  "LastTranslatedCommit": "0d9c1c7b7d8bdc564ae42395a58d4c02ccf81b15",
+  "LastTranslatedCommit": "273a6bea2a103e63d55f604f2e9e6bcdb4cebed9",
   "Items": {
     "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6": {
       "FileHash": "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6",
@@ -23471,9 +23471,17 @@
       "TargetFilePath": null,
       "HandbackFilePath": null,
       "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
-      "HandbackException": null,
-      "HandbackFailureTimes": 0,
+      "HandbackDateTime": "2016-06-30T00:48:07.7497817Z",
+      "HandbackException": {
+        "internal_error_code": "handback_transform_failed",
+        "internal_error_message": "Handback file: C:\\ol\\master\\EM.handback\\ae6fe6\\ol-handback\\Microsoft\\ATADocs-pr.fr-fr\\master\\ata-technical-faq.938a847200169f6a473355460f812f482e6eb068.fr-fr.xlf failed.",
+        "internal_error_retriable": false,
+        "exception_message": "Fail to transform from xliff to markdown with invalid metadata: Invalid yaml header when parsing:\n# required metadata\n\ntitle: Forum Aux Questions : ATA | Microsoft Advanced Threat Analytics\ndescription: Fournit des réponses aux questions les plus fréquentes sur ATA\nkeywords:\nauthor: rkarlin\nmanager: stevenpo\nms.date: 04/28/2016\nms.topic: article\nms.prod: identity-ata\nms.service: advanced-threat-analytics\nms.technology: security\nms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852\n\n# optional metadata\n\n#ROBOTS:\n#audience:\n#ms.devlang:\nms.reviewer: bennyl\nms.suite: ems\n#ms.tgt_pltfrm:\n#ms.custom:\nError message: (Line: 3, Col: 28, Idx: 48) - (Line: 3, Col: 28, Idx: 48): Mapping values are not allowed in this context.",
+        "exception_type": "System.IO.InvalidDataException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Transformer.TransformerClient.XliffToMarkdown(Stream xliffStream, Stream skeletonStream, Stream targetStream) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Transformer.Core\\TransformerClient.cs:line 119\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.XliffToMarkdown(String skeletonFile, String xliffFile, String mdfile, Boolean useJavascriptTransformer) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 92\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass5_0.<GetHandbackFiles>b__0(String file) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandbackCore.cs:line 413",
+        "extended_information": null
+      },
+      "HandbackFailureTimes": 1,
       "UpdatedDateTime": "0001-01-01T00:00:00",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.fr-fr\\master\\archive\\ata-technical-faq.938a847200169f6a473355460f812f482e6eb068.fr-fr.xlf",
       "ArchiveFileCommit": "fbf5c32a1b0b1da75dd0af5e912b42afaca78655",

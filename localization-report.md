@@ -5,10 +5,10 @@
  -------- | ----- 
  Total Files | 529
 [ Handoff Failed Files ](#handoff-failed-list)| 0
-[ Handoff Success Files ](#handoff-success-list)| 250
+[ Handoff Success Files ](#handoff-success-list)| 249
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 1
-[ Handback Failed Files ](#handback-failed-list)| 0
+[ Handback Failed Files ](#handback-failed-list)| 1
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 38
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
 [ Ignored Files ](#ignored-list)| 240
@@ -218,7 +218,6 @@
  [ATADocs\Troubleshoot\media\wef_http.png](https://github.com/Microsoft/ATADocs-pr/blob/9dd9cf214d51f5750a8e91b86824784304b86e64/ATADocs/Troubleshoot/media/wef_http.png) | HandedOffSuccess | [Details](#d4d9ac890b80451972fbe194c30577b0655be0cd415)
  [ATADocs\Troubleshoot\media\wef_subscription-prop.png](https://github.com/Microsoft/ATADocs-pr/blob/9dd9cf214d51f5750a8e91b86824784304b86e64/ATADocs/Troubleshoot/media/wef_subscription-prop.png) | HandedOffSuccess | [Details](#9b8562feafa85324c9a6e3e9020450535df920c6416)
  [ATADocs\Understand\ata-release-notes.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/Understand/ata-release-notes.md) | HandedOffSuccess | [Details](#2f35fd0267299a17f54a123d239d965a4b40b26d422)
- [ATADocs\Understand\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/Understand/ata-technical-faq.md) | HandedOffSuccess | [Details](#bb6bc2bf0d0df3112ecfdb33c8e9d6e41f183145423)
  [ATADocs\Understand\ata-update-1.5-migration-guide.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/Understand/ata-update-1.5-migration-guide.md) | HandedOffSuccess | [Details](#87293e71e053e2d7a962a5b7362b92e5df677c77424)
  [ATADocs\Understand\media\150x150.png](https://github.com/Microsoft/ATADocs-pr/blob/9dd9cf214d51f5750a8e91b86824784304b86e64/ATADocs/Understand/media/150x150.png) | HandedOffSuccess | [Details](#84421bf7f4ba657e685239fb27f4798a46485f71428)
  [ATADocs\Understand\media\ATA_center_fullpartial.png](https://github.com/Microsoft/ATADocs-pr/blob/9dd9cf214d51f5750a8e91b86824784304b86e64/ATADocs/Understand/media/ATA_center_fullpartial.png) | HandedOffSuccess | [Details](#6349405da0cc5437d4907c1b377ebe448ef3810d495)
@@ -277,6 +276,9 @@
  [ATADocs\template.md](https://github.com/Microsoft/ATADocs-pr/blob/ce02b7f6d36035af66b8fe3380dc61dd1ec1caac/ATADocs/template.md) | ArchivedSuccess | [Details](#c4b9eb1106ff6ce6bf516cad665d49df5a5ee2d2320)
 
 ## <a name='handback-failed-list'></a> Handback Failed File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [ATADocs\Understand\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/Understand/ata-technical-faq.md) | HandedBackFailed | [Details](#bb6bc2bf0d0df3112ecfdb33c8e9d6e41f183145423)
 
 ## <a name='outofsync-handback-success-list'></a> Out Of Sync Handback Success File List
  Source File | Status | Details 
@@ -5926,7 +5928,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='bb6bc2bf0d0df3112ecfdb33c8e9d6e41f183145423'></a> Source: [ATADocs\Understand\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/Understand/ata-technical-faq.md)
-* Status: HandedOffSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [ata-technical-faq.938a847200169f6a473355460f812f482e6eb068.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/23c2bed7cbcef1a7d5df410f3178df2ce2c0f8d4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ata-technical-faq.938a847200169f6a473355460f812f482e6eb068.fr-fr.xlf)
 * Handoff Datetime: 2016-06-27 15:51:02
