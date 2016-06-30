@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [ATADocs\Understand\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/Understand/ata-technical-faq.md) | HandedBackFailed | [Details](#bb6bc2bf0d0df3112ecfdb33c8e9d6e41f183145423)
 
 ## Item Details
-##### <a name='bb6bc2bf0d0df3112ecfdb33c8e9d6e41f183145423'></a> Source: [ATADocs\Understand\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/Understand/ata-technical-faq.md)
-* Status: HandedBackFailed
-* Target File: 
-* Handoff File: [ata-technical-faq.938a847200169f6a473355460f812f482e6eb068.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/23c2bed7cbcef1a7d5df410f3178df2ce2c0f8d4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ata-technical-faq.938a847200169f6a473355460f812f482e6eb068.fr-fr.xlf)
-* Handoff Datetime: 2016-06-27 15:51:02
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
