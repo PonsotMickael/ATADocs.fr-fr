@@ -1,45 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [ATADocs\DeployUse\operate-ata.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/operate-ata.md) | OutofSyncHandedBackSuccess | [Details](#44c755364a08b2aab9739b5a219e01f21d441b07118)
- [ATADocs\PlanDesign\ata-architecture.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/PlanDesign/ata-architecture.md) | OutofSyncHandedBackSuccess | [Details](#2d753060f30cbcc7d16959355b86d64fdaa2ecd8223)
 
 ## Item Details
-##### <a name='44c755364a08b2aab9739b5a219e01f21d441b07118'></a> Source: [ATADocs\DeployUse\operate-ata.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/operate-ata.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [operate-ata.9fb8be5f31f851cb5a21bb843445e9b55c735f08.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/23c2bed7cbcef1a7d5df410f3178df2ce2c0f8d4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/operate-ata.9fb8be5f31f851cb5a21bb843445e9b55c735f08.fr-fr.xlf)
-* Handoff Datetime: 2016-06-27 15:51:02
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [ATADocs\DeployUse\operate-ata.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/3a121c7342cd01a8e9c7fe9fc2f11a644e266db8/ATADocs/DeployUse/operate-ata.md)
-* Current Handback File: [operate-ata.9fb8be5f31f851cb5a21bb843445e9b55c735f08.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/c5b8a51e563187310b15bca54ba5680d68c6edf1/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/operate-ata.9fb8be5f31f851cb5a21bb843445e9b55c735f08.fr-fr.xlf)
-* Current Handback Datetime: 2016-06-30 07:46:27
-* [Back to Top](#report-top)
-
-##### <a name='2d753060f30cbcc7d16959355b86d64fdaa2ecd8223'></a> Source: [ATADocs\PlanDesign\ata-architecture.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/PlanDesign/ata-architecture.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [ata-architecture.f3061a537234611f48c7c71f24b061804ad31b68.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/23c2bed7cbcef1a7d5df410f3178df2ce2c0f8d4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ata-architecture.f3061a537234611f48c7c71f24b061804ad31b68.fr-fr.xlf)
-* Handoff Datetime: 2016-06-27 15:51:02
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [ATADocs\PlanDesign\ata-architecture.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/3a121c7342cd01a8e9c7fe9fc2f11a644e266db8/ATADocs/PlanDesign/ata-architecture.md)
-* Current Handback File: [ata-architecture.f3061a537234611f48c7c71f24b061804ad31b68.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/c5b8a51e563187310b15bca54ba5680d68c6edf1/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/ata-architecture.f3061a537234611f48c7c71f24b061804ad31b68.fr-fr.xlf)
-* Current Handback Datetime: 2016-06-30 07:46:27
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
