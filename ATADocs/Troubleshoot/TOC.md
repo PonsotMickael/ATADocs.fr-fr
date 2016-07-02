@@ -8,6 +8,6 @@
 ## [Résolution des problèmes à l’aide de la base de données](troubleshooting-ata-using-ata-database.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO5-->
 
 
