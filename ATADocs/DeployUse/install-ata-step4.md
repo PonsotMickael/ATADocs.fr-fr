@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Installer ATA - Étape 4 | Microsoft Advanced Threat Analytics
-description: La quatrième étape de la procédure d’installation d’ATA vous aide à installer la passerelle ATA.
-keywords:
+title: "Installer ATA - Étape 4 | Microsoft Advanced Threat Analytics"
+description: "La quatrième étape de la procédure d’installation d’ATA vous aide à installer la passerelle ATA."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,27 +10,25 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d6e7d7bef97bfc4ffde07959dd9256f0319d685f
+ms.openlocfilehash: f12e43a6918c0c02bb59e4a093720a805b7dbcfc
+
 
 ---
 
 # Installer ATA - Étape 4
 
 >[!div class="step-by-step"]
-[« Étape 3](install-ata-step3.md)
+[« Étape 3](install-ata-step3.md)
 [Étape 5 »](install-ata-step5.md)
 
 ## Étape 4. Installer la passerelle ATA
-Avant d’installer la passerelle ATA, vérifiez que la mise en miroir des ports est correctement configurée et que la passerelle ATA peut voir le trafic à destination et en provenance des contrôleurs de domaine. Pour plus d’informations, consultez [Valider la mise en miroir des ports](/advanced-threat-analytics/plandesign/validate-port-mirroring).
+
+Avant d’installer la passerelle ATA sur un serveur dédié, vérifiez que la mise en miroir des ports est correctement configurée et que la passerelle ATA peut voir le trafic à destination et en provenance des contrôleurs de domaine. Pour plus d’informations, consultez [Valider la mise en miroir des ports](validate-port-mirroring.md).
+
 
 > [!IMPORTANT]
 > Vérifiez que le correctif [KB2919355](http://support.microsoft.com/kb/2919355/) a été installé.  Exécutez l’applet de commande PowerShell suivante pour vérifier si le correctif est installé :
@@ -41,9 +37,11 @@ Avant d’installer la passerelle ATA, vérifiez que la mise en miroir des ports
 
 Effectuez les opérations suivantes sur le serveur de la passerelle ATA.
 
-1.  Extrayez les fichiers à partir du fichier zip.
+1.  Extrayez les fichiers à partir du fichier zip. 
+> [!NOTE] 
+> L’installation directe à partir du fichier zip est vouée à l’échec.
 
-2.  À partir d’une invite de commandes avec élévation de privilèges, exécutez Microsoft ATA Gateway Setup.exe, puis suivez les instructions de l’Assistant Installation.
+2.  À partir d’une invite de commandes avec élévation de privilèges, exécutez **Microsoft ATA Gateway Setup.exe**, puis suivez les instructions de l’Assistant Installation.
 
 3.  Dans la page **Bienvenue**, sélectionnez votre langue, puis cliquez sur **Suivant**.
 
@@ -61,7 +59,7 @@ Effectuez les opérations suivantes sur le serveur de la passerelle ATA.
     -   KB3047154
 
         > [!IMPORTANT]
-        > -   N’installez pas le correctif KB3047154 sur un hôte de virtualisation, car cela pourrait nuire au bon fonctionnement de la mise en miroir des ports.
+        > -   N’installez pas le correctif KB 3047154 sur un hôte de virtualisation (l’hôte responsable de la virtualisation, que vous pouvez exécuter sur une machine virtuelle), car cela pourrait nuire au bon fonctionnement de la mise en miroir des ports. 
         > -   N’installez pas l’Analyseur de message, Wireshark ou tout autre logiciel de capture réseau sur la passerelle ATA. Si vous souhaitez capturer le trafic réseau, installez et utilisez le Moniteur réseau Microsoft version 3.4.
 
     -   Service de passerelle ATA
@@ -70,20 +68,22 @@ Effectuez les opérations suivantes sur le serveur de la passerelle ATA.
 
     -   Jeu d’éléments de collecte de données de l’Analyseur de performances personnalisé
 
-5.  Une fois l’installation terminée, cliquez sur **Lancer** pour ouvrir votre navigateur et vous connecter à la console ATA.
+5.  Une fois l’installation terminée : pour la passerelle ATA, cliquez sur **Lancer** pour ouvrir votre navigateur et vous connecter à la console ATA ; pour la passerelle légère ATA, cliquez sur **Terminer**.
 
 
 >[!div class="step-by-step"]
-[« Étape 3](install-ata-step3.md)
+[« Étape 3](install-ata-step3.md)
 [Étape 5 »](install-ata-step5.md)
 
 ## Voir aussi
 
-- [Pour obtenir de l’aide, consultez notre forum.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
-- [Configurer la collecte d’événements](/advanced-threat-analytics/plandesign/configure-event-collection)
-- [Conditions préalables au déploiement d’ATA](/advanced-threat-analytics/plandesign/ata-prerequisites)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Configurer la collecte d’événements](configure-event-collection.md)
+- [Conditions préalables au déploiement d’ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
-<!--HONumber=Apr16_HO2-->
+
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Modifier la configuration ATA - Certificat du centre ATA | Microsoft Advanced Threat Analytics
-description: Décrit le processus en deux étapes pour renouveler ou remplacer le certificat dans le magasin de l’ordinateur local sur le serveur du centre ATA. 
-keywords:
+description: "Décrit le processus en deux étapes pour renouveler ou remplacer le certificat dans le magasin de l’ordinateur local sur le serveur du centre ATA."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: c8855287-de3b-4cdd-be8f-2128f48a6f27
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 0cfeb67e663489d7264c88aafe04e77fcb63377f
+
 
 ---
 
@@ -58,6 +52,10 @@ Si vos certificats expirent et doivent être renouvelés ou remplacés après av
 6.  Vous voyez une notification du nombre de passerelles ATA synchronisées avec la configuration la plus récente.
 
 7.  Une fois que toutes les passerelles ATA sont synchronisées, cliquez sur **Activer** pour activer le nouveau certificat.
+    >[!IMPORTANT]
+    >Avant d’activer la nouvelle configuration, vérifiez que toutes les passerelles ATA sont synchronisées avec la configuration la plus récente. L’activation de la nouvelle configuration avant que toutes les passerelles ATA ne soient synchronisées peut engendrer un dysfonctionnement de la passerelle ATA. Si une des passerelles ATA n’est pas synchronisée, vous obtenez cette erreur quand vous cliquez sur Activer :
+    >
+    >    ![Erreur de synchronisation de la passerelle ATA](media/ataGW-not-synced.png)
 
 8.  Vérifiez que toutes les passerelles ATA sont en mesure de synchroniser leur configuration après l’activation de la modification.
 
@@ -66,11 +64,12 @@ Si vos certificats expirent et doivent être renouvelés ou remplacés après av
 [Adresse IP de la console ATA »](modifying-ata-config-consoleip.md)
 
 ## Voir aussi
-- [Utilisation de la console ATA](/advanced-threat-analytics/understand/working-with-ata-console)
+- [Utilisation de la console ATA](working-with-ata-console.md)
 - [Installer ATA](install-ata.md)
-- [Pour obtenir de l’aide, consultez notre forum.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

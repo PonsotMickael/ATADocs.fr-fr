@@ -12,8 +12,9 @@ ms.technology: security
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.sourcegitcommit: 224f3c29c4a3e0ff62b9b3f42837c648dc838e3c
-ms.openlocfilehash: b7f4b07796ee90d45b40bc00b749b56c5f11c83b
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 2d753060f30cbcc7d16959355b86d64fdaa2ecd8
 
 
 ---
@@ -175,11 +176,11 @@ Pour améliorer la détection des attaques Pass-the-Hash, force brute et Honey T
 - [Planification de la capacité ATA](ata-capacity-planning.md)
 - [Configurer la collecte d’événements](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [Configuration du transfert d’événements Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
-- [Consultez le forum ATA](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 
