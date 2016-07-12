@@ -1,39 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [ATADocs\DeployUse\ata-health-center.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/ata-health-center.md) | InSyncHandedBackSuccess | [Details](#b38b96f0b2e6061e97d8b46163a04d23107094916)
- [ATADocs\DeployUse\modifying-ata-config-consoleip.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/modifying-ata-config-consoleip.md) | InSyncHandedBackSuccess | [Details](#ee775e66de1a56b5270b0d32c7d5ca33d4d7980c113)
 
 ## Item Details
-##### <a name='b38b96f0b2e6061e97d8b46163a04d23107094916'></a> Source: [ATADocs\DeployUse\ata-health-center.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/ata-health-center.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [ATADocs\DeployUse\ata-health-center.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/7f4d294951d0c2f7526bd135ca2e22333d978e43/ATADocs/DeployUse/ata-health-center.md)
-* Handoff File: [ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/23c2bed7cbcef1a7d5df410f3178df2ce2c0f8d4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.fr-fr.xlf)
-* Handoff Datetime: 2016-06-27 15:51:02
-* Handoff Reason: Include
-* Archive File: [ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/95ca25ad05e1b1be3ef475fe4dd447d6584f2094/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/archive/ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.fr-fr.xlf)
-* Archive Datetime: 2016-07-02 01:33:36
-* Handback File: [ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/e90a36bb31d07ef6991d7b69f808b25c4f72ea35/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.fr-fr.xlf)
-* Handback Datetime: 2016-07-12 01:56:42
-* [Back to Top](#report-top)
-
-##### <a name='ee775e66de1a56b5270b0d32c7d5ca33d4d7980c113'></a> Source: [ATADocs\DeployUse\modifying-ata-config-consoleip.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/modifying-ata-config-consoleip.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [ATADocs\DeployUse\modifying-ata-config-consoleip.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/7f4d294951d0c2f7526bd135ca2e22333d978e43/ATADocs/DeployUse/modifying-ata-config-consoleip.md)
-* Handoff File: [modifying-ata-config-consoleip.3efd9bc263cf92cf6d203c60252021215caa7ec0.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/23c2bed7cbcef1a7d5df410f3178df2ce2c0f8d4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/modifying-ata-config-consoleip.3efd9bc263cf92cf6d203c60252021215caa7ec0.fr-fr.xlf)
-* Handoff Datetime: 2016-06-27 15:51:02
-* Handoff Reason: Include
-* Archive File: [modifying-ata-config-consoleip.3efd9bc263cf92cf6d203c60252021215caa7ec0.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/95ca25ad05e1b1be3ef475fe4dd447d6584f2094/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/archive/modifying-ata-config-consoleip.3efd9bc263cf92cf6d203c60252021215caa7ec0.fr-fr.xlf)
-* Archive Datetime: 2016-07-02 01:33:36
-* Handback File: [modifying-ata-config-consoleip.3efd9bc263cf92cf6d203c60252021215caa7ec0.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/e90a36bb31d07ef6991d7b69f808b25c4f72ea35/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/modifying-ata-config-consoleip.3efd9bc263cf92cf6d203c60252021215caa7ec0.fr-fr.xlf)
-* Handback Datetime: 2016-07-12 01:56:42
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
