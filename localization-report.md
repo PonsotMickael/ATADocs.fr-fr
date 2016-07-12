@@ -9,8 +9,8 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 3
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 4
-[ In Sync Handback Files ](#insync-handback-success-list)| 42
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 2
+[ In Sync Handback Files ](#insync-handback-success-list)| 44
 [ Ignored Files ](#ignored-list)| 239
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -272,8 +272,6 @@
 ## <a name='outofsync-handback-success-list'></a> Out Of Sync Handback Success File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [ATADocs\DeployUse\ata-health-center.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/ata-health-center.md) | OutofSyncHandedBackSuccess | [Details](#b38b96f0b2e6061e97d8b46163a04d23107094916)
- [ATADocs\DeployUse\modifying-ata-config-consoleip.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/modifying-ata-config-consoleip.md) | OutofSyncHandedBackSuccess | [Details](#ee775e66de1a56b5270b0d32c7d5ca33d4d7980c113)
  [ATADocs\DeployUse\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/df98a12a558a1247a5f4c4c9950ade55aad69f7b/ATADocs/DeployUse/TOC.md) | OutofSyncHandedBackSuccess | [Details](#7007fdee78565b7e29f15b05d430887c5d9bd268121)
  [ATADocs\index.md](https://github.com/Microsoft/ATADocs-pr/blob/b74b0ee3c9a7b1e60064705998fb8e3ebe2f5c8e/ATADocs/index.md) | OutofSyncHandedBackSuccess | [Details](#ba6b3362da29d3a375fbb4dc56adcd64fa2b44ad220)
 
@@ -281,6 +279,7 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [ATADocs\DeployUse\ata-database-management.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/ata-database-management.md) | InSyncHandedBackSuccess | [Details](#6c0e2abe43da5351568cf8db4e6ffe6fa919d8355)
+ [ATADocs\DeployUse\ata-health-center.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/ata-health-center.md) | InSyncHandedBackSuccess | [Details](#b38b96f0b2e6061e97d8b46163a04d23107094916)
  [ATADocs\DeployUse\ata-silent-installation.md](https://github.com/Microsoft/ATADocs-pr/blob/d6e7d7bef97bfc4ffde07959dd9256f0319d685f/ATADocs/DeployUse/ata-silent-installation.md) | InSyncHandedBackSuccess | [Details](#2e51bc9cac43ff90000ca74cccd158e119cc6ec07)
  [ATADocs\DeployUse\configure-event-collection.md](https://github.com/Microsoft/ATADocs-pr/blob/d6e7d7bef97bfc4ffde07959dd9256f0319d685f/ATADocs/DeployUse/configure-event-collection.md) | InSyncHandedBackSuccess | [Details](#17f30cbe478a868f3b6887bf48d80849346241918)
  [ATADocs\DeployUse\configure-port-mirroring.md](https://github.com/Microsoft/ATADocs-pr/blob/121f54e6d8da8220f1827188039e9a89c038f7ac/ATADocs/DeployUse/configure-port-mirroring.md) | InSyncHandedBackSuccess | [Details](#a4befce4003951b18a5e1a9d8bc1addf9e7ea2559)
@@ -294,6 +293,7 @@
  [ATADocs\DeployUse\manage-telemetry-settings.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/manage-telemetry-settings.md) | InSyncHandedBackSuccess | [Details](#c6b3196f6093b909e8d97f9a9ac230e35807eb7218)
  [ATADocs\DeployUse\modifying-ata-config-centercert.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/modifying-ata-config-centercert.md) | InSyncHandedBackSuccess | [Details](#0cfeb67e663489d7264c88aafe04e77fcb63377f111)
  [ATADocs\DeployUse\modifying-ata-config-centerip.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/modifying-ata-config-centerip.md) | InSyncHandedBackSuccess | [Details](#373eb5722a5450bca87cf66933990249286138ab112)
+ [ATADocs\DeployUse\modifying-ata-config-consoleip.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/modifying-ata-config-consoleip.md) | InSyncHandedBackSuccess | [Details](#ee775e66de1a56b5270b0d32c7d5ca33d4d7980c113)
  [ATADocs\DeployUse\modifying-ata-config-dcpassword.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/modifying-ata-config-dcpassword.md) | InSyncHandedBackSuccess | [Details](#df1dbed75ad0c88de5a6c51d2e5d7e521a2577c4114)
  [ATADocs\DeployUse\modifying-ata-config-iiscert.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/modifying-ata-config-iiscert.md) | InSyncHandedBackSuccess | [Details](#07888a46e26a7f87dc3b6424d97aba0813b43d02115)
  [ATADocs\DeployUse\modifying-ata-configuration.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/modifying-ata-configuration.md) | InSyncHandedBackSuccess | [Details](#02598258f063e65767164334c995ab87d7ad0270116)
@@ -640,18 +640,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='b38b96f0b2e6061e97d8b46163a04d23107094916'></a> Source: [ATADocs\DeployUse\ata-health-center.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/ata-health-center.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [ATADocs\DeployUse\ata-health-center.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/cc5aa121edf13991a6a66821a3b2749198979c2a/ATADocs/DeployUse/ata-health-center.md)
 * Handoff File: [ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/23c2bed7cbcef1a7d5df410f3178df2ce2c0f8d4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.fr-fr.xlf)
 * Handoff Datetime: 2016-06-27 15:51:02
 * Handoff Reason: Include
 * Archive File: [ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/95ca25ad05e1b1be3ef475fe4dd447d6584f2094/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/archive/ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.fr-fr.xlf)
 * Archive Datetime: 2016-07-02 01:33:36
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [ATADocs\DeployUse\ata-health-center.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/d77425f4aec6992c743b630be26762214256f2f2/ATADocs/DeployUse/ata-health-center.md)
-* Current Handback File: [ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/b13d69f8c1b80f409d86f9103e0b0ec008026761/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.fr-fr.xlf)
-* Current Handback Datetime: 2016-04-28 18:50:59
+* Handback File: [ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/e57e503b973712f0d25f2d3d0252a2e02f89a221/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.fr-fr.xlf)
+* Handback Datetime: 2016-07-12 01:31:46
 * [Back to Top](#report-top)
 
 ##### <a name='2e51bc9cac43ff90000ca74cccd158e119cc6ec07'></a> Source: [ATADocs\DeployUse\ata-silent-installation.md](https://github.com/Microsoft/ATADocs-pr/blob/d6e7d7bef97bfc4ffde07959dd9256f0319d685f/ATADocs/DeployUse/ata-silent-installation.md)
@@ -1975,18 +1972,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='ee775e66de1a56b5270b0d32c7d5ca33d4d7980c113'></a> Source: [ATADocs\DeployUse\modifying-ata-config-consoleip.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/modifying-ata-config-consoleip.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [ATADocs\DeployUse\modifying-ata-config-consoleip.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/cc5aa121edf13991a6a66821a3b2749198979c2a/ATADocs/DeployUse/modifying-ata-config-consoleip.md)
 * Handoff File: [modifying-ata-config-consoleip.3efd9bc263cf92cf6d203c60252021215caa7ec0.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/23c2bed7cbcef1a7d5df410f3178df2ce2c0f8d4/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/modifying-ata-config-consoleip.3efd9bc263cf92cf6d203c60252021215caa7ec0.fr-fr.xlf)
 * Handoff Datetime: 2016-06-27 15:51:02
 * Handoff Reason: Include
 * Archive File: [modifying-ata-config-consoleip.3efd9bc263cf92cf6d203c60252021215caa7ec0.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/95ca25ad05e1b1be3ef475fe4dd447d6584f2094/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/archive/modifying-ata-config-consoleip.3efd9bc263cf92cf6d203c60252021215caa7ec0.fr-fr.xlf)
 * Archive Datetime: 2016-07-02 01:33:36
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [ATADocs\DeployUse\modifying-ata-config-consoleip.md](https://github.com/Microsoft/ATADocs-pr.fr-fr/blob/d77425f4aec6992c743b630be26762214256f2f2/ATADocs/DeployUse/modifying-ata-config-consoleip.md)
-* Current Handback File: [modifying-ata-config-consoleip.3efd9bc263cf92cf6d203c60252021215caa7ec0.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/b13d69f8c1b80f409d86f9103e0b0ec008026761/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/modifying-ata-config-consoleip.3efd9bc263cf92cf6d203c60252021215caa7ec0.fr-fr.xlf)
-* Current Handback Datetime: 2016-04-28 18:50:59
+* Handback File: [modifying-ata-config-consoleip.3efd9bc263cf92cf6d203c60252021215caa7ec0.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/e57e503b973712f0d25f2d3d0252a2e02f89a221/ol-handback/Microsoft/ATADocs-pr.fr-fr/master/modifying-ata-config-consoleip.3efd9bc263cf92cf6d203c60252021215caa7ec0.fr-fr.xlf)
+* Handback Datetime: 2016-07-12 01:31:46
 * [Back to Top](#report-top)
 
 ##### <a name='df1dbed75ad0c88de5a6c51d2e5d7e521a2577c4114'></a> Source: [ATADocs\DeployUse\modifying-ata-config-dcpassword.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/DeployUse/modifying-ata-config-dcpassword.md)
