@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "9846208c1b977695ea4e4b0c4011013e577a33cc",
-  "LastTranslatedCommit": "155b329587e50b071fcb00b55474365ec0373041",
+  "LastTranslatedCommit": "c118bb66d4374070f76d8d3169a2d8f570af4300",
   "Items": {
     "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6": {
       "FileHash": "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6",
@@ -23759,9 +23759,17 @@
       "TargetFilePath": "ATADocs\\Understand\\ata-update-1.6-migration-guide.md",
       "HandbackFilePath": "ol-handback\\Microsoft\\ATADocs-pr.fr-fr\\master\\ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.fr-fr.xlf",
       "HandbackFileCommit": "40c8a41782d41fdbb03701923efd61b69c669687",
-      "HandbackDateTime": "2016-06-22T08:48:57.7628848Z",
-      "HandbackException": null,
-      "HandbackFailureTimes": 0,
+      "HandbackDateTime": "2016-07-15T15:45:44.8888842Z",
+      "HandbackException": {
+        "internal_error_code": "handback_transform_failed",
+        "internal_error_message": "Handback file: C:\\ol\\master\\EM.handback\\ae6fe6\\ol-handback\\Microsoft\\ATADocs-pr.fr-fr\\master\\ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.fr-fr.xlf failed.",
+        "internal_error_retriable": false,
+        "exception_message": "Fail to transform from xliff to markdown with invalid metadata: Invalid yaml header when parsing:\n# required metadata\n\ntitle: Mise à jour d’ATA vers la version 1.6 : guide de migration | Microsoft Advanced Threat Analytics\ndescription: Procédures pour mettre à jour ATA vers la version 1.6\nkeywords:\nauthor: rkarlin\nmanager: stevenpo\nms.date: 04/28/2016\nms.topic: article\nms.prod: identity-ata\nms.service: advanced-threat-analytics\nms.technology: security\nms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980\n\n# optional metadata\n\n#ROBOTS:\n#audience:\n#ms.devlang:\nms.reviewer: bennyl\nms.suite: ems\n#ms.tgt_pltfrm:\n#ms.custom:\nError message: (Line: 3, Col: 46, Idx: 66) - (Line: 3, Col: 46, Idx: 66): Mapping values are not allowed in this context.",
+        "exception_type": "System.IO.InvalidDataException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Transformer.TransformerClient.XliffToMarkdown(Stream xliffStream, Stream skeletonStream, Stream targetStream) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Transformer.Core\\TransformerClient.cs:line 119\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.XliffToMarkdown(String skeletonFile, String xliffFile, String mdfile, Boolean useJavascriptTransformer) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 92\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass5_0.<GetHandbackFiles>b__0(String file) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandbackCore.cs:line 406",
+        "extended_information": null
+      },
+      "HandbackFailureTimes": 1,
       "UpdatedDateTime": "2016-06-22T08:48:57.7628848Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.fr-fr\\master\\archive\\ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.fr-fr.xlf",
       "ArchiveFileCommit": "55db42d61a40fa2942a6398afac5f91e60783531",
