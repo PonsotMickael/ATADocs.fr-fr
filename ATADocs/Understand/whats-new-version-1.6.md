@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Nouveautés d’ATA version 1.6 | Microsoft Advanced Threat Analytics
-description: Répertorie les nouveautés d’ATA version 1.6, ainsi que les problèmes connus
-keywords:
+title: "Nouveautés d’ATA version 1.6 | Microsoft Advanced Threat Analytics"
+description: "Répertorie les nouveautés d’ATA version 1.6, ainsi que les problèmes connus"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: eee114a62e1854b5821c0ca4a6f276e9dcd121c8
+
 
 ---
 
@@ -147,10 +141,11 @@ Le nouveau moteur de détection repose sur la technologie de détection inline. 
 Au cas où vous auriez besoin des données par la suite, la procédure de mise à jour d’ATA les exporte dans un fichier JSON à l’emplacement `<Center Installation Path>\Migration`.
 
 ## Voir aussi
-[Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+[Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 [Mise à jour d’ATA vers la version 1.6 : guide de migration](ata-update-1.6-migration-guide.md)
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

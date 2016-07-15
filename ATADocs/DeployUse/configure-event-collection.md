@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Configurer la collecte d’événements | Microsoft Advanced Threat Analytics
-description: Décrit les options de configuration disponibles pour collecter des événements avec ATA
-keywords:
+title: "Configurer la collecte d’événements | Microsoft Advanced Threat Analytics"
+description: "Décrit les options de configuration disponibles pour collecter des événements avec ATA"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,21 +10,17 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d6e7d7bef97bfc4ffde07959dd9256f0319d685f
+ms.openlocfilehash: 17f30cbe478a868f3b6887bf48d8084934624191
+
 
 ---
 
 # Configurer la collecte d’événements
-Pour améliorer les fonctionnalités de détection, ATA a besoin de l’ID de journal des événements Windows 4776. Les événements peuvent être transférés à la passerelle ATA de deux manières : soit en configurant la passerelle ATA de façon à écouter les événements SIEM, soit en [configurant le transfert d’événements Windows](#configuring-windows-event-forwarding)..
+Pour améliorer les fonctionnalités de détection, ATA a besoin de l’ID de journal des événements Windows 4776. Les événements peuvent être transférés à la passerelle ATA de deux manières : soit en configurant la passerelle ATA de façon à écouter les événements SIEM, soit en [configurant le transfert d’événements Windows](#configuring-windows-event-forwarding).
 
 ## Collecte d’événements
 Outre la collecte et l’analyse du trafic réseau à destination et en provenance des contrôleurs de domaine, ATA peut utiliser l’événement Windows 4776 pour optimiser la détection d’attaques Pass-the-Hash. Vous pouvez soit recevoir cet événement de votre serveur SIEM, soit définir le transfert d’événements Windows à partir de votre contrôleur de domaine. Les événements collectés fournissent à ATA des informations supplémentaires qui ne sont pas accessibles par le biais du trafic réseau du contrôleur de domaine.
@@ -49,7 +43,7 @@ Si vous n’utilisez pas un serveur SIEM/Syslog, vous pouvez configurer vos cont
 
 ## Configuration de la passerelle ATA pour écouter les événements SIEM
 
-1.  Dans Configuration de la passerelle ATA, activez le protocole **UDP de l’écouteur Syslog**..
+1.  Dans Configuration de la passerelle ATA, activez le protocole **UDP de l’écouteur Syslog**.
 
     Définissez l’adresse IP d’écoute comme indiqué dans l’image ci-dessous. Le port par défaut est 514.
 
@@ -158,7 +152,7 @@ Code d’erreur : 0x0
 -   L’ordre n’est pas important pour les paires clé=valeur.
 
 #### QRadar
-QRadar permet la collecte d’événements par le biais d’un agent. Si les données sont recueillies au moyen d’un agent, le format de l’heure est collecté sans les données des millisecondes. ATA nécessitant les données des millisecondes, vous devez définir QRadar pour qu’il utilise la collecte d’événements de Windows sans agent. Pour plus d’informations, consultez [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar: Agentless Windows Events Collection using the MSRPC Protocol") (QRadar : Collecte des événements Windows sans agent à l’aide du protocole MSRPC)..
+QRadar permet la collecte d’événements par le biais d’un agent. Si les données sont recueillies au moyen d’un agent, le format de l’heure est collecté sans les données des millisecondes. ATA nécessitant les données des millisecondes, vous devez définir QRadar pour qu’il utilise la collecte d’événements de Windows sans agent. Pour plus d’informations, consultez [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar: Agentless Windows Events Collection using the MSRPC Protocol (Collecte des événements Windows sans agent à l’aide du protocole MSRPC)").
 
     <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
 
@@ -176,7 +170,8 @@ Message représente le texte de l’événement Windows d’origine.
 
 Assurez-vous que \t sépare les paires clé/valeur.
 
->[!NOTE] Utiliser WinCollect pour la collecte des événements Windows n’est pas pris en charge.
+>[!NOTE] 
+> Utiliser WinCollect pour la collecte des événements Windows n’est pas pris en charge.
 
 ## Configuration du transfert d’événements Windows
 Si vous ne disposez pas d’un serveur SIEM, vous pouvez configurer vos contrôleurs de domaine de façon à transférer directement l’événement Windows associé à l’ID 4776 vers l’une de vos passerelles ATA.
@@ -195,34 +190,34 @@ wecutil qc
 ![wef_ad, lecteurs des journaux d’événements](media/wef_ad_eventlogreaders.png)<br>
 Cliquez dessus avec le bouton droit, puis sélectionnez **Propriétés**. Sous l’onglet **Membres**, ajoutez le compte d’ordinateur de chaque passerelle ATA.
 ![wef_ad, menu contextuel du lecteur des journaux d’événements](media/wef_ad-event-log-reader-popup.png)
-6.  Sur la passerelle ATA, ouvrez l’Observateur d’événements et cliquez avec le bouton droit sur **Abonnements**, puis sélectionnez **Créer un abonnement**..  
+6.  Sur la passerelle ATA, ouvrez l’Observateur d’événements et cliquez avec le bouton droit sur **Abonnements**, puis sélectionnez **Créer un abonnement**.  
 
     a. Sous **Type d’abonnement et ordinateurs sources**, cliquez sur **Sélectionner les ordinateurs**. Ajoutez les contrôleurs de domaine, puis testez la connectivité.
     ![wef, propriétés de l’abonnement](media/wef_subscription-prop.png)
 
-    b. Sous **Événements à recueillir**, cliquez sur **Sélectionner des événements**. Sélectionnez **Par journal**, puis faites défiler la liste pour sélectionner **Sécurité**. Ensuite, dans **Inclut/exclut des ID d’événements**, tapez **4776**..<br>
+    b. Sous **Événements à recueillir**, cliquez sur **Sélectionner des événements**. Sélectionnez **Par journal**, puis faites défiler la liste pour sélectionner **Sécurité**. Ensuite, dans **Inclut/exclut des ID d’événements**, tapez **4776**.<br>
     ![wef_4776](media/wef_4776.png)
 
-    c. Sous **Modifier un compte d’utilisateur ou configurer les paramètres avancés**, cliquez sur **Avancé**..
-En regard de **Protocole**, sélectionnez **HTTP**, puis affectez au **Port** la valeur **5985**..<br>
+    c. Sous **Modifier un compte d’utilisateur ou configurer les paramètres avancés**, cliquez sur **Avancé**.
+En regard de **Protocole**, sélectionnez **HTTP**, puis affectez au **Port** la valeur **5985**.<br>
     ![wef_http](media/wef_http.png)
 
 7.  [Facultatif] Si vous souhaitez un intervalle d’interrogation plus court, définissez une pulsation d’abonnement de 5 secondes.
-    wecutil ss <CollectionName>/cm:custom
-    wecutil ss <CollectionName> /hi:5000
+    wecutil ss <CollectionName>/cm:custom wecutil ss <CollectionName> /hi:5000
 
-8. Dans la page de configuration de la passerelle ATA, activez **Collecte des transferts d’événements Windows**..
+8. Dans la page de configuration de la passerelle ATA, activez **Collecte des transferts d’événements Windows**.
 
 > [!NOTE]
-Quand vous activez ce paramètre, la passerelle ATA recherche dans le journal des événements transférés les événements Windows qui ont été transférés vers la passerelle à partir des contrôleurs de domaine.
+> Quand vous activez ce paramètre, la passerelle ATA recherche dans le journal des événements transférés les événements Windows qui ont été transférés vers la passerelle à partir des contrôleurs de domaine.
 
-Pour plus d’informations, consultez [Configurer les ordinateurs pour transférer et collecter des événements](https://technet.microsoft.com/en-us/library/cc748890).
+Pour plus d’informations, consultez [Configurer les ordinateurs pour transférer et recueillir les événements](https://technet.microsoft.com/library/cc748890).
 
 ## Voir aussi
 - [Installer ATA](install-ata.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

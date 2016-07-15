@@ -1,12 +1,17 @@
 # [Comprendre et explorer](what-is-ata.md)
 ## [Qu’est-ce que Microsoft Advanced Threat Analytics ?](what-is-ata.md)
-## [Architecture ATA](ata-architecture.md)
-## [Utilisation de la console ATA](working-with-ata-console.md)
-# [Planification et conception](/advanced-threat-analytics/plandesign/ata-capacity-planning)
-# [Déployer et utiliser](/advanced-threat-analytics/deployuse/install-ata)
+## [Notes de publication ATA](ata-release-notes.md)
+### [Nouveautés d’ATA version 1.6](whats-new-version-1.6.md)
+#### [Mise à jour vers ATA 1.6 - Guide de migration](ata-update-1.6-migration-guide.md)
+### [Nouveautés d’ATA version 1.5](whats-new-version-1.5.md)
+#### [Mise à jour vers ATA 1.5 - Guide de migration](ata-update-1.5-migration-guide.md)
+### [Nouveautés d’ATA version 1.4](whats-new-version-1.4.md)
+## [Forum aux questions](ata-technical-faq.md)
+# [Planification et conception](/advanced-threat-analytics/plan-design/ata-capacity-planning)
+# [Déployer et utiliser](/advanced-threat-analytics/deploy-use/install-ata)
 # [Dépannage](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=Jun16_HO5-->
 
 
