@@ -1,52 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 3
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [ATADocs\Understand\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/a5c7163bc7b1989672e587bfb4fa6a65cd4e3751/ATADocs/Understand/ata-technical-faq.md) | HandedBackFailed | [Details](#1121dd059d70dfcf900db1e71c62c58c1080ad06421)
- [ATADocs\Understand\ata-update-1.5-migration-guide.md](https://github.com/Microsoft/ATADocs-pr/blob/a5c7163bc7b1989672e587bfb4fa6a65cd4e3751/ATADocs/Understand/ata-update-1.5-migration-guide.md) | HandedBackFailed | [Details](#4c82467c8830b1e602edbe720cd6107664e433b9422)
- [ATADocs\Understand\ata-update-1.6-migration-guide.md](https://github.com/Microsoft/ATADocs-pr/blob/a5c7163bc7b1989672e587bfb4fa6a65cd4e3751/ATADocs/Understand/ata-update-1.6-migration-guide.md) | HandedBackFailed | [Details](#f56f575bf4a11b09b04108d16c0d4df1c3fcad9b423)
 
 ## Item Details
-##### <a name='1121dd059d70dfcf900db1e71c62c58c1080ad06421'></a> Source: [ATADocs\Understand\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/a5c7163bc7b1989672e587bfb4fa6a65cd4e3751/ATADocs/Understand/ata-technical-faq.md)
-* Status: HandedBackFailed
-* Target File: 
-* Handoff File: [ata-technical-faq.938a847200169f6a473355460f812f482e6eb068.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/01b754b188a78302077c8cd90edf2387c972c3da/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ata-technical-faq.938a847200169f6a473355460f812f482e6eb068.fr-fr.xlf)
-* Handoff Datetime: 2016-07-14 22:24:31
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='4c82467c8830b1e602edbe720cd6107664e433b9422'></a> Source: [ATADocs\Understand\ata-update-1.5-migration-guide.md](https://github.com/Microsoft/ATADocs-pr/blob/a5c7163bc7b1989672e587bfb4fa6a65cd4e3751/ATADocs/Understand/ata-update-1.5-migration-guide.md)
-* Status: HandedBackFailed
-* Target File: 
-* Handoff File: [ata-update-1.5-migration-guide.67f35ccbe2b021acd909074d85359f05c4a001cb.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/01b754b188a78302077c8cd90edf2387c972c3da/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ata-update-1.5-migration-guide.67f35ccbe2b021acd909074d85359f05c4a001cb.fr-fr.xlf)
-* Handoff Datetime: 2016-07-14 22:24:31
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='f56f575bf4a11b09b04108d16c0d4df1c3fcad9b423'></a> Source: [ATADocs\Understand\ata-update-1.6-migration-guide.md](https://github.com/Microsoft/ATADocs-pr/blob/a5c7163bc7b1989672e587bfb4fa6a65cd4e3751/ATADocs/Understand/ata-update-1.6-migration-guide.md)
-* Status: HandedBackFailed
-* Target File: 
-* Handoff File: [ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/01b754b188a78302077c8cd90edf2387c972c3da/ol-handoff/Microsoft/ATADocs-pr.fr-fr/master/ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.fr-fr.xlf)
-* Handoff Datetime: 2016-07-14 22:24:31
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
