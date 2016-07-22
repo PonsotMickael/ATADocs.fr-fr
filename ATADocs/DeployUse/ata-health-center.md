@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Centre d’intégrité ATA | Microsoft Advanced Threat Analytics
-description: Le centre d’intégrité ATA vous permet de vérifier le bon fonctionnement du service ATA et vous avertit en cas de problèmes potentiels.
-keywords:
+title: "Centre d’intégrité ATA | Microsoft Advanced Threat Analytics"
+description: "Le centre d’intégrité ATA vous permet de vérifier le bon fonctionnement du service ATA et vous avertit en cas de problèmes potentiels."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: b38b96f0b2e6061e97d8b46163a04d2310709491
+
 
 ---
 
@@ -31,10 +25,10 @@ Le centre d’intégrité ATA vous permet d’évaluer les performances de votre
 ## Utilisation du centre d’intégrité ATA
 Si un problème se produit, le centre d’intégrité ATA déclenche une alerte en affichant un point rouge au-dessus de l’icône du centre d’intégrité dans la barre de menus.
 
-![Image du point rouge dans le centre d’intégrité ATA](media/ATA-Health-Center-Alert-red-dot.png)
+![Barre d’outils du point rouge dans le centre d’intégrité ATA](media/ATA-Health-Center-Alert-red-dot.png)
 
 ### Gestion de l’intégrité d’ATA
-Pour vérifier l’intégrité globale de votre système, cliquez sur l’icône du centre d’intégrité dans la barre de menus. ![Icône du centre d’intégrité ATA](media/ATA-red-dot.png).
+Pour vérifier l’intégrité globale de votre système, cliquez sur l’icône du centre d’intégrité dans la barre de menus. ![Icône du centre d’intégrité ATA](media/ATA-red-dot.png)
 
 -   Pour gérer les alertes actives, vous pouvez leur affecter l’état **Résolue(s)** ou **Rejetée(s)**. Dans l’alerte, cliquez sur **Ouvrir**, puis faites défiler la liste jusqu’à **Résolue(s)** ou **Rejetée(s)**.
 
@@ -47,9 +41,11 @@ Pour vérifier l’intégrité globale de votre système, cliquez sur l’icône
 ## Voir aussi
 - [Gestion des paramètres de la détection ATA](working-with-detection-settings.md)
 - [Gestion des activités suspectes](working-with-suspicious-activities.md)
-- [Pour obtenir de l’aide, consultez notre forum.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Consultez le forum ATA](https://social.technet.microsoft.com/Forums/security/
+- home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

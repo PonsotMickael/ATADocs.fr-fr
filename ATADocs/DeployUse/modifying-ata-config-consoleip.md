@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Modifier la configuration ATA - Adresse IP de la console ATA | Microsoft Advanced Threat Analytics
-description: Décrit comment modifier l’adresse IP de la console ATA, utilisée pour créer un raccourci vers la console ATA sur les passerelles ATA.
-keywords:
+title: "Modifier la configuration ATA - Adresse IP de la console ATA | Microsoft Advanced Threat Analytics"
+description: "Décrit comment modifier l’adresse IP de la console ATA, utilisée pour créer un raccourci vers la console ATA sur les passerelles ATA."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 50118465-df34-4e04-b0cc-48808b6a96b1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: ee775e66de1a56b5270b0d32c7d5ca33d4d7980c
+
 
 ---
 
@@ -29,14 +23,14 @@ ms.suite: ems
 
 >[!div class="step-by-step"]
 [« Certificat du centre ATA](modifying-ata-config-centercert.md)
-[Certificat IIS »](modifying-ata-config-iiscert.md)
+[Certificat IIS »](modifying-ata-config-iiscert.md)
 
 ## Modifier l’adresse IP de la console ATA
 Par défaut, l’URL de la console ATA est l’adresse IP sélectionnée pour l’adresse IP de la console ATA lors de l’installation du centre ATA.
 
 L’URL est utilisée dans les scénarios suivants :
 
--   Installation de passerelles ATA : quand une passerelle ATA est installée, elle s’inscrit auprès du centre ATA. Ce processus d’inscription est effectué par la connexion à la console ATA. Si vous entrez un nom de domaine complet pour l’URL de la console ATA, vous devez vous assurer que la passerelle ATA peut résoudre le nom de domaine complet en adresse IP à laquelle la console ATA est liée dans IIS. En outre, l’URL est utilisée pour créer le raccourci vers la console ATA sur les passerelles ATA.
+-   Installation de passerelles ATA : quand une passerelle ATA est installée, elle s’inscrit auprès du centre ATA. Ce processus d’inscription est effectué par la connexion à la console ATA. Si vous entrez un nom de domaine complet pour l’URL de la console ATA, vous devez vérifier que la passerelle ATA peut résoudre le nom de domaine complet en adresse IP à laquelle la console ATA est liée dans IIS. En outre, l’URL est utilisée pour créer le raccourci vers la console ATA sur les passerelles ATA.
 
 -   Alertes : quand ATA envoie une alerte par courrier électronique ou SIEM, il inclut un lien vers l’activité suspecte. La partie hôte du lien est le paramètre URL de la console ATA.
 
@@ -79,15 +73,16 @@ Si vous devez modifier l’adresse IP utilisée par IIS pour la console ATA, pr
 
 >[!div class="step-by-step"]
 [« Certificat du centre ATA](modifying-ata-config-centercert.md)
-[Certificat IIS »](modifying-ata-config-iiscert.md)
+[Certificat IIS »](modifying-ata-config-iiscert.md)
 
 
 ## Voir aussi
-- [Utilisation de la console ATA](/advanced-threat-analytics/understand/working-with-ata-console)
+- [Utilisation de la console ATA](working-with-ata-console.md)
 - [Installer ATA](install-ata.md)
-- [Pour obtenir de l’aide, consultez notre forum.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
