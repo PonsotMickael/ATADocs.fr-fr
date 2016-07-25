@@ -1,5 +1,5 @@
 ---
-title: "Gestion des paramètres de la détection ATA | Microsoft Advanced Threat Analytics"
+title: "Utilisation des paramètres de détection ATA | Microsoft ATA"
 description: "Décrit comment configurer une liste d’adresses IP et de sous-réseaux ayant des circonstances inhabituelles et qui doivent donc être gérés différemment des autres entités de votre réseau."
 keywords: 
 author: rkarlin
@@ -13,8 +13,8 @@ ms.assetid: f4f2ae30-4849-4a4f-8f6d-bfe99a32c746
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
-ms.openlocfilehash: 3840a5f7abdd496ad245a3f1c2589ad1855fddb5
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: 3575bb9489cae181f7902be23c680830203fafe7
 
 
 ---
@@ -42,6 +42,6 @@ Vous pouvez exclure des adresses IP des détections suivantes. Si vous ajoutez 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

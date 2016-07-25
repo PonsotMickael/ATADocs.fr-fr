@@ -1,5 +1,5 @@
 ---
-title: "Qu’est-ce que Microsoft Advanced Threat Analytics (ATA) ? | Microsoft Advanced Threat Analytics"
+title: "Qu’est-ce que Microsoft Advanced Threat Analytics (ATA) ? | Microsoft ATA"
 description: "Explique ce qu’est Microsoft Advanced Threat Analytics (ATA) et quels types d’activités suspectes il peut détecter"
 keywords: 
 author: rkarlin
@@ -13,8 +13,8 @@ ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
-ms.openlocfilehash: 4831e7a773b69a87bbcd505a8116230f14611250
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: 58afbae96bce0075f0a58be648e82744ce279997
 
 
 ---
@@ -129,6 +129,6 @@ Les attaquants peuvent tenter de contrôler votre réseau en exécutant du code 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: "Mise à jour d’ATA vers la version 1.6 : guide de migration | Microsoft Advanced Threat Analytics"
+title: "Mise à jour d’ATA vers la version 1.6 : guide de migration | Microsoft ATA"
 description: "Procédures pour mettre à jour ATA vers la version 1.6"
-keywords:
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: f56f575bf4a11b09b04108d16c0d4df1c3fcad9b
+
 
 ---
 
@@ -43,17 +37,19 @@ La mise à jour vers ATA 1.6 comprend des améliorations dans les domaines suiv
 -   Prise en charge d’IBM QRadar
 
 ## Mise à jour d’ATA vers la version 1.6
-> [!NOTE] Si ATA n’est pas installé dans votre environnement, téléchargez la version complète d’ATA qui inclut la version 1.6. Suivez ensuite la procédure d’installation standard décrite dans [Installer ATA](/advanced-threat-analytics/deploy-use/install-ata).
+> [!NOTE] 
+> Si ATA n’est pas installé dans votre environnement, téléchargez la version complète d’ATA qui inclut la version 1.6. Suivez ensuite la procédure d’installation standard décrite dans [Installer ATA](/advanced-threat-analytics/deploy-use/install-ata).
 
 Si vous avez déjà déployé ATA version 1.5, cette procédure vous guidera tout au long des étapes nécessaires pour mettre à jour votre déploiement.
 
-> [!NOTE] Vous ne pouvez pas installer ATA version 1.6 directement sur ATA version 1.4. Vous devez d’abord installer ATA version 1.5. Si vous tentez par erreur d’installer ATA 1.6 sans installer ATA 1.5 au préalable, vous recevez un message d’erreur indiquant qu’**une version plus récente est déjà installée sur votre machine**. Vous devez désinstaller les éléments d’ATA 1.6 qui restent sur votre machine, même si l’installation a échoué, avant d’installer ATA version 1.5.
+> [!NOTE] 
+> Vous ne pouvez pas installer ATA version 1.6 directement sur ATA version 1.4. Vous devez d’abord installer ATA version 1.5. Si vous tentez par erreur d’installer ATA 1.6 sans installer ATA 1.5 au préalable, vous recevez un message d’erreur indiquant qu’**une version plus récente est déjà installée sur votre machine**. Vous devez désinstaller les éléments d’ATA 1.6 qui restent sur votre machine, même si l’installation a échoué, avant d’installer ATA version 1.5.
 
 Suivez ces étapes pour mettre à jour ATA vers la version 1.6 :
 
-1. Avant de démarrer le processus de mise à niveau, suivez la procédure décrite dans [Échec de la migration en cas de mise à jour à partir d’ATA 1.6](whats-new-version-1.6#Migration-failure-when-updating-from-ATA-1.5).
-2. Assurez-vous d’avoir assez d’espace libre pour terminer la mise à niveau. Vous pouvez effectuer l’installation jusqu’à la vérification de la disponibilité pour avoir une estimation de la quantité d’espace libre dont vous avez besoin, puis redémarrer la mise à niveau après avoir alloué l’espace disque nécessaire. La mise à niveau utilise au moins 2 % de la taille de la base de données. Pour plus d’informations, consultez [Planification de la capacité ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning).
-1.  [Téléchargez la mise à jour vers la version 1.6.](http://www.microsoft.com/en-us/evalcenter/evaluate-microsoft-advanced-threat-analytics)<br>
+1. Pour éviter les problèmes de mise à niveau, veillez à suivre les étapes 8 à 10 de **Échec de la migration en cas de mise à jour à partir d’ATA 1.6** dans [Nouveautés ATA version 1.6](whats-new-version-1.6.md).
+2. Assurez-vous d’avoir assez d’espace libre pour terminer la mise à niveau. Vous pouvez effectuer l’installation jusqu’à la vérification de la disponibilité pour avoir une estimation de la quantité d’espace libre dont vous avez besoin, puis redémarrer la mise à niveau après avoir alloué l’espace disque nécessaire.
+1.  [Téléchargez la mise à jour vers la version 1.6.](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)<br>
 Dans cette version, le même fichier d’installation (Microsoft ATA Center Setup.exe) est utilisé pour l’installation d’un nouveau déploiement d’ATA et la mise à niveau des déploiements existants.
 
 2.  Mettez à jour le centre ATA.
@@ -62,7 +58,8 @@ Dans cette version, le même fichier d’installation (Microsoft ATA Center Setu
 
 4.  Mettez à jour les passerelles ATA.
 
-    > [!IMPORTANT] Pour assurer le bon fonctionnement d’ATA, mettez à jour toutes les passerelles.
+    > [!IMPORTANT]
+    > Pour assurer le bon fonctionnement d’ATA, mettez à jour toutes les passerelles.
 
 ### Étape 1 : mettre à jour le centre ATA
 
@@ -75,7 +72,8 @@ Dans cette version, le même fichier d’installation (Microsoft ATA Center Setu
 2.  Exécutez le fichier d’installation, Microsoft ATA Center Setup.exe, puis suivez les instructions à l’écran pour installer la mise à jour.
 
     1.  ATA 1.6 requiert l’installation du .NET Framework 4.6.1. Si ce n’est déjà fait, la procédure d’installation d’ATA installe .Net Framework 4.6.1 dans le cadre de l’installation.<br>
-    > [!NOTE]L’installation de .Net Framework 4.6.1 peut nécessiter le redémarrage du serveur. L’installation d’ATA se poursuit une fois le serveur redémarré.
+    > [!NOTE]
+    > L’installation de .Net Framework 4.6.1 peut nécessiter le redémarrage du serveur. L’installation d’ATA se poursuit une fois le serveur redémarré.
 5.  Dans la page **Bienvenue**, sélectionnez votre langue, puis cliquez sur **Suivant**.
 
     6.  Lisez le Contrat de Licence Utilisateur Final et, si vous en acceptez les termes, cliquez sur **Suivant**.
@@ -93,8 +91,8 @@ Dans cette version, le même fichier d’installation (Microsoft ATA Center Setu
 
     ![Image des passerelles obsolètes](media/ATA-center-outdated.png)
 
-> [!IMPORTANT]
-> - Pour assurer le bon fonctionnement d’ATA, mettez à jour toutes les passerelles.
+> [!IMPORTANT] 
+> Pour assurer le bon fonctionnement d’ATA, mettez à jour toutes les passerelles.
 
 ### Étape 2. Télécharger le package d’installation de la passerelle ATA
 Après avoir configuré les paramètres de connectivité du domaine, vous pouvez télécharger le package d’installation de la passerelle ATA.
@@ -121,13 +119,15 @@ Le fichier zip comprend les éléments suivants :
 
 1.  Sur chaque passerelle ATA, extrayez les fichiers du package de passerelle ATA et exécutez le fichier **Microsoft ATA Gateway Setup.exe**.
 
-    > [!NOTE] Vous pouvez également utiliser ce package pour installer de nouvelles passerelles ATA.
+    > [!NOTE] 
+    > Vous pouvez également utiliser ce package pour installer de nouvelles passerelles ATA.
 
 2.  Vos paramètres précédents sont conservés, mais le redémarrage du service peut prendre quelques minutes.
 
 3.  Répétez cette étape pour toutes les autres passerelles ATA déployées.
 
-> [!NOTE] Après la mise à jour d’une passerelle ATA, la notification d’obsolescence de cette passerelle ATA ne s’affiche plus.
+> [!NOTE] 
+> Une fois la passerelle ATA mise à jour avec succès, la notification d’obsolescence de cette passerelle ATA est résolue.
 
 Si toutes les passerelles ATA indiquent qu’elles ont été synchronisées avec succès et que le message signalant l’existence d’un package de passerelle ATA mis à jour ne s’affiche plus, vous savez que toutes les passerelles ATA ont été correctement mises à jour.
 
@@ -136,9 +136,10 @@ Si toutes les passerelles ATA indiquent qu’elles ont été synchronisées avec
 
 ## Voir aussi
 
-- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Installer ATA - Étape 2 | Microsoft Advanced Threat Analytics"
+title: "Installer ATA - Étape 2 | Microsoft ATA"
 description: "La deuxième étape de la procédure d’installation d’ATA vous aide à configurer les paramètres de connectivité du domaine sur le serveur de votre centre ATA."
 keywords: 
 author: rkarlin
@@ -13,8 +13,8 @@ ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
-ms.openlocfilehash: 73e2eb84e1e21cbc5afcb7a100f9a67da63c66a5
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: 54f5652e980dd8b62d5bbfb642e56eaac7d6e343
 
 
 ---
@@ -62,6 +62,6 @@ Pour configurer les paramètres généraux de la passerelle ATA, procédez comme
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

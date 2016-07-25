@@ -1,5 +1,5 @@
 ---
-title: "Gestion des activités suspectes | Microsoft Advanced Threat Analytics"
+title: "Gestion des activités suspectes | Microsoft ATA"
 description: "Explique comment passer en revue les activités suspectes identifiées par ATA"
 keywords: 
 author: rkarlin
@@ -13,8 +13,8 @@ ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
-ms.openlocfilehash: 1214560096227e00af36ff7cb1a0a95988a2ad40
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: ea2b9ed3053260f65e6f163abac424cde7e9afac
 
 
 ---
@@ -113,6 +113,6 @@ Vous pouvez modifier l’état d’une activité suspecte en cliquant sur son é
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
