@@ -3,26 +3,43 @@ title: "Planification de votre déploiement ATA | Microsoft ATA"
 description: "Vous aide à planifier votre déploiement et à déterminer le nombre de serveurs ATA nécessaires pour prendre en charge votre réseau"
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod: identity-ata
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.prod: 
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: a43184e0efa1de110f5c287c6079e80e1a9dd3de
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: e0174ecac39b2a8cd469ed698853c447a85e4251
 
 
 ---
 
 # Planification de la capacité ATA
-Cette rubrique vous aide à déterminer le nombre de serveurs ATA nécessaires pour prendre en charge votre réseau, notamment le nombre de passerelles ATA et de passerelles légères ATA dont vous avez besoin et la capacité de serveur pour votre centre ATA et les passerelles ATA.
+Cette rubrique vous aide à déterminer le nombre de serveurs ATA nécessaires pour surveiller votre réseau, notamment le nombre de passerelles ATA et/ou de passerelles légères ATA dont vous avez besoin et la capacité serveur pour votre centre ATA et les passerelles ATA.
 
-## Dimensionnement du centre ATA
+##Utilisation de l’outil de dimensionnement
+La manière recommandée la plus simple de déterminer la capacité pour votre déploiement ATA est d’utiliser l’[outil de dimensionnement ATA](http://aka.ms/atasizingtool). Exécutez l’outil de dimensionnement ATA, puis dans les résultats du fichier Excel, utilisez les champs suivants pour déterminer la capacité ATA dont vous avez besoin :
+
+- Processeur et mémoire du centre ATA : Faites correspondance le champ **Paquets occupés/s** du tableau du centre ATA dans le fichier de résultats avec le champ **PAQUETS PAR SECONDE** dans le [tableau du centre ATA](#ata-center-sizing).
+
+- Stockage du centre ATA : Faites correspondance le champ **Paquets moyens/s** du tableau du centre ATA dans le fichier de résultats avec le champ **PAQUETS PAR SECONDE** dans le [tableau du centre ATA](#ata-center-sizing).
+- Passerelle ATA : Faites correspondre le champ **Paquets occupés/s** dans le tableau de la passerelle ATA du fichier de résultats avec le champ **PAQUETS PAR SECONDE** dans le [tableau de la passerelle ATA](#ata-gateway-sizing) ou le [tableau de la passerelle légère ATA](#ata-lightweight-gateway-sizing) en fonction du [type de passerelle que vous choisissez](#choosing-the-right-gateway-type-for-your-deployment).
+
+
+![Exemple d’outil de planification des capacités](media/capacity tool.png)
+
+
+
+Si pour une raison ou une autre, vous ne pouvez pas utiliser l’outil de dimensionnement ATA, vous devez collecter manuellement les informations du compteur paquets/s de tous vos contrôleurs de domaine pendant 24 heures avec un intervalle de collecte très court (environ 5 secondes). Ensuite, pour chaque contrôleur de domaine, vous devez calculer la moyenne quotidienne et la moyenne des périodes les plus occupées (15 minutes).
+Les sections suivantes expliquent comment collecter le compteur paquets/s dans un contrôleur de domaine.
+
+
+
+### Dimensionnement du centre ATA
 Le centre ATA nécessite l’équivalent de 30 jours de données qui est le minimum recommandé pour obtenir des analyses comportementales des utilisateurs. L’espace disque nécessaire pour la base de données ATA pour chaque contrôleur de domaine est indiqué ci-dessous. Si vous avez plusieurs contrôleurs de domaine, ajoutez l’espace disque requis par chaque contrôleur de domaine pour calculer l’espace total nécessaire pour la base de données ATA.
 > [!NOTE] 
 > En cas d’exécution en tant que machine virtuelle, la mémoire dynamique ou toute autre fonctionnalité d’augmentation de la mémoire n’est pas prise en charge.
@@ -74,7 +91,7 @@ Voici quelques exemples de scénarios dans lesquels les contrôleurs de domaine 
 - Siège social de centres de données (comptant des contrôleurs de domaine avec plus de 10 000 paquets par seconde)
 
 
-## Dimensionnement de passerelle légère ATA
+### Dimensionnement de passerelle légère ATA
 
 Une passerelle légère ATA peut prendre en charge la surveillance d’un contrôleur de domaine en fonction de la quantité de trafic réseau qu’il génère. 
 > [!NOTE] 
@@ -95,7 +112,7 @@ Une passerelle légère ATA peut prendre en charge la surveillance d’un contr�
 > Si le contrôleur de domaine ne dispose pas de la quantité de ressources requise par la passerelle légère ATA, les performances du contrôleur de domaine ne seront pas affectées, mais la passerelle légère ATA risque de ne pas fonctionner comme prévu.
 
 
-## Dimensionnement de la passerelle ATA
+### Dimensionnement de la passerelle ATA
 
 Prenez en compte les éléments suivants quand vous devez déterminer le nombre de passerelles ATA à déployer.
 
@@ -184,6 +201,6 @@ Pour déterminer le nombre de paquets par seconde, effectuez les opérations sui
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
