@@ -3,18 +3,18 @@ title: "Installer ATA - Étape 5 | Microsoft ATA"
 description: "La cinquième étape de la procédure d’installation d’ATA vous aide à configurer les paramètres de votre passerelle ATA."
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: 3e9f68e9868dc9aaf20fe9d1c4fe2b8bdd685291
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 3580e748d21db73b6fa8384d84e03b9954b823f8
 
 
 ---
@@ -36,10 +36,11 @@ Une fois la passerelle ATA installée, procédez comme suit pour configurer ses 
   - **Description** : <br>Entrez une description de la passerelle ATA (facultatif).
   - **Contrôleurs de domaine de port d’écoute (FQDN)** (requis pour la passerelle ATA, ce paramètre ne peut pas être défini pour la passerelle légère ATA) : <br>Entrez le nom de domaine complet de votre contrôleur de domaine et cliquez sur le signe plus (+) pour l’ajouter à la liste. Par exemple, **dc01.contoso.com**.<br /><br />![Image d’un exemple de nom de domaine complet](media/ATAGWDomainController.png)
 
-Les informations suivantes s’appliquent aux serveurs que vous entrez dans la liste **Contrôleurs de domaine** : - Tous les contrôleurs de domaine dont le trafic est surveillé par l’intermédiaire de la mise en miroir des ports par la passerelle ATA doivent figurer dans la liste **Contrôleurs de domaine**. Si un contrôleur de domaine n’est pas répertorié dans la liste **Contrôleurs de domaine**, il est possible que la détection des activités suspectes ne fonctionne pas comme prévu.
-- Au moins un contrôleur de domaine figurant dans la liste doit être un serveur de catalogue global. ATA peut ainsi résoudre les objets ordinateur et utilisateur dans d’autres domaines de la forêt.
+Les informations suivantes s’appliquent aux serveurs que vous entrez dans la liste **Contrôleurs de domaine** :
 
- - **Adaptateurs de réseau de capture** (obligatoire) :<br>
+- Tous les contrôleurs de domaine dont le trafic est surveillé par l’intermédiaire de la mise en miroir des ports par la passerelle ATA doivent figurer dans la liste **Contrôleurs de domaine**. Si un contrôleur de domaine n’est pas répertorié dans la liste **Contrôleurs de domaine**, il est possible que la détection des activités suspectes ne fonctionne pas comme prévu.
+- Au moins un contrôleur de domaine figurant dans la liste doit être un serveur de catalogue global. ATA peut ainsi résoudre les objets ordinateur et utilisateur dans d’autres domaines de la forêt.
+- **Adaptateurs de réseau de capture** (obligatoire) :<br>
      - Dans le cas d’une passerelle ATA sur un serveur dédié, sélectionnez les cartes réseau qui sont configurées en tant que port miroir de destination. Elles recevront le trafic du contrôleur de domaine mis en miroir.
      - Dans le cas d’une passerelle légère ATA, il doit s’agir de toutes les cartes réseau utilisées pour la communication avec les autres ordinateurs de votre organisation.
 
@@ -92,6 +93,6 @@ Pour vous assurer que la passerelle ATA a été déployée avec succès, effectu
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
