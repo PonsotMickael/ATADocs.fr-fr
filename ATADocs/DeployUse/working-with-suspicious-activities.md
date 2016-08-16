@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Gestion des activités suspectes | Microsoft Advanced Threat Analytics
-description: Explique comment passer en revue les activités suspectes identifiées par ATA
-keywords:
+title: "Gestion des activités suspectes | Microsoft Advanced Threat Analytics"
+description: "Explique comment passer en revue les activités suspectes identifiées par ATA"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 1214560096227e00af36ff7cb1a0a95988a2ad40
+
 
 ---
 
@@ -42,7 +36,7 @@ Chaque activité suspecte comporte les informations suivantes :
 
 -   La capacité à :
 
-    -   Envoyer l’activité suspecte à d’autres personnes de votre entreprise par courrier électronique. Cela nécessite l’installation d’un client de messagerie sur l’ordinateur depuis lequel vous naviguez.
+    -   Partager l’activité suspecte avec d’autres personnes de votre entreprise par e-mail.
 
     -   Exporter l’activité suspecte dans Excel.
 
@@ -97,7 +91,7 @@ Pour filtrer la liste des activités suspectes :
     Activités que vous avez choisi d’ignorer manuellement. Si ATA détecte une activité suspecte similaire, il crée une nouvelle détection.
 
 ## Fournir des commentaires sur une activité suspecte
-Pour permettre à ATA d’en savoir plus sur votre réseau, vous devez ajouter des commentaires concernant certaines activités suspectes (DNS Reconnaissance, Pass-the-Ticket, ainsi que les comportements inhabituels et les exécutions à distance) afin d’améliorer leur détection à l’avenir.
+Pour permettre à ATA d’en savoir plus sur votre réseau, vous devez ajouter des commentaires concernant certaines activités suspectes (DNS Reconnaissance, Pass-the-Ticket, énumération de sessions SMB, comportement inhabituel et exécution à distance) afin d’améliorer leur détection à l’avenir.
 
 1.  La fenêtre de commentaires s’ouvre automatiquement pour les activités suspectes qui permettent de fournir des commentaires. Vous devrez répondre à des questions concernant les activités de votre réseau, et si oui ou non elles doivent être considérées comme suspectes. Dans l’exemple ci-dessous, vous devez indiquer si l’exécution d’outils d’analyse est autorisée sur l’ordinateur.
 
@@ -113,11 +107,12 @@ Pour permettre à ATA d’en savoir plus sur votre réseau, vous devez ajouter d
 Vous pouvez modifier l’état d’une activité suspecte en cliquant sur son état actuel, puis en sélectionnant l’une des options suivantes : **Ouvert**, **Résolu** ou **Ignoré**.
 
 ## Voir aussi
-- [Pour obtenir de l’aide, consultez notre forum.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Gestion des paramètres de la détection ATA](working-with-detection-settings.md)
 - [Modification de la configuration d’ATA](modifying-ata-configuration.md)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Installer ATA | Microsoft Advanced Threat Analytics
-description: Lors de l’étape finale de l’installation d’ATA, vous configurez les sous-réseaux du bail à court terme et l’utilisateur Honeytoken.
-keywords:
+description: "Lors de l’étape finale de l’installation d’ATA, vous configurez les sous-réseaux du bail à court terme et l’utilisateur Honeytoken."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 76305bc5f55e956c787fe3e8bd954a56f40fc56f
+
 
 ---
 
@@ -42,7 +36,7 @@ Les sous-réseaux du bail à court terme sont des sous-réseaux dans lesquels l�
 3.  Pour les SID de compte Honeytoken, entrez le SID du compte d’utilisateur sans aucune activité réseau, puis cliquez sur le signe plus. Par exemple : `S-1-5-21-72081277-1610778489-2625714895-10511`.
 
     > [!NOTE]
-    > Pour rechercher le SID d’un utilisateur, exécutez l’applet de commande Windows PowerShell suivante, `Get-ADUser UserName`.
+    > Pour rechercher le SID d’un utilisateur, recherchez l’utilisateur dans la console ATA, puis cliquez sur l’onglet **Informations sur le compte**. 
 
 4.  Configurer les exclusions : vous pouvez configurer des adresses IP à exclure d’activités suspectes spécifiques. Pour plus d’informations, consultez [Gestion des paramètres de la détection ATA](working-with-detection-settings.md).
 
@@ -54,7 +48,7 @@ Félicitations, vous avez correctement déployé Microsoft Advanced Threat Analy
 
 Vérifiez la chronologie des attaques pour afficher les activités suspectes détectées et rechercher des utilisateurs ou des ordinateurs, puis afficher leurs profils.
 
-Gardez à l’esprit qu’ATA nécessite au minimum trois semaines pour créer des profils de comportements : vous ne verrez donc aucune activité au comportement suspect pendant les trois premières semaines.
+ATA démarre immédiatement l’analyse pour rechercher les activités suspectes. Certaines activités, telles que certaines liées au comportement, ne sont disponibles qu’une fois qu’ATA a eu le temps de créer des profils de comportements (procédure qui prend au minimum trois semaines).
 
 
 >[!div class="step-by-step"]
@@ -63,11 +57,13 @@ Gardez à l’esprit qu’ATA nécessite au minimum trois semaines pour créer d
 
 ## Voir aussi
 
-- [Pour obtenir de l’aide, consultez notre forum.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
-- [Configurer la collecte d’événements](/advanced-threat-analytics/plandesign/configure-event-collection)
-- [Configuration requise pour ATA](/advanced-threat-analytics/plandesign/ata-prerequisites)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Configurer la collecte d’événements](configure-event-collection.md)
+- [Conditions préalables au déploiement d’ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
-<!--HONumber=Apr16_HO2-->
+
+
+<!--HONumber=Jun16_HO4-->
 
 

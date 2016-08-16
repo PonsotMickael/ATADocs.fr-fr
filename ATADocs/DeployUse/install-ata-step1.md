@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Installer ATA - Étape 1 | Microsoft Advanced Threat Analytics
-description: La première étape de la procédure d’installation d’ATA consiste à télécharger le centre ATA et à l’installer sur le serveur de votre choix.
-keywords:
+title: "Installer ATA - Étape 1 | Microsoft Advanced Threat Analytics"
+description: "La première étape de la procédure d’installation d’ATA consiste à télécharger le centre ATA et à l’installer sur le serveur de votre choix."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d6e7d7bef97bfc4ffde07959dd9256f0319d685f
+ms.openlocfilehash: c89d4d6f6af58bcc822b9599dcda65d0719a7419
+
 
 ---
 
@@ -33,14 +27,15 @@ ms.suite: ems
 
 Cette procédure d’installation fournit des instructions pour effectuer une nouvelle installation d’ATA 1.6. Pour plus d’informations sur la mise à jour d’un déploiement d’ATA existant à partir d’une version antérieure, consultez le [guide de migration d’ATA pour la version 1.6](/advanced-threat-analytics/understand-explore/ata-update-1.6-migration-guide).
 
-> [!IMPORTANT] Installez la mise à jour KB2934520 sur le serveur du centre ATA et sur les serveurs de passerelle ATA avant de lancer l’installation ; sinon, le programme d’installation d’ATA installera cette mise à jour et nécessitera un redémarrage pendant l’installation d’ATA.
+> [!IMPORTANT] 
+> Installez la mise à jour KB2934520 sur le serveur du centre ATA et sur les serveurs de passerelle ATA avant de lancer l’installation ; sinon, le programme d’installation d’ATA installera cette mise à jour et nécessitera un redémarrage pendant l’installation d’ATA.
 
 ## Étape 1. Télécharger et installer le centre ATA
 Après avoir vérifié que le serveur répond à la configuration requise, vous pouvez passer à l’installation du centre ATA.
 
 Effectuez les opérations suivantes sur le serveur du centre ATA.
 
-1.  Téléchargez ATA à partir du [Centre de gestion des licences en volume Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx), du [Centre d’évaluation TechNet](http://www.microsoft.com/en-us/evalcenter/) ou de [MSDN](https://msdn.microsoft.com/en-us/subscriptions/downloads).
+1.  Téléchargez ATA à partir du [Centre de gestion des licences en volume Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx), du [Centre d’évaluation TechNet](http://www.microsoft.com/evalcenter/) ou de [MSDN](https://msdn.microsoft.com/subscriptions/downloads).
 
 2.  Connectez-vous à l’ordinateur sur lequel vous installez le centre ATA en tant qu’utilisateur membre du groupe Administrateurs local.
 
@@ -94,17 +89,20 @@ Effectuez les opérations suivantes sur le serveur du centre ATA.
 
 
 
->[!div class="step-by-step"] [« Étape 2](preinstall-ata.md)
-[Préinstallation »](install-ata-step2.md)
+>[!div class="step-by-step"]
+[« Préinstallation](preinstall-ata.md)
+[Étape 2 »](install-ata-step2.md)
 
 ## Voir aussi
 
-- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Consultez le forum ATA](https://social.technet.microsoft.com/Forums/security/
+- home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)
 - [Conditions préalables au déploiement d’ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

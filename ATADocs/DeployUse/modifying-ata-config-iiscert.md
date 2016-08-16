@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Modifier la configuration ATA - Certificat IIS | Microsoft Advanced Threat Analytics
-description: Décrit comment modifier le certificat utilisé par IIS pour le centre ATA.
-keywords:
+title: "Modifier la configuration ATA - Certificat IIS | Microsoft Advanced Threat Analytics"
+description: "Décrit comment modifier le certificat utilisé par IIS pour le centre ATA."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,23 +10,19 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: e58a0390-57ef-4c68-a987-2e75e5f3d6b3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 07888a46e26a7f87dc3b6424d97aba0813b43d02
+
 
 ---
 
 # Modifier la configuration ATA - Certificat IIS
 
 >[!div class="step-by-step"]
-[« Adresse IP de la console ATA](modifying-ata-config-consoleip.md)
+[« Adresse IP de la console ATA](modifying-ata-config-consoleip.md)
 [Mot de passe de connectivité de domaine »](modifying-ata-config-dcpassword.md)
 
 ## Modifier le certificat IIS
@@ -58,15 +52,16 @@ Si vous devez modifier le certificat utilisé par IIS pour le centre ATA, proc�
 7.  Téléchargez le package d’installation de la passerelle ATA avant d’installer une nouvelle passerelle ATA.
 
 >[!div class="step-by-step"]
-[« Adresse IP de la console ATA](modifying-ata-config-consoleip.md)
+[« Adresse IP de la console ATA](modifying-ata-config-consoleip.md)
 [Mot de passe de connectivité de domaine »](modifying-ata-config-dcpassword.md)
 
 ## Voir aussi
-- [Utilisation de la console ATA](/advanced-threat-analytics/understand/working-with-ata-console)
+- [Utilisation de la console ATA](working-with-ata-console.md)
 - [Installer ATA](install-ata.md)
-- [Pour obtenir de l’aide, consultez notre forum.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

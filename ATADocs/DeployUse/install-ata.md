@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Installer ATA - Installation terminée | Microsoft Advanced Threat Analytics
-description: Cette rubrique vous guide tout au long des étapes nécessaires pour déployer, configurer et exécuter ATA.
-keywords:
+title: "Installer ATA - Installation terminée | Microsoft Advanced Threat Analytics"
+description: "Cette rubrique vous guide tout au long des étapes nécessaires pour déployer, configurer et exécuter ATA."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 697da5ddc701c353ab1cc1b39c15939af9964497
+
 
 ---
 
@@ -31,7 +25,6 @@ Voici les étapes requises pour déployer, configurer et exécuter ATA.
 
 Pour configurer ATA, procédez comme suit :
 
--   [Étapes de préinstallation](install-ata-preinstall.md)
 
 -   [Étape 1. Télécharger et installer le centre ATA](install-ata-step1.md)
 
@@ -48,11 +41,14 @@ Pour configurer ATA, procédez comme suit :
 
 ## Voir aussi
 
-- [Pour obtenir de l’aide, consultez notre forum.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
-- [Configurer la collecte d’événements](/advanced-threat-analytics/plandesign/configure-event-collection)
-- [Configuration requise pour ATA](/advanced-threat-analytics/plandesign/ata-prerequisites)
+- [Consultez le forum ATA](https://social.technet.microsoft.com/Forums/security/
+- home?forum=mata)
+- [Configurer la collecte d’événements](configure-event-collection.md)
+- [Conditions préalables au déploiement d’ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
-<!--HONumber=Apr16_HO2-->
+
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Résolution des problèmes liés à ATA à l’aide des compteurs de performances | Microsoft Advanced Threat Analytics
-description: Explique comment utiliser les compteurs de performances pour résoudre les problèmes liés à ATA
-keywords:
+title: "Résolution des problèmes liés à ATA à l’aide des compteurs de performances | Microsoft Advanced Threat Analytics"
+description: "Explique comment utiliser les compteurs de performances pour résoudre les problèmes liés à ATA"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,21 +10,18 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: df162a62-f273-4465-9887-94271f5000d2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 21d87591c9c791aa431c273479921e1c11825e09
+
 
 ---
 
 # Résolution des problèmes liés à ATA à l’aide des compteurs de performances
-Les compteurs de performances ATA vous permettent de savoir si les composants ATA s’exécutent correctement.
+Les compteurs de performances ATA vous permettent de savoir si les composants ATA s’exécutent correctement. Les composants ATA traitant les données de manière séquentielle, la présence d’un problème peut entraîner le rejet partiel du trafic quelque part le long de la chaîne de composants. Pour résoudre le problème, vous devez déterminer le composant impliqué et résoudre le problème au début de la chaîne. Utilisez les données fournies par les compteurs de performance pour comprendre comment fonctionne chaque composant.
+Pour comprendre le flux des composants ATA internes, consultez [Architecture ATA](/advanced-threat-analytics/plan-design/ata-architecture).
 
 **Processus des composants ATA** :
 
@@ -36,10 +31,11 @@ Les compteurs de performances ATA vous permettent de savoir si les composants AT
 
 3.  Cette situation se produit jusqu’au composant NetworkListener initial qui supprime le trafic quand il ne peut plus transférer d’entités.
 
-    Cela signifie que pour remédier à la réaction en chaîne qui entraîne la suppression du trafic, vous devez résoudre le problème qui se trouve en bout de chaîne.
-    Pour comprendre le flux des composants ATA internes, voir [Architecture ATA](/advanced-threat-analytics/Understand/ata-architecture).
 
 ## Compteurs de performances de la passerelle ATA
+
+Dans cette section, chaque référence à la passerelle ATA fait également référence à la passerelle légère ATA.
+
 Vous pouvez observer l’état des performances de la passerelle ATA en temps réel en ajoutant des compteurs de performances à la passerelle ATA.
 Pour cela, ouvrez l’Analyseur de performances, puis ajoutez tous les compteurs à la passerelle ATA. Le nom de l’objet de compteur de performances est « Microsoft ATA Gateway ».
 
@@ -49,11 +45,9 @@ Voici la liste des principaux compteurs de passerelle ATA :
 
 |Compteur|Description|Seuil|Résolution des problèmes|
 |-----------|---------------|-------------|-------------------|
-|Messages de l’analyseur capturés par NetworkListener/s|Quantité de trafic traitée par la passerelle ATA chaque seconde.|Aucun seuil|Aide à comprendre la quantité de trafic qui est analysée par la passerelle ATA.|
-|Messages capturés par NetworkListener supprimés/s|Quantité de trafic supprimée par la passerelle ATA chaque seconde.|Ce nombre doit toujours être égal à zéro (de rares suppressions en rafales sont acceptables).|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Mémoires tampons ETW en temps réel capturées par NetworkListener supprimées/s|Quantité de trafic supprimée par la passerelle ATA chaque seconde.|Ce nombre doit toujours être égal à zéro (de rares suppressions en rafales sont acceptables).|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Mémoires tampons du journal ETW capturées par NetworkListener supprimées/s|Quantité de trafic supprimée par la passerelle ATA chaque seconde.|Ce nombre doit toujours être égal à zéro (de rares suppressions en rafales sont acceptables).|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Événements ETW capturés par NetworkListener supprimés/s|Quantité de trafic supprimée par la passerelle ATA chaque seconde.|Ce nombre doit toujours être égal à zéro (de rares suppressions en rafales sont acceptables).|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Messages de l’analyseur PEF NetworkListener/s|Quantité de trafic traitée par la passerelle ATA chaque seconde.|Aucun seuil|Aide à comprendre la quantité de trafic qui est analysée par la passerelle ATA.|
+|Événements supprimés PEF NetworkListener/s|Quantité de trafic supprimée par la passerelle ATA chaque seconde.|Ce nombre doit toujours être égal à zéro (de rares suppressions en rafales sont acceptables).|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Événements supprimés ETW NetworkListener/s|Quantité de trafic supprimée par la passerelle ATA chaque seconde.|Ce nombre doit toujours être égal à zéro (de rares suppressions en rafales sont acceptables).|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
 |Taille des blocs de données de messages de NetworkActivityTranslator|Quantité de trafic mise en file d’attente pour la traduction en activités réseau.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 100 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
 |Taille des blocs des activités EntityResolver|Quantité d’activités réseau en attente de résolution.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
 |Taille des blocs de lots d’entités EntitySender|Quantité d’activités réseau en attente d’envoi vers le centre ATA.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 1 000 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
@@ -74,16 +68,17 @@ Voici la liste des principaux compteurs du centre ATA :
 
 |Compteur|Description|Seuil|Résolution des problèmes|
 |-----------|---------------|-------------|-------------------|
-|Taille des blocs de lots d’entités EntityReceiver|Nombre de lots d’entités mis en file d’attente par le centre ATA.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 100)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener.  Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Taille des blocs d’activités réseau NetworkActivityProcessor|Nombre d’activités réseau en attente de traitement.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Taille des blocs de lots d’entités EntityReceiver|Nombre de lots d’entités mis en file d’attente par le centre ATA.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener.  Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Taille des blocs d’activités réseau NetworkActivityProcessor|Nombre d’activités réseau en attente de traitement.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 50 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
 |Taille des blocs d’activités réseau EntityProfiler|Nombre d’activités réseau en attente de profilage.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Taille des blocs CenterDatabaseClient&#42;|Nombre d’activités réseau d’un type spécifique en attente d’écriture dans la base de données.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 50 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Durée de détection par DetectionEngine|Durée totale du dernier cycle complet de détections déterministes.|Doit être inférieur à 900 000 (15 minutes)|Vérifiez qu’il n’existe aucun problème avec l’unité centrale, la mémoire ou le stockage.|
+|Base de données du centre &#42; taille de bloc|Nombre d’activités réseau d’un type spécifique en attente d’écriture dans la base de données.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 50 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+
 
 > [!NOTE]
 > -   Les valeurs temporelles des compteurs sont exprimées en millisecondes.
 > -   Il est parfois plus pratique de surveiller tous les compteurs en même temps à l’aide du graphique « Rapport » (par exemple : surveillance en temps réel de l’ensemble des compteurs)
 
+## Compteurs de système d’exploitation
 Voici la liste des principaux compteurs de système d’exploitation :
 
 |Compteur|Description|Seuil|Résolution des problèmes|
@@ -96,10 +91,18 @@ Voici la liste des principaux compteurs de système d’exploitation :
 |LogicalDisk(&#42;)\Moy. disque s/écriture|Latence moyenne d’écriture des données sur le disque (vous devez choisir le lecteur de base de données comme instance).|Doit être inférieur à 10 millisecondes|Vérifiez si l’un des processus utilise le lecteur de la base de données plus qu’il ne devrait.<br /><br />Consultez l’équipe ou le fournisseur chargé du stockage pour savoir si ce lecteur peut fournir la charge de travail actuelle avec une latence inférieure à 10 ms. La charge de travail actuelle peut être déterminée à l’aide des compteurs d’utilisation du disque.|
 |\LogicalDisk(&#42;)\Lectures disque/s|Taux d’opérations de lecture sur le disque.|Aucun seuil|Les compteurs d’utilisation du disque peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage.|
 |\LogicalDisk(&#42;)\Octets de lecture disque/s|Nombre d’octets lus par seconde sur le disque.|Aucun seuil|Les compteurs d’utilisation du disque peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage.|
-|\LogicalDisk(&#42;)\Écritures disque/s|Taux d’opérations d’écriture sur le disque.|Aucun seuil|Compteurs d’utilisation du disque (peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage).|
+|\LogicalDisk&#42;\Écritures disque/s|Taux d’opérations d’écriture sur le disque.|Aucun seuil|Compteurs d’utilisation du disque (peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage).|
 |\LogicalDisk(&#42;)\Octets d’écriture disque/s|Nombre d’octets écrits par seconde sur le disque.|Aucun seuil|Les compteurs d’utilisation du disque peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage.|
 
+## Voir aussi
+- [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Planification de la capacité ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning)
+- [Configurer la collecte d’événements](/advanced-threat-analytics/deploy-use/configure-event-collection)
+- [Configuration du transfert d’événements Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
-<!--HONumber=Apr16_HO2-->
+
+
+<!--HONumber=Jun16_HO4-->
 
 

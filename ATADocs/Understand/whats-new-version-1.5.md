@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Nouveautés d’ATA version 1.5 | Microsoft Advanced Threat Analytics
-description: Répertorie les nouveautés d’ATA version 1.5, ainsi que les problèmes connus
-keywords:
+title: "Nouveautés d’ATA version 1.5 | Microsoft Advanced Threat Analytics"
+description: "Répertorie les nouveautés d’ATA version 1.5, ainsi que les problèmes connus"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 5836792bcfadb2585d05d4a195979bd6003c84cf
+
 
 ---
 
@@ -65,7 +59,7 @@ Quand vous installez la passerelle ATA, assurez-vous d’extraire les fichiers 
 Une fois la passerelle ATA configurée, au premier démarrage de celle-ci, l’étiquette « Non synchronisé » s’affiche jusqu’à ce que le service soit complètement démarré, ce qui peut prendre jusqu’à 10 minutes la première fois.
 
 ### Logiciel de capture du réseau
-Dans la passerelle ATA, le seul logiciel de capture réseau que vous pouvez installer est [Moniteur réseau Microsoft 3.4](http://www.microsoft.com/en-us/download/details.aspx?id=4865). N’installez pas l’analyseur de message Microsoft ni aucun autre logiciel de capture réseau. L’installation d’autres logiciels empêchera la passerelle ATA de fonctionner correctement.
+Dans la passerelle ATA, le seul logiciel de capture réseau que vous pouvez installer est [Moniteur réseau Microsoft 3.4](http://www.microsoft.com/download/details.aspx?id=4865). N’installez pas l’analyseur de message Microsoft ni aucun autre logiciel de capture réseau. L’installation d’autres logiciels empêchera la passerelle ATA de fonctionner correctement.
 
 ### Base de connaissance sur les hôtes de virtualisation
 N’installez pas la base de connaissance 3047154 sur un hôte de virtualisation, car cela empêcherait le bon fonctionnement de la mise en miroir des ports.
@@ -76,9 +70,10 @@ N’installez pas la base de connaissance 3047154 sur un hôte de virtualisatio
 
 [Mise à jour d’ATA vers la version 1.6 : guide de migration](ata-update-1.6-migration-guide.md)
 
-[Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+[Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

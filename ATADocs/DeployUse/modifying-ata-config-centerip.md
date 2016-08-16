@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Modifier la configuration ATA - Adresse IP du centre ATA | Microsoft Advanced Threat Analytics
-description: Décrit comment modifier l’adresse IP, le port ou le certificat de votre centre ATA.
-keywords:
+title: "Modifier la configuration ATA - Adresse IP du centre ATA | Microsoft Advanced Threat Analytics"
+description: "Décrit comment modifier l’adresse IP, le port ou le certificat de votre centre ATA."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 93b27f15-f7e5-49bb-870a-d81d09dfe9fc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 373eb5722a5450bca87cf66933990249286138ab
+
 
 ---
 
@@ -52,7 +46,7 @@ Les passerelles ATA stockent localement l’adresse IP du centre ATA auquel ell
 
     ![Icône des paramètres de configuration ATA](media/ATA-config-icon.JPG)
 
-3.  Sélectionnez **Centre ATA**.
+3.  Sélectionnez **Général**.
 
 4.  Sous **Adresse IP du service du centre ATA : port**, sélectionnez l’une des adresses IP existantes ou **Ajouter une adresse IP personnalisée** et entrez une adresse IP.
 
@@ -61,6 +55,12 @@ Les passerelles ATA stockent localement l’adresse IP du centre ATA auquel ell
 6.  Vous voyez une notification du nombre de passerelles ATA synchronisées avec la configuration la plus récente.
 
     ![Image de passerelles synchronisées du centre ATA](media/ATA-chge-IP-after-clicking-save.png)
+
+    >[!IMPORTANT]
+    >Avant d’activer la nouvelle configuration, vérifiez que toutes les passerelles ATA sont synchronisées avec la configuration la plus récente. L’activation de la nouvelle configuration avant que toutes les passerelles ATA ne soient synchronisées peut engendrer un dysfonctionnement de la passerelle ATA. Si une des passerelles ATA n’est pas synchronisée, vous obtenez cette erreur quand vous cliquez sur Activer :
+    >
+    >    ![Erreur de synchronisation de la passerelle ATA](media/ataGW-not-synced.png)
+
 
 7.  Une fois que toutes les passerelles ATA sont synchronisées, cliquez sur **Activer** pour activer la nouvelle adresse IP.
 
@@ -74,11 +74,12 @@ Les passerelles ATA stockent localement l’adresse IP du centre ATA auquel ell
 
 
 ## Voir aussi
-- [Utilisation de la console ATA](/advanced-threat-analytics/understand/working-with-ata-console)
+- [Utilisation de la console ATA](working-with-ata-console.md)
 - [Installer ATA](install-ata.md)
-- [Pour obtenir de l’aide, consultez notre forum.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Conditions préalables au déploiement d’ATA | Microsoft Advanced Threat Analytics
-description: Décrit la configuration requise pour réussir le déploiement d’ATA dans votre environnement
-keywords:
+title: "Conditions préalables au déploiement d’ATA | Microsoft Advanced Threat Analytics"
+description: "Décrit la configuration requise pour réussir le déploiement d’ATA dans votre environnement"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,23 +10,20 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1f85b9a0f51bd18edaa91ea208d6e6c7c7de56cc
+ms.openlocfilehash: da887431d8e63a7ae8ceeb3e7e22011d356e3590
+
 
 ---
 
 # Conditions préalables au déploiement d’ATA
 Cet article décrit la configuration requise pour réussir le déploiement d’ATA dans votre environnement.
 
->[!NOTE] Pour plus d’informations sur la façon de planifier les ressources et la capacité, consultez [Planification de la capacité ATA](ata-capacity-planning.md).
+>[!NOTE]
+> Pour plus d’informations sur la façon de planifier les ressources et la capacité, consultez [Planification de la capacité ATA](ata-capacity-planning.md).
 
 
 Les différents composants d’ATA sont le centre ATA, la passerelle ATA et/ou la passerelle légère ATA. Pour plus d’informations sur les composants d’ATA, consultez [Architecture d’ATA](ata-architecture.md).
@@ -52,7 +47,8 @@ Cette section répertorie les informations que vous devez rassembler ainsi que l
 
 -   Compte d’utilisateur et mot de passe avec accès en lecture à tous les objets dans les domaines qui seront surveillés.
 
-    > [!NOTE] Si vous avez défini des listes de contrôle d’accès (ACL) personnalisées sur différentes unités d’organisation dans votre domaine, vérifiez que l’utilisateur sélectionné dispose d’autorisations d’accès en lecture à ces unités d’organisation.
+    > [!NOTE]
+    > Si vous avez défini des listes de contrôle d’accès (ACL) personnalisées sur différentes unités d’organisation dans votre domaine, vérifiez que l’utilisateur sélectionné dispose d’autorisations d’accès en lecture à ces unités d’organisation.
 
 -   Procurez-vous une liste de tous les sous-réseaux utilisés sur votre réseau (VPN et Wi-Fi) qui réaffectent les adresses IP entre les appareils pendant une courte période (de l’ordre de quelques secondes ou minutes).  Veillez à identifier les sous-réseaux du bail à court terme pour qu’ATA puisse réduire la durée de vie du cache et ainsi prendre en charge la réaffectation rapide entre les appareils. Pour configurer les sous-réseaux du bail à court terme, consultez [Installer ATA](/advanced-threat-analytics/deploy-use/install-ata).
 -   Assurez-vous que l’Analyseur de message et Wireshark ne sont pas installés sur la passerelle ATA ou dans le centre ATA.
@@ -68,13 +64,20 @@ Cette section décrit la configuration requise pour le centre ATA.
 ### Général
 L’installation du centre ATA sur un serveur Windows Server 2012 R2 est prise en charge. Le centre ATA peut être installé sur un serveur membre d’un domaine ou d’un groupe de travail.
 
+Avant d’installer le centre ATA, vérifiez que la mise à jour suivante a été installée : [KB2919355](https://support.microsoft.com/kb/2919355/).
+
+Pour vous en assurer, exécutez l’applet de commande Windows PowerShell suivante : `[Get-HotFix -Id kb2919355]`
+
 L’installation du centre ATA en tant que machine virtuelle est prise en charge. 
 
 Si vous exécutez le centre ATA en tant que machine virtuelle, arrêtez le serveur avant de créer un point de contrôle pour éviter tout risque d’endommagement de la base de données.
 ### Spécifications du serveur
-La base de données ATA nécessite la **désactivation** de l’accès mémoire non uniforme (NUMA) dans le BIOS. Votre système peut parler d’entrelacement de nœuds pour faire référence à NUMA, auquel cas vous devrez **activer** l’entrelacement de nœuds pour désactiver NUMA. Pour plus d’informations, consultez la documentation du BIOS.<br>
+Sur un serveur physique, la base de données ATA nécessite la **désactivation** de l’accès mémoire non uniforme (NUMA) dans le BIOS. Votre système peut parler d’entrelacement de nœuds pour faire référence à NUMA, auquel cas vous devrez **activer** l’entrelacement de nœuds pour désactiver NUMA. Pour plus d’informations, consultez la documentation du BIOS. Notez que cela ne s’applique pas quand le centre ATA s’exécute sur un serveur virtuel.<br>
 Pour bénéficier de performances optimales, choisissez **Hautes performances** comme **Option d’alimentation** pour le centre ATA.<br>
 Le nombre de contrôleurs de domaine que vous surveillez et la charge sur chacun des contrôleurs de domaine déterminent les spécifications du serveur. Pour plus d’informations, consultez [Planification de la capacité ATA](ata-capacity-planning.md).
+
+>[!NOTE] 
+> En cas d’exécution en tant que machine virtuelle, la mémoire dynamique ou toute autre fonctionnalité d’augmentation de la mémoire n’est pas prise en charge.
 
 ### Synchronisation de l’heure
 L’heure du serveur du centre ATA, des serveurs de la passerelle ATA et des contrôleurs de domaine doit être synchronisée pour que tout écart entre eux ne dépasse pas cinq minutes.
@@ -88,7 +91,8 @@ Vous devez disposer des éléments suivants :
 
 La communication entre le centre ATA et la passerelle ATA est chiffrée à l’aide du protocole SSL sur le port 443. Par ailleurs, la console ATA s’exécute sur IIS et est sécurisée à l’aide du protocole SSL sur le port 443. Il est recommandé d’avoir **deux adresses IP**. Le service du centre ATA lie le port 443 à la première adresse IP, tandis qu’IIS lie le port 443 à la deuxième adresse IP.
 
-> [!NOTE] Vous pouvez utiliser une seule adresse IP avec deux ports distincts, mais il est recommandé d’avoir deux adresses IP.
+> [!NOTE]
+> Vous pouvez utiliser une seule adresse IP avec deux ports distincts, mais il est recommandé d’avoir deux adresses IP.
 
 ### Ports
 Le tableau suivant répertorie les ports qui, au minimum, doivent être ouverts pour que le centre ATA fonctionne correctement.
@@ -105,10 +109,11 @@ Dans ce tableau, l’adresse IP 1 est liée au service du centre ATA, alors qu
 |**Syslog** (facultatif)|TCP|514|Serveur syslog|Sortant|Adresse IP 2|
 
 ### Certificats
-Vérifiez que le centre ATA a accès au point de distribution de votre liste de révocation de certificats. Si les passerelles ATA n’ont pas accès à Internet, suivez la [procédure d’importation manuelle d’une liste de révocation de certificats](https://technet.microsoft.com/en-us/library/aa996972%28v=exchg.65%29.aspx) en veillant à installer l’ensemble des points de distribution de la liste pour toute la chaîne.
+Vérifiez que le centre ATA a accès au point de distribution de votre liste de révocation de certificats. Si les passerelles ATA n’ont pas accès à Internet, suivez la [procédure d’importation manuelle d’une liste de révocation de certificats](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx) en veillant à installer l’ensemble des points de distribution de la liste pour toute la chaîne.
 
 Pour faciliter l’installation du centre ATA, vous pouvez installer des certificats auto-signés pendant l’installation. Une fois le déploiement terminé, remplacez les certificats auto-signés par un certificat d’une autorité de certification interne en vue d’une utilisation par la passerelle ATA.<br>
-> [!NOTE] Le type de fournisseur du certificat doit être Fournisseur de services de chiffrement (CSP).
+> [!NOTE]
+> Le type de fournisseur du certificat doit être Fournisseur de services de chiffrement (CSP).
 
 
 Le centre ATA exige des certificats pour les services suivants :
@@ -117,7 +122,8 @@ Le centre ATA exige des certificats pour les services suivants :
 
 -   Service du centre ATA : certificat d’authentification serveur
 
-> [!NOTE] Si vous souhaitez accéder à la console ATA à partir d’autres ordinateurs, vérifiez que ces derniers approuvent le certificat utilisé par IIS. Sinon, vous obtiendrez une page d’avertissement indiquant un problème avec le certificat de sécurité du site web avant d’accéder à la page de connexion.
+> [!NOTE]
+> Si vous souhaitez accéder à la console ATA à partir d’autres ordinateurs, vérifiez que ces derniers approuvent le certificat utilisé par IIS. Sinon, vous obtiendrez une page d’avertissement indiquant un problème avec le certificat de sécurité du site web avant d’accéder à la page de connexion.
 
 ## Configuration requise pour la passerelle ATA
 Cette section décrit la configuration requise pour la passerelle ATA.
@@ -125,7 +131,7 @@ Cette section décrit la configuration requise pour la passerelle ATA.
 L’installation de la passerelle ATA sur un serveur Windows Server 2012 R2 est prise en charge.
 La passerelle ATA peut être installée sur un serveur membre d’un domaine ou d’un groupe de travail.
 
-Avant d’installer la passerelle ATA, vérifiez que la mise à jour suivante a été installée : [KB2919355](https://support.microsoft.com/en-us/kb/2919355/).
+Avant d’installer la passerelle ATA, vérifiez que la mise à jour suivante a été installée : [KB2919355](https://support.microsoft.com/kb/2919355/).
 
 Pour vous en assurer, exécutez l’applet de commande Windows PowerShell suivante : `[Get-HotFix -Id kb2919355]`
 
@@ -135,6 +141,8 @@ Pour plus d’informations sur l’utilisation de machines virtuelles avec la pa
 Pour bénéficier de performances optimales, choisissez **Hautes performances** comme **Option d’alimentation** pour la passerelle ATA.<br>
 Une passerelle ATA peut prendre en charge la surveillance de plusieurs contrôleurs de domaine, en fonction du volume du trafic réseau à destination et en provenance des contrôleurs de domaine.
 
+>[!NOTE] 
+> En cas d’exécution en tant que machine virtuelle, la mémoire dynamique ou toute autre fonctionnalité d’augmentation de la mémoire n’est pas prise en charge.
 
 ### Synchronisation de l’heure
 L’heure du serveur du centre ATA, des serveurs de la passerelle ATA et des contrôleurs de domaine doit être synchronisée pour que tout écart entre eux ne dépasse pas cinq minutes.
@@ -152,7 +160,8 @@ La passerelle ATA nécessite au moins une carte de gestion et au moins une carte
 
         ![Configurer le suffixe DNS dans les paramètres TCP/IP avancés](media/ATA-DNS-Suffix.png)
 
-        > [!NOTE] Si la passerelle ATA est membre du domaine, le suffixe est configuré automatiquement.
+        > [!NOTE]
+        > Si la passerelle ATA est membre du domaine, le suffixe est configuré automatiquement.
 
 -   **Carte de capture** : cette carte est utilisée pour capturer le trafic à destination et en provenance des contrôleurs de domaine.
 
@@ -178,7 +187,8 @@ Le tableau suivant répertorie les ports qui, au minimum, doivent être configur
 |SSL|TCP|443 ou comme configuré pour le service du centre|Centre ATA :<br /><br />- Adresse IP du service du centre<br />- Adresse IP d’IIS|Sortant|
 |Syslog (facultatif)|UDP|514|Serveur SIEM|Entrant|
 
-> [!NOTE] Dans le cadre du processus de résolution effectué par la passerelle ATA, les ports suivants doivent être ouverts en entrée sur les appareils du réseau à partir des passerelles ATA.
+> [!NOTE]
+> Dans le cadre du processus de résolution effectué par la passerelle ATA, les ports suivants doivent être ouverts en entrée sur les appareils du réseau à partir des passerelles ATA.
 >
 > -   NTLM sur RPC
 > -   NetBIOS
@@ -188,24 +198,31 @@ Vérifiez que le centre ATA a accès au point de distribution de votre liste de 
 Pour faciliter l’installation du centre ATA, vous pouvez installer des certificats auto-signés pendant l’installation. Une fois le déploiement terminé, remplacez les certificats auto-signés par un certificat d’une autorité de certification interne en vue d’une utilisation par la passerelle ATA.
 
 > [!NOTE]
-Le type de fournisseur du certificat doit être Fournisseur de services de chiffrement (CSP).<br>
+> Le type de fournisseur du certificat doit être Fournisseur de services de chiffrement (CSP).<br>
 
 Un certificat prenant en charge l’**authentification serveur** doit être installé dans le magasin de l’ordinateur de la passerelle ATA dans le magasin de l’ordinateur local. Ce certificat doit être approuvé par le centre ATA.
 
 ## Configuration requise pour la passerelle légère ATA
 Cette section décrit la configuration requise pour la passerelle légère ATA.
 ### Général
-La passerelle légère ATA prend en charge l’installation sur un contrôleur de domaine exécutant Windows Server 2008 R2, Windows Server 2012 ou Windows Server 2012 R2.
+La passerelle légère ATA prend en charge l’installation sur un contrôleur de domaine exécutant Windows Server 2008 R2 SP1, Windows Server 2012 ou Windows Server 2012 R2.
 
 Le contrôleur de domaine peut être un contrôleur de domaine en lecture seule (RODC).
 
 Le contrôleur de domaine ne doit pas être Server Core.
+
+Avant d’installer la passerelle légère ATA sur un contrôleur de domaine exécutant Windows Server 2012 R2 SP1, vérifiez que la mise à jour suivante a été installée : [KB2919355](https://support.microsoft.com/kb/2919355/).
+Pour vous en assurer, exécutez l’applet de commande Windows PowerShell suivante : `[Get-HotFix -Id kb2919355]`
 
 ### Spécifications du serveur
 
 La passerelle légère ATA nécessite au minimum deux cœurs et 6 Go de RAM sur le contrôleur de domaine.
 Pour bénéficier de performances optimales, choisissez **Hautes performances** comme **Option d’alimentation** pour la passerelle légère ATA.
 Vous pouvez déployer la passerelle légère ATA sur des contrôleurs de domaine de différentes charges et tailles, en fonction de la quantité de trafic réseau vers et à partir des contrôleurs de domaine et de la quantité de ressources installées sur ce contrôleur de domaine.
+
+>[!NOTE] 
+> En cas d’exécution en tant que machine virtuelle, la mémoire dynamique ou toute autre fonctionnalité d’augmentation de la mémoire n’est pas prise en charge.
+
 
 ### Synchronisation de l’heure
 L’heure du serveur du centre ATA, des serveurs de la passerelle légère ATA et des contrôleurs de domaine doit être synchronisée pour que tout écart entre eux ne dépasse pas cinq minutes.
@@ -224,7 +241,8 @@ Le tableau suivant répertorie les ports qui, au minimum, sont requis par la pas
 |SSL|TCP|443 ou comme configuré pour le service du centre|Centre ATA :<br /><br />- Adresse IP du service du centre<br />- Adresse IP d’IIS|Sortant|
 |Syslog (facultatif)|UDP|514|Serveur SIEM|Entrant|
 
-> [!NOTE] Dans le cadre du processus de résolution effectué par la passerelle légère ATA, les ports suivants doivent être ouverts en entrée sur les appareils du réseau à partir des passerelles légères ATA.
+> [!NOTE]
+> Dans le cadre du processus de résolution effectué par la passerelle légère ATA, les ports suivants doivent être ouverts en entrée sur les appareils du réseau à partir des passerelles légères ATA.
 >
 > -   NTLM sur RPC
 > -   NetBIOS
@@ -233,7 +251,7 @@ Le tableau suivant répertorie les ports qui, au minimum, sont requis par la pas
 Vérifiez que le centre ATA a accès au point de distribution de votre liste de révocation de certificats. Si les passerelles légères ATA n’ont pas accès à Internet, appliquez la procédure d’importation manuelle d’une liste de révocation de certificats en veillant à installer l’ensemble des points de distribution de la liste pour toute la chaîne.
 Pour faciliter l’installation du centre ATA, vous pouvez installer des certificats auto-signés pendant l’installation. Une fois le déploiement terminé, remplacez les certificats auto-signés par un certificat d’une autorité de certification interne en vue d’une utilisation par la passerelle légère ATA.
 > [!NOTE]
-Le type de fournisseur du certificat doit être Fournisseur de services de chiffrement (CSP).
+> Le type de fournisseur du certificat doit être Fournisseur de services de chiffrement (CSP).
 
 Un certificat prenant en charge l’authentification serveur doit être installé dans le magasin de l’ordinateur de la passerelle légère ATA dans le magasin de l’ordinateur local. Ce certificat doit être approuvé par le centre ATA.
 
@@ -250,10 +268,11 @@ L’accès à la console ATA s’effectue au moyen d’un navigateur, avec prise
 
 - [Architecture ATA](ata-architecture.md)
 - [Installer ATA](/advanced-threat-analytics/deploy-use/install-ata)
-- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO5-->
 
 

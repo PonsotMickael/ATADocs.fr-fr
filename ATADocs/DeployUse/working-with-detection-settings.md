@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Gestion des paramètres de la détection ATA | Microsoft Advanced Threat Analytics
-description: Décrit comment configurer une liste d’adresses IP et de sous-réseaux ayant des circonstances inhabituelles et qui doivent donc être gérés différemment des autres entités de votre réseau.
-keywords:
+title: "Gestion des paramètres de la détection ATA | Microsoft Advanced Threat Analytics"
+description: "Décrit comment configurer une liste d’adresses IP et de sous-réseaux ayant des circonstances inhabituelles et qui doivent donc être gérés différemment des autres entités de votre réseau."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: f4f2ae30-4849-4a4f-8f6d-bfe99a32c746
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 3840a5f7abdd496ad245a3f1c2589ad1855fddb5
+
 
 ---
 
@@ -44,9 +38,10 @@ Vous pouvez exclure des adresses IP des détections suivantes. Si vous ajoutez 
 ## Voir aussi
 - [Gestion des activités suspectes](working-with-suspicious-activities.md)
 - [Modification de la configuration d’ATA](modifying-ata-configuration.md)
-- [Pour obtenir de l’aide, consultez notre forum.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

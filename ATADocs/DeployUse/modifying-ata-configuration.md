@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Modifier la configuration ATA | Microsoft Advanced Threat Analytics
-description: Fournit une liste des méthodes de mise à jour de votre configuration ATA.
-keywords:
+description: "Fournit une liste des méthodes de mise à jour de votre configuration ATA."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: bcf0f7d3-8027-45c0-8002-19f71fcb30a6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 02598258f063e65767164334c995ab87d7ad0270
+
 
 ---
 
@@ -39,14 +33,13 @@ Si vous devez mettre à jour ou modifier votre configuration après l’installa
 
 -   [Modifier le mot de passe de connectivité de domaine](modifying-ata-config-dcpassword.md)
 
--   [Modifier le nom de la carte réseau de capture](modifying-ata-config-nicname.md)
-
 ## Voir aussi
-- [Utilisation de la console ATA](/advanced-threat-analytics/understand/working-with-ata-console)
+- [Utilisation de la console ATA](working-with-ata-console.md)
 - [Installer ATA](install-ata.md)
-- [Pour obtenir de l’aide, consultez notre forum.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
