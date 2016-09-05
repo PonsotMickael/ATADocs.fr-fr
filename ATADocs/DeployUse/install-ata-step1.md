@@ -13,8 +13,8 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 29b3abd4308ec766e8b01b0b07f384130e1d14eb
+ms.sourcegitcommit: d89f6c5e0ac9712ce2fde057c9ef8e4025e8a144
+ms.openlocfilehash: 41d538039a8fa0511a74dd6cd5d840a1dea516e8
 
 
 ---
@@ -22,7 +22,6 @@ ms.openlocfilehash: 29b3abd4308ec766e8b01b0b07f384130e1d14eb
 # Installer ATA - Étape 1
 
 >[!div class="step-by-step"]
-
 [Étape 2 »](install-ata-step2.md)
 
 Cette procédure d’installation fournit des instructions pour effectuer une nouvelle installation d’ATA 1.6. Pour plus d’informations sur la mise à jour d’un déploiement d’ATA existant à partir d’une version antérieure, consultez le [guide de migration d’ATA pour la version 1.6](/advanced-threat-analytics/understand-explore/ata-update-1.6-migration-guide).
@@ -102,6 +101,6 @@ Effectuez les opérations suivantes sur le serveur du centre ATA.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 
