@@ -4,7 +4,7 @@ description: "Décrit comment vous pouvez résoudre les erreurs courantes dans A
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,15 @@ ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 6be26fd2d0348557fa7b1c78533eed8a2be1a39f
+ms.sourcegitcommit: 15c1a0d7ae213876c0e3a955eaeea8887281b4e6
+ms.openlocfilehash: b073a1b969f8841c9bbe540722349a5ef70340d4
 
 
 ---
+
+*S’applique à : Advanced Threat Analytics version 1.7*
+
+
 
 # Résolution des problèmes liés au journal des erreurs ATA
 Cette section détaille les erreurs possibles dans les déploiements d’ATA et les étapes requises pour les corriger.
@@ -33,10 +37,14 @@ Cette section détaille les erreurs possibles dans les déploiements d’ATA et 
 |Microsoft.Tri.Infrastructure.ContractException : Exception de contrat|La passerelle ATA n’a pas pu synchroniser la configuration à partir du centre ATA.|Terminez la configuration de la passerelle ATA dans la console ATA.|
 |System.Reflection.ReflectionTypeLoadException : Impossible de charger un ou plusieurs des types demandés. Récupérez la propriété LoaderExceptions pour obtenir plus d’informations.|L’Analyseur de message est installé sur la passerelle ATA.| Désinstallez l’Analyseur de message.|
 |Erreur [Layout] System.OutOfMemoryException : une exception de type « System.OutOfMemoryException » a été levée.|La passerelle ATA ne dispose pas de suffisamment de mémoire.|Augmentez la quantité de mémoire disponible sur le contrôleur de domaine.|
-|Échec du démarrage du consommateur dynamique ---> Microsoft.Opn.Runtime.Monitoring.MessageSessionException : le fournisseur d’événements PEFNDIS n’est pas prêt|L’Analyseur de message (PEF) n’a pas été installé correctement.|Contactez le support technique pour obtenir une solution de contournement.|
+|Échec du démarrage du consommateur dynamique ---> Microsoft.Opn.Runtime.Monitoring.MessageSessionException : le fournisseur d’événements PEFNDIS n’est pas prêt|L’Analyseur de message (PEF) n’a pas été installé correctement.|Si vous utilisez Hyper-V, essayez de mettre à niveau les services d’intégration Hyper-V. Sinon, contactez le support technique pour obtenir une solution de contournement.|
 |Échec de l’installation avec l’erreur : 0x80070652|Il y a d’autres installations en attente sur votre machine.|Attendez la fin des autres installations, puis redémarrez l’ordinateur, si nécessaire.|
+|System.InvalidOperationException : L’instance 'Microsoft.Tri.Gateway' n’existe pas dans la catégorie spécifiée.|Les PID ont été activés pour traiter les noms dans la passerelle ATA|Utilisez [KB281884](https://support.microsoft.com/en-us/kb/281884) pour désactiver les PID dans les noms de processus.|
+|System.InvalidOperationException : La catégorie n’existe pas.|Il est possible que les compteurs soient désactivés dans le Registre.|Utilisez [KB2554336](https://support.microsoft.com/en-us/kb/2554336) pour reconstruire les compteurs de performance.|
+|System.ApplicationException : Impossible de démarrer la session de suivi ETW MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329|Il existe une entrée d’hôte dans le fichier HOSTS qui pointe vers le nom court de l’ordinateur.|Supprimez l’entrée d’hôte du fichier C:\Windows\System32\drivers\etc\HOSTS ou remplacez-la par un nom de domaine complet.|
 
-## Erreurs liées à la console ATA
+
+## Erreurs IIS ATA (non applicable pour ATA 1.7 et versions ultérieures)
 |Erreur|Description|Résolution|
 |-------------|----------|---------|
 |Erreur HTTP 500.19 - Erreur interne du serveur|Le module de réécriture d’URL IIS n’a pas pu s’installer correctement.|Désinstallez et réinstallez le module de réécriture d’URL IIS.<br>[Téléchargez le module de réécriture d’URL IIS.](http://go.microsoft.com/fwlink/?LinkID=615137)|
@@ -58,6 +66,6 @@ Cette section détaille les erreurs possibles dans les déploiements d’ATA et 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

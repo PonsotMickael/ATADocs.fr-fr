@@ -4,7 +4,7 @@ description: "Explique comment utiliser les compteurs de performances pour réso
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,15 @@ ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 4b4ff22df77b904a654b57aca824c154ea935560
+ms.sourcegitcommit: 21f28848dd22cfbcbb4b4871300621203b445fb4
+ms.openlocfilehash: a6113c106653039ca3b4337d9250d9b9baca4611
 
 
 ---
+
+*S’applique à : Advanced Threat Analytics version 1.7*
+
+
 
 # Résolution des problèmes liés à ATA à l’aide des compteurs de performances
 Les compteurs de performances ATA vous permettent de savoir si les composants ATA s’exécutent correctement. Les composants ATA traitant les données de manière séquentielle, la présence d’un problème peut entraîner le rejet partiel du trafic quelque part le long de la chaîne de composants. Pour résoudre le problème, vous devez déterminer le composant impliqué et résoudre le problème au début de la chaîne. Utilisez les données fournies par les compteurs de performance pour comprendre comment fonctionne chaque composant.
@@ -29,7 +33,7 @@ Pour comprendre le flux des composants ATA internes, consultez [Architecture AT
 
 2.  En conséquence, le composant précédent augmente **sa propre** taille jusqu’à empêcher le composant qui le précède d’envoyer des entités.
 
-3.  Cette situation se produit jusqu’au composant NetworkListener initial qui supprime le trafic quand il ne peut plus transférer d’entités.
+3.  Cette situation se produit jusqu’au composant NetworkListener qui supprime le trafic quand il ne peut plus transférer d’entités.
 
 
 ## Compteurs de performances de la passerelle ATA
@@ -39,39 +43,60 @@ Dans cette section, chaque référence à la passerelle ATA fait également réf
 Vous pouvez observer l’état des performances de la passerelle ATA en temps réel en ajoutant des compteurs de performances à la passerelle ATA.
 Pour cela, ouvrez l’Analyseur de performances, puis ajoutez tous les compteurs à la passerelle ATA. Le nom de l’objet de compteur de performances est « Microsoft ATA Gateway ».
 
-![Image de l’ajout du compteur de performances](media/ATA-performance-counters.png)
-
 Voici la liste des principaux compteurs de passerelle ATA :
 
 |Compteur|Description|Seuil|Résolution des problèmes|
 |-----------|---------------|-------------|-------------------|
-|Messages de l’analyseur PEF NetworkListener/s|Quantité de trafic traitée par la passerelle ATA chaque seconde.|Aucun seuil|Aide à comprendre la quantité de trafic qui est analysée par la passerelle ATA.|
+|Microsoft ATA Gateway\NetworkListener PEF Parser Messages/Sec|Quantité de trafic traitée par la passerelle ATA chaque seconde.|Aucun seuil|Aide à comprendre la quantité de trafic qui est analysée par la passerelle ATA.|
 |Événements supprimés PEF NetworkListener/s|Quantité de trafic supprimée par la passerelle ATA chaque seconde.|Ce nombre doit toujours être égal à zéro (de rares suppressions en rafales sont acceptables).|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Événements supprimés ETW NetworkListener/s|Quantité de trafic supprimée par la passerelle ATA chaque seconde.|Ce nombre doit toujours être égal à zéro (de rares suppressions en rafales sont acceptables).|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Taille des blocs de données de messages de NetworkActivityTranslator|Quantité de trafic mise en file d’attente pour la traduction en activités réseau.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 100 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Taille des blocs des activités EntityResolver|Quantité d’activités réseau en attente de résolution.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Taille des blocs de lots d’entités EntitySender|Quantité d’activités réseau en attente d’envoi vers le centre ATA.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 1 000 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Temps d’envoi des lots EntitySender|Durée nécessaire pour envoyer le dernier lot.|Doit être inférieur à 1 000 millisecondes dans la plupart des cas|Vérifiez la présence de problèmes réseau entre la passerelle ATA et le centre ATA.|
+|ATA GW Counter/NetworkListener ETW Dropped Events/Sec|Quantité de trafic supprimée par la passerelle ATA chaque seconde.|Ce nombre doit toujours être égal à zéro (de rares suppressions en rafales sont acceptables).|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|ATA GW Counter/NetworkActivityTranslator Message Data # Block Size|Quantité de trafic mise en file d’attente pour la traduction en activités réseau.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 100 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|ATA GW Counter/EntityResolver Activity Block Size|Quantité d’activités réseau en attente de résolution.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|ATA GW Counter/EntitySender Entity Batch Block Size|Quantité d’activités réseau en attente d’envoi vers le centre ATA.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 1 000 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|ATA GW Counter/EntitySender Batch Send Time|Durée nécessaire pour envoyer le dernier lot.|Doit être inférieur à 1 000 millisecondes dans la plupart des cas|Vérifiez la présence de problèmes réseau entre la passerelle ATA et le centre ATA.|
 
 > [!NOTE]
 > -   Les valeurs temporelles des compteurs sont exprimées en millisecondes.
 > -   Il est parfois plus pratique de surveiller tous les compteurs en même temps à l’aide du graphique « Rapport » (par exemple : surveillance en temps réel de l’ensemble des compteurs)
+
+## Compteurs de performance de la passerelle légère ATA
+Vous pouvez utiliser les compteurs de performances pour la gestion de quota dans la passerelle légère, pour vous assurer qu’ATA n’épuise pas trop les ressources des contrôleurs de domaine sur lesquels il est installé.
+Pour mesurer les limitations de ressources appliquées par ATA sur la passerelle légère, ajoutez les compteurs suivants :
+
+Ouvrez l’Analyseur de performances et ajoutez tous les compteurs pour la passerelle légère ATA. Les noms des objets de compteurs de performance sont : « Microsoft ATA Gateway » et « Microsoft ATA Gateway Updater ».
+
+
+|Compteur|Description|Seuil|Résolution des problèmes|
+|-----------|---------------|-------------|-------------------|
+|Microsoft ATA Gateway Updater\GatewayUpdaterResourceManager CPU Time Max %|Quantité maximale de temps processeur (en pourcentage) que le processus de passerelle légère peut consommer. |Aucun seuil. | Il s’agit de la limitation qui empêche que toutes les ressources du contrôleur de domaine soient utilisées par la passerelle légère ATA. Si vous voyez que le processus atteint souvent la limite maximale sur une période donnée (le processus atteint la limite, puis commence à ignorer le trafic), cela signifie que vous devez ajouter des ressources au serveur qui exécute le contrôleur de domaine.|
+|Microsoft ATA Gateway Updater\GatewayUpdaterResourceManager Commit Memory Max Size|Quantité maximale de mémoire allouée (en octets) que le processus de passerelle légère peut consommer.|Aucun seuil. | Il s’agit de la limitation qui empêche que toutes les ressources du contrôleur de domaine soient utilisées par la passerelle légère ATA. Si vous voyez que le processus atteint souvent la limite maximale sur une période donnée (le processus atteint la limite, puis commence à ignorer le trafic), cela signifie que vous devez ajouter des ressources au serveur qui exécute le contrôleur de domaine.| 
+|Microsoft ATA Gateway Updater\GatewayUpdaterResourceManager Working Set Limit Size|Quantité maximale de mémoire physique (en octets) que le processus de passerelle légère peut consommer.|Aucun seuil. | Il s’agit de la limitation qui empêche que toutes les ressources du contrôleur de domaine soient utilisées par la passerelle légère ATA. Si vous voyez que le processus atteint souvent la limite maximale sur une période donnée (le processus atteint la limite, puis commence à ignorer le trafic), cela signifie que vous devez ajouter des ressources au serveur qui exécute le contrôleur de domaine.|
+
+
+
+Pour connaître la consommation réelle, consultez les compteurs suivants :
+
+
+
+|Compteur|Description|Seuil|Résolution des problèmes|
+|-----------|---------------|-------------|-------------------|
+|Process(Microsoft.Tri.Gateway)\%Processor Time|Temps processeur (en pourcentage) réellement consommé par le processus de passerelle légère. |Aucun seuil. | Comparez les résultats de ce compteur à la limite indiquée dans GatewayUpdaterResourceManager CPU Time Max %. Si vous voyez que le processus atteint souvent la limite maximale sur une période donnée (le processus atteint la limite, puis commence à ignorer le trafic), cela signifie que vous devez allouer davantage de ressources à la passerelle légère.|
+|Process(Microsoft.Tri.Gateway)\Private Bytes|Quantité de mémoire allouée (en octets) réellement consommée par le processus de passerelle légère.|Aucun seuil. | Comparez les résultats de ce compteur à la limite indiquée dans GatewayUpdaterResourceManager Commit Memory Max Size. Si vous voyez que le processus atteint souvent la limite maximale sur une période donnée (le processus atteint la limite, puis commence à ignorer le trafic), cela signifie que vous devez allouer davantage de ressources à la passerelle légère.| 
+|Process(Microsoft.Tri.Gateway)\Working Set|Quantité de mémoire physique (en octets) réellement consommée par le processus de passerelle légère.|Aucun seuil. |Comparez les résultats de ce compteur à la limite indiquée dans GatewayUpdaterResourceManager Working Set Limit Size. Si vous voyez que le processus atteint souvent la limite maximale sur une période donnée (le processus atteint la limite, puis commence à ignorer le trafic), cela signifie que vous devez allouer davantage de ressources à la passerelle légère.|
 
 ## Compteurs de performances du centre ATA
 Vous pouvez observer l’état des performances du centre ATA en temps réel en ajoutant des compteurs de performances au centre ATA.
 
 Pour cela, ouvrez l’Analyseur de performances, puis ajoutez tous les compteurs au centre ATA. Le nom de l’objet de compteur de performances est « Microsoft ATA Center ».
 
-![Ajout de compteurs de performances au centre ATA](media/ATA-Gateway-perf-counters.png)
-
 Voici la liste des principaux compteurs du centre ATA :
 
 |Compteur|Description|Seuil|Résolution des problèmes|
 |-----------|---------------|-------------|-------------------|
-|Taille des blocs de lots d’entités EntityReceiver|Nombre de lots d’entités mis en file d’attente par le centre ATA.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener.  Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Taille des blocs d’activités réseau NetworkActivityProcessor|Nombre d’activités réseau en attente de traitement.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 50 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Taille des blocs d’activités réseau EntityProfiler|Nombre d’activités réseau en attente de profilage.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Base de données du centre &#42; taille de bloc|Nombre d’activités réseau d’un type spécifique en attente d’écriture dans la base de données.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 50 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Microsoft ATA Center\EntityReceiver Entity Batch Block Size|Nombre de lots d’entités mis en file d’attente par le centre ATA.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener.  Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Microsoft ATA Center\NetworkActivityProcessor Network Activity Block Size|Nombre d’activités réseau en attente de traitement.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 50 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Microsoft ATA Center\EntityProfiler Network Activity Block Size|Nombre d’activités réseau en attente de profilage.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Microsoft ATA Center\CenterDatabase &#42; Block Size|Nombre d’activités réseau d’un type spécifique en attente d’écriture dans la base de données.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 50 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
 
 
 > [!NOTE]
@@ -103,6 +128,6 @@ Voici la liste des principaux compteurs de système d’exploitation :
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

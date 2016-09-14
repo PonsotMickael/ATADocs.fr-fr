@@ -4,7 +4,7 @@ description: "La deuxième étape de la procédure d’installation d’ATA vous
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,44 +13,44 @@ ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 65ec5c86478e9ded096b899d64eb257257095eaf
+ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
+ms.openlocfilehash: fc268bcb2e3d027b09fa3349427934f60783b971
 
 
 ---
 
+*S’applique à : Advanced Threat Analytics version 1.7*
+
+
+
 # Installer ATA - Étape 2
 
 >[!div class="step-by-step"]
-[« Étape 1](install-ata-step1.md)
+[« Étape 1](install-ata-step1.md)
 [Étape 3 »](install-ata-step3.md)
 
-## Étape 2. Configurer les paramètres généraux de la passerelle ATA
-Les paramètres sous l’onglet **Général** s’appliquent à toutes les passerelles ATA gérées par le centre ATA.
+## Étape 2. Fournir un nom d’utilisateur et un mot de passe pour se connecter à votre forêt Active Directory
 
-Pour configurer les paramètres généraux de la passerelle ATA, procédez comme suit :
+La première fois que vous ouvrez la console ATA, l’écran suivant apparaît :
 
-1.  Ouvrez la console ATA et connectez-vous. Pour obtenir des instructions, consultez [Utilisation de la console ATA](working-with-ata-console.md).
+![ATA welcome stage 1 (Accueil ATA - phase 1)](media/ATA_1.7-welcome-provide-username.png)
 
-2.  Cliquez sur l’icône Paramètres et sélectionnez **Configuration**.
-
-    ![Paramètres de configuration de la passerelle ATA](media/ATA-config-icon.JPG)
-
-3.  Sous l’onglet **Général**, sous **Passerelles ATA**, entrez les informations suivantes et cliquez sur **Enregistrer**.
+1.  Entrez les informations suivantes, puis cliquez sur **Enregistrer** :
 
     |Champ|Commentaires|
     |---------|------------|
-    |**Nom d’utilisateur** (obligatoire)|Entrez le nom de l’utilisateur en lecture seule, par exemple : **user1**.|
-    |**Mot de passe** (obligatoire)|Entrez le mot de passe de l’utilisateur en lecture seule, par exemple : **Pencil1**. **Remarque :** vérifiez que ce mot de passe est correct. Si vous enregistrez le mauvais mot de passe, le service ATA cesse de fonctionner sur les serveurs de passerelle ATA.|
+    |**Nom d’utilisateur** (obligatoire)|Entrez le nom de l’utilisateur en lecture seule, par exemple : **ATAuser**.|
+    |**Mot de passe** (obligatoire)|Entrez le mot de passe de l’utilisateur en lecture seule, par exemple : **Pencil1**.|
     |**Domaine** (obligatoire)|Entrez le domaine de l’utilisateur en lecture seule, par exemple : **contoso.com**. **Remarque :** il est important d’entrer le nom complet du domaine où se trouve l’utilisateur. Par exemple, si le compte de l’utilisateur se trouve dans le domaine corp.contoso.com, vous devez entrer `corp.contoso.com`, et non contoso.com.|
     |Mise à jour automatique de toutes les passerelles ATA |Si vous activez ce paramètre et que vous mettez à jour le centre ATA à l’occasion de futures publications de version, toutes les passerelles ATA sont automatiquement mises à jour.|
 
-    ![Images les paramètres de connectivité du domaine ATA](media/ata-domain-connectivity-user.jpg)
+    Après l’enregistrement, le message d’accueil dans la console devient : ![ATA welcome stage 1 finished (Accueil ATA - fin de la phase 1)](media/ATA_1.7-welcome-provide-username-finished.png)
 
+2. Dans la console, cliquez sur **Download Gateway setup and install the first Gateway** (Télécharger le programme d’installation de passerelle et installer la première passerelle) pour continuer.
 
 
 >[!div class="step-by-step"]
-[« Étape 1](install-ata-step1.md)
+[« Étape 1](install-ata-step1.md)
 [Étape 3 »](install-ata-step3.md)
 
 
@@ -62,6 +62,6 @@ Pour configurer les paramètres généraux de la passerelle ATA, procédez comme
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -13,11 +13,15 @@ ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 3f357d2b21c453e0057370f3dfbbe45e39f3ba97
+ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
+ms.openlocfilehash: 9f408d7c2cb9c14caee175a1dd1c9ddb1baf9faa
 
 
 ---
+
+*S’applique à : Advanced Threat Analytics version 1.7*
+
+
 
 # Centre d’intégrité ATA
 Le centre d’intégrité ATA vous permet d’évaluer les performances de votre service ATA et vous prévient en cas de problèmes.
@@ -41,10 +45,10 @@ Pour vérifier l’intégrité globale de votre système, cliquez sur l’icône
 ## Voir aussi
 - [Gestion des paramètres de la détection ATA](working-with-detection-settings.md)
 - [Gestion des activités suspectes](working-with-suspicious-activities.md)
-- [Consultez le forum ATA](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
