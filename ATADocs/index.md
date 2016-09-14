@@ -14,8 +14,8 @@ ms.technology:
 ms.suite: ems
 ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: c9914415db42c9bb7dbf25717fb0b51fa5edaae1
+ms.sourcegitcommit: 1d610cead982b7a87a03339d960e6a2236a97932
+ms.openlocfilehash: 6cca68b7f0410c9b40ffdb2c97feaf0663b93ae0
 
 
 ---
@@ -36,11 +36,12 @@ ms.openlocfilehash: c9914415db42c9bb7dbf25717fb0b51fa5edaae1
       <h2 class="section-heading"><span class="icon icon-warning"></span> Contenu proposé</h2>
       <div class="features row">
         <ul class="column column-half">
+          <li><mark><b>NOUVELLE</b></mark> <a href="/understand-explore/whats-new-version-1.7">édition d’ATA version 1.7</a></li>
           <li><a href="/advanced-threat-analytics/understand-explore/what-is-ata">Qu’est-ce qu’Advanced Threat Analytics ?</a></li>
           <li><a href="/advanced-threat-analytics/understand-explore/ata-technical-faq">Forum aux questions</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="/advanced-threat-analytics/plan-design/ata-architecture">Architecture ATA</a></li>
+          <li><a href="/advanced-threat-analytics/plan-design/ata-architecture">Architecture d’ATA</a></li>
           <li><a href="/advanced-threat-analytics/plan-design/ata-capacity-planning">Planification de la capacité ATA</a></li>        </ul>
       </div>
     </section>
@@ -96,7 +97,7 @@ ms.openlocfilehash: c9914415db42c9bb7dbf25717fb0b51fa5edaae1
               <ul class="row">
                 <li class="column-third">
                   <a href="/advanced-threat-analytics/plan-design/ata-architecture">
-                    <h3>Architecture ATA</h3>
+                    <h3>Architecture d’ATA</h3>
                     <p>Comprenez l’aspect que doit présenter votre architecture pour prendre en charge ATA.</p>
                   </a>
                 </li>
@@ -108,7 +109,7 @@ ms.openlocfilehash: c9914415db42c9bb7dbf25717fb0b51fa5edaae1
                 </li>
                 <li class="column-third">
                   <a href="/advanced-threat-analytics/plan-design/ata-prerequisites">
-                    <h3>Conditions préalables au déploiement d’ATA</h3>
+                    <h3>Configuration requise pour ATA</h3>
                     <p>Planifiez la configuration requise pour réussir le déploiement d’ATA dans votre environnement</p>
                   </a>
                 </li>
@@ -195,6 +196,6 @@ ms.openlocfilehash: c9914415db42c9bb7dbf25717fb0b51fa5edaae1
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
