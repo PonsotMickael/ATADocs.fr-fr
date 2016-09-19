@@ -4,7 +4,7 @@ description: "Vous aide à planifier votre déploiement et à déterminer le nom
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
 ms.prod: 
@@ -12,11 +12,15 @@ ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: e0174ecac39b2a8cd469ed698853c447a85e4251
+ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
+ms.openlocfilehash: 09bf48be4c651af6ca1ae66a47f940d504570c8a
 
 
 ---
+
+*S’applique à : Advanced Threat Analytics version 1.7*
+
+
 
 # Planification de la capacité ATA
 Cette rubrique vous aide à déterminer le nombre de serveurs ATA nécessaires pour surveiller votre réseau, notamment le nombre de passerelles ATA et/ou de passerelles légères ATA dont vous avez besoin et la capacité serveur pour votre centre ATA et les passerelles ATA.
@@ -41,8 +45,7 @@ Les sections suivantes expliquent comment collecter le compteur paquets/s dans u
 
 ### Dimensionnement du centre ATA
 Le centre ATA nécessite l’équivalent de 30 jours de données qui est le minimum recommandé pour obtenir des analyses comportementales des utilisateurs. L’espace disque nécessaire pour la base de données ATA pour chaque contrôleur de domaine est indiqué ci-dessous. Si vous avez plusieurs contrôleurs de domaine, ajoutez l’espace disque requis par chaque contrôleur de domaine pour calculer l’espace total nécessaire pour la base de données ATA.
-> [!NOTE] 
-> En cas d’exécution en tant que machine virtuelle, la mémoire dynamique ou toute autre fonctionnalité d’augmentation de la mémoire n’est pas prise en charge.
+ 
 
 |Paquets par seconde&#42;|Unité centrale (cœurs&#42;&#42;)|Mémoire (Go)|Stockage de la base de données par jour (Go)|Stockage de la base de données par mois (Go)|E/S par seconde&#42;&#42;&#42;|
 |---------------------------|-------------------------|-------------------|---------------------------------|-----------------------------------|-----------------------------------|
@@ -59,9 +62,13 @@ Le centre ATA nécessite l’équivalent de 30 jours de données qui est le min
 > [!NOTE]
 > -   Le centre ATA peut gérer un maximum agrégé de 400 000 images par seconde provenant de l’ensemble des contrôleurs de domaine surveillés.
 > -   Les quantités de stockage citées ici sont des valeurs nettes. Vous devez toujours prendre en compte une croissance future et vous assurer que le disque sur lequel réside la base de données comprend au moins 20 % d’espace libre.
-> -   Si l’espace libre atteint la valeur minimale de 20 % ou 100 Go, la collecte de données la plus ancienne est supprimée. Ce processus de suppression continuera jusqu’à atteindre l’équivalent de deux jours de données, ou bien 5 % ou 50 Go d’espace libre. Une fois ces valeurs atteintes, la collecte de données s’arrêtera.
-> -  La latence de stockage pour les activités de lecture et d’écriture doit être inférieure à 10 ms.
-> -  Le rapport entre les activités de lecture et d’écriture est d’environ 1 pour 3 en dessous de 100 000 paquets par seconde et de 1 pour 6 au-dessus de 100 000 paquets par seconde.
+> -   Si l’espace libre atteint la valeur minimale de 20 % ou 100 Go, la collecte de données la plus ancienne est supprimée. Ce processus de suppression continue jusqu’à atteindre 5 % ou 50 Go d’espace libre. Une fois ces valeurs atteintes, la collecte de données s’arrête.
+> -   La latence de stockage pour les activités de lecture et d’écriture doit être inférieure à 10 ms.
+> -   Le rapport entre les activités de lecture et d’écriture est d’environ 1 pour 3 en dessous de 100 000 paquets par seconde et de 1 pour 6 au-dessus de 100 000 paquets par seconde.
+> -   En cas d’exécution en tant que machine virtuelle, la mémoire dynamique ou toute autre fonctionnalité d’augmentation de la mémoire n’est pas prise en charge.
+> -   Pour bénéficier de performances optimales, choisissez **Hautes performances** comme **Option d’alimentation** pour le centre ATA.<br>
+> -   Sur un serveur physique, la base de données ATA nécessite la **désactivation** de l’accès mémoire non uniforme (NUMA) dans le BIOS. Votre système peut parler d’entrelacement de nœuds pour faire référence à NUMA, auquel cas vous devrez **activer** l’entrelacement de nœuds pour désactiver NUMA. Pour plus d’informations, consultez la documentation du BIOS. Notez que cela ne s’applique pas quand le centre ATA s’exécute sur un serveur virtuel.
+
 
 ## Choix du type de passerelle appropriée pour votre déploiement
 Dans un déploiement ATA, toutes les combinaisons de types de passerelles ATA sont prises en charge :
@@ -94,8 +101,7 @@ Voici quelques exemples de scénarios dans lesquels les contrôleurs de domaine 
 ### Dimensionnement de passerelle légère ATA
 
 Une passerelle légère ATA peut prendre en charge la surveillance d’un contrôleur de domaine en fonction de la quantité de trafic réseau qu’il génère. 
-> [!NOTE] 
-> En cas d’exécution en tant que machine virtuelle, la mémoire dynamique ou toute autre fonctionnalité d’augmentation de la mémoire n’est pas prise en charge.
+
 
 |Paquets par seconde&#42;|Unité centrale (cœurs&#42;&#42;)|Mémoire (Go)&#42;&#42;&#42;|
 |---------------------------|-------------------------|---------------|
@@ -108,8 +114,11 @@ Une passerelle légère ATA peut prendre en charge la surveillance d’un contr�
 &#42;&#42;Quantité totale de cœurs non multithreads installés sur ce contrôleur de domaine.<br>Même si le multithread est acceptable pour la passerelle légère ATA, vous devez compter les cœurs réels et non les cœurs multithreads lors de la planification de la capacité.
 
 &#42;&#42;&#42;Quantité totale de mémoire installée sur ce contrôleur de domaine.
+
 > [!NOTE]   
-> Si le contrôleur de domaine ne dispose pas de la quantité de ressources requise par la passerelle légère ATA, les performances du contrôleur de domaine ne seront pas affectées, mais la passerelle légère ATA risque de ne pas fonctionner comme prévu.
+> -   Si le contrôleur de domaine ne dispose pas de la quantité de ressources requise par la passerelle légère ATA, les performances du contrôleur de domaine ne seront pas affectées, mais la passerelle légère ATA risque de ne pas fonctionner comme prévu.
+> -   En cas d’exécution en tant que machine virtuelle, la mémoire dynamique ou toute autre fonctionnalité d’augmentation de la mémoire n’est pas prise en charge.
+> -   Pour bénéficier de performances optimales, choisissez **Hautes performances** comme **Option d’alimentation** pour la passerelle légère ATA.
 
 
 ### Dimensionnement de la passerelle ATA
@@ -126,8 +135,7 @@ Les considérations relatives à la mise en miroir des ports peuvent vous amener
     Une passerelle ATA peut prendre en charge la surveillance de plusieurs contrôleurs de domaine, en fonction de la quantité de trafic réseau des contrôleurs de domaine surveillés. 
 <br>
 
-> [!NOTE] 
-> La mémoire dynamique n’est pas prise en charge.
+
 
 |Paquets par seconde&#42;|Unité centrale (cœurs&#42;&#42;)|Mémoire (Go)|
 |---------------------------|-------------------------|---------------|
@@ -142,6 +150,9 @@ Les considérations relatives à la mise en miroir des ports peuvent vous amener
 
 &#42;&#42; L’hyper-threading doit être désactivé.
 
+> [!NOTE] 
+> -   La mémoire dynamique n’est pas prise en charge.
+> -   Pour bénéficier de performances optimales, choisissez **Hautes performances** comme **Option d’alimentation** pour la passerelle ATA.
 
 
 ## Estimation du trafic des contrôleurs de domaine
@@ -201,6 +212,6 @@ Pour déterminer le nombre de paquets par seconde, effectuez les opérations sui
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

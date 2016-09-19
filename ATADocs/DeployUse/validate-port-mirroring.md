@@ -4,7 +4,7 @@ description: "Explique comment vérifier que la mise en miroir des ports est con
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,22 +13,26 @@ ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: d95fd582362fc650dffeb6c4fbf892ba3e367f12
+ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
+ms.openlocfilehash: 59d50b0d9c5adc78aca260412872076c84db8d57
 
 
 ---
 
+*S’applique à : Advanced Threat Analytics version 1.7*
+
+
+
 # Valider la mise en miroir des ports
 > [!NOTE] 
-> Cet article ne vous concerne que si vous déployez des passerelles ATA au lieu de passerelles légères ATA. Pour déterminer si vous devez utiliser des passerelles ATA, consultez [Choosing the right gateways for your deployment (Choix des passerelles appropriées pour votre déploiement)](/advanced-threat-analytics/plan-design/ata-capacity-planning#choosing-the-right-gateway-type-for-your-deployment).
+> Cet article ne vous concerne que si vous déployez des passerelles ATA au lieu de passerelles légères ATA. Pour déterminer si vous devez utiliser des passerelles ATA, consultez [Choix des passerelles appropriées pour votre déploiement](/advanced-threat-analytics/plan-design/ata-capacity-planning#choosing-the-right-gateway-type-for-your-deployment).
  
 Les étapes suivantes sont conçues pour vous guider dans le processus de validation de la mise en miroir des ports. Pour qu’ATA fonctionne correctement, la passerelle ATA doit pouvoir voir le trafic entrant et sortant du contrôleur de domaine. La principale source de données utilisée par ATA est l’inspection approfondie des paquets du trafic réseau entrant et sortant de vos contrôleurs de domaine. Pour qu’ATA puisse voir le trafic réseau, vous devez configurer la mise en miroir des ports. La mise en miroir des ports copie le trafic d’un port (le port source) vers un autre port (le port de destination).
 
 ## Valider la mise en miroir de port à l’aide d’un script Windows PowerShell
 
-1. Enregistrez le texte de ce script dans un fichier appelé ATAdiag.ps1.
-2. Exécutez ce script à partir de la passerelle ATA.
+1. Enregistrez le texte de ce script dans un fichier nommé *ATAdiag.ps1*.
+2. Exécutez ce script sur la passerelle ATA que vous souhaitez valider.
 Le script génère un trafic ICMP depuis la passerelle ATA vers le contrôleur de domaine et recherche ce trafic sur la carte de capture réseau sur le contrôleur de domaine.
 Si la passerelle ATA constate que le trafic ICMP a comme adresse IP de destination l’adresse IP du contrôleur de domaine que vous avez entrée dans la console ATA, elle considère que la mise en miroir de port est configurée. 
 
@@ -188,7 +192,7 @@ Exemple d’exécution du script :
     
     
 ## Valider la mise en miroir à l’aide du Moniteur réseau
-1.  Installez [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865).
+1.  Installez [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865) sur la passerelle ATA que vous souhaitez valider.
 
     > [!IMPORTANT]
     > N’installez pas l’analyseur de message Microsoft ou tout autre logiciel de capture du trafic sur la passerelle ATA.
@@ -224,6 +228,6 @@ Exemple d’exécution du script :
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

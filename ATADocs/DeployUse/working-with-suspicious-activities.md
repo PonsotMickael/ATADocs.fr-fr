@@ -4,7 +4,7 @@ description: "Explique comment passer en revue les activités suspectes identifi
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,15 @@ ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: e07ab99454133eab0480277ec2e54a1c3253a621
+ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
+ms.openlocfilehash: 30fbeb0682bd4b253d7a6eb52b8b31e487b363cb
 
 
 ---
+
+*S’applique à : Advanced Threat Analytics version 1.7*
+
+
 
 # Gestion des activités suspectes
 Cette rubrique explique les principes de base d’Advanced Threat Analytics.
@@ -86,7 +90,7 @@ Pour filtrer la liste des activités suspectes :
     > [!NOTE]
     > ATA peut rouvrir une activité résolue si celle-ci est détectée à nouveau peu de temps après.
 
--   **///Ignoré**
+-   **Ignoré**
 
     Activités que vous avez choisi d’ignorer manuellement. Si ATA détecte une activité suspecte similaire, il crée une nouvelle détection.
 
@@ -113,6 +117,6 @@ Vous pouvez modifier l’état d’une activité suspecte en cliquant sur son é
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

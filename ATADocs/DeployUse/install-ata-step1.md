@@ -4,7 +4,7 @@ description: "La première étape de la procédure d’installation d’ATA cons
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,21 +13,25 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d89f6c5e0ac9712ce2fde057c9ef8e4025e8a144
-ms.openlocfilehash: 41d538039a8fa0511a74dd6cd5d840a1dea516e8
+ms.sourcegitcommit: d0681cfa4ae763da9c88c8dec9b77a75494a5c9f
+ms.openlocfilehash: 7365b09e98d422a8670725b47a1c2380f00e23fb
 
 
 ---
+
+*S’applique à : Advanced Threat Analytics version 1.7*
+
+
 
 # Installer ATA - Étape 1
 
 >[!div class="step-by-step"]
 [Étape 2 »](install-ata-step2.md)
 
-Cette procédure d’installation fournit des instructions pour effectuer une nouvelle installation d’ATA 1.6. Pour plus d’informations sur la mise à jour d’un déploiement d’ATA existant à partir d’une version antérieure, consultez le [guide de migration d’ATA pour la version 1.6](/advanced-threat-analytics/understand-explore/ata-update-1.6-migration-guide).
+Cette procédure d’installation fournit des instructions pour effectuer une nouvelle installation d’ATA 1.7. Pour plus d’informations sur la mise à jour d’un déploiement d’ATA existant à partir d’une version antérieure, consultez le [guide de migration d’ATA pour la version 1.7](/advanced-threat-analytics/understand-explore/ata-update-1.7-migration-guide).
 
 > [!IMPORTANT] 
-> Installez la mise à jour KB2934520 sur le serveur du centre ATA et sur les serveurs de passerelle ATA avant de lancer l’installation ; sinon, le programme d’installation d’ATA installera cette mise à jour et nécessitera un redémarrage pendant l’installation d’ATA.
+> Si vous utilisez Windows 2012 R2, installez la mise à jour KB2934520 sur le serveur du centre ATA et sur les serveurs de passerelle ATA avant de lancer l’installation ; sinon, le programme d’installation d’ATA installe cette mise à jour qui nécessite un redémarrage pendant l’installation d’ATA.
 
 ## Étape 1. Télécharger et installer le centre ATA
 Après avoir vérifié que le serveur répond à la configuration requise, vous pouvez passer à l’installation du centre ATA.
@@ -57,19 +61,16 @@ Effectuez les opérations suivantes sur le serveur du centre ATA.
     |---------|---------------|------------|
     |Chemin d’installation|Il s’agit de l’emplacement où est installé le centre ATA. L’emplacement par défaut est le suivant : %programfiles%\Microsoft Advanced Threat Analytics\Center.|Conservez la valeur par défaut.|
     |Chemin d’accès des données de la base de données|Il s’agit de l’emplacement dans lequel les fichiers de la base de données MongoDB sont enregistrés. L’emplacement par défaut est le suivant : %programfiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data.|Modifiez cette valeur pour pointer vers un emplacement capable de prendre en charge l’évolution de vos besoins en matière de redimensionnement. **Remarque :** <ul><li>Dans les environnements de production, vous devez utiliser un lecteur avec suffisamment d'espace (tel que déterminé par la planification de la capacité).</li><li>Pour les déploiements volumineux, la base de données doit figurer sur un disque physique distinct.</li></ul>Pour plus d’informations sur le redimensionnement, consultez [Planification de la capacité ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning).|
-    |Adresse IP du service du centre ATA : port|Il s’agit de l’adresse IP sur laquelle le service du centre ATA écoute les communications en provenance des passerelles ATA.<br /><br />**Port par défaut :** 443|Cliquez sur la flèche vers le bas pour sélectionner l’adresse IP à utiliser par le service du centre ATA.<br /><br />L’adresse IP et le port du service du centre ATA ne peuvent pas être identiques à ceux de la console ATA. Veillez à modifier le port de la console ATA.|
-    |Certificat SSL du service du centre ATA|Il s’agit du certificat utilisé par le service du centre ATA.|Cliquez sur l’icône en forme de clé pour sélectionner un certificat installé ou cochez la case Créer un certificat auto-signé lors du déploiement dans un environnement lab.|
-    |Adresse IP de la console ATA|Il s’agit de l’adresse IP utilisée par IIS pour la console ATA.|Cliquez sur la flèche vers le bas pour sélectionner l’adresse IP utilisée par la console ATA. **Remarque :** notez cette adresse IP pour faciliter l’accès à la console ATA à partir de la passerelle ATA.|
-    |Certificat SSL de la console ATA|Il s’agit du certificat à utiliser par IIS.|Cliquez sur l’icône en forme de clé pour sélectionner un certificat installé ou cochez la case Créer un certificat auto-signé lors du déploiement dans un environnement lab.|
-
-    ![Image de la configuration du centre ATA](media/ATA-Center-Configuration.JPG)
+    |Adresse IP du service du centre : port|Il s’agit de l’adresse IP sur laquelle le service du centre ATA écoute les communications en provenance des passerelles ATA.<br /><br />**Port par défaut :** 443|Cliquez sur la flèche vers le bas pour sélectionner l’adresse IP à utiliser par le service du centre ATA.<br /><br />L’adresse IP et le port du service du centre ATA ne peuvent pas être identiques à ceux de la console ATA. Veillez à modifier le port de la console ATA.|
+    |Certificat SSL du service du centre|Il s’agit du certificat utilisé par le service du centre ATA et de la console ATA.|Cliquez sur l’icône en forme de clé pour sélectionner un certificat installé ou cochez la case Créer un certificat auto-signé lors du déploiement dans un environnement lab.|
+    |Adresse IP de la console|Il s’agit de l’adresse IP utilisée pour la console ATA.|Cliquez sur la flèche vers le bas pour sélectionner l’adresse IP utilisée par la console ATA. **Remarque :** notez cette adresse IP pour faciliter l’accès à la console ATA à partir de la passerelle ATA.|
+    
+    ![Image de la configuration du centre ATA](media/ATA-Center-Configuration.png)
 
 10.  Cliquez sur **Installer** pour installer le centre ATA et ses composants.
     Les composants suivants sont installés et configurés pendant l’installation du centre ATA :
 
-    -   Internet Information Services (IIS)
-
-    -   Service du centre ATA et site IIS de la console ATA
+    -   Service du centre ATA
 
     -   MongoDB
 
@@ -101,6 +102,6 @@ Effectuez les opérations suivantes sur le serveur du centre ATA.
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

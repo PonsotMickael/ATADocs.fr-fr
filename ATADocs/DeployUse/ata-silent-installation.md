@@ -13,17 +13,21 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: dce4cbaf894d383851a7039b6457a98c1d5ba5d4
+ms.sourcegitcommit: d0681cfa4ae763da9c88c8dec9b77a75494a5c9f
+ms.openlocfilehash: 7b9ba09d3757979c0b845f796a846e7e83b505af
 
 
 ---
+
+*S’applique à : Advanced Threat Analytics version 1.7*
+
+
 
 # Installation d’ATA sans assistance
 Cet article fournit des instructions pour installer ATA sans assistance.
 ## Conditions préalables
 
-Microsoft ATA v1.6 requiert l’installation de Microsoft .NET Framework 4.6.1. 
+Microsoft ATA v1.7 nécessite l’installation du Microsoft .NET Framework 4.6.1. 
 
 Quand vous installez ou mettez à jour ATA, .Net Framework 4.6.1 est automatiquement installé dans le cadre du déploiement de Microsoft ATA.
 
@@ -217,6 +221,6 @@ Utilisez la commande suivante pour effectuer une désinstallation sans assistanc
 - [Conditions préalables au déploiement d’ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

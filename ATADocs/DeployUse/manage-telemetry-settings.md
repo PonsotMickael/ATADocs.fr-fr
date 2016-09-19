@@ -4,7 +4,7 @@ description: "Décrit les données collectées par ATA et explique comment désa
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,15 @@ ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 7e849e9d902873cec7140a14b6f0709d3ef9ddd1
+ms.sourcegitcommit: 3a7e375da4acd5546347310c5965394b2addfe63
+ms.openlocfilehash: 0c6b8589fffe24298d0caf2cf2eb5e7e817e4da2
 
 
 ---
+
+*S’applique à : Advanced Threat Analytics version 1.7*
+
+
 
 # Gérer les paramètres de télémétrie
 ATA (Advanced Threat Analytics) collecte des données de télémétrie rendues anonymes sur ATA et les transmet via une connexion HTTPS aux serveurs Microsoft.  Ces données sont utilisées par Microsoft pour améliorer les futures versions d’ATA.
@@ -63,6 +67,21 @@ Les données rendues anonymes collectées incluent les éléments suivants :
 
     -   Entrée fournie
 
+- Problèmes d’intégrité – Les données anonymes suivantes sont collectées pour chaque problème d’intégrité :
+
+    (Les noms d’ordinateurs, les noms d’utilisateurs et les adresses IP ne sont pas collectés.)
+
+    -   Type de problème d’intégrité
+
+    -   ID du problème d’intégrité
+
+    -   État
+
+    -   Heures de début et de fin
+
+- Adresses URL de la console ATA - Adresses URL lors de l’utilisation de la console ATA, c’est-à-dire quelles pages de la console ATA sont consultées.
+
+
 ### Désactiver la collecte de données
 Procédez comme suit pour arrêter la collecte et l’envoi de données de télémétrie à Microsoft :
 
@@ -76,6 +95,6 @@ Procédez comme suit pour arrêter la collecte et l’envoi de données de tél�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

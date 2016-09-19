@@ -4,7 +4,7 @@ description: "Décrit le processus en deux étapes pour renouveler ou remplacer 
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,20 +13,24 @@ ms.assetid: c8855287-de3b-4cdd-be8f-2128f48a6f27
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 5ae9f13c417459e73d85cce3ebbb0293c3e08f83
+ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
+ms.openlocfilehash: e707d354396f8eeed58c13ee1e9e91df9888e030
 
 
 ---
+
+*S’applique à : Advanced Threat Analytics version 1.7*
+
+
 
 # Modifier la configuration ATA - Certificat du centre ATA
 
 >[!div class="step-by-step"]
 [« Adresse IP du serveur du centre ATA](modifying-ata-config-centerip.md)
-[Adresse IP de la console ATA »](modifying-ata-config-consoleip.md)
+[URL de la console ATA »](modifying-ata-config-consoleurl.md)
 
 ## Modifier le certificat du centre ATA
-Si vos certificats expirent et doivent être renouvelés ou remplacés après avoir installé le nouveau certificat dans le magasin de l’ordinateur local sur le serveur du centre ATA, remplacez le certificat en suivant ce processus en deux étapes :
+Si votre certificat est sur le point d’expirer et doit être renouvelé ou remplacé après l’installation du nouveau certificat dans le magasin de l’ordinateur local sur le serveur du centre ATA, remplacez le certificat en suivant ce processus en deux étapes :
 
 -   Première étape. Mettez à jour le certificat que le service du centre ATA doit utiliser. À ce stade, le service du centre ATA est toujours lié au certificat d’origine. Quand les passerelles ATA synchronisent leur configuration, elles disposent de deux certificats potentiels qui sont valides pour une authentification mutuelle. Tant que la passerelle ATA peut se connecter avec le certificat d’origine, elle n’essaie pas le nouveau.
 
@@ -35,6 +39,7 @@ Si vos certificats expirent et doivent être renouvelés ou remplacés après av
 > [!NOTE]
 > -   Si une passerelle ATA était hors connexion lors de la première étape et n’a jamais reçu la configuration mise à jour, vous devez manuellement mettre à jour le fichier JSON de configuration sur la passerelle ATA.
 > -   Le certificat que vous utilisez doit être approuvé par les passerelles ATA.
+> -   Le certificat étant également utilisé pour la console ATA, il doit correspondre à l’adresse de la console ATA pour éviter les avertissements dans le navigateur.
 > -   Si vous devez déployer une nouvelle passerelle ATA après avoir activé le nouveau certificat, vous devez télécharger une nouvelle fois le package d’installation de la passerelle ATA.
 
 1.  Ouvrez la console ATA.
@@ -43,7 +48,7 @@ Si vos certificats expirent et doivent être renouvelés ou remplacés après av
 
     ![Icône des paramètres de configuration ATA](media/ATA-config-icon.JPG)
 
-3.  Sélectionnez **Centre ATA**.
+3.  Sélectionnez **Centre**.
 
 4.  Sous **Certificat**, sélectionnez l’un des certificats dans la liste.
 
@@ -61,15 +66,15 @@ Si vos certificats expirent et doivent être renouvelés ou remplacés après av
 
 >[!div class="step-by-step"]
 [« Adresse IP du serveur du centre ATA](modifying-ata-config-centerip.md)
-[Adresse IP de la console ATA »](modifying-ata-config-consoleip.md)
+[URL de la console ATA »](modifying-ata-config-consoleurl.md)
 
 ## Voir aussi
 - [Utilisation de la console ATA](working-with-ata-console.md)
 - [Installer ATA](install-ata.md)
-- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Consultez le forum ATA !](https://aka.ms/ata-forum)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

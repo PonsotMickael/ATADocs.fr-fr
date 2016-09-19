@@ -4,7 +4,7 @@ description: "Décrit comment modifier le mot de passe de connectivité de domai
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,16 +13,20 @@ ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 7b8904bcb379004b2038e6b9a14c87c3914f1e1f
+ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
+ms.openlocfilehash: 7cee457a8959526b25a68c50efea2976bafbef75
 
 
 ---
 
+*S’applique à : Advanced Threat Analytics version 1.7*
+
+
+
 # Modifier la configuration ATA - Mot de passe de connectivité de domaine
 
 >[!div class="step-by-step"]
-[« Certificat IIS](modifying-ata-config-iiscert.md)
+[« URL de la console ATA](modifying-ata-config-consoleurl.md)
 
 
 ## Modifier le mot de passe de connectivité de domaine
@@ -31,26 +35,28 @@ Si vous modifiez le mot de passe de connectivité de domaine, assurez-vous que l
 Si vous pensez que cela s’est produit, recherchez la ligne suivante dans le fichier Microsoft.Tri.Gateway-Errors.log sur la passerelle ATA :
 `The supplied credential is invalid.`
 
-Pour corriger ce problème, procédez comme suit pour mettre à jour le mot de passe de connectivité de domaine sur la passerelle ATA :
+Pour corriger ce problème, procédez comme suit pour mettre à jour le mot de passe de connectivité de domaine dans le centre ATA :
 
-1.  Ouvrez la console ATA sur la passerelle ATA.
+1.  Ouvrez la console ATA dans le centre ATA.
 
 2.  Sélectionnez l’option des paramètres dans la barre d’outils, puis **Configuration**.
 
     ![Icône des paramètres de configuration ATA](media/ATA-config-icon.JPG)
 
-3.  Sélectionnez **Général**.
+3.  Sélectionnez **Services d’annuaire**.
 
-    ![Image de modification du mot de passe de la passerelle ATA](media/ATA-GW-change-DC-password.JPG)
+    ![Image de modification du mot de passe de la passerelle ATA](media/ATA-GW-change-DC-password.png)
 
-4.  Sous **Général**, modifiez le mot de passe.
+4.  Sous **Mot de passe**, modifiez le mot de passe.
+
+    Si le centre ATA dispose d’une connectivité au domaine, utilisez le bouton **Tester la connexion** pour valider les informations d’identification.
 
 5.  Cliquez sur **Enregistrer**.
 
 6.  Après avoir modifié le mot de passe, vérifiez manuellement que le service de la passerelle ATA fonctionne sur les serveurs de la passerelle ATA.
 
 >[!div class="step-by-step"]
-[« Certificat IIS](modifying-ata-config-iiscert.md)
+[« URL de la console ATA](modifying-ata-config-consoleurl.md)
 
 ## Voir aussi
 - [Utilisation de la console ATA](working-with-ata-console.md)
@@ -59,6 +65,6 @@ Pour corriger ce problème, procédez comme suit pour mettre à jour le mot de p
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
