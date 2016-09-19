@@ -4,7 +4,7 @@ description: "Fournit des réponses aux questions les plus fréquentes sur ATA"
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,12 @@ ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 09de79e1f8fee6b27c7ba403df1af4431bd099a9
-ms.openlocfilehash: 51440757c89130f8454e9c2b1abe7182f2b7eb41
+ms.sourcegitcommit: b8ad2f343b8397184cd860803f06b0d59c492f5a
+ms.openlocfilehash: 96b3ce171ca07bf44163d49b50377fccd6472a08
 
 
 ---
+*S’applique à : Advanced Threat Analytics version 1.7*
 
 # Forum Aux Questions : ATA
 Cet article fournit des éléments d’informations et des réponses aux questions les plus fréquentes sur ATA.
@@ -39,23 +40,26 @@ Vous pouvez simuler des activités suspectes (test de bout en bout) en effectuan
 Ce programme doit s’exécuter à distance sur le contrôleur de domaine surveillé, et non à partir de la passerelle ATA.
 
 ## Comment vérifier le transfert d’événements Windows ?
-Vous pouvez exécuter ce qui suit à partir d’une invite de commandes dans le répertoire **\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin** :
+Vous pouvez placer le code qui suit dans un fichier, puis l’exécuter à partir d’une invite de commandes dans le répertoire **\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin** comme suit :
 
-        mongo ATA --eval "printjson(db.getCollectionNames())" | find /C "NtlmEvents"`
+Nom de fichier ATA mongo.exe
+
+        db.getCollectionNames().forEach(function(collection) {
+        if (collection.substring(0,10)=="NtlmEvent_") {
+                if (db[collection].count() > 0) {
+                                  print ("Found "+db[collection].count()+" NTLM events") 
+                                }
+                }
+        });
+
 ## ATA prend-il en charge le trafic chiffré ?
-Le trafic chiffré n’est pas analysé (par exemple : LDAPS, ESP IPSEC).
+ATA repose sur l’analyse de plusieurs protocoles réseau, ainsi que sur les événements recueillis à partir du SIEM ou par le biais de Windows Event Forwarding. Ainsi, même si le trafic chiffré n’est pas analysé (par exemple, le protocole LDAPS et IPSEC ESP), ATA continue de fonctionner et la plupart des détections ne sont pas affectées.
+
 ## ATA fonctionne-t-il avec le blindage Kerberos ?
 L’activation du blindage Kerberos, également appelé FAST (Flexible Authentication Secure Tunneling), est prise en charge par ATA, à l’exception de la détection Overpass-the-Hash qui ne fonctionne pas.
 ## De combien de passerelles ATA ai-je besoin ?
 
-Tout d’abord, nous vous recommandons d’utiliser des passerelles légères ATA sur les contrôleurs de domaine qui peuvent les prendre en charge. Pour déterminer si cela est possible, consultez [Dimensionnement de passerelle légère ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning#ata-lightweight-gateway-sizing). 
-
-Si tous les contrôleurs de domaine peuvent être couverts par des passerelles légères ATA, aucune passerelle ATA n’est nécessaire.
-
-Pour les contrôleurs de domaine ne pouvant pas être couverts par la passerelle légère ATA, tenez compte des éléments suivants pour déterminer le nombre de passerelles ATA nécessaire :
-
- - Le volume de trafic total généré par vos contrôleurs de domaine, ainsi que l’architecture du réseau (afin de configurer la mise en miroir des ports). Pour en savoir plus sur la façon de déterminer le volume de trafic généré par vos contrôleurs de domaine, consultez [Estimation du trafic des contrôleurs de domaine](/advanced-threat-analytics/plan-design/ata-capacity-planning#Domain-controller-traffic-estimation).
- - Les limites opérationnelles de la mise en miroir des ports affectent aussi le nombre de passerelles ATA dont vous avez besoin pour prendre en charge vos contrôleurs de domaine (par exemple : par commutateur, par centre de données ou par région). Chaque environnement a ses propres spécificités. 
+Le nombre de passerelles ATA dépend de la disposition de votre réseau, du volume de paquets et du volume d’événements capturés par ATA. Pour déterminer le nombre exact, consultez [Dimensionnement de passerelle légère ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning#ata-lightweight-gateway-sizing). 
 
 ## Quelles sont les exigences imposées par ATA en matière d’espace de stockage ?
 Pour chaque journée complète produisant en moyenne 1 000 paquets/s, il vous faut 0,3 Go de stockage.<br /><br />Pour plus d’informations sur le dimensionnement du centre ATA, consultez [Planification de la capacité ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning).
@@ -79,11 +83,10 @@ Si un contrôleur de domaine virtuel ne peut pas être couvert par la passerelle
 Il y a deux éléments que vous devez sauvegarder :
 
 -   Le trafic et les événements enregistrés par ATA, que vous pouvez sauvegarder à l’aide de n’importe quelle procédure de sauvegarde de base de données prise en charge. Pour plus d’informations, consultez [Gestion de la base de données ATA](/advanced-threat-analytics/deploy-use/ata-database-management). 
--   La configuration d’ATA, qui est stockée dans la base de données et qui est automatiquement sauvegardée toutes les heures. 
-
+-   La configuration d’ATA. Elle est stockée dans la base de données et sauvegardée automatiquement toutes les heures dans le dossier **Backup** à l’emplacement de déploiement du centre ATA.  Pour plus d’informations, consultez [Gestion de la base de données ATA](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/ata-database-management).
 ## Que peut détecter ATA ?
 ATA détecte les techniques et attaques connues, les problèmes de sécurité et les risques.
-Pour obtenir la liste complète des éléments détectés par ATA, consultez [Qu’est-ce que Microsoft Advanced Threat Analytics ?](what-is-ata.md).
+Pour obtenir la liste complète des détections fournies par ATA, consultez [Quelles sont les détections effectuées par ATA ?](ata-threats.md).
 
 ## De quel type de stockage ai-je besoin pour ATA ?
 Nous vous recommandons d’utiliser un stockage rapide (les disques 7 200 tr/min ne sont pas recommandés) avec un accès disque à faible latence (inférieure à 10 ms). La configuration RAID doit accepter les charges en écriture lourdes (RAID-5/6 et leurs dérivés ne sont pas recommandés).
@@ -95,9 +98,9 @@ La passerelle ATA a besoin au minimum de deux cartes réseau :<br>1. Une carte 
 ATA bénéficie d’une intégration bidirectionnelle aux serveurs SIEM, comme suit :
 
 1. Vous pouvez configurer ATA de façon à envoyer une alerte Syslog en cas d’activité suspecte à n’importe quel serveur SIEM utilisant le format CEF.
-2. Vous pouvez configurer ATA pour recevoir des messages Syslog pour chaque événement Windows associé à l’ID 4776 à partir de [ces serveurs SIEM](/advanced-threat-analytics/deploy-use/configure-event-collection#siem-support).
+2. Vous pouvez configurer ATA pour recevoir des messages Syslog de chaque événement Windows associé à l’ID 4776 à partir de [ces serveurs SIEM](/advanced-threat-analytics/deploy-use/configure-event-collection#siem-support).
 
-## ATA peut-il surveiller les contrôleurs de domaine visualisés sur votre solution IaaS ?
+## ATA peut-il surveiller les contrôleurs de domaine virtualisés sur votre solution IaaS ?
 
 Oui, vous pouvez utiliser la passerelle légère ATA pour surveiller les contrôleurs de domaine qui se trouvent dans n’importe quelle solution IaaS.
 
@@ -126,8 +129,7 @@ Non. ATA surveille tous les appareils du réseau qui effectuent des demandes d�
 Oui. Étant donné que les comptes d’ordinateurs (de même que toute autre entité) peuvent être utilisés pour effectuer des activités malveillantes, ATA surveille le comportement de tous les comptes d’ordinateurs et de toutes les autres entités dans l’environnement.
 
 ## ATA peut-il prendre en charge plusieurs domaines et plusieurs forêts ?
-Quand il sera dévoilé au grand public, Microsoft Advanced Threat Analytics prendra en charge plusieurs domaines ayant la même forêt comme limite. C’est la forêt qui constitue la « limite de sécurité ». Donc, en prenant en charge plusieurs domaines, ATA couvrira à 100 % les environnements des clients.
-
+Microsoft Advanced Threat Analytique prend en charge les environnements à plusieurs domaines dans la même limite de forêt. S’il existe plusieurs forêts, un déploiement ATA est nécessaire pour chaque forêt.
 ## Puis-je examiner l’intégrité globale du déploiement ?
 Oui. Vous pouvez consulter l’intégrité globale du déploiement ainsi que les problèmes spécifiques liés à la configuration, à la connectivité, etc. Dès qu’un problème se produit, vous êtes averti.
 
@@ -142,6 +144,6 @@ Oui. Vous pouvez consulter l’intégrité globale du déploiement ainsi que les
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

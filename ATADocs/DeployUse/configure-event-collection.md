@@ -13,11 +13,15 @@ ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: fd0b2539841e6938e0f82a81bce04ffb9b5202b4
+ms.sourcegitcommit: 54e5105e78b6db9f33488135601381af5503aa4a
+ms.openlocfilehash: 118eb5bf505426f1947e96a4e01d0206abdce88d
 
 
 ---
+
+*S’applique à : Advanced Threat Analytics version 1.6 et 1.7*
+
+
 
 # Configurer la collecte d’événements
 Pour améliorer les fonctionnalités de détection, ATA a besoin de l’ID de journal des événements Windows 4776. Les événements peuvent être transférés à la passerelle ATA de deux manières : soit en configurant la passerelle ATA de façon à écouter les événements SIEM, soit en [configurant le transfert d’événements Windows](#configuring-windows-event-forwarding).
@@ -28,7 +32,7 @@ Outre la collecte et l’analyse du trafic réseau à destination et en provenan
 ### SIEM/Syslog
 Pour qu’ATA puisse consommer des données provenant d’un serveur Syslog, vous devez effectuer les opérations suivantes :
 
--   Configurez l’un de vos serveurs de passerelle ATA de façon à écouter et à accepter les événements transférés à partir du serveur SIEM/Syslog.
+-   Configurez vos serveurs de passerelle ATA pour écouter et accepter les événements transférés à partir du serveur SIEM/Syslog.
 
 -   Configurez votre serveur SIEM/Syslog de façon à transférer des événements spécifiques à la passerelle ATA.
 
@@ -43,13 +47,11 @@ Si vous n’utilisez pas un serveur SIEM/Syslog, vous pouvez configurer vos cont
 
 ## Configuration de la passerelle ATA pour écouter les événements SIEM
 
-1.  Dans Configuration de la passerelle ATA, activez le protocole **UDP de l’écouteur Syslog**.
-
-    Définissez l’adresse IP d’écoute comme indiqué dans l’image ci-dessous. Le port par défaut est 514.
+1.  Dans la configuration ATA, sous l’onglet « Événements », activez **Syslog** et cliquez sur **Enregistrer**.
 
     ![Image de l’activation du protocole UDP de l’écouteur syslog](media/ATA-enable-siem-forward-events.png)
 
-2.  Configurez votre serveur SIEM ou Syslog de façon à transférer l’événement Windows associé à l’ID 4776 vers l’adresse IP sélectionnée ci-dessus. Pour plus d’informations sur la configuration de votre serveur SIEM, consultez l’aide en ligne de SIEM ou explorez les options de support technique à votre disposition pour obtenir les formats à respecter pour chaque serveur SIEM.
+2.  Configurez votre serveur SIEM ou Syslog pour transférer l’événement Windows associé à l’ID 4776 vers l’adresse IP de l’une des passerelles ATA. Pour plus d’informations sur la configuration de votre serveur SIEM, consultez l’aide en ligne de SIEM ou explorez les options de support technique à votre disposition pour obtenir les formats à respecter pour chaque serveur SIEM.
 
 ### Prise en charge de SIEM
 ATA prend en charge les événements SIEM aux formats suivants :
@@ -174,41 +176,107 @@ Assurez-vous que \t sépare les paires clé/valeur.
 > Utiliser WinCollect pour la collecte des événements Windows n’est pas pris en charge.
 
 ## Configuration du transfert d’événements Windows
-Si vous ne disposez pas d’un serveur SIEM, vous pouvez configurer vos contrôleurs de domaine de façon à transférer directement l’événement Windows associé à l’ID 4776 vers l’une de vos passerelles ATA.
 
-1.  Utilisez un compte de domaine disposant de privilèges d’administrateur pour vous connecter à l’ensemble des contrôleurs de domaine et des machines où résident vos passerelles ATA.
-2. Vérifiez que les contrôleurs de domaine et passerelles ATA auxquels vous vous connectez sont tous joints au même domaine.
-3.  Sur chaque contrôleur de domaine, tapez ce qui suit à une invite de commandes avec élévation de privilèges :
-```
-winrm quickconfig
-```
-4.  Sur la passerelle ATA, tapez ce qui suit à une invite de commandes avec élévation de privilèges :
-```
-wecutil qc
-```
-5.  Sur chaque contrôleur de domaine, dans **Utilisateurs et ordinateurs Active Directory	**, accédez au dossier **Builtin** et double-cliquez sur le groupe **Lecteurs des journaux d’événements**.<br>
-![wef_ad, lecteurs des journaux d’événements](media/wef_ad_eventlogreaders.png)<br>
-Cliquez dessus avec le bouton droit, puis sélectionnez **Propriétés**. Sous l’onglet **Membres**, ajoutez le compte d’ordinateur de chaque passerelle ATA.
-![wef_ad, menu contextuel du lecteur des journaux d’événements](media/wef_ad-event-log-reader-popup.png)
-6.  Sur la passerelle ATA, ouvrez l’Observateur d’événements et cliquez avec le bouton droit sur **Abonnements**, puis sélectionnez **Créer un abonnement**.  
+### Configuration WEF pour la passerelle ATA avec mise en miroir de ports
 
-    a. Sous **Type d’abonnement et ordinateurs sources**, cliquez sur **Sélectionner les ordinateurs**. Ajoutez les contrôleurs de domaine, puis testez la connectivité.
-    ![wef, propriétés de l’abonnement](media/wef_subscription-prop.png)
+Une fois que vous avez configuré la mise en miroir des ports des contrôleurs de domaine sur la passerelle ATA, suivez les instructions ci-dessous pour configurer Windows Event Forwarding à l’aide de la configuration Initialisation par la source. Il s’agit de l’une des façons de configurer Windows Event Forwarding. 
 
-    b. Sous **Événements à recueillir**, cliquez sur **Sélectionner des événements**. Sélectionnez **Par journal**, puis faites défiler la liste pour sélectionner **Sécurité**. Ensuite, dans **Inclut/exclut des ID d’événements**, tapez **4776**.<br>
-    ![wef_4776](media/wef_4776.png)
+**Étape 1 : Ajouter le compte service réseau au groupe Lecteurs des journaux d’événements du domaine.** 
 
-    c. Sous **Modifier un compte d’utilisateur ou configurer les paramètres avancés**, cliquez sur **Avancé**.
-En regard de **Protocole**, sélectionnez **HTTP**, puis affectez au **Port** la valeur **5985**.<br>
-    ![wef_http](media/wef_http.png)
+Dans ce scénario, nous partons du principe que la passerelle ATA est un membre du domaine.
 
-7.  [Facultatif] Si vous souhaitez un intervalle d’interrogation plus court, définissez une pulsation d’abonnement de 5 secondes.
-    wecutil ss <CollectionName>/cm:custom wecutil ss <CollectionName> /hi:5000
+1.  Ouvrez Utilisateurs et ordinateurs Active Directory, accédez au dossier **Builtin** et double-cliquez sur **Lecteurs des journaux d’événements**. 
+2.  Sélectionnez **Membres**.
+4.  Si **Service réseau** ne figure pas dans la liste, cliquez sur **Ajouter** et tapez **Service réseau** dans le champ **Entrez les noms d’objets à sélectionner**. Ensuite, cliquez sur **Vérifier les noms** et cliquez deux fois sur **OK**. 
 
-8. Dans la page de configuration de la passerelle ATA, activez **Collecte des transferts d’événements Windows**.
+**Étape 2 : Créer une stratégie sur les contrôleurs de domaine pour définir le paramètre Configurer le Gestionnaire d’abonnements cible.** 
+> [!Note] 
+> Vous pouvez créer une stratégie de groupe pour ces paramètres et appliquer la stratégie de groupe à chaque contrôleur de domaine surveillé par la passerelle ATA. Les étapes ci-dessous modifient la stratégie locale du contrôleur de domaine.     
 
-> [!NOTE]
-> Quand vous activez ce paramètre, la passerelle ATA recherche dans le journal des événements transférés les événements Windows qui ont été transférés vers la passerelle à partir des contrôleurs de domaine.
+1.  Exécutez la commande suivante sur chaque contrôleur de domaine : *winrm quickconfig*
+2.  Sur la ligne de commande, tapez *gpedit.msc*.
+3.  Développez **Configuration ordinateur > Modèles d’administration > Composants Windows > Transfert d’événements**.
+
+ ![Image de l’éditeur de groupe de stratégie locale](media/wef 1 local group policy editor.png)
+
+4.  Double-cliquez sur **Configurer le Gestionnaire d’abonnements cible**.
+   
+    1.  Sélectionnez **Activé**.
+    2.  Sous **Options**, cliquez sur **Afficher**.
+    3.  Sous **SubscriptionManagers**, entrez la valeur suivante et cliquez sur **OK** :  *Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (par exemple : Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
+ 
+   ![Configurer l’image d’abonnement cible](media/wef 2 config target sub manager.png)
+   
+    5.  Cliquez sur **OK**.
+    6.  À partir d’une invite de commandes avec élévation de privilèges, tapez *gpupdate /force*. 
+
+**Étape 3 : Effectuer les opérations suivantes sur la passerelle ATA** 
+
+1.  Ouvrez une invite de commandes avec élévation de privilèges et tapez *wecutil qc*.
+2.  Ouvrez l’**Observateur d’événements**. 
+3.  Cliquez avec le bouton droit sur **Abonnements** et sélectionnez **Créer un abonnement**. 
+
+   1.   Entrez un nom et une description pour l’abonnement. 
+   2.   Pour **Journal de destination**, vérifiez que **Événements transférés** est sélectionné. Pour qu’ATA lise les événements, le journal de destination doit être **Événements transférés**. 
+   3.   Sélectionnez **Initialisation par l’ordinateur source** et cliquez sur **Sélectionner les groupes d’ordinateurs**.
+        1.  Cliquez sur **Ajouter un ordinateur de domaine**.
+        2.  Entrez le nom du contrôleur de domaine dans le champ **Entrer le nom de l’objet à sélectionner**. Ensuite, cliquez sur **Vérifier les noms**, puis sur **OK**. 
+       
+        ![Image de l’Observateur d’événements](media/wef3 event viewer.png)
+   
+        
+        3.  Cliquez sur **OK**.
+   4.   Cliquez sur **Sélectionner des événements**.
+
+        1. Cliquez sur **Par journal** et sélectionnez **Sécurité**.
+        2. Dans le champ **Inclut/exclut l’ID d’événement**, tapez **4776**, puis cliquez sur **OK**. 
+
+ ![Image de filtre de requête](media/wef 4 query filter.png)
+
+   5.   Cliquez avec le bouton droit sur l’abonnement créé et sélectionnez **État d’exécution** pour voir s’il existe des problèmes avec l’état. 
+   6.   Après quelques minutes, vérifiez que l’événement 4776 s’affiche dans les événements transférés sur la passerelle ATA.
+
+
+### Configuration WEF pour la passerelle légère ATA
+Quand vous installez la passerelle légère ATA sur vos contrôleurs de domaine, vous pouvez configurer vos contrôleurs de domaine pour qu’ils se transfèrent les événements à eux-mêmes. Procédez comme suit pour configurer Window Event Forwarding lors de l’utilisation de la passerelle légère ATA. Il s’agit de l’une des façons de configurer Windows Event Forwarding.  
+
+**Étape 1 : Ajouter le compte service réseau au groupe Lecteurs des journaux d’événements du domaine** 
+
+1.  Ouvrez Utilisateurs et ordinateurs Active Directory, accédez au dossier **Builtin** et double-cliquez sur **Lecteurs des journaux d’événements**. 
+2.  Sélectionnez **Membres**.
+3.  Si **Service réseau** ne figure pas dans la liste, cliquez sur **Ajouter** et tapez **Service réseau** dans le champ **Entrez les noms d’objets à sélectionner**. Ensuite, cliquez sur **Vérifier les noms** et cliquez deux fois sur **OK**. 
+
+**Étape 2 : Effectuer les étapes suivantes sur le contrôleur de domaine après l’installation de la passerelle légère ATA** 
+
+1.  Ouvrez une invite de commandes avec élévation de privilèges et tapez *winrm quickconfig* et *wecutil qc*. 
+2.  Ouvrez l’**Observateur d’événements**. 
+3.  Cliquez avec le bouton droit sur **Abonnements** et sélectionnez **Créer un abonnement**. 
+
+   1.   Entrez un nom et une description pour l’abonnement. 
+   2.   Pour **Journal de destination**, vérifiez que **Événements transférés** est sélectionné. Pour qu’ATA lise les événements, le journal de destination doit être Événements transférés.
+
+        1.  Sélectionnez **Initialisation par le collecteur** et cliquez sur **Sélectionner les ordinateurs**. Ensuite, cliquez sur **Ajouter un ordinateur de domaine**.
+        2.  Entrez le nom du contrôleur de domaine dans le champ **Entrer le nom de l’objet à sélectionner**. Ensuite, cliquez sur **Vérifier les noms**, puis sur **OK**.
+
+            ![Image des propriétés d’abonnement](media/wef 5 sub properties computers.png)
+
+        3.  Cliquez sur **OK**.
+   3.   Cliquez sur **Sélectionner des événements**.
+
+        1.  Cliquez sur **Par journal** et sélectionnez **Sécurité**.
+        2.  Dans le champ **Inclut/exclut l’ID d’événement**, tapez *4776*, puis cliquez sur **OK**. 
+
+![Image de filtre de requête](media/wef 4 query filter.png)
+
+
+  4.    Cliquez avec le bouton droit sur l’abonnement créé et sélectionnez **État d’exécution** pour voir s’il existe des problèmes avec l’état. 
+
+> [!Note] 
+> Vous devrez peut-être redémarrer le contrôleur de domaine pour que le paramètre soit pris en compte. 
+
+Après quelques minutes, vérifiez que l’événement 4776 s’affiche dans les événements transférés sur la passerelle ATA.
+
+
 
 Pour plus d’informations, consultez [Configurer les ordinateurs pour transférer et recueillir les événements](https://technet.microsoft.com/library/cc748890).
 
@@ -218,6 +286,6 @@ Pour plus d’informations, consultez [Configurer les ordinateurs pour transfér
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

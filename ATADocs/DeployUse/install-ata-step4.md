@@ -4,7 +4,7 @@ description: "La quatrième étape de la procédure d’installation d’ATA vou
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,15 @@ ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 6052a911c12f8dbb757ab8445f9e0c6ec09b530e
+ms.sourcegitcommit: 54e5105e78b6db9f33488135601381af5503aa4a
+ms.openlocfilehash: 305c939ebda636617ece6e41f0554af0e948c3ec
 
 
 ---
+
+*S’applique à : Advanced Threat Analytics version 1.7*
+
+
 
 # Installer ATA - Étape 4
 
@@ -41,22 +45,32 @@ Effectuez les opérations suivantes sur le serveur de la passerelle ATA.
 > [!NOTE] 
 > L’installation directe à partir du fichier zip est vouée à l’échec.
 
-2.  À partir d’une invite de commandes avec élévation de privilèges, exécutez **Microsoft ATA Gateway Setup.exe**, puis suivez les instructions de l’Assistant Installation.
+2.  Exécutez **Microsoft ATA Gateway Setup.exe**, puis suivez les instructions de l’Assistant Installation.
 
 3.  Dans la page **Bienvenue**, sélectionnez votre langue, puis cliquez sur **Suivant**.
 
+4.  L’Assistant Installation vérifie automatiquement si le serveur est un contrôleur de domaine ou un serveur dédié. S’il s’agit d’un contrôleur de domaine, la passerelle légère ATA est installée. S’il s’agit d’un serveur dédié, la passerelle ATA est installée. 
+    
+    Par exemple, dans le cas d’une passerelle légère ATA, l’écran suivant s’affiche pour vous informer qu’une passerelle légère ATA va être installée sur votre contrôleur de domaine :
+    
+    ![Installation de Passerelle légère ATA](media/ATA-lightweight-gateway-install-selected.png) Cliquez sur **Suivant**.
+
+    > [!NOTE] 
+    > Si le contrôleur de domaine ou le serveur dédié ne dispose pas de la configuration matérielle minimale requise pour l’installation, un avertissement s’affiche. Il ne vous empêche pas de cliquer sur **Suivant** et de procéder à l’installation. Cela peut être le bon choix pour l’installation d’ATA dans un petit environnement de test de laboratoire dans lequel vous n’aurez pas besoin d’autant de place pour le stockage des données. Pour les environnements de production, nous vous recommandons fortement de respecter le guide de [planification de la capacité](/advanced-threat-analytics/plan-design/ata-capacity-planning) ATA pour vous assurer que vos contrôleurs de domaine ou serveurs dédiés répondent aux conditions requises.
+
 4.  Sous **Configuration de la passerelle ATA**, entrez les informations suivantes en fonction de votre environnement :
 
-    ![Image de la configuration de la passerelle ATA](media/ATA-Gateway-Configuration.JPG)
+    ![Image de la configuration de la passerelle ATA](media/ATA-Gateway-Configuration.png)
 
     |Champ|Description|Commentaires|
     |---------|---------------|------------|
     |Chemin d’installation|Il s’agit de l’emplacement où est installée la passerelle ATA. L’emplacement par défaut est le suivant : %programfiles%\Microsoft Advanced Threat Analytics\Gateway.|Conservez la valeur par défaut.|
-    |Certificat SSL du service de la passerelle ATA|Il s’agit du certificat utilisé par la passerelle ATA.|Utilisez un certificat auto-signé pour les environnements lab uniquement.|
-    |Enregistrement de la passerelle ATA|Entrez le nom d’utilisateur et le mot de passe de l’administrateur ATA.|Pour enregistrer la passerelle ATA auprès du centre ATA, entrez le nom d’utilisateur et le mot de passe de l’utilisateur qui a installé le centre ATA. Cet utilisateur doit être membre de l’un des groupes locaux suivants sur le centre ATA.<br /><br />- Administrateurs<br />- Administrateurs Microsoft Advanced Threat Analytics **Remarque :** ces informations d’identification sont utilisées uniquement à des fins d’enregistrement et ne sont pas stockées dans ATA.|
-    Les composants suivants sont installés et configurés pendant l’installation de la passerelle ATA :
+    |Certificat SSL du service de passerelle|Il s’agit du certificat utilisé par la passerelle ATA.|Utilisez un certificat auto-signé pour les environnements lab uniquement.|
+    |Enregistrement de la passerelle|Entrez le nom d’utilisateur et le mot de passe de l’administrateur ATA.|Pour enregistrer la passerelle ATA auprès du centre ATA, entrez le nom d’utilisateur et le mot de passe de l’utilisateur qui a installé le centre ATA. Cet utilisateur doit être membre de l’un des groupes locaux suivants sur le centre ATA.<br /><br />- Administrateurs<br />- Administrateurs Microsoft Advanced Threat Analytics **Remarque :** ces informations d’identification sont utilisées uniquement à des fins d’enregistrement et ne sont pas stockées dans ATA.|
+    
+5. Cliquez sur **Installer**. Les composants suivants sont installés et configurés pendant l’installation de la passerelle ATA :
 
-    -   KB3047154
+    -   KB 3047154 (pour Windows Server 2012 R2 uniquement)
 
         > [!IMPORTANT]
         > -   N’installez pas le correctif KB 3047154 sur un hôte de virtualisation (l’hôte responsable de la virtualisation, que vous pouvez exécuter sur une machine virtuelle), car cela pourrait nuire au bon fonctionnement de la mise en miroir des ports. 
@@ -84,6 +98,6 @@ Effectuez les opérations suivantes sur le serveur de la passerelle ATA.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

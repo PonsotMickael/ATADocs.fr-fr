@@ -4,7 +4,7 @@ description: "Décrit comment vous pouvez utiliser la base de données ATA pour 
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,15 @@ ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: c86b6dc880238e262f696e88c54bc1bc7e01a1db
+ms.sourcegitcommit: af0508f82d8cf190dcd3ff058f4c2ff37b4b0595
+ms.openlocfilehash: dfc6c902cb13b1a2bf927cd235806ec32d9fefc3
 
 
 ---
+
+*S’applique à : Advanced Threat Analytics version 1.7*
+
+
 
 # Résolution des problèmes liés à ATA à l’aide de la base de données ATA
 ATA utilise MongoDB comme base de données.
@@ -45,15 +49,6 @@ Voici un exemple de code qui utilise la syntaxe ci-dessus. Si vous étudiez une 
 `db.UniqueEntity.find({Name: "John Doe"})`<br>Notez son ID tel qu’il est indiqué par la valeur « `_id` ». Dans notre exemple, supposons que l’ID est « `123bdd24-b269-h6e1-9c72-7737as875351` ».<br>Recherchez ensuite la collection avec la date la plus proche qui est antérieure à la date que vous recherchez, dans notre exemple 20/10/2015.<br>Recherchez ensuite les activités NTLM du compte de John Doe : 
 
 `db.Ntlms_<closest date>.find({SourceAccountId: "123bdd24-b269-h6e1-9c72-7737as875351"})`
-## Fichier de configuration d’ATA
-La configuration d’ATA est stockée dans la collection « SystemProfile » dans la base de données.
-Cette collection est sauvegardée toutes les heures par le service du centre ATA dans un fichier nommé « SystemProfile.json ». Celui-ci se trouve dans un sous-dossier appelé « Backup ». Dans l’emplacement de l’installation d’ATA par défaut, il se trouve ici : **C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile.json**. 
-
-**Remarque** : Il est recommandé de sauvegarder ce fichier quelque part quand vous apportez des modifications importantes à ATA.
-
-Il est possible de restaurer tous les paramètres en exécutant la commande suivante :
-
-`mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`
 
 ## Voir aussi
 - [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
@@ -64,6 +59,6 @@ Il est possible de restaurer tous les paramètres en exécutant la commande suiv
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

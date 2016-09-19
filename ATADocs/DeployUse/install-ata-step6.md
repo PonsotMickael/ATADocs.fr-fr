@@ -4,7 +4,7 @@ description: "Lors de l’étape finale de l’installation d’ATA, vous config
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/28/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,36 +13,47 @@ ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: c9712b0ad8d67b1e618cb75b14785f8079020864
+ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
+ms.openlocfilehash: 57fe1272e95f69ef9d614505bbef0bb6c1d8ccb6
 
 
 ---
+
+*S’applique à : Advanced Threat Analytics version 1.7*
+
+
 
 # Installer ATA - Étape 6
 
 >[!div class="step-by-step"]
 [« Étape 5](install-ata-step5.md)
 
-## Étape 6. Configurer les sous-réseaux du bail à court terme et l’utilisateur Honeytoken
-Les sous-réseaux du bail à court terme sont des sous-réseaux dans lesquels l’attribution d’adresses IP change très rapidement, en quelques secondes ou minutes, par exemple les adresses IP utilisées pour vos réseaux privés virtuels (VPN ) et les adresses IP Wi-Fi. Pour entrer la liste des sous-réseaux du bail à court terme utilisés dans votre organisation, procédez comme suit :
+## Étape 6. Configurer des exclusions d’adresses IP et un utilisateur Honeytoken
+Avec ATA, vous pouvez exclure des adresses IP et des sous-réseaux IP spécifiques de deux types de détections : **DNS Reconnaissance** et **Pass-the-Ticket**. 
 
-1.  Dans la console ATA de la machine de la passerelle ATA, cliquez sur l’icône des paramètres et sélectionnez **Configuration**.
+Par exemple, une **exclusion DNS Reconnaissance** peut être un analyseur de sécurité qui utilise DNS comme mécanisme d’analyse. L’exclusion aide ATA à ignorer ces analyseurs. Un appareil NAT constitue un exemple d’exclusion *Pass-the-Ticket*.    
+
+Avec ATA, vous pouvez aussi configurer un utilisateur Honeytoken servant de piège pour les utilisateurs malveillants. Toute authentification associée à ce compte (normalement dormant) déclenche une alerte.
+
+Pour configurer les éléments suivants, procédez comme suit :
+
+1.  À partir de la console ATA, cliquez sur l’icône des paramètres et sélectionnez **Configuration**.
 
     ![Paramètres de configuration ATA](media/ATA-config-icon.JPG)
 
-2.  Sous **Détection**, entrez ce qui suit pour les sous-réseaux du bail à court terme. Entrez les sous-réseaux du bail à court terme sous un format de notation de barre oblique, par exemple `192.168.0.0/24`, et cliquez sur le signe plus.
+2.  Sous **Exclusions de détection**, entrez ce qui suit pour les adresses IP *DNS Reconnaissance* ou *Pass-the-Ticket*. Utilisez le format CIDR, par exemple : `192.168.1.0/24` et cliquez sur le signe *plus*.
 
-3.  Pour les SID de compte Honeytoken, entrez le SID du compte d’utilisateur sans aucune activité réseau, puis cliquez sur le signe plus. Par exemple : `S-1-5-21-72081277-1610778489-2625714895-10511`.
+    ![Enregistrer les modifications](media/ATA-exclusions.png)
+
+3.  Sous **Paramètres de détection**, entrez les SID des comptes Honeytoken et cliquez sur le signe plus (+). Par exemple : `S-1-5-21-72081277-1610778489-2625714895-10511`.
+
+    ![Paramètres de configuration ATA](media/ATA-honeytoken.png)
 
     > [!NOTE]
     > Pour rechercher le SID d’un utilisateur, recherchez l’utilisateur dans la console ATA, puis cliquez sur l’onglet **Informations sur le compte**. 
 
-4.  Configurer les exclusions : vous pouvez configurer des adresses IP à exclure d’activités suspectes spécifiques. Pour plus d’informations, consultez [Gestion des paramètres de la détection ATA](working-with-detection-settings.md).
+4.  Cliquez sur **Enregistrer**.
 
-5.  Cliquez sur **Enregistrer**.
-
-![Enregistrer les modifications](media/ATA-VPN-Subnets.JPG)
 
 Félicitations, vous avez correctement déployé Microsoft Advanced Threat Analytics !
 
@@ -64,6 +75,6 @@ ATA démarre immédiatement l’analyse pour rechercher les activités suspectes
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

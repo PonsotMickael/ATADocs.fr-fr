@@ -4,7 +4,7 @@ description: "Explique comment se connecter à la console ATA et à ses composan
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,19 +13,22 @@ ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 1eb9397b541eb64cef553f61e8517568d16b0092
+ms.sourcegitcommit: a4ba68547d6746625a44aca5d05790c3ad138f4e
+ms.openlocfilehash: ab9abce7479971c80544476c54cbf0911d1a5822
 
 
 ---
+
+*S’applique à : Advanced Threat Analytics version 1.7*
+
+
 
 # Utilisation de la console ATA
 
 Utilisez la console ATA pour surveiller les activités suspectes et les gérer.
 
 ## Activation de l’accès à la console ATA
-Tout utilisateur membre du groupe Administrateurs local sur le serveur du centre ATA est autorisé à se connecter à la console ATA et à gérer les paramètres d’ATA.
-Pour autoriser un utilisateur à se connecter à la console ATA sans en faire un administrateur local, ajoutez-le au groupe local **Administrateurs Microsoft Advanced Threat Analytics**.
+Pour ouvrir une session dans la console ATA, vous devez utiliser le compte d’un utilisateur auquel a été attribué le rôle ATA approprié pour accéder à la console ATA. Pour plus d’informations sur le contrôle d’accès en fonction du rôle (RBAC) dans ATA, consultez [Utilisation de groupes de rôles ATA](ata-role-groups.md).
 
 ## Connexion à la console ATA
 
@@ -38,10 +41,8 @@ Pour autoriser un utilisateur à se connecter à la console ATA sans en faire u
 
 2.  Entrez votre nom d’utilisateur et votre mot de passe, puis cliquez sur **Se connecter**.
 
-![Image de l’écran connexion ATA](media/ATA-log-in-screen.jpg)
+![Image de l’écran connexion ATA](media/ATA-log-in-screen.png)
 
-> [!NOTE]
-> Vous devez ouvrir une session en tant qu’utilisateur membre du groupe Administrateurs local ou du groupe Administrateurs Microsoft Advanced Threat Analytics.
 
 ## Console ATA
 
@@ -54,7 +55,7 @@ Voici les principaux éléments de la console ATA.
 
 Il s’agit de la page de destination qui s’affiche par défaut quand vous vous connectez à la console ATA. Par défaut, toutes les activités suspectes ouvertes sont affichées dans la chronologie des attaques. Vous pouvez filtrer la chronologie des attaques de manière à tout afficher ou de manière à afficher uniquement les activités suspectes dont l’état est Ouvert, Résolu ou Ignoré. Vous pouvez également voir le niveau de gravité attribué à chaque activité.
 
-![Image de la chronologie des attaques ATA](media/attack-timeline.png)
+![Image de la chronologie des attaques ATA](media/attack-timeline-1.7.png)
 
 Pour plus d’informations, consultez [Gestion des activités suspectes](/advanced-threat-analytics/deploy-use/working-with-suspicious-activities).
 
@@ -62,7 +63,7 @@ Pour plus d’informations, consultez [Gestion des activités suspectes](/advanc
 
 Quand une activité suspecte est détectée, la barre de notification s’ouvre automatiquement sur la droite. Si de nouvelles activités suspectes ont été détectées depuis la dernière ouverture de session, la barre de notification s’ouvrira après votre connexion. Pour accéder à la barre de notification, vous pouvez cliquer sur la flèche de droite à tout moment.
 
-![Image de la barre de notification ATA](media/notification-bar.png)
+![Image de la barre de notification ATA](media/notification-bar-1.7.png)
 
 ### Filtrage du panneau
 
@@ -78,7 +79,7 @@ Le menu supérieur comprend une barre de recherche. Vous pouvez rechercher un ut
 
 Le centre d’intégrité envoie des alertes quand un élément du déploiement ATA ne fonctionne pas correctement.
 
-![Image du centre d’intégrité ATA](media/health-center.png)
+![Image du centre d’intégrité ATA](media/ATA-Health-Issue.jpg)
 
 Quand votre système rencontre un problème, par exemple une erreur de connectivité ou une passerelle ATA déconnectée, l’icône du centre d’intégrité vous en informe à l’aide d’un point rouge. ![Image du point rouge du centre d’intégrité ATA](media/ATA-Health-Center-Alert-red-dot.png)
 
@@ -124,6 +125,6 @@ Quand une entité est présentée dans la console (par exemple un utilisateur ou
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
