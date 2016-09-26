@@ -140,6 +140,6 @@ Si toutes les passerelles ATA indiquent qu’elles ont été synchronisées avec
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
