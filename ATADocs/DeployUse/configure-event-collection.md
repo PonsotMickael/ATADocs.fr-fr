@@ -13,8 +13,8 @@ ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 54e5105e78b6db9f33488135601381af5503aa4a
-ms.openlocfilehash: 118eb5bf505426f1947e96a4e01d0206abdce88d
+ms.sourcegitcommit: d2c1c00ff649557c1a0a16385e025c9d597c3bbf
+ms.openlocfilehash: 91ce3a3fef27673712a708aa1e92c32298cedd84
 
 
 ---
@@ -54,7 +54,7 @@ Si vous n’utilisez pas un serveur SIEM/Syslog, vous pouvez configurer vos cont
 2.  Configurez votre serveur SIEM ou Syslog pour transférer l’événement Windows associé à l’ID 4776 vers l’adresse IP de l’une des passerelles ATA. Pour plus d’informations sur la configuration de votre serveur SIEM, consultez l’aide en ligne de SIEM ou explorez les options de support technique à votre disposition pour obtenir les formats à respecter pour chaque serveur SIEM.
 
 ### Prise en charge de SIEM
-ATA prend en charge les événements SIEM aux formats suivants :
+ATA prend en charge les événements SIEM aux formats suivants :  
 
 #### RSA Security Analytics
 &lt;Syslog Header&gt;RsaSA\n2015-May-19 09:07:09\n4776\nMicrosoft-Windows-Security-Auditing\nSecurity\XXXXX.subDomain.domain.org.il\nYYYYY$\nMMMMM \n0x0
@@ -282,10 +282,10 @@ Pour plus d’informations, consultez [Configurer les ordinateurs pour transfér
 
 ## Voir aussi
 - [Installer ATA](install-ata.md)
-- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

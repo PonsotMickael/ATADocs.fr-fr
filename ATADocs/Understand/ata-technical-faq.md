@@ -13,8 +13,8 @@ ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b8ad2f343b8397184cd860803f06b0d59c492f5a
-ms.openlocfilehash: 96b3ce171ca07bf44163d49b50377fccd6472a08
+ms.sourcegitcommit: 7d081a6e14adffc675de203001074c3435cce6b2
+ms.openlocfilehash: 8896df26157f9da903e68ac7a1d21f7f80f95026
 
 
 ---
@@ -83,7 +83,7 @@ Si un contrôleur de domaine virtuel ne peut pas être couvert par la passerelle
 Il y a deux éléments que vous devez sauvegarder :
 
 -   Le trafic et les événements enregistrés par ATA, que vous pouvez sauvegarder à l’aide de n’importe quelle procédure de sauvegarde de base de données prise en charge. Pour plus d’informations, consultez [Gestion de la base de données ATA](/advanced-threat-analytics/deploy-use/ata-database-management). 
--   La configuration d’ATA. Elle est stockée dans la base de données et sauvegardée automatiquement toutes les heures dans le dossier **Backup** à l’emplacement de déploiement du centre ATA.  Pour plus d’informations, consultez [Gestion de la base de données ATA](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/ata-database-management).
+-   La configuration d’ATA. Elle est stockée dans la base de données et sauvegardée automatiquement toutes les heures dans le dossier **Backup** à l’emplacement de déploiement du centre ATA.  Pour plus d’informations, consultez [Gestion de la base de données ATA](https://docs.microsoft.com/advanced-threat-analytics/deploy-use/ata-database-management).
 ## Que peut détecter ATA ?
 ATA détecte les techniques et attaques connues, les problèmes de sécurité et les risques.
 Pour obtenir la liste complète des détections fournies par ATA, consultez [Quelles sont les détections effectuées par ATA ?](ata-threats.md).
@@ -144,6 +144,6 @@ Oui. Vous pouvez consulter l’intégrité globale du déploiement ainsi que les
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 
