@@ -4,7 +4,7 @@ description: "Explique comment utiliser des groupes de rôles ATA."
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/20/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba090fdd4f00c001020b1fbedf527e4fd69d3992
-ms.openlocfilehash: 41ae6655f2d69b5b879246eb03462cd7d7b091d7
+ms.sourcegitcommit: d47d9e7be294c68d764710c15c4bb78539e42f62
+ms.openlocfilehash: 869d8f830d5dc70c927f172d77642b0c97bdcd84
 
 
 ---
@@ -29,9 +29,9 @@ ms.openlocfilehash: 41ae6655f2d69b5b879246eb03462cd7d7b091d7
 Les groupes de rôles permettent de gérer l’accès pour ATA. À l’aide des groupes de rôles, vous pouvez séparer les tâches au sein de votre équipe de sécurité et accorder uniquement le nombre d’accès dont les utilisateurs ont besoin pour effectuer leur travail. Cet article explique ce qu’est la gestion des accès et l’autorisation de rôle ATA, puis vous aide à configurer des groupes de rôles dans ATA.
 ## Types de groupes de rôles ATA 
 
-ATA présente 3 types de groupe de rôles : ATA Administrators, ATA Users et ATA Viewers. Le tableau suivant décrit le type d’accès dans ATA disponible par rôle. En fonction du rôle que vous attribuez, différents écrans et options de menu dans ATA ne seront pas disponibles, comme suit :
+ATA présente 3 types de groupe de rôles : ATA Administrator, ATA Analyst et ATA Executive. Le tableau suivant décrit le type d’accès dans ATA disponible par rôle. En fonction du rôle que vous attribuez, différents écrans et options de menu dans ATA ne seront pas disponibles, comme suit :
 
-|Activité |Administrateurs Microsoft Advanced Threat Analytics|Utilisateurs Microsoft Advanced Threat Analytics|Observateurs Microsoft Advanced Threat Analytics|
+|Activité |Administrateur Microsoft Advanced Threat Analytics|Analyste Microsoft Advanced Threat Analytics|Responsable Microsoft Advanced Threat Analytics|
 |----|----|----|----|
 |Se connecter|Disponible|Disponible|Disponible|
 |Fournir des commentaires sur les activités suspectes|Disponible|Disponible|Non disponible|
@@ -54,6 +54,6 @@ ATA utilise les groupes Windows locaux comme base pour les groupes de rôles. Po
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 
