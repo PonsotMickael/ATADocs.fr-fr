@@ -13,8 +13,8 @@ ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 87cb9534a45d3a8ca29d6a803ca399a33a3d3ea6
+ms.sourcegitcommit: d3ec5d56444d618efcfc617172e93e0e8e8a1768
+ms.openlocfilehash: 6fd96a8bf2fb1e064cc05858a020cbc2e55746f4
 
 
 ---
@@ -71,23 +71,25 @@ Dans cette version, le même fichier d’installation (Microsoft ATA Center Setu
 
 2.  Exécutez le fichier d’installation, Microsoft ATA Center Setup.exe, puis suivez les instructions à l’écran pour installer la mise à jour.
 
-    1.  ATA 1.6 requiert l’installation du .NET Framework 4.6.1. Si ce n’est déjà fait, la procédure d’installation d’ATA installe .Net Framework 4.6.1 dans le cadre de l’installation.<br>
-    > [!NOTE]
-    > L’installation de .Net Framework 4.6.1 peut nécessiter le redémarrage du serveur. L’installation d’ATA se poursuit une fois le serveur redémarré.
-5.  Dans la page **Bienvenue**, sélectionnez votre langue, puis cliquez sur **Suivant**.
+    1.  ATA 1.6 requiert l’installation du .NET Framework 4.6.1. Si ce n’est déjà fait, la procédure d’installation d’ATA installe .Net Framework 4.6.1 dans le cadre de l’installation.
+    
+        > [!NOTE] 
+            L’installation de .Net Framework 4.6.1 peut nécessiter le redémarrage du serveur. L’installation d’ATA se poursuit une fois le serveur redémarré.
+    
+    2.  Dans la page **Bienvenue**, sélectionnez votre langue, puis cliquez sur **Suivant**.
 
-    6.  Lisez le Contrat de Licence Utilisateur Final et, si vous en acceptez les termes, cliquez sur **Suivant**.
+    3.  Lisez le Contrat de Licence Utilisateur Final et, si vous en acceptez les termes, cliquez sur **Suivant**.
 
-    7.  Vous pouvez désormais utiliser Microsoft Update pour qu’ATA reste à jour.  Dans la page Microsoft Update, sélectionnez **Utiliser Microsoft Update lorsque je recherche des mises à jour (recommandé)**.
+    4.  Vous pouvez désormais utiliser Microsoft Update pour qu’ATA reste à jour.  Dans la page Microsoft Update, sélectionnez **Utiliser Microsoft Update lorsque je recherche des mises à jour (recommandé)**.
     ![Image montrant comment maintenir ATA à jour](media/ata_ms_update.png) Ainsi, Windows est configuré de manière à récupérer les mises à jour des autres produits Microsoft (y compris ATA), comme illustré ci-après. 
      ![Image de mise à jour automatique de Windows](media/ata_installupdatesautomatically.png)
 
-    8.  Avant le début de l’installation, ATA effectue une vérification de la disponibilité. Examinez les résultats de la vérification pour vérifier que les composants requis sont correctement configurés et que vous disposez de l’espace disque minimal. 
+    5.  Avant le début de l’installation, ATA effectue une vérification de la disponibilité. Examinez les résultats de la vérification pour vérifier que les composants requis sont correctement configurés et que vous disposez de l’espace disque minimal. 
     ![Image de vérification de la disponibilité d’ATA](media/ata_install_readinesschecks.png)
 
-    3.  Cliquez sur **Mettre à jour**. Une fois que vous avez cliqué sur Mettre à jour, ATA passe en mode hors connexion jusqu’à la fin de la mise à jour.
+    6.  Cliquez sur **Mettre à jour**. Une fois que vous avez cliqué sur Mettre à jour, ATA passe en mode hors connexion jusqu’à la fin de la mise à jour.
 
-4.  Une fois le centre ATA mis à jour, les passerelles ATA indiquent qu’elles sont obsolètes.
+3.  Une fois le centre ATA mis à jour, les passerelles ATA indiquent qu’elles sont obsolètes.
 
     ![Image des passerelles obsolètes](media/ATA-center-outdated.png)
 
@@ -140,6 +142,6 @@ Si toutes les passerelles ATA indiquent qu’elles ont été synchronisées avec
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
