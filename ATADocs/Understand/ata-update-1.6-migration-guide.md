@@ -74,7 +74,7 @@ Dans cette version, le même fichier d’installation (Microsoft ATA Center Setu
     1.  ATA 1.6 requiert l’installation du .NET Framework 4.6.1. Si ce n’est déjà fait, la procédure d’installation d’ATA installe .Net Framework 4.6.1 dans le cadre de l’installation.
     
         > [!NOTE] 
-            L’installation de .Net Framework 4.6.1 peut nécessiter le redémarrage du serveur. L’installation d’ATA se poursuit une fois le serveur redémarré.
+        > L’installation de .Net Framework 4.6.1 peut nécessiter le redémarrage du serveur. L’installation d’ATA se poursuit une fois le serveur redémarré.
     
     2.  Dans la page **Bienvenue**, sélectionnez votre langue, puis cliquez sur **Suivant**.
 
