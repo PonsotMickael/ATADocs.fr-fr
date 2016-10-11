@@ -13,8 +13,8 @@ ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
-ms.openlocfilehash: 168a41182128a1fc91d92a4ef11b873c04ecc6b7
+ms.sourcegitcommit: 39eadb9143740741fa592f983f03def5367ada46
+ms.openlocfilehash: 14b04a771f0c18170f0c80d388ab012574d40bee
 
 
 ---
@@ -45,9 +45,9 @@ Une fois la passerelle ATA installée, procédez comme suit pour configurer ses 
   - **Description** : entrez une description pour la passerelle ATA (facultatif).
   - **Contrôleurs de domaine de port d’écoute (FQDN)** (obligatoire pour la passerelle ATA : ne peut pas être modifié pour la passerelle légère ATA) : entrez le nom de domaine complet de votre contrôleur de domaine et cliquez sur le signe plus (+) pour l’ajouter à la liste. Par exemple, **dc01.contoso.com**.
 
-        The following information applies to the servers you enter in the **Domain Controllers** list:
-        - All domain controllers whose traffic is being monitored via port mirroring by the ATA Gateway must be listed in the **Domain Controllers** list. If a domain controller is not listed in the **Domain Controllers** list, detection of suspicious activities might not function as expected.
-        - At least one domain controller in the list should be a global catalog. This will enable ATA to resolve computer and user objects in other domains in the forest.
+      Les informations suivantes s’appliquent aux serveurs que vous entrez dans la liste **Contrôleurs de domaine** :
+      - Tous les contrôleurs de domaine dont le trafic est surveillé par l’intermédiaire de la mise en miroir des ports par la passerelle ATA doivent figurer dans la liste **Contrôleurs de domaine**. Si un contrôleur de domaine n’est pas répertorié dans la liste **Contrôleurs de domaine**, il est possible que la détection des activités suspectes ne fonctionne pas comme prévu.
+      - Au moins un contrôleur de domaine figurant dans la liste doit être un catalogue général. ATA peut ainsi résoudre les objets ordinateur et utilisateur dans d’autres domaines de la forêt.
 
 - **Adaptateurs de réseau de capture** (obligatoire) :
   - Dans le cas d’une passerelle ATA sur un serveur dédié, sélectionnez les cartes réseau qui sont configurées en tant que port miroir de destination. Elles recevront le trafic du contrôleur de domaine mis en miroir.
@@ -74,7 +74,7 @@ Pour vous assurer que la passerelle ATA a été déployée avec succès, effectu
 
 2.  Si le service ne démarre pas, examinez le fichier Microsoft.Tri.Gateway-Errors.log situé dans le dossier par défaut suivant : %programfiles%\Microsoft Advanced Threat Analytics\Gateway\Logs et consultez [Résolution des problèmes liés à ATA](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-known-errors) pour obtenir de l’aide.
 
-3.  S’il s’agit de la première passerelle ATA installée, patientez quelques minutes, puis connectez-vous à la console ATA. Ouvrez ensuite le volet de notification en effectuant un mouvement de balayage à partir du côté droit de l’écran. La liste **Entités apprises récemment	** doit s’afficher dans la barre de notification à droite de la console.
+3.  S’il s’agit de la première passerelle ATA installée, patientez quelques minutes, puis connectez-vous à la console ATA. Ouvrez ensuite le volet de notification en effectuant un mouvement de balayage à partir du côté droit de l’écran. La liste **Entités apprises récemment** doit s’afficher dans la barre de notification à droite de la console.
 
 4.  Sur le Bureau, cliquez sur le raccourci **Microsoft Advanced Threat Analytics** pour vous connecter à la console ATA. Connectez-vous avec les mêmes informations d’identification utilisateur que celles que vous avez utilisées pour installer le centre ATA.
 5.  Dans la console, recherchez un élément dans la barre de recherche, comme un utilisateur ou un groupe sur votre domaine.
@@ -96,6 +96,6 @@ Pour vous assurer que la passerelle ATA a été déployée avec succès, effectu
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

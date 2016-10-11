@@ -4,7 +4,7 @@ description: "Explique comment utiliser les compteurs de performances pour réso
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 08/21/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 21f28848dd22cfbcbb4b4871300621203b445fb4
-ms.openlocfilehash: a6113c106653039ca3b4337d9250d9b9baca4611
+ms.sourcegitcommit: d47d9e7be294c68d764710c15c4bb78539e42f62
+ms.openlocfilehash: e1ff02f8d78eacc5c4fccdc1cc973d8a07f9c6ca
 
 
 ---
@@ -47,13 +47,13 @@ Voici la liste des principaux compteurs de passerelle ATA :
 
 |Compteur|Description|Seuil|Résolution des problèmes|
 |-----------|---------------|-------------|-------------------|
-|Microsoft ATA Gateway\NetworkListener PEF Parser Messages/Sec|Quantité de trafic traitée par la passerelle ATA chaque seconde.|Aucun seuil|Aide à comprendre la quantité de trafic qui est analysée par la passerelle ATA.|
-|Événements supprimés PEF NetworkListener/s|Quantité de trafic supprimée par la passerelle ATA chaque seconde.|Ce nombre doit toujours être égal à zéro (de rares suppressions en rafales sont acceptables).|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|ATA GW Counter/NetworkListener ETW Dropped Events/Sec|Quantité de trafic supprimée par la passerelle ATA chaque seconde.|Ce nombre doit toujours être égal à zéro (de rares suppressions en rafales sont acceptables).|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|ATA GW Counter/NetworkActivityTranslator Message Data # Block Size|Quantité de trafic mise en file d’attente pour la traduction en activités réseau.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 100 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|ATA GW Counter/EntityResolver Activity Block Size|Quantité d’activités réseau en attente de résolution.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|ATA GW Counter/EntitySender Entity Batch Block Size|Quantité d’activités réseau en attente d’envoi vers le centre ATA.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 1 000 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|ATA GW Counter/EntitySender Batch Send Time|Durée nécessaire pour envoyer le dernier lot.|Doit être inférieur à 1 000 millisecondes dans la plupart des cas|Vérifiez la présence de problèmes réseau entre la passerelle ATA et le centre ATA.|
+|Passerelle Microsoft ATA\Messages d’analyseur PEF NetworkListener\s|Quantité de trafic traitée par la passerelle ATA chaque seconde.|Aucun seuil|Aide à comprendre la quantité de trafic qui est analysée par la passerelle ATA.|
+|Événements supprimés PEF NetworkListener\s|Quantité de trafic supprimée par la passerelle ATA chaque seconde.|Ce nombre doit toujours être égal à zéro (de rares suppressions en rafales sont acceptables).|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Passerelle Microsoft ATA\Événements supprimés NetworkListener ETW\s|Quantité de trafic supprimée par la passerelle ATA chaque seconde.|Ce nombre doit toujours être égal à zéro (de rares suppressions en rafales sont acceptables).|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Passerelle Microsoft ATA\Données de messages NetworkActivityTranslator # Taille de blocs|Quantité de trafic mise en file d’attente pour la traduction en activités réseau.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 100 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Passerelle Microsoft ATA\Taille de blocs d’activité EntityResolver|Quantité d’activités réseau en attente de résolution.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Passerelle Microsoft ATA\Taille de blocs de lots d’entités EntitySender|Quantité d’activités réseau en attente d’envoi vers le centre ATA.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 1 000 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Passerelle Microsoft ATA\Temps d’envoi des lots EntitySender|Durée nécessaire pour envoyer le dernier lot.|Doit être inférieur à 1 000 millisecondes dans la plupart des cas|Vérifiez la présence de problèmes réseau entre la passerelle ATA et le centre ATA.|
 
 > [!NOTE]
 > -   Les valeurs temporelles des compteurs sont exprimées en millisecondes.
@@ -109,15 +109,15 @@ Voici la liste des principaux compteurs de système d’exploitation :
 |Compteur|Description|Seuil|Résolution des problèmes|
 |-----------|---------------|-------------|-------------------|
 |Processeur(_Total)\% de temps processeur|Durée (en pourcentage) que le processeur met pour exécuter des threads actifs.|Inférieur à 80 % en moyenne|Vérifiez si l’un des processus prend beaucoup plus de temps processeur qu’il ne devrait.<br /><br />Ajoutez des processeurs.<br /><br />Réduisez la quantité de trafic sur chaque serveur.<br /><br />Le compteur « Processeur(_Total)\% de temps processeur » peut être moins précis sur les serveurs virtuels. Dans ce cas, le moyen le plus précis de mesurer le manque de puissance du processeur est d’utiliser le compteur « System\Longueur de la file du processeur ».|
-|Système\Commutateurs de contexte/s|Taux combiné auquel tous les processeurs commutent d’un thread à l’autre.|Inférieur à 5 000 cœurs&#42; (cœurs physiques)|Vérifiez si l’un des processus prend beaucoup plus de temps processeur qu’il ne devrait.<br /><br />Ajoutez des processeurs.<br /><br />Réduisez la quantité de trafic sur chaque serveur.<br /><br />Le compteur « Processeur(_Total)\% de temps processeur » peut être moins précis sur les serveurs virtuels. Dans ce cas, le moyen le plus précis de mesurer le manque de puissance du processeur est d’utiliser le compteur « System\Longueur de la file du processeur ».|
+|Système\Commutateurs de contexte\s|Taux combiné auquel tous les processeurs commutent d’un thread à l’autre.|Inférieur à 5 000 cœurs&#42; (cœurs physiques)|Vérifiez si l’un des processus prend beaucoup plus de temps processeur qu’il ne devrait.<br /><br />Ajoutez des processeurs.<br /><br />Réduisez la quantité de trafic sur chaque serveur.<br /><br />Le compteur « Processeur(_Total)\% de temps processeur » peut être moins précis sur les serveurs virtuels. Dans ce cas, le moyen le plus précis de mesurer le manque de puissance du processeur est d’utiliser le compteur « System\Longueur de la file du processeur ».|
 |Système\Longueur de la file du processeur|Nombre de threads prêts à être exécutés et en attente de planification.|Inférieur à 5 cœurs&#42; (cœurs physiques)|Vérifiez si l’un des processus prend beaucoup plus de temps processeur qu’il ne devrait.<br /><br />Ajoutez des processeurs.<br /><br />Réduisez la quantité de trafic sur chaque serveur.<br /><br />Le compteur « Processeur(_Total)\% de temps processeur » peut être moins précis sur les serveurs virtuels. Dans ce cas, le moyen le plus précis de mesurer le manque de puissance du processeur est d’utiliser le compteur « System\Longueur de la file du processeur ».|
 |Mémoire\Mo disponibles|Quantité de mémoire physique (RAM) disponible pour l’allocation.|Doit être supérieur à 512|Vérifiez si l’un des processus prend beaucoup plus de mémoire physique qu’il ne devrait.<br /><br />Augmentez la quantité de mémoire physique.<br /><br />Réduisez la quantité de trafic sur chaque serveur.|
-|LogicalDisk(&#42;)\Moy. disque s/lecture|Latence moyenne de lecture des données à partir du disque (vous devez choisir le lecteur de base de données comme instance).|Doit être inférieur à 10 millisecondes|Vérifiez si l’un des processus utilise le lecteur de la base de données plus qu’il ne devrait.<br /><br />Consultez l’équipe ou le fournisseur chargé du stockage pour savoir si ce lecteur peut fournir la charge de travail actuelle avec une latence inférieure à 10 ms. La charge de travail actuelle peut être déterminée à l’aide des compteurs d’utilisation du disque.|
-|LogicalDisk(&#42;)\Moy. disque s/écriture|Latence moyenne d’écriture des données sur le disque (vous devez choisir le lecteur de base de données comme instance).|Doit être inférieur à 10 millisecondes|Vérifiez si l’un des processus utilise le lecteur de la base de données plus qu’il ne devrait.<br /><br />Consultez l’équipe ou le fournisseur chargé du stockage pour savoir si ce lecteur peut fournir la charge de travail actuelle avec une latence inférieure à 10 ms. La charge de travail actuelle peut être déterminée à l’aide des compteurs d’utilisation du disque.|
-|\LogicalDisk(&#42;)\Lectures disque/s|Taux d’opérations de lecture sur le disque.|Aucun seuil|Les compteurs d’utilisation du disque peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage.|
-|\LogicalDisk(&#42;)\Octets de lecture disque/s|Nombre d’octets lus par seconde sur le disque.|Aucun seuil|Les compteurs d’utilisation du disque peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage.|
-|\LogicalDisk&#42;\Écritures disque/s|Taux d’opérations d’écriture sur le disque.|Aucun seuil|Compteurs d’utilisation du disque (peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage).|
-|\LogicalDisk(&#42;)\Octets d’écriture disque/s|Nombre d’octets écrits par seconde sur le disque.|Aucun seuil|Les compteurs d’utilisation du disque peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage.|
+|LogicalDisk(&#42;)\Moy. Disque s\Lecture|Latence moyenne de lecture des données à partir du disque (vous devez choisir le lecteur de base de données comme instance).|Doit être inférieur à 10 millisecondes|Vérifiez si l’un des processus utilise le lecteur de la base de données plus qu’il ne devrait.<br /><br />Consultez l’équipe ou le fournisseur chargé du stockage pour savoir si ce lecteur peut fournir la charge de travail actuelle avec une latence inférieure à 10 ms. La charge de travail actuelle peut être déterminée à l’aide des compteurs d’utilisation du disque.|
+|LogicalDisk(&#42;)\Moy. Disque s\Écriture|Latence moyenne d’écriture des données sur le disque (vous devez choisir le lecteur de base de données comme instance).|Doit être inférieur à 10 millisecondes|Vérifiez si l’un des processus utilise le lecteur de la base de données plus qu’il ne devrait.<br /><br />Consultez l’équipe ou le fournisseur en charge du stockage pour savoir si ce lecteur peut fournir la charge de travail actuelle avec une latence inférieure à 10 ms. La charge de travail actuelle peut être déterminée à l’aide des compteurs d’utilisation du disque.|
+|\LogicalDisk(&#42;)\Lectures disque\s|Taux d’opérations de lecture sur le disque.|Aucun seuil|Les compteurs d’utilisation du disque peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage.|
+|\LogicalDisk(&#42;)\Octets de lecture disque\s|Nombre d’octets lus par seconde sur le disque.|Aucun seuil|Les compteurs d’utilisation du disque peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage.|
+|\LogicalDisk&#42;\Écritures disque\s|Taux d’opérations d’écriture sur le disque.|Aucun seuil|Compteurs d’utilisation du disque (peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage).|
+|\LogicalDisk(&#42;)\Octets d’écriture disque\s|Nombre d’octets écrits par seconde sur le disque.|Aucun seuil|Les compteurs d’utilisation du disque peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage.|
 
 ## Voir aussi
 - [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
@@ -128,6 +128,6 @@ Voici la liste des principaux compteurs de système d’exploitation :
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 
