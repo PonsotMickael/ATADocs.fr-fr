@@ -13,8 +13,8 @@ ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7d081a6e14adffc675de203001074c3435cce6b2
-ms.openlocfilehash: 8896df26157f9da903e68ac7a1d21f7f80f95026
+ms.sourcegitcommit: 3768cd103fc2a938d2d39fe34179d74587abc118
+ms.openlocfilehash: 175fdf824812bd4280422f90e4eec506ddd278e4
 
 
 ---
@@ -22,10 +22,6 @@ ms.openlocfilehash: 8896df26157f9da903e68ac7a1d21f7f80f95026
 
 # Forum Aux Questions : ATA
 Cet article fournit des éléments d’informations et des réponses aux questions les plus fréquentes sur ATA.
-
-
-## Quelles sont les licences d’utilisation proposées pour ATA ?
-Pour plus d’informations sur les licences, consultez [Comment acheter Advanced Threat Analytics](https://www.microsoft.com/cloud-platform/advanced-threat-analytics-pricing).
 
 
 ## Que dois-je faire si la passerelle ATA ne démarre pas ?
@@ -144,6 +140,6 @@ Oui. Vous pouvez consulter l’intégrité globale du déploiement ainsi que les
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 
