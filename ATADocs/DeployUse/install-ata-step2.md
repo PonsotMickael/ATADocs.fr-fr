@@ -13,8 +13,8 @@ ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: fc268bcb2e3d027b09fa3349427934f60783b971
+ms.sourcegitcommit: 3768cd103fc2a938d2d39fe34179d74587abc118
+ms.openlocfilehash: be58ce053a2ddb59fa1556027e432c0499f8deb4
 
 
 ---
@@ -42,7 +42,7 @@ La première fois que vous ouvrez la console ATA, l’écran suivant apparaît 
     |**Nom d’utilisateur** (obligatoire)|Entrez le nom de l’utilisateur en lecture seule, par exemple : **ATAuser**.|
     |**Mot de passe** (obligatoire)|Entrez le mot de passe de l’utilisateur en lecture seule, par exemple : **Pencil1**.|
     |**Domaine** (obligatoire)|Entrez le domaine de l’utilisateur en lecture seule, par exemple : **contoso.com**. **Remarque :** il est important d’entrer le nom complet du domaine où se trouve l’utilisateur. Par exemple, si le compte de l’utilisateur se trouve dans le domaine corp.contoso.com, vous devez entrer `corp.contoso.com`, et non contoso.com.|
-    |Mise à jour automatique de toutes les passerelles ATA |Si vous activez ce paramètre et que vous mettez à jour le centre ATA à l’occasion de futures publications de version, toutes les passerelles ATA sont automatiquement mises à jour.|
+    
 
     Après l’enregistrement, le message d’accueil dans la console devient : ![ATA welcome stage 1 finished (Accueil ATA - fin de la phase 1)](media/ATA_1.7-welcome-provide-username-finished.png)
 
@@ -62,6 +62,6 @@ La première fois que vous ouvrez la console ATA, l’écran suivant apparaît 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
