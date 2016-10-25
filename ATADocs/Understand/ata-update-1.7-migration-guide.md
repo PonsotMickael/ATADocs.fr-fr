@@ -13,8 +13,8 @@ ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
-ms.openlocfilehash: 5c20c41c3fe587f18087d64f4f84c1df65072fde
+ms.sourcegitcommit: 3a821bf1479af529fd65e2153f8b722999c83a4f
+ms.openlocfilehash: 444bc4744834219d9db7bc8c209f33c039f90dad
 
 
 ---
@@ -28,6 +28,7 @@ La mise à jour vers ATA 1.7 comprend des améliorations dans les domaines suiv
   
 
 ## Mise à jour d’ATA vers la version 1.7
+
 > [!NOTE] 
 > Si ATA n’est pas installé dans votre environnement, téléchargez la version complète d’ATA qui inclut la version 1.7. Suivez ensuite la procédure d’installation standard décrite dans [Installer ATA](/advanced-threat-analytics/deploy-use/install-ata).
 
@@ -81,8 +82,8 @@ Dans cette version, le même fichier d’installation (Microsoft ATA Center Setu
 > Pour assurer le bon fonctionnement d’ATA, mettez à jour toutes les passerelles.
 > Le port d’écoute Syslog configuré sur toutes les passerelles sera modifié : il s’agira du port 514.
  
-    > [!NOTE] 
-    > To install new ATA Gateways, go the **Gateways** screen and click **Download Gateway Setup** to get the ATA 1.7 installation package and follow the instructions for new Gateway installation as described in [Step 4. Install the ATA Gateway](/advanced-threat-analytics/deploy-use/install-ata-step4) .
+> [!NOTE] 
+> Pour installer de nouvelles passerelles ATA, accédez à l’écran **Passerelles** et cliquez sur **Télécharger l’installation de la passerelle** pour obtenir le package d’installation ATA 1.7 et suivre les instructions d’installation de la nouvelle passerelle, comme décrit dans [Étape 4. Installez la passerelle ATA](/advanced-threat-analytics/deploy-use/install-ata-step4).
 
 
 
@@ -92,6 +93,6 @@ Dans cette version, le même fichier d’installation (Microsoft ATA Center Setu
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 
