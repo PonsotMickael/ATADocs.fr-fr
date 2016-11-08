@@ -23,13 +23,13 @@ ms.openlocfilehash: be58ce053a2ddb59fa1556027e432c0499f8deb4
 
 
 
-# Installer ATA - Étape 2
+# <a name="install-ata-step-2"></a>Installer ATA - Étape 2
 
 >[!div class="step-by-step"]
 [« Étape 1](install-ata-step1.md)
 [Étape 3 »](install-ata-step3.md)
 
-## Étape 2. Fournir un nom d’utilisateur et un mot de passe pour se connecter à votre forêt Active Directory
+## <a name="step-2-provide-a-username-and-password-to-connect-to-your-active-directory-forest"></a>Étape 2. Fournir un nom d’utilisateur et un mot de passe pour se connecter à votre forêt Active Directory
 
 La première fois que vous ouvrez la console ATA, l’écran suivant apparaît :
 
@@ -44,7 +44,7 @@ La première fois que vous ouvrez la console ATA, l’écran suivant apparaît 
     |**Domaine** (obligatoire)|Entrez le domaine de l’utilisateur en lecture seule, par exemple : **contoso.com**. **Remarque :** il est important d’entrer le nom complet du domaine où se trouve l’utilisateur. Par exemple, si le compte de l’utilisateur se trouve dans le domaine corp.contoso.com, vous devez entrer `corp.contoso.com`, et non contoso.com.|
     
 
-    Après l’enregistrement, le message d’accueil dans la console devient : ![ATA welcome stage 1 finished (Accueil ATA - fin de la phase 1)](media/ATA_1.7-welcome-provide-username-finished.png)
+    Après l’enregistrement, le message d’accueil dans la console devient : ![ATA welcome stage 1 finished](media/ATA_1.7-welcome-provide-username-finished.png)
 
 2. Dans la console, cliquez sur **Download Gateway setup and install the first Gateway** (Télécharger le programme d’installation de passerelle et installer la première passerelle) pour continuer.
 
@@ -54,14 +54,14 @@ La première fois que vous ouvrez la console ATA, l’écran suivant apparaît 
 [Étape 3 »](install-ata-step3.md)
 
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)
-- [Conditions préalables au déploiement d’ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 
