@@ -13,8 +13,8 @@ ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee5f60e43f50562e7a7309eafa3b52cf946b0d3b
-ms.openlocfilehash: 493f255ae09b51d27079a186bb802f0f3f9706bc
+ms.sourcegitcommit: c71d5ed1c705de558f1144820703ffe84850679b
+ms.openlocfilehash: f8024edbfad1961db7fa469cc2907c55bb5ec93f
 
 
 ---
@@ -29,7 +29,7 @@ Les journaux ATA offrent un aperçu de ce que fait chaque composant ATA à un mo
 ## Journaux de la passerelle ATA
 Dans cette section, chaque référence à la passerelle ATA concerne également la passerelle légère ATA. 
 
-Les journaux de la passerelle ATA se trouvent dans un sous-dossier nommé **Logs** où ATA est installé. L’emplacement par défaut est :  . Dans l’emplacement de l’installation par défaut, il se trouve ici : **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
+Les journaux de la passerelle ATA se trouvent dans un sous-dossier nommé **Logs** où ATA est installé. L’emplacement par défaut est : **C:\Program Files\Microsoft Advanced Threat Analytics\**. Dans l’emplacement de l’installation par défaut, il se trouve ici : **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
 
 La passerelle ATA dispose des journaux suivants :
 
@@ -40,7 +40,7 @@ La passerelle ATA dispose des journaux suivants :
 -   **Microsoft.Tri.Gateway-Errors.log** : ce journal contient uniquement les erreurs interceptées par la passerelle ATA. Son utilisation principale consiste à exécuter des vérifications d’intégrité et à examiner les problèmes qui doivent être mis en corrélation avec des heures spécifiques.
 
 -   **Microsoft.Tri.Gateway-ExceptionStatistics.log** : ce journal regroupe l’ensemble des erreurs et exceptions similaires, et évalue leur nombre.
-    Ce fichier est vide à chaque démarrage du service de passerelle ATA et est mis à jour chaque minute. Il sert principalement à vérifier s’il existe de nouveaux problèmes ou erreurs au niveau de la passerelle ATA (les erreurs étant groupées, il est plus facile de voir rapidement s’il y a de nouveaux problèmes).
+    Ce fichier est vide lors de chaque démarrage du service de la passerelle ATA et est mis à jour toutes les minutes. Son utilisation principale consiste à déterminer d’éventuels nouveaux problèmes ou erreurs liés à la passerelle ATA. Les erreurs étant regroupées, il est plus facile de déterminer rapidement la présence de nouveaux problèmes.
 -   **Microsoft.Tri.Gateway.Updater.log** : ce journal est utilisé pour le processus de mise à jour de passerelle, qui est responsable de la mise à jour automatique de la passerelle si elle est configurée. Pour la passerelle légère ATA, le processus de mise à jour de passerelle est également responsable des limitations de ressources de la passerelle légère ATA.
 -   **Microsoft.Tri.Gateway.Updater-ExceptionStatistics.log** : ce journal regroupe toutes les erreurs et exceptions similaires, et mesure leur nombre. Ce fichier est vide à chaque démarrage du service de mise à jour ATA et est mis à jour chaque minute. Il vous permet de vérifier s’il existe de nouveaux problèmes ou erreurs avec la mise à jour ATA. Les erreurs étant regroupées, il est très facile de savoir rapidement si de nouveaux problèmes ou erreurs ont été détectées.
 
@@ -72,17 +72,17 @@ Les journaux de déploiement ATA sont situés dans le répertoire temp de l’ut
 
 Journaux de déploiement du centre ATA :
 
--   **Microsoft Advanced Threat Analytics Center_20150601104213.log** : ce journal répertorie les étapes du processus de déploiement du centre ATA. Son utilisation principale consiste à suivre le processus de déploiement du centre ATA.
+-   **Microsoft Advanced Threat Analytics Center_YYYYMMDDHHMMSS.log** : ce journal répertorie les étapes du processus de déploiement du centre ATA. Son utilisation principale consiste à suivre le processus de déploiement du centre ATA.
 
--   **Microsoft Advanced Threat Analytics Center_20150601104213_0_MongoDBPackage.log** : ce journal répertorie les étapes du processus de déploiement de MongoDB sur le centre ATA. Son utilisation principale consiste à suivre le processus de déploiement de MongoDB.
+-   **Microsoft Advanced Threat Analytics Center_YYYYMMDDHHMMSS_0_MongoDBPackage.log** : ce journal répertorie les étapes du processus de déploiement de MongoDB sur le centre ATA. Son utilisation principale consiste à suivre le processus de déploiement de MongoDB.
 
--   **Microsoft Advanced Threat Analytics Center_20150601104213_1_MsiPackage.log** : ce fichier journal répertorie les étapes du processus de déploiement des fichiers binaires du centre ATA. Son utilisation principale consiste à suivre le déploiement des fichiers binaires du centre ATA.
+-   **Microsoft Advanced Threat Analytics Center_YYYYMMDDHHMMSS_1_MsiPackage.log** : ce fichier journal répertorie les étapes du processus de déploiement des fichiers binaires du centre ATA. Son utilisation principale consiste à suivre le déploiement des fichiers binaires du centre ATA.
 
 Journaux de déploiement de la passerelle ATA et de la passerelle légère ATA :
 
--   **Microsoft Advanced Threat Analytics Gateway_20151214014801.log** : ce journal répertorie les étapes du processus de déploiement de la passerelle ATA. Son utilisation principale consiste à suivre le processus de déploiement de la passerelle ATA.
+-   **Microsoft Advanced Threat Analytics Gateway_YYYYMMDDHHMMSS.log** : ce journal répertorie les étapes du processus de déploiement de la passerelle ATA. Son utilisation principale consiste à suivre le processus de déploiement de la passerelle ATA.
 
--   **Microsoft Advanced Threat Analytics Gateway_20151214014801_001_MsiPackage.log** : ce fichier journal répertorie les étapes du processus de déploiement des fichiers binaires de la passerelle ATA. Son utilisation principale consiste à suivre le déploiement des fichiers binaires de la passerelle ATA.
+-   **Microsoft Advanced Threat Analytics Gateway_YYYYMMDDHHMMSS_001_MsiPackage.log** : ce fichier journal répertorie les étapes du processus de déploiement des fichiers binaires de la passerelle ATA. Son utilisation principale consiste à suivre le déploiement des fichiers binaires de la passerelle ATA.
 
 
 ## Voir aussi
@@ -94,6 +94,6 @@ Journaux de déploiement de la passerelle ATA et de la passerelle légère ATA 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 
