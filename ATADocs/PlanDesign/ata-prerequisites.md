@@ -13,8 +13,8 @@ ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: a3fcf3b2ba7f90f2329d86ab9e8d19619cc7e28f
+ms.sourcegitcommit: c71d5ed1c705de558f1144820703ffe84850679b
+ms.openlocfilehash: a6fe3a8f042ca7f35180e99e5bc3ffd14f0ea6d8
 
 
 ---
@@ -117,7 +117,7 @@ Dans ce tableau, l’adresse IP 1 est liée au service du centre ATA, alors qu
 ### Certificats
 Vérifiez que le centre ATA a accès au point de distribution de votre liste de révocation de certificats. Si les passerelles ATA n’ont pas accès à Internet, suivez la [procédure d’importation manuelle d’une liste de révocation de certificats](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx) en veillant à installer l’ensemble des points de distribution de la liste pour toute la chaîne.
 
-Pour faciliter l’installation du centre ATA, vous pouvez installer des certificats auto-signés pendant l’installation. Une fois le déploiement terminé, remplacez les certificats auto-signés par un certificat d’une autorité de certification interne en vue d’une utilisation par la passerelle ATA.<br>
+Pour faciliter l’installation d’ATA, vous pouvez installer des certificats auto-signés pendant l’installation. Une fois le déploiement terminé, remplacez les certificats auto-signés par un certificat d’une autorité de certification interne en vue d’une utilisation par la passerelle ATA.<br>
 > [!NOTE]
 > Le type de fournisseur du certificat doit être Fournisseur de services de chiffrement (CSP).
 
@@ -201,7 +201,7 @@ Le tableau suivant répertorie les ports qui, au minimum, doivent être configur
 
 ### Certificats
 Vérifiez que le centre ATA a accès au point de distribution de votre liste de révocation de certificats. Si les passerelles ATA n’ont pas accès à Internet, appliquez la procédure d’importation manuelle d’une liste de révocation de certificats en veillant à installer l’ensemble des points de distribution de la liste pour toute la chaîne.<br>
-Pour faciliter l’installation du centre ATA, vous pouvez installer des certificats auto-signés pendant l’installation. Une fois le déploiement terminé, remplacez les certificats auto-signés par un certificat d’une autorité de certification interne en vue d’une utilisation par la passerelle ATA.
+Pour faciliter l’installation d’ATA, vous pouvez installer des certificats auto-signés pendant l’installation. Une fois le déploiement terminé, remplacez les certificats auto-signés par un certificat d’une autorité de certification interne en vue d’une utilisation par la passerelle ATA.
 
 > [!NOTE]
 > Le type de fournisseur du certificat doit être Fournisseur de services de chiffrement (CSP).<br>
@@ -254,7 +254,7 @@ Le tableau suivant répertorie les ports qui, au minimum, sont requis par la pas
 
 ### Certificats
 Vérifiez que le centre ATA a accès au point de distribution de votre liste de révocation de certificats. Si les passerelles légères ATA n’ont pas accès à Internet, appliquez la procédure d’importation manuelle d’une liste de révocation de certificats en veillant à installer l’ensemble des points de distribution de la liste pour toute la chaîne.
-Pour faciliter l’installation du centre ATA, vous pouvez installer des certificats auto-signés pendant l’installation. Une fois le déploiement terminé, remplacez les certificats auto-signés par un certificat d’une autorité de certification interne en vue d’une utilisation par la passerelle légère ATA.
+Pour faciliter l’installation d’ATA, vous pouvez installer des certificats auto-signés pendant l’installation. Une fois le déploiement terminé, remplacez les certificats auto-signés par un certificat d’une autorité de certification interne en vue d’une utilisation par la passerelle légère ATA.
 > [!NOTE]
 > Le type de fournisseur du certificat doit être Fournisseur de services de chiffrement (CSP).
 
@@ -281,6 +281,6 @@ L’accès à la console ATA s’effectue au moyen d’un navigateur, avec prise
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

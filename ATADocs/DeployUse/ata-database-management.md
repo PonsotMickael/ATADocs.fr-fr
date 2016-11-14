@@ -4,7 +4,7 @@ description: "Procédures pour vous aider à déplacer, sauvegarder ou restaurer
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 10/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5cd030f3b952d08c6617a6cda121c344a9c36f51
-ms.openlocfilehash: b4e68e9e8dbd94075a34a8e3e8f42d4f534caf50
+ms.sourcegitcommit: f334f9c8440e4bb0202579de220f6530d0aabad8
+ms.openlocfilehash: e295e0a0a8b5adbd40ddeb7e389ff82c7482c6d9
 
 
 ---
@@ -23,16 +23,16 @@ ms.openlocfilehash: b4e68e9e8dbd94075a34a8e3e8f42d4f534caf50
 
 
 
-# Gestion de la base de données ATA
+# <a name="ata-database-management"></a>Gestion de la base de données ATA
 Si vous voulez déplacer, sauvegarder ou restaurer la base de données ATA, suivez ces procédures pour MongoDB.
 
-## Sauvegarde de la base de données ATA
+## <a name="backing-up-the-ata-database"></a>Sauvegarde de la base de données ATA
 Reportez-vous à la [documentation MongoDB correspondante](http://docs.mongodb.org/manual/administration/backup/).
 
-## Restauration de la base de données ATA
+## <a name="restoring-the-ata-database"></a>Restauration de la base de données ATA
 Reportez-vous à la [documentation MongoDB correspondante](http://docs.mongodb.org/manual/administration/backup/).
 
-## Déplacement de la base de données ATA vers un autre lecteur
+## <a name="moving-the-ata-database-to-another-drive"></a>Déplacement de la base de données ATA vers un autre lecteur
 
 1.  Arrêtez le service **Microsoft Advanced Threat Analytics Center**.
 
@@ -40,7 +40,7 @@ Reportez-vous à la [documentation MongoDB correspondante](http://docs.mongodb.o
 
 3.  Ouvrez le fichier de configuration Mongo situé par défaut à l’emplacement suivant : C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongod.cfg.
 
-    Rechercher le paramètre `storage: dbPath`
+    Trouvez le paramètre `storage: dbPath`.
 
 4.  Déplacez le dossier indiqué dans le paramètre `dbPath` vers le nouvel emplacement.
 
@@ -52,25 +52,14 @@ Reportez-vous à la [documentation MongoDB correspondante](http://docs.mongodb.o
 
 7. Démarrez le service **Microsoft Advanced Threat Analytics Center**.
 
-## Fichier de configuration d’ATA
-La configuration d’ATA est stockée dans la collection « SystemProfile » dans la base de données.
-Cette collection est sauvegardée toutes les heures par le service du centre ATA dans des fichiers nommés « SystemProfile_*horodatage*.json ». Les 10 dernières versions sont stockées.
-Celui-ci se trouve dans un sous-dossier appelé « Backup ». À l’emplacement de l’installation d’ATA par défaut, il se trouve ici : *C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_*horodatage*.json*. 
-
-**Remarque** : Il est recommandé de sauvegarder ce fichier quelque part quand vous apportez des modifications importantes à ATA.
-
-Il est possible de restaurer tous les paramètres en exécutant la commande suivante :
-
-`mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`
-
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 - [Architecture d’ATA](/advanced-threat-analytics/plan-design/ata-architecture)
-- [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Prérequis au déploiement d’ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO5-->
 
 

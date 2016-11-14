@@ -4,7 +4,7 @@ description: "Décrit comment vous pouvez résoudre les erreurs courantes dans A
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 15c1a0d7ae213876c0e3a955eaeea8887281b4e6
-ms.openlocfilehash: b073a1b969f8841c9bbe540722349a5ef70340d4
+ms.sourcegitcommit: f334f9c8440e4bb0202579de220f6530d0aabad8
+ms.openlocfilehash: aa16eeb45272ffcf28bbb28ed9a02f30f52b15d0
 
 
 ---
@@ -23,9 +23,9 @@ ms.openlocfilehash: b073a1b969f8841c9bbe540722349a5ef70340d4
 
 
 
-# Résolution des problèmes liés au journal des erreurs ATA
+# <a name="troubleshooting-the-ata-error-log"></a>Résolution des problèmes liés au journal des erreurs ATA
 Cette section détaille les erreurs possibles dans les déploiements d’ATA et les étapes requises pour les corriger.
-## Erreurs liées à la passerelle ATA
+## <a name="ata-gateway-errors"></a>Erreurs liées à la passerelle ATA
 |Erreur|Description|Résolution|
 |-------------|----------|---------|
 |System.DirectoryServices.Protocols.LdapException : Une erreur locale s’est produite.|La passerelle ATA n’a pas pu s’authentifier auprès du contrôleur de domaine.|1. Vérifiez que l’enregistrement DNS du contrôleur de domaine est correctement configuré sur le serveur DNS. <br>2. Vérifiez que l’heure de la passerelle ATA est synchronisée avec l’heure du contrôleur de domaine.|
@@ -44,12 +44,21 @@ Cette section détaille les erreurs possibles dans les déploiements d’ATA et 
 |System.ApplicationException : Impossible de démarrer la session de suivi ETW MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329|Il existe une entrée d’hôte dans le fichier HOSTS qui pointe vers le nom court de l’ordinateur.|Supprimez l’entrée d’hôte du fichier C:\Windows\System32\drivers\etc\HOSTS ou remplacez-la par un nom de domaine complet.|
 
 
-## Erreurs IIS ATA (non applicable pour ATA 1.7 et versions ultérieures)
+
+## <a name="ata-lightweight-gateway-errors"></a>Erreurs liées à la passerelle légère ATA
+
+**Erreur** : Alertes « Trafic avec mise en miroir de ports ignoré » en cas d’utilisation de la passerelle légère sur VMware
+
+**Description** : Si vous utilisez des contrôleurs de domaine sur des machines virtuelles VMware, vous pouvez recevoir des alertes concernant le **trafic réseau avec mise en miroir de port ignoré**. Cela peut être dû à une incompatibilité de configuration dans VMware. 
+**Résolution** : Pour éviter ces alertes, vous pouvez vérifier que les paramètres TsoEnable, LargeSendOffload, IPv4 et TSO Offload ont la valeur 0 ou qu’ils sont désactivés. Pensez aussi à désactiver IPv4 Giant TSO Offload. Pour plus d’informations, voir la documentation de VMware.
+
+
+## <a name="ata-iis-errors-not-applicable-for-ata-v17-and-above"></a>Erreurs IIS ATA (non applicable pour ATA 1.7 et versions ultérieures)
 |Erreur|Description|Résolution|
 |-------------|----------|---------|
-|Erreur HTTP 500.19 - Erreur interne du serveur|Le module de réécriture d’URL IIS n’a pas pu s’installer correctement.|Désinstallez et réinstallez le module de réécriture d’URL IIS.<br>[Téléchargez le module de réécriture d’URL IIS.](http://go.microsoft.com/fwlink/?LinkID=615137)|
+|Erreur HTTP 500.19 - Erreur interne du serveur|Le module de réécriture d’URL IIS n’a pas pu s’installer correctement.|Désinstallez et réinstallez le module de réécriture d’URL IIS.<br>[Télécharger le module de réécriture d’URL IIS](http://go.microsoft.com/fwlink/?LinkID=615137)|
 
-## Erreurs liées au déploiement
+## <a name="deployment-errors"></a>Erreurs liées au déploiement
 |Erreur|Description|Résolution|
 |-------------|----------|---------|
 |L’installation de .Net Framework 4.6.1 échoue avec l’erreur 0x800713ec.|Les composants requis pour .Net Framework 4.6.1 ne sont pas installés sur le serveur. |Avant d’installer ATA, vérifiez que les mises à jour Windows [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) et [KB2919355](https://support.microsoft.com/kb/2919355) sont installées sur le serveur.|
@@ -57,15 +66,15 @@ Cette section détaille les erreurs possibles dans les déploiements d’ATA et 
 ![Image d’erreur ATA liée à l’installation de .NET](media/netinstallerror.png)
 
 
-## Voir aussi
-- [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
-- [Planification de la capacité ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning)
+## <a name="see-also"></a>Voir aussi
+- [Prérequis au déploiement d’ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Planification de la capacité d’ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 - [Configurer la collecte d’événements](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [Configuration du transfert d’événements Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO5-->
 
 
