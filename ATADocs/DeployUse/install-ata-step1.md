@@ -4,7 +4,7 @@ description: "La première étape de la procédure d’installation d’ATA cons
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 10/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d0681cfa4ae763da9c88c8dec9b77a75494a5c9f
-ms.openlocfilehash: 7365b09e98d422a8670725b47a1c2380f00e23fb
+ms.sourcegitcommit: c71d5ed1c705de558f1144820703ffe84850679b
+ms.openlocfilehash: cf7ae4eccdf70e4e8661ac55ec15fff00bc9c62e
 
 
 ---
@@ -43,6 +43,9 @@ Effectuez les opérations suivantes sur le serveur du centre ATA.
 2.  Connectez-vous à l’ordinateur sur lequel vous installez le centre ATA en tant qu’utilisateur membre du groupe Administrateurs local.
 
 3.  Exécutez **Microsoft ATA Center Setup.EXE**, puis suivez les instructions de l’Assistant Installation.
+
+> [!NOTE]   
+> Veillez à exécuter le fichier d’installation à partir d’un lecteur local, et non à partir d’un fichier ISO monté, pour éviter les problèmes liés à un redémarrage obligatoire dans le cadre de l’installation.   
 
 4.  Si Microsoft .Net Framework n’est pas installé, vous êtes invité à l’installer quand vous démarrez l’installation. Vous pouvez être invité à effectuer un redémarrage après avoir installé le .NET Framework.
 5.  Dans la page **Bienvenue**, sélectionnez la langue à utiliser pour les écrans d’installation d’ATA et cliquez sur **Suivant**.
@@ -102,6 +105,6 @@ Effectuez les opérations suivantes sur le serveur du centre ATA.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

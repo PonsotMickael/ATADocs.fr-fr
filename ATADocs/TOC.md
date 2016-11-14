@@ -1,9 +1,10 @@
 # [Comprendre et explorer](/understand-explore/what-is-ata)
-# [Planification et conception](/plan-design/ata-architecture)
-# [Déployer et utiliser](/deploy-use/preinstall-ata)
-# [Dépannage](/troubleshoot/troubleshooting-ata-known-errors)
+# [Planifier et concevoir](/plan-design/ata-architecture)
+# [Déployer](/advanced-threat-analytics/deploy-use/preinstall-ata)
+# [Utiliser](/advanced-threat-analytics/deploy-use/operate-ata)
+# [Résoudre les problèmes](/troubleshoot/troubleshooting-ata-known-errors)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO5-->
 
 

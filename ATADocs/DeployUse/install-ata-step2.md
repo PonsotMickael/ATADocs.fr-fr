@@ -13,8 +13,8 @@ ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3768cd103fc2a938d2d39fe34179d74587abc118
-ms.openlocfilehash: be58ce053a2ddb59fa1556027e432c0499f8deb4
+ms.sourcegitcommit: f334f9c8440e4bb0202579de220f6530d0aabad8
+ms.openlocfilehash: 3f78d0dd6b1e3f419c7e72e0449f77e7d2b3167d
 
 
 ---
@@ -42,11 +42,12 @@ La première fois que vous ouvrez la console ATA, l’écran suivant apparaît 
     |**Nom d’utilisateur** (obligatoire)|Entrez le nom de l’utilisateur en lecture seule, par exemple : **ATAuser**.|
     |**Mot de passe** (obligatoire)|Entrez le mot de passe de l’utilisateur en lecture seule, par exemple : **Pencil1**.|
     |**Domaine** (obligatoire)|Entrez le domaine de l’utilisateur en lecture seule, par exemple : **contoso.com**. **Remarque :** il est important d’entrer le nom complet du domaine où se trouve l’utilisateur. Par exemple, si le compte de l’utilisateur se trouve dans le domaine corp.contoso.com, vous devez entrer `corp.contoso.com`, et non contoso.com.|
-    
+
+2. Si vous le souhaitez, vous pouvez cliquer sur **Tester la connexion** pour tester la connectivité au domaine et vérifier que les informations d’identification fournies donnent accès au domaine. Cela ne fonctionne que si le centre ATA dispose d’une connectivité au domaine.   
 
     Après l’enregistrement, le message d’accueil dans la console devient : ![ATA welcome stage 1 finished](media/ATA_1.7-welcome-provide-username-finished.png)
 
-2. Dans la console, cliquez sur **Download Gateway setup and install the first Gateway** (Télécharger le programme d’installation de passerelle et installer la première passerelle) pour continuer.
+3. Dans la console, cliquez sur **Download Gateway setup and install the first Gateway** (Télécharger le programme d’installation de passerelle et installer la première passerelle) pour continuer.
 
 
 >[!div class="step-by-step"]
@@ -62,6 +63,6 @@ La première fois que vous ouvrez la console ATA, l’écran suivant apparaît 
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
