@@ -1,20 +1,21 @@
 ---
-title: "Nouveautés d’ATA version 1.7 | Microsoft ATA"
+title: "Nouveautés d’ATA version 1.7 | Microsoft Docs"
 description: "Répertorie les nouveautés d’ATA version 1.7, ainsi que les problèmes connus"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
 ms.technology: 
-ms.assetid: 
+ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f334f9c8440e4bb0202579de220f6530d0aabad8
-ms.openlocfilehash: 03a5e6a5398ffcc43e712bd4a3c2f872cd91c0b4
+ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
+ms.openlocfilehash: 8032e373567ce500c7741480d56d232f34b05446
 
 
 ---
@@ -75,9 +76,15 @@ Dans la console ATA, la passerelle ATA a l’état « Mise à jour (télécharg
  
 ### <a name="dropped-port-mirror-traffic-when-using-vmware"></a>Trafic avec mise en miroir de ports ignoré lors de l’utilisation de VMware
 
-Alertes « Trafic avec mise en miroir de ports ignoré » lors de l’utilisation de la passerelle légère sur VMware
+Alertes « Trafic avec mise en miroir de ports ignoré » lors de l’utilisation de la passerelle légère sur VMware.
 
-Si vous utilisez des contrôleurs de domaine sur des machines virtuelles VMware, vous pouvez recevoir des alertes concernant le **trafic réseau avec mise en miroir de port ignoré**. Ce scénario peut se produire à cause d’une différence de configuration dans VMware. Pour éviter ces alertes, vous pouvez vérifier que les paramètres suivants sont définis sur 0 ou sont désactivés : TsoEnable, LargeSendOffload, IPv4, TSO Offload. Pensez aussi à désactiver IPv4 Giant TSO Offload. Pour plus d’informations, voir la documentation de VMware.
+Si vous utilisez des contrôleurs de domaine sur des machines virtuelles VMware, vous pouvez recevoir des alertes concernant le **trafic réseau avec mise en miroir de port ignoré**. Ce scénario peut se produire à cause d’une différence de configuration dans VMware. Pour éviter ces alertes, vous pouvez vérifier que les paramètres suivants sont définis sur 0 ou sont désactivés dans la machine virtuelle :  
+
+- TsoEnable
+- LargeSendOffload(IPv4)
+- IPv4 TSO Offload
+
+Pensez aussi à désactiver IPv4 Giant TSO Offload. Pour plus d’informations, voir la documentation de VMware.
 
 ### <a name="automatic-gateway-update-fail-when-updating-to-17-update-1"></a>Échec de la mise à jour automatique de la passerelle lors de la mise à jour vers la version 1.7 Update 1
 
@@ -110,6 +117,6 @@ Pour résoudre ce problème, une fois le certificat modifié, accédez à l’em
 
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 
