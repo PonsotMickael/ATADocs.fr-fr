@@ -1,25 +1,26 @@
 ---
-title: "Gestion de la base de données ATA | Microsoft ATA"
+title: "Gestion de la base de données ATA | Microsoft Docs"
 description: "Procédures pour vous aider à déplacer, sauvegarder ou restaurer la base de données ATA."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
 ms.technology: 
-ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
+ms.assetid: 05e49e23-6e0a-4ec0-9a63-a2093173c8a1
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f334f9c8440e4bb0202579de220f6530d0aabad8
-ms.openlocfilehash: e295e0a0a8b5adbd40ddeb7e389ff82c7482c6d9
+ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
+ms.openlocfilehash: 9d7e2a03633acc97d6f918c97f9b67b553d5202e
 
 
 ---
 
-*S’applique à : Advanced Threat Analytics version 1.7*
+*S’applique à : Advanced Threat Analytics version 1.7*
 
 
 
@@ -35,10 +36,12 @@ Reportez-vous à la [documentation MongoDB correspondante](http://docs.mongodb.o
 ## <a name="moving-the-ata-database-to-another-drive"></a>Déplacement de la base de données ATA vers un autre lecteur
 
 1.  Arrêtez le service **Microsoft Advanced Threat Analytics Center**.
+> [!Important] 
+> Assurez-vous que le service ATA Center est arrêté avant de passer à l’étape suivante.
 
 2.  Arrêtez le service **MongoDB**.
 
-3.  Ouvrez le fichier de configuration Mongo situé par défaut à l’emplacement suivant : C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongod.cfg.
+3.  Ouvrez le fichier de configuration Mongo situé par défaut à l’emplacement suivant : C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongod.cfg.
 
     Trouvez le paramètre `storage: dbPath`.
 
@@ -55,11 +58,11 @@ Reportez-vous à la [documentation MongoDB correspondante](http://docs.mongodb.o
 ## <a name="see-also"></a>Voir aussi
 - [Architecture d’ATA](/advanced-threat-analytics/plan-design/ata-architecture)
 - [Prérequis au déploiement d’ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
-- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 

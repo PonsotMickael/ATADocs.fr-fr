@@ -1,20 +1,21 @@
 ---
-title: Exploiter ATA - Fin | Microsoft ATA
+title: Exploiter ATA - Fin | Microsoft Docs
 description: "Vous explique comment utiliser ATA et effectuer des activités quotidiennes."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
 ms.technology: 
-ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
+ms.assetid: cf6fcd3a-0295-450e-bd40-8cd4909f0cae
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 23aea01f07de4fc52fa404304df7698370c75cb9
-ms.openlocfilehash: 5f011486d7dff8aa70720351a465ce4db823cc66
+ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
+ms.openlocfilehash: 737173f9d485004ca1a92dbede364048d450faa3
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 5f011486d7dff8aa70720351a465ce4db823cc66
 
 
 
-# Exploiter ATA
+# <a name="operate-ata"></a>Exploiter ATA
 
 Vous pouvez effectuer les opérations suivantes avec ATA :
 
@@ -43,15 +44,15 @@ Vous pouvez effectuer les opérations suivantes avec ATA :
 - [Gérer la télémétrie ATA](manage-telemetry-settings.md)
 
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://aka.ms/ata-forum)
 - [Configurer la collecte d’événements](configure-event-collection.md)
-- [Conditions préalables au déploiement d’ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 
