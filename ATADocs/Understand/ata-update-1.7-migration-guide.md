@@ -1,25 +1,26 @@
 ---
-title: "Mise à jour d’ATA vers la version 1.7 : guide de migration | Microsoft ATA"
+title: "Mise à jour d’ATA vers la version 1.7 : guide de migration | Microsoft Docs"
 description: "Procédures pour mettre à jour ATA vers la version 1.7"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
 ms.technology: 
-ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
+ms.assetid: 8eefcd45-7a4b-4074-ac5b-1ffc48e6654a
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3a821bf1479af529fd65e2153f8b722999c83a4f
-ms.openlocfilehash: 444bc4744834219d9db7bc8c209f33c039f90dad
+ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
+ms.openlocfilehash: 4fa8b77aeffff327672396e9819215cc536af918
 
 
 ---
 
-# Mise à jour d’ATA vers la version 1.7 : guide de migration
+# <a name="ata-update-to-17-migration-guide"></a>Mise à jour d’ATA vers la version 1.7 : guide de migration
 La mise à jour vers ATA 1.7 comprend des améliorations dans les domaines suivants :
 
 -   Nouvelles détections
@@ -27,7 +28,7 @@ La mise à jour vers ATA 1.7 comprend des améliorations dans les domaines suiv
 -   Détections existantes plus efficaces
   
 
-## Mise à jour d’ATA vers la version 1.7
+## <a name="updating-ata-to-version-17"></a>Mise à jour d’ATA vers la version 1.7
 
 > [!NOTE] 
 > Si ATA n’est pas installé dans votre environnement, téléchargez la version complète d’ATA qui inclut la version 1.7. Suivez ensuite la procédure d’installation standard décrite dans [Installer ATA](/advanced-threat-analytics/deploy-use/install-ata).
@@ -39,7 +40,7 @@ Si vous avez déjà déployé ATA version 1.6, cette procédure vous guide tout
 
 Suivez ces étapes pour mettre à jour ATA vers la version 1.7 :
 
-1.  [Télécharger la mise à jour vers la version 1.7](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)<br>
+1.  [Télécharger la mise à jour vers la version 1.7](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)<br>
 Dans cette version, le même fichier d’installation (Microsoft ATA Center Setup.exe) est utilisé pour l’installation d’un nouveau déploiement d’ATA et la mise à niveau des déploiements existants.
 
 2.  Mettez à jour le centre ATA.
@@ -49,7 +50,7 @@ Dans cette version, le même fichier d’installation (Microsoft ATA Center Setu
     > [!IMPORTANT]
     > Pour assurer le bon fonctionnement d’ATA, mettez à jour toutes les passerelles.
 
-### Étape 1 : mettre à jour le centre ATA
+### <a name="step-1-update-the-ata-center"></a>Étape 1 : mettre à jour le centre ATA
 
 1.  Sauvegardez votre base de données (facultatif) :
 
@@ -62,7 +63,7 @@ Dans cette version, le même fichier d’installation (Microsoft ATA Center Setu
     -  Dans la page **Bienvenue**, sélectionnez votre langue, puis cliquez sur **Suivant**.
 
     -  Si vous n’avez pas activé les mises à jour automatiques dans la version 1.6, vous serez invité à configurer ATA pour utiliser Microsoft Update pour ATA pour rester à jour.  Dans la page Microsoft Update, sélectionnez **Utiliser Microsoft Update lorsque je recherche des mises à jour (recommandé)**.
-    ![Image montrant comment maintenir ATA à jour](media/ata_ms_update.png) Ainsi, Windows est configuré de manière à récupérer les mises à jour des autres produits Microsoft (y compris ATA), comme illustré ci-après. 
+    ![Image montrant comment maintenir ATA à jour](media/ata_ms_update.png) Ainsi, Windows est configuré de manière à récupérer les mises à jour des autres produits Microsoft (notamment ATA), comme illustré ci-après. 
      ![Image de mise à jour automatique de Windows](media/ata_installupdatesautomatically.png)
 
     -  Dans l’écran **Migration des données**, indiquez si vous souhaitez migrer tout ou une partie des données. Si vous choisissez de migrer uniquement des données partielles, vos profils de comportement et de trafic réseau capturés précédemment ne seront pas migrés. Cela signifie qu’il faudra trois semaines avant que la détection d’un comportement anormal ait un profil complet pour activer la détection d’activité anormale. Pendant ces trois semaines, toutes les autres détections ATA fonctionneront correctement. L’installation de la migration des données **Partielle** prend beaucoup moins de temps. Si vous sélectionnez la migration des données **Complète**, l’installation peut prendre beaucoup plus de temps. La durée estimée et l’espace disque requis, qui sont répertoriés dans l’écran **Migration des données**, dépendent de la quantité de trafic de réseau capturée, précédemment enregistrée dans les versions précédentes d’ATA. Avant de sélectionner **Partielle** ou **Complète**, veillez à vérifier ces exigences.  
@@ -87,12 +88,12 @@ Dans cette version, le même fichier d’installation (Microsoft ATA Center Setu
 
 
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 

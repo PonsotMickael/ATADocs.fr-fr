@@ -1,20 +1,21 @@
 ---
-title: "Résolution des problèmes liés à ATA à l’aide de la base de données ATA | Microsoft ATA"
+title: "Résolution des problèmes liés à ATA à l’aide de la base de données ATA | Microsoft Docs"
 description: "Décrit comment vous pouvez utiliser la base de données ATA pour résoudre les problèmes"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
 ms.technology: 
-ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
+ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af0508f82d8cf190dcd3ff058f4c2ff37b4b0595
-ms.openlocfilehash: dfc6c902cb13b1a2bf927cd235806ec32d9fefc3
+ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
+ms.openlocfilehash: bff3224736981f38616172a6b1717d7d125c3c0a
 
 
 ---
@@ -23,11 +24,11 @@ ms.openlocfilehash: dfc6c902cb13b1a2bf927cd235806ec32d9fefc3
 
 
 
-# Résolution des problèmes liés à ATA à l’aide de la base de données ATA
+# <a name="troubleshooting-ata-using-the-ata-database"></a>Résolution des problèmes liés à ATA à l’aide de la base de données ATA
 ATA utilise MongoDB comme base de données.
 Vous pouvez interagir avec la base de données à l’aide de la ligne de commande par défaut ou d’un outil d’interface utilisateur pour effectuer la résolution des problèmes et des tâches avancées.
 
-## Interaction avec la base de données
+## <a name="interacting-with-the-database"></a>Interaction avec la base de données
 La procédure par défaut et la plus simple pour interroger la base de données consiste à utiliser l’interpréteur de commandes Mongo :
 
 1.  Ouvrez une fenêtre de ligne de commande et modifiez le chemin au dossier bin MongoDB. Le chemin par défaut est : **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**.
@@ -50,15 +51,15 @@ Voici un exemple de code qui utilise la syntaxe ci-dessus. Si vous étudiez une 
 
 `db.Ntlms_<closest date>.find({SourceAccountId: "123bdd24-b269-h6e1-9c72-7737as875351"})`
 
-## Voir aussi
-- [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
-- [Planification de la capacité ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning)
+## <a name="see-also"></a>Voir aussi
+- [Prérequis au déploiement d’ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Planification de la capacité d’ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 - [Configurer la collecte d’événements](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [Configuration du transfert d’événements Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 
