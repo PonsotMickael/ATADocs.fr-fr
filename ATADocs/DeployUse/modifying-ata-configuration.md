@@ -1,10 +1,11 @@
 ---
-title: Modifier la configuration ATA | Microsoft ATA
+title: Modifier la configuration ATA | Microsoft Docs
 description: "Fournit une liste des méthodes de mise à jour de votre configuration ATA."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,21 +14,21 @@ ms.assetid: bcf0f7d3-8027-45c0-8002-19f71fcb30a6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: b79a5726b40130b28b0b52d42eede69a4dacc8b6
+ms.sourcegitcommit: bc7af91a925928183d179391f15d3a24cda2b576
+ms.openlocfilehash: f1e0939160cfdc54d4474f43e01582893cda82ef
 
 
 ---
 
-*S’applique à : Advanced Threat Analytics version 1.7*
+*S’applique à : Advanced Threat Analytics version 1.7*
 
 
 
-# Modifier la configuration ATA
+# <a name="change-ata-configuration"></a>Modifier la configuration ATA
 
-Si vous devez mettre à jour ou modifier votre configuration après l’installation initiale et le déploiement d’ATA, utilisez cette rubrique pour obtenir des instructions avant de modifier les éléments suivants :
+Si vous devez mettre à jour ou modifier votre configuration après l’installation initiale et le déploiement d’ATA, utilisez cette rubrique pour obtenir des instructions avant de modifier les éléments suivants :
 
--   [Modifier l’adresse IP du serveur du centre ATA](modifying-ata-config-centerip.md)
+-   [Modifier l’adresse IP du serveur du centre ATA](modifying-ata-config-centerip.md)
 
 -   [Modifier le certificat du centre ATA](modifying-ata-config-centercert.md)
 
@@ -35,13 +36,12 @@ Si vous devez mettre à jour ou modifier votre configuration après l’installa
 
 -   [Modifier le mot de passe de connectivité de domaine](modifying-ata-config-dcpassword.md)
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 - [Utilisation de la console ATA](working-with-ata-console.md)
-- [Installer ATA](install-ata.md)
-- [Consultez le forum ATA !](https://aka.ms/ata-forum)
+- [Consultez le forum ATA !](https://aka.ms/ata-forum)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 
