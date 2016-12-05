@@ -1,10 +1,11 @@
 ---
-title: "Modifier la configuration ATA - Mot de passe de connectivité de domaine | Microsoft ATA"
+title: "Modifier la configuration ATA - Mot de passe de connectivité de domaine | Microsoft Docs"
 description: "Décrit comment modifier le mot de passe de connectivité de domaine sur la passerelle ATA."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,29 +14,28 @@ ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: 7cee457a8959526b25a68c50efea2976bafbef75
+ms.sourcegitcommit: bc7af91a925928183d179391f15d3a24cda2b576
+ms.openlocfilehash: a6dbdb0d53a0a7f6903ec858bb44054c624ae226
 
 
 ---
 
-*S’applique à : Advanced Threat Analytics version 1.7*
+*S’applique à : Advanced Threat Analytics version 1.7*
 
 
 
-# Modifier la configuration ATA - Mot de passe de connectivité de domaine
+# <a name="change-ata-configuration---domain-connectivity-password"></a>Modifier la configuration ATA - Mot de passe de connectivité de domaine
 
 >[!div class="step-by-step"]
 [« URL de la console ATA](modifying-ata-config-consoleurl.md)
 
 
-## Modifier le mot de passe de connectivité de domaine
+## <a name="change-the-domain-connectivity-password"></a>Modifier le mot de passe de connectivité de domaine
 Si vous modifiez le mot de passe de connectivité de domaine, assurez-vous que le mot de passe entré est correct. Dans le cas contraire, le service de passerelle ATA cesse de fonctionner sur les passerelles ATA.
 
-Si vous pensez que cela s’est produit, recherchez la ligne suivante dans le fichier Microsoft.Tri.Gateway-Errors.log sur la passerelle ATA :
-`The supplied credential is invalid.`
+Si vous pensez que cela s’est produit, recherchez la ligne suivante dans le fichier Microsoft.Tri.Gateway-Errors.log sur la passerelle ATA : `The supplied credential is invalid.`
 
-Pour corriger ce problème, procédez comme suit pour mettre à jour le mot de passe de connectivité de domaine dans le centre ATA :
+Pour corriger ce problème, procédez comme suit pour mettre à jour le mot de passe de connectivité de domaine dans le centre ATA :
 
 1.  Ouvrez la console ATA dans le centre ATA.
 
@@ -58,13 +58,12 @@ Pour corriger ce problème, procédez comme suit pour mettre à jour le mot de p
 >[!div class="step-by-step"]
 [« URL de la console ATA](modifying-ata-config-consoleurl.md)
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 - [Utilisation de la console ATA](working-with-ata-console.md)
-- [Installer ATA](install-ata.md)
-- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 
