@@ -1,8 +1,9 @@
 ---
-title: Installer ATA sans assistance | Microsoft ATA
+title: Installer ATA sans assistance | Microsoft Docs
 description: "Cet article décrit comment installer ATA sans assistance."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d0681cfa4ae763da9c88c8dec9b77a75494a5c9f
-ms.openlocfilehash: 7b9ba09d3757979c0b845f796a846e7e83b505af
+ms.sourcegitcommit: b7f9dac8c00f213ee0cefc9ff93f2c9ca40cd28b
+ms.openlocfilehash: 7d7eeaf450a38a23c5c3a4d6d192a773f4cd036c
 
 
 ---
@@ -23,9 +24,9 @@ ms.openlocfilehash: 7b9ba09d3757979c0b845f796a846e7e83b505af
 
 
 
-# Installation d’ATA sans assistance
+# <a name="ata-silent-installation"></a>Installation d’ATA sans assistance
 Cet article fournit des instructions pour installer ATA sans assistance.
-## Conditions préalables
+## <a name="prerequisites"></a>Conditions préalables
 
 Microsoft ATA v1.7 nécessite l’installation du Microsoft .NET Framework 4.6.1. 
 
@@ -36,7 +37,7 @@ Quand vous installez ou mettez à jour ATA, .Net Framework 4.6.1 est automatiqu
 Quand vous utilisez la méthode d’installation d’ATA sans assistance, le programme d’installation est configuré pour redémarrer automatiquement le serveur à la fin de l’installation (si nécessaire). Pour éviter le redémarrage du serveur dans le cadre de l’installation, utilisez l’indicateur `-NoRestart`. Si vous utilisez l’indicateur `-NoRestart` et qu’un redémarrage est requis dans le cadre de l’installation, le programme d’installation s’interrompt jusqu’à ce que le serveur soit redémarré. Pour suivre la progression du déploiement, surveillez les journaux d’installation d’ATA, qui se trouvent dans **%AppData%\Local\Temp**.
 
 
-## Installer le centre ATA
+## <a name="install-the-ata-center"></a>Installer le centre ATA
 
 Utilisez la commande suivante pour installer le centre ATA :
 
@@ -77,7 +78,7 @@ Pour installer le centre ATA avec les chemins d’installation par défaut, deux
     “Microsoft ATA Center Setup.exe” /quiet --LicenseAccepted NetFrameworkCommandLineArguments ="/q" CenterIpAddress=192.168.0.10 CenterPort=443 CenterCertificateThumbprint= ‎"1E2079739F624148ABDF502BF9C799FCB8C7212F”
     ConsoleIpAddress=192.168.0.11  ConsoleCertificateThumbprint=”G9530253C976BFA9342FD1A716C0EC94207BFD5A”
 
-## Mettez à jour le centre ATA.
+## <a name="update-the-ata-center"></a>Mettez à jour le centre ATA.
 
 Utilisez la commande suivante pour mettre à jour le centre ATA :
 
@@ -102,7 +103,7 @@ Pendant la mise à jour d’ATA, le programme d’installation détecte automati
 
         “Microsoft ATA Center Setup.exe” /quiet NetFrameworkCommandLineArguments="/q"
 
-## Désinstaller le centre ATA sans assistance
+## <a name="uninstall-the-ata-center-silently"></a>Désinstaller le centre ATA sans assistance
 
 Utilisez la commande suivante pour effectuer une désinstallation sans assistance du centre ATA : **Syntaxe** :
 
@@ -129,7 +130,7 @@ Utilisez la commande suivante pour effectuer une désinstallation sans assistanc
 
     “Microsoft ATA Center Setup.exe” /quiet /uninstall --DeleteExistingDatabaseData
 
-## Installation de la passerelle ATA sans assistance
+## <a name="ata-gateway-silent-installation"></a>Installation de la passerelle ATA sans assistance
 Utilisez la commande suivante pour installer la passerelle ATA sans assistance :
 
 **Syntaxe** :
@@ -146,7 +147,6 @@ Utilisez la commande suivante pour installer la passerelle ATA sans assistance 
 |NoRestart|/norestart|Non|Supprime toute tentative de redémarrage. Par défaut, l’interface utilisateur demande la confirmation du redémarrage.|
 |Aide|/help|Non|Fournit une aide et une référence rapide. Affiche l’utilisation correcte de la commande d’installation, y compris la liste de tous les comportements et options.|
 |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|Oui|Spécifie les paramètres d’installation de .Net Framework. Doit être définie de manière à effectuer l’installation sans assistance de .Net Framework.|
-|LicenseAccepted|--LicenseAccepted|Oui|Indique que la licence a été lue et approuvée. Doit être définie sur installation sans assistance.|
 
 **Paramètres d’installation** :
 
@@ -162,7 +162,7 @@ Utilisez la commande suivante pour installer la passerelle ATA sans assistance 
     ConsoleAccountName=”user@contoso.com” ConsoleAccountPassword=“userpwd”
     
 
-## Mettre à jour la passerelle ATA
+## <a name="update-the-ata-gateway"></a>Mettre à jour la passerelle ATA
 
 Utilisez la commande suivante pour mettre à jour la passerelle ATA sans assistance :
 
@@ -185,7 +185,7 @@ Utilisez la commande suivante pour mettre à jour la passerelle ATA sans assista
 
         Microsoft ATA Gateway Setup.exe /quiet NetFrameworkCommandLineArguments="/q"
 
-## Désinstaller la passerelle ATA sans assistance
+## <a name="uninstall-the-ata-gateway-silently"></a>Désinstaller la passerelle ATA sans assistance
 
 Utilisez la commande suivante pour effectuer une désinstallation sans assistance de la passerelle ATA : **Syntaxe** :
 
@@ -214,13 +214,13 @@ Utilisez la commande suivante pour effectuer une désinstallation sans assistanc
 
 
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)
-- [Conditions préalables au déploiement d’ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Dec16_HO1-->
 
 
