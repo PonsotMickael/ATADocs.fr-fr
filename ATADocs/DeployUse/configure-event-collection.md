@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/28/2016
+ms.date: 12/08/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bc7af91a925928183d179391f15d3a24cda2b576
-ms.openlocfilehash: 2932fd80fd3a5ff6830f8629df824591e3fc47c3
+ms.sourcegitcommit: d16364cd4113534c3101ebfa7750c0d0b837856d
+ms.openlocfilehash: 9ac9478512f2e5f6d15dd9b5cba9970a51ffa4da
 
 
 ---
@@ -25,16 +25,17 @@ ms.openlocfilehash: 2932fd80fd3a5ff6830f8629df824591e3fc47c3
 
 
 # <a name="configure-event-collection"></a>Configurer la collecte d’événements
-Pour améliorer les fonctionnalités de détection, ATA a besoin de l’ID de journal des événements Windows 4776. Les événements peuvent être transférés à la passerelle ATA de deux manières : soit en configurant la passerelle ATA de façon à écouter les événements SIEM, soit en [configurant le transfert d’événements Windows](#configuring-windows-event-forwarding).
+Pour améliorer les fonctionnalités de détection, ATA a besoin de l’ID de journal des événements Windows 4776. Les événements peuvent être transférés à la passerelle ATA de deux manières : soit en configurant la passerelle ATA de façon à écouter les événements SIEM, soit en [configurant le transfert d’événements Windows](#configuring-windows-event-forwarding).
 
 ## <a name="event-collection"></a>Collecte d’événements
-Outre la collecte et l’analyse du trafic réseau à destination et en provenance des contrôleurs de domaine, ATA peut utiliser l’événement Windows 4776 pour optimiser la détection d’attaques Pass-the-Hash. Vous pouvez soit recevoir cet événement de votre serveur SIEM, soit définir le transfert d’événements Windows à partir de votre contrôleur de domaine. Les événements collectés fournissent à ATA des informations supplémentaires qui ne sont pas accessibles par le biais du trafic réseau du contrôleur de domaine.
+Outre la collecte et l’analyse du trafic réseau à destination et en provenance des contrôleurs de domaine, ATA peut utiliser l’événement Windows 4776 pour optimiser la détection d’attaques Pass-the-Hash. Vous pouvez soit recevoir cet événement de votre serveur SIEM, soit définir le transfert d’événements Windows à partir de votre contrôleur de domaine. Les événements collectés fournissent à ATA des informations supplémentaires qui ne sont pas accessibles par le biais du trafic réseau du contrôleur de domaine.
 
 ### <a name="siemsyslog"></a>SIEM/Syslog
-Pour qu’ATA puisse consommer des données provenant d’un serveur Syslog, vous devez effectuer les opérations suivantes :
+Pour qu’ATA puisse consommer des données provenant d’un serveur Syslog, vous devez effectuer les opérations suivantes :
 
 -   Configurez vos serveurs de passerelle ATA pour écouter et accepter les événements transférés à partir du serveur SIEM/Syslog.
-
+> [!NOTE]
+> ATA écoute uniquement sur IPv4 et non sur IPv6. 
 -   Configurez votre serveur SIEM/Syslog de façon à transférer des événements spécifiques à la passerelle ATA.
 
 > [!IMPORTANT]
@@ -44,27 +45,27 @@ Pour qu’ATA puisse consommer des données provenant d’un serveur Syslog, vou
 Pour plus d’informations sur la façon de configurer le transfert d’événements spécifiques vers un autre serveur, consultez la documentation produit de votre serveur SIEM/Syslog. 
 
 ### <a name="windows-event-forwarding"></a>Transfert d’événements Windows
-Si vous n’utilisez pas un serveur SIEM/Syslog, vous pouvez configurer vos contrôleurs de domaine Windows de façon à transférer l’événement Windows associé à l’ID 4776 pour qu’il soit collecté et analysé par ATA. L’événement Windows associé à l’ID 4776 fournit des données relatives aux authentifications NTLM.
+Si vous n’utilisez pas un serveur SIEM/Syslog, vous pouvez configurer vos contrôleurs de domaine Windows de façon à transférer l’événement Windows associé à l’ID 4776 pour qu’il soit collecté et analysé par ATA. L’événement Windows associé à l’ID 4776 fournit des données relatives aux authentifications NTLM.
 
 ## <a name="configuring-the-ata-gateway-to-listen-for-siem-events"></a>Configuration de la passerelle ATA pour écouter les événements SIEM
 
-1.  Dans la configuration ATA, sous l’onglet « Événements », activez **Syslog** et cliquez sur **Enregistrer**.
+1.  Dans la configuration ATA, sous l’onglet « Événements », activez **Syslog** et cliquez sur **Enregistrer**.
 
     ![Image de l’activation du protocole UDP de l’écouteur syslog](media/ATA-enable-siem-forward-events.png)
 
-2.  Configurez votre serveur SIEM ou Syslog pour transférer l’événement Windows associé à l’ID 4776 vers l’adresse IP de l’une des passerelles ATA. Pour plus d’informations sur la configuration de votre serveur SIEM, consultez l’aide en ligne de SIEM ou explorez les options de support technique à votre disposition pour obtenir les formats à respecter pour chaque serveur SIEM.
+2.  Configurez votre serveur SIEM ou Syslog pour transférer l’événement Windows associé à l’ID 4776 vers l’adresse IP de l’une des passerelles ATA. Pour plus d’informations sur la configuration de votre serveur SIEM, consultez l’aide en ligne de SIEM ou explorez les options de support technique à votre disposition pour obtenir les formats à respecter pour chaque serveur SIEM.
 
 ### <a name="siem-support"></a>Prise en charge de SIEM
-ATA prend en charge les événements SIEM aux formats suivants :  
+ATA prend en charge les événements SIEM aux formats suivants :  
 
 #### <a name="rsa-security-analytics"></a>RSA Security Analytics
 &lt;En-tête Syslog&gt;RsaSA\n2015-May-19 09:07:09\n4776\nMicrosoft-Windows-Security-Auditing\nSecurity\XXXXX.subDomain.domain.org.il\nYYYYY$\nMMMMM \n0x0
 
 -   L’en-tête syslog est facultatif.
 
--   Le séparateur de caractère « \n » est obligatoire entre tous les champs.
+-   Le séparateur de caractère « \n » est obligatoire entre tous les champs.
 
--   Les champs, dans l’ordre, sont les suivants :
+-   Les champs, dans l’ordre, sont les suivants :
 
     1.  Constante RsaSA (doit être indiquée).
 
@@ -95,7 +96,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|Le c
 
 -   La partie en-tête, séparée par une barre verticale, doit exister (comme indiqué dans le protocole).
 
--   Les clés suivantes dans la partie _Extension_ doivent être présentes dans l’événement :
+-   Les clés suivantes dans la partie _Extension_ doivent être présentes dans l’événement :
 
     -   externalId = ID de l’événement Windows.
 
@@ -111,32 +112,32 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|Le c
 
 -   L’ordre de la partie _Extension_ n’est pas important.
 
--   Vous devez avoir une clé personnalisée et un libellé dé clé pour les deux champs suivants :
+-   Vous devez avoir une clé personnalisée et un libellé dé clé pour les deux champs suivants :
 
-    -   « EventSource »
+    -   « EventSource »
 
-    -   « Reason or Error Code » = code de résultat de NTLM
+    -   « Reason or Error Code » = code de résultat de NTLM
 
 #### <a name="splunk"></a>Splunk
 &lt;En-tête Syslog&gt;\r\nEventCode=4776\r\nLogfile=Security\r\nSourceName=Microsoft-Windows-Security-Auditing\r\nTimeGenerated=20150310132717.784882-000\r\ComputerName=YYYYY\r\nMessage=
 
 L’ordinateur a tenté de valider les informations d’identification d’un compte.
 
-Package d’authentification : MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+Package d’authentification : MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
 
-Compte d’ouverture de session : Administrateur
+Compte d’ouverture de session : Administrateur
 
-Station de travail source : SIEM
+Station de travail source : SIEM
 
-Code d’erreur : 0x0
+Code d’erreur : 0x0
 
 -   L’en-tête syslog est facultatif.
 
--   Le séparateur de caractère « \r\n » est utilisé entre tous les champs obligatoires.
+-   Le séparateur de caractère « \r\n » est utilisé entre tous les champs obligatoires.
 
 -   Les champs sont au format clé = valeur.
 
--   Les clés suivantes doivent exister et avoir une valeur :
+-   Les clés suivantes doivent exister et avoir une valeur :
 
     -   EventCode = ID de l’événement Windows.
 
@@ -159,7 +160,7 @@ QRadar permet la collecte d’événements par le biais d’un agent. Si les don
 
     <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
 
-Les champs requis sont les suivants :
+Les champs requis sont les suivants :
 
 - Type d’agent pour la collecte
 - Nom du fournisseur de journaux des événements Windows
@@ -194,8 +195,8 @@ Dans ce scénario, nous partons du principe que la passerelle ATA est un membre 
 > [!Note] 
 > Vous pouvez créer une stratégie de groupe pour ces paramètres et appliquer la stratégie de groupe à chaque contrôleur de domaine surveillé par la passerelle ATA. Les étapes ci-dessous modifient la stratégie locale du contrôleur de domaine.     
 
-1.  Exécutez la commande suivante sur chaque contrôleur de domaine : *winrm quickconfig*
-2.  Sur la ligne de commande, tapez *gpedit.msc*.
+1.  Exécutez la commande suivante sur chaque contrôleur de domaine : *winrm quickconfig*
+2.  Sur la ligne de commande, tapez *gpedit.msc*.
 3.  Développez **Configuration ordinateur > Modèles d’administration > Composants Windows > Transfert d’événements**.
 
  ![Image de l’éditeur de groupe de stratégie locale](media/wef 1 local group policy editor.png)
@@ -204,16 +205,16 @@ Dans ce scénario, nous partons du principe que la passerelle ATA est un membre 
    
     1.  Sélectionnez **Activé**.
     2.  Sous **Options**, cliquez sur **Afficher**.
-    3.  Sous **SubscriptionManagers**, entrez la valeur suivante et cliquez sur **OK** :  *Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (par exemple : Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
+    3.  Sous **SubscriptionManagers**, entrez la valeur suivante et cliquez sur **OK** :  *Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (par exemple : Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
  
    ![Configurer l’image d’abonnement cible](media/wef 2 config target sub manager.png)
    
     5.  Cliquez sur **OK**.
     6.  À partir d’une invite de commandes avec élévation de privilèges, tapez *gpupdate /force*. 
 
-**Étape 3 : effectuer les opérations suivantes sur la passerelle ATA** 
+**Étape 3 : effectuer les opérations suivantes sur la passerelle ATA** 
 
-1.  Ouvrez une invite de commandes avec élévation de privilèges et tapez *wecutil qc*.
+1.  Ouvrez une invite de commandes avec élévation de privilèges et tapez *wecutil qc*.
 2.  Ouvrez l’**Observateur d’événements**. 
 3.  Cliquez avec le bouton droit sur **Abonnements** et sélectionnez **Créer un abonnement**. 
 
@@ -287,6 +288,6 @@ Pour plus d’informations, consultez [Configurer les ordinateurs pour transfér
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 
