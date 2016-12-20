@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/25/2016
+ms.date: 12/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
-ms.openlocfilehash: 8032e373567ce500c7741480d56d232f34b05446
+ms.sourcegitcommit: 00ddddfd927ed1ba4c52d4774085da04ce359bde
+ms.openlocfilehash: 1c8d7983c5fd86ae3ef2c906eba3f0781cffb99b
 
 
 ---
@@ -30,14 +30,14 @@ La mise à jour vers ATA 1.7 comprend des améliorations dans les domaines suiv
 
 -   Contrôle d'accès en fonction du rôle
 
--   Prise en charge de Windows Server 2016 et Windows Server Core
+-   Prise en charge de Windows Server 2016 et Windows Server 2016 Core
 
 -   Améliorations apportées à l’expérience utilisateur
 
 -   Modifications mineures
 
 
-### <a name="new-updated-detections"></a>Détections nouvelles et mises à jour
+### <a name="new--updated-detections"></a>Détections nouvelles et mises à jour
 
 
 - **Reconnaissance à l’aide d’une énumération de services d’annuaire** Dans le cadre de la phase de reconnaissance, les pirates collectent des informations sur les entités du réseau à l’aide de différentes méthodes. L’énumération des services d’annuaire à l’aide du protocole SAM-R permet aux pirates d’obtenir la liste des utilisateurs et des groupes dans un domaine et de comprendre l’interaction entre les différentes entités. 
@@ -55,7 +55,7 @@ La mise à jour vers ATA 1.7 comprend des améliorations dans les domaines suiv
 
 - **Contrôle d’accès en fonction du rôle ** Fonctionnalité de contrôle d’accès en fonction du rôle (RBAC). ATA 1.7 inclut trois rôles : ATA Administrator, ATA Analyst et ATA Executive.
 
-- **Prise en charge de Windows Server 2016 et Windows Server Core** ATA 1.7 prend en charge le déploiement de passerelles légères sur les contrôleurs de domaine exécutant Server Core pour Windows Server 2012 et Server Core pour Windows Server 2012 R2. De plus, cette version prend en charge Windows Server 2016 pour les composants Centre ATA et Passerelle ATA.
+- **Prise en charge de Windows Server 2016 et Windows Server Core** ATA 1.7 prend en charge le déploiement de passerelles légères sur les contrôleurs de domaine exécutant Windows Server 2008 R2 SP1 (Server Core non inclus), Windows Server 2012, Windows Server 2012 R2 et Windows Server 2016 (Core inclus mais pas Nano). De plus, cette version prend en charge Windows Server 2016 pour les composants Centre ATA et Passerelle ATA.
 
 ### <a name="user-experience"></a>Expérience de l'utilisateur
 - **Expérience de configuration** Dans cette version, l’expérience de configuration d’ATA a été repensée pour une meilleure expérience utilisateur et pour mieux prendre en charge les environnements à plusieurs passerelles ATA. Cette version introduit également la page de mise à jour de la passerelle ATA pour une gestion plus simple et plus performante des mises à jour automatiques pour les différentes passerelles.
@@ -102,6 +102,12 @@ Pour résoudre ce problème, une fois le certificat modifié, accédez à l’em
 
 3. db.SystemProfile.update({_t:"ServiceSystemProfile"},{$set:{"Configuration.ManagementClientConfiguration.ServerCertificateThumbprint":CenterThumbprint}}, {multi: true})
 
+### <a name="export-suspicious-activity-details-to-excel-may-fail"></a>L’exportation des détails d’une activité suspecte dans Excel risque d’échouer
+Lorsque vous tentez d’exporter les détails d’une activité suspecte dans un fichier Excel, l’opération peut échouer avec l’erreur suivante : *Erreur [BsonClassMapSerializer`1] System.FormatException: Une erreur s’est produite lors de la désérialisation de la propriété Activity de la classe Microsoft.Tri.Common.Data.NetworkActivities.SuspiciousActivityActivity : L’élément 'ResourceIdentifier' ne correspond à aucun champ ou à aucune propriété de la classe Microsoft.Tri.Common.Data.EventActivities.NtlmEvent. ---> System.FormatException : L’élément 'ResourceIdentifier' ne correspond à aucun champ ou à aucune propriété de la classe Microsoft.Tri.Common.Data.EventActivities.NtlmEvent.*
+
+Pour résoudre ce problème, accédez à l’emplacement suivant à partir d’une invite de commandes avec élévation de privilèges : **%ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**. Ensuite, exécutez ce qui suit :
+1.  **Mongo.exe ATA** (ATA doit être en majuscules)
+2.  **db.SuspiciousActivityActivity.update({ "Activity._t": "NtlmEvent" },{$unset: {"Activity.ResourceIdentifier": ""}}, {multi: true});**
 
 ## <a name="minor-changes"></a>Modifications mineures
 
@@ -117,6 +123,6 @@ Pour résoudre ce problème, une fois le certificat modifié, accédez à l’em
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 
