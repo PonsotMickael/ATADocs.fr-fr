@@ -1,8 +1,9 @@
 ---
-title: "Qu’est-ce que Microsoft Advanced Threat Analytics (ATA) ? | Microsoft ATA"
+title: "Qu’est-ce que Microsoft Advanced Threat Analytics (ATA) ? | Microsoft Docs"
 description: "Explique ce qu’est Microsoft Advanced Threat Analytics (ATA) et quels types d’activités suspectes il peut détecter"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 09/28/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3768cd103fc2a938d2d39fe34179d74587abc118
-ms.openlocfilehash: 0bc2bcc42b2b59cf297b4af86f0c38aafebc379f
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: 70d66bccfda484722afa63a7f85dc8f85013f54f
 
 
 ---
@@ -22,10 +23,10 @@ ms.openlocfilehash: 0bc2bcc42b2b59cf297b4af86f0c38aafebc379f
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
-## Qu’est-ce qu’Advanced Threat Analytics ?
+## <a name="what-is-advanced-threat-analytics"></a>Qu’est-ce qu’Advanced Threat Analytics ?
 Advanced Threat Analytics (ATA) est une plateforme locale qui aide à protéger votre entreprise contre plusieurs types d’attaques informatiques ciblées et menaces internes avancées.
 
-## Fonctionnement d’ATA
+## <a name="how-ata-works"></a>Fonctionnement d’ATA
 ATA prend les informations de plusieurs sources de données de journaux et d’événements sur votre réseau pour apprendre le comportement des utilisateurs et autres entités de l’organisation et générer ainsi un profil de comportement.
 ATA peut recevoir des événements et des journaux des éléments suivants :
 
@@ -39,7 +40,7 @@ En outre, ATA s’appuie sur un moteur d’analyse réseau propriétaire pour ca
 
 Pour plus d’informations sur l’architecture d’ATA, consultez [Architecture d’ATA](/advanced-threat-analytics/plan-design/ata-architecture).
 
-## Que fait ATA ?
+## <a name="what-does-ata-do"></a>Que fait ATA ?
 
 La technologie ATA détecte plusieurs activités suspectes, en se focalisant sur différentes phases de la chaîne de cyber-attaque, notamment :
 
@@ -90,17 +91,17 @@ Vous pouvez afficher les activités suspectes de ce type dans le tableau de bord
   ![exemple d’écran ATA pour une relation de confiance rompue](media/sample screen broken trust.png)
 
 
-## Étapes suivantes
+## <a name="whats-next"></a>Étapes suivantes
 
 -   Pour plus d’informations sur la façon dont ATA s’intègre à votre réseau, consultez [Architecture ATA](/advanced-threat-analytics/plan-design/ata-architecture).
 
 -   Pour commencer le déploiement d’ATA, consultez [Installer ATA](/advanced-threat-analytics/deploy-use/install-ata).
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

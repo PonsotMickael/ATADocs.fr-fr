@@ -1,8 +1,9 @@
 ---
-title: "Avant d’installer ATA - Étapes à suivre | Microsoft ATA"
+title: "Avant d’installer ATA - Étapes à suivre | Microsoft Docs"
 description: "Vous guide à travers les étapes que vous devez effectuer avant de déployer ATA."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: 0c1a53ff7192ec5a343330750d600d545c0e0237
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: 731a3a2d404c2449b7e84bf40b47bfba29053316
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 0c1a53ff7192ec5a343330750d600d545c0e0237
 
 
 
-# Avant d’installer ATA
+# <a name="before-you-install-ata"></a>Avant d’installer ATA
 
 Les étapes suivantes doivent être effectuées avant d’installer ATA :
 
@@ -33,7 +34,7 @@ Les étapes suivantes doivent être effectuées avant d’installer ATA :
 
 
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
@@ -42,6 +43,6 @@ Les étapes suivantes doivent être effectuées avant d’installer ATA :
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 
