@@ -22,7 +22,7 @@ ms.openlocfilehash: 2671937cf0ed9ff2865073b97ee735da99fa7d7f
 
 *S’applique à : Advanced Threat Analytics version 1.7*
 
-## <a name="what-threats-does-ata-look-for"></a>Quelles sont les menaces que recherche ATA ?
+# <a name="what-threats-does-ata-look-for"></a>Quelles sont les menaces que recherche ATA ?
 
 ATA fournit une fonctionnalité de détection pour les différentes phases d’une attaque avancée : reconnaissance, compromission des informations d’identification, mouvement latéral, élévation des privilèges, contrôle du domaine, etc. Les attaques avancées et les menaces internes peuvent ainsi être détectées avant de pouvoir causer des dommages pour votre entreprise.
 Chaque type de détection correspond à un ensemble d’activités suspectes liées à la phase en question, chacune de ces activités correspondant elle-même à différents types d’attaques possibles.
