@@ -1,8 +1,9 @@
 ---
-title: "Centre d’intégrité ATA | Microsoft ATA"
+title: "Centre d’intégrité ATA | Microsoft Docs"
 description: "Le centre d’intégrité ATA vous permet de vérifier le bon fonctionnement du service ATA et vous avertit en cas de problèmes potentiels."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: 9f408d7c2cb9c14caee175a1dd1c9ddb1baf9faa
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: bff593f07d70cd559a1ee75d3b75c61b6534432d
 
 
 ---
@@ -23,15 +24,15 @@ ms.openlocfilehash: 9f408d7c2cb9c14caee175a1dd1c9ddb1baf9faa
 
 
 
-# Centre d’intégrité ATA
+# <a name="ata-health-center"></a>Centre d’intégrité ATA
 Le centre d’intégrité ATA vous permet d’évaluer les performances de votre service ATA et vous prévient en cas de problèmes.
 
-## Utilisation du centre d’intégrité ATA
+## <a name="working-with-the-ata-health-center"></a>Utilisation du centre d’intégrité ATA
 Si un problème se produit, le centre d’intégrité ATA déclenche une alerte en affichant un point rouge au-dessus de l’icône du centre d’intégrité dans la barre de menus.
 
 ![Barre d’outils du point rouge dans le centre d’intégrité ATA](media/ATA-Health-Center-Alert-red-dot.png)
 
-### Gestion de l’intégrité d’ATA
+### <a name="managing-ata-health"></a>Gestion de l’intégrité d’ATA
 Pour vérifier l’intégrité globale de votre système, cliquez sur l’icône du centre d’intégrité dans la barre de menus. ![Icône du centre d’intégrité ATA](media/ATA-red-dot.png)
 
 -   Pour gérer les alertes actives, vous pouvez leur affecter l’état **Résolue(s)** ou **Rejetée(s)**. Dans l’alerte, cliquez sur **Ouvrir**, puis faites défiler la liste jusqu’à **Résolue(s)** ou **Rejetée(s)**.
@@ -42,13 +43,13 @@ Pour vérifier l’intégrité globale de votre système, cliquez sur l’icône
 
 ![Image de problèmes dans le centre d’intégrité ATA](media/ATA-Health-Issue.JPG)
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 - [Gestion des paramètres de la détection ATA](working-with-detection-settings.md)
 - [Gestion des activités suspectes](working-with-suspicious-activities.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -1,8 +1,9 @@
 ---
-title: Installer ATA | Microsoft ATA
+title: Installer ATA | Microsoft Docs
 description: "Lors de l’étape finale de l’installation d’ATA, vous configurez l’utilisateur Honeytoken."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 09/20/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d47d9e7be294c68d764710c15c4bb78539e42f62
-ms.openlocfilehash: 9ee2f36d8f0b7eae061873e8735139ccc4da00d1
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: 17833f000135337fce82d69efb63fc6e1f9ea307
 
 
 ---
@@ -23,13 +24,13 @@ ms.openlocfilehash: 9ee2f36d8f0b7eae061873e8735139ccc4da00d1
 
 
 
-# Installer ATA - Étape 6
+# <a name="install-ata---step-6"></a>Installer ATA - Étape 6
 
 >[!div class="step-by-step"]
 [« Étape 5](install-ata-step5.md)
 
-## Étape 6. Configurer des exclusions d’adresses IP et un utilisateur Honeytoken
-Avec ATA, vous pouvez exclure des adresses IP et des sous-réseaux IP spécifiques de deux types de détections : **DNS Reconnaissance** et **Pass-the-Ticket**. 
+## <a name="step-6-configure--ip-address-exclusions-and-honeytoken-user"></a>Étape 6. Configurer des exclusions d’adresses IP et un utilisateur Honeytoken
+Avec ATA, vous pouvez exclure des adresses IP spécifiques de deux types de détections : **DNS Reconnaissance** et **Pass-the-Ticket**. 
 
 Par exemple, une **exclusion DNS Reconnaissance** peut être un analyseur de sécurité qui utilise DNS comme mécanisme d’analyse. L’exclusion aide ATA à ignorer ces analyseurs. Un appareil NAT constitue un exemple d’exclusion *Pass-the-Ticket*.    
 
@@ -41,7 +42,7 @@ Pour configurer les éléments suivants, procédez comme suit :
 
     ![Paramètres de configuration ATA](media/ATA-config-icon.JPG)
 
-2.  Sous **Exclusions de détection**, entrez ce qui suit pour les adresses IP *DNS Reconnaissance* ou *Pass-the-Ticket*. Utilisez le format CIDR, par exemple : `192.168.1.0/24` et cliquez sur le signe *plus*.
+2.  Sous **Exclusions de détection**, entrez l’adresse IP pour *DNS Reconnaissance* ou *Pass-the-Ticket*, puis cliquez sur le signe *plus*.
 
     ![Enregistrer les modifications](media/ATA-exclusions.png)
 
@@ -66,15 +67,15 @@ ATA démarre immédiatement l’analyse pour rechercher les activités suspectes
 [« Étape 5](install-ata-step5.md)
 
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)
-- [Conditions préalables au déploiement d’ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 
