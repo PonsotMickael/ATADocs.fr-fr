@@ -1,8 +1,9 @@
 ---
-title: Architecture ATA | Microsoft ATA
+title: Architecture ATA | Microsoft Docs
 description: "Décrit l’architecture de Microsoft Advanced Threat Analytics (ATA)"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: c416fba5aace73cf585e7f6ca604a8c61c3c6fcc
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: 06cc0de7e335a120d9e4c988dcc6a74087f027c6
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: c416fba5aace73cf585e7f6ca604a8c61c3c6fcc
 
 
 
-# Architecture d’ATA
+# <a name="ata-architecture"></a>Architecture d’ATA
 L’architecture d’Advanced Threat Analytics est détaillée dans ce diagramme :
 
 ![Diagramme de la topologie de l’architecture ATA](media/ATA-architecture-topology.jpg)
@@ -35,7 +36,7 @@ Cette section décrit le flux de capture réseau et d’événements, et décrir
 
 ![Diagramme du flux de trafic ATA](media/ATA-traffic-flow.jpg)
 
-## Composants ATA
+## <a name="ata-components"></a>Composants ATA
 ATA est constitué des éléments suivants :
 
 -   **Centre ATA** <br>
@@ -48,7 +49,7 @@ La passerelle ATA légère est installée directement sur vos contrôleurs de do
 Un déploiement ATA peut se composer d’un seul centre ATA connecté à toutes les passerelles ATA, à toutes les passerelles légères ATA, ou à une combinaison de passerelles ATA et de passerelles légères ATA.
 
 
-## Options de déploiement
+## <a name="deployment-options"></a>Options de déploiement
 Vous pouvez déployer ATA à l’aide de la combinaison de passerelles suivante :
 
 -   **Utilisation de passerelles ATA uniquement** <br>
@@ -63,7 +64,7 @@ Dans les trois scénarios, toutes les passerelles envoient leurs données au cen
 
 
 
-## Centre ATA
+## <a name="ata-center"></a>Centre ATA
 Le **centre ATA** effectue ce qui suit :
 
 -   Gère les paramètres de configuration des passerelles ATA et des passerelles légères ATA
@@ -97,9 +98,9 @@ Prenez en compte les éléments suivants quand vous devez déterminer le nombre 
 
 -    Dans les déploiements d’Active Directory à très grande échelle, un seul centre ATA ne sera peut-être pas suffisant pour gérer le trafic de tous les contrôleurs de domaine. Dans ce cas, plusieurs centres ATA seront nécessaires. Le nombre de centres ATA doit être défini par la [planification de la capacité ATA](ata-capacity-planning.md).
 
-## Passerelle ATA et passerelle légère ATA
+## <a name="ata-gateway-and-ata-lightweight-gateway"></a>Passerelle ATA et passerelle légère ATA
 
-### Fonctionnalité de base de la passerelle
+### <a name="gateway-core-functionality"></a>Fonctionnalité de base de la passerelle
 La **passerelle ATA** et la **passerelle légère ATA** ont la même fonctionnalité de base :
 
 -   Capturer et inspecter le trafic réseau des contrôleurs de domaine (le trafic de mise en miroir des ports dans le cas d’une passerelle ATA et le trafic local du contrôleur de domaine dans le cas d’une passerelle légère ATA) 
@@ -125,7 +126,7 @@ La passerelle ATA reçoit le trafic réseau et les événements Windows de votr
 |Programme de résolution des entités|Le programme de résolution des entités reçoit les données analysées (le trafic réseau et les événements) et les résout à l’aide d’Active Directory pour trouver les informations de compte et d’identité. Ensuite, il les met en correspondance avec les adresses IP trouvées dans les données analysées. Le programme de résolution des entités inspecte les en-têtes de paquets de manière efficace, pour permettre l’analyse des noms, propriétés et identités d’ordinateurs dans les paquets d’authentification. Le programme de résolution des entités combine les paquets d’authentification analysés avec les données du paquet.|
 |Expéditeur d’entité|L’expéditeur d’entité est chargé d’envoyer au centre ATA les données analysées et mises en correspondance.|
 
-## Fonctionnalités de la passerelle légère ATA
+## <a name="ata-lightweight-gateway-features"></a>Fonctionnalités de la passerelle légère ATA
 
 Les fonctionnalités suivantes fonctionnent différemment selon que vous exécutez une passerelle ATA ou une passerelle légère ATA.
 
@@ -158,10 +159,10 @@ Si Active Directory a besoin de davantage de puissance de calcul, le quota requi
 
 
 
-## Composants du réseau
+## <a name="your-network-components"></a>Composants du réseau
 Pour que vos composants réseau fonctionne avec ATA, vérifiez les éléments suivants :
 
-### Mise en miroir des ports
+### <a name="port-mirroring"></a>Mise en miroir des ports
 Si vous utilisez des passerelles ATA, vous devez configurer la mise en miroir des ports pour les contrôleurs de domaine qui seront surveillés et définir la passerelle ATA comme destination à l’aide des commutateurs physiques ou virtuels. Une autre option consiste à utiliser des TAP réseau. ATA fonctionnera si plusieurs contrôleurs de domaine sont surveillés, mais pas tous. Toutefois, la détection sera moins efficace.
 
 Même si tout le trafic réseau des contrôleurs de domaine est mis en miroir vers la passerelle ATA, seul un très petit pourcentage de ce trafic est envoyé (compressé) au centre ATA à des fins d’analyse.
@@ -169,16 +170,16 @@ Même si tout le trafic réseau des contrôleurs de domaine est mis en miroir ve
 Les contrôleurs de domaine et les passerelles ATA peuvent être physiques ou virtuels. Pour plus d’informations, consultez [Configurer la mise en miroir des ports](/advanced-threat-analytics/deploy-use/configure-port-mirroring).
 
 
-### Événements
+### <a name="events"></a>Événements
 Pour améliorer la détection des attaques Pass-the-Hash, force brute et Honey Tokens, ATA doit accéder à l’événement associé à l’ID 4776 du journal des événements Windows. Les événements peuvent être transférés à la passerelle ATA de deux manières : en configurant la passerelle ATA de façon à écouter les événements SIEM ou à l’aide du transfert d’événements Windows.
 
 -   Configuration de la passerelle ATA pour écouter les événements SIEM <br>Configurez votre serveur SIEM de manière à transférer des événements Windows spécifiques vers ATA. ATA prend en charge plusieurs fournisseurs SIEM. Pour plus d’informations, consultez [Configurer la collecte d’événements](/advanced-threat-analytics/deploy-use/configure-event-collection).
 
 -   Configuration du transfert d’événements Windows<br>Une autre méthode permettant à ATA d’obtenir vos événements consiste à configurer vos contrôleurs de domaine de manière à transférer l’événement Windows 4776 vers votre passerelle ATA. Cette méthode est particulièrement utile si vous n’avez pas de serveur SIEM ou si votre serveur SIEM n’est pas actuellement pris en charge par ATA. Pour plus d’informations sur le transfert d’événements Windows dans ATA, consultez [Configuration du transfert d’événements Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding).
 
-## Voir aussi
-- [Configuration requise pour ATA](ata-prerequisites.md)
-- [Planification de la capacité ATA](ata-capacity-planning.md)
+## <a name="see-also"></a>Voir aussi
+- [Prérequis au déploiement d’ATA](ata-prerequisites.md)
+- [Planification de la capacité d’ATA](ata-capacity-planning.md)
 - [Configurer la collecte d’événements](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [Configuration du transfert d’événements Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
@@ -186,6 +187,6 @@ Pour améliorer la détection des attaques Pass-the-Hash, force brute et Honey T
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

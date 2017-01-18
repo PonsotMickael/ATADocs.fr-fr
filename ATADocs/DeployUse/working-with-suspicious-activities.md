@@ -1,8 +1,9 @@
 ---
-title: "Gestion des activités suspectes | Microsoft ATA"
+title: "Gestion des activités suspectes | Microsoft Docs"
 description: "Explique comment passer en revue les activités suspectes identifiées par ATA"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: 30fbeb0682bd4b253d7a6eb52b8b31e487b363cb
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: 29a8b5b76b4b435157f0907f0dc98731dacbc53a
 
 
 ---
@@ -23,10 +24,10 @@ ms.openlocfilehash: 30fbeb0682bd4b253d7a6eb52b8b31e487b363cb
 
 
 
-# Gestion des activités suspectes
+# <a name="working-with-suspicious-activities"></a>Gestion des activités suspectes
 Cette rubrique explique les principes de base d’Advanced Threat Analytics.
 
-## Passer en revue les activités suspectes sur la chronologie des attaques
+## <a name="review-suspicious-activities-on-the-attack-time-line"></a>Passer en revue les activités suspectes sur la chronologie des attaques
 Une fois connecté à la console ATA, la **Chronologie des activités suspectes** s’ouvre automatiquement. Les activités suspectes sont répertoriées par ordre chronologique, avec les plus récentes en haut de la liste.
 Chaque activité suspecte comporte les informations suivantes :
 
@@ -56,7 +57,7 @@ Chaque activité suspecte comporte les informations suivantes :
 
 ![Image de la chronologie des activités suspectes ATA](media/ATA-Suspicious-Activity-Timeline.JPG)
 
-## Filtrer la liste des activités suspectes
+## <a name="filter-suspicious-activities-list"></a>Filtrer la liste des activités suspectes
 Pour filtrer la liste des activités suspectes :
 
 1.  Dans le volet **Filtrer par** sur le côté gauche de l’écran, sélectionnez l’une des options suivantes : **Tout**, **Ouvert**, **Résolu** ou **Ignoré**.
@@ -69,7 +70,7 @@ Pour filtrer la liste des activités suspectes :
 
     Correspond aux activités suspectes pouvant conduire à des attaques durant lesquelles des utilisateurs ou logiciels malveillants accèdent aux données d’une entreprise.
 
--   **Moyen**
+-   **Moyenne**
 
     Correspond aux activités suspectes qui peuvent faire courir un risque à certaines identités en permettant des attaques plus graves qui pourraient entraîner une usurpation d’identité ou une élévation des privilèges.
 
@@ -79,22 +80,22 @@ Pour filtrer la liste des activités suspectes :
 
 **État des activités suspectes**
 
--   **Ouvrir**
+-   **Ouverte**
 
     Toutes les nouvelles activités suspectes apparaissent dans cette liste
 
--   **Résolu**
+-   **Résolue**
 
     Utilisé pour effectuer le suivi des activités suspectes que vous avez identifiées, examinées et résolues.
 
     > [!NOTE]
     > ATA peut rouvrir une activité résolue si celle-ci est détectée à nouveau peu de temps après.
 
--   **Ignoré**
+-   **Ignorée**
 
     Activités que vous avez choisi d’ignorer manuellement. Si ATA détecte une activité suspecte similaire, il crée une nouvelle détection.
 
-## Fournir des commentaires sur une activité suspecte
+## <a name="provide-input-on-a-suspicious-activity"></a>Fournir des commentaires sur une activité suspecte
 Pour permettre à ATA d’en savoir plus sur votre réseau, vous devez ajouter des commentaires concernant certaines activités suspectes (DNS Reconnaissance, Pass-the-Ticket, énumération de sessions SMB, comportement inhabituel et exécution à distance) afin d’améliorer leur détection à l’avenir.
 
 1.  La fenêtre de commentaires s’ouvre automatiquement pour les activités suspectes qui permettent de fournir des commentaires. Vous devrez répondre à des questions concernant les activités de votre réseau, et si oui ou non elles doivent être considérées comme suspectes. Dans l’exemple ci-dessous, vous devez indiquer si l’exécution d’outils d’analyse est autorisée sur l’ordinateur.
@@ -107,16 +108,16 @@ Pour permettre à ATA d’en savoir plus sur votre réseau, vous devez ajouter d
 
 4.  Si vous n’êtes pas sûr, vous pouvez cliquer sur **Annuler**.
 
-## Modifier l’état d’une activité suspecte
+## <a name="change-the-status-of-a-suspicious-activity"></a>Modifier l’état d’une activité suspecte
 Vous pouvez modifier l’état d’une activité suspecte en cliquant sur son état actuel, puis en sélectionnant l’une des options suivantes : **Ouvert**, **Résolu** ou **Ignoré**.
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Gestion des paramètres de la détection ATA](working-with-detection-settings.md)
 - [Modification de la configuration d’ATA](modifying-ata-configuration.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

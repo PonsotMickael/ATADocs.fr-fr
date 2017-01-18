@@ -1,8 +1,9 @@
 ---
-title: Valider la mise en miroir des ports | Microsoft ATA
+title: Valider la mise en miroir des ports | Microsoft Docs
 description: "Explique comment vérifier que la mise en miroir des ports est configurée correctement"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
-ms.openlocfilehash: 59d50b0d9c5adc78aca260412872076c84db8d57
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: a836fca1fb11a980ca4d52a7e189f36aa37ffcd1
 
 
 ---
@@ -23,13 +24,13 @@ ms.openlocfilehash: 59d50b0d9c5adc78aca260412872076c84db8d57
 
 
 
-# Valider la mise en miroir des ports
+# <a name="validate-port-mirroring"></a>Valider la mise en miroir des ports
 > [!NOTE] 
 > Cet article ne vous concerne que si vous déployez des passerelles ATA au lieu de passerelles légères ATA. Pour déterminer si vous devez utiliser des passerelles ATA, consultez [Choix des passerelles appropriées pour votre déploiement](/advanced-threat-analytics/plan-design/ata-capacity-planning#choosing-the-right-gateway-type-for-your-deployment).
  
 Les étapes suivantes sont conçues pour vous guider dans le processus de validation de la mise en miroir des ports. Pour qu’ATA fonctionne correctement, la passerelle ATA doit pouvoir voir le trafic entrant et sortant du contrôleur de domaine. La principale source de données utilisée par ATA est l’inspection approfondie des paquets du trafic réseau entrant et sortant de vos contrôleurs de domaine. Pour qu’ATA puisse voir le trafic réseau, vous devez configurer la mise en miroir des ports. La mise en miroir des ports copie le trafic d’un port (le port source) vers un autre port (le port de destination).
 
-## Valider la mise en miroir de port à l’aide d’un script Windows PowerShell
+## <a name="validate-port-mirroring-using-a-windows-powershell-script"></a>Valider la mise en miroir de port à l’aide d’un script Windows PowerShell
 
 1. Enregistrez le texte de ce script dans un fichier nommé *ATAdiag.ps1*.
 2. Exécutez ce script sur la passerelle ATA que vous souhaitez valider.
@@ -191,7 +192,7 @@ Exemple d’exécution du script :
     [void][System.Console]::ReadKey($true)
     
     
-## Valider la mise en miroir à l’aide du Moniteur réseau
+## <a name="validate-port-mirroring-using-net-mon"></a>Valider la mise en miroir à l’aide du Moniteur réseau
 1.  Installez [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865) sur la passerelle ATA que vous souhaitez valider.
 
     > [!IMPORTANT]
@@ -221,13 +222,13 @@ Exemple d’exécution du script :
 
 5.  Si vous voyez uniquement le trafic dans un sens, vous devez résoudre ce problème de configuration de la mise en miroir des ports avec l’aide de l’équipe chargée du réseau ou de la virtualisation.
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 - [Configurer la mise en miroir des ports](configure-port-mirroring.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

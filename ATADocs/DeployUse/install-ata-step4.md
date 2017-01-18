@@ -1,8 +1,9 @@
 ---
-title: "Installer ATA - Étape 4 | Microsoft ATA"
+title: "Installer ATA - Étape 4 | Microsoft Docs"
 description: "La quatrième étape de la procédure d’installation d’ATA vous aide à installer la passerelle ATA."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 54e5105e78b6db9f33488135601381af5503aa4a
-ms.openlocfilehash: 305c939ebda636617ece6e41f0554af0e948c3ec
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: ebaab5e8768d6b78c6d9ff93fa1430673827e483
 
 
 ---
@@ -23,13 +24,13 @@ ms.openlocfilehash: 305c939ebda636617ece6e41f0554af0e948c3ec
 
 
 
-# Installer ATA - Étape 4
+# <a name="install-ata---step-4"></a>Installer ATA - Étape 4
 
 >[!div class="step-by-step"]
 [« Étape 3](install-ata-step3.md)
 [Étape 5 »](install-ata-step5.md)
 
-## Étape 4. Installer la passerelle ATA
+## <a name="step-4-install-the-ata-gateway"></a>Étape 4. Installer la passerelle ATA
 
 Avant d’installer la passerelle ATA sur un serveur dédié, vérifiez que la mise en miroir des ports est correctement configurée et que la passerelle ATA peut voir le trafic à destination et en provenance des contrôleurs de domaine. Pour plus d’informations, consultez [Valider la mise en miroir des ports](validate-port-mirroring.md).
 
@@ -89,15 +90,15 @@ Effectuez les opérations suivantes sur le serveur de la passerelle ATA.
 [« Étape 3](install-ata-step3.md)
 [Étape 5 »](install-ata-step5.md)
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)
-- [Conditions préalables au déploiement d’ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

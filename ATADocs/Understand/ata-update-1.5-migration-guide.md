@@ -1,8 +1,9 @@
 ---
-title: "Mise à jour d’ATA vers la version 1.5 : guide de migration | Microsoft ATA"
+title: "Mise à jour d’ATA vers la version 1.5 : guide de migration | Microsoft Docs"
 description: "Procédures pour mettre à jour ATA vers la version 1.5"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
@@ -13,13 +14,13 @@ ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c71d5ed1c705de558f1144820703ffe84850679b
-ms.openlocfilehash: 637d847af82d15a5b88fb43274f606a9b89da445
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: c23512e159c2f01bc0a930f71373aa5315f0310c
 
 
 ---
 
-# Mise à jour d’ATA vers la version 1.5 : guide de migration
+# <a name="ata-update-to-15-migration-guide"></a>Mise à jour d’ATA vers la version 1.5 : guide de migration
 La mise à jour vers ATA 1.5 comprend des améliorations dans les domaines suivants :
 
 -   Détection plus rapide
@@ -36,7 +37,7 @@ La mise à jour vers ATA 1.5 comprend des améliorations dans les domaines suiv
 
 -   Compteurs de performances supplémentaires pour une meilleure surveillance et une meilleure résolution des problèmes
 
-## Mise à jour d’ATA vers la version 1.5
+## <a name="updating-ata-to-version-15"></a>Mise à jour d’ATA vers la version 1.5
 > [!NOTE]
 > Si ATA n’est pas installé dans votre environnement, téléchargez la version complète d’ATA qui inclut la version 1.5. Suivez ensuite la procédure d’installation standard décrite dans [Installer ATA](/advanced-threat-analytics/deploy-use/install-ata).
 
@@ -58,7 +59,7 @@ Suivez ces étapes pour mettre à jour ATA vers la version 1.5 :
     > [!IMPORTANT]
     > Pour assurer le bon fonctionnement d’ATA, mettez à jour toutes les passerelles.
 
-### Étape 1 : mettre à jour le centre ATA
+### <a name="step-1-update-the-ata-center"></a>Étape 1 : mettre à jour le centre ATA
 
 1.  Sauvegardez votre base de données (facultatif) :
 
@@ -89,7 +90,7 @@ Suivez ces étapes pour mettre à jour ATA vers la version 1.5 :
 > [!IMPORTANT]
 > - Pour assurer le bon fonctionnement d’ATA, mettez à jour toutes les passerelles.
 
-### Étape 2. Télécharger le package d’installation de la passerelle ATA
+### <a name="step-2-download-the-ata-gateway-setup-package"></a>Étape 2. Télécharger le package d’installation de la passerelle ATA
 Après avoir configuré les paramètres de connectivité du domaine, vous pouvez télécharger le package d’installation de la passerelle ATA.
 
 Pour télécharger le package d’installation de la passerelle ATA :
@@ -110,7 +111,7 @@ Le fichier zip comprend les éléments suivants :
 
 -   Fichier de paramètres de configuration avec les informations requises pour se connecter au centre ATA
 
-### Étape 3 : mettre à jour les passerelles ATA
+### <a name="step-3-update-the-ata-gateways"></a>Étape 3 : mettre à jour les passerelles ATA
 
 1.  Sur chaque passerelle ATA, extrayez les fichiers du package de passerelle ATA et exécutez le fichier Microsoft ATA Gateway Setup.
 
@@ -128,12 +129,12 @@ Si toutes les passerelles ATA indiquent qu’elles ont été synchronisées avec
 
 ![Image des passerelles mises à jour](media/ATA-gw-updated.png)
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

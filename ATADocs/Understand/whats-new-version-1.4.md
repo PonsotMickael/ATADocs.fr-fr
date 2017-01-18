@@ -1,8 +1,9 @@
 ---
-title: "Nouveautés d’ATA version 1.4 | Microsoft ATA"
+title: "Nouveautés d’ATA version 1.4 | Microsoft Docs"
 description: "Répertorie les nouveautés d’ATA version 1.4, ainsi que les problèmes connus"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
@@ -13,16 +14,16 @@ ms.assetid: cbea47f9-34c1-42b6-ae9e-6a472b49e1a5
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: b66a315c9a98192cbd3b6feea462445c085091b1
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: 3bb1b12088e4871bf65bb67cdfb432d1c414792a
 
 
 ---
 
-# Nouveautés d’ATA version 1.4
+# <a name="what39s-new-in-ata-version-14"></a>Nouveautés d’ATA version 1.4
 Ces notes de publication fournissent des informations sur les problèmes connus de la version 1.4 d’Advanced Threat Analytics.
 
-## Nouveautés de cette version
+## <a name="whats-new-in-this-version"></a>Nouveautés de cette version
 
 -   Prise en charge du transfert d’événements Windows pour envoyer les événements directement à partir des contrôleurs de domaine vers la passerelle ATA
 
@@ -54,16 +55,16 @@ Ces notes de publication fournissent des informations sur les problèmes connus 
 
 -   Télémétrie pour une meilleure expérience utilisateur.
 
-## Problèmes connus
+## <a name="known-issues"></a>Problèmes connus
 Les problèmes connus de cette version sont les suivants :
 
-### Logiciel de capture du réseau
+### <a name="network-capture-software"></a>Logiciel de capture du réseau
 Dans la passerelle ATA, le seul logiciel de capture réseau que vous pouvez installer est [Moniteur réseau Microsoft 3.4](http://www.microsoft.com/download/details.aspx?id=4865). N’installez pas l’analyseur de message Microsoft ni aucun autre logiciel de capture réseau. L’installation d’autres logiciels empêchera la passerelle ATA de fonctionner correctement.
 
-### Installation à partir du fichier .zip
+### <a name="installation-from-zip-file"></a>Installation à partir du fichier .zip
 Quand vous installez la passerelle ATA, assurez-vous d’extraire les fichiers du fichier .zip dans un répertoire local et de les installer dans ce répertoire. N’installez pas la passerelle ATA directement à partir du fichier .zip, car l’installation échouerait.
 
-### Désinstallation des versions précédentes d’ATA
+### <a name="uninstalling-previous-versions-of-ata"></a>Désinstallation des versions précédentes d’ATA
 Si vous avez installé une version précédente d’ATA, une version d’évaluation ou une version préliminaire privée, vous devez désinstaller le centre ATA et les passerelles ATA avant d’installer cette version d’ATA.
 
 Vous devez également supprimer les fichiers de la base de données et les fichiers journaux. Les bases de données des versions précédentes d’ATA ne sont pas compatibles avec la version générale d’ATA.
@@ -88,19 +89,19 @@ Quand vous essayez de désinstaller le centre ATA ou la passerelle ATA, si l�
 
 Après la désinstallation, supprimez le dossier d’installation dans le centre ATA et dans la passerelle ATA.  Si vous avez installé la base de données dans un dossier distinct, supprimez-le dans le centre ATA.
 
-### Alerte d’intégrité - Passerelle ATA déconnectée
+### <a name="health-alert---disconnected-ata-gateway"></a>Alerte d’intégrité - Passerelle ATA déconnectée
 Si vous disposez de plusieurs passerelles ATA et recevez des alertes concernant des passerelles ATA déconnectées, la résolution automatique ne fonctionnera que pour une seule d’entre elles et laissera les autres alertes à l’état Ouvert. Vous devez vérifier manuellement que la passerelle ATA fonctionne et que le service est en cours d’exécution, puis résoudre l’alerte manuellement.
 
-### Base de connaissance sur les hôtes de virtualisation
+### <a name="kb-on-virtualization-host"></a>Base de connaissance sur les hôtes de virtualisation
 N’installez pas la base de connaissance 3047154 sur un hôte de virtualisation, car cela empêcherait le bon fonctionnement de la mise en miroir des ports.
 
-## Voir aussi
+## <a name="see-also"></a>Voir aussi
 
-[Mise à jour d’ATA vers la version 1.6 : guide de migration](ata-update-1.6-migration-guide.md)
+[Mise à jour d’ATA vers la version 1.6 : guide de migration](ata-update-1.6-migration-guide.md)
 
 [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 
