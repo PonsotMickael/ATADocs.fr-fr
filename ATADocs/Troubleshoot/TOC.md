@@ -1,14 +1,54 @@
-# [Comprendre et explorer](/advanced-threat-analytics/understand-explore/what-is-ata)
-# [Planifier et concevoir](/advanced-threat-analytics/plan-design/ata-architecture)
-# [Déployer](/advanced-threat-analytics/deploy-use/preinstall-ata)
-# [Utiliser](/advanced-threat-analytics/deploy-use/operate-ata)
-# [Résoudre les problèmes](troubleshooting-ata-known-errors.md)
+# Comprendre et explorer
+## [Qu’est-ce que Microsoft Advanced Threat Analytics ?](/advanced-threat-analytics/understand-explore/what-is-ata)
+## [Quelles sont les menaces détectées par ATA ?](/advanced-threat-analytics/understand-explore/ata-threats)
+## Notes de publication ATA
+### [Nouveautés d’ATA version 1.7](/advanced-threat-analytics/understand-explore/whats-new-version-1.7)
+#### [Mise à jour vers ATA 1.7 : guide de migration](/advanced-threat-analytics/understand-explore/ata-update-1.7-migration-guide)
+### [Nouveautés d’ATA version 1.6](/advanced-threat-analytics/understand-explore/whats-new-version-1.6)
+#### [Mise à jour vers ATA 1.6 : guide de migration](/advanced-threat-analytics/understand-explore/ata-update-1.6-migration-guide)
+### [Nouveautés d’ATA version 1.5](/advanced-threat-analytics/understand-explore/whats-new-version-1.5)
+#### [Mise à jour vers ATA 1.5 : guide de migration](/advanced-threat-analytics/understand-explore/ata-update-1.5-migration-guide)
+### [Nouveautés d’ATA version 1.4](/advanced-threat-analytics/understand-explore/whats-new-version-1.4)
+## [Forum Aux Questions](/advanced-threat-analytics/understand-explore/ata-technical-faq)
+# Planification et conception
+## [Architecture d’ATA](/advanced-threat-analytics/plan-design/ata-architecture)
+## [Planifier la capacité d’ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning)
+## [Prérequis au déploiement d’ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+# Déploiement
+## Étapes de préinstallation
+### [1. Configurer la mise en miroir des ports](/advanced-threat-analytics/deploy-use/configure-port-mirroring)
+### [2. Valider la mise en miroir des ports](/advanced-threat-analytics/deploy-use/validate-port-mirroring)
+### [3. Configurer la collecte d’événements](/advanced-threat-analytics/deploy-use/configure-event-collection)
+## Installer ATA
+### [Étape 1](/advanced-threat-analytics/deploy-use/install-ata-step1)
+### [Étape 2](/advanced-threat-analytics/deploy-use/install-ata-step2)
+### [Étape 3](/advanced-threat-analytics/deploy-use/install-ata-step3)
+### [Étape 4](/advanced-threat-analytics/deploy-use/install-ata-step4)
+### [Étape 5](/advanced-threat-analytics/deploy-use/install-ata-step5)
+### [Étape 6](/advanced-threat-analytics/deploy-use/install-ata-step6)
+### [Installation sans assistance](/advanced-threat-analytics/deploy-use/ata-silent-installation)
+# Utilisez les stratégies de gestion des applications mobiles
+## [Modifier l’adresse IP du centre ATA](/advanced-threat-analytics/deploy-use/modifying-ata-config-centerip)
+## [Modifier le certificat du centre ATA](/advanced-threat-analytics/deploy-use/modifying-ata-config-centercert)
+## [Modifier l’URL de la console ATA](/advanced-threat-analytics/deploy-use/modifying-ata-config-consoleurl)
+## [Modifier le mot de passe de connectivité de domaine](/advanced-threat-analytics/deploy-use/modifying-ata-config-dcpassword)
+## [Utilisation de la console ATA](/advanced-threat-analytics/deploy-use/working-with-ata-console)
+## [Groupes de rôles ATA](/advanced-threat-analytics/deploy-use/ata-role-groups)
+## [Définir les paramètres du serveur Syslog et du serveur de messagerie](/advanced-threat-analytics/deploy-use/setting-syslog-email-server-settings)
+## [Définir des notifications ATA](/advanced-threat-analytics/deploy-use/setting-ata-alerts)
+## [Gestion des paramètres de détection](/advanced-threat-analytics/deploy-use/working-with-detection-settings)
+## [Centre d’intégrité ATA](/advanced-threat-analytics/deploy-use/ata-health-center)
+## [Gestion des activités suspectes](/advanced-threat-analytics/deploy-use/working-with-suspicious-activities)
+## [Gestion de la base de données ATA](/advanced-threat-analytics/deploy-use/ata-database-management)
+## [Configuration de l’exportation/importation d’ATA](/advanced-threat-analytics/deploy-use/ata-configuration-file)
+## [Gérer la télémétrie ATA](/advanced-threat-analytics/deploy-use/manage-telemetry-settings)
+# Dépannage
 ## [Résolution des problèmes à l’aide des erreurs connues](troubleshooting-ata-known-errors.md)
 ## [Résoudre les problèmes à l’aide des journaux](troubleshooting-ata-using-logs.md)
 ## [Résolution des problèmes à l’aide des compteurs de performances](troubleshooting-ata-using-perf-counters.md)
 ## [Résolution des problèmes à l’aide de la base de données](troubleshooting-ata-using-ata-database.md)
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 
