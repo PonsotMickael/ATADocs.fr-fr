@@ -20,12 +20,12 @@
 ### [2. Valider la mise en miroir des ports](/advanced-threat-analytics/deploy-use/validate-port-mirroring)
 ### [3. Configurer la collecte d’événements](/advanced-threat-analytics/deploy-use/configure-event-collection)
 ## Installer ATA
-### [Étape 1 Télécharger et installer le Centre](/advanced-threat-analytics/deploy-use/install-ata-step1.md)
-### [Étape 2 Se connecter à AD](/advanced-threat-analytics/deploy-use/install-ata-step2.md)
-### [Étape 3 Télécharger le package de passerelle](/advanced-threat-analytics/deploy-use/install-ata-step3.md)
-### [Étape 4 Installer la passerelle](/advanced-threat-analytics/deploy-use/install-ata-step4.md)
-### [Étape 5 Configurer la passerelle](/advanced-threat-analytics/deploy-use/install-ata-step5.md)
-### [Étape 6 Exclusinos et honeytoken](/advanced-threat-analytics/deploy-use/install-ata-step6.md)
+### [Étape 1 Télécharger et installer le Centre](/advanced-threat-analytics/deploy-use/install-ata-step1)
+### [Étape 2 Se connecter à AD](/advanced-threat-analytics/deploy-use/install-ata-step2)
+### [Étape 3 Télécharger le package de passerelle](/advanced-threat-analytics/deploy-use/install-ata-step3)
+### [Étape 4 Installer la passerelle](/advanced-threat-analytics/deploy-use/install-ata-step4)
+### [Étape 5 Configurer la passerelle](/advanced-threat-analytics/deploy-use/install-ata-step5)
+### [Étape 6 Exclusinos et honeytoken](/advanced-threat-analytics/deploy-use/install-ata-step6)
 ### [Installation sans assistance](/advanced-threat-analytics/deploy-use/ata-silent-installation)
 # Utilisez les stratégies de gestion des applications mobiles
 ## [Modifier l’adresse IP du centre ATA](/advanced-threat-analytics/deploy-use/modifying-ata-config-centerip)
