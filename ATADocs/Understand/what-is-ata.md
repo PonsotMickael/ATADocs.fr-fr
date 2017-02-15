@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 09/28/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: 70d66bccfda484722afa63a7f85dc8f85013f54f
+ms.sourcegitcommit: 22d08a20291b1651a36247e9ffbeff8c881aefc5
+ms.openlocfilehash: 0941d7695f51eb5662626e02b5fc8a9997dea975
 
 
 ---
@@ -95,13 +95,13 @@ Vous pouvez afficher les activités suspectes de ce type dans le tableau de bord
 
 -   Pour plus d’informations sur la façon dont ATA s’intègre à votre réseau, consultez [Architecture ATA](/advanced-threat-analytics/plan-design/ata-architecture).
 
--   Pour commencer le déploiement d’ATA, consultez [Installer ATA](/advanced-threat-analytics/deploy-use/install-ata).
+-   Pour commencer le déploiement d’ATA, consultez [Installer ATA](/advanced-threat-analytics/deploy-use/install-ata-step1).
 
 ## <a name="see-also"></a>Voir aussi
 [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 
