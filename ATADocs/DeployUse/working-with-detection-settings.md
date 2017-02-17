@@ -1,11 +1,11 @@
 ---
-title: "Gestion des paramètres de la détection ATA | Microsoft Docs"
+title: "Définir les paramètres de détection d’Advanced Threat Analytics | Microsoft Docs"
 description: "Décrit comment configurer une liste d’adresses IP et de sous-réseaux ayant des circonstances inhabituelles et qui doivent donc être gérés différemment des autres entités de votre réseau."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: f4f2ae30-4849-4a4f-8f6d-bfe99a32c746
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: 93f2a72c9623674c73b3ee83ecf12be8e0766365
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: c88d74793c6210704f2a187df6508bf525907118
 
 
 ---
@@ -55,6 +55,6 @@ Dans la section **Détection**, vous pouvez définir les éléments suivants :
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 
