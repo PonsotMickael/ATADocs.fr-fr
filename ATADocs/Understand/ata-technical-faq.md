@@ -1,11 +1,11 @@
 ---
-title: 'Forum Aux Questions : ATA | Microsoft Docs'
+title: Forum Aux Questions sur Advanced Threat Analytics | Microsoft Docs
 description: "Fournit des réponses aux questions les plus fréquentes sur ATA"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 02/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: f806437df3a2c581631e924798a367e5e48be6f8
+ms.sourcegitcommit: bdb830bb7d8ecb6e04bb9c62b40904300fc1b404
+ms.openlocfilehash: 715d6987a74d2d6222acd6747f3cf425a6a901da
 
 
 ---
@@ -27,6 +27,7 @@ Cet article fournit des éléments d’informations et des réponses aux questio
 
 ## <a name="what-should-i-do-if-the-ata-gateway-wont-start"></a>Que dois-je faire si la passerelle ATA ne démarre pas ?
 Examinez l’erreur la plus récente dans le journal des erreurs actuel (où ATA est installé, sous le dossier « Logs »).
+
 ## <a name="how-can-i-test-ata"></a>Comment puis-je tester ATA ?
 Vous pouvez simuler des activités suspectes (test de bout en bout) en effectuant l’une des opérations suivantes :
 
@@ -54,6 +55,7 @@ ATA repose sur l’analyse de plusieurs protocoles réseau, ainsi que sur les é
 
 ## <a name="does-ata-work-with-kerberos-armoring"></a>ATA fonctionne-t-il avec le blindage Kerberos ?
 L’activation du blindage Kerberos, également appelé FAST (Flexible Authentication Secure Tunneling), est prise en charge par ATA, à l’exception de la détection Overpass-the-Hash qui ne fonctionne pas.
+
 ## <a name="how-many-ata-gateways-do-i-need"></a>De combien de passerelles ATA ai-je besoin ?
 
 Le nombre de passerelles ATA dépend de la disposition de votre réseau, du volume de paquets et du volume d’événements capturés par ATA. Pour déterminer le nombre exact, consultez [Dimensionnement de passerelle légère ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning#ata-lightweight-gateway-sizing). 
@@ -81,7 +83,11 @@ Il y a deux éléments que vous devez sauvegarder :
 
 -   Le trafic et les événements enregistrés par ATA, que vous pouvez sauvegarder à l’aide de n’importe quelle procédure de sauvegarde de base de données prise en charge. Pour plus d’informations, consultez [Gestion de la base de données ATA](/advanced-threat-analytics/deploy-use/ata-database-management). 
 -   La configuration d’ATA. Elle est stockée dans la base de données et sauvegardée automatiquement toutes les heures dans le dossier **Backup** à l’emplacement de déploiement du centre ATA.  Pour plus d’informations, consultez [Gestion de la base de données ATA](https://docs.microsoft.com/advanced-threat-analytics/deploy-use/ata-database-management).
+
+
+
 ## <a name="what-can-ata-detect"></a>Que peut détecter ATA ?
+
 ATA détecte les techniques et attaques connues, les problèmes de sécurité et les risques.
 Pour obtenir la liste complète des détections fournies par ATA, consultez [Quelles sont les détections effectuées par ATA ?](ata-threats.md).
 
@@ -98,7 +104,6 @@ ATA bénéficie d’une intégration bidirectionnelle aux serveurs SIEM, comme s
 2. Vous pouvez configurer ATA pour recevoir des messages Syslog de chaque événement Windows associé à l’ID 4776 à partir de [ces serveurs SIEM](/advanced-threat-analytics/deploy-use/configure-event-collection#siem-support).
 
 ## <a name="can-ata-monitor-domain-controllers-virtualized-on-your-iaas-solution"></a>ATA peut-il surveiller les contrôleurs de domaine virtualisés sur votre solution IaaS ?
-
 Oui, vous pouvez utiliser la passerelle légère ATA pour surveiller les contrôleurs de domaine qui se trouvent dans n’importe quelle solution IaaS.
 
 ## <a name="is-this-an-on-premises-or-in-cloud-offering"></a>S’agit-il d’une offre locale ou dans le cloud ?
@@ -127,6 +132,7 @@ Oui. Étant donné que les comptes d’ordinateurs (de même que toute autre ent
 
 ## <a name="can-ata-support-multi-domain-and-multi-forest"></a>ATA peut-il prendre en charge plusieurs domaines et plusieurs forêts ?
 Microsoft Advanced Threat Analytique prend en charge les environnements à plusieurs domaines dans la même limite de forêt. S’il existe plusieurs forêts, un déploiement ATA est nécessaire pour chaque forêt.
+
 ## <a name="can-you-see-the-overall-health-of-the-deployment"></a>Puis-je examiner l’intégrité globale du déploiement ?
 Oui. Vous pouvez consulter l’intégrité globale du déploiement ainsi que les problèmes spécifiques liés à la configuration, à la connectivité, etc. Dès qu’un problème se produit, vous êtes averti.
 
@@ -141,6 +147,6 @@ Oui. Vous pouvez consulter l’intégrité globale du déploiement ainsi que les
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

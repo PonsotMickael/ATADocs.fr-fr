@@ -1,10 +1,10 @@
 ---
-title: Versions ATA | Microsoft Docs
+title: "Versions d’Advanced Threat Analytics | Microsoft Docs"
 description: "Explique les différentes options de support pour les versions de Microsoft Advanced Threat Analytics (ATA)."
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/28/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.assetid: a8afbd91-c888-4dfc-94ab-72e38745163e
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2acd894c46cdf242294f1cf8a8bdbf4b3fa69947
-ms.openlocfilehash: 8eebc5b37c7430825c20b7b0e15879e76a36e512
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: cae588383a7ea64a8e907e64cd2d7d15223feae3
 
 
 ---
@@ -23,9 +23,9 @@ ms.openlocfilehash: 8eebc5b37c7430825c20b7b0e15879e76a36e512
 
 Microsoft prévoit de publier des mises à jour d’ATA plusieurs fois par an, chaque version de mise à jour étant prise en charge douze (12) mois à partir de sa date de publication pour disponibilité générale. Un support technique est assuré sur la totalité de cette période de douze (12) mois. Toutefois, notre structure de support est désormais dynamique et évolue en deux phases de maintenance distinctes qui dépendent de la disponibilité de la dernière version.
 
--   Phase de maintenance Mises à jour critiques et de sécurité : Quand vous exécutez la dernière version d’ATA, vous recevez des mises à jour de sécurité et des mises à jour critiques.
+-   Phase de maintenance Mises à jour critiques et de sécurité : Quand vous exécutez la dernière version d’ATA, vous recevez des mises à jour de sécurité et des mises à jour critiques.
 
--   Phase de maintenance Mises à jour de sécurité (uniquement) : Après la publication d’une nouvelle version d’ATA, le support des anciennes versions est réduit aux mises à jour de sécurité uniquement pour le reste de la politique de support de douze (12) mois (illustré dans l’exemple ci-dessous du support de maintenance des versions).
+-   Phase de maintenance Mises à jour de sécurité (uniquement) : Après la publication d’une nouvelle version d’ATA, le support des anciennes versions est réduit aux mises à jour de sécurité uniquement pour le reste de la politique de support de douze (12) mois (illustré dans l’exemple ci-dessous du support de maintenance des versions).
  
 ![Exemple du support de maintenance des versions](media/versions.png)
 
@@ -36,23 +36,23 @@ Microsoft prévoit de publier des mises à jour d’ATA plusieurs fois par an, c
 
 |VERSION|NUMÉRO DE BUILD|DATE DE DISPONIBILITÉ| DATE DE FIN DE SUPPORT|
 |----|----|----|----|
-|1.4|1.4.2457|31 AOÛT 2015|30 AOÛT 2016|
-|1.5|1.5.2946|17 DÉC 2015|16 DÉC 2016|
-|1.6|1.6.4103|05 MAI 2016|04 MAI 2017|
-|1.6.1|1.6.4317|15 JUIN 2016|14 JUIN 2017|
-|1.7|1.7.5402|31 AOÛT 2016|30 AOÛT 2017|
-|1.7.1|1.7.5647|06 OCT 2016|05 OCT 2017|
-|1.7.2|1.7.5757|15 NOV 2016|14 NOV 2017|
+|1.4|1.4.2457|31 AOÛT 2015|30 AOÛT 2016|
+|1.5|1.5.2946|17 DÉC 2015|16 DÉC 2016|
+|1.6|1.6.4103|05 MAI 2016|04 MAI 2017|
+|1.6.1|1.6.4317|15 JUIN 2016|14 JUIN 2017|
+|1.7|1.7.5402|31 AOÛT 2016|30 AOÛT 2017|
+|1.7.1|1.7.5647|06 OCT 2016|05 OCT 2017|
+|1.7.2|1.7.5757|15 NOV 2016|14 NOV 2017|
 
 
 
 
 
 ## <a name="see-also"></a>Voir aussi
-[Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+[Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 
