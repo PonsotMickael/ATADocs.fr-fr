@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/7/2017
+ms.date: 2/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 88ca89f2311bf4e73b3d0b57db3e4377e99fd8b2
-ms.openlocfilehash: eae08c573fafaa3fa8643a2e115f7fc710e4d3f9
+ms.sourcegitcommit: f61bbb895e4a2f239f91328f8d8b2b5260452cc2
+ms.openlocfilehash: 764d20fd113b8d40d359a8976c175e889f554dba
 
 
 ---
@@ -219,9 +219,13 @@ La passerelle légère ATA prend en charge l’installation sur un contrôleur d
 
 Le contrôleur de domaine peut être un contrôleur de domaine en lecture seule (RODC).
 
-Avant d’installer la passerelle légère ATA sur un contrôleur de domaine exécutant Windows Server 2012 R2 SP1, vérifiez que les mises à jour suivantes ont été installées : [KB2919355](https://support.microsoft.com/kb/2919355/) et [KB3000850](https://support.microsoft.com/help/3000850/november-2014-update-rollup-for-windows-rt-8.1,-windows-8.1,-and-windows-server-2012-r2) (dans cet ordre). 
+Avant d’installer la passerelle légère ATA sur un contrôleur de domaine exécutant Windows Server 2012 R2, vérifiez que la mise à jour suivante a été installée : [KB2919355](https://support.microsoft.com/kb/2919355/).
 
-Pour vous en assurer, exécutez l’applet de commande Windows PowerShell suivante : `[Get-HotFix -Id kb2919355] [Get-HotFix -Id KB3000850]`
+Pour vous en assurer, exécutez l’applet de commande Windows PowerShell suivante : `[Get-HotFix -Id kb2919355]`
+
+Si l’installation est pour Windows Server 2012 R2 Server Core, la mise à jour suivante doit également être installée :  [KB3000850](https://support.microsoft.com/help/3000850/november-2014-update-rollup-for-windows-rt-8.1%2c-windows-8.1%2c-and-windows-server-2012-r2).
+
+ Pour vous en assurer, exécutez l’applet de commande Windows PowerShell suivante : `[Get-HotFix -Id kb3000850]`
 
 > [!NOTE]
 > Un minimum de 5 Go d’espace sont nécessaires et 10 Go sont recommandés. Cela inclut l’espace nécessaire pour les fichiers binaires ATA, les [journaux ATA](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs.md) et les [journaux de performances](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-perf-counters.md).
@@ -289,6 +293,6 @@ L’accès à la console ATA s’effectue au moyen d’un navigateur, avec prise
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

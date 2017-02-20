@@ -14,8 +14,8 @@ ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8ffbbfd96507612b8ec44f232f4ece42988eb588
-ms.openlocfilehash: 3bc9e48f1d8843aef40016a2c5a82f6c7510be3c
+ms.sourcegitcommit: e3f763f7c1cce6c451a1cc969771b73543c76673
+ms.openlocfilehash: 0669ccb78207dde1ede06a229af896bed0b19d28
 
 
 ---
@@ -30,7 +30,7 @@ Cet article décrit comment récupérer rapidement votre centre ATA et restaurer
 >[!NOTE]
 > Le processus décrit ne récupère pas les activités suspectes détectées précédemment, mais rétablit le fonctionnement intégral du centre ATA. En outre, la période d’apprentissage nécessaire pour certaines détections de comportements redémarre, la majeure partie de la détection offerte par ATA étant néanmoins opérationnelle une fois le centre ATA restauré. 
 
-## <a name="how-to-recovery-your-ata-center-after-disaster"></a>Comment récupérer votre centre ATA après un sinistre
+## <a name="how-to-recover-your-ata-center-after-a-disaster"></a>Récupération de votre centre ATA après un sinistre
 
 1. La configuration du centre ATA est sauvegardée dans un fichier toutes les heures. Recherchez la dernière copie de sauvegarde de la configuration du centre ATA et enregistrez-la sur un ordinateur distinct. Pour obtenir une explication complète de la localisation de ces fichiers, consultez [Exporter et importer la configuration ATA](/advanced-threat-analytics/deploy-use/ata-configuration-file). 
 2. Exportez le certificat du centre ATA.
@@ -72,6 +72,6 @@ Cet article décrit comment récupérer rapidement votre centre ATA et restaurer
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
