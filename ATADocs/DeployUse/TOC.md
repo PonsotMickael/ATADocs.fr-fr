@@ -20,12 +20,12 @@
 ### [2. Valider la mise en miroir des ports](validate-port-mirroring.md)
 ### [3. Configurer la collecte d’événements](configure-event-collection.md)
 ## Installer ATA
-### [Étape 1 Télécharger et installer le Centre](/advanced-threat-analytics/deploy-use/install-ata-step1.md)
-### [Étape 2 Se connecter à AD](/advanced-threat-analytics/deploy-use/install-ata-step2.md)
-### [Étape 3 Télécharger le package de passerelle](/advanced-threat-analytics/deploy-use/install-ata-step3.md)
-### [Étape 4 Installer la passerelle](/advanced-threat-analytics/deploy-use/install-ata-step4.md)
-### [Étape 5 Configurer la passerelle](/advanced-threat-analytics/deploy-use/install-ata-step5.md)
-### [Étape 6 Exclusinos et honeytoken](/advanced-threat-analytics/deploy-use/install-ata-step6.md)
+### [Étape 1 Télécharger et installer le Centre](install-ata-step1.md)
+### [Étape 2 Se connecter à AD](install-ata-step2.md)
+### [Étape 3 Télécharger le package de passerelle](install-ata-step3.md)
+### [Étape 4 Installer la passerelle](install-ata-step4.md)
+### [Étape 5 Configurer la passerelle](install-ata-step5.md)
+### [Étape 6 Exclusinos et honeytoken](install-ata-step6.md)
 ### [Installation sans assistance](ata-silent-installation.md)
 # Utilisez les stratégies de gestion des applications mobiles
 ## [Modifier l’adresse IP du centre ATA](modifying-ata-config-centerip.md)
@@ -47,8 +47,8 @@
 ## [Résoudre les problèmes à l’aide des journaux](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
 ## [Résolution des problèmes à l’aide des compteurs de performances](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-perf-counters)
 ## [Résolution des problèmes à l’aide de la base de données](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-ata-database)
+## [Récupération d'urgence](/advanced-threat-analytics/troubleshoot/disaster-recovery)
 
-
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO4-->
 
 
