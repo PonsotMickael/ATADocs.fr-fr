@@ -48,8 +48,3 @@
 ## [Résolution des problèmes à l’aide des compteurs de performances](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-perf-counters)
 ## [Résolution des problèmes à l’aide de la base de données](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-ata-database)
 ## [Récupération d'urgence](/advanced-threat-analytics/troubleshoot/disaster-recovery)
-
-
-<!--HONumber=Feb17_HO3-->
-
-
