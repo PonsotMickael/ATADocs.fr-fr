@@ -25,7 +25,7 @@
 ### [Étape 3 Télécharger le package de passerelle](/advanced-threat-analytics/deploy-use/install-ata-step3)
 ### [Étape 4 Installer la passerelle](/advanced-threat-analytics/deploy-use/install-ata-step4)
 ### [Étape 5 Configurer la passerelle](/advanced-threat-analytics/deploy-use/install-ata-step5)
-### [Étape 6 Exclusinos et honeytoken](/advanced-threat-analytics/deploy-use/install-ata-step6)
+### [Étape 6 Exclusion et honeytoken](/advanced-threat-analytics/deploy-use/install-ata-step6)
 ### [Installation sans assistance](/advanced-threat-analytics/deploy-use/ata-silent-installation)
 # Utilisez les stratégies de gestion des applications mobiles
 ## [Modifier l’adresse IP du centre ATA](/advanced-threat-analytics/deploy-use/modifying-ata-config-centerip)
@@ -47,9 +47,4 @@
 ## [Résoudre les problèmes à l’aide des journaux](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
 ## [Résolution des problèmes à l’aide des compteurs de performances](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-perf-counters)
 ## [Résolution des problèmes à l’aide de la base de données](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-ata-database)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-
+## [Récupération d'urgence](/advanced-threat-analytics/troubleshoot/disaster-recovery)

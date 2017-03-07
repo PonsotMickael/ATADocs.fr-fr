@@ -47,8 +47,4 @@
 ## [Résoudre les problèmes à l’aide des journaux](troubleshooting-ata-using-logs.md)
 ## [Résolution des problèmes à l’aide des compteurs de performances](troubleshooting-ata-using-perf-counters.md)
 ## [Résolution des problèmes à l’aide de la base de données](troubleshooting-ata-using-ata-database.md)
-
-
-<!--HONumber=Feb17_HO1-->
-
-
+## [Récupération d'urgence](/advanced-threat-analytics/troubleshoot/disaster-recovery.md)
