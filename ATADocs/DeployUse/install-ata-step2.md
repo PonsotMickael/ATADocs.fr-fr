@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 23ea3185e0d3556f524d8131a715a6057988f04c
-
-
+ms.openlocfilehash: fea114b062a7861ac284b4bf746fff68c5c1bd52
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -44,7 +41,7 @@ La première fois que vous ouvrez la console ATA, l’écran suivant apparaît 
     |**Mot de passe** (obligatoire)|Entrez le mot de passe de l’utilisateur en lecture seule, par exemple : **Pencil1**.|
     |**Domaine** (obligatoire)|Entrez le domaine de l’utilisateur en lecture seule, par exemple : **contoso.com**. **Remarque :** il est important d’entrer le nom complet du domaine où se trouve l’utilisateur. Par exemple, si le compte de l’utilisateur se trouve dans le domaine corp.contoso.com, vous devez entrer `corp.contoso.com`, et non contoso.com.|
 
-2. Si vous le souhaitez, vous pouvez cliquer sur **Tester la connexion** pour tester la connectivité au domaine et vérifier que les informations d’identification fournies donnent accès au domaine. Cela ne fonctionne que si le centre ATA dispose d’une connectivité au domaine.   
+2. Si vous le souhaitez, vous pouvez cliquer sur **Tester la connexion** pour tester la connectivité au domaine et vérifier que les informations d’identification fournies donnent accès au domaine. Cela ne fonctionne que si le centre ATA dispose d’une connectivité au domaine.     
 
     Après l’enregistrement, le message d’accueil dans la console devient : ![ATA welcome stage 1 finished](media/ATA_1.7-welcome-provide-username-finished.png)
 
@@ -61,9 +58,3 @@ La première fois que vous ouvrez la console ATA, l’écran suivant apparaît 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)
 - [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

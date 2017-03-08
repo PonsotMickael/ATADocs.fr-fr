@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: c94f61853aa45d45600cbcc0ba0a5a64adc6fd3f
-
-
+ms.openlocfilehash: b84c1ddcae304d95ec9f4e7c102460c75cb04112
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -115,9 +112,3 @@ Vous pouvez modifier l’état d’une activité suspecte en cliquant sur son é
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Gestion des paramètres de la détection ATA](working-with-detection-settings.md)
 - [Modification de la configuration d’ATA](modifying-ata-configuration.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

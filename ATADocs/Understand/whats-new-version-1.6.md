@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: e31dabc43ada8eac4ebed86af0ac4b43dc410246
-
-
+ms.openlocfilehash: ac10d24c443e0278a1d0995598fb9c1cf0fb4de6
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 # <a name="whats-new-in-ata-version-16"></a>Nouveautés d’ATA version 1.6
 Ces notes de publication fournissent des informations sur les problèmes connus de cette version d’Advanced Threat Analytics.
 
@@ -108,21 +105,21 @@ Si vous voyez l’une de ces erreurs, effectuez la solution de contournement sui
 
 **Solution de contournement** : 
 
-1.  Déplacez dans un dossier temporaire le dossier « data_old » (qui se trouve généralement dans %ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin).
-2.  Désinstallez le centre ATA v1.5 et supprimez toutes les données de la base de données.
+1.    Déplacez dans un dossier temporaire le dossier « data_old » (qui se trouve généralement dans %ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin).
+2.    Désinstallez le centre ATA v1.5 et supprimez toutes les données de la base de données.
 ![Désinstaller ATA 1.5](http://i.imgur.com/x4nJycx.png)
-3.  Réinstallez le centre ATA v1.5. Veillez à utiliser la même configuration que l’installation précédente d’ATA 1.5 (certificats, adresses IP, chemin de la base de données, etc.).
-4.  Arrêtez ces services dans l’ordre suivant :
-    1.  Microsoft Advanced Threat Analytics Center
-    2.  MongoDB
-5.  Remplacez les fichiers de la base de données MongoDB par les fichiers contenus dans le dossier « data_old ».
-6.  Démarrez ces services dans l’ordre suivant :
-    1.  MongoDB
-    2.  Microsoft Advanced Threat Analytics Center
-7.  Passez en revue les journaux pour vérifier que le produit s’exécute sans erreur.
-8.  [Téléchargez](http://aka.ms/ataremoveduplicateprofiles "Téléchargez") l’outil « RemoveDuplicateProfiles.exe » et copiez-le dans le chemin d’installation principal (%ProgramFiles%\Microsoft Advanced Threat Analytics\Center).
-9.  À partir d’une invite de commandes avec élévation de privilèges, exécutez « RemoveDuplicateProfiles.exe » et attendez la fin de l’opération.
-10. À partir du répertoire …\Microsoft Advanced Threat Analytics\Center\MongoDB\bin **Mongo ATA**, tapez la commande suivante :
+3.    Réinstallez le centre ATA v1.5. Veillez à utiliser la même configuration que l’installation précédente d’ATA 1.5 (certificats, adresses IP, chemin de la base de données, etc.).
+4.    Arrêtez ces services dans l’ordre suivant :
+    1.    Microsoft Advanced Threat Analytics Center
+    2.    MongoDB
+5.    Remplacez les fichiers de la base de données MongoDB par les fichiers contenus dans le dossier « data_old ».
+6.    Démarrez ces services dans l’ordre suivant :
+    1.    MongoDB
+    2.    Microsoft Advanced Threat Analytics Center
+7.    Passez en revue les journaux pour vérifier que le produit s’exécute sans erreur.
+8.    [Téléchargez](http://aka.ms/ataremoveduplicateprofiles "Téléchargez") l’outil « RemoveDuplicateProfiles.exe » et copiez-le dans le chemin d’installation principal (%ProgramFiles%\Microsoft Advanced Threat Analytics\Center).
+9.    À partir d’une invite de commandes avec élévation de privilèges, exécutez « RemoveDuplicateProfiles.exe » et attendez la fin de l’opération.
+10.    À partir du répertoire …\Microsoft Advanced Threat Analytics\Center\MongoDB\bin **Mongo ATA**, tapez la commande suivante :
 
     db.SuspiciousActivities.remove({ "_t" : "RemoteExecutionSuspiciousActivity", "DetailsRecords" : { "$elemMatch" : { "ReturnCode" : null } } }, { "_id" : 1 });
 
@@ -145,8 +142,3 @@ Au cas où vous auriez besoin des données par la suite, la procédure de mise �
 [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 [Mise à jour d’ATA vers la version 1.6 : guide de migration](ata-update-1.6-migration-guide.md)
-
-
-<!--HONumber=Feb17_HO1-->
-
-
