@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 782c066e6a7ef8a5da9e2b8ceb16742da6f52506
-
-
+ms.openlocfilehash: 06aa85cededdc3647aadaaca7d594ce3bbbb0723
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -40,7 +37,7 @@ Pour recevoir des notifications par e-mail, procédez comme suit :
 
 2. Dans la section **Notifications**, sélectionnez **Paramètres**.
 3. Sous **Destinataires du courrier**, spécifiez les destinataires qui recevront les notifications par e-mail.
->   [!NOTE]
+>    [!NOTE]
 >   Les alertes par e-mail pour les activités suspectes sont envoyées uniquement lors de la création de l’activité suspecte.
 
 4. Sous **Notifier quand**, utilisez les boutons bascule pour sélectionner les notifications à envoyer :
@@ -77,9 +74,3 @@ Pour recevoir les notifications Syslog, procédez comme suit :
 
 ## <a name="see-also"></a>Voir aussi
 [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

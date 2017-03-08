@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 88ca89f2311bf4e73b3d0b57db3e4377e99fd8b2
-ms.openlocfilehash: 7919c9658f2e05b448e3a773bd5ab4c6cb96625f
-
-
+ms.openlocfilehash: 69034316493b8783cbeaaae9aac6af237da39dc8
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -55,10 +52,4 @@ Quand les utilisateurs tentent d’accéder à une page qui n’est pas disponib
 ## <a name="add--remove-users---ata-role-groups"></a>Ajouter \ supprimer des utilisateurs - Groupes de rôles ATA 
 
 ATA utilise les groupes Windows locaux comme base pour les groupes de rôles. Pour ajouter ou supprimer des utilisateurs, utilisez la console MMC **Utilisateurs et groupes locaux** (Lusrmgr.msc). Sur un ordinateur joint à un domaine, vous pouvez ajouter des comptes de domaine et des comptes locaux. 
-
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

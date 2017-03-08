@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 25030dd40c7bbd9f036dbf0d228017f571d4ba71
-
-
+ms.openlocfilehash: e929714ca33dfaa82bdf93dbaf230abadef1b86d
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -47,9 +44,3 @@ Pour vérifier l’intégrité globale de votre système, cliquez sur l’icône
 - [Gestion des paramètres de la détection ATA](working-with-detection-settings.md)
 - [Gestion des activités suspectes](working-with-suspicious-activities.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

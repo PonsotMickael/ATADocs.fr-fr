@@ -12,20 +12,17 @@ ms.technology:
 ms.assetid: a8afbd91-c888-4dfc-94ab-72e38745163e
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: cae588383a7ea64a8e907e64cd2d7d15223feae3
-
-
+ms.openlocfilehash: 21c7486061b6945d557a42d3964b70637829f4b0
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 # <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Support des versions de Microsoft Advanced Threat Analytics (ATA)
 
 Microsoft prévoit de publier des mises à jour d’ATA plusieurs fois par an, chaque version de mise à jour étant prise en charge douze (12) mois à partir de sa date de publication pour disponibilité générale. Un support technique est assuré sur la totalité de cette période de douze (12) mois. Toutefois, notre structure de support est désormais dynamique et évolue en deux phases de maintenance distinctes qui dépendent de la disponibilité de la dernière version.
 
--   Phase de maintenance Mises à jour critiques et de sécurité : Quand vous exécutez la dernière version d’ATA, vous recevez des mises à jour de sécurité et des mises à jour critiques.
+-    Phase de maintenance Mises à jour critiques et de sécurité : Quand vous exécutez la dernière version d’ATA, vous recevez des mises à jour de sécurité et des mises à jour critiques.
 
--   Phase de maintenance Mises à jour de sécurité (uniquement) : Après la publication d’une nouvelle version d’ATA, le support des anciennes versions est réduit aux mises à jour de sécurité uniquement pour le reste de la politique de support de douze (12) mois (illustré dans l’exemple ci-dessous du support de maintenance des versions).
+-    Phase de maintenance Mises à jour de sécurité (uniquement) : Après la publication d’une nouvelle version d’ATA, le support des anciennes versions est réduit aux mises à jour de sécurité uniquement pour le reste de la politique de support de douze (12) mois (illustré dans l’exemple ci-dessous du support de maintenance des versions).
  
 ![Exemple du support de maintenance des versions](media/versions.png)
 
@@ -50,9 +47,3 @@ Microsoft prévoit de publier des mises à jour d’ATA plusieurs fois par an, c
 
 ## <a name="see-also"></a>Voir aussi
 [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

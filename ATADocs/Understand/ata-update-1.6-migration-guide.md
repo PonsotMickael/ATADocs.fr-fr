@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 0756ef64-3aef-4a69-8981-24fa8f285c6a
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: b1668f6d1d0c2107fc7116fb486d9e822552c852
-
-
+ms.openlocfilehash: 258c7dd816c61f3622f234f97d64527e9a90cbe2
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 # <a name="ata-update-to-16-migration-guide"></a>Mise à jour d’ATA vers la version 1.6 : guide de migration
 La mise à jour vers ATA 1.6 comprend des améliorations dans les domaines suivants :
 
@@ -140,9 +137,3 @@ Si toutes les passerelles ATA indiquent qu’elles ont été synchronisées avec
 ## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

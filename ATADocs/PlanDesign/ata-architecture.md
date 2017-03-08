@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 2c4ae574b3ce7346ba05abb357c23cfdab6482a4
-
-
+ms.openlocfilehash: 489d85e7e8250dffe8d40225b31ed308a9a79969
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -52,11 +49,11 @@ Un déploiement ATA peut se composer d’un seul centre ATA connecté à toutes 
 ## <a name="deployment-options"></a>Options de déploiement
 Vous pouvez déployer ATA à l’aide de la combinaison de passerelles suivante :
 
--   **Utilisation de passerelles ATA uniquement** <br>
+-    **Utilisation de passerelles ATA uniquement** <br>
 Si votre déploiement ATA contient uniquement des passerelles ATA, sans aucune passerelle légère ATA, tous les contrôleurs de domaine doivent être configurés pour activer la mise en miroir des ports vers une passerelle ATA ou des TAP réseau doivent être en place.
--   **Utilisation de passerelles légères ATA uniquement**<br>
+-    **Utilisation de passerelles légères ATA uniquement**<br>
 Si votre déploiement ATA contient uniquement des passerelles légères ATA, celles-ci sont déployées sur chaque contrôleur de domaine et aucun serveur supplémentaire ou configuration de mise en miroir des ports n’est nécessaire.
--   **Utilisation de passerelles ATA et de passerelles légères ATA**<br>
+-    **Utilisation de passerelles ATA et de passerelles légères ATA**<br>
 Si votre déploiement ATA comprend des passerelles ATA et des passerelles légères ATA, où la passerelle légère ATA est installée sur certains contrôleurs de domaine (par exemple, tous les contrôleurs dans vos sites de succursale) tandis que les autres contrôleurs de domaine sont surveillés par des passerelles ATA (par exemple, les contrôleurs de domaine plus importants dans vos principaux centres de données).
 
 Dans les trois scénarios, toutes les passerelles envoient leurs données au centre ATA.
@@ -130,7 +127,7 @@ La passerelle ATA reçoit le trafic réseau et les événements Windows de votr
 
 Les fonctionnalités suivantes fonctionnent différemment selon que vous exécutez une passerelle ATA ou une passerelle légère ATA.
 
--   **Candidat synchronisateur de domaine**<br>
+-    **Candidat synchronisateur de domaine**<br>
 La passerelle synchronisatrice de domaine est responsable de la synchronisation proactive de toutes les entités d’un domaine Active Directory spécifique (semblable au mécanisme utilisé par les contrôleurs de domaine eux-mêmes pour la réplication). Une passerelle est choisie au hasard comme synchronisateur de domaine dans la liste des candidats. <br><br>
 Si le synchronisateur est hors connexion pendant plus de 30 minutes, un autre candidat est choisi à la place. Si aucun synchronisateur de domaine n’est disponible pour un domaine spécifique, ATA ne peut pas synchroniser de manière proactive les entités et leurs modifications, mais il récupère de manière réactive les nouvelles entités à mesure qu’elles sont détectées dans le trafic analysé. 
 <br>Si aucun synchronisateur de domaine n’est disponible et que vous recherchez une entité avec laquelle aucun trafic n’était associé, aucun résultat de recherche ne s’affiche.<br><br>
@@ -138,7 +135,7 @@ Par défaut, toutes les passerelles ATA sont des candidats synchronisateurs.<br>
 Comme il est plus probable que toutes les passerelles légères ATA soient déployées dans des sites de succursale et sur des contrôleurs de domaine de petite taille, par défaut elles ne sont pas candidats synchronisateurs.
 
 
--   **Limitations des ressources**<br>
+-    **Limitations des ressources**<br>
 La passerelle légère ATA inclut un composant d’analyse qui évalue la capacité de calcul et de mémoire disponible sur le contrôleur de domaine sur lequel elle s’exécute. Le processus d’analyse s’exécute toutes les 10 secondes et met à jour de manière dynamique le quota d’utilisation du processeur et de la mémoire sur le processus de la passerelle légère ATA pour s’assurer qu’à tout moment le contrôleur de domaine dispose d’au moins 15 % de ressources de calcul et de mémoire libres.<br><br>
 Quoi qu’il se passe sur le contrôleur de domaine, ce processus libère toujours des ressources pour s’assurer que la fonctionnalité de base du contrôleur de domaine n’est pas affectée.<br><br>
 Si à cause de cela la passerelle légère ATA manque de ressources, le trafic est seulement partiellement analysé et l’alerte de surveillance « Le trafic réseau du port en miroir qui a été supprimé » s’affiche dans la page Intégrité.
@@ -183,10 +180,4 @@ Pour améliorer la détection des attaques Pass-the-Hash, force brute et Honey T
 - [Configurer la collecte d’événements](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [Configuration du transfert d’événements Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
