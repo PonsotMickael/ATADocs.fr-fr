@@ -1,11 +1,11 @@
 ---
-title: "Installer ATA - Étape 2 | Microsoft Docs"
+title: "Installer Advanced Threat Analytics - Étape 2 | Microsoft Docs"
 description: "La deuxième étape de la procédure d’installation d’ATA vous aide à configurer les paramètres de connectivité du domaine sur le serveur de votre centre ATA."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 01/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: 4ca0f9b9c73ddb1432eaf31b75f78af4541e3e29
-
-
+ms.openlocfilehash: fea114b062a7861ac284b4bf746fff68c5c1bd52
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -44,7 +41,7 @@ La première fois que vous ouvrez la console ATA, l’écran suivant apparaît 
     |**Mot de passe** (obligatoire)|Entrez le mot de passe de l’utilisateur en lecture seule, par exemple : **Pencil1**.|
     |**Domaine** (obligatoire)|Entrez le domaine de l’utilisateur en lecture seule, par exemple : **contoso.com**. **Remarque :** il est important d’entrer le nom complet du domaine où se trouve l’utilisateur. Par exemple, si le compte de l’utilisateur se trouve dans le domaine corp.contoso.com, vous devez entrer `corp.contoso.com`, et non contoso.com.|
 
-2. Si vous le souhaitez, vous pouvez cliquer sur **Tester la connexion** pour tester la connectivité au domaine et vérifier que les informations d’identification fournies donnent accès au domaine. Cela ne fonctionne que si le centre ATA dispose d’une connectivité au domaine.   
+2. Si vous le souhaitez, vous pouvez cliquer sur **Tester la connexion** pour tester la connectivité au domaine et vérifier que les informations d’identification fournies donnent accès au domaine. Cela ne fonctionne que si le centre ATA dispose d’une connectivité au domaine.     
 
     Après l’enregistrement, le message d’accueil dans la console devient : ![ATA welcome stage 1 finished](media/ATA_1.7-welcome-provide-username-finished.png)
 
@@ -61,9 +58,3 @@ La première fois que vous ouvrez la console ATA, l’écran suivant apparaît 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)
 - [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
-

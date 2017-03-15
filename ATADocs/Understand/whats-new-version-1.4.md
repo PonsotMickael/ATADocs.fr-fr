@@ -1,11 +1,11 @@
 ---
-title: "Nouveautés d’ATA version 1.4 | Microsoft Docs"
+title: "Nouveautés d’Advanced Threat Analytics version 1.4 | Microsoft Docs"
 description: "Répertorie les nouveautés d’ATA version 1.4, ainsi que les problèmes connus"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cbea47f9-34c1-42b6-ae9e-6a472b49e1a5
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: 3bb1b12088e4871bf65bb67cdfb432d1c414792a
-
-
+ms.openlocfilehash: 3884e7d40a598aed292cc492bfa1bd5a5e360990
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 # <a name="what39s-new-in-ata-version-14"></a>Nouveautés d’ATA version 1.4
 Ces notes de publication fournissent des informations sur les problèmes connus de la version 1.4 d’Advanced Threat Analytics.
 
@@ -100,8 +97,3 @@ N’installez pas la base de connaissance 3047154 sur un hôte de virtualisatio
 [Mise à jour d’ATA vers la version 1.6 : guide de migration](ata-update-1.6-migration-guide.md)
 
 [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-<!--HONumber=Jan17_HO1-->
-
-

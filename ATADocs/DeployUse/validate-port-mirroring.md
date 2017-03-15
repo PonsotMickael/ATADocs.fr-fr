@@ -1,11 +1,11 @@
 ---
-title: Valider la mise en miroir des ports | Microsoft Docs
+title: Valider la mise en miroir des ports dans Advanced Threat Analytics | Microsoft Docs
 description: "Explique comment vérifier que la mise en miroir des ports est configurée correctement"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 01/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: a836fca1fb11a980ca4d52a7e189f36aa37ffcd1
-
-
+ms.openlocfilehash: cbd7606b94f59fc49038c2333924d9e4a101b4e3
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -226,9 +223,3 @@ Exemple d’exécution du script :
 
 - [Configurer la mise en miroir des ports](configure-port-mirroring.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

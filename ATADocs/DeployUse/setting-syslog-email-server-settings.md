@@ -1,11 +1,11 @@
 ---
-title: "Configuration des paramètres de messagerie | Microsoft Docs"
+title: "Définition des paramètres de notification par e-mail dans Advanced Threat Analytics | Microsoft Docs"
 description: "Décrit comment faire en sorte qu’ATA vous avertisse (par courrier électronique ou transfert d’événements ATA) quand il détecte des activités suspectes"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,18 +13,15 @@ ms.technology:
 ms.assetid: bff20bf7-8b53-49da-81e5-b818a1c3b24e
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
-ms.openlocfilehash: d967cbf2674c5f561e63f66b64640ac08daad6c0
-
-
+ms.openlocfilehash: 0723eb35f181ca1186099fd11eb23d6d4ab9e525
+ms.sourcegitcommit: 2b87cd81ac96f12c47b756493b85da8154ee7a0a
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
 
-# <a name="provide-ata-with-up-your-email-server-settings"></a>Fournir à ATA les paramètres de votre serveur de messagerie
+# <a name="provide-ata-with-your-email-server-settings"></a>Fournir à ATA les paramètres de votre serveur de messagerie
 ATA peut vous avertir quand il détecte une activité suspecte. Pour qu’ATA puisse envoyer des notifications par courrier électronique, vous devez d’abord configurer les **paramètres du serveur de messagerie**.
 
 1.  Sur le serveur du centre ATA, cliquez sur l’icône **Microsoft Advanced Threat Analytics Management**(Gestion de Microsoft Advanced Threat Analytics) sur le Bureau.
@@ -80,9 +77,3 @@ ATA peut vous avertir quand il détecte une activité suspecte en envoyant la no
 
 ## <a name="see-also"></a>Voir aussi
 [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
-

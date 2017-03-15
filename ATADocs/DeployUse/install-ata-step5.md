@@ -1,11 +1,11 @@
 ---
-title: "Installer ATA - Étape 5 | Microsoft Docs"
+title: "Installer Advanced Threat Analytics - Étape 5 | Microsoft Docs"
 description: "La cinquième étape de la procédure d’installation d’ATA vous aide à configurer les paramètres de votre passerelle ATA."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 01/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: b30fe6bc977184fb8cc297e10724c7fe48ee6934
-
-
+ms.openlocfilehash: e6436d2eef9aeccb6182135ef76a072501f3e5a8
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -93,10 +90,4 @@ Pour vous assurer que la passerelle ATA a été déployée avec succès, effectu
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)
 - [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
-
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

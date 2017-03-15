@@ -1,24 +1,21 @@
 ---
-title: "Planification de votre déploiement ATA | Microsoft Docs"
+title: "Planification de votre déploiement Advanced Threat Analytics | Microsoft Docs"
 description: "Vous aide à planifier votre déploiement et à déterminer le nombre de serveurs ATA nécessaires pour prendre en charge votre réseau"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
 ms.prod: 
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 56eff27ffdd988d5cc9e67352859ddfedebb2144
-ms.openlocfilehash: 93ec7373a166529332d7c4809c756ab3ba240868
-
-
+ms.openlocfilehash: 4e0a6dd325c172ba4eb3b68fe4d4aab96f20684b
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -54,13 +51,13 @@ Le centre ATA nécessite l’équivalent de 30 jours de données qui est le min
 |10 000|4|48|3|90|200 (300)
 |40 000|8|64|12|360|500 (1,000)
 |100 000|12|96|30|900|1 000 (1 500)
-|400 000|40|128|120|1 800|2 000 (2 500)
+|400 000|40|128|120|3,600|4,000 (5,000)
 
 &#42; Cela comprend des cœurs physiques et non des cœurs hyper-thread.
 
 &#42;&#42;Nombres moyens (pic)
 > [!NOTE]
-> -   Le centre ATA peut gérer un maximum agrégé de 400 000 images par seconde provenant de l’ensemble des contrôleurs de domaine surveillés.
+> -   Le centre ATA peut gérer un maximum agrégé de 400 000 images par seconde provenant de l’ensemble des contrôleurs de domaine surveillés. Dans certains environnements, le même centre ATA peut gérer un trafic global supérieur à 400 000. Contactez askcesec@microsoft.com pour obtenir de l’assistance sur ce type d’environnement.
 > -   Les quantités de stockage citées ici sont des valeurs nettes. Vous devez toujours prendre en compte une croissance future et vous assurer que le disque sur lequel réside la base de données comprend au moins 20 % d’espace libre.
 > -   Si l’espace libre atteint la valeur minimale de 20 % ou 100 Go, la collecte de données la plus ancienne est supprimée. Ce processus de suppression continue jusqu’à atteindre 5 % ou 50 Go d’espace libre. Une fois ces valeurs atteintes, la collecte de données s’arrête.
 > -   La latence de stockage pour les activités de lecture et d’écriture doit être inférieure à 10 ms.
@@ -115,7 +112,7 @@ Une passerelle légère ATA peut prendre en charge la surveillance d’un contr�
 
 &#42;&#42;&#42;Quantité totale de mémoire installée sur ce contrôleur de domaine.
 
-> [!NOTE]   
+> [!NOTE]    
 > -   Si le contrôleur de domaine ne dispose pas de la quantité de ressources requise par la passerelle légère ATA, les performances du contrôleur de domaine ne seront pas affectées, mais la passerelle légère ATA risque de ne pas fonctionner comme prévu.
 > -   En cas d’exécution en tant que machine virtuelle, la mémoire dynamique ou toute autre fonctionnalité d’augmentation de la mémoire n’est pas prise en charge.
 > -   Pour bénéficier de performances optimales, choisissez **Hautes performances** comme **Option d’alimentation** pour la passerelle légère ATA.
@@ -126,13 +123,13 @@ Une passerelle légère ATA peut prendre en charge la surveillance d’un contr�
 
 Prenez en compte les éléments suivants quand vous devez déterminer le nombre de passerelles ATA à déployer.
 
--   **Forêts et domaines Active Directory**<br>
+-    **Forêts et domaines Active Directory**<br>
     ATA peut surveiller le trafic provenant de plusieurs domaines d’une même forêt Active Directory. La surveillance de plusieurs forêts Active Directory nécessite des déploiements ATA distincts. Vous ne devez pas configurer un déploiement ATA unique pour surveiller le trafic réseau des contrôleurs de domaine de plusieurs forêts.
 
--   **Mise en miroir des ports**<br>
+-    **Mise en miroir des ports**<br>
 Les considérations relatives à la mise en miroir des ports peuvent vous amener à déployer plusieurs passerelles ATA par site de succursale ou centre de données.
 
--   **Capacité**<br>
+-    **Capacité**<br>
     Une passerelle ATA peut prendre en charge la surveillance de plusieurs contrôleurs de domaine, en fonction de la quantité de trafic réseau des contrôleurs de domaine surveillés. 
 <br>
 
@@ -211,9 +208,3 @@ Pour déterminer le nombre de paquets par seconde, effectuez les opérations sui
 - [Configuration requise pour ATA](ata-prerequisites.md)
 - [Architecture d’ATA](ata-architecture.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
-
