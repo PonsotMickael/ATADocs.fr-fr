@@ -1,11 +1,11 @@
 ---
-title: "Gestion des paramètres de la détection ATA | Microsoft Docs"
+title: "Définir les paramètres de détection d’Advanced Threat Analytics | Microsoft Docs"
 description: "Décrit comment configurer une liste d’adresses IP et de sous-réseaux ayant des circonstances inhabituelles et qui doivent donc être gérés différemment des autres entités de votre réseau."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: f4f2ae30-4849-4a4f-8f6d-bfe99a32c746
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: 93f2a72c9623674c73b3ee83ecf12be8e0766365
-
-
+ms.openlocfilehash: 831bafd08e0eea821fda94bd4f519d92ffec3397
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -52,9 +49,3 @@ Dans la section **Détection**, vous pouvez définir les éléments suivants :
 - [Gestion des activités suspectes](working-with-suspicious-activities.md)
 - [Modification de la configuration d’ATA](modifying-ata-configuration.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

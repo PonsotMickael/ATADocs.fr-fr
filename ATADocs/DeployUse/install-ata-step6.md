@@ -1,11 +1,11 @@
 ---
-title: Installer ATA | Microsoft Docs
+title: "Installer Advanced Threat Analytics - Étape 6 | Microsoft Docs"
 description: "Lors de l’étape finale de l’installation d’ATA, vous configurez l’utilisateur Honeytoken."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 09/20/2016
+ms.date: 01/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: 17833f000135337fce82d69efb63fc6e1f9ea307
-
-
+ms.openlocfilehash: 70b8c4886f1c7459412eafc0646abfe1cc5d37d3
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -72,10 +69,4 @@ ATA démarre immédiatement l’analyse pour rechercher les activités suspectes
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)
 - [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
-
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

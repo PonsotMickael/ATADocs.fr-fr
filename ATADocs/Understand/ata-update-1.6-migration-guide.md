@@ -1,11 +1,11 @@
 ---
-title: "Mise à jour d’ATA vers la version 1.6 : guide de migration | Microsoft Docs"
+title: "Mise à jour d’Advanced Threat Analytics vers la version 1.6 - Guide de migration | Microsoft Docs"
 description: "Procédures pour mettre à jour ATA vers la version 1.6"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 0756ef64-3aef-4a69-8981-24fa8f285c6a
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
-ms.openlocfilehash: e361c1b659210934b9fcd70c7c438a47030eeeba
-
-
+ms.openlocfilehash: 258c7dd816c61f3622f234f97d64527e9a90cbe2
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 # <a name="ata-update-to-16-migration-guide"></a>Mise à jour d’ATA vers la version 1.6 : guide de migration
 La mise à jour vers ATA 1.6 comprend des améliorations dans les domaines suivants :
 
@@ -140,9 +137,3 @@ Si toutes les passerelles ATA indiquent qu’elles ont été synchronisées avec
 ## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
-

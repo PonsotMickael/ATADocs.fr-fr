@@ -1,11 +1,11 @@
 ---
-title: "Centre d’intégrité ATA | Microsoft Docs"
+title: "Surveiller les alertes du centre d’intégrité Advanced Threat Analytics | Microsoft Docs"
 description: "Le centre d’intégrité ATA vous permet de vérifier le bon fonctionnement du service ATA et vous avertit en cas de problèmes potentiels."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: bff593f07d70cd559a1ee75d3b75c61b6534432d
-
-
+ms.openlocfilehash: e929714ca33dfaa82bdf93dbaf230abadef1b86d
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -47,9 +44,3 @@ Pour vérifier l’intégrité globale de votre système, cliquez sur l’icône
 - [Gestion des paramètres de la détection ATA](working-with-detection-settings.md)
 - [Gestion des activités suspectes](working-with-suspicious-activities.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

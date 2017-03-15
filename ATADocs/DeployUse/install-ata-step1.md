@@ -1,11 +1,11 @@
 ---
-title: "Installer ATA - Étape 1 | Microsoft Docs"
+title: "Installer Advanced Threat Analytics - Étape 1 | Microsoft Docs"
 description: "La première étape de la procédure d’installation d’ATA consiste à télécharger le centre ATA et à l’installer sur le serveur de votre choix."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/9/2017
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b73fb769438a7290053c27766c233010079dca78
-ms.openlocfilehash: 313ae02742d4acc68c52d5481fdc24c0aa508681
-
-
+ms.openlocfilehash: 7ce25b89542cfb5dd380a50adb65d2435b2977d7
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -102,10 +99,4 @@ Effectuez les opérations suivantes sur le serveur du centre ATA.
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)
 - [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
-
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

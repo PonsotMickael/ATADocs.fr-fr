@@ -1,11 +1,11 @@
 ---
-title: "Installer ATA - Étape 3 | Microsoft Docs"
+title: "Installer Advanced Threat Analytics - Étape 3 | Microsoft Docs"
 description: "La troisième étape de la procédure d’installation d’ATA vous aide à télécharger le package d’installation de la passerelle ATA."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 01/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: c8f3f5453757fbc7a95aa2377a84c3a133d38181
-
-
+ms.openlocfilehash: d1336eae3196697c6d0c3b4d9c29c31af5e866cb
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -62,9 +59,3 @@ Le fichier zip comprend les éléments suivants :
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)
 - [Configuration requise pour ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

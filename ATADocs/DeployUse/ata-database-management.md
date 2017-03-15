@@ -1,11 +1,11 @@
 ---
-title: "Gestion de la base de données ATA | Microsoft Docs"
+title: "Gestion de la base de données Advanced Threat Analytics | Microsoft Docs"
 description: "Procédures pour vous aider à déplacer, sauvegarder ou restaurer la base de données ATA."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 05e49e23-6e0a-4ec0-9a63-a2093173c8a1
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7dc860fe31da1374a4466f8e56e55e6520bc10dc
-ms.openlocfilehash: 5ef56d1b615595baee95478be9baaebab7ed5cb4
-
-
+ms.openlocfilehash: e5bb1fa702d58b725b7052e5848741d4d24f279e
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -59,10 +56,4 @@ Reportez-vous à la [documentation MongoDB correspondante](http://docs.mongodb.o
 - [Architecture d’ATA](/advanced-threat-analytics/plan-design/ata-architecture)
 - [Prérequis au déploiement d’ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

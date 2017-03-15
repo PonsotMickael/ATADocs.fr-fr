@@ -1,11 +1,11 @@
 ---
-title: Configuration requise pour ATA | Microsoft Docs
+title: "Prérequis pour Advanced Threat Analytics | Microsoft Docs"
 description: "Décrit la configuration requise pour réussir le déploiement d’ATA dans votre environnement"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 2/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 67b430fbed97bd08e5f538043c783e70ed2ab956
-ms.openlocfilehash: 60ec036a8c22fb34c673653a6378437ab14f9853
-
-
+ms.openlocfilehash: ebc02319374079ebb09bb6480ebef7f871bc9beb
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
@@ -219,8 +216,13 @@ La passerelle légère ATA prend en charge l’installation sur un contrôleur d
 
 Le contrôleur de domaine peut être un contrôleur de domaine en lecture seule (RODC).
 
-Avant d’installer la passerelle légère ATA sur un contrôleur de domaine exécutant Windows Server 2012 R2 SP1, vérifiez que la mise à jour suivante a été installée : [KB2919355](https://support.microsoft.com/kb/2919355/).
-Pour vous en assurer, exécutez l’applet de commande Windows PowerShell suivante : `[Get-HotFix -Id kb2919355]`
+Avant d’installer la passerelle légère ATA sur un contrôleur de domaine exécutant Windows Server 2012 R2, vérifiez que la mise à jour suivante a été installée : [KB2919355](https://support.microsoft.com/kb/2919355/).
+
+Pour vous en assurer, exécutez l’applet de commande Windows PowerShell suivante : `[Get-HotFix -Id kb2919355]`
+
+Si l’installation est pour Windows Server 2012 R2 Server Core, la mise à jour suivante doit également être installée :  [KB3000850](https://support.microsoft.com/help/3000850/november-2014-update-rollup-for-windows-rt-8.1%2c-windows-8.1%2c-and-windows-server-2012-r2).
+
+ Pour vous en assurer, exécutez l’applet de commande Windows PowerShell suivante : `[Get-HotFix -Id kb3000850]`
 
 > [!NOTE]
 > Un minimum de 5 Go d’espace sont nécessaires et 10 Go sont recommandés. Cela inclut l’espace nécessaire pour les fichiers binaires ATA, les [journaux ATA](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs.md) et les [journaux de performances](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-perf-counters.md).
@@ -283,11 +285,5 @@ L’accès à la console ATA s’effectue au moyen d’un navigateur, avec prise
 - [Architecture d’ATA](ata-architecture.md)
 - [Installer ATA](/advanced-threat-analytics/deploy-use/install-ata)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-
-
-<!--HONumber=Dec16_HO2-->
 
 

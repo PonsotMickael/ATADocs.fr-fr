@@ -1,11 +1,11 @@
 ---
-title: "Mise à jour d’ATA vers la version 1.7 : guide de migration | Microsoft Docs"
+title: "Mise à jour d’Advanced Threat Analytics vers la version 1.7 - Guide de migration | Microsoft Docs"
 description: "Procédures pour mettre à jour ATA vers la version 1.7"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 8eefcd45-7a4b-4074-ac5b-1ffc48e6654a
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
-ms.openlocfilehash: 4fa8b77aeffff327672396e9819215cc536af918
-
-
+ms.openlocfilehash: 036e0309a5c7fa06b3a503a1b44705965916979f
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 # <a name="ata-update-to-17-migration-guide"></a>Mise à jour d’ATA vers la version 1.7 : guide de migration
 La mise à jour vers ATA 1.7 comprend des améliorations dans les domaines suivants :
 
@@ -91,9 +88,3 @@ Dans cette version, le même fichier d’installation (Microsoft ATA Center Setu
 ## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
-

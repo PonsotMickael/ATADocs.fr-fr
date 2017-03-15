@@ -1,11 +1,11 @@
 ---
-title: "Configurer la collecte d’événements | Microsoft Docs"
+title: "Configurer la collecte des événements dans Advanced Threat Analytics | Microsoft Docs"
 description: "Décrit les options de configuration disponibles pour collecter des événements avec ATA"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/08/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: d16364cd4113534c3101ebfa7750c0d0b837856d
-ms.openlocfilehash: 9ac9478512f2e5f6d15dd9b5cba9970a51ffa4da
-
-
+ms.openlocfilehash: f807b428dfcc12a15b814106cc190f2a72fa4254
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *S’applique à : Advanced Threat Analytics version 1.6 et 1.7*
 
 
@@ -187,56 +184,58 @@ Une fois que vous avez configuré la mise en miroir des ports des contrôleurs d
 
 Dans ce scénario, nous partons du principe que la passerelle ATA est un membre du domaine.
 
-1.  Ouvrez Utilisateurs et ordinateurs Active Directory, accédez au dossier **Builtin** et double-cliquez sur **Lecteurs des journaux d’événements**. 
-2.  Sélectionnez **Membres**.
-4.  Si **Service réseau** ne figure pas dans la liste, cliquez sur **Ajouter** et tapez **Service réseau** dans le champ **Entrez les noms d’objets à sélectionner**. Ensuite, cliquez sur **Vérifier les noms** et cliquez deux fois sur **OK**. 
+1.    Ouvrez Utilisateurs et ordinateurs Active Directory, accédez au dossier **Builtin** et double-cliquez sur **Lecteurs des journaux d’événements**. 
+2.    Sélectionnez **Membres**.
+4.    Si **Service réseau** ne figure pas dans la liste, cliquez sur **Ajouter** et tapez **Service réseau** dans le champ **Entrez les noms d’objets à sélectionner**. Ensuite, cliquez sur **Vérifier les noms** et cliquez deux fois sur **OK**. 
+
+Notez qu’après avoir ajouté le **Service réseau** au groupe **Lecteurs des journaux d’événements**, vous devez redémarrer les contrôleurs de domaine pour que la modification prenne effet.
 
 **Étape 2 : créer une stratégie sur les contrôleurs de domaine pour définir le paramètre Configurer le Gestionnaire d’abonnements cible.** 
 > [!Note] 
 > Vous pouvez créer une stratégie de groupe pour ces paramètres et appliquer la stratégie de groupe à chaque contrôleur de domaine surveillé par la passerelle ATA. Les étapes ci-dessous modifient la stratégie locale du contrôleur de domaine.     
 
-1.  Exécutez la commande suivante sur chaque contrôleur de domaine : *winrm quickconfig*
+1.    Exécutez la commande suivante sur chaque contrôleur de domaine : *winrm quickconfig*
 2.  Sur la ligne de commande, tapez *gpedit.msc*.
-3.  Développez **Configuration ordinateur > Modèles d’administration > Composants Windows > Transfert d’événements**.
+3.    Développez **Configuration ordinateur > Modèles d’administration > Composants Windows > Transfert d’événements**.
 
  ![Image de l’éditeur de groupe de stratégie locale](media/wef 1 local group policy editor.png)
 
-4.  Double-cliquez sur **Configurer le Gestionnaire d’abonnements cible**.
+4.    Double-cliquez sur **Configurer le Gestionnaire d’abonnements cible**.
    
-    1.  Sélectionnez **Activé**.
-    2.  Sous **Options**, cliquez sur **Afficher**.
-    3.  Sous **SubscriptionManagers**, entrez la valeur suivante et cliquez sur **OK** :  *Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (par exemple : Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
+    1.    Sélectionnez **Activé**.
+    2.    Sous **Options**, cliquez sur **Afficher**.
+    3.    Sous **SubscriptionManagers**, entrez la valeur suivante et cliquez sur **OK** :    *Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (par exemple : Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
  
    ![Configurer l’image d’abonnement cible](media/wef 2 config target sub manager.png)
    
-    5.  Cliquez sur **OK**.
-    6.  À partir d’une invite de commandes avec élévation de privilèges, tapez *gpupdate /force*. 
+    5.    Cliquez sur **OK**.
+    6.    À partir d’une invite de commandes avec élévation de privilèges, tapez *gpupdate /force*. 
 
 **Étape 3 : effectuer les opérations suivantes sur la passerelle ATA** 
 
-1.  Ouvrez une invite de commandes avec élévation de privilèges et tapez *wecutil qc*.
-2.  Ouvrez l’**Observateur d’événements**. 
-3.  Cliquez avec le bouton droit sur **Abonnements** et sélectionnez **Créer un abonnement**. 
+1.    Ouvrez une invite de commandes avec élévation de privilèges et tapez *wecutil qc*.
+2.    Ouvrez l’**Observateur d’événements**. 
+3.    Cliquez avec le bouton droit sur **Abonnements** et sélectionnez **Créer un abonnement**. 
 
-   1.   Entrez un nom et une description pour l’abonnement. 
-   2.   Pour **Journal de destination**, vérifiez que **Événements transférés** est sélectionné. Pour qu’ATA lise les événements, le journal de destination doit être **Événements transférés**. 
-   3.   Sélectionnez **Initialisation par l’ordinateur source** et cliquez sur **Sélectionner les groupes d’ordinateurs**.
-        1.  Cliquez sur **Ajouter un ordinateur de domaine**.
-        2.  Entrez le nom du contrôleur de domaine dans le champ **Entrer le nom de l’objet à sélectionner**. Ensuite, cliquez sur **Vérifier les noms**, puis sur **OK**. 
+   1.    Entrez un nom et une description pour l’abonnement. 
+   2.    Pour **Journal de destination**, vérifiez que **Événements transférés** est sélectionné. Pour qu’ATA lise les événements, le journal de destination doit être **Événements transférés**. 
+   3.    Sélectionnez **Initialisation par l’ordinateur source** et cliquez sur **Sélectionner les groupes d’ordinateurs**.
+        1.    Cliquez sur **Ajouter un ordinateur de domaine**.
+        2.    Entrez le nom du contrôleur de domaine dans le champ **Entrer le nom de l’objet à sélectionner**. Ensuite, cliquez sur **Vérifier les noms**, puis sur **OK**. 
        
         ![Image de l’Observateur d’événements](media/wef3 event viewer.png)
    
         
-        3.  Cliquez sur **OK**.
-   4.   Cliquez sur **Sélectionner des événements**.
+        3.    Cliquez sur **OK**.
+   4.    Cliquez sur **Sélectionner des événements**.
 
         1. Cliquez sur **Par journal** et sélectionnez **Sécurité**.
         2. Dans le champ **Inclut/exclut l’ID d’événement**, tapez **4776**, puis cliquez sur **OK**. 
 
  ![Image de filtre de requête](media/wef 4 query filter.png)
 
-   5.   Cliquez avec le bouton droit sur l’abonnement créé et sélectionnez **État d’exécution** pour voir s’il existe des problèmes avec l’état. 
-   6.   Après quelques minutes, vérifiez que l’événement 4776 s’affiche dans les événements transférés sur la passerelle ATA.
+   5.    Cliquez avec le bouton droit sur l’abonnement créé et sélectionnez **État d’exécution** pour voir s’il existe des problèmes avec l’état. 
+   6.    Après quelques minutes, vérifiez que l’événement 4776 s’affiche dans les événements transférés sur la passerelle ATA.
 
 
 ### <a name="wef-configuration-for-the-ata-lightweight-gateway"></a>Configuration WEF pour la passerelle légère ATA
@@ -244,29 +243,29 @@ Quand vous installez la passerelle légère ATA sur vos contrôleurs de domaine,
 
 **Étape 1 : ajouter le compte service réseau au groupe Lecteurs des journaux d’événements du domaine** 
 
-1.  Ouvrez Utilisateurs et ordinateurs Active Directory, accédez au dossier **Builtin** et double-cliquez sur **Lecteurs des journaux d’événements**. 
-2.  Sélectionnez **Membres**.
-3.  Si **Service réseau** ne figure pas dans la liste, cliquez sur **Ajouter** et tapez **Service réseau** dans le champ **Entrez les noms d’objets à sélectionner**. Ensuite, cliquez sur **Vérifier les noms** et cliquez deux fois sur **OK**. 
+1.    Ouvrez Utilisateurs et ordinateurs Active Directory, accédez au dossier **Builtin** et double-cliquez sur **Lecteurs des journaux d’événements**. 
+2.    Sélectionnez **Membres**.
+3.    Si **Service réseau** ne figure pas dans la liste, cliquez sur **Ajouter** et tapez **Service réseau** dans le champ **Entrez les noms d’objets à sélectionner**. Ensuite, cliquez sur **Vérifier les noms** et cliquez deux fois sur **OK**. 
 
 **Étape 2 : effectuer les étapes suivantes sur le contrôleur de domaine après l’installation de la passerelle légère ATA** 
 
-1.  Ouvrez une invite de commandes avec élévation de privilèges et tapez *winrm quickconfig* et *wecutil qc*. 
-2.  Ouvrez l’**Observateur d’événements**. 
-3.  Cliquez avec le bouton droit sur **Abonnements** et sélectionnez **Créer un abonnement**. 
+1.    Ouvrez une invite de commandes avec élévation de privilèges et tapez *winrm quickconfig* et *wecutil qc*. 
+2.    Ouvrez l’**Observateur d’événements**. 
+3.    Cliquez avec le bouton droit sur **Abonnements** et sélectionnez **Créer un abonnement**. 
 
-   1.   Entrez un nom et une description pour l’abonnement. 
-   2.   Pour **Journal de destination**, vérifiez que **Événements transférés** est sélectionné. Pour qu’ATA lise les événements, le journal de destination doit être Événements transférés.
+   1.    Entrez un nom et une description pour l’abonnement. 
+   2.    Pour **Journal de destination**, vérifiez que **Événements transférés** est sélectionné. Pour qu’ATA lise les événements, le journal de destination doit être Événements transférés.
 
-        1.  Sélectionnez **Initialisation par le collecteur** et cliquez sur **Sélectionner les ordinateurs**. Ensuite, cliquez sur **Ajouter un ordinateur de domaine**.
-        2.  Entrez le nom du contrôleur de domaine dans le champ **Entrer le nom de l’objet à sélectionner**. Ensuite, cliquez sur **Vérifier les noms**, puis sur **OK**.
+        1.    Sélectionnez **Initialisation par le collecteur** et cliquez sur **Sélectionner les ordinateurs**. Ensuite, cliquez sur **Ajouter un ordinateur de domaine**.
+        2.    Entrez le nom du contrôleur de domaine dans le champ **Entrer le nom de l’objet à sélectionner**. Ensuite, cliquez sur **Vérifier les noms**, puis sur **OK**.
 
             ![Image des propriétés d’abonnement](media/wef 5 sub properties computers.png)
 
-        3.  Cliquez sur **OK**.
-   3.   Cliquez sur **Sélectionner des événements**.
+        3.    Cliquez sur **OK**.
+   3.    Cliquez sur **Sélectionner des événements**.
 
-        1.  Cliquez sur **Par journal** et sélectionnez **Sécurité**.
-        2.  Dans le champ **Inclut/exclut l’ID d’événement**, tapez *4776*, puis cliquez sur **OK**. 
+        1.    Cliquez sur **Par journal** et sélectionnez **Sécurité**.
+        2.    Dans le champ **Inclut/exclut l’ID d’événement**, tapez *4776*, puis cliquez sur **OK**. 
 
 ![Image de filtre de requête](media/wef 4 query filter.png)
 
@@ -285,9 +284,3 @@ Pour plus d’informations, consultez [Configurer les ordinateurs pour transfér
 ## <a name="see-also"></a>Voir aussi
 - [Installer ATA](install-ata-step1.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
-
