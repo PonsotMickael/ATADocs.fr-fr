@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 929885891e2fc490e3ff358559e4995c545466b3
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+ms.openlocfilehash: 5c4662cd2d83135227cf86e339d5e30f9713f022
+ms.sourcegitcommit: 998e8aed5835b228e907aab78845723a02521741
 translationtype: HT
 ---
 *S’applique à : Advanced Threat Analytics version 1.7*
@@ -32,6 +32,16 @@ Pour comprendre le flux des composants ATA internes, consultez [Architecture AT
 2.  En conséquence, le composant précédent augmente **sa propre** taille jusqu’à empêcher le composant qui le précède d’envoyer des entités.
 
 3.  Cette situation se produit jusqu’au composant NetworkListener qui supprime le trafic quand il ne peut plus transférer d’entités.
+
+
+## <a name="retrieving-performance-monitor-files-for-troubleshooting"></a>Récupération des fichiers de surveillance des performances pour la résolution des problèmes
+
+Pour récupérer les fichiers de surveillance des performances (BLG) à partir de divers composants ATA :
+1.  Ouvrez l’Analyseur de performances.
+2.  Arrêtez l’ensemble de collecteurs de données nommé : « Microsoft ATA Gateway » ou « Microsoft ATA Center ».
+3.  Accédez au dossier de l’ensemble de collecteurs de données (par défaut, il s’agit de « C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs\DataCollectorSets » ou de « C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs\DataCollectorSets »).
+4.  Copiez le fichier BLG qui a été modifié le plus récemment.
+5.  Redémarrez l’ensemble de collecteurs de données nommé : « Microsoft ATA Gateway » ou « Microsoft ATA Center ».
 
 
 ## <a name="ata-gateway-performance-counters"></a>Compteurs de performances de la passerelle ATA

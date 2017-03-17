@@ -1,14 +1,17 @@
----
+--
 # <a name="required-metadata"></a>métadonnées requises
 
-titre : Résolution des problèmes liés au journal des erreurs Advanced Threat Analytics | Description Microsoft Docs : Décrit comment résoudre les erreurs courantes dans ATA mots clés : auteur : rkarlin ms.author : rkarlin manager : mbaldwin ms.date : 23/01/2017 ms.topic: article ms.prod: ms.service: advanced-threat-analytics ms.technology: ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
+titre : Résolution des problèmes liés au journal des erreurs Advanced Threat Analytics | Microsoft Docs description : Décrit comment résoudre les erreurs courantes dans ATA mots clés : auteur : rkarlin ms.author: rkarlin manager: mbaldwin ms.date: 14/03/2017 ms.topic: article ms.prod: ms.service: advanced-threat-analytics ms.technology: ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 
 # <a name="optional-metadata"></a>métadonnées facultatives
 
 #<a name="robots"></a>ROBOTS :
 #<a name="audience"></a>audience:
 #<a name="msdevlang"></a>ms.devlang :
-ms.reviewer: arzinger ms.suite: ems#ms.tgt_pltfrm:
+ms.reviewer: arzinger
+
+ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm :
 #<a name="mscustom"></a>ms.custom :
 
 ---
