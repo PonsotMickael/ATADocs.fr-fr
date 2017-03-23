@@ -1,28 +1,32 @@
---
-# <a name="required-metadata"></a>métadonnées requises
-
-titre : Résolution des problèmes liés au journal des erreurs Advanced Threat Analytics | Microsoft Docs description : Décrit comment résoudre les erreurs courantes dans ATA mots clés : auteur : rkarlin ms.author: rkarlin manager: mbaldwin ms.date: 14/03/2017 ms.topic: article ms.prod: ms.service: advanced-threat-analytics ms.technology: ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
-
-# <a name="optional-metadata"></a>métadonnées facultatives
-
-#<a name="robots"></a>ROBOTS :
-#<a name="audience"></a>audience:
-#<a name="msdevlang"></a>ms.devlang :
-ms.reviewer: arzinger
-
-ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm :
-#<a name="mscustom"></a>ms.custom :
-
 ---
-
+title: "Résolution des problèmes liés au journal des erreurs Advanced Threat Analytics | Microsoft Docs"
+description: "Décrit comment vous pouvez résoudre les erreurs courantes dans ATA."
+keywords: 
+author: rkarlin
+ms.author: rkarlin
+manager: mbaldwin
+ms.date: 3/14/2017
+ms.topic: article
+ms.prod: 
+ms.service: advanced-threat-analytics
+ms.technology: 
+ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
+ms.reviewer: arzinger
+ms.suite: ems
+ms.openlocfilehash: 0c72b14a042e473c0cd59811db63ecafc4ec02d4
+ms.sourcegitcommit: f18c0841d85e54eca940c8cbf226938b3c2bc80f
+translationtype: HT
+---
 *S’applique à : Advanced Threat Analytics version 1.7*
 
 
 
 # <a name="troubleshooting-the-ata-error-log"></a>Résolution des problèmes liés au journal des erreurs ATA
+
 Cette section détaille les erreurs possibles dans les déploiements d’ATA et les étapes requises pour les corriger.
+
 ## <a name="ata-gateway-errors"></a>Erreurs liées à la passerelle ATA
+
 |Erreur|Description|Résolution|
 |-------------|----------|---------|
 |System.DirectoryServices.Protocols.LdapException : Une erreur locale s’est produite.|La passerelle ATA n’a pas pu s’authentifier auprès du contrôleur de domaine.|1. Vérifiez que l’enregistrement DNS du contrôleur de domaine est correctement configuré sur le serveur DNS. <br>2. Vérifiez que l’heure de la passerelle ATA est synchronisée avec l’heure du contrôleur de domaine.|
