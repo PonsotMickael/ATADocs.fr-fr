@@ -5,15 +5,15 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/5/2017
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
 ms.prod: 
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4e0a6dd325c172ba4eb3b68fe4d4aab96f20684b
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+ms.openlocfilehash: ce017adf26e30a5fde3c89a30c33f87d71716a4c
+ms.sourcegitcommit: 998e8aed5835b228e907aab78845723a02521741
 translationtype: HT
 ---
 *S’applique à : Advanced Threat Analytics version 1.7*
@@ -22,6 +22,9 @@ translationtype: HT
 
 # <a name="ata-capacity-planning"></a>Planification de la capacité ATA
 Cette rubrique vous aide à déterminer le nombre de serveurs ATA nécessaires pour surveiller votre réseau, notamment le nombre de passerelles ATA et/ou de passerelles légères ATA dont vous avez besoin et la capacité serveur pour votre centre ATA et les passerelles ATA.
+
+> [!NOTE] 
+> Vous pouvez déployer le Centre ATA sur n’importe quel fournisseur IaaS du moment que vous respectez les critères de performance décrits dans cet article.
 
 ##<a name="using-the-sizing-tool"></a>Utilisation de l’outil de dimensionnement
 La manière recommandée la plus simple de déterminer la capacité pour votre déploiement ATA est d’utiliser l’[outil de dimensionnement ATA](http://aka.ms/atasizingtool). Exécutez l’outil de dimensionnement ATA, puis dans les résultats du fichier Excel, utilisez les champs suivants pour déterminer la capacité ATA dont vous avez besoin :
@@ -60,6 +63,7 @@ Le centre ATA nécessite l’équivalent de 30 jours de données qui est le min
 > -   Le centre ATA peut gérer un maximum agrégé de 400 000 images par seconde provenant de l’ensemble des contrôleurs de domaine surveillés. Dans certains environnements, le même centre ATA peut gérer un trafic global supérieur à 400 000. Contactez askcesec@microsoft.com pour obtenir de l’assistance sur ce type d’environnement.
 > -   Les quantités de stockage citées ici sont des valeurs nettes. Vous devez toujours prendre en compte une croissance future et vous assurer que le disque sur lequel réside la base de données comprend au moins 20 % d’espace libre.
 > -   Si l’espace libre atteint la valeur minimale de 20 % ou 100 Go, la collecte de données la plus ancienne est supprimée. Ce processus de suppression continue jusqu’à atteindre 5 % ou 50 Go d’espace libre. Une fois ces valeurs atteintes, la collecte de données s’arrête.
+> - Il vous est possible de déployer le Centre ATA sur n’importe quel fournisseur IaaS du moment que vous respectez les critères de performance qui sont décrits dans cet article.
 > -   La latence de stockage pour les activités de lecture et d’écriture doit être inférieure à 10 ms.
 > -   Le rapport entre les activités de lecture et d’écriture est d’environ 1 pour 3 en dessous de 100 000 paquets par seconde et de 1 pour 6 au-dessus de 100 000 paquets par seconde.
 > -   En cas d’exécution en tant que machine virtuelle, la mémoire dynamique ou toute autre fonctionnalité d’augmentation de la mémoire n’est pas prise en charge.

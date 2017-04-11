@@ -25,9 +25,9 @@
 ### [Étape 3 Télécharger le package de passerelle](install-ata-step3.md)
 ### [Étape 4 Installer la passerelle](install-ata-step4.md)
 ### [Étape 5 Configurer la passerelle](install-ata-step5.md)
-### [Étape 6 Exclusinos et honeytoken](install-ata-step6.md)
+### [Étape 6 Exclusions et honeytoken](install-ata-step6.md)
 ### [Installation sans assistance](ata-silent-installation.md)
-# Utilisez les stratégies de gestion des applications mobiles
+# Utilisez
 ## [Modifier l’adresse IP du centre ATA](modifying-ata-config-centerip.md)
 ## [Modifier le certificat du centre ATA](modifying-ata-config-centercert.md)
 ## [Modifier l’URL de la console ATA](modifying-ata-config-consoleurl.md)
