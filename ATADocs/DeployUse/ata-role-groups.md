@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/7/2017
+ms.date: 4/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 69034316493b8783cbeaaae9aac6af237da39dc8
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+ms.openlocfilehash: 6243c03af9e40b8774b2ce7089a47e54569ba45e
+ms.sourcegitcommit: cb2a4df6805d41bf030d3439ef87281fc6acc98f
 translationtype: HT
 ---
 *S’applique à : Advanced Threat Analytics version 1.7*
@@ -27,7 +27,7 @@ translationtype: HT
 Les groupes de rôles permettent de gérer l’accès pour ATA. À l’aide des groupes de rôles, vous pouvez séparer les tâches au sein de votre équipe de sécurité et accorder uniquement le nombre d’accès dont les utilisateurs ont besoin pour effectuer leur travail. Cet article explique ce qu’est la gestion des accès et l’autorisation de rôle ATA, puis vous aide à configurer des groupes de rôles dans ATA.
 
 > [!NOTE]
-> Tout administrateur local sur le centre ATA est automatiquement un administrateur Microsoft Advanced Threat Analytics.
+> Tout administrateur local du Centre ATA est automatiquement administrateur Microsoft Advanced Threat Analytics.
 
 ## <a name="types-of-ata-role-groups"></a>Types de groupes de rôles ATA 
 
@@ -46,10 +46,13 @@ ATA présente 3 types de groupe de rôles : ATA Administrators, ATA Users et AT
 |Passerelle – Supprimer |Disponible|Non disponible|Non disponible|
 |Contrôleur de domaine surveillé - Ajouter |Disponible|Non disponible|Non disponible|
 |Contrôleur de domaine surveillé – Supprimer|Disponible|Non disponible|Non disponible|
+|Afficher les alertes et les activités suspectes|Disponible|Disponible|Disponible|
+
 
 Quand les utilisateurs tentent d’accéder à une page qui n’est pas disponible pour leur groupe de rôles, ils sont redirigés vers la page ATA d’accès non autorisé. 
 
 ## <a name="add--remove-users---ata-role-groups"></a>Ajouter \ supprimer des utilisateurs - Groupes de rôles ATA 
 
-ATA utilise les groupes Windows locaux comme base pour les groupes de rôles. Pour ajouter ou supprimer des utilisateurs, utilisez la console MMC **Utilisateurs et groupes locaux** (Lusrmgr.msc). Sur un ordinateur joint à un domaine, vous pouvez ajouter des comptes de domaine et des comptes locaux. 
+ATA utilise les groupes Windows locaux comme base pour les groupes de rôles. Les groupes de rôles doivent être gérés sur le serveur du centre ATA.
+Pour ajouter ou supprimer des utilisateurs, utilisez la console MMC **Utilisateurs et groupes locaux** (Lusrmgr.msc). Sur un ordinateur joint à un domaine, vous pouvez ajouter des comptes de domaine et des comptes locaux. 
 
