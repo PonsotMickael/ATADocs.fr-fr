@@ -42,6 +42,7 @@
 ## [Gestion de la base de données ATA](ata-database-management.md)
 ## [Configuration de l’exportation/importation d’ATA](ata-configuration-file.md)
 ## [Gérer la télémétrie ATA](manage-telemetry-settings.md)
+## [Examiner les attaques PAC falsifiées](use-case-forged-pac.md)
 # Dépannage
 ## [Résolution des problèmes à l’aide des erreurs connues](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-known-errors)
 ## [Résoudre les problèmes à l’aide des journaux](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
