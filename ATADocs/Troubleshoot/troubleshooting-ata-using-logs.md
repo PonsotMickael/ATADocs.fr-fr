@@ -15,7 +15,8 @@ ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 4a5b48f490a13cfb990f49b864462b556e36c3ce
 ms.sourcegitcommit: cb2a4df6805d41bf030d3439ef87281fc6acc98f
-translationtype: HT
+ms.translationtype: HT
+ms.contentlocale: fr-FR
 ---
 *S’applique à : Advanced Threat Analytics version 1.7*
 
@@ -27,7 +28,7 @@ Les journaux ATA offrent un aperçu de ce que fait chaque composant ATA à un mo
 ## <a name="ata-gateway-logs"></a>Journaux de la passerelle ATA
 Dans cette section, chaque référence à la passerelle ATA concerne également la passerelle légère ATA. 
 
-Les journaux de la passerelle ATA se trouvent dans un sous-dossier nommé **Logs** où ATA est installé. L’emplacement par défaut est : **\*C:\Program Files\Microsoft Advanced Threat Analytics*. Dans l’emplacement de l’installation par défaut, il se trouve ici : **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
+Les journaux de la passerelle ATA se trouvent dans un sous-dossier nommé **Logs** où ATA est installé. L’emplacement par défaut est : **C:\Program Files\Microsoft Advanced Threat Analytics\**. Dans l’emplacement de l’installation par défaut, il se trouve ici : **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
 
 La passerelle ATA dispose des journaux suivants :
 
