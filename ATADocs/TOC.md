@@ -1,4 +1,4 @@
-# Understand and Explor
+# Understand and Explore
 ## [What is Microsoft Advanced Threat Analytics?](what-is-ata.md)
 ## [What threats does ATA detect?](ata-threats.md)
 ## ATA Release notes
