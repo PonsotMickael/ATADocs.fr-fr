@@ -1,51 +1,8 @@
 ---
-title: "Définir les paramètres de détection d’Advanced Threat Analytics | Microsoft Docs"
-description: "Décrit comment configurer une liste d’adresses IP et de sous-réseaux ayant des circonstances inhabituelles et qui doivent donc être gérés différemment des autres entités de votre réseau."
-keywords: 
-author: rkarlin
-ms.author: rkarlin
-manager: mbaldwin
-ms.date: 01/23/2017
-ms.topic: article
-ms.prod: 
-ms.service: advanced-threat-analytics
-ms.technology: 
-ms.assetid: f4f2ae30-4849-4a4f-8f6d-bfe99a32c746
-ms.reviewer: bennyl
-ms.suite: ems
-ms.openlocfilehash: 831bafd08e0eea821fda94bd4f519d92ffec3397
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
-translationtype: HT
+redirect_url: /advanced-threat-analytics/working-with-detection-settings
+ms.openlocfilehash: d7541af0107849b4acf4208aec21c0b30369cfc1
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/30/2017
 ---
-*S’applique à : Advanced Threat Analytics version 1.7*
-
-
-
-# <a name="working-with-ata-detection-settings"></a>Gestion des paramètres de la détection ATA
-La page de configuration **Détection** permet de configurer une liste d’adresses IP et de sous-réseaux ayant des circonstances inhabituelles et qui doivent donc être gérés différemment des autres entités de votre réseau.
-
-## <a name="setting-up-detection"></a>Configuration de la détection
-Dans la section **Détection**, vous pouvez définir les éléments suivants :
-
--   **SID de comptes honeytoken** : ce compte d’utilisateur ne doit pas avoir d’activité réseau. Ce compte sera configuré comme l’utilisateur honeytoken ATA. Si quelqu’un tente d’utiliser ce compte d’utilisateur, ATA crée une alerte d’activité suspecte avec une indication d’activité malveillante. Pour configurer l’utilisateur honeytoken, vous aurez besoin du SID du compte d’utilisateur, et non du nom d’utilisateur.
-
->[!NOTE]
-> Vous trouverez le SID de l’utilisateur sous l’onglet *Informations sur le compte* du profil de l’utilisateur dans la console ATA.
-
-
-![Paramètres de détection ATA - honeytoken](media/ata-detection-settings-honeytoken-1.7.png)
-
-
-**Exclusions de détection** - Vous pouvez exclure des adresses IP des détections suivantes. Si vous ajoutez une adresse IP dans une de ces listes, ATA exclura cette adresse IP de ce type précis d’activité.
-
--   Exclusions d’adresses IP DNS Reconnaissance
-
--   Exclusions d’adresses IP Pass-the-Ticket
-
-![Paramètres de détection ATA - exclusions](media/ata-detection-settings-exclusions-1.7.png)
-
-
-## <a name="see-also"></a>Voir aussi
-- [Gestion des activités suspectes](working-with-suspicious-activities.md)
-- [Modification de la configuration d’ATA](modifying-ata-configuration.md)
-- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
