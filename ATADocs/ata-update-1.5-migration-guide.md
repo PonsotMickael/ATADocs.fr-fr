@@ -1,140 +1,133 @@
 ---
-# required metadata
-
-title: Advanced Threat Analytics update to 1.5 migration guide | Microsoft Docs
-description: Procedures to update ATA to version 1.5
-keywords:
+title: "Mise à jour d’Advanced Threat Analytics vers la version 1.5 - Guide de migration | Microsoft Docs"
+description: "Procédures pour mettre à jour ATA vers la version 1.5"
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: daaa2b3d495900d84fe7b61afb8e3bb22b3d7f72
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/30/2017
 ---
+# <a name="ata-update-to-15-migration-guide"></a>Mise à jour d’ATA vers la version 1.5 : guide de migration
+La mise à jour vers ATA 1.5 comprend des améliorations dans les domaines suivants :
 
-# ATA update to 1.5 migration guide
-The update to ATA 1.5 provides improvements in the following areas:
+-   Détection plus rapide
 
--   Faster detection times
+-   Algorithme de détection automatique amélioré pour les périphériques de traduction d’adresses réseau (NAT)
 
--   Enhanced automatic detection algorithm for NAT (network address translation) devices
+-   Processus de résolution des noms amélioré pour les appareils non joints à un domaine
 
--   Enhanced name resolution process for non-domain joined devices
+-   Prise en charge de la migration des données pendant les mises à jour
 
--   Support for data migration during product updates
+-   Meilleure réactivité de l’interface utilisateur face à des activités suspectes impliquant plusieurs milliers d’entités
 
--   Better UI responsiveness for suspicious activities with thousands of entities involved
+-   Résolution automatique améliorée pour les alertes de surveillance
 
--   Improved auto-resolution of monitoring alerts
+-   Compteurs de performances supplémentaires pour une meilleure surveillance et une meilleure résolution des problèmes
 
--   Additional performance counters for enhanced monitoring and troubleshooting
-
-## Updating ATA to version 1.5
+## <a name="updating-ata-to-version-15"></a>Mise à jour d’ATA vers la version 1.5
 > [!NOTE]
-> If ATA is not installed in your environment, download the full version of ATA which includes version 1.5  and follow the standard installation procedure described in [Install ATA](install-ata-step1.md).
+> Si ATA n’est pas installé dans votre environnement, téléchargez la version complète d’ATA qui inclut la version 1.5. Suivez ensuite la procédure d’installation standard décrite dans [Installer ATA](install-ata-step1.md).
 
-If you already have ATA version 1.4 deployed, this procedure will walk you through the steps necessary to update your installation.
+Si vous avez déjà déployé ATA version 1.4, cette procédure vous guidera tout au long des étapes nécessaires pour mettre à jour votre installation.
 
-Follow these steps to update to ATA version 1.5:
+Suivez ces étapes pour mettre à jour ATA vers la version 1.5 :
 
-1.  Download ATA v1.5 from VLSC or MSDN.
+1.  Téléchargez ATA v1.5 à partir de VLSC ou de MSDN.
       > [!NOTE]
-         You can also use the updated full version of ATA to perform the update to version 1.5.
+         Vous pouvez aussi utiliser la version complète d’ATA pour mettre à jour votre installation vers la version 1.5.
 
 
-2.  Update the ATA Center
+2.  Mettez à jour le centre ATA.
 
-3.  Download the updated ATA Gateway package
+3.  Téléchargez le package mis à jour de la passerelle ATA.
 
-4.  Update the ATA Gateways
+4.  Mettez à jour les passerelles ATA.
 
     > [!IMPORTANT]
-    > Update all the ATA Gateways to make sure ATA functions properly.
+    > Pour assurer le bon fonctionnement d’ATA, mettez à jour toutes les passerelles.
 
-### Step 1: Update the ATA Center
+### <a name="step-1-update-the-ata-center"></a>Étape 1 : mettre à jour le centre ATA
 
-1.  Back up your database: (optional)
+1.  Sauvegardez votre base de données (facultatif) :
 
-    -   If the ATA Center is running as a virtual machine and you want to take a checkpoint, shut the virtual machine down first.
+    -   Si le centre ATA s’exécute en tant que machine virtuelle et que vous souhaitez effectuer un point de contrôle, commencez par arrêter la machine virtuelle.
 
-    -   If the ATA Center is running on a physical server, follow the recommended procedure to [back up MongoDB](https://docs.mongodb.org/manual/core/backups/).
+    -   Si le centre ATA s’exécute sur un serveur physique, suivez la procédure recommandée pour [sauvegarder MongoDB](https://docs.mongodb.org/manual/core/backups/).
 
-2.  Run the update file, Microsoft ATA Center Update.exe, and follow the instructions on the screen to install the update.
+2.  Exécutez le fichier de mise à jour, Microsoft ATA Center Update.exe, puis suivez les instructions à l’écran pour installer la mise à jour.
 
-    1.  In the **Welcome** page, select your language and click **Next**.
+    1.  Dans la page **Bienvenue**, sélectionnez votre langue, puis cliquez sur **Suivant**.
 
-    2.  Read the End User License Agreement and if you accept the terms, click the checkbox and click **Next**.
+    2.  Lisez le Contrat de Licence Utilisateur Final et, si vous en acceptez les termes, cochez la case et cliquez sur **Suivant**.
 
-    3.  Select whether you want to run the full (default) or partial migration.
+    3.  Indiquez si vous souhaitez exécuter la migration complète (par défaut) ou la migration partielle.
 
-        ![Choose full or partial migration](media/ATA-center-fullpartial.png)
+        ![Choisissez la migration complète ou partielle.](media/ATA-center-fullpartial.png)
 
-        -   If you select **Partial** migration, any network traffic collected and forwarded Windows events analyzed by ATA will be deleted and user behavioral profiles will have to be re-learned; this takes a minimum of three weeks. If you are running low on disk space then it is helpful to run a **Partial** migration.
+        -   Si vous sélectionnez la migration **Partielle**, tout le trafic réseau collecté et les événements Windows transférés qui ont été analysés par ATA sont supprimés. Les profils de comportement des utilisateurs doivent aussi être réappris, ce qui nécessite au moins trois semaines. Si vous manquez d’espace disque, il est judicieux d’opter pour une migration **Partielle**.
 
-        -   If you run a **Full** migration, you will need additional disk space, as calculated for you on the upgrade page, and the migration may take longer, depending on the network traffic. The full migration retains all previously collected data and user behavioral profiles are maintained, meaning that it will not take additional time for ATA to learn behavior profiles and anomalous behavior can be detected immediately after update.
+        -   Si vous exécutez une migration **Complète**, vous avez besoin de plus d’espace disque (quantité indiquée dans la page de mise à niveau). Il est aussi possible que la migration prenne plus de temps en fonction du trafic réseau. La migration complète conserve toutes les données collectées précédemment et préserve les profils de comportement des utilisateurs. Comme il est inutile de réapprendre les profils de comportement, ATA peut détecter les comportements anormaux dès la mise à jour terminée.
 
-3.  Click **Update**. Once you click Update, ATA is offline until the update procedure is complete.
+3.  Cliquez sur **Mettre à jour**. Quand vous cliquez sur Mettre à jour, ATA passe en mode hors connexion jusqu’à la fin de la mise à jour.
 
-4.  After updating the ATA Center, the ATA Gateways will report that they are now outdated.
+4.  Une fois le centre ATA mis à jour, les passerelles ATA indiquent qu’elles sont obsolètes.
 
-    ![Outdated gateways image](media/ATA-center-outdated.png)
+    ![Image des passerelles obsolètes](media/ATA-center-outdated.png)
 
 > [!IMPORTANT]
-> - Update all the ATA Gateways to make sure ATA functions properly.
+> - Pour assurer le bon fonctionnement d’ATA, mettez à jour toutes les passerelles.
 
-### Step 2. Download the ATA Gateway setup package
-After configuring the domain connectivity settings you can download the ATA Gateway setup package.
+### <a name="step-2-download-the-ata-gateway-setup-package"></a>Étape 2. Télécharger le package d’installation de la passerelle ATA
+Après avoir configuré les paramètres de connectivité du domaine, vous pouvez télécharger le package d’installation de la passerelle ATA.
 
-To download the ATA Gateway package:
+Pour télécharger le package d’installation de la passerelle ATA :
 
-1.  Delete any previous versions of the ATA Gateway package you previously downloaded.
+1.  Supprimez les versions précédemment téléchargées du package de la passerelle ATA.
 
-2.  On the ATA Gateway machine, open a browser and enter the IP address you configured in the ATA Center for the ATA Console. When the ATA Console opens, click on the settings icon and select **Configuration**.
+2.  Sur la machine de la passerelle ATA, ouvrez un navigateur et entrez l’adresse IP de la console ATA que vous avez configurée dans le centre ATA. Une fois la console ATA ouverte, cliquez sur l’icône des paramètres et sélectionnez **Configuration**.
 
-    ![Configuration settings icon](media/ATA-config-icon.JPG)
+    ![Icône des paramètres de configuration](media/ATA-config-icon.png)
 
-3.  In the **ATA Gateways** tab, click **Download ATA Gateway Setup**.
+3.  Sous l’onglet **Passerelles ATA**, cliquez sur **Télécharger l’installation de la passerelle ATA**.
 
-4.  Save the package locally.
+4.  Enregistrez le package localement.
 
-The zip file includes the following:
+Le fichier zip comprend les éléments suivants :
 
--   ATA Gateway installer
+-   Programme d’installation de la passerelle ATA
 
--   Configuration setting file with the required information to connect to the ATA Center
+-   Fichier de paramètres de configuration avec les informations requises pour se connecter au centre ATA
 
-### Step 3: Update the ATA Gateways
+### <a name="step-3-update-the-ata-gateways"></a>Étape 3 : mettre à jour les passerelles ATA
 
-1.  On each ATA Gateway, extract the files from the ATA Gateway package and run the file Microsoft ATA Gateway Setup.
+1.  Sur chaque passerelle ATA, extrayez les fichiers du package de passerelle ATA et exécutez le fichier Microsoft ATA Gateway Setup.
 
     > [!NOTE]
-    > You can also use this ATA Gateway package to install new ATA Gateways.
+    > Vous pouvez également utiliser ce package pour installer de nouvelles passerelles ATA.
 
-2.  Your previous settings will be preserved, but it may take a few minutes until for the service to restart.
+2.  Vos paramètres précédents sont conservés, mais le redémarrage du service peut prendre quelques minutes.
 
-3.  Repeat this step for all other ATA Gateways deployed.
+3.  Répétez cette étape pour toutes les autres passerelles ATA déployées.
 
 > [!NOTE]
-> After successfully updating an ATA Gateway, the outdated notification for the specific ATA Gateway will go away.
+> Une fois la passerelle ATA mise à jour avec succès, la notification d’obsolescence de cette passerelle ATA disparaît.
 
-You will know that all the ATA Gateways have been successfully updated when all the ATA Gateways report that they are successfully synced and the message that an updated ATA Gateway package is available is no longer displayed.
+Si toutes les passerelles ATA indiquent qu’elles ont été synchronisées avec succès et que le message signalant l’existence d’un package de passerelle ATA mis à jour ne s’affiche plus, vous savez que toutes les passerelles ATA ont été correctement mises à jour.
 
-![Updated gateways image](media/ATA-gw-updated.png)
+![Image des passerelles mises à jour](media/ATA-gw-updated.png)
 
-## See Also
+## <a name="see-also"></a>Voir aussi
 
-- [Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
