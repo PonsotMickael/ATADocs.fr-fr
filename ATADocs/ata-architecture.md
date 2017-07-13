@@ -1,192 +1,198 @@
 ---
-# required metadata
-
-title: Advanced Threat Analytics architecture | Microsoft Docs
-description: Describes the architecture of Microsoft Advance Threat Analytics (ATA)
-keywords:
+title: "Architecture d’Advanced Threat Analytics | Microsoft Docs"
+description: "Décrit l’architecture de Microsoft Advanced Threat Analytics (ATA)"
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 07/5/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: 4d95e5b13d06ea0963b7cac129be4eb1458e5d4c
+ms.sourcegitcommit: 53b56220fa761671442da273364bdb3d21269c9e
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/05/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
-
-
-
-# ATA Architecture
-The Advanced Threat Analytics architecture is detailed in this diagram:
-
-![ATA architcture topology diagram](media/ATA-architecture-topology.jpg)
-
-ATA monitors your domain controller network traffic by utilizing port mirroring to an ATA Gateway using physical or virtual switches, or by deploying the ATA Lightweight Gateway directly on your domain controllers, which removes the requirement for port mirroring. In addition, ATA can leverage Windows events (forwarded directly from your domain controllers or from a SIEM server) and analyze the data for attacks and threats.
-This section describes the flow of network and event capturing and drills down to describe the functionality of the main components of ATA: the ATA Gateway, ATA Lightweight Gateway (which has the same core functionality as the ATA Gateway) and the ATA Center.
-
-
-![ATA traffic flow diagram](media/ATA-traffic-flow.jpg)
-
-## ATA Components
-ATA consists of the following:
-
--   **ATA Center** <br>
-The ATA Center receives data from any ATA Gateways and/or ATA Lightweight Gateways you deploy.
--   **ATA Gateway**<br>
-The ATA Gateway is installed on a dedicated server that monitors the traffic from your domain controllers using either port mirroring or a network TAP.
--   **ATA Lightweight Gateway**<br>
-The ATA Lightweight Gateway is installed directly on your domain controllers and monitors their traffic directly, without the need for a dedicated server or configuration of port mirroring. It is an alternative to the ATA Gateway.
-
-An ATA deployment can consist of a single ATA Center connected to all ATA Gateways, all ATA Lightweight Gateways or a combination of ATA Gateways and ATA Lightweight Gateways.
-
-
-## Deployment options
-You can deploy ATA using the following combination of gateways:
-
--	**Using only ATA Gateways** <br>
-If your ATA deployment contains only ATA Gateways, without any ATA Lightweight Gateways, all the domain controllers must be configured to enable port mirroring to an ATA Gateway or network TAPs must be in place.
--	**Using only ATA Lightweight Gateways**<br>
-If your ATA deployment contains only ATA Lightweight Gateways, the ATA Lightweight Gateways are deployed on each domain controller and no additional servers or port mirroring configuration is necessary.
--	**Using both ATA Gateways and ATA Lightweight Gateways**<br>
-If your ATA deployment includes both ATA Gateways and ATA Lightweight Gateways, where the ATA Lightweight Gateway is installed on some of your domain controllers (for example, all domain controllers in your branch sites) while other domain controllers are monitored by ATA Gateways (for example, the larger domain controllers in your main data centers).
-
-In all 3 scenarios, all the gateways send their data to the ATA Center.
+*S’applique à : Advanced Threat Analytics version 1.8*
 
 
 
 
-## ATA Center
-The **ATA Center** performs the following functions:
+# Architecture d’ATA
+<a id="ata-architecture" class="xliff"></a>
+L’architecture d’Advanced Threat Analytics est détaillée dans ce diagramme :
 
--   Manages ATA Gateway and ATA Lightweight Gateway configuration settings
+![Diagramme de la topologie de l’architecture ATA](media/ATA-architecture-topology.jpg)
 
--   Receives data from ATA Gateways and ATA Lightweight Gateways 
+ATA surveille le trafic réseau de votre contrôleur de domaine en utilisant la mise en miroir des ports sur une passerelle ATA à l’aide de commutateurs physiques ou virtuels. Si vous déployez la passerelle légère ATA directement sur vos contrôleurs de domaine, la mise en miroir des ports est inutile. De plus, ATA peut tirer parti des événements Windows (transférés directement à partir de vos contrôleurs de domaine ou d’un serveur SIEM) et analyser les données à la recherche d’attaques et de menaces.
+Cette section décrit le flux de capture réseau et d’événements, ainsi que les fonctionnalités des principaux composants d’ATA : la passerelle ATA, la passerelle légère ATA (qui a les mêmes fonctionnalités de base que la passerelle ATA) et le centre ATA.
 
--   Detects suspicious activities
 
--   Runs ATA behavioral machine learning algorithms to detect abnormal behavior
+![Diagramme du flux de trafic ATA](media/ATA-traffic-flow.jpg)
 
--   Runs various deterministic algorithms to detect advanced attacks based on the attack kill chain
+## Composants ATA
+<a id="ata-components" class="xliff"></a>
+ATA est constitué des composants suivants :
 
--   Runs the ATA Console
+-   **Centre ATA** <br>
+Le centre ATA reçoit des données à partir des passerelles ATA et/ou ATA légères que vous déployez.
+-   **Passerelle ATA**<br>
+La passerelle ATA est installée sur un serveur dédié qui surveille le trafic à partir de vos contrôleurs de domaine à l’aide de la mise en miroir des ports ou d’un TAP réseau.
+-   **Passerelle légère ATA**<br>
+La passerelle ATA légère est installée directement sur vos contrôleurs de domaine et analyse directement leur trafic, sans recourir à un serveur dédié ou à une configuration de mise en miroir des ports. Il s’agit d’une alternative à la passerelle ATA.
 
--   Optional: The ATA Center can be configured to send emails and events when a suspicious activity is detected.
+Un déploiement ATA peut se composer d’un seul centre ATA connecté à toutes les passerelles ATA, à toutes les passerelles légères ATA ou à une combinaison de passerelles ATA et de passerelles légères ATA.
 
-The ATA Center receives parsed traffic from the ATA Gateway and ATA Lightweight Gateway, performs profiling, runs deterministic detection and runs machine learning and behavioral algorithms to learn about your network to enable detection of anomalies and warn you of suspicious activities.
 
-|||
-|-|-|
-|Entity Receiver|Receives batches of entities from all ATA Gateways and ATA Lightweight Gateways .|
-|Network Activity Processor|Processes all the network activities within each batch received. For example, matching between the various Kerberos steps performed from potentially different computers|
-|Entity Profiler|Profiles all the Unique Entities according to the traffic and events. For example, this is where ATA updates the list of logged-on computers for each user profile.|
-|Center Database|Manages the writing process of the Network Activities and events into the database. |
-|Database|ATA utilizes MongoDB for purposes of storing all the data in the system:<br /><br />-   Network activities<br />-   Event activities<br />-   Unique entities<br />-   Suspicious activities<br />-   ATA configuration|
-|Detectors|The Detectors use machine learning algorithms and deterministic rules to find suspicious activities and abnormal user behavior in your network.|
-|ATA Console|The ATA Console is for configuring ATA and monitoring suspicious activities detected by ATA on your network. The ATA Console is not dependent on the ATA Center service and will run even when the service is stopped, as long as it can communicate with the database.|
-Consider the following when deciding how many ATA Centers to deploy on your network:
+## Options de déploiement
+<a id="deployment-options" class="xliff"></a>
+Vous pouvez déployer ATA à l’aide de la combinaison de passerelles suivante :
 
--   One ATA Center can monitor a single Active Directory forest. If you have more than one Active Directory forest you will need a minimum of one ATA Center per Active Directory forest.
+-   **Utilisation de passerelles ATA uniquement** <br>
+Si votre déploiement ATA contient uniquement des passerelles ATA, sans aucune passerelle légère ATA, tous les contrôleurs de domaine doivent être configurés pour activer la mise en miroir des ports sur une passerelle ATA ou des TAP réseau doivent être en place.
+-   **Utilisation de passerelles légères ATA uniquement**<br>
+Si votre déploiement ATA contient uniquement des passerelles légères ATA, celles-ci sont déployées sur chaque contrôleur de domaine et aucun serveur supplémentaire ou configuration de mise en miroir des ports n’est nécessaire.
+-   **Utilisation de passerelles ATA et de passerelles légères ATA**<br>
+Votre déploiement ATA comprend des passerelles ATA et des passerelles légères ATA. Les passerelles légères ATA sont installées sur certains de vos contrôleurs de domaine (par exemple, tous les contrôleurs de domaine de vos sites de succursale). En même temps, d’autres contrôleurs de domaine sont surveillés par des passerelles ATA (par exemple, les plus grands contrôleurs de domaine de vos principaux centres de données).
 
--    In very large Active Directory deployments, a single ATA Center might not be able to handle all of the traffic of all your domain controllers. In this case, multiple ATA Centers will be required. The number of ATA Centers should be dictated by [ATA capacity planning](ata-capacity-planning.md).
+Dans tous ces scénarios, toutes les passerelles envoient leurs données au centre ATA.
 
-## ATA Gateway and ATA Lightweight Gateway
 
-### Gateway core functionality
-The **ATA Gateway** and **ATA Lightweight Gateway** both have the same core functionality:
 
--   Capture and inspect domain controller network traffic (port mirrored traffic in the case of an ATA Gateway and local traffic of the domain controller in the case of an ATA Lightweight Gateway) 
 
--   Receive Windows events from SIEM or Syslog servers, or from domain controllers using Windows Event Forwarding
+## Centre ATA
+<a id="ata-center" class="xliff"></a>
+Le **centre ATA** effectue ce qui suit :
 
--   Retrieve data about users and computers from the Active Directory domain
+-   Gère les paramètres de configuration des passerelles ATA et des passerelles légères ATA
 
--   Perform resolution of network entities (users, groups and computers)
+-   Reçoit les données des passerelles ATA et des passerelles légères ATA 
 
--   Transfer relevant data to the ATA Center
+-   Détecte les activités suspectes
 
--   Monitor multiple domain controllers from a single ATA Gateway, or monitor a single domain controller for an ATA Lightweight Gateway.
+-   Exécute des algorithmes d’apprentissage automatique de comportement ATA pour détecter les comportements anormaux
 
-The ATA Gateway receives network traffic and Windows Events from your network and processes it in the following main components:
+-   Exécute différents algorithmes déterministes pour détecter les attaques avancées en fonction de la chaîne de destruction d’attaque avancée
+
+-   Exécute la console ATA
+
+-   Facultatif : le centre ATA peut être configuré pour envoyer des e-mails et des événements quand une activité suspecte est détectée.
+
+Le centre ATA reçoit le trafic analysé de la passerelle ATA et de la passerelle légère ATA. Le centre ATA effectue ensuite le profilage, exécute la détection déterministe, et exécute l’apprentissage automatique et les algorithmes comportementaux pour en savoir plus sur votre réseau afin de détecter les anomalies et vous avertir des activités suspectes.
 
 |||
 |-|-|
-|Network Listener|The Network Listener is responsible for capturing network traffic and parsing the traffic. This is a CPU-heavy task, so  it is especially important to check [ATA Prerequisites](ata-prerequisites.md) when planning your ATA Gateway or ATA Lightweight Gateway.|
-|Event Listener|The Event Listener is responsible for capturing and parsing Windows Events forwarded from a SIEM server on your network.|
-|Windows Event Log Reader|The Windows Event Log Reader is responsible for reading and parsing Windows Events forwarded to the ATA Gateway's Windows Event Log from the domain controllers.|
-|Network Activity Translator | Translates parsed traffic into a logical representation of the traffic used by ATA (NetworkActivity).
-|Entity Resolver|The Entity Resolver takes the parsed data (network traffic and events) and resolves it data with Active Directory to find account and identity information. It is then matched with the IP addresses found in the parsed data. The Entity Resolver inspects the packet headers efficiently, to enable parsing of authentication packets for machine names, properties, and identities. The Entity Resolver combines the parsed authentication packets with the data in the actual packet.|
-|Entity Sender|The Entity Sender is responsible for sending the parsed and matched data to the ATA Center.|
+|Récepteur d’entité|Reçoit des lots d’entités de toutes les passerelles ATA et passerelles légères ATA.|
+|Processeur d’activité réseau|Traite toutes les activités réseau au sein de chaque lot reçu. par exemple, en mettant en correspondance les différentes étapes Kerberos effectuées depuis des ordinateurs potentiellement différents.|
+|Profileur d’entité|Associe un profil à toutes les entités uniques en fonction du trafic et des événements. Par exemple, ATA met à jour la liste des ordinateurs avec une session ouverte pour chaque profil utilisateur.|
+|Base de données du centre|Gère le processus d’écriture des activités réseau et des événements dans la base de données. |
+|Database|ATA utilise MongoDB pour stocker l’ensemble des données du système :<br /><br />- Activités réseau<br />- Activités d’événements<br />- Entités uniques<br />- Activités suspectes<br />- Configuration ATA|
+|Détecteurs|Les détecteurs utilisent des algorithmes d’apprentissage automatique et des règles déterministes pour rechercher les activités suspectes et les comportements anormaux des utilisateurs sur votre réseau.|
+|Console ATA|La console ATA permet de configurer ATA et de surveiller les activités suspectes détectées par ATA sur votre réseau. La console ATA ne dépend pas du service du centre ATA et s’exécute même quand celui-ci est arrêté, à condition qu’elle puisse communiquer avec la base de données.|
+Prenez en compte les critères suivants quand vous choisissez le nombre de centres ATA à déployer sur votre réseau :
 
-## ATA Lightweight Gateway features
+-   Un centre ATA ne peut surveiller qu’une seule forêt Active Directory. Si vous avez plusieurs forêts Active Directory, vous avez besoin d’au moins un centre ATA par forêt Active Directory.
 
-The following features work differently depending on whether you are running an ATA Gateway or an ATA Lightweight Gateway.
+-    Dans les déploiements d’Active Directory à très grande échelle, un seul centre ATA peut ne pas être suffisant pour gérer le trafic de tous les contrôleurs de domaine. Dans ce cas, plusieurs centres ATA sont nécessaires. Le nombre de centres ATA doit être défini par la [planification de la capacité ATA](ata-capacity-planning.md).
 
--	**Domain synchronizer candidate**<br>
-The domain synchronizer gateway is responsible for synchronizing all entities from a specific Active Directory domain proactively (similar to the mechanism used by the domain controllers themselves for replication). One gateway is chosen randomly, from the list of candidates, to serve as the domain synchronizer. <br><br>
-If the synchronizer is offline for more than 30 minutes, another candidate is chosen instead. If there is no domain synchronizer available for a specific domain, ATA will not be able to proactively synchronize entities and their changes, however ATA will reactively retrieve new entities as they are detected in the monitored traffic. 
-<br>If there is no domain synchronizer available, and you search for an entity that did not have any traffic related to it, no search results will be displayed.<br><br>
-By default, all ATA Gateways are synchronizer candidates.<br><br>
-Because all ATA Lightweight Gateways are more likely to be deployed in branch sites and on small domain controllers, they are not synchronizer candidates by default.
+## Passerelle ATA et passerelle légère ATA
+<a id="ata-gateway-and-ata-lightweight-gateway" class="xliff"></a>
+
+### Fonctionnalité de base de la passerelle
+<a id="gateway-core-functionality" class="xliff"></a>
+La **passerelle ATA** et la **passerelle légère ATA** ont la même fonctionnalité de base :
+
+-   Capturez et inspectez le trafic réseau des contrôleurs de domaine. Il s’agit du trafic avec mise en miroir des ports pour les passerelles ATA et du trafic local du contrôleur de domaine dans les passerelles légères ATA. 
+
+-   Recevoir des événements Windows provenant de serveurs SIEM ou Syslog, ou de contrôleurs de domaine par le biais du transfert d’événements Windows
+
+-   Récupérer les données concernant les utilisateurs et les ordinateurs à partir du domaine Active Directory
+
+-   Effectuer la résolution des entités réseau (utilisateurs, groupes et ordinateurs)
+
+-   Transférer les données pertinentes au centre ATA
+
+-   Surveiller plusieurs contrôleurs de domaine à partir d’une seule passerelle ATA, ou surveiller un seul contrôleur de domaine pour une passerelle légère ATA
+
+La passerelle ATA reçoit le trafic réseau et les événements Windows de votre réseau, et les traite dans les composants principaux suivants :
+
+|||
+|-|-|
+|Écouteur réseau|L’écouteur réseau capture le trafic réseau et analyse le trafic. Il s’agit d’une tâche qui nécessite une utilisation intensive du processeur. Il est donc important de consulter la [configuration requise pour ATA](ata-prerequisites.md) quand vous planifiez votre passerelle ATA ou passerelle légère ATA.|
+|Écouteur d’événements|L’écouteur d’événements capture et analyse les événements Windows transférés à partir d’un serveur SIEM sur votre réseau.|
+|Lecteur du journal des événements Windows|Le lecteur du journal des événements Windows lit et analyse les événements Windows transférés au journal des événements Windows de la passerelle ATA par les contrôleurs de domaine.|
+|Traducteur d’activité réseau | Traduit le trafic analysé en une représentation logique du trafic utilisée par ATA (NetworkActivity).
+|Programme de résolution des entités|Le programme de résolution des entités reçoit les données analysées (le trafic réseau et les événements) et les résout à l’aide d’Active Directory pour trouver les informations de compte et d’identité. Ensuite, il les met en correspondance avec les adresses IP trouvées dans les données analysées. Le programme de résolution des entités inspecte les en-têtes de paquets de manière efficace, pour permettre l’analyse des noms, propriétés et identités d’ordinateurs dans les paquets d’authentification. Le programme de résolution des entités combine les paquets d’authentification analysés avec les données du paquet.|
+|Expéditeur d’entité|L’expéditeur d’entité envoie au centre ATA les données analysées et mises en correspondance.|
+
+## Fonctionnalités de la passerelle légère ATA
+<a id="ata-lightweight-gateway-features" class="xliff"></a>
+
+Les fonctionnalités suivantes fonctionnent différemment selon que vous exécutez une passerelle ATA ou une passerelle légère ATA.
+
+-   La passerelle légère ATA peut lire les événements localement, sans qu’il soit nécessaire de configurer le transfert d’événements.
+
+-   **Candidat synchronisateur de domaine**<br>
+La passerelle synchronisatrice de domaine est responsable de la synchronisation proactive de toutes les entités d’un domaine Active Directory spécifique (semblable au mécanisme utilisé par les contrôleurs de domaine eux-mêmes pour la réplication). Une passerelle est choisie au hasard comme synchronisateur de domaine dans la liste des candidats. <br><br>
+Si le synchronisateur est hors connexion pendant plus de 30 minutes, un autre candidat est choisi à la place. Si aucun synchronisateur de domaine n’est disponible pour un domaine spécifique, ATA ne peut pas synchroniser de manière proactive les entités et leurs modifications, mais il récupère de manière réactive les nouvelles entités à mesure qu’elles sont détectées dans le trafic analysé. 
+<br>Si aucun synchronisateur de domaine n’est disponible et que vous recherchez une entité avec laquelle aucun trafic n’était associé, aucun résultat de recherche ne s’affiche.<br><br>
+Par défaut, toutes les passerelles ATA sont des candidats synchronisateurs.<br><br>
+Comme il est plus probable que toutes les passerelles légères ATA soient déployées dans des sites de succursale et sur des contrôleurs de domaine de petite taille, par défaut elles ne sont pas candidats synchronisateurs.
 
 
--	**Resource limitations**<br>
-The ATA Lightweight Gateway includes a monitoring component which evaluates the available compute and memory capacity on the domain controller on which it is running. The monitoring process runs every 10 seconds and dynamically updates the CPU and memory utilization quota on the ATA Lightweight Gateway process to make sure that at any given point in time, the domain controller has at least 15% of free compute and memory resources.<br><br>
-No matter what happens on the domain controller, this process always frees up resources to make sure the domain controller's core functionality is not affected.<br><br>
-If this causes the ATA Lightweight Gateway to run out of resources, only partial traffic is monitored and the monitoring alert "Dropped port mirrored network traffic" will appear in the Health page.
+-   **Limitations des ressources**<br>
+La passerelle légère ATA inclut un composant d’analyse qui évalue la capacité de calcul et de mémoire disponible sur le contrôleur de domaine sur lequel elle s’exécute. Le processus d’analyse s’exécute toutes les 10 secondes et met à jour de manière dynamique le quota d’utilisation du processeur et de la mémoire sur le processus de la passerelle légère ATA pour s’assurer qu’à tout moment le contrôleur de domaine dispose d’au moins 15 % de ressources de calcul et de mémoire libres.<br><br>
+Quoi qu’il se passe sur le contrôleur de domaine, ce processus libère toujours des ressources pour s’assurer que la fonctionnalité de base du contrôleur de domaine n’est pas affectée.<br><br>
+Si à cause de cela la passerelle légère ATA manque de ressources, le trafic est seulement partiellement analysé et l’alerte de surveillance « Le trafic réseau du port en miroir qui a été supprimé » s’affiche dans la page Intégrité.
 
-The following table provides an example of a domain controller with enough compute resource available to allow for a larger quota then is currently needed, so that all traffic is monitored:
+Le tableau suivant présente un exemple de contrôleur de domaine qui dispose de suffisamment de ressources de calcul pour autoriser un quota plus élevé que ce qui est nécessaire actuellement. Ainsi, tout le trafic est analysé :
 
 ||||||
 |-|-|-|-|-|
-|Active Directory (Lsass.exe)|ATA Lightweight Gateway (Microsoft.Tri.Gateway.exe)|Miscellaneous (other processes) |ATA Lightweight Gateway Quota|Gateway dropping|
-|30%|20%|10%|45%|No|
+|Active Directory (Lsass.exe)|Passerelle légère ATA (Microsoft.Tri.Gateway.exe)|Divers (autres processus) |Quota de passerelle légère ATA|Trafic ignoré par la passerelle|
+|30 %|20 %|10 %|45 %|Non|
 
-If Active Directory needs more compute, the quota needed by the ATA Lightweight Gateway is reduced. In the following example, The ATA Lightweight Gateway needs more than the allocated quota and drops some of the traffic (monitoring only partial traffic):
+Si Active Directory a besoin de davantage de puissance de calcul, le quota requis par la passerelle légère ATA est réduit. Dans l’exemple suivant, la passerelle légère ATA a besoin de davantage que le quota alloué et ignore une partie du trafic (analyse partielle du trafic) :
 
 ||||||
 |-|-|-|-|-|
-|Active Directory (Lsass.exe)|ATA Lightweight Gateway (Microsoft.Tri.Gateway.exe)|Miscellaneous (other processes) |ATA Lightweight Gateway Quota|Is gateway dropping|
-|60%|15%|10%|15%|Yes|
+|Active Directory (Lsass.exe)|Passerelle légère ATA (Microsoft.Tri.Gateway.exe)|Divers (autres processus) |Quota de passerelle légère ATA|Trafic ignoré par la passerelle|
+|60 %|15 %|10 %|15 %|Oui|
 
 
 
-## Your network components
-In order to work with ATA, make sure of the following:
+## Composants du réseau
+<a id="your-network-components" class="xliff"></a>
+Pour que vos composants réseau fonctionne avec ATA, vérifiez les éléments suivants :
 
-### Port mirroring
-If you are using ATA Gateways, you have to setup port mirroring for the domain controllers that will be monitored and set the ATA Gateway as the destination using the physical or virtual switches. Another option is to use network TAPs. ATA will work if some but not all of your domain controllers are monitored, but detections will be less effective.
+### Mise en miroir des ports
+<a id="port-mirroring" class="xliff"></a>
+Si vous utilisez des passerelles ATA, vous devez configurer la mise en miroir des ports pour les contrôleurs de domaine à surveiller et définir la passerelle ATA comme destination à l’aide des commutateurs physiques ou virtuels. Une autre option consiste à utiliser des TAP réseau. ATA fonctionnera si plusieurs contrôleurs de domaine sont surveillés, mais pas tous. Toutefois, la détection sera moins efficace.
 
-While port mirroring mirrors all the domain controller network traffic to the ATA Gateway, only a very small percentage of that traffic is then sent, compressed, to the ATA Center for analysis.
+Même si tout le trafic réseau des contrôleurs de domaine est mis en miroir vers la passerelle ATA, seul un très petit pourcentage de ce trafic est envoyé (compressé) au centre ATA à des fins d’analyse.
 
-Your domain controllers and the ATA Gateways can be physical or virtual, see [Configure port mirroring](configure-port-mirroring.md) for more information.
+Les contrôleurs de domaine et les passerelles ATA peuvent être physiques ou virtuels. Pour plus d’informations, consultez [Configurer la mise en miroir des ports](configure-port-mirroring.md).
 
 
-### Events
-To enhance ATA detection of Pass-the-Hash, Brute Force and Honey Tokens, ATA needs Windows Event log ID 4776. This can be forwarded to the ATA Gateway in one of two ways, by configuring the ATA Gateway to listen for SIEM events or by using Windows Event Forwarding.
+### Événements
+<a id="events" class="xliff"></a>
+Pour améliorer la détection ATA de l’attaque Pass-the-Hash, de l’attaque par force brute, de la modification des groupes sensibles et des comptes Honeyoken, ATA a besoin des événements Windows suivants : 4776, 4732, 4733, 4728, 4729, 4756, 4757. Ils peuvent être lus automatiquement par la passerelle légère ATA ou, si la passerelle légère ATA n’est pas déployée, ils peuvent être transférés à la passerelle ATA de deux manières : en configurant la passerelle ATA pour l’écoute des événements SIEM ou en [configurant le transfert d’événements Windows](#configuring-windows-event-forwarding).
 
--   Configuring the ATA Gateway to listen for SIEM events <br>Configure your SIEM to forward specific Windows events to ATA. ATA supports a number of SIEM vendors. For more information, see [Configure event collection](configure-event-collection.md).
+-   Configuration de la passerelle ATA pour écouter les événements SIEM <br>Configurez votre serveur SIEM de manière à transférer des événements Windows spécifiques vers ATA. ATA prend en charge plusieurs fournisseurs SIEM. Pour plus d’informations, consultez [Configurer la collecte d’événements](configure-event-collection.md).
 
--   Configuring Windows Event Forwarding<br>Another way ATA can get your events is by configuring your domain controllers to forward Windows event 4776 to your ATA Gateway. This is especially useful if you don't have a SIEM or if your SIEM is not currently supported by ATA. For more information about Windows Event Forwarding in ATA, see [Configuring Windows event forwarding](configure-event-collection.md#configuring-windows-event-forwarding).
+-   Configuration du transfert d’événements Windows<br>ATA peut aussi obtenir vos événements en configurant vos contrôleurs de domaine pour qu’ils transfèrent les événements Windows 4776, 4732, 4733, 4728, 4729, 4756 et 4757 à votre passerelle ATA. Cette méthode est particulièrement utile si vous n’avez pas de serveur SIEM ou si votre serveur SIEM n’est pas actuellement pris en charge par ATA. Pour plus d’informations sur le transfert d’événements Windows dans ATA, consultez [Configuration du transfert d’événements Windows](configure-event-collection.md#configuring-windows-event-forwarding). Notez que cela s’applique uniquement aux passerelles ATA physiques et non à la passerelle légère ATA.
 
-## See Also
-- [ATA prerequisites](ata-prerequisites.md)
-- [ATA capacity planning](ata-capacity-planning.md)
-- [Configure event collection](configure-event-collection.md)
-- [Configuring Windows event forwarding](configure-event-collection.md#configuring-windows-event-forwarding)
-- [Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## Voir aussi
+<a id="see-also" class="xliff"></a>
+- [Prérequis au déploiement d’ATA](ata-prerequisites.md)
+- [Planification de la capacité d’ATA](ata-capacity-planning.md)
+- [Configurer la collecte d’événements](configure-event-collection.md)
+- [Configuration du transfert d’événements Windows](configure-event-collection.md#configuring-windows-event-forwarding)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 

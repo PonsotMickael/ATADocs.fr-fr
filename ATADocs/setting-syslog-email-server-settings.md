@@ -1,88 +1,84 @@
 ---
-# required metadata
-
-title: Setting email notification settings in Advanced Threat Analytics | Microsoft Docs
-description: Describes how to have ATA notify you (by email or by ATA event forwarding) when it detects suspicious activities 
-keywords:
+title: "Définition des paramètres de notification par e-mail dans Advanced Threat Analytics | Microsoft Docs"
+description: "Décrit comment faire en sorte qu’ATA vous avertisse (par courrier électronique ou transfert d’événements ATA) quand il détecte des activités suspectes"
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 06/23/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: bff20bf7-8b53-49da-81e5-b818a1c3b24e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: 47d1125856631ecedcbc7779bf0529741c3da61f
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/30/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*S’applique à : Advanced Threat Analytics version 1.8*
 
 
-# Provide ATA with your email server settings
-ATA can notify you when it detects a suspicious activity. For ATA to be able to send email notifications, you must first configure the **Email server settings**.
 
-1.  On the ATA Center server, click the **Microsoft Advanced Threat Analytics Management** icon on the desktop.
+# Fournir à ATA les paramètres de votre serveur de messagerie
+<a id="provide-ata-with-your-email-server-settings" class="xliff"></a>
+ATA peut vous avertir quand il détecte une activité suspecte. Pour qu’ATA puisse envoyer des notifications par courrier électronique, vous devez d’abord configurer les **paramètres du serveur de messagerie**.
 
-2.  Enter your user name and password and click **Log in**.
+1.  Sur le serveur du centre ATA, cliquez sur l’icône **Microsoft Advanced Threat Analytics Management**(Gestion de Microsoft Advanced Threat Analytics) sur le Bureau.
 
-3.  Select the settings option on the toolbar and select **Configuration**.
+2.  Entrez votre nom d’utilisateur et votre mot de passe, puis cliquez sur **Se connecter**.
 
-    ![ATA configuration settings icon](media/ATA-config-icon.JPG)
+3.  Sélectionnez l’option des paramètres dans la barre d’outils, puis **Configuration**.
 
-4.  In the **notifications** section, under **Mail server**, enter the following information:
+    ![Icône des paramètres de configuration ATA](media/ATA-config-icon.png)
 
-    |Field|Description|Value|
+4.  Dans la section **Notifications** sous **Serveur de messagerie**, entrez les informations suivantes :
+
+    |Champ|Description|Valeur|
     |---------|---------------|---------|
-    |SMTP server endpoint (required)|Enter the FQDN of your SMTP server and optionally change the port number (default 25).|For example:<br />smtp.contoso.com|
-    |SSL|Toggle SSL if the SMTP server required SSL. **Note:** If you enable SSL you will also need to change the Port number.|Default is disabled|
-    |Authentication|Enable if your SMTP server requires authentication. **Note:** If you enable authentication you must provide a user name and password of an email account that has permission to connect to the SMTP server.|Default is disabled|
-    |Send from (required)|Enter an email address from whom the email will be sent from.|For example:<br />ATA@contoso.com|
-    ![ATA email server settings image](media/ATA-email-server-1.7.png)
+    |Point de terminaison du serveur SMTP (obligatoire)|Entrez le nom de domaine complet de votre serveur SMTP et modifiez éventuellement le numéro de port (par défaut, 25).|Exemple :<br />smtp.contoso.com|
+    |SSL|Activez/désactivez SSL si le serveur SMTP exigeait SSL. **Remarque :** si vous activez SSL, vous devez également modifier le numéro de port.|La valeur par défaut est désactivée|
+    |Authentification|Activez l’authentification si votre serveur SMTP l’exige. **Remarque :** si vous activez l’authentification, vous devez fournir le nom d’utilisateur et le mot de passe d’un compte de messagerie qui a l’autorisation de se connecter au serveur SMTP.|La valeur par défaut est désactivée|
+    |Envoyer depuis (obligatoire)|Entrez une adresse de messagerie à partir de laquelle le courrier sera envoyé.|Exemple :<br />ATA@contoso.com|
+    ![Image des paramètres du serveur de messagerie ATA](media/ata-email-server.png)
 
-## Provide ATA with your Syslog server settings
-ATA can notify you when it detects a suspicious activity by sending the notification to your Syslog server. If you enable Syslog notifications, you can set the following for them.
+## Fournir à ATA les paramètres de votre serveur Syslog
+<a id="provide-ata-with-your-syslog-server-settings" class="xliff"></a>
+ATA peut vous avertir quand il détecte une activité suspecte en envoyant la notification à votre serveur Syslog. Si vous activez les notifications Syslog, vous pouvez définir les éléments associés suivants.
 
-1.  Before configuring Syslog notifications, work with your SIEM admin to find out the following information:
+1.  Avant de configurer les notifications Syslog, collaborez avec votre administrateur SIEM pour connaître les informations suivantes :
 
-    -   FQDN or IP address of the SIEM server
+    -   Nom de domaine complet ou adresse IP du serveur SIEM
 
-    -   Port on which the SIEM server is listening
+    -   Port sur lequel écoute le serveur SIEM
 
-    -   What transport to use: UDP, TCP or TLS (Secured Syslog)
+    -   Mode de transport à utiliser : UDP, TCP ou TLS (Syslog sécurisé)
 
-    -   Format in which to send the data RFC 3164 or 5424
+    -   Format sous lequel envoyer les données, RFC 3164 ou 5424
 
-2.  On the ATA Center server, click the **Microsoft Advanced Threat Analytics Management** icon on the desktop.
+2.  Sur le serveur du centre ATA, cliquez sur l’icône **Microsoft Advanced Threat Analytics Management**(Gestion de Microsoft Advanced Threat Analytics) sur le Bureau.
 
-3.  Enter your user name and password and click **Log in**.
+3.  Entrez votre nom d’utilisateur et votre mot de passe, puis cliquez sur **Se connecter**.
 
-4.  Select the settings option on the toolbar and select **Configuration**.
+4.  Sélectionnez l’option des paramètres dans la barre d’outils, puis **Configuration**.
 
-    ![ATA configuration settings icon](media/ATA-config-icon.JPG)
+    ![Icône des paramètres de configuration ATA](media/ATA-config-icon.png)
 
-5.  Under Notifications section, Select **Syslog server** and enter the following information:
+5.  Dans la section Notifications, sélectionnez **Serveur Syslog** et entrez les informations suivantes :
 
-    |Field|Description|
+    |Champ|Description|
     |---------|---------------|
-    |Syslog server endpoint|FQDN of the Syslog server and optionally change the port number (default 514)|
-    |Transport|Can be UDP, TCP or TLS (Secured Syslog)|
-    |Format|This is the format that ATA uses to send events to the SIEM server - either RFC 5424 or RFC 3164.|
+    |Point de terminaison du serveur Syslog|Nom de domaine complet du serveur Syslog et modifiez éventuellement le numéro de port (par défaut, 514)|
+    |Transport|Peut être UDP, TCP ou TLS (Syslog sécurisé)|
+    |Format|Il s’agit du format utilisé par ATA pour envoyer des événements au serveur SIEM : RFC 5424 ou 3164.|
 
- ![ATA Syslog server settings image](media/ata-syslog-server-settings-1.7.png)
+ ![Image des paramètres du serveur Syslog ATA](media/ata-syslog-server-settings.png)
 
 
 
-## See Also
-[Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## Voir aussi
+<a id="see-also" class="xliff"></a>
+[Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
