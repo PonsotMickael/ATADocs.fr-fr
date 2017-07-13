@@ -1,70 +1,65 @@
 ---
-# required metadata
-
-title: Install Advanced Threat Analytics - Step 3 | Microsoft Docs
-description: Step three of installing ATA helps you download the ATA Gateway setup package.
-keywords:
+title: "Installer Advanced Threat Analytics - Étape 3 | Microsoft Docs"
+description: "La troisième étape de la procédure d’installation d’ATA vous aide à télécharger le package d’installation de la passerelle ATA."
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 06/12/2017
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: 68c169ffd0f42bd8b030dc12f4711cbde2718a99
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/30/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*S’applique à : Advanced Threat Analytics version 1.8*
 
 
-# Install ATA - Step 3
+
+# Installer ATA - Étape 3
+<a id="install-ata---step-3" class="xliff"></a>
 
 >[!div class="step-by-step"]
-[« Step 2](install-ata-step2.md)
-[Step 4 »](install-ata-step4.md)
+[« Étape 2](install-ata-step2.md)
+[Étape 4 »](install-ata-step4.md)
 
-## Step 3. Download the ATA Gateway setup package
-After configuring the domain connectivity settings you can download the ATA Gateway setup package. The ATA Gateway can be installed on a dedicated server or on a domain controller. If you install it on a domain controller, it will be installed as an ATA Lightweight Gateway. For more information on the ATA Lightweight Gateway, see [ATA Architecture](ata-architecture.md). 
+## Étape 3. Télécharger le package d’installation de la passerelle ATA
+<a id="step-3-download-the-ata-gateway-setup-package" class="xliff"></a>
+Après avoir configuré les paramètres de connectivité du domaine, vous pouvez télécharger le package d’installation de la passerelle ATA. Elle peut être installée sur un serveur dédié ou sur un contrôleur de domaine. Si vous l’installez sur un contrôleur de domaine, elle est installée en tant que passerelle légère ATA. Pour plus d’informations sur la passerelle légère ATA, consultez [Architecture ATA](ata-architecture.md). 
 
-If this is the first time you are downloading an ATA Gateway, you will get the following screen:
+Cliquez sur Télécharger l’installation de la passerelle dans la liste des étapes en haut de la page pour accéder à la page Passerelles :
 
-![ATA gateway configuration settings](media/ATA_1.7-welcome-download-gateway.PNG)
-
-If this is not your first time downloading an ATA Gateway, this welcome message will not appear.
+![Paramètres de configuration de la passerelle ATA](media/ATA_1.7-welcome-download-gateway.PNG)
 
 > [!NOTE] 
-> To reach the configuration screen later, click the **settings icon** (upper right corner) and select **Configuration**, then, under **System**, click **Gateways**.  
+> Pour accéder ultérieurement à l’écran de configuration de la passerelle, cliquez sur **l’icône de paramètres** (en haut à droite) et sélectionnez **Configuration** puis, sous **Système**, cliquez sur **Passerelles**.  
 
-1.  Click **"Download Gateway Setup"**.
-2.  Save the package locally.
-3.  Copy the package to the dedicated server or domain controller onto which you are installing the ATA Gateway. Alternatively, you can open the ATA Console from the dedicated server or domain controller and skip this step.
+1.  Cliquez sur **Configuration de la passerelle**.
+  ![Télécharger le programme d’installation de la passerelle ATA](media/download-gateway-setup.png)
+2.  Enregistrez le package localement.
+3.  Copiez le package sur le serveur dédié ou sur le contrôleur de domaine sur lequel vous installez la passerelle ATA. Vous pouvez également ouvrir la console ATA à partir du serveur dédié ou du contrôleur de domaine et ignorer cette étape.
 
-The zip file includes the following:
+Le fichier zip comprend les éléments suivants :
 
--   ATA Gateway installer
+-   Programme d’installation de la passerelle ATA
 
--   Configuration setting file with the required information to connect to the ATA Center
+-   Fichier de paramètres de configuration avec les informations requises pour se connecter au centre ATA
 
 
 >[!div class="step-by-step"]
-[« Step 2](install-ata-step2.md)
-[Step 4 »](install-ata-step4.md)
+[« Étape 2](install-ata-step2.md)
+[Étape 4 »](install-ata-step4.md)
 
-## See Also
+## Voir aussi
+<a id="see-also" class="xliff"></a>
 
-- [Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-- [Configure event collection](configure-event-collection.md)
-- [ATA prerequisites](ata-prerequisites.md)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Configurer la collecte d’événements](configure-event-collection.md)
+- [Configuration requise pour ATA](ata-prerequisites.md)

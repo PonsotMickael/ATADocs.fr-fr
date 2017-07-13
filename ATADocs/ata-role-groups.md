@@ -1,67 +1,63 @@
 ---
-# required metadata
-
-title: Advanced Threat Analytics role groups for access management | Microsoft Docs
-description: Walks you through working with ATA role groups.
-keywords:
+title: "Groupes de rôles Advanced Threat Analytics pour la gestion des accès | Microsoft Docs"
+description: "Explique comment utiliser des groupes de rôles ATA."
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 6/13/2017
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: 1afb8e728fa359721d78833f8220cae3f65bd896
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/30/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*S’applique à : Advanced Threat Analytics version 1.8*
 
 
 
-# ATA Role Groups
 
-Role groups enables access management for ATA. Using role groups, you can segregate duties within your security team, and grant only the amount of access that users need to perform their jobs. This article explains access management and ATA role authorization, and helps you get up and running with role groups in ATA.
+# Groupes de rôles ATA
+<a id="ata-role-groups" class="xliff"></a>
+
+Les groupes de rôles permettent de gérer l’accès pour ATA. À l’aide des groupes de rôles, vous pouvez séparer les tâches au sein de votre équipe de sécurité et accorder uniquement le nombre d’accès dont les utilisateurs ont besoin pour effectuer leur travail. Cet article explique ce qu’est la gestion des accès et l’autorisation de rôle ATA, puis vous aide à configurer des groupes de rôles dans ATA.
 
 > [!NOTE]
-> Any local administrator on the ATA Center is automatically a Microsoft Advanced Threat Analytics Administrator.
+> Tout administrateur local du Centre ATA est automatiquement administrateur Microsoft Advanced Threat Analytics.
 
-## Types of ATA Role Groups 
+## Types de groupes de rôles ATA
+<a id="types-of-ata-role-groups" class="xliff"></a> 
 
-ATA introduces 3 types of Role group: ATA Administrators, ATA Users and ATA Viewers. The following table describes the type of access in ATA available per role. Depending on which role you assign, various screens and menu options in ATA will not be available, as follows:
+ATA présente 3 types de groupe de rôles : ATA Administrators, ATA Users et ATA Viewers. Le tableau suivant décrit le type d’accès dans ATA disponible par rôle. En fonction du rôle que vous attribuez, différents écrans et options de menu dans ATA ne seront pas disponibles, comme suit :
 
-|Activity |Microsoft Advanced Threat Analytics Administrators|Microsoft Advanced Threat Analytics Users|Microsoft Advanced Threat Analytics Viewers|
+|Activité |Administrateurs Microsoft Advanced Threat Analytics|Utilisateurs Microsoft Advanced Threat Analytics|Observateurs Microsoft Advanced Threat Analytics|
 |----|----|----|----|
-|Login|Available|Available|Available|
-|Provide Input for Suspicious Activities|Available|Available|Not available|
-|Change status of Suspicious Activities|Available|Available|Not available|
-|Share/Export suspicious activity via email/get link|Available|Available|Not available|
-|Add/Edit notes for Suspicious Activities|Available|Available|Not available|
-|Change status of Monitoring Alerts|Available|Available|Not available|
-|Update ATA Configuration|Available|Not available|Not available|
-|Gateway – Add|Available|Not available|Not available|
-|Gateway – Delete |Available|Not available|Not available|
-|Monitored DC – Add |Available|Not available|Not available|
-|Monitored DC – Delete|Available|Not available|Not available|
-|View alerts and suspicious activities|Available|Available|Available|
+|Se connecter|Disponible|Disponible|Disponible|
+|Fournir des commentaires sur les activités suspectes|Disponible|Disponible|Non disponible|
+|Modifier l’état des activités suspectes|Disponible|Disponible|Non disponible|
+|Partager/exporter une activité suspecte par e-mail/via un lien|Disponible|Disponible|Non disponible|
+|Ajouter/modifier des notes pour les activités suspectes|Disponible|Disponible|Non disponible|
+|Modifier l’état de la surveillance des alertes|Disponible|Disponible|Non disponible|
+|Mettre à jour la configuration ATA|Disponible|Non disponible|Non disponible|
+|Passerelle – Ajouter|Disponible|Non disponible|Non disponible|
+|Passerelle – Supprimer |Disponible|Non disponible|Non disponible|
+|Contrôleur de domaine surveillé - Ajouter |Disponible|Non disponible|Non disponible|
+|Contrôleur de domaine surveillé – Supprimer|Disponible|Non disponible|Non disponible|
+|Afficher les alertes et les activités suspectes|Disponible|Disponible|Disponible|
 
 
-When users try to access a page that is not available for their role group, they will be redirected to the ATA unauthorized page. 
+Quand les utilisateurs tentent d’accéder à une page qui n’est pas disponible pour leur groupe de rôles, ils sont redirigés vers la page ATA d’accès non autorisé. 
 
-## Add \ Remove users - ATA Role Groups 
+## Ajouter \ supprimer des utilisateurs - Groupes de rôles ATA
+<a id="add--remove-users---ata-role-groups" class="xliff"></a> 
 
-ATA uses the local Windows groups as a basis for role groups. The role groups must be managed on the ATA Center server.
-To add or remove users, use the **Local Users and Groups** MMC (Lusrmgr.msc). On a domain joined machine, you can add domain accounts as well as local accounts. 
+ATA utilise les groupes Windows locaux comme base pour les groupes de rôles. Les groupes de rôles doivent être gérés sur le serveur du centre ATA.
+Pour ajouter ou supprimer des utilisateurs, utilisez la console MMC **Utilisateurs et groupes locaux** (Lusrmgr.msc). Sur un ordinateur joint à un domaine, vous pouvez ajouter des comptes de domaine et des comptes locaux. 
 
