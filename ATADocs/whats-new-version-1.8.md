@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: f2a4ed151db38497a6cec977f1090faf2eb4133e
-ms.sourcegitcommit: 53b56220fa761671442da273364bdb3d21269c9e
+ms.openlocfilehash: 6850c5e8e264a9610e377a9ab4aadca338971ee1
+ms.sourcegitcommit: be6bdfa24a9b25a3375a4768d513b93900b3a498
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 07/11/2017
 ---
 # Nouveautés de la version 1.8 d’ATA
 <a id="whats-new-in-ata-version-18" class="xliff"></a>
+
+La dernière version de la mise à jour d’ATA peut être [téléchargée à partir du Centre de téléchargement](https://www.microsoft.com/download/details.aspx?id=55536) ou la version complète peut être téléchargée à partir du [centre d’évaluation](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics).
+
 Ces notes de publication fournissent des informations sur les mises à jour, les nouvelles fonctionnalités, les correctifs de bogue et les problèmes connus de cette version d’Advanced Threat Analytics.
 
 
@@ -65,7 +68,6 @@ Ces notes de publication fournissent des informations sur les mises à jour, les
 
 -   Les performances du centre ATA ont été améliorées. Dans ATA 1.8, le centre ATA peut traiter plus de 1 million de paquets par seconde.
 -   La passerelle légère ATA peut désormais lire les événements localement, sans qu’il soit nécessaire de configurer le transfert d’événements.
--   Amélioration de l’accessibilité : ATA soutient Microsoft dans la distribution d’un produit accessible à tout le monde. 
 -   Vous pouvez maintenant configurer séparément la messagerie pour surveiller les alertes et les activités suspectes.
 
 ## Améliorations apportées à la sécurité
