@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1d186a96-ef70-4787-aa64-c03d1db94ce0
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 436b96f679836060cfaf40f6be3b92cf96dc0e04
-ms.sourcegitcommit: 4118dd4bd98994ec8a7ea170b09aa301a4be2c8a
+ms.openlocfilehash: f85d52420c55e2f1119ad14eb1a6c957fbc50be6
+ms.sourcegitcommit: be6bdfa24a9b25a3375a4768d513b93900b3a498
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 07/11/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -55,7 +55,7 @@ ATA affiche le nom de l’ordinateur source ainsi que des détails supplémentai
 Pour examiner la reconnaissance à l’aide de DNS, vous devez d’abord déterminer la cause des requêtes. Elle peut être identifiée dans l’une des catégories suivantes : 
 -   Vrais positifs : un attaquant ou un programme malveillant est présent sur votre réseau. Il peut s’agir d’un attaquant qui a violé le périmètre du réseau ou d’une menace interne.
 -   Vrais positifs sans gravité : il peut s’agir d’alertes déclenchées par les tests de stylet, l’activité du groupe red-team, les analyseurs de sécurité, le pare-feu nouvelle génération ou les administrateurs informatiques exécutant des activités approuvées.
--   Faux positifs : vous pouvez obtenir des alertes liées à une mauvaise configuration, par exemple, si le port 53 est bloqué entre la passerelle ATA et votre serveur DNS (ou tout autre problème réseau).
+-   Faux positifs : vous pouvez obtenir des alertes liées à une mauvaise configuration, par exemple, si le port UDP 53 est bloqué entre la passerelle ATA et votre serveur DNS (ou tout autre problème réseau).
 
 Le graphique suivant vous permet de déterminer les étapes à suivre dans l’examen de l’alerte :
 
@@ -63,10 +63,10 @@ Le graphique suivant vous permet de déterminer les étapes à suivre dans l’e
  
 1.  La première étape consiste à identifier l’ordinateur émetteur de l’alerte, comme illustré ci-dessous :
  
-    ![Consulter l’activité suspecte de reconnaissance dans ATA](./media/dns-recon-2.png)
+    ![Consulter l’activité suspecte de reconnaissance dans ATA](./media/dns-recon.png)
 2.  Identifiez l’ordinateur concerné. Est-ce une station de travail, un serveur, une station de travail d’administration, une station de test du stylet, etc. ?
 3.  Si l’ordinateur est un serveur DNS et dispose des droits légitimes pour demander une copie secondaire de la zone, il s’agit d’un faux positif. Quand vous trouvez un faux positif, utilisez l’option **Exclure** pour ne plus recevoir cette alerte pour cet ordinateur.
-4. Vérifiez que le port 53 est ouvert entre la passerelle ATA et votre serveur DNS.
+4. Vérifiez que le port UDP 53 est ouvert entre la passerelle ATA et votre serveur DNS.
 4.  Si l’ordinateur est utilisé pour le travail de l’administrateur ou le test du stylet, il s’agit d’un vrai positif sans gravité et l’ordinateur impliqué peut également être configuré comme une exception.
 5.  S’il n’est pas utilisé pour le test du stylet, vérifiez si l’ordinateur exécute un analyseur de sécurité ou un pare-feu nouvelle génération qui peuvent envoyer des requêtes DNS de type AXFR.
 6.  Enfin, si aucun de ces critères n’est rempli, il est possible que l’ordinateur soit compromis. Si tel est le cas, il doit être entièrement examiné. 
