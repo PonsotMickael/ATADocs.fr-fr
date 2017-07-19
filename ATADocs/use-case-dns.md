@@ -21,13 +21,11 @@ ms.lasthandoff: 07/11/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
-# Examen de la reconnaissance à l’aide de DNS
-<a id="investigating-reconnaissance-using-dns" class="xliff"></a>
+# <a name="investigating-reconnaissance-using-dns"></a>Examen de la reconnaissance à l’aide de DNS
 
 Si ATA détecte une **reconnaissance à l’aide de DNS** sur votre réseau et vous en alerte, utilisez cet article pour vous aider à examiner l’alerte et à déterminer comment résoudre le problème.
 
-## Qu’est-ce que la reconnaissance à l’aide de DNS ?
-<a id="what-is-reconnaissance-using-dns" class="xliff"></a>
+## <a name="what-is-reconnaissance-using-dns"></a>Qu’est-ce que la reconnaissance à l’aide de DNS ?
 
 L’alerte de **reconnaissance à l’aide de DNS** indique que des requêtes DNS (Domain Name System) sont envoyées par un hôte inhabituel afin d’effectuer une reconnaissance de votre réseau interne.
 
@@ -35,13 +33,11 @@ Le DNS (Domain Name System) est un service implémenté comme une base de donné
 Pour un adversaire, votre DNS contient des informations précieuses sur le mappage d’un réseau interne, notamment une liste de tous les serveurs et souvent la liste de tous les clients mappés à leurs adresses IP. Par ailleurs, ces informations ont de la valeur, car elles listent les noms d’hôte qui sont souvent évocateurs dans un environnement réseau donné. En récupérant ces informations, l’adversaire peut concentrer ses efforts sur les entités qui l’intéressent pendant une campagne. Des outils comme [Nmap](https://nmap.org/), [Fierce](https://github.com/mschwager/fierce) et des outils intégrés comme [Nslookup](https://technet.microsoft.com/library/cc725991(v=ws.11).aspx) fournissent des fonctionnalités pour découvrir les hôtes qui utilisent la reconnaissance DNS.
 La détection des requêtes de reconnaissance à l’aide de DNS provenant d’un hôte interne est une source de préoccupation et le signe qu’un hôte existant a pu être compromis, ou à plus grande échelle, le réseau, ou qu’il existe une menace interne.
 
-## Types de requêtes DNS
-<a id="dns-query-types" class="xliff"></a>
+## <a name="dns-query-types"></a>Types de requêtes DNS
 
 Il existe plusieurs types de requêtes dans le protocole DNS. ATA détecte les requêtes AXFR (transfert) et crée une alerte le cas échéant. Ce type de requête doit provenir uniquement des serveurs DNS.
 
-## Détection de l’attaque
-<a id="discovering-the-attack" class="xliff"></a>
+## <a name="discovering-the-attack"></a>Détection de l’attaque
 
 Quand un attaquant tente d’effectuer une reconnaissance à l’aide de DNS, ATA la détecte et la marque avec une gravité moyenne.
 
@@ -49,8 +45,7 @@ Quand un attaquant tente d’effectuer une reconnaissance à l’aide de DNS, AT
  
 ATA affiche le nom de l’ordinateur source ainsi que des détails supplémentaires sur la requête DNS réelle qui a été effectuée. Par exemple, plusieurs tentatives ont pu être effectuées à partir du même hôte.
 
-## Examen
-<a id="investigating" class="xliff"></a>
+## <a name="investigating"></a>Examen
 
 Pour examiner la reconnaissance à l’aide de DNS, vous devez d’abord déterminer la cause des requêtes. Elle peut être identifiée dans l’une des catégories suivantes : 
 -   Vrais positifs : un attaquant ou un programme malveillant est présent sur votre réseau. Il peut s’agir d’un attaquant qui a violé le périmètre du réseau ou d’une menace interne.
@@ -75,8 +70,7 @@ Le graphique suivant vous permet de déterminer les étapes à suivre dans l’e
     2.  Effectuez une analyse basée sur un hôte. 
     3.  Si l’activité ne vient pas d’un utilisateur suspecté, vous devez effectuer l’analyse d’investigation sur l’ordinateur pour déterminer si celui-ci a été compromis par des programmes malveillants.
 
-## Après l’examen
-<a id="post-investigation" class="xliff"></a>
+## <a name="post-investigation"></a>Après l’examen
 
 Les programmes malveillants utilisés pour compromettre l’hôte peuvent inclure des chevaux de Troie avec des fonctionnalités de porte dérobées. Quand un mouvement latéral a été identifié à partir de l’hôte compromis, les actions correctives doivent s’étendre à ces hôtes, y compris le changement des mots de passe et des informations d’identification utilisés sur l’hôte et sur tous les hôtes inclus dans le mouvement latéral. 
 
@@ -84,14 +78,12 @@ Quand il n’est pas possible de confirmer que l’hôte cible est sain une fois
 
 Microsoft recommande d’utiliser une équipe IR&R (Incident Response & Recovery) professionnelle, qui peut être contactée via votre équipe des comptes Microsoft, afin de détecter si un attaquant a déployé des méthodes de persistance sur votre réseau.
 
-## Limitation des risques
-<a id="mitigation" class="xliff"></a>
+## <a name="mitigation"></a>Limitation des risques
 
 La sécurisation d’un serveur DNS interne pour éviter la reconnaissance à l’aide de DNS est possible en désactivant les transferts de zone ou en les limitant uniquement aux adresses IP spécifiées. Pour plus d’informations sur la limitation des transferts de zones, consultez l’article Technet sur Windows Server, [Restrict Zone Transfers](https://technet.microsoft.com/library/ee649273(v=ws.10).aspx) (Limiter les transferts de zone). Les transferts de zone limités peuvent être verrouillés davantage en [sécurisant les transferts de zone avec IPsec](https://technet.microsoft.com/library/ee649192(v=ws.10).aspx). La modification des transferts de zone est l’une des tâches de la liste de contrôle que vous devez suivre pour [sécuriser vos serveurs DNS contre les attaques internes et externes](https://technet.microsoft.com/library/cc770432(v=ws.11).aspx).
 
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Gestion des activités suspectes](working-with-suspicious-activities.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

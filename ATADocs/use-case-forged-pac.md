@@ -21,20 +21,17 @@ ms.lasthandoff: 07/05/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
-# Examen des attaques d’élévation de privilèges à l’aide de données d’autorisation falsifiées
-<a id="investigating-privilege-escalation-using-forged-authorization-data-attacks" class="xliff"></a>
+# <a name="investigating-privilege-escalation-using-forged-authorization-data-attacks"></a>Examen des attaques d’élévation de privilèges à l’aide de données d’autorisation falsifiées
 
 Microsoft améliore en permanence ses fonctions de détection de sécurité et la possibilité de fournir des renseignements exploitables quasiment en temps réel aux analystes de sécurité. Microsoft ATA (Advanced Threat Analytics) aide à mener à bien ce changement. Si ATA détecte une activité suspecte d’élévation de privilèges à l’aide de données d’autorisation falsifiées sur votre réseau et vous en alerte, cet article vous aide à comprendre et examiner cette activité.
 
-## Qu’est-ce qu’un certificat PAC (Privileged Attribute Certificate) ?
-<a id="what-is-a-privileged-attribute-certificate-pac" class="xliff"></a>
+## <a name="what-is-a-privileged-attribute-certificate-pac"></a>Qu’est-ce qu’un certificat PAC (Privileged Attribute Certificate) ?
 
 Le certificat PAC (Privilege Attribute Certificate) est la structure de données dans le ticket Kerberos qui contient les informations d’autorisation, dont les appartenances aux groupes, les identificateurs de sécurité et les informations de profil utilisateur. Dans un domaine Active Directory, il permet de transmettre les données d’autorisation fournies par le contrôleur de domaine à d’autres stations de travail et serveurs membres à des fins d’authentification et d’autorisation. En plus des informations d’appartenance, le certificat PAC inclut des informations d’identification supplémentaires, des informations sur les profils et stratégies ainsi que des métadonnées de sécurité de prise en charge. 
 
 La structure de données du certificat PAC est utilisée par les protocoles d’authentification (protocoles qui vérifient les identités) pour transporter les informations d’autorisation, qui contrôlent l’accès aux ressources.
 
-### Validation PAC
-<a id="pac-validation" class="xliff"></a>
+### <a name="pac-validation"></a>Validation PAC
 
 La validation PAC est une fonctionnalité de sécurité pour empêcher un intrus d’obtenir un accès non autorisé à un système ou ses ressources par une attaque de l’intercepteur (« man in the middle), en particulier dans les applications où l’emprunt d’identité d’utilisateur est utilisé. L’emprunt d’identité implique une identité approuvée, comme un compte de service qui reçoit des privilèges élevés pour accéder aux ressources et exécuter des tâches. La validation PAC renforce un environnement d’autorisation plus sécurisé dans les paramètres d’authentification Kerberos où l’emprunt d’identité se produit. La [validation PAC](https://blogs.msdn.microsoft.com/openspecification/2009/04/24/understanding-microsoft-kerberos-pac-validation/) garantit qu’un utilisateur présente exactement les mêmes données d’autorisation que celles qu’il a reçues dans le ticket Kerberos et que les privilèges du ticket n’ont pas été modifiés.
 
@@ -44,12 +41,10 @@ Le contenu du certificat PAC Kerberos est signé à deux reprises :
 - Une fois avec la clé principale du contrôleur KDC pour empêcher des services côté serveur malveillants de modifier les données d’autorisation
 - Une fois avec la clé principale de compte du serveur de ressources de destination pour empêcher un utilisateur de modifier le contenu du certificat PAC et d’ajouter ses propres données d’autorisation
 
-### Vulnérabilité PAC
-<a id="pac-vulnerability" class="xliff"></a>
+### <a name="pac-vulnerability"></a>Vulnérabilité PAC
 Les bulletins de sécurité [MS14-068](https://technet.microsoft.com/library/security/MS14-068.aspx) et [MS11-013](https://technet.microsoft.com/library/security/ms11-013.aspx) résolvent des vulnérabilités du contrôleur de domaine Kerberos qui peuvent permettre à un attaquant de manipuler le champ PAC dans un ticket Kerberos valide et de s’octroyer ainsi des privilèges supplémentaires.
 
-## Attaque d’élévation de privilèges à l’aide de données d’autorisation falsifiées
-<a id="privilege-escalation-using-forged-authorization-data-attack" class="xliff"></a>
+## <a name="privilege-escalation-using-forged-authorization-data-attack"></a>Attaque d’élévation de privilèges à l’aide de données d’autorisation falsifiées
 
 Une attaque d’élévation de privilèges à l’aide de données d’autorisation falsifiées est perpétrée par un attaquant qui tente de tirer parti des vulnérabilités PAC pour élever ses privilèges dans votre domaine ou forêt Active Directory. Pour effectuer cette attaque, l’attaquant doit disposer des éléments suivants :
 -   Informations d’identification d’un utilisateur du domaine.
@@ -58,16 +53,14 @@ Une attaque d’élévation de privilèges à l’aide de données d’autorisat
 
 Si l’attaquant a la connectivité et les informations d’identification nécessaires, il peut modifier ou falsifier le certificat PAC d’un jeton d’ouverture de session d’utilisateur Kerberos (TGT) existant. Il modifie la revendication de l’appartenance au groupe pour inclure un groupe doté de privilèges plus élevés (par exemple, « Administrateurs de domaine » ou « Administrateurs de l’entreprise »). Il inclut ensuite le certificat PAC modifié dans le ticket Kerberos. Ce ticket Kerberos est ensuite utilisé pour demander un ticket de service auprès d’un contrôleur de domaine non corrigé, ce qui accorde à l’attaquant des autorisations élevées dans le domaine et l’autorisation d’exécuter des actions qui lui sont interdites. Un attaquant peut présenter le jeton d’ouverture de session d’utilisateur modifié pour accéder à n’importe quelle ressource dans le domaine en demandant des jetons d’accès aux ressources. Cela signifie qu’il peut contourner toutes les listes de contrôle d’accès aux ressources configurées qui limitent l’accès sur le réseau par usurpation des données d’autorisation pour tous les utilisateurs dans Active Directory.
 
-## Détection de l’attaque
-<a id="discovering-the-attack" class="xliff"></a>
+## <a name="discovering-the-attack"></a>Détection de l’attaque
 Quand l’attaquant essaie d’élever ses privilèges, ATA le détecte et marque cette opération comme une alerte d’un niveau de gravité élevé.
 
 ![Activité suspecte à l’aide d’un faux PAC](./media/forged-pac.png)
 
 ATA indique dans l’alerte d’activité suspecte si l’élévation de privilèges à l’aide de données d’autorisation falsifiées a réussi ou échoué. Vous devez examiner à la fois les alertes de réussite et d’échec, car les tentatives ayant échoué peuvent toujours indiquer la présence d’un utilisateur malveillant dans votre environnement.
 
-## Examen
-<a id="investigating" class="xliff"></a>
+## <a name="investigating"></a>Examen
 Après avoir reçu l’alerte d’une élévation de privilèges à l’aide de données d’autorisation falsifiées dans ATA, vous devez déterminer ce qui doit être fait pour contenir l’attaque. Pour ce faire, vous devez tout d’abord classer l’alerte comme suit : 
 -   Vrai positif : action malveillante détectée par ATA
 -   Faux positif : fausse alerte. L’élévation de privilèges à l’aide de données d’autorisation falsifiées ne s’est pas produite (il s’agit d’un événement ATA interprété par erreur comme une attaque d’élévation de privilèges à l’aide de données d’autorisation falsifiées)
@@ -96,18 +89,15 @@ Le graphique suivant vous aide à déterminer les étapes à suivre :
         -   Si le service répertorié n’a pas son propre service d’autorisation, il s’agit d’un vrai positif et vous devez exécuter le processus de réponse aux incidents de votre organisation. Même si l’attaquant n’a pas réussi à élever ses privilèges dans le domaine, vous pouvez supposer qu’une personne malveillante est présente sur votre réseau et vous voulez la localiser aussi rapidement que possible avant qu’elle ne tente d’autres attaques répétées et avancées connues pour élever ses privilèges. 
         -   Si le service listé dans l’alerte a son propre mécanisme d’autorisation qui demande des données d’autorisation, il peut être identifié par erreur comme une attaque d’élévation de privilèges à l’aide de données d’autorisation falsifiées.
 
-## Après l’examen
-<a id="post-investigation" class="xliff"></a>
+## <a name="post-investigation"></a>Après l’examen
 Microsoft recommande d’utiliser une équipe IR&R (Incident Response & Recovery) professionnelle, qui peut être contactée via votre équipe des comptes Microsoft, afin de détecter si un attaquant a déployé des méthodes de persistance sur votre réseau.
 
 
-## Limitation des risques
-<a id="mitigation" class="xliff"></a>
+## <a name="mitigation"></a>Limitation des risques
 
 Appliquez les bulletins de sécurité [MS14-068](https://technet.microsoft.com/library/security/MS14-068.aspx) et [MS11-013](https://technet.microsoft.com/library/security/ms11-013.aspx) qui résolvent les vulnérabilités dans le KDC Kerberos. 
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Gestion des activités suspectes](working-with-suspicious-activities.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

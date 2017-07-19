@@ -23,14 +23,12 @@ ms.lasthandoff: 07/10/2017
 
 
 
-# Installer ATA - Étape 7
-<a id="install-ata---step-7" class="xliff"></a>
+# <a name="install-ata---step-7"></a>Installer ATA - Étape 7
 
 >[!div class="step-by-step"]
 [« Étape 6 ](install-ata-step6.md)
 
-## Étape 7. Configurer des exclusions d’adresses IP et un utilisateur Honeytoken
-<a id="step-7-configure-ip-address-exclusions-and-honeytoken-user" class="xliff"></a>
+## <a name="step-7-configure-ip-address-exclusions-and-honeytoken-user"></a>Étape 7. Configurer des exclusions d’adresses IP et un utilisateur Honeytoken
 ATA permet d’exclure des adresses IP ou utilisateurs spécifiques d’un certain nombre de détections. 
 
 Par exemple, une **exclusion DNS Reconnaissance** peut être un analyseur de sécurité qui utilise DNS comme mécanisme d’analyse. L’exclusion aide ATA à ignorer ces analyseurs. Un appareil NAT constitue un exemple d’exclusion *Pass-the-Ticket*.    
@@ -73,8 +71,7 @@ Pour vérifier qu’ATA est opérationnel et qu’il détecte les violations dan
 [« Étape 6 ](install-ata-step6.md)
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)

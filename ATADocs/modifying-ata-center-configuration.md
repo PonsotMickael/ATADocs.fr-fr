@@ -23,14 +23,12 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Modification de la configuration du centre ATA
-<a id="modifying-the-ata-center-configuration" class="xliff"></a>
+# <a name="modifying-the-ata-center-configuration"></a>Modification de la configuration du centre ATA
 
 
 Après le déploiement initial, les modifications doivent être apportées avec soin au centre ATA. Utilisez les procédures suivantes lors de la mise à jour de l’adresse IP et du port, de l’URL de la console et du certificat.
 
-## Adresse IP du centre ATA
-<a id="the-ata-center-ip-address" class="xliff"></a>
+## <a name="the-ata-center-ip-address"></a>Adresse IP du centre ATA
 
 Les passerelles ATA stockent localement l’adresse IP du centre ATA auquel elles doivent se connecter. Elles se connectent régulièrement au centre ATA et téléchargent les modifications de configuration. La modification du mode de connexion des passerelles ATA au centre ATA est effectuée en deux étapes.
 
@@ -43,8 +41,7 @@ Les passerelles ATA stockent localement l’adresse IP du centre ATA auquel ell
 > -   Si la nouvelle adresse IP est installée sur le serveur du centre ATA, vous pouvez la sélectionner dans la liste des adresses IP lors de la modification. Toutefois si, pour une raison quelconque, vous ne pouvez pas installer l’adresse IP sur le serveur du centre ATA, vous pouvez sélectionner une adresse IP personnalisée et l’ajouter manuellement. Vous ne serez pas en mesure d’activer la nouvelle adresse IP tant que l’adresse IP n’est pas installée sur le serveur.
 > -   Si vous devez déployer une nouvelle passerelle ATA après avoir activé la nouvelle adresse IP, vous devez télécharger une nouvelle fois le package d’installation de la passerelle ATA.
 
-## URL de la console
-<a id="the-console-url" class="xliff"></a>
+## <a name="the-console-url"></a>URL de la console
 
 L’URL est utilisée dans les scénarios suivants :
 
@@ -59,8 +56,7 @@ L’URL est utilisée dans les scénarios suivants :
 > [!NOTE]
 > Après avoir modifié l’URL de la console ATA, vous devez télécharger le package d’installation de la passerelle ATA avant d’installer de nouvelles passerelles ATA.
 
-## Certificat du centre ATA
-<a id="the-ata-center-certificate" class="xliff"></a>
+## <a name="the-ata-center-certificate"></a>Certificat du centre ATA
 Si votre certificat est sur le point d’expirer et doit être renouvelé ou remplacé après l’installation du nouveau certificat dans le magasin de l’ordinateur local sur le serveur du centre ATA, remplacez le certificat en suivant ce processus en deux étapes :
 
 -   Première étape. Mettez à jour le certificat que le service du centre ATA doit utiliser. À ce stade, le service du centre ATA est toujours lié au certificat d’origine. Quand les passerelles ATA synchronisent leur configuration, elles disposent de deux certificats potentiels qui sont valides pour une authentification mutuelle. Tant que la passerelle ATA peut se connecter avec le certificat d’origine, elle n’essaie pas le nouveau.
@@ -73,8 +69,7 @@ Si votre certificat est sur le point d’expirer et doit être renouvelé ou rem
 > -   Le certificat étant également utilisé pour la console ATA, il doit correspondre à l’adresse de la console ATA pour éviter les avertissements dans le navigateur.
 > -   Si vous devez déployer une nouvelle passerelle ATA après avoir activé le nouveau certificat, vous devez télécharger une nouvelle fois le package d’installation de la passerelle ATA.
 
-## Modification de la configuration du centre ATA
-<a id="changing-the-ata-center-configuration" class="xliff"></a>
+## <a name="changing-the-ata-center-configuration"></a>Modification de la configuration du centre ATA
 
 1.  Ouvrez la console ATA.
 
@@ -106,7 +101,6 @@ Si votre certificat est sur le point d’expirer et doit être renouvelé ou rem
 
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Utilisation de la console ATA](working-with-ata-console.md)
 - [Consultez le forum ATA !](https://aka.ms/ata-forum)

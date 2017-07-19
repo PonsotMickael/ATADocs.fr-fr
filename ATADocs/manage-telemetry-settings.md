@@ -23,12 +23,10 @@ ms.lasthandoff: 07/03/2017
 
 
 
-# Gérer les paramètres de télémétrie
-<a id="manage-telemetry-settings" class="xliff"></a>
+# <a name="manage-telemetry-settings"></a>Gérer les paramètres de télémétrie
 ATA (Advanced Threat Analytics) collecte des données de télémétrie rendues anonymes sur ATA et les transmet via une connexion HTTPS aux serveurs Microsoft.  Ces données sont utilisées par Microsoft pour améliorer les futures versions d’ATA.
 
-## Données collectées
-<a id="data-collected" class="xliff"></a>
+## <a name="data-collected"></a>Données collectées
 Les données rendues anonymes collectées incluent les éléments suivants :
 
 -   Compteurs de performances du centre ATA et de la passerelle ATA
@@ -84,15 +82,13 @@ Les données rendues anonymes collectées incluent les éléments suivants :
 - Adresses URL de la console ATA - Adresses URL lors de l’utilisation de la console ATA, c’est-à-dire quelles pages de la console ATA sont consultées.
 
 
-### Désactiver la collecte de données
-<a id="disable-data-collection" class="xliff"></a>
+### <a name="disable-data-collection"></a>Désactiver la collecte de données
 Procédez comme suit pour arrêter la collecte et l’envoi de données de télémétrie à Microsoft :
 
 1.  Connectez-vous à la console ATA, cliquez sur les trois points dans la barre d’outils, puis sélectionnez **À propos de**.
 
 2.  Décochez la case **Envoyez-nous des informations d’utilisation pour nous aider à améliorer votre expérience utilisateur à l’avenir**.
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Résolution des problèmes liés à ATA à l’aide du journal des événements](troubleshooting-ata-using-logs.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
