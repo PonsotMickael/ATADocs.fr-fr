@@ -22,21 +22,17 @@ ms.lasthandoff: 07/10/2017
 *S’applique à : Advanced Threat Analytics version 1.8*
 
 
-# Utilisation de l’intégrité et des événements système d’ATA
-<a id="working-with-ata-system-health-and-events" class="xliff"></a>
+# <a name="working-with-ata-system-health-and-events"></a>Utilisation de l’intégrité et des événements système d’ATA
 
-## Centre d’intégrité ATA
-<a id="ata-health-center" class="xliff"></a>
+## <a name="ata-health-center"></a>Centre d’intégrité ATA
 Le centre d’intégrité ATA vous permet d’évaluer les performances de votre service ATA et vous prévient en cas de problèmes.
 
-## Utilisation du centre d’intégrité ATA
-<a id="working-with-the-ata-health-center" class="xliff"></a>
+## <a name="working-with-the-ata-health-center"></a>Utilisation du centre d’intégrité ATA
 Si un problème se produit, le centre d’intégrité ATA déclenche une alerte en affichant un point rouge au-dessus de l’icône du centre d’intégrité dans la barre de menus.
 
 ![Barre d’outils du point rouge dans le centre d’intégrité ATA](media/ATA-Health-Center-Alert-red-dot.png)
 
-### Gestion de l’intégrité d’ATA
-<a id="managing-ata-health" class="xliff"></a>
+### <a name="managing-ata-health"></a>Gestion de l’intégrité d’ATA
 Pour vérifier l’intégrité globale de votre système, cliquez sur l’icône du centre d’intégrité dans la barre de menus. ![Icône du centre d’intégrité ATA](media/ATA-red-dot.png)
 
 -   Pour gérer les alertes actives, vous pouvez leur affecter l’état **Résolue(s)** ou **Rejetée(s)**. Dans l’alerte, cliquez sur **Ouvrir**, puis faites défiler la liste jusqu’à **Résolue(s)** ou **Rejetée(s)**.
@@ -52,8 +48,7 @@ Pour vérifier l’intégrité globale de votre système, cliquez sur l’icône
 
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 
 - [Gestion des activités suspectes](working-with-suspicious-activities.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
