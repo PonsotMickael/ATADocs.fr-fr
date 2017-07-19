@@ -23,13 +23,11 @@ ms.lasthandoff: 07/03/2017
 
 
 
-# Résolution des problèmes connus d’ATA
-<a id="troubleshooting-ata-known-issues" class="xliff"></a>
+# <a name="troubleshooting-ata-known-issues"></a>Résolution des problèmes connus d’ATA
 
 Cette section détaille les erreurs possibles dans les déploiements d’ATA et les étapes requises pour les corriger.
 
-## Erreurs de la passerelle ATA et de la passerelle légère ATA
-<a id="ata-gateway-and-lightweight-gateway-errors" class="xliff"></a>
+## <a name="ata-gateway-and-lightweight-gateway-errors"></a>Erreurs de la passerelle ATA et de la passerelle légère ATA
 
 |Erreur|Description|Résolution|
 |-------------|----------|---------|
@@ -52,8 +50,7 @@ Cette section détaille les erreurs possibles dans les déploiements d’ATA et 
 |Alertes « Trafic avec mise en miroir de ports ignoré » lors de l’utilisation de la passerelle légère sur VMware|Si vous utilisez des contrôleurs de domaine sur des machines virtuelles VMware, vous recevrez peut-être des alertes concernant le **trafic réseau avec mise en miroir de ports ignoré**. Cela peut être dû à une incompatibilité de configuration dans VMware. |Pour éviter ces alertes, vous pouvez vérifier que les paramètres suivants sont définis sur 0 ou sont désactivés : TsoEnable, LargeSendOffload, IPv4, TSO Offload. Pensez aussi à désactiver IPv4 Giant TSO Offload. Pour plus d’informations, voir la documentation de VMware.|
 
 
-## Erreurs liées au déploiement
-<a id="deployment-errors" class="xliff"></a>
+## <a name="deployment-errors"></a>Erreurs liées au déploiement
 |Erreur|Description|Résolution|
 |-------------|----------|---------|
 |L’installation de .Net Framework 4.6.1 échoue avec l’erreur 0x800713ec.|Les composants requis pour .Net Framework 4.6.1 ne sont pas installés sur le serveur. |Avant d’installer ATA, vérifiez que les mises à jour Windows [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) et [KB2919355](https://support.microsoft.com/kb/2919355) sont installées sur le serveur.|
@@ -65,8 +62,7 @@ Cette section détaille les erreurs possibles dans les déploiements d’ATA et 
 
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Prérequis au déploiement d’ATA](ata-prerequisites.md)
 - [Planification de la capacité d’ATA](ata-capacity-planning.md)
 - [Configurer la collecte d’événements](configure-event-collection.md)

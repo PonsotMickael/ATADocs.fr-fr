@@ -21,8 +21,7 @@ ms.lasthandoff: 07/05/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
-# Utilisation des journaux d’audit ATA
-<a id="working-with-ata-audit-logs" class="xliff"></a>
+# <a name="working-with-ata-audit-logs"></a>Utilisation des journaux d’audit ATA
 
 Les journaux d’audit ATA sont conservés dans les journaux des événements Windows sous **Applications et services** et **Microsoft ATA** dans les ordinateurs du centre ATA et les passerelles ATA.
 
@@ -40,7 +39,6 @@ Le journal d’audit de la passerelle ATA contient les éléments suivants :
 *Le journal d’audit des changements de configuration contient la configuration précédente et la nouvelle configuration.
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Gestion des activités suspectes](working-with-suspicious-activities.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -23,16 +23,14 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Installer ATA - Étape 5
-<a id="install-ata---step-5" class="xliff"></a>
+# <a name="install-ata---step-5"></a>Installer ATA - Étape 5
 
 >[!div class="step-by-step"]
 [« Étape 4](install-ata-step4.md)
 [Étape 6 »](install-ata-step6.md)
 
 
-## Étape 5. Configurer les paramètres de la passerelle ATA
-<a id="step-5-configure-the-ata-gateway-settings" class="xliff"></a>
+## <a name="step-5-configure-the-ata-gateway-settings"></a>Étape 5. Configurer les paramètres de la passerelle ATA
 Une fois la passerelle ATA installée, procédez comme suit pour configurer ses paramètres.
 
 1.  Dans la console ATA, accédez à **Configuration**, puis sous **Système**, sélectionnez **Passerelles**.
@@ -70,8 +68,7 @@ Une fois la passerelle ATA installée, procédez comme suit pour configurer ses 
 5. Cliquez sur **Enregistrer**.
 
 
-## Valider les installations
-<a id="validate-installations" class="xliff"></a>
+## <a name="validate-installations"></a>Valider les installations
 Pour vous assurer que la passerelle ATA a été déployée avec succès, effectuez les vérifications suivantes :
 
 1.  Vérifiez que le service nommé **Microsoft Advanced Threat Analytics Gateway** est en cours d’exécution. Après avoir enregistré les paramètres de la passerelle ATA, vous devrez peut-être patienter quelques minutes avant le démarrage du service.
@@ -91,8 +88,7 @@ Pour vous assurer que la passerelle ATA a été déployée avec succès, effectu
 [« Étape 4](install-ata-step4.md)
 [Étape 6 »](install-ata-step6.md)
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)

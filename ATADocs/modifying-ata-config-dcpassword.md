@@ -23,13 +23,11 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Modifier la configuration ATA - Mot de passe de connectivité de domaine
-<a id="change-ata-configuration---domain-connectivity-password" class="xliff"></a>
+# <a name="change-ata-configuration---domain-connectivity-password"></a>Modifier la configuration ATA - Mot de passe de connectivité de domaine
 
 
 
-## Modifier le mot de passe de connectivité de domaine
-<a id="change-the-domain-connectivity-password" class="xliff"></a>
+## <a name="change-the-domain-connectivity-password"></a>Modifier le mot de passe de connectivité de domaine
 Si vous modifiez le mot de passe de connectivité de domaine, assurez-vous que le mot de passe entré est correct. Dans le cas contraire, le service de passerelle ATA cesse de fonctionner sur les passerelles ATA.
 
 Si vous pensez que cela s’est produit, recherchez la ligne suivante dans le fichier Microsoft.Tri.Gateway-Errors.log sur la passerelle ATA : `The supplied credential is invalid.`
@@ -56,7 +54,6 @@ Pour corriger ce problème, procédez comme suit pour mettre à jour le mot de p
 
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Utilisation de la console ATA](working-with-ata-console.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

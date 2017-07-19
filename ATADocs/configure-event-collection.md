@@ -23,16 +23,14 @@ ms.lasthandoff: 07/03/2017
 
 
 
-# Configuration du transfert d’événements Windows
-<a id="configuring-windows-event-forwarding" class="xliff"></a>
+# <a name="configuring-windows-event-forwarding"></a>Configuration du transfert d’événements Windows
 
 Pour améliorer les capacités de détection, ATA a besoin des événements Windows suivants 4776, 4732, 4733, 4728, 4729, 4756, 4757. Ils peuvent être lus automatiquement par la passerelle légère ATA ou, dans le cas où la passerelle légère ATA n’est pas déployée, ils peuvent être transférés à la passerelle ATA de deux manières : en configurant la passerelle ATA pour l’écoute des événements SIEM ou en [configurant le transfert d’événements Windows](#configuring-windows-event-forwarding).
 
 > [!NOTE]
 > Pour les versions d’ATA 1.8 et ultérieures, la configuration de la collecte d’événements n’est plus nécessaire pour les passerelles légères ATA. La passerelle légère ATA peut désormais lire les événements localement, sans qu’il soit nécessaire de configurer le transfert d’événements.
 
-### Configuration WEF pour la passerelle ATA avec mise en miroir de ports
-<a id="wef-configuration-for-ata-gateways-with-port-mirroring" class="xliff"></a>
+### <a name="wef-configuration-for-ata-gateways-with-port-mirroring"></a>Configuration WEF pour la passerelle ATA avec mise en miroir de ports
 
 Une fois que vous avez configuré la mise en miroir des ports des contrôleurs de domaine sur la passerelle ATA, suivez les instructions ci-dessous pour configurer Windows Event Forwarding à l’aide de la configuration Initialisation par la source. Il s’agit de l’une des façons de configurer Windows Event Forwarding. 
 
@@ -96,7 +94,6 @@ Notez qu’après avoir ajouté le **Service réseau** au groupe **Lecteurs des 
 
 Pour plus d’informations, consultez [Configurer les ordinateurs pour transférer et recueillir les événements](https://technet.microsoft.com/library/cc748890).
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Installer ATA](install-ata-step1.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

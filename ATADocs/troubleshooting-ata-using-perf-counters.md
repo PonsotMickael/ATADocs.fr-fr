@@ -23,8 +23,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Résolution des problèmes liés à ATA à l’aide des compteurs de performances
-<a id="troubleshooting-ata-using-the-performance-counters" class="xliff"></a>
+# <a name="troubleshooting-ata-using-the-performance-counters"></a>Résolution des problèmes liés à ATA à l’aide des compteurs de performances
 Les compteurs de performances ATA vous permettent de savoir si les composants ATA s’exécutent correctement. Les composants ATA traitant les données de manière séquentielle, la présence d’un problème peut entraîner le rejet partiel du trafic quelque part le long de la chaîne de composants. Pour résoudre le problème, vous devez déterminer le composant impliqué et résoudre le problème au début de la chaîne. Utilisez les données fournies par les compteurs de performance pour comprendre comment fonctionne chaque composant.
 Pour comprendre le flux des composants ATA internes, consultez [Architecture ATA](ata-architecture.md).
 
@@ -37,8 +36,7 @@ Pour comprendre le flux des composants ATA internes, consultez [Architecture AT
 3.  Cette situation se produit jusqu’au composant NetworkListener qui supprime le trafic quand il ne peut plus transférer d’entités.
 
 
-## Récupération des fichiers de surveillance des performances pour la résolution des problèmes
-<a id="retrieving-performance-monitor-files-for-troubleshooting" class="xliff"></a>
+## <a name="retrieving-performance-monitor-files-for-troubleshooting"></a>Récupération des fichiers de surveillance des performances pour la résolution des problèmes
 
 Pour récupérer les fichiers de surveillance des performances (BLG) à partir de divers composants ATA :
 1.  Ouvrez l’Analyseur de performances.
@@ -48,8 +46,7 @@ Pour récupérer les fichiers de surveillance des performances (BLG) à partir d
 5.  Redémarrez l’ensemble de collecteurs de données nommé : « Microsoft ATA Gateway » ou « Microsoft ATA Center ».
 
 
-## Compteurs de performances de la passerelle ATA
-<a id="ata-gateway-performance-counters" class="xliff"></a>
+## <a name="ata-gateway-performance-counters"></a>Compteurs de performances de la passerelle ATA
 
 Dans cette section, chaque référence à la passerelle ATA fait également référence à la passerelle légère ATA.
 
@@ -72,8 +69,7 @@ Voici la liste des principaux compteurs de passerelle ATA :
 > -   Les valeurs temporelles des compteurs sont exprimées en millisecondes.
 > -   Il est parfois plus pratique de surveiller tous les compteurs en même temps à l’aide du graphique « Rapport » (par exemple : surveillance en temps réel de l’ensemble des compteurs)
 
-## Compteurs de performance de la passerelle légère ATA
-<a id="ata-lightweight-gateway-performance-counters" class="xliff"></a>
+## <a name="ata-lightweight-gateway-performance-counters"></a>Compteurs de performance de la passerelle légère ATA
 Vous pouvez utiliser les compteurs de performances pour la gestion de quota dans la passerelle légère, pour vous assurer qu’ATA n’épuise pas trop les ressources des contrôleurs de domaine sur lesquels il est installé.
 Pour mesurer les limitations de ressources appliquées par ATA sur la passerelle légère, ajoutez ces compteurs.
 
@@ -98,8 +94,7 @@ Pour connaître la consommation réelle, consultez les compteurs suivants :
 |Process(Microsoft.Tri.Gateway)\Private Bytes|Quantité de mémoire allouée (en octets) réellement consommée par le processus de passerelle légère.|Aucun seuil. | Comparez les résultats de ce compteur à la limite indiquée dans GatewayUpdaterResourceManager Commit Memory Max Size. Si vous voyez que le processus atteint souvent la limite maximale sur une période donnée (le processus atteint la limite, puis commence à ignorer le trafic), cela signifie que vous devez allouer davantage de ressources à la passerelle légère.| 
 |Process(Microsoft.Tri.Gateway)\Working Set|Quantité de mémoire physique (en octets) réellement consommée par le processus de passerelle légère.|Aucun seuil. |Comparez les résultats de ce compteur à la limite indiquée dans GatewayUpdaterResourceManager Working Set Limit Size. Si vous voyez que le processus atteint souvent la limite maximale sur une période donnée (le processus atteint la limite, puis commence à ignorer le trafic), cela signifie que vous devez allouer davantage de ressources à la passerelle légère.|
 
-## Compteurs de performances du centre ATA
-<a id="ata-center-performance-counters" class="xliff"></a>
+## <a name="ata-center-performance-counters"></a>Compteurs de performances du centre ATA
 Vous pouvez observer l’état des performances du centre ATA en temps réel en ajoutant des compteurs de performances au centre ATA.
 
 Pour cela, ouvrez l’Analyseur de performances, puis ajoutez tous les compteurs au centre ATA. Le nom de l’objet de compteur de performances est « Microsoft ATA Center ».
@@ -118,8 +113,7 @@ Voici la liste des principaux compteurs du centre ATA :
 > -   Les valeurs temporelles des compteurs sont exprimées en millisecondes.
 > -   Il est parfois plus pratique de surveiller tous les compteurs en même temps à l’aide du graphique « Rapport » (par exemple : surveillance en temps réel de l’ensemble des compteurs)
 
-## Compteurs de système d’exploitation
-<a id="operating-system-counters" class="xliff"></a>
+## <a name="operating-system-counters"></a>Compteurs de système d’exploitation
 Voici la liste des principaux compteurs de système d’exploitation :
 
 |Compteur|Description|Seuil|Résolution des problèmes|
@@ -135,8 +129,7 @@ Voici la liste des principaux compteurs de système d’exploitation :
 |\LogicalDisk&#42;\Écritures disque\s|Taux d’opérations d’écriture sur le disque.|Aucun seuil|Compteurs d’utilisation du disque (peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage).|
 |\LogicalDisk(&#42;)\Octets d’écriture disque\s|Nombre d’octets écrits par seconde sur le disque.|Aucun seuil|Les compteurs d’utilisation du disque peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage.|
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Prérequis au déploiement d’ATA](ata-prerequisites.md)
 - [Planification de la capacité d’ATA](ata-capacity-planning.md)
 - [Configurer la collecte d’événements](configure-event-collection.md)

@@ -22,8 +22,7 @@ ms.lasthandoff: 07/03/2017
 *S’applique à : Advanced Threat Analytics version 1.8*
 
 
-# Installer ATA - Étape 1
-<a id="install-ata---step-1" class="xliff"></a>
+# <a name="install-ata---step-1"></a>Installer ATA - Étape 1
 
 >[!div class="step-by-step"]
 [Étape 2 »](install-ata-step2.md)
@@ -33,8 +32,7 @@ Cette procédure d’installation fournit des instructions pour effectuer une no
 > [!IMPORTANT] 
 > Si vous utilisez Windows 2012 R2, installez la mise à jour KB2934520 sur le serveur du centre ATA et sur les serveurs de passerelle ATA avant de lancer l’installation ; sinon, le programme d’installation d’ATA installe cette mise à jour qui nécessite un redémarrage pendant l’installation d’ATA.
 
-## Étape 1. Télécharger et installer le centre ATA
-<a id="step-1-download-and-install-the-ata-center" class="xliff"></a>
+## <a name="step-1-download-and-install-the-ata-center"></a>Étape 1. Télécharger et installer le centre ATA
 Après avoir vérifié que le serveur répond à la configuration requise, vous pouvez passer à l’installation du centre ATA.
     
 > [!NOTE]
@@ -88,8 +86,7 @@ Effectuez les opérations suivantes sur le serveur du centre ATA.
 À ce stade, la page de paramètres **Général** s’affiche automatiquement pour vous permettre de poursuivre la configuration et le déploiement des passerelles ATA.
 Étant donné que vous vous connectez au site à l’aide d’une adresse IP, vous recevez un avertissement lié au certificat. Ce comportement étant normal, cliquez sur **Poursuivre sur ce site web**.
 
-### Valider l’installation
-<a id="validate-installation" class="xliff"></a>
+### <a name="validate-installation"></a>Valider l’installation
 
 1.  Vérifiez que le service nommé **Microsoft Advanced Threat Analytics Center** est en cours d’exécution.
 2.  Sur le Bureau, cliquez sur le raccourci **Microsoft Advanced Threat Analytics** pour vous connecter à la console ATA. Connectez-vous avec les mêmes informations d’identification utilisateur que celles que vous avez utilisées pour installer le centre ATA.
@@ -100,8 +97,7 @@ Effectuez les opérations suivantes sur le serveur du centre ATA.
 [« Préinstallation](configure-port-mirroring.md)
 [Étape 2 »](install-ata-step2.md)
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)

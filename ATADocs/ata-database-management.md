@@ -23,20 +23,16 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Gestion de la base de données ATA
-<a id="ata-database-management" class="xliff"></a>
+# <a name="ata-database-management"></a>Gestion de la base de données ATA
 Si vous voulez déplacer, sauvegarder ou restaurer la base de données ATA, suivez ces procédures pour MongoDB.
 
-## Sauvegarde de la base de données ATA
-<a id="backing-up-the-ata-database" class="xliff"></a>
+## <a name="backing-up-the-ata-database"></a>Sauvegarde de la base de données ATA
 Reportez-vous à la [documentation MongoDB correspondante](http://docs.mongodb.org/manual/administration/backup/).
 
-## Restauration de la base de données ATA
-<a id="restoring-the-ata-database" class="xliff"></a>
+## <a name="restoring-the-ata-database"></a>Restauration de la base de données ATA
 Reportez-vous à la [documentation MongoDB correspondante](http://docs.mongodb.org/manual/administration/backup/).
 
-## Déplacement de la base de données ATA vers un autre lecteur
-<a id="moving-the-ata-database-to-another-drive" class="xliff"></a>
+## <a name="moving-the-ata-database-to-another-drive"></a>Déplacement de la base de données ATA vers un autre lecteur
 
 1.  Arrêtez le service **Microsoft Advanced Threat Analytics Center**.
 > [!Important] 
@@ -58,8 +54,7 @@ Reportez-vous à la [documentation MongoDB correspondante](http://docs.mongodb.o
 
 7. Démarrez le service **Microsoft Advanced Threat Analytics Center**.
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Architecture d’ATA](ata-architecture.md)
 - [Prérequis au déploiement d’ATA](ata-prerequisites.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

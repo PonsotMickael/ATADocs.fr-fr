@@ -23,8 +23,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Configurer la mise en miroir des ports
-<a id="configure-port-mirroring" class="xliff"></a>
+# <a name="configure-port-mirroring"></a>Configurer la mise en miroir des ports
 > [!NOTE] 
 > Cet article ne vous concerne que si vous déployez des passerelles ATA au lieu de passerelles légères ATA. Pour déterminer si vous devez utiliser des passerelles ATA, consultez [Choix des passerelles appropriées pour votre déploiement](ata-capacity-planning.md#choosing-the-right-gateway-type-for-your-deployment).
  
@@ -45,8 +44,7 @@ Vos contrôleurs de domaine et vos passerelles ATA peuvent être physiques ou vi
 > Si le contrôleur de domaine faisant l’objet d’une mise en miroir des ports est connecté via une liaison WAN, vérifiez que celle-ci peut gérer la charge supplémentaire du trafic ERSPAN.
 > ATA prend uniquement en charge la surveillance du trafic quand le trafic atteint la carte réseau et le contrôleur de domaine de la même manière. ATA ne prend pas en charge la surveillance du trafic quand celui-ci est réparti sur différents ports.
 
-## Options de mise en miroir des ports prises en charge
-<a id="supported-port-mirroring-options" class="xliff"></a>
+## <a name="supported-port-mirroring-options"></a>Options de mise en miroir des ports prises en charge
 
 |Passerelle ATA|Contrôleur de domaine|Considérations|
 |---------------|---------------------|------------------|
@@ -71,7 +69,6 @@ Vos contrôleurs de domaine et vos passerelles ATA peuvent être physiques ou vi
 
 Après avoir configuré la mise en miroir des ports, validez son fonctionnement avant d’installer la passerelle ATA.
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Valider la mise en miroir des ports](validate-port-mirroring.md)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

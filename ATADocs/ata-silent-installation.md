@@ -23,11 +23,9 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Installation d’ATA sans assistance
-<a id="ata-silent-installation" class="xliff"></a>
+# <a name="ata-silent-installation"></a>Installation d’ATA sans assistance
 Cet article fournit des instructions pour installer ATA sans assistance.
-## Conditions préalables
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Conditions préalables
 
 ATA version 1.8 nécessite l’installation du Microsoft .NET Framework 4.6.1. 
 
@@ -40,8 +38,7 @@ Quand vous utilisez la méthode d’installation d’ATA sans assistance, le pro
 Pour suivre la progression du déploiement, surveillez les journaux d’installation d’ATA, qui se trouvent dans **%AppData%\Local\Temp**.
 
 
-## Installer le centre ATA
-<a id="install-the-ata-center" class="xliff"></a>
+## <a name="install-the-ata-center"></a>Installer le centre ATA
 
 Utilisez la commande suivante pour installer le centre ATA :
 
@@ -81,8 +78,7 @@ Pour installer le centre ATA avec les chemins d’installation par défaut, deux
     "Microsoft ATA Center Setup.exe" /quiet --LicenseAccepted NetFrameworkCommandLineArguments ="/q" CenterIpAddress=192.168.0.10 CenterPort=443 CenterCertificateThumbprint= ‎"1E2079739F624148ABDF502BF9C799FCB8C7212F"
     ConsoleIpAddress=192.168.0.11  ConsoleCertificateThumbprint="G9530253C976BFA9342FD1A716C0EC94207BFD5A"
 
-## Mettez à jour le centre ATA.
-<a id="update-the-ata-center" class="xliff"></a>
+## <a name="update-the-ata-center"></a>Mettez à jour le centre ATA.
 
 Utilisez la commande suivante pour mettre à jour le centre ATA :
 
@@ -106,8 +102,7 @@ Pendant la mise à jour d’ATA, le programme d’installation détecte automati
 
         "Microsoft ATA Center Setup.exe" /quiet NetFrameworkCommandLineArguments="/q"
 
-## Désinstaller le centre ATA sans assistance
-<a id="uninstall-the-ata-center-silently" class="xliff"></a>
+## <a name="uninstall-the-ata-center-silently"></a>Désinstaller le centre ATA sans assistance
 
 Utilisez la commande suivante pour effectuer une désinstallation sans assistance du centre ATA : **Syntaxe** :
 
@@ -133,8 +128,7 @@ Utilisez la commande suivante pour effectuer une désinstallation sans assistanc
 
     "Microsoft ATA Center Setup.exe" /quiet /uninstall --DeleteExistingDatabaseData
 
-## Installation de la passerelle ATA sans assistance
-<a id="ata-gateway-silent-installation" class="xliff"></a>
+## <a name="ata-gateway-silent-installation"></a>Installation de la passerelle ATA sans assistance
 Utilisez la commande suivante pour installer la passerelle ATA sans assistance :
 
 **Syntaxe** :
@@ -169,8 +163,7 @@ Utilisez la commande suivante pour installer la passerelle ATA sans assistance 
     ConsoleAccountName="user@contoso.com" ConsoleAccountPassword="userpwd"
     
 
-## Mettre à jour la passerelle ATA
-<a id="update-the-ata-gateway" class="xliff"></a>
+## <a name="update-the-ata-gateway"></a>Mettre à jour la passerelle ATA
 
 Utilisez la commande suivante pour mettre à jour la passerelle ATA sans assistance :
 
@@ -192,8 +185,7 @@ Utilisez la commande suivante pour mettre à jour la passerelle ATA sans assista
 
         Microsoft ATA Gateway Setup.exe /quiet NetFrameworkCommandLineArguments="/q"
 
-## Désinstaller la passerelle ATA sans assistance
-<a id="uninstall-the-ata-gateway-silently" class="xliff"></a>
+## <a name="uninstall-the-ata-gateway-silently"></a>Désinstaller la passerelle ATA sans assistance
 
 Utilisez la commande suivante pour effectuer une désinstallation sans assistance de la passerelle ATA : **Syntaxe** :
 
@@ -221,8 +213,7 @@ Utilisez la commande suivante pour effectuer une désinstallation sans assistanc
 
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)

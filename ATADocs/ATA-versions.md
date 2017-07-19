@@ -20,8 +20,7 @@ ms.lasthandoff: 07/03/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
-# Support des versions de Microsoft Advanced Threat Analytics (ATA)
-<a id="support-for-microsoft-advanced-threat-analytics-ata-versions" class="xliff"></a>
+# <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Support des versions de Microsoft Advanced Threat Analytics (ATA)
 
 Microsoft prévoit de publier des mises à jour d’ATA plusieurs fois par an, chaque version de mise à jour étant prise en charge 12 mois à partir de sa date de publication générale (GA). Un support technique est assuré sur toute cette période de 12 mois. Toutefois, notre structure de support est désormais dynamique et évolue en deux phases de maintenance distinctes qui dépendent de la disponibilité de la dernière version.
 
@@ -34,8 +33,7 @@ Microsoft prévoit de publier des mises à jour d’ATA plusieurs fois par an, c
 > [!Note]
 > La dernière version d’ATA est toujours en phase de maintenance Mises à jour critiques et de sécurité. Cela signifie que si vous rencontrez une erreur de code qui nécessite une mise à jour critique, vous devez avoir la dernière version Current Branch pour recevoir un correctif. Toutes les autres versions prises en charge ne peuvent recevoir que les mises à jour de sécurité. Tout support se termine après l’expiration du cycle de vie du support de 12 mois d’une version. À ce stade, les clients doivent effectuer une mise à jour vers une version prise en charge.
 
-## Historique des versions
-<a id="version-history" class="xliff"></a>
+## <a name="version-history"></a>Historique des versions
 
 |VERSION|NUMÉRO DE BUILD|DATE DE DISPONIBILITÉ| DATE DE FIN DE SUPPORT|
 |----|----|----|----|
@@ -51,6 +49,5 @@ Microsoft prévoit de publier des mises à jour d’ATA plusieurs fois par an, c
 
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

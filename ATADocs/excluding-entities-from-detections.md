@@ -23,8 +23,7 @@ ms.lasthandoff: 07/11/2017
 
 
 
-# Exclusion d’entités des détections
-<a id="excluding-entities-from-detections" class="xliff"></a>
+# <a name="excluding-entities-from-detections"></a>Exclusion d’entités des détections
 Cette rubrique explique comment empêcher des entités de déclencher des alertes afin de minimiser les vrais positifs sans gravité, tout en vous assurant d’intercepter les vrais positifs. Pour empêcher qu’ATA ne déclenche inutilement des alertes sur des activités qui peuvent faire partie de l’activité professionnelle normale d’utilisateurs spécifiques, vous pouvez empêcher des entités spécifiques de déclencher des alertes.
 
 Par exemple, si vous disposez d’un scanneur de sécurité qui effectue le rapprochement DNS ou un administrateur qui exécute à distance des scripts sur le contrôleur de domaine et qu’il s’agit d’activités approuvées faisant partie des opérations informatiques normales de votre organisation.
@@ -58,7 +57,6 @@ Lorsque vous avez la possibilité d’exclure une adresse IP ou un ordinateur, v
 > Les pages de configuration peuvent être modifiées seulement par des administrateurs d’ATA.
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Modification de la configuration d’ATA](modifying-ata-center-configuration.md)

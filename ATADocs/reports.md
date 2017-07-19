@@ -22,8 +22,7 @@ ms.lasthandoff: 06/30/2017
 *S’applique à : Advanced Threat Analytics version 1.8*
 
 
-# Rapports ATA
-<a id="ata-reports" class="xliff"></a>
+# <a name="ata-reports"></a>Rapports ATA
 
 La section Rapports ATA de la console vous permet de générer des rapports contenant des informations sur l’état du système, sur l’intégrité du système et sur les activités suspectes détectées dans votre environnement.
 
@@ -55,8 +54,7 @@ Pour définir un rapport planifié :
 > Les rapports planifiés sont remis par e-mail et peuvent être envoyés seulement que si vous avez déjà configuré un serveur de messagerie sous **Configuration**, en sélectionnant **Serveur de messagerie** sous Notifications et rapports.
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Prérequis au déploiement d’ATA](ata-prerequisites.md)
 - [Planification de la capacité d’ATA](ata-capacity-planning.md)
 - [Configurer la collecte d’événements](configure-event-collection.md)

@@ -23,15 +23,13 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Installer ATA - Étape 4
-<a id="install-ata---step-4" class="xliff"></a>
+# <a name="install-ata---step-4"></a>Installer ATA - Étape 4
 
 >[!div class="step-by-step"]
 [« Étape 3](install-ata-step3.md)
 [Étape 5 »](install-ata-step5.md)
 
-## Étape 4. Installer la passerelle ATA
-<a id="step-4-install-the-ata-gateway" class="xliff"></a>
+## <a name="step-4-install-the-ata-gateway"></a>Étape 4. Installer la passerelle ATA
 
 Avant d’installer la passerelle ATA sur un serveur dédié, vérifiez que la mise en miroir des ports est correctement configurée et que la passerelle ATA peut voir le trafic à destination et en provenance des contrôleurs de domaine. Pour plus d’informations, consultez [Valider la mise en miroir des ports](validate-port-mirroring.md).
 
@@ -90,8 +88,7 @@ Effectuez les opérations suivantes sur le serveur de la passerelle ATA.
 [« Étape 3](install-ata-step3.md)
 [Étape 5 »](install-ata-step5.md)
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)

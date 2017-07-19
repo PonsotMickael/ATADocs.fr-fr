@@ -23,19 +23,16 @@ ms.lasthandoff: 07/03/2017
 
 
 
-# Utilisation de la console ATA
-<a id="working-with-the-ata-console" class="xliff"></a>
+# <a name="working-with-the-ata-console"></a>Utilisation de la console ATA
 
 Utilisez la console ATA pour surveiller les activités suspectes et les gérer.
 
 Tapez « ? » pour obtenir les raccourcis clavier d’accessibilité du portail ATA. 
 
-## Activation de l’accès à la console ATA
-<a id="enabling-access-to-the-ata-console" class="xliff"></a>
+## <a name="enabling-access-to-the-ata-console"></a>Activation de l’accès à la console ATA
 Pour ouvrir une session dans la console ATA, vous devez utiliser le compte d’un utilisateur auquel a été attribué le rôle ATA approprié pour accéder à la console ATA. Pour plus d’informations sur le contrôle d’accès en fonction du rôle (RBAC) dans ATA, consultez [Utilisation de groupes de rôles ATA](ata-role-groups.md).
 
-## Connexion à la console ATA
-<a id="logging-into-the-ata-console" class="xliff"></a>
+## <a name="logging-into-the-ata-console"></a>Connexion à la console ATA
 
 1. Sur le serveur du centre ATA, cliquez sur l’icône **Console ATA Microsoft** sur le Bureau ou ouvrez un navigateur pour accéder à la console ATA.
 
@@ -56,16 +53,14 @@ Pour vous connecter à l’aide de l’authentification unique, vérifiez que le
 
 
 
-## Console ATA
-<a id="the-ata-console" class="xliff"></a>
+## <a name="the-ata-console"></a>Console ATA
 
 La console ATA fournit un aperçu rapide de toutes les activités suspectes par ordre chronologique. Elle vous permet d’examiner les détails de toutes les activités et d’effectuer des actions en fonction de ces activités. La console affiche également des alertes et des notifications pour signaler des problèmes liés au réseau ATA ou aux nouvelles activités considérées comme suspectes.
 
 Voici les principaux éléments de la console ATA.
 
 
-### Chronologie des attaques
-<a id="attack-time-line" class="xliff"></a>
+### <a name="attack-time-line"></a>Chronologie des attaques
 
 Il s’agit de la page de destination qui s’affiche par défaut quand vous vous connectez à la console ATA. Par défaut, toutes les activités suspectes ouvertes sont affichées dans la chronologie des attaques. Vous pouvez filtrer la chronologie des attaques de manière à tout afficher ou de manière à afficher uniquement les activités suspectes dont l’état est Ouvert, Résolu ou Ignoré. Vous pouvez également voir le niveau de gravité attribué à chaque activité.
 
@@ -73,27 +68,23 @@ Il s’agit de la page de destination qui s’affiche par défaut quand vous vou
 
 Pour plus d’informations, consultez [Gestion des activités suspectes](working-with-suspicious-activities.md).
 
-### Barre de notification
-<a id="notification-bar" class="xliff"></a>
+### <a name="notification-bar"></a>Barre de notification
 
 Quand une activité suspecte est détectée, la barre de notification s’ouvre automatiquement sur la droite. Si de nouvelles activités suspectes ont été détectées depuis la dernière ouverture de session, la barre de notification s’ouvrira après votre connexion. Pour accéder à la barre de notification, vous pouvez cliquer sur la flèche de droite à tout moment.
 
 ![Image de la barre de notification ATA](media/notification-bar-1.7.png)
 
-### Filtrage du panneau
-<a id="filtering-panel" class="xliff"></a>
+### <a name="filtering-panel"></a>Filtrage du panneau
 
 Vous pouvez filtrer les activités suspectes qui s’affichent dans la chronologie des attaques ou sous l’onglet Activités suspectes du profil d’entité, selon leur l’état et leur niveau de gravité.
 
-### Barre de recherche
-<a id="search-bar" class="xliff"></a>
+### <a name="search-bar"></a>Barre de recherche
 
 Le menu supérieur comprend une barre de recherche. Vous pouvez rechercher un utilisateur spécifique, un ordinateur ou un groupe dans ATA. Pour tester la fonction de recherche, commencez à taper un nom.
 
 ![Image de la recherche dans la console ATA](media/ATA-console-search.png)
 
-### Centre d’intégrité
-<a id="health-center" class="xliff"></a>
+### <a name="health-center"></a>Centre d’intégrité
 
 Le centre d’intégrité envoie des alertes quand un élément du déploiement ATA ne fonctionne pas correctement.
 
@@ -103,8 +94,7 @@ Quand votre système rencontre un problème, par exemple une erreur de connectiv
 
 Les alertes du centre d’intégrité peuvent être ignorées ou résolues, et classées comme étant d’importance haute, moyenne ou faible. Si vous résolvez une alerte que le service ATA détecte comme étant toujours active, elle sera automatiquement mise dans la liste des alertes ouvertes. Si le système détecte que l’alerte n’a plus de raison d’être (le problème a été résolu), l’alerte est placée automatiquement dans la liste des alertes résolues.
 
-### Profils d’utilisateur et d’ordinateur
-<a id="user-and-computer-profiles" class="xliff"></a>
+### <a name="user-and-computer-profiles"></a>Profils d’utilisateur et d’ordinateur
 
 ATA crée un profil pour chaque utilisateur et chaque ordinateur du réseau. Le profil utilisateur contient des informations générales, telles que l’appartenance aux groupes, les connexions récentes et les ressources récemment consultées. Il fournit également une liste des emplacements où l’utilisateur s’est connecté via un VPN. Pour obtenir la liste des appartenances aux groupes considérées comme sensibles, voir ci-dessous.
 
@@ -121,8 +111,7 @@ Quand ATA n’est pas en mesure de résoudre complètement un profil, il l’ind
 
 ![Image du profil non résolu dans ATA](media/ATA-Unresolved-Profile.jpg)
 
-### Groupes sensibles
-<a id="sensitive-groups" class="xliff"></a>
+### <a name="sensitive-groups"></a>Groupes sensibles
 
 Les groupes de la liste suivante sont considérés comme **sensibles** par ATA. Il s’agit de groupes qui seront marqués comme ayant des privilèges d’administrateur et qui déclenchent des alertes correspondant à des comptes sensibles :
 
@@ -146,8 +135,7 @@ Les groupes de la liste suivante sont considérés comme **sensibles** par ATA. 
 - Administrateurs DNS 
 
 
-### Mini-profil
-<a id="mini-profile" class="xliff"></a>
+### <a name="mini-profile"></a>Mini-profil
 
 Quand une entité est présentée dans la console (par exemple un utilisateur ou un ordinateur), si vous pointez votre souris dessus, un mini-profil s’ouvre automatiquement et affiche les informations suivantes si elles sont disponibles :
 
@@ -165,6 +153,5 @@ Quand une entité est présentée dans la console (par exemple un utilisateur ou
 
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

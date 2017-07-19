@@ -23,8 +23,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Fournir à ATA les paramètres de votre serveur de messagerie
-<a id="provide-ata-with-your-email-server-settings" class="xliff"></a>
+# <a name="provide-ata-with-your-email-server-settings"></a>Fournir à ATA les paramètres de votre serveur de messagerie
 ATA peut vous avertir quand il détecte une activité suspecte. Pour qu’ATA puisse envoyer des notifications par courrier électronique, vous devez d’abord configurer les **paramètres du serveur de messagerie**.
 
 1.  Sur le serveur du centre ATA, cliquez sur l’icône **Microsoft Advanced Threat Analytics Management**(Gestion de Microsoft Advanced Threat Analytics) sur le Bureau.
@@ -45,8 +44,7 @@ ATA peut vous avertir quand il détecte une activité suspecte. Pour qu’ATA pu
     |Envoyer depuis (obligatoire)|Entrez une adresse de messagerie à partir de laquelle le courrier sera envoyé.|Exemple :<br />ATA@contoso.com|
     ![Image des paramètres du serveur de messagerie ATA](media/ata-email-server.png)
 
-## Fournir à ATA les paramètres de votre serveur Syslog
-<a id="provide-ata-with-your-syslog-server-settings" class="xliff"></a>
+## <a name="provide-ata-with-your-syslog-server-settings"></a>Fournir à ATA les paramètres de votre serveur Syslog
 ATA peut vous avertir quand il détecte une activité suspecte en envoyant la notification à votre serveur Syslog. Si vous activez les notifications Syslog, vous pouvez définir les éléments associés suivants.
 
 1.  Avant de configurer les notifications Syslog, collaborez avec votre administrateur SIEM pour connaître les informations suivantes :
@@ -79,6 +77,5 @@ ATA peut vous avertir quand il détecte une activité suspecte en envoyant la no
 
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

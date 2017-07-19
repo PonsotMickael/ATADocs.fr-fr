@@ -23,15 +23,13 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Installer ATA - Étape 3
-<a id="install-ata---step-3" class="xliff"></a>
+# <a name="install-ata---step-3"></a>Installer ATA - Étape 3
 
 >[!div class="step-by-step"]
 [« Étape 2](install-ata-step2.md)
 [Étape 4 »](install-ata-step4.md)
 
-## Étape 3. Télécharger le package d’installation de la passerelle ATA
-<a id="step-3-download-the-ata-gateway-setup-package" class="xliff"></a>
+## <a name="step-3-download-the-ata-gateway-setup-package"></a>Étape 3. Télécharger le package d’installation de la passerelle ATA
 Après avoir configuré les paramètres de connectivité du domaine, vous pouvez télécharger le package d’installation de la passerelle ATA. Elle peut être installée sur un serveur dédié ou sur un contrôleur de domaine. Si vous l’installez sur un contrôleur de domaine, elle est installée en tant que passerelle légère ATA. Pour plus d’informations sur la passerelle légère ATA, consultez [Architecture ATA](ata-architecture.md). 
 
 Cliquez sur Télécharger l’installation de la passerelle dans la liste des étapes en haut de la page pour accéder à la page Passerelles :
@@ -57,8 +55,7 @@ Le fichier zip comprend les éléments suivants :
 [« Étape 2](install-ata-step2.md)
 [Étape 4 »](install-ata-step4.md)
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)

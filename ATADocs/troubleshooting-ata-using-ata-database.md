@@ -23,13 +23,11 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Résolution des problèmes liés à ATA à l’aide de la base de données ATA
-<a id="troubleshooting-ata-using-the-ata-database" class="xliff"></a>
+# <a name="troubleshooting-ata-using-the-ata-database"></a>Résolution des problèmes liés à ATA à l’aide de la base de données ATA
 ATA utilise MongoDB comme base de données.
 Vous pouvez interagir avec la base de données à l’aide de la ligne de commande par défaut ou d’un outil d’interface utilisateur pour effectuer la résolution des problèmes et des tâches avancées.
 
-## Interaction avec la base de données
-<a id="interacting-with-the-database" class="xliff"></a>
+## <a name="interacting-with-the-database"></a>Interaction avec la base de données
 La procédure par défaut et la plus simple pour interroger la base de données consiste à utiliser l’interpréteur de commandes Mongo :
 
 1.  Ouvrez une fenêtre de ligne de commande et modifiez le chemin au dossier bin MongoDB. Le chemin par défaut est : **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**.
@@ -51,8 +49,7 @@ Voici un exemple de code qui utilise la syntaxe ci-dessus. Si vous étudiez une 
 
 `db.Ntlms_<closest date>.find({SourceAccountId: "123bdd24-b269-h6e1-9c72-7737as875351"})`
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Prérequis au déploiement d’ATA](ata-prerequisites.md)
 - [Planification de la capacité d’ATA](ata-capacity-planning.md)
 - [Configurer la collecte d’événements](configure-event-collection.md)

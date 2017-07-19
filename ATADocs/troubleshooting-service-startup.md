@@ -23,8 +23,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Résolution des problèmes de démarrage du service Centre ATA
-<a id="troubleshooting-ata-center-service-startup" class="xliff"></a>
+# <a name="troubleshooting-ata-center-service-startup"></a>Résolution des problèmes de démarrage du service Centre ATA
 
 Si votre centre ATA ne démarre pas, effectuez la procédure de dépannage suivante :
 
@@ -37,8 +36,7 @@ S’il peut démarrer, c’est que la plateforme ne pose probablement pas probl�
 
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Prérequis au déploiement d’ATA](ata-prerequisites.md)
 - [Planification de la capacité d’ATA](ata-capacity-planning.md)
 - [Configurer la collecte d’événements](configure-event-collection.md)

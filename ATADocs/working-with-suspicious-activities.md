@@ -23,12 +23,10 @@ ms.lasthandoff: 07/10/2017
 
 
 
-# Gestion des activités suspectes
-<a id="working-with-suspicious-activities" class="xliff"></a>
+# <a name="working-with-suspicious-activities"></a>Gestion des activités suspectes
 Cette rubrique explique les principes de base d’Advanced Threat Analytics.
 
-## Passer en revue les activités suspectes sur la chronologie des attaques
-<a id="review-suspicious-activities-on-the-attack-time-line" class="xliff"></a>
+## <a name="review-suspicious-activities-on-the-attack-time-line"></a>Passer en revue les activités suspectes sur la chronologie des attaques
 Une fois connecté à la console ATA, la **Chronologie des activités suspectes** s’ouvre automatiquement. Les activités suspectes sont répertoriées par ordre chronologique, avec les plus récentes en haut de la liste.
 Chaque activité suspecte comporte les informations suivantes :
 
@@ -58,8 +56,7 @@ Chaque activité suspecte comporte les informations suivantes :
 
 ![Image de la chronologie des activités suspectes ATA](media/ATA-Suspicious-Activity-Timeline.JPG)
 
-## Filtrer la liste des activités suspectes
-<a id="filter-suspicious-activities-list" class="xliff"></a>
+## <a name="filter-suspicious-activities-list"></a>Filtrer la liste des activités suspectes
 Pour filtrer la liste des activités suspectes :
 
 1.  Dans le volet **Filtrer par** sur le côté gauche de l’écran, sélectionnez l’une des options suivantes : **Tout**, **Ouvert**, **Résolu** ou **Ignoré**.
@@ -83,8 +80,7 @@ Pour filtrer la liste des activités suspectes :
 
 
 
-## Résolution des activités suspectes
-<a id="remediating-suspicious-activities" class="xliff"></a>
+## <a name="remediating-suspicious-activities"></a>Résolution des activités suspectes
 Vous pouvez changer l’état d’une activité suspecte en cliquant sur son état actuel, puis en sélectionnant une des options suivantes : **Ouvert**, **Ignoré**, **Fermé** ou **Supprimé**.
 Pour cela, cliquez sur les trois points en haut à droite d’une activité suspecte spécifique pour afficher la liste des actions disponibles.
 
@@ -108,7 +104,6 @@ Pour cela, cliquez sur les trois points en haut à droite d’une activité susp
 > Les pages de configuration peuvent être modifiées seulement par des administrateurs d’ATA.
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Modification de la configuration d’ATA](modifying-ata-center-configuration.md)

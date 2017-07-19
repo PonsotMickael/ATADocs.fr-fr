@@ -21,8 +21,7 @@ ms.lasthandoff: 07/03/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
-# Quelles sont les menaces que recherche ATA ?
-<a id="what-threats-does-ata-look-for" class="xliff"></a>
+# <a name="what-threats-does-ata-look-for"></a>Quelles sont les menaces que recherche ATA ?
 
 ATA fournit une fonctionnalité de détection pour les différentes phases d’une attaque avancée : reconnaissance, compromission des informations d’identification, mouvement latéral, élévation des privilèges, contrôle du domaine, etc. Les attaques avancées et les menaces internes peuvent ainsi être détectées avant de pouvoir causer des dommages pour votre entreprise.
 Chaque type de détection correspond à un ensemble d’activités suspectes liées à la phase en question, chacune de ces activités correspondant elle-même à différents types d’attaques possibles.
@@ -31,8 +30,7 @@ Les phases de la « kill-chain » où ATA fournit une détection sont mises en
 ![Focus d’ATA sur l’activité latérale dans la chaîne d’attaque](media/attack-kill-chain-small.jpg)
 
 
-### Reconnaissance
-<a id="reconnaissance" class="xliff"></a>
+### <a name="reconnaissance"></a>Reconnaissance
 
 ATA fournit plusieurs outils de détection de reconnaissance. Ces détections sont les suivantes :
 
@@ -45,8 +43,7 @@ ATA fournit plusieurs outils de détection de reconnaissance. Ces détections so
 -   **Reconnaissance à l’aide de l’énumération des services d’annuaire**<br></br>Détection de la reconnaissance pour les entités (utilisateurs, groupes, etc.) effectuée à l’aide du protocole distant SAM pour exécuter des requêtes sur les contrôleurs de domaine. Cette méthode de reconnaissance est répandue dans de nombreux types de logiciels malveillants utilisés dans les scénarios d’attaque du monde réel. 
 
 
-### Informations d’identification compromises
-<a id="compromised-credentials" class="xliff"></a>
+### <a name="compromised-credentials"></a>Informations d’identification compromises
 
 Pour détecter la compromission des informations d’identification, ATA utilise une analyse comportementale basée sur l’apprentissage automatique, ainsi que la détection des attaques et techniques connues.
 Grâce à l’apprentissage automatique et à l’analyse comportementale, ATA peut détecter les activités suspectes, telles que les connexions suspectes, les accès anormaux aux ressources et les heures de travail anormales pouvant indiquer une compromission des informations d’identification. Pour protéger les informations d’identification, ATA détecte les attaques et techniques connues suivantes :
@@ -67,8 +64,7 @@ Grâce à l’apprentissage automatique et à l’analyse comportementale, ATA p
 
 -   **Comportement anormal**<br></br>Souvent, en cas de menaces internes et de menaces avancées, les informations d’identification de compte peuvent être compromises à l’aide de méthodes d’ingénierie sociale ou de méthodes et techniques nouvelles qui ne sont pas encore connues. ATA peut détecter ces types de compromission en analysant le comportement de l’entité et en détectant et signalant les anomalies des opérations effectuées par celle-ci.
 
-### Mouvement latéral
-<a id="lateral-movement" class="xliff"></a>
+### <a name="lateral-movement"></a>Mouvement latéral
 
 Pour détecter le mouvement latéral, acte par lequel un utilisateur se sert d’informations d’identification permettant d’accéder à certaines ressources dans le but d’accéder à des ressources auxquelles il n’est pas autorisé à accéder, ATA utilise une analyse comportementale basée sur l’apprentissage automatique, ainsi que la détection des attaques et techniques connues.
 Grâce à l’analyse comportementale et à l’apprentissage automatique, ATA détecte les accès anormaux aux ressources, les utilisations anormales d’appareils, ainsi que d’autres indicateurs de mouvements latéraux.
@@ -82,8 +78,7 @@ En outre, ATA peut repérer un mouvement latéral grâce à la détection des te
 
 -   **Comportement anormal**<br></br>Le mouvement latéral est une technique qu’utilise souvent un attaquant pour se déplacer d’un appareil et d’une zone à l’autre du réseau de la victime afin d’accéder à des informations d’identification dotées de privilèges ou à des informations sensibles qui présentent un intérêt particulier. ATA peut détecter un mouvement latéral en analysant le comportement des utilisateurs, des appareils et leurs relations à l’intérieur du réseau d’entreprise, et repérer tout modèle d’accès anormal pouvant indiquer un mouvement latéral effectué par un attaquant.
 
-### Élévation des privilèges
-<a id="privilege-escalation" class="xliff"></a>
+### <a name="privilege-escalation"></a>Élévation des privilèges
 
 ATA détecte les attaques par élévation des privilèges tentées et réussies, dans lesquelles les attaquants essaient d’élever leurs privilèges existants et les utilisent à plusieurs reprises pour prendre le contrôle total de l’environnement de la victime.
 ATA permet de détecter l’élévation des privilèges en combinant des analyses comportementales pour détecter un comportement anormal des comptes dotés de privilèges, ainsi qu’en détectant les attaques et techniques connues qui sont souvent utilisées pour élever les privilèges, par exemple :
@@ -94,8 +89,7 @@ ATA permet de détecter l’élévation des privilèges en combinant des analyse
 
 -   **Modification anormale de groupes sensibles**  <br></br>Dans le cadre de la phase de réaffectation de privilèges, des attaquants modifient des groupes avec des privilèges élevés pour accéder à des ressources sensibles. ATA détecte désormais quand une modification est effectuée dans un groupe avec privilèges élevés.
 
-### Contrôle du domaine
-<a id="domain-dominance" class="xliff"></a>
+### <a name="domain-dominance"></a>Contrôle du domaine
 
 ATA détecte les attaques en cours ou réussies de domination et de prise de contrôle total de l’environnement de la victime en repérant des techniques connues utilisées par les pirates, notamment :
 
@@ -110,13 +104,11 @@ ATA détecte les attaques en cours ou réussies de domination et de prise de con
 -   **Demandes de réplication malveillantes** <br></br>Dans les environnements Active Directory (AD), la réplication se produit régulièrement entre contrôleurs de domaine. Un attaquant peut usurper une demande de réplication AD (parfois en empruntant l’identité d’un contrôleur de domaine), ce qui lui permet de récupérer les données stockées dans AD, notamment les codes de hachage de mot de passe, sans utiliser des techniques plus contraignantes telles que les clichés instantanés de volume.
 
 
-## Étapes suivantes
-<a id="whats-next" class="xliff"></a>
+## <a name="whats-next"></a>Étapes suivantes
 
 -   Pour plus d’informations sur la façon dont ATA s’intègre à votre réseau, consultez [Architecture ATA](ata-architecture.md).
 
 -   Pour commencer le déploiement d’ATA, consultez [Installer ATA](install-ata-step1.md).
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
