@@ -19,8 +19,7 @@ ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/10/2017
 ---
-# Mise à jour d’ATA vers la version 1.8
-<a id="updating-ata-to-version-18" class="xliff"></a>
+# <a name="updating-ata-to-version-18"></a>Mise à jour d’ATA vers la version 1.8
 
 > [!NOTE] 
 > Si ATA n’est pas installé dans votre environnement, téléchargez la version complète d’ATA qui inclut la version 1.8. Suivez ensuite la procédure d’installation standard décrite dans [Installer ATA](install-ata-step1.md).
@@ -42,8 +41,7 @@ Dans la version de migration, le fichier peut être utilisé uniquement pour la 
     > [!IMPORTANT]
     > Pour assurer le bon fonctionnement d’ATA, mettez à jour toutes les passerelles.
 
-### Étape 1 : mettre à jour le centre ATA
-<a id="step-1-update-the-ata-center" class="xliff"></a>
+### <a name="step-1-update-the-ata-center"></a>Étape 1 : mettre à jour le centre ATA
 
 1.  Sauvegardez votre base de données (facultatif) :
 
@@ -84,7 +82,6 @@ Dans la version de migration, le fichier peut être utilisé uniquement pour la 
 > Pour installer de nouvelles passerelles ATA, accédez à l’écran **Passerelles** et cliquez sur **Télécharger le programme d’installation de la passerelle** pour obtenir le package d’installation ATA 1.8 et suivre les instructions d’installation de la nouvelle passerelle, comme décrit dans [Étape 4. Installer la passerelle ATA](install-ata-step4.md).
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
