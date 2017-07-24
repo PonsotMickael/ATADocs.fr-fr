@@ -13,18 +13,17 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b810d066c59ea4663157027894eb7e2a39f7ff14
-ms.sourcegitcommit: 53b56220fa761671442da273364bdb3d21269c9e
+ms.openlocfilehash: 14b0d68ce797eeaa99c9e067f7f8caacee1a7b74
+ms.sourcegitcommit: 3cd268cf353ff8bc3d0b8f9a8c10a34353d1fcf1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 07/16/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
 
 
-# Prérequis pour ATA
-<a id="ata-prerequisites" class="xliff"></a>
+# <a name="ata-prerequisites"></a>Prérequis pour ATA
 Cet article décrit la configuration requise pour réussir le déploiement d’ATA dans votre environnement.
 
 >[!NOTE]
@@ -48,8 +47,7 @@ Le système ATA fonctionne sur la limite de forêt Active Directory et prend en 
 
 ![Diagramme de l’architecture ATA](media/ATA-architecture-topology.jpg)
 
-## Avant de commencer
-<a id="before-you-start" class="xliff"></a>
+## <a name="before-you-start"></a>Avant de commencer
 Cette section répertorie les informations que vous devez rassembler ainsi que les comptes et entités réseau dont vous devez disposer avant de procéder à l’installation d’ATA.
 
 
@@ -67,11 +65,9 @@ Cette section répertorie les informations que vous devez rassembler ainsi que l
 -   Facultatif : Outre la collecte et l’analyse du trafic réseau à destination et en provenance des contrôleurs de domaine, ATA peut utiliser les événements Windows 4776, 4732, 4733, 4728, 4729, 4756 et 4757 pour améliorer la détection de l’attaque Pass-the-Hash, de l’attaque par force brute, de la modification des groupes sensibles et des comptes Honeytoken. Vous pouvez recevoir ces événements à partir de votre serveur SIEM ou définir le transfert d’événements Windows à partir de votre contrôleur de domaine. Les événements collectés fournissent à ATA des informations supplémentaires qui ne sont pas accessibles par le biais du trafic réseau du contrôleur de domaine.
 
 
-## Configuration requise pour le centre ATA
-<a id="ata-center-requirements" class="xliff"></a>
+## <a name="ata-center-requirements"></a>Configuration requise pour le centre ATA
 Cette section décrit la configuration requise pour le centre ATA.
-### Général
-<a id="general" class="xliff"></a>
+### <a name="general"></a>Général
 L’installation du centre ATA sur un serveur Windows Server 2012 R2 ou Windows Server 2016 est prise en charge. Le centre ATA peut être installé sur un serveur membre d’un domaine ou d’un groupe de travail.
 
 Avant d’installer le centre ATA sur Windows 2012 R2, vérifiez que la mise à jour suivante a été installée : [KB2919355](https://support.microsoft.com/kb/2919355/).
@@ -84,32 +80,23 @@ L’installation du centre ATA en tant que machine virtuelle est prise en charge
 > En cas d’exécution en tant que machine virtuelle, la mémoire dynamique ou toute autre fonctionnalité d’augmentation de la mémoire n’est pas prise en charge.
 
 Si vous exécutez le centre ATA en tant que machine virtuelle, arrêtez le serveur avant de créer un point de contrôle pour éviter tout risque d’endommagement de la base de données.
-### Spécifications du serveur
-<a id="server-specifications" class="xliff"></a>
+### <a name="server-specifications"></a>Spécifications du serveur
 Sur un serveur physique, la base de données ATA nécessite la **désactivation** de l’accès mémoire non uniforme (NUMA) dans le BIOS. Votre système peut parler d’entrelacement de nœuds pour faire référence à NUMA, auquel cas vous devrez **activer** l’entrelacement de nœuds pour désactiver NUMA. Pour plus d’informations, consultez la documentation du BIOS. Notez que cela ne s’applique pas quand le centre ATA s’exécute sur un serveur virtuel.<br>
 Pour bénéficier de performances optimales, choisissez **Hautes performances** comme **Option d’alimentation** pour le centre ATA.<br>
 Le nombre de contrôleurs de domaine que vous surveillez et la charge sur chacun des contrôleurs de domaine déterminent les spécifications du serveur. Pour plus d’informations, consultez [Planification de la capacité ATA](ata-capacity-planning.md).
 
 
-### Synchronisation de l’heure
-<a id="time-synchronization" class="xliff"></a>
+### <a name="time-synchronization"></a>Synchronisation de l’heure
 L’heure du serveur du centre ATA, des serveurs de la passerelle ATA et des contrôleurs de domaine doit être synchronisée pour que tout écart entre eux ne dépasse pas cinq minutes.
 
 
-### Cartes réseau
-<a id="network-adapters" class="xliff"></a>
+### <a name="network-adapters"></a>Cartes réseau
 Vous devez disposer des éléments suivants :
 -   Au moins une carte réseau (si vous utilisez des serveurs physiques dans un environnement de réseau local virtuel, nous vous recommandons d’utiliser deux cartes réseau)
 
--   Deux adresses IP (recommandé, mais pas obligatoire)
+-   Une adresse IP, chiffrée à l’aide du protocole SSL sur le port 443, pour la communication entre le centre ATA et la passerelle ATA. 
 
-La communication entre le centre ATA et la passerelle ATA est chiffrée à l’aide du protocole SSL sur le port 443. En outre, la console ATA utilise également SSL sur le port 443. Il est recommandé d’avoir **deux adresses IP**. Le service du centre ATA lie le port 443 à la première adresse IP, tandis que la console ATA lie le port 443 à la deuxième adresse IP.
-
-> [!NOTE]
-> Vous pouvez utiliser une seule adresse IP avec deux ports distincts, mais il est recommandé d’avoir deux adresses IP.
-
-### Ports
-<a id="ports" class="xliff"></a>
+### <a name="ports"></a>Ports
 Le tableau suivant répertorie les ports qui, au minimum, doivent être ouverts pour que le centre ATA fonctionne correctement.
 
 |Protocole|Transport|Port|Vers/À partir de|Sens|
@@ -127,8 +114,7 @@ Le tableau suivant répertorie les ports qui, au minimum, doivent être ouverts 
 |**Netlogon** (facultatif si joint à un domaine)|TCP et UDP|445|Contrôleurs de domaine|Sortant|
 |**Horloge Windows** (facultatif si joint à un domaine)|UDP|123|Contrôleurs de domaine|Sortant|
 
-### Certificats
-<a id="certificates" class="xliff"></a>
+### <a name="certificates"></a>Certificats
 Vérifiez que le centre ATA a accès au point de distribution de votre liste de révocation de certificats. Si les passerelles ATA n’ont pas accès à Internet, suivez la [procédure d’importation manuelle d’une liste de révocation de certificats](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx) en veillant à installer l’ensemble des points de distribution de la liste pour toute la chaîne.
 
 Pour faciliter l’installation d’ATA, vous pouvez installer des certificats auto-signés pendant l’installation. Une fois le déploiement terminé, remplacez les certificats auto-signés par un certificat d’une autorité de certification interne en vue d’une utilisation par la passerelle ATA.<br>
@@ -142,11 +128,9 @@ Pour faciliter l’installation d’ATA, vous pouvez installer des certificats a
 > [!NOTE]
 > Si vous souhaitez accéder à la console ATA à partir d’autres ordinateurs, vérifiez que ces derniers approuvent le certificat utilisé par le centre ATA. Sinon, vous obtiendrez une page d’avertissement indiquant un problème avec le certificat de sécurité du site web avant d’accéder à la page de connexion.
 
-## Configuration requise pour la passerelle ATA
-<a id="ata-gateway-requirements" class="xliff"></a>
+## <a name="ata-gateway-requirements"></a>Configuration requise pour la passerelle ATA
 Cette section décrit la configuration requise pour la passerelle ATA.
-### Général
-<a id="general" class="xliff"></a>
+### <a name="general"></a>Général
 L’installation de la passerelle ATA sur un serveur Windows Server 2012 R2 ou Windows Server 2016 est prise en charge (y compris Server Core).
 La passerelle ATA peut être installée sur un serveur membre d’un domaine ou d’un groupe de travail.
 La passerelle ATA peut servir à analyser les contrôleurs de domaine avec le niveau fonctionnel de domaine Windows 2003 et versions ultérieures.
@@ -161,8 +145,7 @@ Pour plus d’informations sur l’utilisation de machines virtuelles avec la pa
 > [!NOTE]
 > Un minimum de 5 Go d’espace sont nécessaires et 10 Go sont recommandés. Cela inclut l’espace nécessaire pour les fichiers binaires ATA, les [journaux ATA](troubleshooting-ata-using-logs.md) et les [journaux de performances](troubleshooting-ata-using-perf-counters.md).
 
-### Spécifications du serveur
-<a id="server-specifications" class="xliff"></a>
+### <a name="server-specifications"></a>Spécifications du serveur
 Pour bénéficier de performances optimales, choisissez **Hautes performances** comme **Option d’alimentation** pour la passerelle ATA.<br>
 Une passerelle ATA peut prendre en charge la surveillance de plusieurs contrôleurs de domaine, en fonction du volume du trafic réseau à destination et en provenance des contrôleurs de domaine.
 
@@ -171,12 +154,10 @@ Une passerelle ATA peut prendre en charge la surveillance de plusieurs contrôle
 
 Pour plus d’informations sur la configuration matérielle requise pour la passerelle ATA, consultez [Planification de la capacité ATA](ata-capacity-planning.md).
 
-### Synchronisation de l’heure
-<a id="time-synchronization" class="xliff"></a>
+### <a name="time-synchronization"></a>Synchronisation de l’heure
 L’heure du serveur du centre ATA, des serveurs de la passerelle ATA et des contrôleurs de domaine doit être synchronisée pour que tout écart entre eux ne dépasse pas cinq minutes.
 
-### Cartes réseau
-<a id="network-adapters" class="xliff"></a>
+### <a name="network-adapters"></a>Cartes réseau
 La passerelle ATA nécessite au moins une carte de gestion et au moins une carte de capture :
 
 -   **Carte de gestion** : cette carte est utilisée pour les communications sur votre réseau d’entreprise. Elle doit être configurée avec les éléments suivants :
@@ -198,8 +179,7 @@ La passerelle ATA nécessite au moins une carte de gestion et au moins une carte
     > -   Configurez la mise en miroir des ports de la carte de capture comme la destination du trafic réseau des contrôleurs de domaine. Pour plus d’informations, consultez [Configurer la mise en miroir des ports](configure-port-mirroring.md). En règle générale, vous devez collaborer avec l’équipe de virtualisation ou de mise en réseau pour configurer la mise en miroir des ports.
     > -   Configurez une adresse IP statique non routable pour votre environnement, sans passerelle par défaut ni adresse de serveur DNS. Par exemple : 1.1.1.1/32. Cela permet de garantir que la carte réseau de capture peut capturer le volume maximum de trafic et que la carte réseau de gestion est utilisée pour envoyer et recevoir le trafic réseau demandé.
 
-### Ports
-<a id="ports" class="xliff"></a>
+### <a name="ports"></a>Ports
 Le tableau suivant répertorie les ports qui, au minimum, doivent être configurés sur la carte de gestion pour satisfaire aux exigences de la passerelle ATA :
 
 |Protocole|Transport|Port|Vers/À partir de|Sens|
@@ -223,11 +203,9 @@ Le tableau suivant répertorie les ports qui, au minimum, doivent être configur
 > -   NTLM sur RPC (port TCP 135)
 > -   NetBIOS (port UDP 137)
 
-## Configuration requise pour la passerelle légère ATA
-<a id="ata-lightweight-gateway-requirements" class="xliff"></a>
+## <a name="ata-lightweight-gateway-requirements"></a>Configuration requise pour la passerelle légère ATA
 Cette section décrit la configuration requise pour la passerelle légère ATA.
-### Général
-<a id="general" class="xliff"></a>
+### <a name="general"></a>Général
 La passerelle légère ATA prend en charge l’installation sur un contrôleur de domaine exécutant Windows Server 2008 R2 SP1 (Server Core non inclus), Windows Server 2012, Windows Server 2012 R2 et Windows Server 2016 (Core inclus, mais pas Nano).
 
 Le contrôleur de domaine peut être un contrôleur de domaine en lecture seule (RODC).
@@ -247,8 +225,7 @@ Pendant l’installation, le .Net Framework 4.6.1 est installé et peut entraîn
 > [!NOTE]
 > Un minimum de 5 Go d’espace sont nécessaires et 10 Go sont recommandés. Cela inclut l’espace nécessaire pour les fichiers binaires ATA, les [journaux ATA](troubleshooting-ata-using-logs.md) et les [journaux de performances](troubleshooting-ata-using-perf-counters.md).
 
-### Spécifications du serveur
-<a id="server-specifications" class="xliff"></a>
+### <a name="server-specifications"></a>Spécifications du serveur
 
 La passerelle légère ATA nécessite au minimum deux cœurs et 6 Go de RAM sur le contrôleur de domaine.
 Pour bénéficier de performances optimales, choisissez **Hautes performances** comme **Option d’alimentation** pour la passerelle légère ATA.
@@ -259,16 +236,13 @@ Vous pouvez déployer la passerelle légère ATA sur des contrôleurs de domaine
 
 Pour plus d’informations sur la configuration matérielle requise pour la passerelle légère ATA, consultez [Planification de la capacité ATA](ata-capacity-planning.md).
 
-### Synchronisation de l’heure
-<a id="time-synchronization" class="xliff"></a>
+### <a name="time-synchronization"></a>Synchronisation de l’heure
 L’heure du serveur du centre ATA, des serveurs de la passerelle légère ATA et des contrôleurs de domaine doit être synchronisée pour que tout écart entre eux ne dépasse pas cinq minutes.
-### Cartes réseau
-<a id="network-adapters" class="xliff"></a>
+### <a name="network-adapters"></a>Cartes réseau
 La passerelle légère ATA surveille le trafic local sur toutes les cartes réseau du contrôleur de domaine. <br>
 Après le déploiement, vous pouvez utiliser la console ATA si vous voulez changer les cartes réseau analysées.
 
-### Ports
-<a id="ports" class="xliff"></a>
+### <a name="ports"></a>Ports
 Le tableau suivant répertorie les ports qui, au minimum, sont requis par la passerelle légère ATA :
 
 |Protocole|Transport|Port|Vers/À partir de|Sens|
@@ -285,8 +259,7 @@ Le tableau suivant répertorie les ports qui, au minimum, sont requis par la pas
 > -   NTLM sur RPC
 > -   NetBIOS
 
-## Console ATA
-<a id="ata-console" class="xliff"></a>
+## <a name="ata-console"></a>Console ATA
 L’accès à la console ATA s’effectue au moyen d’un navigateur, avec prise en charge des éléments suivants :
 
 -   Internet Explorer 10 et versions ultérieures
@@ -297,8 +270,7 @@ L’accès à la console ATA s’effectue au moyen d’un navigateur, avec prise
 
 -   Largeur d’écran d’une résolution minimale de 1 700 pixels
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 
 - [Architecture d’ATA](ata-architecture.md)
 - [Installer ATA](install-ata-step1.md)

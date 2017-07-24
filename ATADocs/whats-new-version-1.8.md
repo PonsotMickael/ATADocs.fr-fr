@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2017
+ms.date: 7/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,14 +13,13 @@ ms.technology:
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: 6850c5e8e264a9610e377a9ab4aadca338971ee1
-ms.sourcegitcommit: be6bdfa24a9b25a3375a4768d513b93900b3a498
+ms.openlocfilehash: 63dd37548dbf4e150f32880543c3bf421bf3fe71
+ms.sourcegitcommit: 3cd268cf353ff8bc3d0b8f9a8c10a34353d1fcf1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/16/2017
 ---
-# Nouveautés de la version 1.8 d’ATA
-<a id="whats-new-in-ata-version-18" class="xliff"></a>
+# <a name="whats-new-in-ata-version-18"></a>Nouveautés de la version 1.8 d’ATA
 
 La dernière version de la mise à jour d’ATA peut être [téléchargée à partir du Centre de téléchargement](https://www.microsoft.com/download/details.aspx?id=55536) ou la version complète peut être téléchargée à partir du [centre d’évaluation](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics).
 
@@ -28,8 +27,7 @@ Ces notes de publication fournissent des informations sur les mises à jour, les
 
 
 
-## Détections nouvelles et mises à jour
-<a id="new--updated-detections" class="xliff"></a>
+## <a name="new--updated-detections"></a>Détections nouvelles et mises à jour
 
 - L’implémentation de protocole inhabituelle a été améliorée pour pouvoir détecter le logiciel malveillant WannaCry.
 
@@ -48,8 +46,7 @@ Ces notes de publication fournissent des informations sur les mises à jour, les
     - Implémentation de protocole inhabituelle
     - Relation de confiance rompue
 
-## Triage amélioré des activités suspectes
-<a id="improved-triage-of-suspicious-activities" class="xliff"></a>
+## <a name="improved-triage-of-suspicious-activities"></a>Triage amélioré des activités suspectes
 
 -   NOUVEAU ! ATA 1.8 vous permet d’exécuter les actions suivantes sur les activités suspectes pendant le processus de triage : 
     - **Exclure des entités** pour qu’elles ne puissent pas lancer des activités suspectes afin d’empêcher ATA de déclencher des alertes quand il détecte des vrais positifs sans gravité (par exemple, un administrateur qui exécute du code à distance ou la détection des analyseurs de sécurité).
@@ -57,32 +54,32 @@ Ces notes de publication fournissent des informations sur les mises à jour, les
     - **Supprimer les activités suspectes** de la chronologie des attaques.
 -   Le processus de suivi des alertes d’activité suspecte est désormais plus efficace. La chronologie des activités suspectes a été repensée. Dans ATA 1.8, vous pouvez afficher bien plus de d’activités suspectes dans un même écran, avec des informations plus pertinentes pour le triage et l’examen. 
 
-## Nouveaux rapports pour vous aider dans votre analyse
-<a id="new-reports-to-help-you-investigate" class="xliff"></a> 
+## <a name="new-reports-to-help-you-investigate"></a>Nouveaux rapports pour vous aider dans votre analyse 
 -   NOUVEAU ! Le **rapport de synthèse** a été ajouté pour vous permettre de consulter toutes les données synthétisées par ATA, notamment les activités suspectes, les problèmes d’intégrité et bien plus encore. Vous pouvez même définir un rapport personnalisé généré automatiquement sur une base régulière.
 -   NOUVEAU ! Le **rapport des groupes sensibles** a été ajouté pour vous permettre de consulter toutes les modifications apportées dans les groupes sensibles sur une certaine période.
 
 
-## Améliorations de l’infrastructure
-<a id="infrastructure-improvements" class="xliff"></a>
+## <a name="infrastructure-improvements"></a>Améliorations de l’infrastructure
 
 -   Les performances du centre ATA ont été améliorées. Dans ATA 1.8, le centre ATA peut traiter plus de 1 million de paquets par seconde.
 -   La passerelle légère ATA peut désormais lire les événements localement, sans qu’il soit nécessaire de configurer le transfert d’événements.
 -   Vous pouvez maintenant configurer séparément la messagerie pour surveiller les alertes et les activités suspectes.
 
-## Améliorations apportées à la sécurité
-<a id="security-improvements" class="xliff"></a>
+## <a name="security-improvements"></a>Améliorations apportées à la sécurité
 
 -   NOUVEAU ! **Authentification unique pour la gestion d’ATA**. ATA prend en charge l’authentification unique intégrée à l’authentification Windows : si vous avez déjà ouvert une session sur votre ordinateur, ATA utilise ce jeton pour vous connecter à la console ATA. Vous pouvez aussi vous connecter à l’aide d’une carte à puce. Les scripts d’installation sans assistance pour la passerelle ATA et la passerelle légère ATA utilisent désormais le contexte de l’utilisateur connecté, sans demander les informations d’identification.
 -   Les privilèges sur le système local ont été supprimés du processus de passerelle ATA, vous pouvez maintenant utiliser des comptes virtuels (disponibles uniquement sur les passerelles ATA autonomes), des comptes de service administrés et des comptes de service administrés de groupe pour exécuter le processus de passerelle ATA.   
 -   Des journaux d’audit pour le centre et les passerelles ATA ont été ajoutés et toutes les actions sont maintenant consignées dans le journal des événements Windows.
 -   La prise en charge des certificats KSP a été ajoutée pour le centre ATA.
 
+## <a name="additional-changes"></a>Autres modifications
+
+- La possibilité d’ajouter des notes a été supprimée dans les activités suspectes
+- Les recommandations sur la limitation des activités suspectes ont été supprimées de la chronologie Activités suspectes.
 
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 [Mise à jour d’ATA vers la version 1.8 : guide de migration](ata-update-1.8-migration-guide.md)
