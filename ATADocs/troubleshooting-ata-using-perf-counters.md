@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ae72f7a25f0c57dadd02049fe3a570a0da7b84fd
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: bc3ad332e1a8af6259eadaecc4638f27fded67c6
+ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/25/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -55,6 +55,7 @@ Pour cela, ouvrez l’Analyseur de performances, puis ajoutez tous les compteurs
 
 Voici la liste des principaux compteurs de passerelle ATA :
 
+> [!div class="mx-tableFixed"]
 |Compteur|Description|Seuil|Résolution des problèmes|
 |-----------|---------------|-------------|-------------------|
 |Passerelle Microsoft ATA\Messages analysés PEF NetworkListener\s|Quantité de trafic traitée par la passerelle ATA chaque seconde.|Aucun seuil|Aide à comprendre la quantité de trafic qui est analysée par la passerelle ATA.|
@@ -75,7 +76,7 @@ Pour mesurer les limitations de ressources appliquées par ATA sur la passerelle
 
 Pour cela, ouvrez l’Analyseur de performances, puis ajoutez tous les compteurs à la passerelle légère ATA. Les noms des objets de compteurs de performance sont : « Microsoft ATA Gateway » et « Microsoft ATA Gateway Updater ».
 
-
+> [!div class="mx-tableFixed"]
 |Compteur|Description|Seuil|Résolution des problèmes|
 |-----------|---------------|-------------|-------------------|
 |Microsoft ATA Gateway Updater\GatewayUpdaterResourceManager CPU Time Max %|Quantité maximale de temps processeur (en pourcentage) que le processus de passerelle légère peut consommer. |Aucun seuil. | Il s’agit de la limitation qui empêche que toutes les ressources du contrôleur de domaine soient utilisées par la passerelle légère ATA. Si vous voyez que le processus atteint souvent la limite maximale sur une période donnée (le processus atteint la limite, puis commence à ignorer le trafic), cela signifie que vous devez ajouter des ressources au serveur qui exécute le contrôleur de domaine.|
@@ -87,7 +88,7 @@ Pour cela, ouvrez l’Analyseur de performances, puis ajoutez tous les compteurs
 Pour connaître la consommation réelle, consultez les compteurs suivants :
 
 
-
+> [!div class="mx-tableFixed"]
 |Compteur|Description|Seuil|Résolution des problèmes|
 |-----------|---------------|-------------|-------------------|
 |Process(Microsoft.Tri.Gateway)\%Processor Time|Temps processeur (en pourcentage) réellement consommé par le processus de passerelle légère. |Aucun seuil. | Comparez les résultats de ce compteur à la limite indiquée dans GatewayUpdaterResourceManager CPU Time Max %. Si vous voyez que le processus atteint souvent la limite maximale sur une période donnée (le processus atteint la limite, puis commence à ignorer le trafic), cela signifie que vous devez allouer davantage de ressources à la passerelle légère.|
@@ -101,6 +102,7 @@ Pour cela, ouvrez l’Analyseur de performances, puis ajoutez tous les compteurs
 
 Voici la liste des principaux compteurs du centre ATA :
 
+> [!div class="mx-tableFixed"]
 |Compteur|Description|Seuil|Résolution des problèmes|
 |-----------|---------------|-------------|-------------------|
 |Microsoft ATA Center\EntityReceiver Entity Batch Block Size|Nombre de lots d’entités mis en file d’attente par le centre ATA.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener.  Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
@@ -116,6 +118,7 @@ Voici la liste des principaux compteurs du centre ATA :
 ## <a name="operating-system-counters"></a>Compteurs de système d’exploitation
 Voici la liste des principaux compteurs de système d’exploitation :
 
+> [!div class="mx-tableFixed"]
 |Compteur|Description|Seuil|Résolution des problèmes|
 |-----------|---------------|-------------|-------------------|
 |Processeur(_Total)\% de temps processeur|Durée (en pourcentage) que le processeur met pour exécuter des threads actifs.|Inférieur à 80 % en moyenne|Vérifiez si l’un des processus prend beaucoup plus de temps processeur qu’il ne devrait.<br /><br />Ajoutez des processeurs.<br /><br />Réduisez la quantité de trafic sur chaque serveur.<br /><br />Le compteur « Processeur(_Total)\% de temps processeur » peut être moins précis sur les serveurs virtuels. Dans ce cas, le moyen le plus précis de mesurer le manque de puissance du processeur est d’utiliser le compteur « System\Longueur de la file du processeur ».|

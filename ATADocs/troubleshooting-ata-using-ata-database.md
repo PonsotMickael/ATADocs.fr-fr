@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 112ee57f79b20b4e42b15c6fdc4566bbdcebe29f
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: 174918812562b9bfe892fcde90d92e208b26ffc3
+ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/25/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -34,6 +34,7 @@ La procédure par défaut et la plus simple pour interroger la base de données 
 
 2.  Exécutez `mongo.exe ATA`. Veillez à taper ATA tout en majuscules.
 
+> [!div class="mx-tableFixed"]
 |Comment...|Syntaxe|Remarques|
 |-------------|----------|---------|
 |Rechercher des collections dans la base de données.|`show collections`|Utile en tant que test de bout en bout pour constater que le trafic est écrit dans la base de données et que l’événement 4776 est reçu par ATA.|

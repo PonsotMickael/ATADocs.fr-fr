@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 06/28/2017
+ms.date: 07/20/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5b46d53d4e72ebe32b6e1f57960694194b71b31c
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: 7e130da2b5a177658e176a428101c11d02bc2a3f
+ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/25/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -49,6 +49,7 @@ Utilisez la commande suivante pour installer le centre ATA :
     
 **Options d’installation** :
 
+> [!div class="mx-tableFixed"]
 |Nom|Syntaxe|Obligatoire pour une installation sans assistance ?|Description|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|Oui|Exécute le programme d’installation sans afficher d’interface utilisateur, ni d’invites.|
@@ -58,6 +59,7 @@ Utilisez la commande suivante pour installer le centre ATA :
 
 **Paramètres d’installation** :
 
+> [!div class="mx-tableFixed"]
 |Nom|Syntaxe|Obligatoire pour une installation sans assistance ?|Description|
 |-------------|----------|---------|---------|
 |InstallationPath|InstallationPath="<InstallPath>"|Non|Définit le chemin de l’installation des fichiers binaires ATA. Chemin par défaut : C:\Program Files\Microsoft Advanced Threat Analytics\Center|
@@ -89,6 +91,7 @@ Utilisez la commande suivante pour mettre à jour le centre ATA :
 
 **Options d’installation** :
 
+> [!div class="mx-tableFixed"]
 |Nom|Syntaxe|Obligatoire pour une installation sans assistance ?|Description|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|Oui|Exécute le programme d’installation sans afficher d’interface utilisateur, ni d’invites.|
@@ -111,6 +114,7 @@ Utilisez la commande suivante pour effectuer une désinstallation sans assistanc
 
 **Options d’installation** :
 
+> [!div class="mx-tableFixed"]
 |Nom|Syntaxe|Obligatoire pour une désinstallation sans assistance ?|Description|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|Oui|Exécute le programme de désinstallation sans afficher d’interface utilisateur, ni d’invites.|
@@ -119,6 +123,7 @@ Utilisez la commande suivante pour effectuer une désinstallation sans assistanc
 
 **Paramètres d’installation** :
 
+> [!div class="mx-tableFixed"]
 |Nom|Syntaxe|Obligatoire pour une désinstallation sans assistance ?|Description|
 |-------------|----------|---------|---------|
 |DeleteExistingDatabaseData|DeleteExistingDatabaseData|Non|Supprime tous les fichiers de la base de données existante.|
@@ -134,7 +139,7 @@ Utilisez la commande suivante pour installer la passerelle ATA sans assistance 
 **Syntaxe** :
 
     Microsoft ATA Gateway Setup.exe [/quiet] [/Help] [NetFrameworkCommandLineArguments ="/q"] 
-    [GatewayCertificateThumbprint="<CertThumbprint >"] [ConsoleAccountName="<AccountName>"] 
+    [ConsoleAccountName="<AccountName>"] 
     [ConsoleAccountPassword="<AccountPassword>"]
 
 > [!NOTE]
@@ -143,6 +148,7 @@ Utilisez la commande suivante pour installer la passerelle ATA sans assistance 
 
 **Options d’installation** :
 
+> [!div class="mx-tableFixed"]
 |Nom|Syntaxe|Obligatoire pour une installation sans assistance ?|Description|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|Oui|Exécute le programme d’installation sans afficher d’interface utilisateur, ni d’invites.|
@@ -151,9 +157,9 @@ Utilisez la commande suivante pour installer la passerelle ATA sans assistance 
 
 **Paramètres d’installation** :
 
+> [!div class="mx-tableFixed"]
 |Nom|Syntaxe|Obligatoire pour une installation sans assistance ?|Description|
 |-------------|----------|---------|---------|
-|GatewayCertificateThumbprint|GatewayCertificateThumbprint="<CertThumbprint >"|Non|Définit l’empreinte numérique du certificat pour le service du centre ATA. Ce certificat est utilisé pour sécuriser la communication entre le centre ATA et la passerelle ATA. Si ce paramètre n’est pas défini, l’installation génère un certificat auto-signé.|
 |ConsoleAccountName|ConsoleAccountName="<AccountName>"|Oui|Définit le nom du compte d’utilisateur (user@domain.com) qui est utilisé pour inscrire la passerelle ATA auprès du centre ATA.|
 |ConsoleAccountPassword|ConsoleAccountPassword="<AccountPassword>"|Oui|Définit le mot de passe du compte d’utilisateur (user@domain.com) qui est utilisé pour inscrire la passerelle ATA auprès du centre ATA.|
 
@@ -174,6 +180,7 @@ Utilisez la commande suivante pour mettre à jour la passerelle ATA sans assista
 
 **Options d’installation** :
 
+> [!div class="mx-tableFixed"]
 |Nom|Syntaxe|Obligatoire pour une installation sans assistance ?|Description|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|Oui|Exécute le programme d’installation sans afficher d’interface utilisateur, ni d’invites.|
@@ -193,6 +200,7 @@ Utilisez la commande suivante pour effectuer une désinstallation sans assistanc
     
 **Options d’installation** :
 
+> [!div class="mx-tableFixed"]
 |Nom|Syntaxe|Obligatoire pour une désinstallation sans assistance ?|Description|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|Oui|Exécute le programme de désinstallation sans afficher d’interface utilisateur, ni d’invites.|
