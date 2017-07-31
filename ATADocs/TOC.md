@@ -1,7 +1,7 @@
 # Comprendre et explorer
 ## [Qu’est-ce que Microsoft Advanced Threat Analytics ?](what-is-ata.md)
 ## [Quelles sont les menaces détectées par ATA ?](ata-threats.md)
-## Notes de publication ATA
+## Nouveautés dans ATA?
 ### [Nouveautés d’ATA version 1.8](whats-new-version-1.8.md)
 #### [Mise à jour vers ATA 1.8 : guide de migration](ata-update-1.8-migration-guide.md)
 ### [Nouveautés d’ATA version 1.7](whats-new-version-1.7.md)
@@ -28,19 +28,19 @@
 ### [Étape 4 Installer la passerelle ATA](install-ata-step4.md)
 ### [Étape 5 Configurer la passerelle ATA](install-ata-step5.md)
 ### [Étape 6 Collecte d’événements et VPN](install-ata-step6.md)
-### [Étape 6 Exclusions et honeytoken](install-ata-step6.md)
+### [Étape 7 Exclusions et honeytoken](install-ata-step7.md)
 ### [Installation sans assistance](ata-silent-installation.md)
-# Utilisez
-## [Modifier la configuration du centre ATA](modifying-ata-center-configuration.md)
-## [Modifier le mot de passe de connectivité de domaine](modifying-ata-config-dcpassword.md)
+# Utiliser
 ## [Utilisation de la console ATA](working-with-ata-console.md)
-## [Groupes de rôles ATA](ata-role-groups.md)
-## [Définir les paramètres du serveur Syslog et du serveur de messagerie](setting-syslog-email-server-settings.md)
+## [Gestion des activités suspectes](working-with-suspicious-activities.md)
+###[Exclusion d’entités des détections](excluding-entities-from-detections.md)
 ## [Définir des notifications ATA](setting-ata-alerts.md)
-## [Gestion des paramètres de détection](working-with-detection-settings.md)
 ## [Rapports ATA](reports.md)
 ## [Centre d’intégrité ATA](ata-health-center.md)
-## [Gestion des activités suspectes](working-with-suspicious-activities.md)
+## [Groupes de rôles ATA](ata-role-groups.md)
+## [Modifier la configuration du centre ATA](modifying-ata-center-configuration.md)
+## [Modifier le mot de passe de connectivité de domaine](modifying-ata-config-dcpassword.md)
+## [Définir les paramètres du serveur Syslog et du serveur de messagerie](setting-syslog-email-server-settings.md)
 ## [Gestion de la base de données ATA](ata-database-management.md)
 ## [Configuration de l’exportation/importation d’ATA](ata-configuration-file.md)
 ## [Gérer la télémétrie ATA](manage-telemetry-settings.md)
