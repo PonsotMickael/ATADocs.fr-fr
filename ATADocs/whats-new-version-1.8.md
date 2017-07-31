@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/16/2017
+ms.date: 7/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: 63dd37548dbf4e150f32880543c3bf421bf3fe71
-ms.sourcegitcommit: 3cd268cf353ff8bc3d0b8f9a8c10a34353d1fcf1
+ms.openlocfilehash: b4754c749cad25a6aa4da94563df29f9f99e2a20
+ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 07/25/2017
 ---
 # <a name="whats-new-in-ata-version-18"></a>Nouveautés de la version 1.8 d’ATA
 
@@ -52,7 +52,7 @@ Ces notes de publication fournissent des informations sur les mises à jour, les
     - **Exclure des entités** pour qu’elles ne puissent pas lancer des activités suspectes afin d’empêcher ATA de déclencher des alertes quand il détecte des vrais positifs sans gravité (par exemple, un administrateur qui exécute du code à distance ou la détection des analyseurs de sécurité).
     - **Supprimer les activités suspectes récurrentes** dans les alertes.
     - **Supprimer les activités suspectes** de la chronologie des attaques.
--   Le processus de suivi des alertes d’activité suspecte est désormais plus efficace. La chronologie des activités suspectes a été repensée. Dans ATA 1.8, vous pouvez afficher bien plus de d’activités suspectes dans un même écran, avec des informations plus pertinentes pour le triage et l’examen. 
+-   Le processus de suivi des alertes d’activité suspecte est désormais plus efficace. La chronologie des activités suspectes a été repensée. Dans ATA 1.8, vous pouvez voir bien plus de d’activités suspectes dans un même écran, avec des informations plus pertinentes pour le triage et l’examen. 
 
 ## <a name="new-reports-to-help-you-investigate"></a>Nouveaux rapports pour vous aider dans votre analyse 
 -   NOUVEAU ! Le **rapport de synthèse** a été ajouté pour vous permettre de consulter toutes les données synthétisées par ATA, notamment les activités suspectes, les problèmes d’intégrité et bien plus encore. Vous pouvez même définir un rapport personnalisé généré automatiquement sur une base régulière.
@@ -77,6 +77,51 @@ Ces notes de publication fournissent des informations sur les mises à jour, les
 - La possibilité d’ajouter des notes a été supprimée dans les activités suspectes
 - Les recommandations sur la limitation des activités suspectes ont été supprimées de la chronologie Activités suspectes.
 
+## <a name="known-issues"></a>Problèmes connus
+
+### <a name="ata-gateway-on-windows-server-core"></a>Passerelle ATA sur Windows Server Core
+
+**Symptômes**: La mise à niveau d’une passerelle ATA vers la version 1.8 sur Windows Server 2012 R2 Core avec .Net Framework 4.7 peut échouer avec l’erreur :  *La passerelle Microsoft Advanced Threat Analytics a cessé de fonctionner*. 
+
+![Erreur de base de passerelle](./media/gateway-core-error.png)
+
+Sur Windows Server 2016 Core, vous ne verrez peut-être pas l’erreur mais le processus échouera quand vous essaierez d’effectuer l’installation. Les événements 1000 et 1001 (blocage du processus) seront consignés dans le journal des événements d’application sur le serveur.
+
+**Description** : Un problème s’est produit avec le .NET Framework 4.7qui entraîne l’échec du chargement des applications qui utilisent la technologie WPF (comme ATA). Pour plus d’informations, consultez [l’article KB 4034015](https://support.microsoft.com/help/4034015/wpf-window-can-t-be-loaded-after-you-install-the-net-framework-4-7-on). 
+
+**Solution de contournement** : Désinstallez .NET 4.7 [Consultez l’article KB 3186497](https://support.microsoft.com/help/3186497/the-net-framework-4-7-offline-installer-for-windows) pour revenir à la version 4.6.2 de .NET et mettre à jour votre passerelle ATA avec la version 1.8. Après la mise à niveau d’ATA, vous pouvez réinstaller .NET 4.7.  Pour corriger ce problème, une mise à jour sera publiée dans une prochaine version.
+
+### <a name="lightweight-gateway-event-log-permissions"></a>Autorisations du journal des événements de la passerelle légère
+
+**Symptômes** : Quand vous mettez à niveau ATA vers la version 1.8, les applications ou les services qui avaient déjà des autorisations d’accès au journal des événements de sécurité peuvent perdre ces autorisations. 
+
+**Description** : Afin de faciliter le déploiement d’ATA, ATA 1.8 accède à votre journal des événements de sécurité directement, sans avoir à configurer le transfert des événements Windows. En même temps, ATA s’exécute comme un service local avec un faible niveau d’autorisation pour maintenir une sécurité plus stricte. Afin de fournir l’accès pour qu’ATA puisse lire les événements, le service ATA s’accorde lui-même des autorisations dans le journal des événements de sécurité. Quand ce cas se produit, les autorisations précédemment définies pour d’autres services peuvent être désactivées.
+
+**Solution de contournement** : Exécutez le script Windows PowerShell suivant. Cette action supprime les autorisations qui n’ont pas été correctement ajoutées dans le Registre à partir d’ATA et les ajoute par le biais d’une autre API. Cela peut restaurer les autorisations pour d’autres applications. Si ce n’est pas le cas, elles devront être restaurées manuellement. Pour corriger ce problème, une mise à jour sera publiée dans une prochaine version. 
+
+       $ATADaclEntry = "(A;;0x1;;;S-1-5-80-1717699148-1527177629-2874996750-2971184233-2178472682)"
+        try {
+        $SecurityDescriptor = Get-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\Eventlog\Security -Name CustomSD
+        $ATASddl = "O:BAG:SYD:" + $ATADaclEntry 
+        if($SecurityDescriptor.CustomSD -eq $ATASddl) {
+        Remove-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\Eventlog\Security -Name CustomSD
+        }
+    }
+    catch
+    {
+    # registry key does not exist
+    }
+
+    $EventLogConfiguration = New-Object -TypeName System.Diagnostics.Eventing.Reader.EventLogConfiguration("Security")
+    $EventLogConfiguration.SecurityDescriptor = $EventLogConfiguration.SecurityDescriptor + $ATADaclEntry
+
+### <a name="proxy-interference"></a>Interférence de proxy
+
+**Symptômes** : Après la mise à niveau vers ATA 1.8, le service de passerelle ATA risque de ne pas démarrer. Dans le journal des erreurs ATA, vous verrez peut-être l’exception suivante :  *: une erreur s’est produite lors de l’envoi de la demande. ---> System.Net.WebException : le serveur distant a retourné une erreur : (407) Authentification proxy requise.*
+
+**Description** : Depuis ATA 1.8, la passerelle ATA communique avec le centre ATA à l’aide du protocole HTTP. Si l’ordinateur sur lequel vous avez installé la passerelle ATA utilise un serveur proxy pour se connecter au centre ATA, il peut rompre cette communication. 
+
+**Solution de contournement**: Désactivez l’utilisation d’un serveur proxy sur le compte du service de passerelle ATA. Pour corriger ce problème, une mise à jour sera publiée dans une prochaine version.
 
 
 ## <a name="see-also"></a>Voir aussi
