@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 07/3/2017
+ms.date: 08/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5beabd2617f55ecbcc717338dc40d9f597cc25d4
-ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.openlocfilehash: 05853aecf8f8aa075d66c5a755cf89ffd7727739
+ms.sourcegitcommit: 7bc04eb4d004608764b3ded1febf32bc4ed020be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/02/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -73,7 +73,7 @@ Nom de fichier ATA mongo.exe
         });
 
 ## <a name="does-ata-work-with-encrypted-traffic"></a>ATA prend-il en charge le trafic chiffré ?
-ATA s’appuie sur l’analyse de plusieurs protocoles réseau ainsi que sur les événements collectés auprès du serveur SIEM ou via le transfert d’événements Windows : ainsi, même si le trafic chiffré n’est pas analysé (par exemple LDAPS et IPSeC ESP), ATA continue de fonctionner et la plupart des détections ne sont pas affectées.
+ATA s’appuie sur l’analyse de plusieurs protocoles réseau ainsi que sur les événements collectés auprès du serveur SIEM ou via le transfert d’événements Windows : ainsi, même si le trafic chiffré n’est pas analysé (par exemple LDAPS et IPSeC), ATA continue de fonctionner et la plupart des détections ne sont pas affectées.
 
 ## <a name="does-ata-work-with-kerberos-armoring"></a>ATA fonctionne-t-il avec le blindage Kerberos ?
 L’activation du blindage Kerberos, également appelé FAST (Flexible Authentication Secure Tunneling), est prise en charge par ATA, à l’exception de la détection Overpass-the-Hash qui ne fonctionne pas.
