@@ -5,18 +5,18 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/9/2017
+ms.date: 7/25/2017
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
 ms.prod: 
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: af88c02c6e2e5f679aca75b17a288c72ab300069
-ms.sourcegitcommit: be6bdfa24a9b25a3375a4768d513b93900b3a498
+ms.openlocfilehash: 54dd8bab3381fc221c75c53191ef052fc83b61ec
+ms.sourcegitcommit: e7f83eb636db00333fe3965324a10a2ef5e2beba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/30/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -65,7 +65,7 @@ Le centre ATA nécessite l’équivalent de 30 jours de données qui est le min
 > [!NOTE]
 > -   Le centre ATA peut gérer un maximum agrégé de 1 million de paquets par seconde provenant de l’ensemble des contrôleurs de domaine surveillés. Dans certains environnements, le même centre ATA peut gérer un trafic global supérieur à 400 000. Contactez askcesec@microsoft.com pour obtenir de l’assistance sur ce type d’environnements.
 > -   La quantité de stockage citée ici est une valeur nette. Vous devez toujours prendre en compte une croissance future et vérifier que le disque sur lequel réside la base de données dispose d’au moins 20 % d’espace libre.
-> -   Si l’espace libre atteint la valeur minimale de 20 % ou 100 Go, la collecte de données la plus ancienne est supprimée. La suppression continue jusqu’à obtenir 5 % ou 50 Go d’espace libre. Une fois ces valeurs atteintes, la collecte de données s’arrête.
+> -   Si l’espace libre atteint la valeur minimale de 20 % ou 200 Go, la collecte de données la plus ancienne est supprimée. La suppression continue jusqu’à obtenir 5 % ou 50 Go d’espace libre. Une fois ces valeurs atteintes, la collecte de données s’arrête.
 > - Il vous est possible de déployer le Centre ATA sur n’importe quel fournisseur IaaS du moment que vous respectez les critères de performance qui sont décrits dans cet article.
 > -   La latence de stockage pour les activités de lecture et d’écriture doit être inférieure à 10 ms.
 > -   Le rapport entre les activités de lecture et d’écriture est d’environ 1 pour 3 en dessous de 100 000 paquets par seconde et de 1 pour 6 au-dessus de 100 000 paquets par seconde.

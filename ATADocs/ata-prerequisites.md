@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2017
+ms.date: 8/2/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 14b0d68ce797eeaa99c9e067f7f8caacee1a7b74
-ms.sourcegitcommit: 3cd268cf353ff8bc3d0b8f9a8c10a34353d1fcf1
+ms.openlocfilehash: 0a9d92e5851f1cf64c5e4b4e1ee57d7ee4562d96
+ms.sourcegitcommit: 7bc04eb4d004608764b3ded1febf32bc4ed020be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/02/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -51,12 +51,12 @@ Le système ATA fonctionne sur la limite de forêt Active Directory et prend en 
 Cette section répertorie les informations que vous devez rassembler ainsi que les comptes et entités réseau dont vous devez disposer avant de procéder à l’installation d’ATA.
 
 
--   Compte d’utilisateur et mot de passe avec accès en lecture à tous les objets dans les domaines qui seront surveillés.
+-   Compte d’utilisateur et mot de passe avec accès en lecture à tous les objets dans les domaines surveillés.
 
     > [!NOTE]
     > Si vous avez défini des listes de contrôle d’accès (ACL) personnalisées sur différentes unités d’organisation dans votre domaine, vérifiez que l’utilisateur sélectionné dispose d’autorisations d’accès en lecture à ces unités d’organisation.
 
--   N’installez pas Microsoft Message Analyzer sur une passerelle ATA ou une passerelle légère ATA. Le pilote de Message Analyzer est en conflit avec les pilotes de la passerelle ATA et de la passerelle légère ATA. Si vous exécutez Wireshark sur la passerelle ATA, vous devez redémarrer le service de passerelle Microsoft Advanced Threat Analytics après avoir arrêté la capture Wireshark. Sinon, la passerelle ne capture plus le trafic. Notez que l’exécution de Wireshark sur une passerelle légère ATA n’interfère pas avec la passerelle légère ATA.
+-   N’installez pas Microsoft Message Analyzer sur une passerelle ATA ou une passerelle légère ATA. Le pilote de Message Analyzer est en conflit avec les pilotes de la passerelle ATA et de la passerelle légère ATA. Si vous exécutez Wireshark sur la passerelle ATA, vous devez redémarrer le service de passerelle Microsoft Advanced Threat Analytics après avoir arrêté la capture Wireshark. Si ce n’est pas le cas, la passerelle arrête la capture du trafic. Notez que l’exécution de Wireshark sur une passerelle légère ATA n’interfère pas avec la passerelle légère ATA.
 
 -    Recommandé : L’utilisateur doit disposer d’autorisations en lecture seule sur le conteneur Objets supprimés. ATA pourra ainsi détecter la suppression en bloc d’objets dans le domaine. Pour plus d’informations sur la configuration des autorisations en lecture seule sur le conteneur Objets supprimés, consultez la section **Modification des autorisations sur un conteneur d’objets supprimés** dans la rubrique [Afficher ou définir des autorisations sur un objet d’annuaire](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx).
 
@@ -94,7 +94,7 @@ L’heure du serveur du centre ATA, des serveurs de la passerelle ATA et des con
 Vous devez disposer des éléments suivants :
 -   Au moins une carte réseau (si vous utilisez des serveurs physiques dans un environnement de réseau local virtuel, nous vous recommandons d’utiliser deux cartes réseau)
 
--   Une adresse IP, chiffrée à l’aide du protocole SSL sur le port 443, pour la communication entre le centre ATA et la passerelle ATA. 
+-   Une adresse IP, chiffrée à l’aide du protocole SSL sur le port 443, pour la communication entre le centre ATA et la passerelle ATA. (Le service ATA est lié à toutes les adresses IP sur le port 443 du centre ATA.)
 
 ### <a name="ports"></a>Ports
 Le tableau suivant répertorie les ports qui, au minimum, doivent être ouverts pour que le centre ATA fonctionne correctement.
@@ -114,19 +114,23 @@ Le tableau suivant répertorie les ports qui, au minimum, doivent être ouverts 
 |**Netlogon** (facultatif si joint à un domaine)|TCP et UDP|445|Contrôleurs de domaine|Sortant|
 |**Horloge Windows** (facultatif si joint à un domaine)|UDP|123|Contrôleurs de domaine|Sortant|
 
+> [!NOTE]
+> LDAP est requis pour tester les informations d’identification entre les passerelles ATA et les contrôleurs de domaine. Le test est effectué à partir du centre ATA sur un contrôleur de domaine pour tester la validité de ces informations d’identification. Ensuite, la passerelle ATA utilise le protocole LDAP dans le cadre d’une communication normale.
+
+
 ### <a name="certificates"></a>Certificats
 Vérifiez que le centre ATA a accès au point de distribution de votre liste de révocation de certificats. Si les passerelles ATA n’ont pas accès à Internet, suivez la [procédure d’importation manuelle d’une liste de révocation de certificats](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx) en veillant à installer l’ensemble des points de distribution de la liste pour toute la chaîne.
 
 Pour faciliter l’installation d’ATA, vous pouvez installer des certificats auto-signés pendant l’installation. Une fois le déploiement terminé, remplacez les certificats auto-signés par un certificat d’une autorité de certification interne en vue d’une utilisation par la passerelle ATA.<br>
-> [!NOTE]
-> Le type de fournisseur du certificat doit être Fournisseur de services de chiffrement (CSP) ou Fournisseur de stockage de clé (KSP).
 
-
-> L’utilisation du renouvellement automatique de certificat n’est pas prise en charge.
+> [!WARNING]
+> - Le processus de renouvellement d’un certificat existant n’est pas pris en charge. La seule façon de renouveler un certificat consiste à créer un certificat et à configurer ATA pour qu’il utilise le nouveau certificat.
 
 
 > [!NOTE]
-> Si vous souhaitez accéder à la console ATA à partir d’autres ordinateurs, vérifiez que ces derniers approuvent le certificat utilisé par le centre ATA. Sinon, vous obtiendrez une page d’avertissement indiquant un problème avec le certificat de sécurité du site web avant d’accéder à la page de connexion.
+> - Le type de fournisseur du certificat doit être Fournisseur de services de chiffrement (CSP) ou Fournisseur de stockage de clé (KSP).
+> - Le certificat du centre ATA ne DOIT PAS être renouvelé. Avant son expiration, la méthode correcte pour le renouveler consiste à créer un certificat et à sélectionner celui-ci. 
+> - Si vous souhaitez accéder à la console ATA à partir d’autres ordinateurs, vérifiez que ces derniers approuvent le certificat utilisé par le centre ATA. Sinon, vous obtiendrez une page d’avertissement indiquant un problème avec le certificat de sécurité du site web avant d’accéder à la page de connexion.
 
 ## <a name="ata-gateway-requirements"></a>Configuration requise pour la passerelle ATA
 Cette section décrit la configuration requise pour la passerelle ATA.

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/23/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 28b3bca7e84213b0f41bd8e2de61c006592819d5
-ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
+ms.openlocfilehash: 734455b06514cadb232916b8db76e47b8bf3e67a
+ms.sourcegitcommit: e7f83eb636db00333fe3965324a10a2ef5e2beba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 07/30/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -51,6 +51,7 @@ Cette section détaille les erreurs possibles dans les déploiements d’ATA et 
 |Alertes « Trafic avec mise en miroir de ports ignoré » lors de l’utilisation de la passerelle légère sur VMware|Si vous utilisez des contrôleurs de domaine sur des machines virtuelles VMware, vous recevrez peut-être des alertes concernant le **trafic réseau avec mise en miroir de ports ignoré**. Cela peut être dû à une incompatibilité de configuration dans VMware. |Pour éviter ces alertes, vous pouvez vérifier que les paramètres suivants sont définis sur 0 ou sont désactivés : TsoEnable, LargeSendOffload, IPv4, TSO Offload. Pensez aussi à désactiver IPv4 Giant TSO Offload. Pour plus d’informations, voir la documentation de VMware.|
 |System.Net.WebException : le serveur distant a retourné une erreur : (407) Authentification proxy requise|La communication de la passerelle ATA avec le centre ATA est interrompue par un serveur proxy.|Désactivez le proxy sur l’ordinateur de la passerelle ATA. <br></br>Notez que les paramètres de proxy sont peut-être définis par compte.|
 |System.IO.DirectoryNotFoundException : Le système n’arrive pas à trouver le chemin spécifié. (Exception de HRESULT : 0x80070003)|Un ou plusieurs services nécessaires pour exécuter ATA n’ont pas démarré.|Démarrez les services suivants : <br></br>Journaux et alertes de performance (PLA), Planificateur de tâches (Schedule).|
+|System.Net.WebException : le serveur distant a retourné une erreur : (403) Interdit|Il a été interdit à la passerelle ATA ou la passerelle légère d’établir une connexion HTTP, car le centre ATA n’est pas approuvé.|Ajoutez le nom NetBIOS et le nom de domaine complet du centre ATA à la liste des sites web approuvés et effacez le cache Interne Explorer (ou le nom du centre ATA tel qu’il est spécifié dans la configuration si le nom configuré est différent du nom de domaine complet/NetBIOS).|
 
 ## <a name="deployment-errors"></a>Erreurs liées au déploiement
 > [!div class="mx-tableFixed"]
