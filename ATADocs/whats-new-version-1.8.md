@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2017
+ms.date: 8/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: a067dbaaac9ed115baa7ee13bf5dd1099f038eaf
-ms.sourcegitcommit: 5fd505fac6b69b6c732bb2da121eff23c5eb303e
+ms.openlocfilehash: 1ec9308e046a228ac1276eb1aace58eec47e95d0
+ms.sourcegitcommit: 8b622fa5457cf1a540504899c8c98e860b946e01
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="whats-new-in-ata-version-18"></a>Nouveautés de la version 1.8 d’ATA
 
@@ -76,6 +76,7 @@ Ces notes de publication fournissent des informations sur les mises à jour, les
 
 - La possibilité d’ajouter des notes a été supprimée dans les activités suspectes
 - Les recommandations sur la limitation des activités suspectes ont été supprimées de la chronologie Activités suspectes.
+- Depuis ATA version 1.8, les passerelles ATA et les passerelles légères gèrent leurs propres certificats et n’ont besoin d’aucune interaction de la part de l’administrateur pour les gérer.
 
 ## <a name="known-issues"></a>Problèmes connus
 
