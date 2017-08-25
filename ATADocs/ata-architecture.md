@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 07/5/2017
+ms.date: 08/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5410f706e84517eb964e991deeb21001a09d0cef
-ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
+ms.openlocfilehash: 250c68f0efc7064f7ec4a4578342c935d04e815b
+ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 08/20/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -180,8 +180,13 @@ Pour améliorer la détection ATA de l’attaque Pass-the-Hash, de l’attaque p
 
 -   Configuration du transfert d’événements Windows<br>ATA peut aussi obtenir vos événements en configurant vos contrôleurs de domaine pour qu’ils transfèrent les événements Windows 4776, 4732, 4733, 4728, 4729, 4756 et 4757 à votre passerelle ATA. Cette méthode est particulièrement utile si vous n’avez pas de serveur SIEM ou si votre serveur SIEM n’est pas actuellement pris en charge par ATA. Pour plus d’informations sur le transfert d’événements Windows dans ATA, consultez [Configuration du transfert d’événements Windows](configure-event-collection.md#configuring-windows-event-forwarding). Notez que cela s’applique uniquement aux passerelles ATA physiques et non à la passerelle légère ATA.
 
+## <a name="related-videos"></a>Vidéos connexes
+- [Sélection du type de passerelle ATA approprié](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
+
+
 ## <a name="see-also"></a>Voir aussi
 - [Prérequis au déploiement d’ATA](ata-prerequisites.md)
+- [Outil de dimensionnement ATA](http://aka.ms/atasizingtool)
 - [Planification de la capacité d’ATA](ata-capacity-planning.md)
 - [Configurer la collecte d’événements](configure-event-collection.md)
 - [Configuration du transfert d’événements Windows](configure-event-collection.md#configuring-windows-event-forwarding)

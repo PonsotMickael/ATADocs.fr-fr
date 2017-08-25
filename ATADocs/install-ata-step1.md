@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 97fa1522ca43cf92416ac845b8886f2905e9981b
-ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.openlocfilehash: 3dc73583295136567ac221006430a3e8bc1353d9
+ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/20/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -97,8 +97,13 @@ Effectuez les opérations suivantes sur le serveur du centre ATA.
 [« Préinstallation](configure-port-mirroring.md)
 [Étape 2 »](install-ata-step2.md)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="related-videos"></a>Vidéos connexes
+- [Sélection du type de passerelle ATA approprié](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
+
+## <a name="see-also"></a>Voir aussi
+- [Guide de déploiement ATA POC](http://aka.ms/atapoc)
+- [Outil de dimensionnement ATA](http://aka.ms/atasizingtool)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)
 - [Configuration requise pour ATA](ata-prerequisites.md)
