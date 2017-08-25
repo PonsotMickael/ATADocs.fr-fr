@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 06/12/2017
+ms.date: 08/20/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 68c169ffd0f42bd8b030dc12f4711cbde2718a99
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: 22541007bd6ebf0e37818e205bac57191ca6f28d
+ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/20/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -55,8 +55,13 @@ Le fichier zip comprend les éléments suivants :
 [« Étape 2](install-ata-step2.md)
 [Étape 4 »](install-ata-step4.md)
 
-## <a name="see-also"></a>Voir aussi
 
+## <a name="related-videos"></a>Vidéos connexes
+- [Sélection du type de passerelle ATA approprié](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
+
+## <a name="see-also"></a>Voir aussi
+- [Guide de déploiement ATA POC](http://aka.ms/atapoc)
+- [Outil de dimensionnement ATA](http://aka.ms/atasizingtool)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)
 - [Configuration requise pour ATA](ata-prerequisites.md)

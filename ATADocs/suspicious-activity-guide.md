@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8c93f4485998bbb1b2b440f01fed8d96ad4e2842
-ms.sourcegitcommit: 7bc04eb4d004608764b3ded1febf32bc4ed020be
+ms.openlocfilehash: f9f9fee8ad8d75d3510c86890201dd719e074b8c
+ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 08/20/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -204,7 +204,13 @@ La reconnaissance des services d’annuaire est une technique que les attaquants
 |------|----|------|----------|
 | ATA lève cette alerte quand plus de 5 % de tous les comptes sont supprimés. Cela implique l’accès en lecture sur le conteneur des éléments supprimés. | Déterminez pourquoi 5 % de tous vos comptes ont soudainement été supprimés. | Supprimez les autorisations des utilisateurs qui peuvent supprimer des comptes dans Active Directory. Pour plus d’informations, consultez [View or Set Permissions on a Directory Object](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) (Afficher ou définir des autorisations sur un objet d’annuaire). | Faible |
 
+## <a name="related-videos"></a>Vidéos connexes
+- [Rejoindre la communauté sur la sécurité](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
+
+
 ## <a name="see-also"></a>Voir aussi
+- [Scénario d’activité suspecte ATA](http://aka.ms/ataplaybook)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Gestion des activités suspectes](working-with-suspicious-activities.md)
 - [Examen des attaques à l’aide d’un faux PAC](use-case-forged-pac.md)
 - [Résolution des problèmes connus d’ATA](troubleshooting-ata-known-errors.md)

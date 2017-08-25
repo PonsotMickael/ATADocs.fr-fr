@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 675543c11e07bcc243131e2350cfb33bfe8e7e39
-ms.sourcegitcommit: 28f5d0f39149955c0d1059e13db289d13be9b642
+ms.openlocfilehash: 89d1472b18f20d9702fcd7dfd47fa4b22858ab83
+ms.sourcegitcommit: 37fdfb6a21d1b81f5a4b4c1351112bdf727a633f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/20/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -53,7 +53,9 @@ Cette section détaille les erreurs possibles dans les déploiements d’ATA et 
 |System.Net.WebException : le serveur distant a retourné une erreur : (407) Authentification proxy requise|La communication de la passerelle ATA avec le centre ATA est interrompue par un serveur proxy.|Désactivez le proxy sur l’ordinateur de la passerelle ATA. <br></br>Notez que les paramètres de proxy sont peut-être définis par compte.|
 |System.IO.DirectoryNotFoundException : Le système n’arrive pas à trouver le chemin spécifié. (Exception de HRESULT : 0x80070003)|Un ou plusieurs services nécessaires pour exécuter ATA n’ont pas démarré.|Démarrez les services suivants : <br></br>Journaux et alertes de performance (PLA), Planificateur de tâches (Schedule).|
 |System.Net.WebException : le serveur distant a retourné une erreur : (403) Interdit|Il a été interdit à la passerelle ATA ou la passerelle légère d’établir une connexion HTTP, car le centre ATA n’est pas approuvé.|Ajoutez le nom NetBIOS et le nom de domaine complet du centre ATA à la liste des sites web approuvés et effacez le cache Interne Explorer (ou le nom du centre ATA tel qu’il est spécifié dans la configuration si le nom configuré est différent du nom de domaine complet/NetBIOS).|
+|System.Net.Http.HttpRequestException: PostAsync failed [requestTypeName=StopNetEventSessionRequest]|La passerelle ATA ou la passerelle légère ATA ne peuvent pas arrêter et démarrer la session ETW qui collecte le trafic réseau en raison d’un problème WMI|Suivez les instructions de la rubrique [WMI : reconstruction du référentiel WMI](https://blogs.technet.microsoft.com/askperf/2009/04/13/wmi-rebuilding-the-wmi-repository/) pour résoudre le problème WMI|
 
+ 
 ## <a name="deployment-errors"></a>Erreurs liées au déploiement
 > [!div class="mx-tableFixed"]
 |Erreur|Description|Résolution|
