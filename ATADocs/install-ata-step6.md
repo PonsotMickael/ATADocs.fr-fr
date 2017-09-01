@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/20/2017
+ms.date: 08/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 61ff0535d3497d39d58b96f1b4acc255b74e05b5
-ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
+ms.openlocfilehash: ac591d960028268f6c1ebd74706839a3b91597da
+ms.sourcegitcommit: 9ce330726e5de8c05eae6a20d3e6c1d8bef3cd0e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 08/29/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 08/20/2017
 
 ## <a name="step-6-configure-event-collection-and-vpn"></a>Étape 6. Configurer la collecte d’événements et le VPN
 ### <a name="configure-event-collection"></a>Configurer la collecte d’événements
-Pour améliorer les capacités de détection, ATA a besoin des événements Windows suivants : 4776, 4732, 4733, 4728, 4729, 4756, 4757. Ils peuvent être lus automatiquement par la passerelle légère ATA ou, si la passerelle légère ATA n’est pas déployée, ils peuvent être transférés à la passerelle ATA de deux manières : en configurant la passerelle ATA pour l’écoute des événements SIEM ou en [configurant le transfert d’événements Windows](#configuring-windows-event-forwarding).
+Pour améliorer les capacités de détection, ATA a besoin des événements Windows suivants : 4776, 4732, 4733, 4728, 4729, 4756, 4757. Ils peuvent être lus automatiquement par la passerelle légère ATA ou, si la passerelle légère ATA n’est pas déployée, ils peuvent être transférés à la passerelle ATA de deux manières : en configurant la passerelle ATA pour l’écoute des événements SIEM ou en [configurant le transfert d’événements Windows](configure-event-collection.md).
 
 > [!NOTE]
 > Pour les versions 1.8 et ultérieures d’ATA, la configuration de la collecte d’événements n’est plus nécessaire pour les passerelles légères ATA. La passerelle légère ATA peut désormais lire les événements localement, sans qu’il soit nécessaire de configurer le transfert d’événements.
