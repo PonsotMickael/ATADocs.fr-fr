@@ -1,7 +1,7 @@
 # Comprendre et explorer
 ## [Qu’est-ce que Microsoft Advanced Threat Analytics ?](what-is-ata.md)
 ## [Quelles sont les menaces détectées par ATA ?](ata-threats.md)
-## Nouveautés dans ATA?
+## Nouveautés d’ATA
 ### [Nouveautés d’ATA version 1.8](whats-new-version-1.8.md)
 #### [Mise à jour vers ATA 1.8 : guide de migration](ata-update-1.8-migration-guide.md)
 ### [Nouveautés d’ATA version 1.7](whats-new-version-1.7.md)
@@ -11,25 +11,24 @@
 ### [Nouveautés d’ATA version 1.5](whats-new-version-1.5.md)
 #### [Mise à jour vers ATA 1.5 : guide de migration](ata-update-1.5-migration-guide.md)
 ### [Nouveautés d’ATA version 1.4](whats-new-version-1.4.md)
-## [Forum Aux Questions](ata-technical-faq.md)
+## [Forum aux questions](ata-technical-faq.md)
 # Planification et conception
 ## [Architecture d’ATA](ata-architecture.md)
 ## [Planifier la capacité d’ATA](ata-capacity-planning.md)
 ## [Prérequis au déploiement d’ATA](ata-prerequisites.md)
 # Déploiement
-## Étapes de préinstallation
+## [1 Télécharger et installer le Centre](install-ata-step1.md)
+## [2 Se connecter à AD](install-ata-step2.md)
+## [3 Télécharger le package de la passerelle ATA](install-ata-step3.md)
+## [4 Installer la passerelle ATA](install-ata-step4.md)
+## [5 Configurer la passerelle ATA](install-ata-step5.md)
+## [6 Collecte d’événements et VPN](install-ata-step6.md)
+## [7 Exclusions et honeytoken](install-ata-step7.md)
+## [Installation sans assistance](ata-silent-installation.md)
+## Étapes supplémentaires de la passerelle ATA
 ### [1. Configurer la mise en miroir des ports](configure-port-mirroring.md)
 ### [2. Valider la mise en miroir des ports](validate-port-mirroring.md)
 ### [3. Configurer le transfert d’événements Windows](configure-event-collection.md)
-## Installer ATA
-### [Étape 1 Télécharger et installer le Centre](install-ata-step1.md)
-### [Étape 2 Se connecter à AD](install-ata-step2.md)
-### [Étape 3 Télécharger le package d’installation de la passerelle ATA](install-ata-step3.md)
-### [Étape 4 Installer la passerelle ATA](install-ata-step4.md)
-### [Étape 5 Configurer la passerelle ATA](install-ata-step5.md)
-### [Étape 6 Collecte d’événements et VPN](install-ata-step6.md)
-### [Étape 7 Exclusions et honeytoken](install-ata-step7.md)
-### [Installation sans assistance](ata-silent-installation.md)
 # Utiliser
 ## [Utilisation de la console ATA](working-with-ata-console.md)
 ## [Gestion des activités suspectes](working-with-suspicious-activities.md)
