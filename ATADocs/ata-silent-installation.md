@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 07/20/2017
+ms.date: 08/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7e130da2b5a177658e176a428101c11d02bc2a3f
-ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
+ms.openlocfilehash: c38db312ea877b63580d745153aa58ea34a160a6
+ms.sourcegitcommit: 9ce330726e5de8c05eae6a20d3e6c1d8bef3cd0e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 08/29/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
 
-
 # <a name="ata-silent-installation"></a>Installation d’ATA sans assistance
 Cet article fournit des instructions pour installer ATA sans assistance.
+
 ## <a name="prerequisites"></a>Conditions préalables
 
 ATA version 1.8 nécessite l’installation du Microsoft .NET Framework 4.6.1. 
@@ -134,6 +134,11 @@ Utilisez la commande suivante pour effectuer une désinstallation sans assistanc
     "Microsoft ATA Center Setup.exe" /quiet /uninstall --DeleteExistingDatabaseData
 
 ## <a name="ata-gateway-silent-installation"></a>Installation de la passerelle ATA sans assistance
+
+> [!NOTE]
+> En cas de déploiement sans assistance de la passerelle légère ATA avec System Center Configuration Manager ou un autre système de déploiement de logiciels, il est recommandé de créer deux packages de déploiement :</br>- .NET Framework 4.6.1, avec redémarrage du contrôleur de domaine ;</br>- la passerelle ATA. </br>Faites en sorte que le package de la passerelle ATA dépende du déploiement du package .NET Framework. </br>Obtenir le [package de déploiement hors connexion .NET Framework 4.6.1](https://www.microsoft.com/download/details.aspx?id=49982). 
+
+
 Utilisez la commande suivante pour installer la passerelle ATA sans assistance :
 
 **Syntaxe** :

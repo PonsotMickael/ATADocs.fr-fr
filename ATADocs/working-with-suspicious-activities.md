@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/20/2017
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: fcee6f1887e6842d1ccdfd2863620af8a5a8279f
-ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
+ms.openlocfilehash: 62ce117423a189a1c2ce00b862f323db6ed328cb
+ms.sourcegitcommit: 46dd0e695f16a0dd23bbfa140eba15ea6a34d7af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 08/28/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -59,7 +59,7 @@ Chaque activité suspecte comporte les informations suivantes :
 ## <a name="filter-suspicious-activities-list"></a>Filtrer la liste des activités suspectes
 Pour filtrer la liste des activités suspectes :
 
-1.  Dans le volet **Filtrer par** sur le côté gauche de l’écran, sélectionnez l’une des options suivantes : **Tout**, **Ouvert**, **Résolu** ou **Ignoré**.
+1.  Dans le volet **Filtrer par** sur le côté gauche de l’écran, sélectionnez l’une des options suivantes : **Tout**, **Ouvert**, **Fermé** ou **Ignoré**.
 
 2.  Pour filtrer la liste, sélectionnez **Haute**, **Moyenne** ou **Faible**.
 
@@ -93,7 +93,7 @@ Pour cela, cliquez sur les trois points en haut à droite d’une activité susp
 -   **Fermé** : Utilisé pour effectuer le suivi des activités suspectes que vous avez identifiées, examinées et résolues.
 
     > [!NOTE]
-    > ATA peut rouvrir une activité résolue si celle-ci est détectée à nouveau peu de temps après.
+    > ATA peut rouvrir une activité fermée si celle-ci est détectée à nouveau peu de temps après.
 
 -   **Ignoré** : La suppression d’une activité signifie que vous voulez l’ignorer pour le moment, et être averti de nouveau seulement en cas de nouvelle instance. Cela signifie que si une alerte similaire survient, ATA ne la rouvre pas. Cependant, si l’alerte cesse pendant 7 jours puis réapparaît, vous êtes averti à nouveau.
 
