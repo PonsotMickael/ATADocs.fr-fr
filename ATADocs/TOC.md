@@ -1,7 +1,7 @@
 # Comprendre et explorer
 ## [Qu’est-ce que Microsoft Advanced Threat Analytics ?](what-is-ata.md)
 ## [Quelles sont les menaces détectées par ATA ?](ata-threats.md)
-## Nouveautés d’ATA
+## Nouveautés dans ATA?
 ### [Nouveautés d’ATA version 1.8](whats-new-version-1.8.md)
 #### [Mise à jour vers ATA 1.8 : guide de migration](ata-update-1.8-migration-guide.md)
 ### [Nouveautés d’ATA version 1.7](whats-new-version-1.7.md)
@@ -11,11 +11,12 @@
 ### [Nouveautés d’ATA version 1.5](whats-new-version-1.5.md)
 #### [Mise à jour vers ATA 1.5 : guide de migration](ata-update-1.5-migration-guide.md)
 ### [Nouveautés d’ATA version 1.4](whats-new-version-1.4.md)
-## [Forum aux questions](ata-technical-faq.md)
+## [Forum Aux Questions](ata-technical-faq.md)
 # Planification et conception
 ## [Architecture d’ATA](ata-architecture.md)
 ## [Planifier la capacité d’ATA](ata-capacity-planning.md)
 ## [Prérequis au déploiement d’ATA](ata-prerequisites.md)
+## [Parcours de mise à niveau recommandé](upgrade-path.md)
 # Déploiement
 ## [1 Télécharger et installer le Centre](install-ata-step1.md)
 ## [2 Se connecter à AD](install-ata-step2.md)
