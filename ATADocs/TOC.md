@@ -45,8 +45,7 @@
 ## [Configuration de l’exportation/importation d’ATA](ata-configuration-file.md)
 ## [Gérer la télémétrie ATA](manage-telemetry-settings.md)
 # Étudier
-## [Élévation des privilèges en utilisant des attaques de données d’autorisation falsifiées](use-case-forged-pac.md)
-## [Reconnaissance à l’aide de DNS](use-case-dns.md)
+## [Guide des activités suspectes](suspicious-activity-guide.md)
 # Dépannage
 ## [Utilisation des journaux d’audit](troubleshoot-audit.md)
 ## [Résolution des problèmes connus](troubleshooting-ata-known-errors.md)
