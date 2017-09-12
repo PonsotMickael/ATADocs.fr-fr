@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 9/3/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f9c2df3c454e2098277f4c475dc1d69378a90987
-ms.sourcegitcommit: 46dd0e695f16a0dd23bbfa140eba15ea6a34d7af
+ms.openlocfilehash: d7f5423104b3e42777b6ce8013832b3bac6353be
+ms.sourcegitcommit: 654500928025e3cb127e095c17cc1d6444defd3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/03/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -124,13 +124,19 @@ Pour faciliter l’installation d’ATA, vous pouvez installer des certificats a
 
 Vérifiez que le centre ATA et les passerelles ATA ont accès au point de distribution de votre liste de révocation de certificats. S’ils n’ont pas accès à Internet, suivez la [procédure d’importation manuelle d’une liste de révocation de certificats](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx) en veillant à installer l’ensemble des points de distribution de la liste pour toute la chaîne.
 
+Le certificat doit avoir les éléments suivants :
+-   Une clé privée
+-   Un fournisseur de type CSP (fournisseur de services de chiffrement) ou de type KSP (fournisseur de stockage de clés)
+-   Une clé publique de 2 048 bits de longueur
+-   Des indicateurs d’utilisation KeyEncipherment et ServerAuthentication définis à une valeur
+
+Par exemple, vous pouvez utiliser les modèles standard **Serveur web** ou **Ordinateur**.
 
 > [!WARNING]
 > - Le processus de renouvellement d’un certificat existant n’est pas pris en charge. La seule façon de renouveler un certificat consiste à créer un certificat et à configurer ATA pour qu’il utilise le nouveau certificat.
 
 
 > [!NOTE]
-> - Le type de fournisseur du certificat doit être Fournisseur de services de chiffrement (CSP) ou Fournisseur de stockage de clé (KSP).
 > - Si vous souhaitez accéder à la console ATA à partir d’autres ordinateurs, vérifiez que ces derniers approuvent le certificat utilisé par le centre ATA. Sinon, vous obtiendrez une page d’avertissement indiquant un problème avec le certificat de sécurité du site web avant d’accéder à la page de connexion.
 > - Depuis ATA version 1.8, les passerelles ATA et les passerelles légères gèrent leurs propres certificats et n’ont besoin d’aucune interaction de la part de l’administrateur pour les gérer.
 

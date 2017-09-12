@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/14/2017
+ms.date: 9/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: 1ec9308e046a228ac1276eb1aace58eec47e95d0
-ms.sourcegitcommit: 8b622fa5457cf1a540504899c8c98e860b946e01
+ms.openlocfilehash: 2793a602a0cd0fb9902197acd45dd5bdd4612ea4
+ms.sourcegitcommit: 654500928025e3cb127e095c17cc1d6444defd3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/03/2017
 ---
 # <a name="whats-new-in-ata-version-18"></a>Nouveautés de la version 1.8 d’ATA
 
@@ -126,6 +126,14 @@ Sur Windows Server 2016 Core, vous ne verrez peut-être pas l’erreur mais le 
 **Description** : Depuis ATA 1.8, la passerelle ATA communique avec le centre ATA à l’aide du protocole HTTP. Si l’ordinateur sur lequel vous avez installé la passerelle ATA utilise un serveur proxy pour se connecter au centre ATA, il peut rompre cette communication. 
 
 **Solution de contournement**: Désactivez l’utilisation d’un serveur proxy sur le compte du service de passerelle ATA. Pour corriger ce problème, une mise à jour sera publiée dans une prochaine version.
+
+### <a name="report-settings-reset"></a>Réinitialisation des paramètres des rapports
+
+**Symptômes** : Tous les paramètres qui ont été définis pour les rapports planifiés sont réinitialisés quand vous effectuez la mise à jour vers la version 1.8 Update 1.
+
+**Description** : La mise à jour de la version 1.8 vers la version 1.8 Update 1 entraîne la réinitialisation des paramètres des rapports planifiés.
+
+**Solution de contournement** : Avant d’effectuer la mise à jour vers la version 1.8 Update 1, faites une copie des paramètres des rapports pour pouvoir ensuite les entrer à nouveau. Pour ce faire, vous pouvez également utiliser un script. Pour plus d’informations, consultez [Exporter et importer la configuration d’ATA](ata-configuration-file.md).
 
 
 ## <a name="see-also"></a>Voir aussi
