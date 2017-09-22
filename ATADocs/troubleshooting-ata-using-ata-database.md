@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/23/2017
+ms.date: 9/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 174918812562b9bfe892fcde90d92e208b26ffc3
-ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
+ms.openlocfilehash: f88dcf9b2c3bb9db5d81a039e7e7ae8818c48137
+ms.sourcegitcommit: 34c3d6f56f175994b672842c7576040956ceea69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 09/19/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -41,7 +41,6 @@ La procédure par défaut et la plus simple pour interroger la base de données 
 |Obtenir les détails d’un utilisateur/ordinateur/groupe (UniqueEntity), par exemple un ID d’utilisateur.|`db.UniqueEntity.find({SearchNames: "<name of entity in lower case>"})`||
 |Rechercher le trafic d’authentification Kerberos provenant d’un ordinateur donné lors d’une journée spécifique.|`db.KerberosAs_<datetime>.find({SourceComputerId: "<Id of the source computer>"})`|Pour obtenir l’&lt;ID de l’ordinateur source&gt;, vous pouvez interroger les collections UniqueEntity, comme illustré dans l’exemple.<br /><br />Chaque type d’activité réseau, par exemple les authentifications Kerberos, possède sa propre collection par date UTC.|
 |Rechercher le trafic NTLM provenant d’un ordinateur donné associé à un compte indiqué lors d’une journée spécifique.|`db.Ntlm_<datetime>.find({SourceComputerId: "<Id of the source computer>", SourceAccountId: "<Id of the account>"})`|Pour obtenir l’&lt;ID de l’ordinateur source&gt; et l’&lt;ID du compte&gt;, vous pouvez interroger les collections UniqueEntity, comme illustré dans l’exemple.<br /><br />Chaque type d’activité réseau, par exemple les authentifications NTLM, possède sa propre collection par date UTC.|
-|Rechercher des propriétés avancées telles que les dates d’activation d’un compte. |`db.UniqueEntityProfile.find({UniqueEntityId: "<Id of the account>")`|Pour obtenir l’&lt;ID du compte&gt;, vous pouvez interroger les collections UniqueEntity, comme illustré dans l’exemple.<br>La propriété qui affiche les dates pendant lesquelles le compte a été actif s’appelle « ActiveDates ». Par exemple, vous voulez savoir si un compte a au moins 21 jours d’activité pour que l’algorithme d’apprentissage automatique de comportement inhabituel puisse être exécuté sur ce compte.|
 |Apporter des modifications de configuration avancée. Dans cet exemple, nous affectons la valeur 10 000 à la taille de la file d’attente d’envoi pour toutes les passerelles ATA.|`db.SystemProfile.update( {_t: "GatewaySystemProfile"} ,`<br>`{$set:{"Configuration.EntitySenderConfiguration.EntityBatchBlockMaxSize" : "10000"}})`|`|
 
 Voici un exemple de code qui utilise la syntaxe ci-dessus. Si vous étudiez une activité suspecte qui s’est produite le 20/10/2015 et que vous souhaitez en savoir plus sur les activités NTLM effectuées par « John Doe » ce jour-là :<br /><br />Tout d’abord, recherchez l’ID de « John Doe »
