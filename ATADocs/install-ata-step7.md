@@ -1,11 +1,11 @@
 ---
-title: "Installer Advanced Threat Analytics - Étape 7 | Microsoft Docs"
+title: "Installer Advanced Threat Analytics - Étape 8 | Microsoft Docs"
 description: "Lors de l’étape finale de l’installation d’ATA, vous configurez l’utilisateur Honeytoken."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 09/03/2017
+ms.date: 09/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,22 +13,22 @@ ms.technology:
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f5cb87148741c92dc7832da16cc37a749fa72fae
-ms.sourcegitcommit: 654500928025e3cb127e095c17cc1d6444defd3a
+ms.openlocfilehash: 3a8ccb1412bbd8e2013c84d36f4142301159c46c
+ms.sourcegitcommit: 34c3d6f56f175994b672842c7576040956ceea69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2017
+ms.lasthandoff: 09/19/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
 
 
-# <a name="install-ata---step-7"></a>Installer ATA - Étape 7
+# <a name="install-ata---step-8"></a>Installer ATA - Étape 8
 
 >[!div class="step-by-step"]
-[« Étape 6 ](install-ata-step6.md)
+[« Étape 7 ](vpn-integration-install-step.md)
 
-## <a name="step-7-configure-ip-address-exclusions-and-honeytoken-user"></a>Étape 7. Configurer des exclusions d’adresses IP et un utilisateur Honeytoken
+## <a name="step-8-configure-ip-address-exclusions-and-honeytoken-user"></a>Étape 8. Configurer des exclusions d’adresses IP et un utilisateur Honeytoken
 ATA permet d’exclure des adresses IP ou utilisateurs spécifiques d’un certain nombre de détections. 
 
 Par exemple, une **exclusion DNS Reconnaissance** peut être un analyseur de sécurité qui utilise DNS comme mécanisme d’analyse. L’exclusion aide ATA à ignorer ces analyseurs. Un appareil NAT constitue un exemple d’exclusion *Pass-the-Ticket*.    
@@ -64,7 +64,7 @@ Pour vérifier qu’ATA est opérationnel et qu’il détecte les violations dan
 
 
 >[!div class="step-by-step"]
-[« Étape 6 ](install-ata-step6.md)
+[« Étape 7 ](vpn-integration-install-step.md)
 
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/29/2017
+ms.date: 09/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ac591d960028268f6c1ebd74706839a3b91597da
-ms.sourcegitcommit: 9ce330726e5de8c05eae6a20d3e6c1d8bef3cd0e
+ms.openlocfilehash: 068c3ca2858934f68beea9d092fbeb113b77ba2a
+ms.sourcegitcommit: 34c3d6f56f175994b672842c7576040956ceea69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/19/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -26,9 +26,10 @@ ms.lasthandoff: 08/29/2017
 # <a name="install-ata---step-6"></a>Installer ATA - Étape 6
 
 >[!div class="step-by-step"]
-[« Étape 5](install-ata-step5.md)
+[« Étape 5](install-ata-step5.md)
+[Étape 7 »](vpn-integration-install-step.md)
 
-## <a name="step-6-configure-event-collection-and-vpn"></a>Étape 6. Configurer la collecte d’événements et le VPN
+## <a name="step-6-configure-event-collection"></a>Étape 6. Configurer la collecte d’événements
 ### <a name="configure-event-collection"></a>Configurer la collecte d’événements
 Pour améliorer les capacités de détection, ATA a besoin des événements Windows suivants : 4776, 4732, 4733, 4728, 4729, 4756, 4757. Ils peuvent être lus automatiquement par la passerelle légère ATA ou, si la passerelle légère ATA n’est pas déployée, ils peuvent être transférés à la passerelle ATA de deux manières : en configurant la passerelle ATA pour l’écoute des événements SIEM ou en [configurant le transfert d’événements Windows](configure-event-collection.md).
 
@@ -184,26 +185,10 @@ Assurez-vous que \t sépare les paires clé/valeur.
 > Utiliser WinCollect pour la collecte des événements Windows n’est pas pris en charge.
 
 
-### <a name="configuring-vpn"></a>Configuration du VPN
-
-ATA collecte des données VPN pour profiler les emplacements à partir desquels les ordinateurs se connectent au réseau.
-
-Pour configurer les données VPN, accédez à **Configuration** > **VPN** et entrez le **Secret partagé du compte Radius** de votre VPN.
-
-![Configurer le VPN](./media/vpn.png)
-
-Pour obtenir le secret partagé, consultez la documentation de votre VPN. Les fournisseurs VPN pris en charge sont les suivants :
-
-- Microsoft
-- F5
-- Check Point
-- Cisco ASA
-
-
 
 >[!div class="step-by-step"]
 [« Étape 5](install-ata-step5.md)
-[Étape 7 »](install-ata-step7.md)
+[Étape 7 »](vpn-integration-install-step.md)
 
 
 
