@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 9/24/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d7f5423104b3e42777b6ce8013832b3bac6353be
-ms.sourcegitcommit: 654500928025e3cb127e095c17cc1d6444defd3a
+ms.openlocfilehash: b681a6a27189d2e1aec3f7f9913b97f9e7717911
+ms.sourcegitcommit: 47b2b9ebaadff79c087d14f86462d3d8102cc551
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2017
+ms.lasthandoff: 09/24/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -60,7 +60,7 @@ Cette section répertorie les informations que vous devez rassembler ainsi que l
 
 -    Recommandé : L’utilisateur doit disposer d’autorisations en lecture seule sur le conteneur Objets supprimés. ATA peut ainsi détecter la suppression en bloc d’objets du domaine. Pour plus d’informations sur la configuration des autorisations en lecture seule sur le conteneur Objets supprimés, consultez la section **Modifier les autorisations sur un conteneur d’objets supprimés** dans la rubrique [Afficher ou définir des autorisations sur un objet d’annuaire](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx).
 
--   Facultatif : compte d’un utilisateur sans activité réseau. Ce compte est configuré comme l’utilisateur honeytoken ATA. Pour configurer l’utilisateur honeytoken, vous devez disposer du SID du compte d’utilisateur, et non du nom d’utilisateur. Pour plus d’informations, consultez la page [Gérer les paramètres de la détection ATA](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/working-with-detection-settings).
+-   Facultatif : compte d’un utilisateur sans activité réseau. Ce compte est configuré comme l’utilisateur honeytoken ATA. Pour configurer l’utilisateur Honeytoken, vous devez disposer du SID du compte d’utilisateur, et non du nom d’utilisateur. Pour plus d’informations, consultez la page [Gérer les paramètres de la détection ATA](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/working-with-detection-settings).
 
 -   Facultatif : Outre la collecte et l’analyse du trafic réseau à destination et en provenance des contrôleurs de domaine, ATA peut utiliser les événements Windows 4776, 4732, 4733, 4728, 4729, 4756 et 4757 pour améliorer la détection de l’attaque Pass-the-Hash, de l’attaque par force brute, de la modification des groupes sensibles et des comptes Honeytoken. Vous pouvez recevoir ces événements à partir de votre serveur SIEM ou définir le transfert d’événements Windows à partir de votre contrôleur de domaine. Les événements collectés fournissent à ATA des informations supplémentaires qui ne sont pas accessibles par le biais du trafic réseau du contrôleur de domaine.
 
@@ -81,9 +81,9 @@ L’installation du centre ATA en tant que machine virtuelle est prise en charge
 
 Si vous exécutez le centre ATA en tant que machine virtuelle, arrêtez le serveur avant de créer un point de contrôle pour éviter tout risque d’endommagement de la base de données.
 ### <a name="server-specifications"></a>Spécifications du serveur
-Sur un serveur physique, la base de données ATA nécessite la **désactivation** de l’accès mémoire non uniforme (NUMA) dans le BIOS. Votre système peut parler d’entrelacement de nœuds pour faire référence à NUMA, auquel cas vous devrez **activer** l’entrelacement de nœuds pour désactiver NUMA. Pour plus d’informations, consultez la documentation du BIOS. Notez que cela ne s’applique pas quand le centre ATA s’exécute sur un serveur virtuel.<br>
+Sur un serveur physique, la base de données ATA nécessite la **désactivation** de l’accès mémoire non uniforme (NUMA) dans le BIOS. Votre système peut parler d’entrelacement de nœuds pour faire référence à NUMA, auquel cas vous devez **activer** l’entrelacement de nœuds pour désactiver NUMA. Pour plus d’informations, consultez la documentation du BIOS. Notez que cela ne s’applique pas quand le centre ATA s’exécute sur un serveur virtuel.<br>
 Pour bénéficier de performances optimales, choisissez **Hautes performances** comme **Option d’alimentation** pour le centre ATA.<br>
-Le nombre de contrôleurs de domaine que vous surveillez et la charge sur chacun des contrôleurs de domaine déterminent les spécifications du serveur. Pour plus d’informations, consultez [Planification de la capacité ATA](ata-capacity-planning.md).
+Le nombre de contrôleurs de domaine que vous surveillez et la charge sur chacun des contrôleurs de domaine déterminent les spécifications serveur requises. Pour plus d’informations, consultez [Planification de la capacité ATA](ata-capacity-planning.md).
 
 
 ### <a name="time-synchronization"></a>Synchronisation de l’heure
@@ -137,7 +137,7 @@ Par exemple, vous pouvez utiliser les modèles standard **Serveur web** ou **Ord
 
 
 > [!NOTE]
-> - Si vous souhaitez accéder à la console ATA à partir d’autres ordinateurs, vérifiez que ces derniers approuvent le certificat utilisé par le centre ATA. Sinon, vous obtiendrez une page d’avertissement indiquant un problème avec le certificat de sécurité du site web avant d’accéder à la page de connexion.
+> - Si vous souhaitez accéder à la console ATA à partir d’autres ordinateurs, vérifiez que ces derniers approuvent le certificat utilisé par le centre ATA. Sinon, vous obtenez une page d’avertissement indiquant un problème avec le certificat de sécurité du site web avant d’accéder à la page de connexion.
 > - Depuis ATA version 1.8, les passerelles ATA et les passerelles légères gèrent leurs propres certificats et n’ont besoin d’aucune interaction de la part de l’administrateur pour les gérer.
 
 ## <a name="ata-gateway-requirements"></a>Configuration requise pour la passerelle ATA
@@ -155,7 +155,7 @@ Pour vous en assurer, exécutez l’applet de commande Windows PowerShell suivan
 Pour plus d’informations sur l’utilisation de machines virtuelles avec la passerelle ATA, consultez [Configurer la mise en miroir des ports](configure-port-mirroring.md).
 
 > [!NOTE]
-> Un minimum de 5 Go d’espace sont nécessaires et 10 Go sont recommandés. Cela inclut l’espace nécessaire pour les fichiers binaires ATA, les [journaux ATA](troubleshooting-ata-using-logs.md) et les [journaux de performances](troubleshooting-ata-using-perf-counters.md).
+> Un minimum de 5 Go d’espace sont nécessaires et 10 Go sont recommandés. Cela inclut l’espace nécessaire pour les fichiers binaires ATA, les [journaux ATA et les [journaux de performances](troubleshooting-ata-using-perf-counters.md).
 
 ### <a name="server-specifications"></a>Spécifications du serveur
 Pour bénéficier de performances optimales, choisissez **Hautes performances** comme **Option d’alimentation** pour la passerelle ATA.<br>
@@ -172,7 +172,7 @@ L’heure du serveur du centre ATA, des serveurs de la passerelle ATA et des con
 ### <a name="network-adapters"></a>Cartes réseau
 La passerelle ATA nécessite au moins une carte de gestion et au moins une carte de capture :
 
--   **Carte de gestion** : cette carte est utilisée pour les communications sur votre réseau d’entreprise. Elle doit être configurée avec les éléments suivants :
+-   **Carte de gestion** : cette carte est utilisée pour les communications sur votre réseau d’entreprise. Elle doit être configurée avec les paramètres suivants :
 
     -   Adresse IP statique (passerelle par défaut incluse)
 
@@ -235,7 +235,7 @@ Pendant l’installation, le .Net Framework 4.6.1 est installé et peut entraîn
 
 
 > [!NOTE]
-> Un minimum de 5 Go d’espace sont nécessaires et 10 Go sont recommandés. Cela inclut l’espace nécessaire pour les fichiers binaires ATA, les [journaux ATA](troubleshooting-ata-using-logs.md) et les [journaux de performances](troubleshooting-ata-using-perf-counters.md).
+> Un minimum de 5 Go d’espace sont nécessaires et 10 Go sont recommandés. Cela inclut l’espace nécessaire pour les fichiers binaires ATA, les [journaux ATA et les [journaux de performances](troubleshooting-ata-using-perf-counters.md).
 
 ### <a name="server-specifications"></a>Spécifications du serveur
 
@@ -272,7 +272,7 @@ Le tableau suivant répertorie les ports qui, au minimum, sont requis par la pas
 > -   NetBIOS
 
 ## <a name="ata-console"></a>Console ATA
-L’accès à la console ATA s’effectue au moyen d’un navigateur, avec prise en charge des éléments suivants :
+L’accès à la console ATA s’effectue au moyen d’un navigateur, avec prise en charge des navigateurs et paramètres suivants :
 
 -   Internet Explorer 10 et versions ultérieures
 
