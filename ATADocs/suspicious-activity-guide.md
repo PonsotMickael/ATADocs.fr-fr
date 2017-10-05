@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 05550e56479de0390d7f2d990ffae4b319dec9f9
-ms.sourcegitcommit: 74cce0c1d52086fdf10ea70f590b306c1c7e8b14
+ms.openlocfilehash: cd6e2968cad2393e2f56ece03be880622a3a0c6a
+ms.sourcegitcommit: 79abfe095f5def259ebb5018d49f9aadd5f2d4f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 10/01/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -285,7 +285,7 @@ Des vulnérabilités connues dans les versions antérieures de Windows Server pe
 
 2. Le correctif MS14-068 (contrôleur de domaine) ou MS11-013 (serveur) a-t-il été installé sur l’ordinateur de destination (sous la colonne **ACCESSED**) ? Si c’est le cas, **fermez** l’activité suspecte (c’est un faux positif).
 
-3. Sinon, l’ordinateur source (sous la colonne **FROM**) exécute-t-il un système d’exploitation ou une application connu pour modifier le certificat PAC ? Si c’est le cas, **supprimez** l’activité suspecte (c’est un vrai positif sans gravité).
+3. Sinon, l’ordinateur source s’exécute (sous la colonne **FROM**) exécute-t-il un système d’exploitation ou une application connu pour modifier le certificat PAC ? Si c’est le cas, **supprimez** l’activité suspecte (c’est un vrai positif sans gravité).
 
 4. Si vous avez répondu non aux deux questions ci-dessus, considérez l’alerte comme une attaque malveillante.
 
