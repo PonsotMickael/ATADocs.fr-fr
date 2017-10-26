@@ -38,14 +38,16 @@
 ## [Groupes de rôles ATA](ata-role-groups.md)
 ## [Modifier la configuration du centre ATA](modifying-ata-center-configuration.md)
 ## [Modifier le mot de passe de connectivité de domaine](modifying-ata-config-dcpassword.md)
-###[Exclusion d’entités des détections](excluding-entities-from-detections.md)
+## [Exclusion d’entités des détections](excluding-entities-from-detections.md)
 ## [Configuration de l’exportation/importation d’ATA](ata-configuration-file.md)
 ## [Gérer la télémétrie ATA](manage-telemetry-settings.md)
 ## [Définir des notifications ATA](setting-ata-alerts.md)
 ## [Définir les paramètres du serveur Syslog et du serveur de messagerie](setting-syslog-email-server-settings.md)
-## [Informations de référence sur le journal SIEM](cef-format-sa.md)
 ## [Gestion des activités suspectes](working-with-suspicious-activities.md)
 ## [Utilisation de la console ATA](working-with-ata-console.md)
+## [ATA Informations de référence]
+### [Informations de référence sur le journal SIEM](cef-format-sa.md)
+### [Référence de ID de l'événement](event-id-reference.md)
 # Étudier
 ## [Guide des activités suspectes](suspicious-activity-guide.md)
 # Dépannage
