@@ -45,7 +45,7 @@
 ## [Définir les paramètres du serveur Syslog et du serveur de messagerie](setting-syslog-email-server-settings.md)
 ## [Gestion des activités suspectes](working-with-suspicious-activities.md)
 ## [Utilisation de la console ATA](working-with-ata-console.md)
-## [ATA Informations de référence]
+## ATA Informations de référence
 ### [Informations de référence sur le journal SIEM](cef-format-sa.md)
 ### [Référence de ID de l'événement](event-id-reference.md)
 # Étudier
