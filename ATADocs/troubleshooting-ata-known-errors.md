@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 2362f6bf64147b972e9c45e3b97bab4280c6eeac
-ms.sourcegitcommit: 46dd0e695f16a0dd23bbfa140eba15ea6a34d7af
+ms.openlocfilehash: 09936cf9f86711ea6d48d0571178d2387694d412
+ms.sourcegitcommit: 835ea2b8190eb753aaf8d400531040ce1845d75a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -48,12 +48,11 @@ Cette section détaille les erreurs possibles dans les déploiements d’ATA et 
 |System.ApplicationException : Impossible de démarrer la session de suivi ETW MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329|Il existe une entrée d’hôte dans le fichier HOSTS qui pointe vers le nom court de l’ordinateur.|Supprimez l’entrée d’hôte du fichier C:\Windows\System32\drivers\etc\HOSTS ou remplacez-la par un nom de domaine complet.|
 |System.IO.IOException : échec de l’authentification, car la partie distante a fermé le flux de transport.|TLS 1.0 est désactivé sur la passerelle ATA, tandis que .Net est configuré pour utiliser TLS 1.2|Utilisez l’une des options suivantes : </br> Activer TLS 1.0 sur la passerelle ATA </br>Activer TLS 1.2 sur .Net en définissant les clés de Registre pour utiliser les valeurs par défaut du système d’exploitation pour SSL et TLS, comme suit : </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001 `</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
 |System.TypeLoadException : Impossible de charger le type 'Microsoft.Opn.Runtime.Values.BinaryValueBufferManager' à partir de l’assembly 'Microsoft.Opn.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'|Échec du chargement par la passerelle ATA des fichiers d’analyse nécessaires.|Vérifiez si Microsoft Message Analyzer est installé. L’installation de Message Analyzer avec la passerelle / passerelle légère ATA n’est pas prise en charge. Désinstallez Message Analyzer et redémarrez le service de passerelle.|
-|Alertes « Trafic avec mise en miroir de ports ignoré » lors de l’utilisation de la passerelle légère sur VMware|Si vous utilisez des contrôleurs de domaine sur des machines virtuelles VMware, vous recevrez peut-être des alertes concernant le **trafic réseau avec mise en miroir de ports ignoré**. Cela peut être dû à une incompatibilité de configuration dans VMware. |Pour éviter ces alertes, vous pouvez vérifier que les paramètres suivants sont définis sur 0 ou sont désactivés : TsoEnable, LargeSendOffload, IPv4, TSO Offload. Pensez aussi à désactiver IPv4 Giant TSO Offload. Pour plus d’informations, voir la documentation de VMware.|
 |System.Net.WebException : le serveur distant a retourné une erreur : (407) Authentification proxy requise|La communication de la passerelle ATA avec le centre ATA est interrompue par un serveur proxy.|Désactivez le proxy sur l’ordinateur de la passerelle ATA. <br></br>Notez que les paramètres de proxy sont peut-être définis par compte.|
 |System.IO.DirectoryNotFoundException : Le système n’arrive pas à trouver le chemin spécifié. (Exception de HRESULT : 0x80070003)|Un ou plusieurs services nécessaires pour exécuter ATA n’ont pas démarré.|Démarrez les services suivants : <br></br>Journaux et alertes de performance (PLA), Planificateur de tâches (Schedule).|
 |System.Net.WebException : le serveur distant a retourné une erreur : (403) Interdit|Il a été interdit à la passerelle ATA ou la passerelle légère d’établir une connexion HTTP, car le centre ATA n’est pas approuvé.|Ajoutez le nom NetBIOS et le nom de domaine complet du centre ATA à la liste des sites web approuvés et effacez le cache Interne Explorer (ou le nom du centre ATA tel qu’il est spécifié dans la configuration si le nom configuré est différent du nom de domaine complet/NetBIOS).|
 |System.Net.Http.HttpRequestException: PostAsync failed [requestTypeName=StopNetEventSessionRequest]|La passerelle ATA ou la passerelle légère ATA ne peuvent pas arrêter et démarrer la session ETW qui collecte le trafic réseau en raison d’un problème WMI|Suivez les instructions de la rubrique [WMI : reconstruction du référentiel WMI](https://blogs.technet.microsoft.com/askperf/2009/04/13/wmi-rebuilding-the-wmi-repository/) pour résoudre le problème WMI|
-
+|System.Net.Sockets.SocketException : Une tentative interdite d’accès à un socket a été réalisée par ses autorisations d’accès|Une autre application utilise le port 514 sur la passerelle ATA|Utilisez `netstat -o` pour établir quel processus utilise ce port.|
  
 ## <a name="deployment-errors"></a>Erreurs liées au déploiement
 > [!div class="mx-tableFixed"]
