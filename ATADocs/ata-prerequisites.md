@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 10/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b681a6a27189d2e1aec3f7f9913b97f9e7717911
-ms.sourcegitcommit: 47b2b9ebaadff79c087d14f86462d3d8102cc551
+ms.openlocfilehash: 2f720118b1d9ac08f26b7057e5c7b6706ff4b0b1
+ms.sourcegitcommit: 0cc999b20e919abe4d6edaedee78185788a3e3b9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2017
+ms.lasthandoff: 10/25/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -60,7 +60,7 @@ Cette section répertorie les informations que vous devez rassembler ainsi que l
 
 -    Recommandé : L’utilisateur doit disposer d’autorisations en lecture seule sur le conteneur Objets supprimés. ATA peut ainsi détecter la suppression en bloc d’objets du domaine. Pour plus d’informations sur la configuration des autorisations en lecture seule sur le conteneur Objets supprimés, consultez la section **Modifier les autorisations sur un conteneur d’objets supprimés** dans la rubrique [Afficher ou définir des autorisations sur un objet d’annuaire](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx).
 
--   Facultatif : compte d’un utilisateur sans activité réseau. Ce compte est configuré comme l’utilisateur honeytoken ATA. Pour configurer l’utilisateur Honeytoken, vous devez disposer du SID du compte d’utilisateur, et non du nom d’utilisateur. Pour plus d’informations, consultez la page [Gérer les paramètres de la détection ATA](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/working-with-detection-settings).
+-   Facultatif : compte d’un utilisateur sans activité réseau. Ce compte est configuré comme l’utilisateur honeytoken ATA. Pour configurer l’utilisateur Honeytoken, vous devez disposer du SID du compte d’utilisateur, et non du nom d’utilisateur. Pour plus d’informations, consultez [Configurer des exclusions d’adresses IP et un utilisateur Honeytoken](install-ata-step7.md).
 
 -   Facultatif : Outre la collecte et l’analyse du trafic réseau à destination et en provenance des contrôleurs de domaine, ATA peut utiliser les événements Windows 4776, 4732, 4733, 4728, 4729, 4756 et 4757 pour améliorer la détection de l’attaque Pass-the-Hash, de l’attaque par force brute, de la modification des groupes sensibles et des comptes Honeytoken. Vous pouvez recevoir ces événements à partir de votre serveur SIEM ou définir le transfert d’événements Windows à partir de votre contrôleur de domaine. Les événements collectés fournissent à ATA des informations supplémentaires qui ne sont pas accessibles par le biais du trafic réseau du contrôleur de domaine.
 
