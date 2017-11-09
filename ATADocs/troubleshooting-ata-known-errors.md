@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 09936cf9f86711ea6d48d0571178d2387694d412
-ms.sourcegitcommit: 835ea2b8190eb753aaf8d400531040ce1845d75a
+ms.openlocfilehash: f13416c4179d65ee8096d246ea92969b1cf9af43
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -62,7 +62,7 @@ Cette section détaille les erreurs possibles dans les déploiements d’ATA et 
 |System.Threading.Tasks.TaskCanceledException : une tâche a été annulée|Le processus de déploiement a dépassé le délai d’expiration, car il n’a pas pu accéder au centre ATA.|1.    Vérifiez la connectivité réseau au centre ATA en y accédant avec son adresse IP. <br></br>2.    Vérifiez la configuration du proxy ou du pare-feu.|
 |System.Net.Http.HttpRequestException : une erreur s’est produite lors de l’envoi de la demande. ---> System.Net.WebException : le serveur distant a retourné une erreur : (407) Authentification proxy requise.|Le processus de déploiement a dépassé le délai d’expiration, car il n’a pas pu atteindre le centre ATA en raison d’une configuration incorrecte du proxy.|Désactivez la configuration du proxy avant le déploiement puis réactivez la configuration du proxy. Vous pouvez aussi configurer une exception dans le proxy.|
 |System.Net.Sockets.SocketException : Une connexion existante a dû être fermée par l’hôte distant||Utilisez l’une des options suivantes : </br>Activer TLS 1.0 sur la passerelle ATA </br>Activer TLS 1.2 sur .Net en définissant les clés de Registre pour utiliser les valeurs par défaut du système d’exploitation pour SSL et TLS, comme suit :</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
-|Error [\[]DeploymentModel[\]] Failed management authentication [\[]CurrentlyLoggedOnUser=<domain>\<username>Status=FailedAuthentication Exception=[\]]|Le processus de déploiement de la passerelle ATA ou de la passerelle légère ATA n’a pas réussi à s’authentifier auprès du centre ATA.|Ouvrez un navigateur sur l’ordinateur où s’est produit l’échec du processus de déploiement et essayez d’accéder à la console ATA. </br>Si ce n’est pas possible, cherchez à identifier le problème qui se trouve à l’origine de l’échec d’authentification du navigateur auprès du centre ATA. </br>Points à vérifier :</br>configuration du proxy ;</br>problèmes de mise en réseau ;</br>paramètres de stratégie de groupe pour l’authentification sur cet ordinateur différents du centre ATA.|
+|Error [\[]DeploymentModel[\]] Failed management authentication [\[]CurrentlyLoggedOnUser=<domain>\<username>Status=FailedAuthentication Exception=[\]]|Le processus de déploiement de la passerelle ATA ou de la passerelle légère ATA n’a pas réussi à s’authentifier auprès du centre ATA.|Ouvrez un navigateur sur l’ordinateur où s’est produit l’échec du processus de déploiement et essayez d’accéder à la console ATA. </br>Si ce n’est pas possible, cherchez à identifier le problème qui se trouve à l’origine de l’échec d’authentification du navigateur auprès du centre ATA. </br>Points à vérifier : </br>configuration du proxy ;</br>problèmes de mise en réseau ;</br>paramètres de stratégie de groupe pour l’authentification sur cet ordinateur différents du centre ATA.|
 
 
 
