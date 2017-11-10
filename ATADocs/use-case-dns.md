@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/4/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1d186a96-ef70-4787-aa64-c03d1db94ce0
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f85d52420c55e2f1119ad14eb1a6c957fbc50be6
-ms.sourcegitcommit: be6bdfa24a9b25a3375a4768d513b93900b3a498
+ms.openlocfilehash: 5ec554b303a19a6e7b12cd788755604f1aaf43db
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -56,7 +56,7 @@ Le graphique suivant vous permet de déterminer les étapes à suivre dans l’e
 
 ![Résolution de la reconnaissance DNS avec ATA](./media/dns-recon-diagram.png)
  
-1.  La première étape consiste à identifier l’ordinateur émetteur de l’alerte, comme illustré ci-dessous :
+1.  La première étape consiste à identifier l’ordinateur émetteur de l’alerte, comme illustré dans l'écran suivant :
  
     ![Consulter l’activité suspecte de reconnaissance dans ATA](./media/dns-recon.png)
 2.  Identifiez l’ordinateur concerné. Est-ce une station de travail, un serveur, une station de travail d’administration, une station de test du stylet, etc. ?
@@ -80,7 +80,7 @@ Microsoft recommande d’utiliser une équipe IR&R (Incident Response & Recovery
 
 ## <a name="mitigation"></a>Limitation des risques
 
-La sécurisation d’un serveur DNS interne pour éviter la reconnaissance à l’aide de DNS est possible en désactivant les transferts de zone ou en les limitant uniquement aux adresses IP spécifiées. Pour plus d’informations sur la limitation des transferts de zones, consultez l’article Technet sur Windows Server, [Restrict Zone Transfers](https://technet.microsoft.com/library/ee649273(v=ws.10).aspx) (Limiter les transferts de zone). Les transferts de zone limités peuvent être verrouillés davantage en [sécurisant les transferts de zone avec IPsec](https://technet.microsoft.com/library/ee649192(v=ws.10).aspx). La modification des transferts de zone est l’une des tâches de la liste de contrôle que vous devez suivre pour [sécuriser vos serveurs DNS contre les attaques internes et externes](https://technet.microsoft.com/library/cc770432(v=ws.11).aspx).
+La sécurisation d’un serveur DNS interne pour éviter la reconnaissance à l’aide de DNS est possible en désactivant les transferts de zone ou en les limitant uniquement aux adresses IP spécifiées. Pour plus d’informations sur la limitation des transferts de zone, consultez [Restrict Zone Transfers](https://technet.microsoft.com/library/ee649273(v=ws.10).aspx) (Limiter les transferts de zone). Les transferts de zone limités peuvent être verrouillés davantage en [sécurisant les transferts de zone avec IPsec](https://technet.microsoft.com/library/ee649192(v=ws.10).aspx). La modification des transferts de zone est l’une des tâches de la liste de contrôle que vous devez suivre pour [sécuriser vos serveurs DNS contre les attaques internes et externes](https://technet.microsoft.com/library/cc770432(v=ws.11).aspx).
 
 
 

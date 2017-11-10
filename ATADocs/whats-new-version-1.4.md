@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cbea47f9-34c1-42b6-ae9e-6a472b49e1a5
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 69127773d9c3130bd07dee0b65956b93848ec399
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: c60e577ed5df2beecd9737a4637c7a3162a9e706
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="what39s-new-in-ata-version-14"></a>Nouveautés d’ATA version 1.4
 Ces notes de publication fournissent des informations sur les problèmes connus de la version 1.4 d’Advanced Threat Analytics.
@@ -34,7 +34,7 @@ Ces notes de publication fournissent des informations sur les problèmes connus 
 
 -   Amélioration des performances pour permettre un nombre plus important de passerelles ATA par centre ATA
 
--   Un nouveau processus de résolution automatique des noms a été ajouté. Celui-ci met en correspondance les noms d’ordinateurs et les adresses IP. Cette fonctionnalité unique permet un grand gain de temps lors du processus d’investigation et fournit des preuves solides pour les analystes de sécurité.
+-   Un nouveau processus de résolution automatique des noms a été ajouté. Celui-ci met en correspondance les noms d’ordinateurs et les adresses IP. Cette fonctionnalité unique permet un grand gain de temps lors du processus d’investigation et fournit des preuves solides pour les analystes de sécurité
 
 -   Amélioration de la collecte des commentaires des utilisateurs pour un ajustement automatique du processus de détection.
 
@@ -58,17 +58,17 @@ Ces notes de publication fournissent des informations sur les problèmes connus 
 Les problèmes connus de cette version sont les suivants :
 
 ### <a name="network-capture-software"></a>Logiciel de capture du réseau
-Dans la passerelle ATA, le seul logiciel de capture réseau que vous pouvez installer est [Moniteur réseau Microsoft 3.4](http://www.microsoft.com/download/details.aspx?id=4865). N’installez pas l’analyseur de message Microsoft ni aucun autre logiciel de capture réseau. L’installation d’autres logiciels empêchera la passerelle ATA de fonctionner correctement.
+Dans la passerelle ATA, le seul logiciel de capture réseau que vous pouvez installer est [Moniteur réseau Microsoft 3.4](http://www.microsoft.com/download/details.aspx?id=4865). N’installez pas l’analyseur de message Microsoft ni aucun autre logiciel de capture réseau. L’installation d’autres logiciels empêche la passerelle ATA de fonctionner correctement.
 
 ### <a name="installation-from-zip-file"></a>Installation à partir du fichier .zip
-Quand vous installez la passerelle ATA, assurez-vous d’extraire les fichiers du fichier .zip dans un répertoire local et de les installer dans ce répertoire. N’installez pas la passerelle ATA directement à partir du fichier .zip, car l’installation échouerait.
+Quand vous installez la passerelle ATA, assurez-vous d’extraire les fichiers du fichier .zip dans un répertoire local et de les installer dans ce répertoire. N’installez pas la passerelle ATA directement à partir du fichier .zip, car l’installation échoue.
 
 ### <a name="uninstalling-previous-versions-of-ata"></a>Désinstallation des versions précédentes d’ATA
 Si vous avez installé une version précédente d’ATA, une version d’évaluation ou une version préliminaire privée, vous devez désinstaller le centre ATA et les passerelles ATA avant d’installer cette version d’ATA.
 
 Vous devez également supprimer les fichiers de la base de données et les fichiers journaux. Les bases de données des versions précédentes d’ATA ne sont pas compatibles avec la version générale d’ATA.
 
-Quand vous essayez de désinstaller le centre ATA ou la passerelle ATA, si l’installation ATA s’ouvre au lieu de la désinstallation, vous devez ajouter la clé de Registre suivante, puis désinstaller de nouveau ATA.
+Si l’installation ATA s’ouvre au lieu de la désinstallation quand vous essayez de désinstaller le centre ATA ou la passerelle ATA, vous devez ajouter la clé de Registre suivante, puis désinstaller de nouveau ATA.
 
 **Centre ATA**
 
@@ -89,7 +89,7 @@ Quand vous essayez de désinstaller le centre ATA ou la passerelle ATA, si l�
 Après la désinstallation, supprimez le dossier d’installation dans le centre ATA et dans la passerelle ATA.  Si vous avez installé la base de données dans un dossier distinct, supprimez-le dans le centre ATA.
 
 ### <a name="health-alert---disconnected-ata-gateway"></a>Alerte d’intégrité - Passerelle ATA déconnectée
-Si vous disposez de plusieurs passerelles ATA et recevez des alertes concernant des passerelles ATA déconnectées, la résolution automatique ne fonctionnera que pour une seule d’entre elles et laissera les autres alertes à l’état Ouvert. Vous devez vérifier manuellement que la passerelle ATA fonctionne et que le service est en cours d’exécution, puis résoudre l’alerte manuellement.
+Si vous disposez de plusieurs passerelles ATA et recevez des alertes concernant des passerelles ATA déconnectées, la résolution automatique ne fonctionne que pour une seule d’entre elles et laisse les autres alertes à l’état Ouvert. Vérifiez manuellement que la passerelle ATA fonctionne et que le service est en cours d’exécution, puis résoudre l’alerte manuellement.
 
 ### <a name="kb-on-virtualization-host"></a>Base de connaissance sur les hôtes de virtualisation
 N’installez pas la base de connaissance 3047154 sur un hôte de virtualisation, car cela empêcherait le bon fonctionnement de la mise en miroir des ports.

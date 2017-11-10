@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c5beb4868fb8ced42457a8cadd1123956dd69ad7
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: 47a8b5c52bf978d5e07007a3402a567be39e2157
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="whats-new-in-ata-version-16"></a>Nouveautés d’ATA version 1.6
 Ces notes de publication fournissent des informations sur les problèmes connus de cette version d’Advanced Threat Analytics.
@@ -103,7 +103,7 @@ Quand vous effectuez la mise à jour vers ATA 1.6, le processus peut échouer a
 
 Vous pouvez également voir cette erreur : System.ArgumentNullException : La valeur ne peut pas être Null.
     
-Si vous voyez l’une de ces erreurs, effectuez la solution de contournement suivante.
+Si vous voyez l’une de ces erreurs, effectuez la solution de contournement suivante :
 
 **Solution de contournement** : 
 
@@ -120,14 +120,14 @@ Si vous voyez l’une de ces erreurs, effectuez la solution de contournement sui
     2.  Microsoft Advanced Threat Analytics Center
 7.  Passez en revue les journaux pour vérifier que le produit s’exécute sans erreur.
 8.  [Téléchargez](http://aka.ms/ataremoveduplicateprofiles "Téléchargez") l’outil « RemoveDuplicateProfiles.exe » et copiez-le dans le chemin d’installation principal (%ProgramFiles%\Microsoft Advanced Threat Analytics\Center).
-9.  À partir d’une invite de commandes avec élévation de privilèges, exécutez « RemoveDuplicateProfiles.exe » et attendez la fin de l’opération.
+9.  À partir d’une invite de commandes avec élévation de privilèges, exécutez `RemoveDuplicateProfiles.exe` et attendez la fin de l’opération.
 10. À partir du répertoire …\Microsoft Advanced Threat Analytics\Center\MongoDB\bin **Mongo ATA**, tapez la commande suivante :
 
-    db.SuspiciousActivities.remove({ "_t" : "RemoteExecutionSuspiciousActivity", "DetailsRecords" : { "$elemMatch" : { "ReturnCode" : null } } }, { "_id" : 1 });
+          db.SuspiciousActivities.remove({ "_t" : "RemoteExecutionSuspiciousActivity", "DetailsRecords" : { "$elemMatch" : { "ReturnCode" : null } } }, { "_id" : 1 });
 
 ![Solution de contournement de la mise à jour](http://i.imgur.com/Nj99X2f.png)
 
-Cette commande doit retourner WriteResult({ "nRemoved" : XX }) où « XX » est le nombre d’activités suspectes qui ont été supprimées. Si le nombre est supérieur à 0, quittez l’invite de commandes et continuez le processus de mise à jour.
+Cette commande doit retourner `WriteResult({ "nRemoved" : XX })` où « XX » est le nombre d’activités suspectes qui ont été supprimées. Si le nombre est supérieur à 0, quittez l’invite de commandes et continuez le processus de mise à jour.
 
 
 ### <a name="net-framework-461-requires-restarting-the-server"></a>Le .NET Framework 4.6.1 nécessite le redémarrage du serveur

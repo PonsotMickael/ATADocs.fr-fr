@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e0aed853-ba52-46e1-9c55-b336271a68e7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 748121a709ac05756edf34e04e13b996190e9711
-ms.sourcegitcommit: b951c64228d4f165ee1fcc5acc0ad6bb8482d6a2
+ms.openlocfilehash: 2eab8649f225071ad548a8134b385d46f02b3222
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -42,19 +42,19 @@ ATA s’intègre avec votre solution VPN en écoutant les événements de gestio
 
 ## <a name="prerequisites"></a>Prérequis
 
-Pour activer l’intégration VPN, veillez à définir ce qui suit :
+Pour activer l’intégration VPN, veillez à définir les paramètres suivants :
 
 -   Ouvrir le port UDP 1813 sur vos passerelles ATA et vos passerelles légères ATA.
 
 -   Connecter le centre ATA à Internet afin qu’il puisse interroger l’emplacement des adresses IP entrantes.
 
-Dans l’exemple ci-dessous, nous utilisons Microsoft Routing and Remote Access Server (RRAS) pour décrire le processus de configuration VPN.
+L’exemple ci-dessous utilise Microsoft Routing and Remote Access Server (RRAS) pour décrire le processus de configuration VPN.
 
 Si vous utilisez une solution VPN tierce, consultez sa documentation pour obtenir des instructions sur l’activation de la gestion de comptes RADIUS.
 
 ## <a name="configure-radius-accounting-on-the-vpn-system"></a>Configurer la gestion de comptes RADIUS sur le système VPN
 
-Effectuez les opérations suivantes sur votre serveur RRAS.
+Effectuez les étapes suivantes sur votre serveur RRAS.
  
 1.  Ouvrez la console Routage et accès distant.
 2.  Cliquez avec le bouton droit sur le nom du serveur et cliquez sur **Propriétés**.
@@ -62,7 +62,7 @@ Effectuez les opérations suivantes sur votre serveur RRAS.
 
     ![Configuration de RADIUS](./media/radius-setup.png)
 
-4.  Dans la fenêtre **Ajouter un serveur RADIUS**, tapez le **Nom du serveur** de la passerelle ATA ou de la passerelle légère ATA la plus proche. Sous **Port**, veillez à configurer la valeur par défaut 1813. Cliquez sur **Modifier** et tapez une nouvelle chaîne secrète partagée de caractères alphanumériques que vous pouvez mémoriser. Vous devrez la fournir plus loin dans votre configuration ATA. Cochez la case **Envoyer des messages de comptes RADIUS actifs et inactifs** et cliquez sur **OK** dans toutes les boîtes de dialogue ouvertes.
+4.  Dans la fenêtre **Ajouter un serveur RADIUS**, tapez le **Nom du serveur** de la passerelle ATA ou de la passerelle légère ATA la plus proche. Sous **Port**, veillez à configurer la valeur par défaut 1813. Cliquez sur **Modifier** et tapez une nouvelle chaîne secrète partagée de caractères alphanumériques que vous pouvez mémoriser. Vous devez la fournir plus loin dans votre configuration ATA. Cochez la case **Envoyer des messages de comptes RADIUS actifs et inactifs** et cliquez sur **OK** dans toutes les boîtes de dialogue ouvertes.
  
      ![Configuration du VPN](./media/vpn-set-accounting.png)
      

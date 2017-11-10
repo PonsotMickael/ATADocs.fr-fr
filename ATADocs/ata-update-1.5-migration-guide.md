@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: daaa2b3d495900d84fe7b61afb8e3bb22b3d7f72
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: 654312c841c38c86c9efa826227d7cc93eb772cf
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="ata-update-to-15-migration-guide"></a>Mise à jour d’ATA vers la version 1.5 : guide de migration
 La mise à jour vers ATA 1.5 comprend des améliorations dans les domaines suivants :
@@ -38,9 +38,9 @@ La mise à jour vers ATA 1.5 comprend des améliorations dans les domaines suiv
 
 ## <a name="updating-ata-to-version-15"></a>Mise à jour d’ATA vers la version 1.5
 > [!NOTE]
-> Si ATA n’est pas installé dans votre environnement, téléchargez la version complète d’ATA qui inclut la version 1.5. Suivez ensuite la procédure d’installation standard décrite dans [Installer ATA](install-ata-step1.md).
+> Si ATA n’est pas installé dans votre environnement, téléchargez la version complète d’ATA qui inclut la version 1.5. Suivez ensuite la procédure d’installation standard décrite dans [Installer ATA](install-ata-step1.md).
 
-Si vous avez déjà déployé ATA version 1.4, cette procédure vous guidera tout au long des étapes nécessaires pour mettre à jour votre installation.
+Si vous avez déjà déployé ATA version 1.4, cette procédure vous guide tout au long des étapes nécessaires pour mettre à jour votre installation.
 
 Suivez ces étapes pour mettre à jour ATA vers la version 1.5 :
 
@@ -104,7 +104,7 @@ Pour télécharger le package d’installation de la passerelle ATA :
 
 4.  Enregistrez le package localement.
 
-Le fichier zip comprend les éléments suivants :
+Le fichier zip comprend les fichiers suivants :
 
 -   Programme d’installation de la passerelle ATA
 

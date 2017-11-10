@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 07/30/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b04fb8a4-b366-4b55-9d4c-6f054fa58a90
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c581bc48aa57c6eb9e0c1db6eeec81400ea9061a
-ms.sourcegitcommit: e7f83eb636db00333fe3965324a10a2ef5e2beba
+ms.openlocfilehash: 0d3b57e852a18bf9602d3a75ab627c23496f7285
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -33,12 +33,12 @@ Cet article décrit toutes les alertes de surveillance pour chaque composant, en
 ### <a name="failure-sending-mail"></a>Échec de l’envoi des e-mails
 |Alerte|Description|Résolution|Gravité|
 |----|----|----|----|
-|ATA n’arrive pas à envoyer une notification par e-mail au serveur de messagerie spécifié.|Aucun e-mail ne sera envoyé depuis ATA.|Vérifiez la configuration du serveur SMTP.|Faible|
+|ATA n’arrive pas à envoyer une notification par e-mail au serveur de messagerie spécifié.|Aucun e-mail n'est envoyé depuis ATA.|Vérifiez la configuration du serveur SMTP.|Faible|
 
 ### <a name="center-overloaded"></a>Centre surchargé
 |Alerte|Description|Résolution|Gravité|
 |----|----|----|----|
-|Le centre ATA n’est pas en mesure de gérer la quantité de données transférées depuis les passerelles ATA. |Le centre ATA cesse l’analyse du nouveau trafic réseau et des événements. Cela signifie que la précision des détections et des profils est réduite pendant que cette alerte de surveillance est active.|Vérifiez que vous avez fourni suffisamment de ressources pour le centre ATA. Consultez [Planification de la capacité ATA](ata-capacity-planning.md) pour plus de détails sur la façon de planifier correctement la capacité du centre ATA. Analysez les performances du centre ATA en utilisant [Résolution des problèmes liés à ATA à l’aide des compteurs de performances](troubleshooting-ata-using-perf-counters.md).|Importante|
+|Le centre ATA n’est pas en mesure de gérer la quantité de données transférées depuis les passerelles ATA. |Le centre ATA cesse l’analyse du nouveau trafic réseau et des événements. Cela signifie que la précision des détections et des profils est réduite pendant que cette alerte de surveillance est active.|Vérifiez que vous avez fourni suffisamment de ressources pour le centre ATA. Pour plus de détails sur la façon de planifier correctement la capacité du centre ATA, consultez [Planification de la capacité ATA](ata-capacity-planning.md). Analysez les performances du centre ATA en utilisant [Résolution des problèmes liés à ATA à l’aide des compteurs de performances](troubleshooting-ata-using-perf-counters.md).|Importante|
 
 ### <a name="failure-connecting-to-the-siem-server-using-syslog"></a>Échec de la connexion au serveur SIEM à l’aide de Syslog
 |Alerte|Description|Résolution|Gravité|
@@ -64,12 +64,12 @@ Cet article décrit toutes les alertes de surveillance pour chaque composant, en
 ### <a name="gateway-certificate-about-to-expire"></a>Le certificat de la passerelle est sur le point d’expirer
 |Alerte|Description|Résolution|Gravité|
 |----|----|----|----|
-|Le certificat de la passerelle ATA expire dans moins de 3 semaines.|La connectivité de la passerelle ATA concernée avec le centre ATA va échouer. Aucune donnée provenant de cette passerelle ATA ne sera envoyée.|Le certificat de la passerelle ATA devrait normalement avoir été renouvelé automatiquement. Lisez les journaux de la passerelle ATA et du centre ATA pour comprendre pourquoi ce certificat n’a pas été renouvelé automatiquement.|Moyenne|
+|Le certificat de la passerelle ATA expire dans moins de 3 semaines.|La connectivité de la passerelle ATA concernée avec le centre ATA échoue. Aucune donnée provenant de cette passerelle ATA n'est envoyée.|Le certificat de la passerelle ATA devrait normalement avoir été renouvelé automatiquement. Lisez les journaux de la passerelle ATA et du centre ATA pour comprendre pourquoi ce certificat n’a pas été renouvelé automatiquement.|Moyenne|
 
 ### <a name="gateway-certificate-expired"></a>Le certificat de la passerelle a expiré
 |Alerte|Description|Résolution|Gravité|
 |----|----|----|----|
-|Le certificat de la passerelle ATA a expiré.|Il n’existe pas de connectivité de cette passerelle ATA avec le centre ATA. Aucune donnée provenant de cette passerelle ATA ne sera envoyée.|[Désinstallez et réinstallez la passerelle ATA](install-ata-step3.md).|Importante|
+|Le certificat de la passerelle ATA a expiré.|Il n’existe pas de connectivité de cette passerelle ATA avec le centre ATA. Aucune donnée provenant de cette passerelle ATA n'est envoyée.|[Désinstallez et réinstallez la passerelle ATA](install-ata-step3.md).|Importante|
 ### <a name="domain-synchronizer-not-assigned"></a>Synchronisateur de domaine non affecté
 |Alerte|Description|Résolution|Gravité|
 |----|----|----|----|
@@ -77,7 +77,7 @@ Cet article décrit toutes les alertes de surveillance pour chaque composant, en
 ### <a name="allsome-of-the-capture-network-adapters-on-a-gateway-are-not-available"></a>Tout ou partie des cartes réseau de capture sur une passerelle ne sont pas disponibles
 |Alerte|Description|Résolution|Gravité|
 |----|----|----|----|
-|Tout ou partie des cartes réseau de capture sélectionnées sur la passerelle ATA sont désactivées ou déconnectées.|Le trafic réseau pour tout ou partie des contrôleurs de domaine n’est plus capturé par la passerelle ATA. Ceci aura un impact sur la possibilité de détecter les activités suspectes liées à ces contrôleurs de domaine.|Vérifiez que ces cartes réseau de capture sélectionnées sur la passerelle ATA sont activées et connectées.|Moyenne|
+|Tout ou partie des cartes réseau de capture sélectionnées sur la passerelle ATA sont désactivées ou déconnectées.|Le trafic réseau pour tout ou partie des contrôleurs de domaine n’est plus capturé par la passerelle ATA. Ceci a un impact sur la possibilité de détecter les activités suspectes liées à ces contrôleurs de domaine.|Vérifiez que ces cartes réseau de capture sélectionnées sur la passerelle ATA sont activées et connectées.|Moyenne|
 ### <a name="some-domain-controllers-are-unreachable-by-a-gateway"></a>Certains contrôleurs de domaine ne sont pas accessibles par une passerelle
 |Alerte|Description|Résolution|Gravité|
 |----|----|----|----|
@@ -85,11 +85,11 @@ Cet article décrit toutes les alertes de surveillance pour chaque composant, en
 ### <a name="all-domain-controllers-are-unreachable-by-a-gateway"></a>Tous les contrôleurs de domaine ne sont pas accessibles par une passerelle
 |Alerte|Description|Résolution|Gravité|
 |----|----|----|----|
-|La passerelle ATA est actuellement hors connexion en raison de problèmes de connectivité avec tous les contrôleurs de domaine configurés.|Ceci aura un impact sur la capacité d’ATA à détecter les activités suspectes liées à des contrôleurs de domaine surveillés par cette passerelle ATA.| Vérifiez que les contrôleurs de domaine sont fonctionnels et que cette passerelle ATA peut les utiliser pour ouvrir des connexions LDAP.|Moyenne|
+|La passerelle ATA est actuellement hors connexion en raison de problèmes de connectivité avec tous les contrôleurs de domaine configurés.|Ceci a un impact sur la capacité d’ATA à détecter les activités suspectes liées à des contrôleurs de domaine surveillés par cette passerelle ATA.| Vérifiez que les contrôleurs de domaine sont fonctionnels et que cette passerelle ATA peut les utiliser pour ouvrir des connexions LDAP.|Moyenne|
 ### <a name="gateway-stopped-communicating"></a>La passerelle a cessé de communiquer
 |Alerte|Description|Résolution|Gravité|
 |----|----|----|----|
-|Aucune communication n’a été reçue de la passerelle ATA. L’intervalle de temps par défaut pour cette alerte est de 5 minutes.|Le trafic réseau n’est plus capturé par la carte réseau sur la passerelle ATA. Ceci aura un impact sur la capacité d’ATA à détecter les activités suspectes, car le trafic réseau ne pourra pas atteindre le centre ATA.|Vérifiez que le port utilisé pour la communication entre la passerelle ATA et le service du centre ATA n’est pas bloqué par un routeur ou un pare-feu.|Moyenne|
+|Aucune communication n’a été reçue de la passerelle ATA. L’intervalle de temps par défaut pour cette alerte est de 5 minutes.|Le trafic réseau n’est plus capturé par la carte réseau sur la passerelle ATA. Ceci a un impact sur la capacité d’ATA à détecter les activités suspectes, car le trafic réseau ne pourra pas atteindre le centre ATA.|Vérifiez que le port utilisé pour la communication entre la passerelle ATA et le service du centre ATA n’est pas bloqué par un routeur ou un pare-feu.|Moyenne|
 ### <a name="no-traffic-received-from-domain-controller"></a>Aucun trafic reçu du contrôleur de domaine
 |Alerte|Description|Résolution|Gravité|
 |----|----|----|----|

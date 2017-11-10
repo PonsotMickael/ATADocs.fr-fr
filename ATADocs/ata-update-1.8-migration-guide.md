@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e5a9718c-b22e-41f7-a614-f00fc4997682
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 89d3d80e647e61cded6e2428ed1d1f8905552867
-ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
+ms.openlocfilehash: 540d1cb0754dc9191a985625a8f988cb44c9f000
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="updating-ata-to-version-18"></a>Mise à jour d’ATA vers la version 1.8
 
@@ -60,7 +60,7 @@ Dans la version de migration, le fichier peut être utilisé uniquement pour la 
     
     -  Dans l’écran **Migration des données**, indiquez si vous souhaitez migrer tout ou une partie des données. Si vous choisissez de migrer uniquement des données partielles, toutes les détections fonctionnent immédiatement à l’exception de la détection de comportement anormal, qui prend trois semaines pour générer un profil complet.  
     
-    L’installation de la migration de données **Partielle** prend beaucoup moins de temps. Si vous sélectionnez la migration des données **Complète**, l’installation peut prendre beaucoup plus de temps. Vérifiez l’estimation de la quantité de temps et l’espace disque nécessaire, qui sont répertoriés dans l’écran **Migration des données**. Ces chiffres dépendent de la quantité de trafic réseau capturé précédemment que vous avez enregistrée dans les versions précédentes d’ATA. Par exemple, dans l’écran ci-dessous, vous pouvez voir une migration de données à partir d’une base de données très volumineuse :
+    L’installation de la migration de données **Partielle** prend beaucoup moins de temps. Si vous sélectionnez la migration des données **Complète**, l’installation peut prendre beaucoup plus de temps. Vérifiez l’estimation de la quantité de temps et l’espace disque nécessaire, qui sont répertoriés dans l’écran **Migration des données**. Ces chiffres dépendent de la quantité de trafic réseau capturé précédemment que vous avez enregistrée dans les versions précédentes d’ATA. Par exemple, dans l’écran ci-dessous, vous pouvez voir une migration de données à partir d’une base de données volumineuse :
          
     ![Migration des données ATA](media/migration-data-migration.png)
 
@@ -70,7 +70,7 @@ Dans la version de migration, le fichier peut être utilisé uniquement pour la 
 
     ![Écran de réussite de mise à jour](media/migration-center-success.png)
 
-5.  Dans l’écran **Mises à jour**, si vous avez déjà configuré vos passerelles ATA pour une mise à jour automatique, elles seront mises à jour à ce stade. Sinon, cliquez sur **Mettre à jour** en regard de chaque passerelle ATA.
+5.  Dans l’écran **Mises à jour**, si vous avez déjà configuré vos passerelles ATA pour une mise à jour automatique, elles sont mises à jour à ce stade. Sinon, cliquez sur **Mettre à jour** en regard de chaque passerelle ATA.
   
 ![Image de mise à jour des passerelles](media/migration-update-gw.png)
 

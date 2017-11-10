@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/29/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c38db312ea877b63580d745153aa58ea34a160a6
-ms.sourcegitcommit: 9ce330726e5de8c05eae6a20d3e6c1d8bef3cd0e
+ms.openlocfilehash: 3210d9153cd6781ae13a784e1f2b5927e0703009
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -33,7 +33,7 @@ Quand vous installez ou mettez à jour ATA, .Net Framework 4.6.1 est automatiqu
 
 > [!Note] 
 > L’installation de .Net Framework 4.6.1 peut nécessiter le redémarrage du serveur. Quand vous installez la passerelle ATA sur des contrôleurs de domaine, pensez à planifier une fenêtre de maintenance pour ces derniers.
-Quand vous utilisez la méthode d’installation d’ATA sans assistance, le programme d’installation est configuré pour redémarrer automatiquement le serveur à la fin de l’installation (si nécessaire). En raison d’un bogue de Windows Installer, l’indicateur norestart ne peut pas être utilisé de façon fiable pour vérifier que le serveur ne redémarrera pas : veillez donc à exécuter seulement une installation sans assistance pendant une fenêtre de maintenance.
+Quand vous utilisez la méthode d’installation d’ATA sans assistance, le programme d’installation est configuré pour redémarrer automatiquement le serveur à la fin de l’installation (si nécessaire). En raison d’un bogue de Windows Installer, l’indicateur norestart ne peut pas être utilisé de façon fiable pour vérifier que le serveur ne redémarre pas : veillez donc à exécuter seulement une installation sans assistance pendant une fenêtre de maintenance.
 
 Pour suivre la progression du déploiement, surveillez les journaux d’installation d’ATA, qui se trouvent dans **%AppData%\Local\Temp**.
 
@@ -68,7 +68,7 @@ Utilisez la commande suivante pour installer le centre ATA :
 |CenterPort|CenterPort=<CenterPort>|Oui|Définit le port réseau du service du centre ATA|
 |CenterCertificateThumbprint|CenterCertificateThumbprint="<CertThumbprint>"|Non|Définit l’empreinte numérique du certificat pour le service du centre ATA. Ce certificat est utilisé pour sécuriser la communication entre le centre ATA et la passerelle ATA. Si ce paramètre n’est pas défini, l’installation génère un certificat auto-signé.|
 |ConsoleIpAddress|ConsoleIpAddress=<ConsoleIPAddress>|Oui|Définit l’adresse IP de la console ATA|
-|ConsoleCertificateThumbprint|ConsoleCertificateThumbprint="<CertThumbprint >"|Non|Spécifie l’empreinte numérique du certificat pour la console ATA. Ce certificat est utilisé pour valider l’identité du site web de la console ATA. Si ce paramètre n’est pas spécifié, l’installation génère un certificat auto-signé.|
+|ConsoleCertificateThumbprint|ConsoleCertificateThumbprint="<CertThumbprint >"|Non|Spécifie l’empreinte numérique du certificat pour la console ATA. Ce certificat est utilisé pour valider l’identité du site web de la console ATA. Si ce paramètre n’est pas défini, l’installation génère un certificat auto-signé|
 
 **Exemples** : Pour installer le centre ATA avec les chemins d’installation par défaut et une seule adresse IP :
 
@@ -168,7 +168,7 @@ Utilisez la commande suivante pour installer la passerelle ATA sans assistance 
 |ConsoleAccountName|ConsoleAccountName="<AccountName>"|Oui|Définit le nom du compte d’utilisateur (user@domain.com) qui est utilisé pour inscrire la passerelle ATA auprès du centre ATA.|
 |ConsoleAccountPassword|ConsoleAccountPassword="<AccountPassword>"|Oui|Définit le mot de passe du compte d’utilisateur (user@domain.com) qui est utilisé pour inscrire la passerelle ATA auprès du centre ATA.|
 
-**Exemples** : Pour installer en mode silencieux la passerelle ATA, connectez-vous à l’ordinateur joint au domaine avec vos informations d’identification d’administrateur ATA. Vous ne devrez pas spécifier les informations d’identification. Sinon, inscrivez-le auprès du centre ATA en utilisant les informations d’identification spécifiées :
+**Exemples** : Pour installer en mode silencieux la passerelle ATA, connectez-vous à l’ordinateur joint au domaine avec vos informations d’identification d’administrateur ATA, ce qui évite de spécifier les informations d’identification dans le cadre de l'installation. Sinon, inscrivez-le auprès du centre ATA en utilisant les informations d’identification spécifiées :
 
     "Microsoft ATA Gateway Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" 
     ConsoleAccountName="user@contoso.com" ConsoleAccountPassword="userpwd"

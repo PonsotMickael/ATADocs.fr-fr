@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 0756ef64-3aef-4a69-8981-24fa8f285c6a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b8979b7a032e8f44f2da3844cbcb975d4f3f5c84
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: c1be20cc147e88f55d227818331f06d409dd08e7
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="ata-update-to-16-migration-guide"></a>Mise à jour d’ATA vers la version 1.6 : guide de migration
 La mise à jour vers ATA 1.6 comprend des améliorations dans les domaines suivants :
@@ -38,12 +38,12 @@ La mise à jour vers ATA 1.6 comprend des améliorations dans les domaines suiv
 
 ## <a name="updating-ata-to-version-16"></a>Mise à jour d’ATA vers la version 1.6
 > [!NOTE] 
-> Si ATA n’est pas installé dans votre environnement, téléchargez la version complète d’ATA qui inclut la version 1.6. Suivez ensuite la procédure d’installation standard décrite dans [Installer ATA](install-ata-step1.md).
+> Si ATA n’est pas installé dans votre environnement, téléchargez la version complète d’ATA qui inclut la version 1.6. Suivez ensuite la procédure d’installation standard décrite dans [Installer ATA](install-ata-step1.md).
 
-Si vous avez déjà déployé ATA version 1.5, cette procédure vous guidera tout au long des étapes nécessaires pour mettre à jour votre déploiement.
+Si vous avez déjà déployé la version 1.5 d’ATA, cette procédure vous guide tout au long des étapes nécessaires pour mettre à jour votre déploiement.
 
 > [!NOTE] 
-> Vous ne pouvez pas installer ATA version 1.6 directement sur ATA version 1.4. Vous devez d’abord installer ATA version 1.5. Si vous tentez par erreur d’installer ATA 1.6 sans installer ATA 1.5 au préalable, vous recevez un message d’erreur indiquant qu’**une version plus récente est déjà installée sur votre machine**. Vous devez désinstaller les éléments d’ATA 1.6 qui restent sur votre machine, même si l’installation a échoué, avant d’installer ATA version 1.5.
+> Vous ne pouvez pas installer ATA version 1.6 directement sur ATA version 1.4. Vous devez d’abord installer ATA version 1.5. Si vous tentez par erreur d’installer ATA 1.6 sans installer ATA 1.5 au préalable, vous recevez un message d’erreur indiquant qu’**une version plus récente est déjà installée sur votre machine.** Vous devez désinstaller les éléments d’ATA 1.6 qui restent sur votre machine, même si l’installation a échoué, avant d’installer ATA version 1.5.
 
 Suivez ces étapes pour mettre à jour ATA vers la version 1.6 :
 
@@ -111,7 +111,7 @@ Pour télécharger le package d’installation de la passerelle ATA :
 
 4.  Enregistrez le package localement.
 
-Le fichier zip comprend les éléments suivants :
+Le fichier zip comprend les fichiers suivants :
 
 -   Programme d’installation de la passerelle ATA
 

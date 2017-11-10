@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1afaf258198c1b18aca5cc2e4be6774600f72a73
-ms.sourcegitcommit: e9f2bfd610b7354ea3fef749275f16819d60c186
+ms.openlocfilehash: 44f50b2daefb5a54c56b90289faf08b897494093
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -46,9 +46,9 @@ Pour plus d’informations sur l’architecture d’ATA, consultez [Architecture
 
 La technologie ATA détecte plusieurs activités suspectes, en se focalisant sur différentes phases de la chaîne de cyber-attaque, notamment :
 
--   Reconnaissance, pendant laquelle les pirates recueillent des informations sur l’architecture de l’environnement et sur les différents composants et entités qui existent. C’est généralement lors de cette phase qu’ils élaborent leur plan pour les étapes suivantes de l’attaque.
+-   Les différentes ressources de reconnaissance, au cours de laquelle des personnes malveillantes recueillir des informations sur la façon dont l’environnement est construit, sont, et les entités qui existent. Elles élaborent généralement leur plan pour les prochaines étapes de l’attaque.
 -   Cycle de mouvement latéral, pendant lequel un attaquant investit temps et efforts dans la propagation de sa surface d’attaque au sein de votre réseau.
--   Dominance (persistance) de domaine, pendant laquelle un attaquant capture les informations lui permettant de reprendre sa campagne à l’aide d’un ensemble varié de points d’entrée, d’informations d’identification et de techniques. 
+-   Dominance (persistance) de domaine, pendant laquelle un attaquant capture les informations lui permettant de reprendre sa campagne à l’aide de différents ensembles de points d’entrée, d’informations d’identification et de techniques. 
 
 Ces phases d’une cyber-attaque sont similaires et prévisibles, quel que soit le type de société visé ou le type d’informations ciblé.
 ATA recherche trois principaux types d’attaques : les attaques malveillantes, le comportement anormal, et les risques et problèmes de sécurité.
@@ -65,7 +65,8 @@ Les **attaques malveillantes** sont détectées de manière déterministe, en re
 -   Force brute
 -   Exécution à distance
 
-Pour obtenir la liste complète des détections et leurs descriptions, consultez [Quelles sont les activités suspectes détectables par ATA ?](ata-threats.md)
+Pour obtenir la liste complète des détections et leurs descriptions, consultez [Quelles sont les activités suspectes détectables par ATA ?](ata-threats.md) 
+
 ATA détecte ces activités suspectes et expose les informations dans la console ATA, avec une vue claire précisant qui, quoi, quand et comment. Comme vous pouvez le voir, en surveillant ce tableau de bord simple et convivial, vous êtes averti qu’ATA soupçonne qu’une attaque pass-the-ticket a été tentée sur les ordinateurs Client 1 et Client 2 de votre réseau.
 
  ![exemple d’écran ATA pour pass-the-ticket](media/pass_the_ticket_sa.png)
@@ -96,7 +97,7 @@ Vous pouvez afficher les activités suspectes de ce type dans le tableau de bord
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Si vous mettez à jour vers ATA 1.7 et immédiatement vers ATA 1.8 sans d’abord mettre à jour les passerelles ATA, vous ne pourrez pas migrer vers ATA 1.8. Vous devez commencer par mettre à jour toutes les passerelles vers la version 1.7.1 ou 1.7.2 avant de mettre à jour le centre ATA vers la version 1.8.
+- Si vous mettez à jour vers ATA 1.7 et immédiatement vers ATA 1.8 sans d’abord mettre à jour les passerelles ATA, vous ne pouvez pas migrer vers ATA 1.8. Vous devez commencer par mettre à jour toutes les passerelles vers la version 1.7.1 ou 1.7.2 avant de mettre à jour le centre ATA vers la version 1.8.
 
 - Si vous choisissez d’effectuer une migration complète, elle peut durer très longtemps en fonction de la taille de la base de données. Quand vous sélectionnez vos options de migration, le temps estimé s’affiche : notez-le bien avant de décider quelle option choisir. 
 
