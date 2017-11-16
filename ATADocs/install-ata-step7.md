@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 49d0df5f3d835a879990d590b447ed3b4de88685
-ms.sourcegitcommit: e9f2bfd610b7354ea3fef749275f16819d60c186
+ms.openlocfilehash: 0feb12a2e86adae124016c90431209ec33cdbcb5
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -35,7 +35,7 @@ Par exemple, une **exclusion DNS Reconnaissance** peut être un analyseur de sé
 
 Avec ATA, vous pouvez aussi configurer un utilisateur Honeytoken servant de piège pour les utilisateurs malveillants. Toute authentification associée à ce compte (normalement dormant) déclenche une alerte.
 
-Pour configurer les éléments suivants, procédez comme suit :
+Pour configurer ceci, procédez comme suit :
 
 1.  À partir de la console ATA, cliquez sur l’icône des paramètres et sélectionnez **Configuration**.
 

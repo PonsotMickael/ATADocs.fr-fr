@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3ebf3165973c14c45d33c95769f0e6ae47e3e795
-ms.sourcegitcommit: 835ea2b8190eb753aaf8d400531040ce1845d75a
+ms.openlocfilehash: 482b16462d115c7bcc2854d30c2ef19fce37f2c0
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -41,11 +41,11 @@ Une fois que vous avez configuré la mise en miroir des ports des contrôleurs d
 
 Dans ce scénario, nous partons du principe que la passerelle ATA est un membre du domaine.
 
-1.  Ouvrez Utilisateurs et ordinateurs Active Directory, accédez au dossier **Builtin** et double-cliquez sur **Lecteurs des journaux d’événements**. 
+1.  Ouvrez Utilisateurs et ordinateurs Active Directory, accédez au dossier **BuiltIn** et double-cliquez sur **Lecteurs des journaux d’événements**. 
 2.  Sélectionnez **Membres**.
 4.  Si **Service réseau** ne figure pas dans la liste, cliquez sur **Ajouter** et tapez **Service réseau** dans le champ **Entrez les noms d’objets à sélectionner**. Ensuite, cliquez sur **Vérifier les noms** et cliquez deux fois sur **OK**. 
 
-Notez qu’après avoir ajouté le **Service réseau** au groupe **Lecteurs des journaux d’événements**, vous devez redémarrer les contrôleurs de domaine pour que la modification prenne effet.
+Après avoir ajouté le **Service réseau** au groupe **Lecteurs des journaux d’événements**, redémarrez les contrôleurs de domaine pour que la modification prenne effet.
 
 **Étape 2 : créer une stratégie sur les contrôleurs de domaine pour définir le paramètre Configurer le Gestionnaire d’abonnements cible.** 
 > [!Note] 
@@ -61,7 +61,7 @@ Notez qu’après avoir ajouté le **Service réseau** au groupe **Lecteurs des 
    
     1.  Sélectionnez **Activé**.
     2.  Sous **Options**, cliquez sur **Afficher**.
-    3.  Sous **SubscriptionManagers**, entrez la valeur suivante et cliquez sur **OK** :  *Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (par exemple : Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
+    3.  Sous **SubscriptionManagers**, entrez la valeur suivante et cliquez sur **OK** : *Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (par exemple : Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
  
    ![Configurer l’image d’abonnement cible](media/wef 2 config target sub manager.png)
    
@@ -95,8 +95,8 @@ Notez qu’après avoir ajouté le **Service réseau** au groupe **Lecteurs des 
    6.   Après quelques minutes, vérifiez que les événements que vous avez configurés pour être transférés apparaissent dans les événements transférés sur la passerelle ATA.
 
 
-Pour plus d’informations, consultez [Configurer les ordinateurs pour transférer et recueillir les événements](https://technet.microsoft.com/library/cc748890).
+Pour plus d’informations, consultez [Configurer les ordinateurs pour transférer et recueillir les événements](https://technet.microsoft.com/library/cc748890)
 
 ## <a name="see-also"></a>Voir aussi
 - [Installer ATA](install-ata-step1.md)
-- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

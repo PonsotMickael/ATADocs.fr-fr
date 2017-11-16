@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/28/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 793273aeea3c78b54d4dc189acaff9bdf8ae58f9
-ms.sourcegitcommit: 46dd0e695f16a0dd23bbfa140eba15ea6a34d7af
+ms.openlocfilehash: 26c093c4163593611b175f4f0002f443e593f952
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/28/2017
 
 Utilisez la console ATA pour surveiller les activités suspectes et les gérer.
 
-Tapez « ? » pour obtenir les raccourcis clavier d’accessibilité du portail ATA. 
+Entrez la clé `?` pour obtenir les raccourcis clavier d’accessibilité du portail ATA. 
 
 ## <a name="enabling-access-to-the-ata-console"></a>Activation de l’accès à la console ATA
 Pour ouvrir une session dans la console ATA, vous devez utiliser le compte d’un utilisateur auquel a été attribué le rôle ATA approprié pour accéder à la console ATA. Pour plus d’informations sur le contrôle d’accès en fonction du rôle (RBAC) dans ATA, consultez [Utilisation de groupes de rôles ATA](ata-role-groups.md).
@@ -44,7 +44,7 @@ Pour ouvrir une session dans la console ATA, vous devez utiliser le compte d’u
  >[!NOTE]
  > Vous pouvez également ouvrir un navigateur à partir du centre ATA ou de la passerelle ATA et accéder à l’adresse IP que vous avez configurée dans l’installation du centre ATA pour la console ATA.    
 
-2.  Si l’ordinateur où le centre ATA est installé et l’ordinateur à partir duquel vous tentez d’accéder à la console ATA sont joints à un domaine, ATA prend en charge l’authentification unique intégrée avec l’authentification Windows. Si vous avez déjà ouvert une session sur votre ordinateur, ATA utilise ce jeton pour vous connecter à la console ATA. Vous pouvez également vous connecter à l’aide d’une carte à puce. Vos autorisations dans ATA correspondent à votre [rôle administrateur](ata-role-groups.md).
+2.  Si l’ordinateur où le centre ATA est installé et l’ordinateur à partir duquel vous tentez d’accéder à la console ATA sont joints à un domaine, ATA prend en charge l’authentification unique intégrée avec l’authentification Windows. Si vous avez déjà ouvert une session sur votre ordinateur, ATA utilise ce jeton pour vous connecter à la console ATA. Vous pouvez aussi vous connecter à l’aide d’une carte à puce. Vos autorisations dans ATA correspondent à votre [rôle administrateur](ata-role-groups.md).
 
  > [!NOTE]
  > Veillez à ouvrir une session sur l’ordinateur à partir duquel vous voulez accéder à la console ATA en utilisant votre nom d’utilisateur et votre mot de passe d’administrateur ATA. Vous pouvez également exécuter votre navigateur en tant qu’un autre utilisateur, ou vous déconnecter de Windows et ouvrir une session avec votre utilisateur administrateur ATA. Pour faire en sorte que la console ATA demande des informations d’identification, accédez à la console en utilisant une adresse IP : vous êtes alors invité à entrer des informations d’identification.
@@ -97,7 +97,7 @@ Quand votre système rencontre un problème, par exemple une erreur de connectiv
 
 ### <a name="user-and-computer-profiles"></a>Profils d’utilisateur et d’ordinateur
 
-ATA crée un profil pour chaque utilisateur et chaque ordinateur du réseau. Le profil utilisateur contient des informations générales, telles que l’appartenance aux groupes, les connexions récentes et les ressources récemment consultées. Il fournit également une liste des emplacements où l’utilisateur s’est connecté via un VPN. Pour obtenir la liste des appartenances aux groupes considérées comme sensibles, voir ci-dessous.
+ATA crée un profil pour chaque utilisateur et chaque ordinateur du réseau. Le profil utilisateur contient des informations générales, telles que l’appartenance aux groupes, les connexions récentes et les ressources récemment consultées. Il fournit également une liste des emplacements où l’utilisateur s’est connecté via un VPN. Pour obtenir la liste des appartenances aux groupes considérées comme sensibles, consultez la liste ci-dessous.
 
 ![Profil utilisateur](media/user-profile.png)
 
@@ -138,7 +138,7 @@ Les groupes de la liste suivante sont considérés comme **sensibles** par ATA. 
 
 ### <a name="mini-profile"></a>Mini-profil
 
-Quand une entité est présentée dans la console (par exemple un utilisateur ou un ordinateur), si vous pointez votre souris dessus, un mini-profil s’ouvre automatiquement et affiche les informations suivantes si elles sont disponibles :
+Si vous pointez votre souris sur une entité, n'importe où dans la console, où une entité unique et présentée, par exemple un utilisateur ou un ordinateur, un mini-profil s’ouvre automatiquement et affiche les informations suivantes si elles sont disponibles :
 
 ![Image du mini-profil dans ATA](media/ATA-mini-profile.jpg)
 

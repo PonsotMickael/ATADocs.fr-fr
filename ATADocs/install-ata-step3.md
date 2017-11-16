@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f466dddfd2c490d71a57fb27aa833c5ee3a0e5e2
-ms.sourcegitcommit: e9f2bfd610b7354ea3fef749275f16819d60c186
+ms.openlocfilehash: ab80ec5b172311e955a25fed677c40cee1e95269
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 10/09/2017
 ## <a name="step-3-download-the-ata-gateway-setup-package"></a>Étape 3. Télécharger le package d’installation de la passerelle ATA
 Après avoir configuré les paramètres de connectivité du domaine, vous pouvez télécharger le package d’installation de la passerelle ATA. Elle peut être installée sur un serveur dédié ou sur un contrôleur de domaine. Si vous l’installez sur un contrôleur de domaine, elle est installée en tant que passerelle légère ATA. Pour plus d’informations sur la passerelle légère ATA, consultez [Architecture ATA](ata-architecture.md). 
 
-Cliquez sur Télécharger l’installation de la passerelle dans la liste des étapes en haut de la page pour accéder à la page Passerelles :
+Cliquez sur **Télécharger l’installation de la passerelle** dans la liste des étapes en haut de la page pour accéder à la page **Passerelles**.
 
 ![Paramètres de configuration de la passerelle ATA](media/ATA_1.7-welcome-download-gateway.PNG)
 
@@ -44,7 +44,7 @@ Cliquez sur Télécharger l’installation de la passerelle dans la liste des é
 2.  Enregistrez le package localement.
 3.  Copiez le package sur le serveur dédié ou sur le contrôleur de domaine sur lequel vous installez la passerelle ATA. Vous pouvez également ouvrir la console ATA à partir du serveur dédié ou du contrôleur de domaine et ignorer cette étape.
 
-Le fichier zip comprend les éléments suivants :
+Le fichier zip comprend les fichiers suivants :
 
 -   Programme d’installation de la passerelle ATA
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 819f006ae89960ed8f9494ce36ba4fd7f120357a
-ms.sourcegitcommit: 5563c6861bb5db5cb73e058e5a51b4938b9a7d46
+ms.openlocfilehash: 005f698c19c99c31dfa0e660e489f8c402eb1bc6
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -45,7 +45,7 @@ Cet article décrit comment récupérer rapidement votre centre ATA et restaurer
 ## <a name="recover-your-ata-center"></a>Récupérer votre centre ATA
 
 1. Créez un ordinateur Windows Server en utilisant la même adresse IP et le même nom d’ordinateur que l’ordinateur du centre ATA précédent.
-4. Importez le certificat que vous avez sauvegardé à l’étape précédente sur le nouveau serveur.
+4. Importez le certificat que vous avez sauvegardé précédemment, sur le nouveau serveur.
 5. Suivez les instructions pour [déployer le centre ATA](install-ata-step1.md) sur le serveur Windows qui vient d’être créé. Il est inutile de redéployer les passerelles ATA. Lorsque vous êtes invité à fournir un certificat, fournissez le certificat que vous avez exporté lors de la sauvegarde de la configuration du centre ATA. 
 ![Restauration du centre ATA](media/disaster-recovery-deploymentss.png)
 6. Importez la configuration sauvegardée du centre ATA :

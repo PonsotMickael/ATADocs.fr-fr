@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/28/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 62ce117423a189a1c2ce00b862f323db6ed328cb
-ms.sourcegitcommit: 46dd0e695f16a0dd23bbfa140eba15ea6a34d7af
+ms.openlocfilehash: b78f0407d74c3c8e0187c9934d3d7555104cd6ec
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
 
 
 # <a name="working-with-suspicious-activities"></a>Gestion des activités suspectes
-Cette rubrique explique les principes de base d’Advanced Threat Analytics.
+Cet article explique les principes de base d’Advanced Threat Analytics.
 
 ## <a name="review-suspicious-activities-on-the-attack-time-line"></a>Passer en revue les activités suspectes sur la chronologie des attaques
 Une fois connecté à la console ATA, la **Chronologie des activités suspectes** s’ouvre automatiquement. Les activités suspectes sont répertoriées par ordre chronologique, avec les plus récentes en haut de la liste.
@@ -93,11 +93,11 @@ Pour cela, cliquez sur les trois points en haut à droite d’une activité susp
 -   **Fermé** : Utilisé pour effectuer le suivi des activités suspectes que vous avez identifiées, examinées et résolues.
 
     > [!NOTE]
-    > ATA peut rouvrir une activité fermée si celle-ci est détectée à nouveau peu de temps après.
+    > Si celle-ci est détectée à nouveau peu de temps après, ATA peut rouvrir une activité fermée.
 
--   **Ignoré** : La suppression d’une activité signifie que vous voulez l’ignorer pour le moment, et être averti de nouveau seulement en cas de nouvelle instance. Cela signifie que si une alerte similaire survient, ATA ne la rouvre pas. Cependant, si l’alerte cesse pendant 7 jours puis réapparaît, vous êtes averti à nouveau.
+-   **Ignoré** : La suppression d’une activité signifie que vous voulez l’ignorer pour le moment, et être averti de nouveau seulement en cas de nouvelle instance. Cela signifie que si une alerte similaire survient, ATA ne la rouvre pas. Cependant, si l’alerte cesse pendant sept jours puis réapparaît, vous êtes averti à nouveau.
 
-- **Supprimer** : Si vous supprimez une alerte, elle sera supprimée du système et de la base de données, et vous NE pourrez PAS la restaurer. Si vous cliquez sur Supprimer, vous pouvez supprimer toutes les activités suspectes du même type.
+- **Supprimer** : Si vous supprimez une alerte, elle est supprimée du système et de la base de données, et vous NE pourrez PAS la restaurer. Si vous cliquez sur Supprimer, vous pouvez supprimer toutes les activités suspectes du même type.
 
 - **Exclure** : Possibilité d’empêcher une entité de déclencher un certain type d’alertes. Par exemple, vous pouvez configurer ATA pour empêcher une entité spécifique (un utilisateur ou un ordinateur) d’alerter à nouveau pour un certain type d’activité suspecte, par exemple un administrateur spécifique qui exécute du code à distance ou un scanner de sécurité qui effectue une reconnaissance DNS. Outre ajouter des exclusions directement sur l’activité suspecte lors de sa détection dans la chronologie, vous pouvez également accéder aux **Exclusions** de la page Configuration et, pour chaque activité suspecte, vous pouvez ajouter et supprimer manuellement des entités ou des sous-réseaux exclus (par exemple pour pass-the-ticket). 
 > [!NOTE]

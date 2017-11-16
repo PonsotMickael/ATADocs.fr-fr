@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 66e910c1d6d11781fa66f8386b4b3939fd49ebf7
-ms.sourcegitcommit: e9f2bfd610b7354ea3fef749275f16819d60c186
+ms.openlocfilehash: 4abeda5a54de771c6e6d3c73d9217113dfe88b8e
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -51,21 +51,21 @@ Effectuez les opérations suivantes sur le serveur de la passerelle ATA.
 
 4.  L’Assistant Installation vérifie automatiquement si le serveur est un contrôleur de domaine ou un serveur dédié. S’il s’agit d’un contrôleur de domaine, la passerelle légère ATA est installée. S’il s’agit d’un serveur dédié, la passerelle ATA est installée. 
     
-    Par exemple, dans le cas d’une passerelle ATA, l’écran suivant s’affiche pour vous informer qu’une passerelle ATA sera installée sur votre serveur dédié :
+    Par exemple, pour une passerelle ATA, l’écran suivant s’affiche pour vous informer qu’une passerelle ATA sera installée sur votre serveur dédié :
     
     ![Installation d’une passerelle ATA](media/ata-gw-install.png) Cliquez sur **Suivant**.
 
     > [!NOTE] 
-    > Si le contrôleur de domaine ou le serveur dédié ne dispose pas de la configuration matérielle minimale requise pour l’installation, un avertissement s’affiche. Il ne vous empêche pas de cliquer sur **Suivant** et de procéder à l’installation. Cela peut être le bon choix pour l’installation d’ATA dans un petit environnement de test de laboratoire dans lequel vous n’aurez pas besoin d’autant de place pour le stockage des données. Pour les environnements de production, nous vous recommandons fortement de respecter le guide de [planification de la capacité](ata-capacity-planning.md) ATA pour vous assurer que vos contrôleurs de domaine ou serveurs dédiés répondent aux conditions requises.
+    > Si le contrôleur de domaine ou le serveur dédié ne dispose pas de la configuration matérielle minimale requise pour l’installation, un avertissement s’affiche. Il ne vous empêche pas de cliquer sur **Suivant** et de procéder à l’installation. Cela peut être le bon choix pour l’installation d’ATA dans un petit environnement de test de laboratoire dans lequel vous n’avez pas besoin d’autant de place pour le stockage des données. Pour les environnements de production, nous vous recommandons fortement de respecter le guide de [planification de la capacité](ata-capacity-planning.md) ATA pour vous assurer que vos contrôleurs de domaine ou serveurs dédiés répondent aux conditions requises.
 
 4.  Sous **Configurer la passerelle**, entrez les informations suivantes en fonction de votre environnement :
 
     ![Image de la configuration de la passerelle ATA](media/ata-gw-configure.png)
 
     > [!NOTE]
-    > Quand vous déployez la passerelle ATA, vous ne devez pas fournir les informations d’identification. Si l’installation de la passerelle ATA ne parvient pas à récupérer vos informations d’identification à l’aide de l’authentification unique (par exemple, cela peut se produire si le centre ATA n’est pas dans le domaine, si la passerelle ATA n’est pas dans le domaine ou si vous n’avez pas les informations d’identification de l’administrateur d’ATA), vous devrez fournir les informations d’identification, comme dans l’écran suivant. 
+    > Quand vous déployez la passerelle ATA, vous ne devez pas fournir les informations d’identification. Si l’installation de la passerelle ATA ne parvient pas à récupérer vos informations d’identification à l’aide de l’authentification unique (par exemple, cela peut se produire si le centre ATA n’est pas dans le domaine, si la passerelle ATA n’est pas dans le domaine ou si vous n’avez pas les informations d’identification de l’administrateur d’ATA), vous devez fournir les informations d’identification, comme dans l’écran suivant : 
 
-  ![Demande des informations d’identification de la passerelle ATA](media/ata-install-credentials.png)
+  ![Fournir les informations d’identification de la passerelle ATA](media/ata-install-credentials.png)
 
    - Chemin d’installation : Il s’agit de l’emplacement où la passerelle ATA doit être installée. L’emplacement par défaut est %programfiles%\Microsoft Advanced Threat Analytics\Gateway. Conservez la valeur par défaut.
     

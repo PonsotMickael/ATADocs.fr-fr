@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 09/6/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: cd6e2968cad2393e2f56ece03be880622a3a0c6a
-ms.sourcegitcommit: 79abfe095f5def259ebb5018d49f9aadd5f2d4f4
+ms.openlocfilehash: bff477a66b837d82bb10a43a0dad7d36c6542d9f
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -34,7 +34,7 @@ Après avoir examiné une activité suspecte, vous pouvez la classer comme :
 
 Pour plus d’informations sur la gestion des alertes ATA, consultez [Gestion des activités suspectes](working-with-suspicious-activities.md).
 
-Si vous avez des questions ou des commentaires à ce sujet, vous pouvez nous les envoyer à l’adresse [ATAEval@microsoft.com](mailto:ATAEval@microsoft.com).
+Si vous avez des questions ou des commentaires à ce sujet, contactez l'équipe ATA à l’adresse [ATAEval@microsoft.com](mailto:ATAEval@microsoft.com).
 
 ## <a name="abnormal-sensitive-group-modification"></a>Modification anormale de groupes sensibles
 
@@ -47,7 +47,7 @@ Pour avoir une définition des groupes sensibles dans ATA, consultez [Utilisatio
 
 
 La détection s’appuie sur les [événements audités sur les contrôleurs de domaine](https://docs.microsoft.com/advanced-threat-analytics/configure-event-collection).
-Utilisez l’outil indiqué dans le blog [ATA Auditing (AuditPol, Advanced Audit Settings Enforcement, Lightweight Gateway Service discovery)](https://aka.ms/ataauditingblog) pour vérifier que vos contrôleurs de domaine auditent les événements souhaités.
+Pour vérifier que vos contrôleurs de domaine auditent les événements souhaités, utilisez l’outil indiqué dans le blog [ATA Auditing (AuditPol, Advanced Audit Settings Enforcement, Lightweight Gateway Service discovery)](https://aka.ms/ataauditingblog).
 
 **Examen**
 
@@ -109,7 +109,7 @@ Il existe trois types de détection :
 
 1.  Skeleton Key. Ce programme malveillant s’exécute sur les contrôleurs de domaine et autorise l’authentification sur le domaine de n’importe quel compte sans connaître son mot de passe. Il utilise souvent des algorithmes de chiffrement plus faibles pour chiffrer les mots de passe de l’utilisateur sur le contrôleur de domaine. Cette détection a déterminé que la méthode de chiffrement du message KRB_ERR reçu de l’ordinateur source a été passée à une version antérieure par rapport au comportement appris.
 
-2.  Golden Ticket. Dans une alerte [Golden Ticket](#golden-ticket), la méthode de chiffrement du champ TGT du message TGS_REQ (demande de service) reçu de l’ordinateur source a été passée à une version antérieure par rapport au comportement appris. Notez que cette détection n’est pas basée sur une anomalie de temps (contrairement à l’autre détection Golden Ticket). De plus, ATA n’a pas détecté de demande d’authentification Kerberos associée à la demande de service ci-dessus.
+2.  Golden Ticket. Dans une alerte [Golden Ticket](#golden-ticket), la méthode de chiffrement du champ TGT du message TGS_REQ (demande de service) reçu de l’ordinateur source a été passée à une version antérieure par rapport au comportement appris. Cette détection n’est pas basée sur une anomalie de temps (contrairement à l’autre détection Golden Ticket). De plus, ATA n’a pas détecté de demande d’authentification Kerberos associée à la demande de service précédente.
 
 3.  Overpass-the-Hash. Le type de chiffrement du message AS_REQ reçu de l’ordinateur source a été passé à une version antérieure par rapport au comportement appris (l’ordinateur utilisait l’algorithme AES).
 
@@ -453,7 +453,7 @@ En fonction de la cause de ce comportement anormal, vous devez effectuer des act
 
 **Description**
 
-Les attaquants utilisent des outils qui implémentent différents protocoles (SMB, Kerberos, NTLM) de façon inhabituelle. Ce type de trafic réseau est généralement admis par Windows sans avertissement, mais ATA est capable de reconnaître une activité malveillante potentielle. Le comportement est révélateur de certaines techniques comme l’attaque par force brute ou Over-Pass-the-Hash, ou de l’exploitation des failles de sécurité par de puissants ransomware tels que WannaCry.
+Les attaquants utilisent des outils qui implémentent différents protocoles (SMB, Kerberos, NTLM) de façon inhabituelle. Ce type de trafic réseau est admis par Windows sans avertissement, mais ATA est capable de reconnaître une activité malveillante potentielle. Le comportement est révélateur de certaines techniques comme l’attaque par force brute ou Over-Pass-the-Hash, ou de l’exploitation des failles de sécurité par de puissants ransomware tels que WannaCry.
 
 **Examen**
 

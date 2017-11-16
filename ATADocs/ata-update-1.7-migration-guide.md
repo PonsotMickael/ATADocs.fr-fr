@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8eefcd45-7a4b-4074-ac5b-1ffc48e6654a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a1494f0428593ee58c7e1da64192b45c6d006c15
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: 891ba71bcb8c1ee362b92be2404c65c7b5158055
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="ata-update-to-17-migration-guide"></a>Mise à jour d’ATA vers la version 1.7 : guide de migration
 La mise à jour vers ATA 1.7 comprend des améliorations dans les domaines suivants :
@@ -30,9 +30,9 @@ La mise à jour vers ATA 1.7 comprend des améliorations dans les domaines suiv
 ## <a name="updating-ata-to-version-17"></a>Mise à jour d’ATA vers la version 1.7
 
 > [!NOTE] 
-> Si ATA n’est pas installé dans votre environnement, téléchargez la version complète d’ATA qui inclut la version 1.7. Suivez ensuite la procédure d’installation standard décrite dans [Installer ATA](install-ata-step1.md).
+> Si ATA n’est pas installé dans votre environnement, téléchargez la version complète d’ATA qui inclut la version 1.7. Suivez ensuite la procédure d’installation standard décrite dans [Installer ATA](install-ata-step1.md).
 
-Si vous avez déjà déployé ATA version 1.6, cette procédure vous guide tout au long des étapes nécessaires pour mettre à jour votre déploiement.
+Si vous avez déjà déployé la version 1.6 d’ATA, cette procédure vous guide tout au long des étapes nécessaires pour mettre à jour votre déploiement.
 
 > [!NOTE] 
 > Vous ne pouvez pas installer ATA version 1.7 directement sur ATA version 1.4 ou 1.5. Vous devez d’abord installer ATA version 1.6. 
@@ -61,11 +61,11 @@ Dans cette version, le même fichier d’installation (Microsoft ATA Center Setu
 
     -  Dans la page **Bienvenue**, sélectionnez votre langue, puis cliquez sur **Suivant**.
 
-    -  Si vous n’avez pas activé les mises à jour automatiques dans la version 1.6, vous serez invité à configurer ATA pour utiliser Microsoft Update pour ATA pour rester à jour.  Dans la page Microsoft Update, sélectionnez **Utiliser Microsoft Update lorsque je recherche des mises à jour (recommandé)**.
+    -  Si vous n’avez pas activé les mises à jour automatiques dans la version 1.6, vous êtes invité à configurer ATA pour utiliser Microsoft Update afin de rester à jour.  Dans la page Microsoft Update, sélectionnez **Utiliser Microsoft Update lorsque je recherche des mises à jour (recommandé)**.
     ![Image montrant comment maintenir ATA à jour](media/ata_ms_update.png) Ainsi, Windows est configuré de manière à récupérer les mises à jour des autres produits Microsoft (notamment ATA), comme illustré ci-après. 
      ![Image de mise à jour automatique de Windows](media/ata_installupdatesautomatically.png)
 
-    -  Dans l’écran **Migration des données**, indiquez si vous souhaitez migrer tout ou une partie des données. Si vous choisissez de migrer uniquement des données partielles, vos profils de comportement et de trafic réseau capturés précédemment ne seront pas migrés. Cela signifie qu’il faudra trois semaines avant que la détection d’un comportement anormal ait un profil complet pour activer la détection d’activité anormale. Pendant ces trois semaines, toutes les autres détections ATA fonctionneront correctement. L’installation de la migration des données **Partielle** prend beaucoup moins de temps. Si vous sélectionnez la migration des données **Complète**, l’installation peut prendre beaucoup plus de temps. La durée estimée et l’espace disque requis, qui sont répertoriés dans l’écran **Migration des données**, dépendent de la quantité de trafic de réseau capturée, précédemment enregistrée dans les versions précédentes d’ATA. Avant de sélectionner **Partielle** ou **Complète**, veillez à vérifier ces exigences.  
+    -  Dans l’écran **Migration des données**, indiquez si vous souhaitez migrer tout ou une partie des données. Si vous choisissez de migrer uniquement des données partielles, vos profils de comportement et de trafic réseau capturés précédemment ne seront pas migrés. Cela signifie qu’il faudra trois semaines avant que la détection d’un comportement anormal ait un profil complet pour activer la détection d’activité anormale. Pendant ces trois semaines, toutes les autres détections ATA fonctionnent correctement. L’installation de la migration des données **Partielle** prend beaucoup moins de temps. Si vous sélectionnez la migration des données **Complète**, l’installation peut prendre beaucoup plus de temps. La durée estimée et l’espace disque requis, qui sont répertoriés dans l’écran **Migration des données**, dépendent de la quantité de trafic de réseau capturée, précédemment enregistrée dans les versions précédentes d’ATA. Avant de sélectionner **Partielle** ou **Complète**, veillez à vérifier ces exigences.  
     
     ![Migration des données ATA](media/migration-data-migration17.png)
 
@@ -74,7 +74,7 @@ Dans cette version, le même fichier d’installation (Microsoft ATA Center Setu
 4.  Une fois la mise à jour du centre ATA terminée, cliquez sur **Lancer** pour afficher l’écran **Mettre à jour** dans la console ATA pour les passerelles ATA.
     ![Écran de réussite de mise à jour](media/migration-center-success17.png)
 
-5.  Dans l’écran **Mises à jour**, si vous avez déjà configuré vos passerelles ATA pour une mise à jour automatique, elles seront mises à jour à ce stade. Sinon, cliquez sur **Mettre à jour** en regard de chaque passerelle ATA.
+5.  Dans l’écran **Mises à jour**, si vous avez déjà configuré vos passerelles ATA pour une mise à jour automatique, elles sont mises à jour à ce stade. Sinon, cliquez sur **Mettre à jour** en regard de chaque passerelle ATA.
   ![Image de mise à jour des passerelles](media/migration-update-gw-17.png)
 
   
@@ -83,7 +83,7 @@ Dans cette version, le même fichier d’installation (Microsoft ATA Center Setu
 > Le port d’écoute Syslog configuré sur toutes les passerelles sera modifié : il s’agira du port 514.
  
 > [!NOTE] 
-> Pour installer de nouvelles passerelles ATA, accédez à l’écran **Passerelles** et cliquez sur **Télécharger l’installation de la passerelle** pour obtenir le package d’installation ATA 1.7 et suivre les instructions d’installation de la nouvelle passerelle, comme décrit dans [Étape 4. Installez la passerelle ATA](install-ata-step4.md).
+> Pour installer de nouvelles passerelles ATA, accédez à l’écran **Passerelles** et cliquez sur **Télécharger l’installation de la passerelle** pour obtenir le package d’installation ATA 1.7 et suivre les instructions d’installation de la nouvelle passerelle, comme décrit dans [Étape 4. Installer la passerelle ATA](install-ata-step4.md).
 
 
 

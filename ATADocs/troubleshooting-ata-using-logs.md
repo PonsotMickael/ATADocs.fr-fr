@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 06/30/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,22 +13,20 @@ ms.technology:
 ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d5a3587de2aa628eb61ace199b2282e7d7fe773a
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: 02cf0ce0f80dbb61c2326088b20c83ef403b2246
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
 
 
-# Résolution des problèmes liés à ATA à l’aide des journaux ATA
-<a id="troubleshooting-ata-using-the-ata-logs" class="xliff"></a>
+# <a name="troubleshooting-ata-using-the-ata-logs"></a>Résolution des problèmes liés à ATA à l’aide des journaux ATA
 Les journaux ATA offrent un aperçu de ce que fait chaque composant ATA à un moment donné.
 
-## Journaux de la passerelle ATA
-<a id="ata-gateway-logs" class="xliff"></a>
+## <a name="ata-gateway-logs"></a>Journaux de la passerelle ATA
 Dans cette section, chaque référence à la passerelle ATA concerne également la passerelle légère ATA. 
 
 Les journaux de la passerelle ATA se trouvent dans un sous-dossier nommé **Logs** où ATA est installé. L’emplacement par défaut est : **C:\Program Files\Microsoft Advanced Threat Analytics\**. Dans l’emplacement de l’installation par défaut, il se trouve ici : **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
@@ -43,14 +41,13 @@ La passerelle ATA dispose des journaux suivants :
 
 -   **Microsoft.Tri.Gateway-ExceptionStatistics.log** : ce journal regroupe l’ensemble des erreurs et exceptions similaires, et évalue leur nombre.
     Ce fichier est vide lors de chaque démarrage du service de la passerelle ATA et est mis à jour toutes les minutes. Son utilisation principale consiste à déterminer d’éventuels nouveaux problèmes ou erreurs liés à la passerelle ATA. Les erreurs étant regroupées, il est plus facile de déterminer rapidement la présence de nouveaux problèmes.
--   **Microsoft.Tri.Gateway.Updater.log** : ce journal est utilisé pour le processus de mise à jour de passerelle, qui est responsable de la mise à jour automatique de la passerelle si elle est configurée. Pour la passerelle légère ATA, le processus de mise à jour de passerelle est également responsable des limitations de ressources de la passerelle légère ATA.
+-   **Microsoft.Tri.Gateway.Updater.log** : ce journal est utilisé pour le processus de mise à jour de passerelle, qui est responsable de la mise à jour automatique de la passerelle ATA si elle est configurée. Pour la passerelle légère ATA, le processus de mise à jour de passerelle est également responsable des limitations de ressources de la passerelle légère ATA.
 -   **Microsoft.Tri.Gateway.Updater-ExceptionStatistics.log** : ce journal regroupe toutes les erreurs et exceptions similaires, et mesure leur nombre. Ce fichier est vide à chaque démarrage du service de mise à jour ATA et est mis à jour chaque minute. Il vous permet de vérifier s’il existe de nouveaux problèmes ou erreurs avec la mise à jour ATA. Les erreurs étant regroupées, il est très facile de savoir rapidement si de nouveaux problèmes ou erreurs ont été détectées.
 
 > [!NOTE]
 > Les trois premiers fichiers journaux ont une taille maximale de 50 Mo. Quand cette taille est atteinte, un nouveau fichier journal est ouvert et le précédent est renommé en « &lt;nom_fichier_origine&gt;-Archive-00000 » où le nombre augmente chaque fois qu’il est renommé. Par défaut, s’il existe déjà plus de 10 fichiers du même type, les plus anciens sont supprimés.
 
-## Journaux du centre ATA
-<a id="ata-center-logs" class="xliff"></a>
+## <a name="ata-center-logs"></a>Journaux du centre ATA
 Les journaux du centre ATA sont situés dans un sous-dossier appelé **Logs**. Dans l’emplacement de l’installation par défaut, il se trouve ici : **C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs**.
 > [!Note]
 > Les journaux de la console ATA qui étaient autrefois sous Journaux IIS se trouvent désormais sous Journaux du centre ATA.
@@ -70,8 +67,7 @@ Le centre ATA dispose des journaux suivants :
 > Les trois premiers fichiers journaux ont une taille maximale de 50 Mo. Quand cette taille est atteinte, un nouveau fichier journal est ouvert et le précédent est renommé en « &lt;nom_fichier_origine&gt;-Archive-00000 » où le nombre augmente chaque fois qu’il est renommé. Par défaut, s’il existe déjà plus de 10 fichiers du même type, les plus anciens sont supprimés.
 
 
-## Journaux de déploiement ATA
-<a id="ata-deployment-logs" class="xliff"></a>
+## <a name="ata-deployment-logs"></a>Journaux de déploiement ATA
 Les journaux de déploiement ATA sont situés dans le répertoire temp de l’utilisateur qui a installé le produit. Dans l’emplacement de l’installation par défaut, il se trouve ici : **C:\Users\Administrator\AppData\Local\Temp** (ou un répertoire au-dessus de %temp%).
 
 Journaux de déploiement du centre ATA :
@@ -93,8 +89,7 @@ Journaux de déploiement de la passerelle ATA et de la passerelle légère ATA 
 > En plus des journaux de déploiement mentionnés ici, il existe d’autres journaux qui commencent par « Microsoft Advanced Threat Analytics » qui peuvent également fournir des informations supplémentaires sur le processus de déploiement.
 
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Voir aussi
 - [Prérequis au déploiement d’ATA](ata-prerequisites.md)
 - [Planification de la capacité d’ATA](ata-capacity-planning.md)
 - [Configurer la collecte d’événements](configure-event-collection.md)

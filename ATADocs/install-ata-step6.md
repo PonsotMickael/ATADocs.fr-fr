@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3798f7faeb62e44d3877880c2d594332502e76c5
-ms.sourcegitcommit: e9f2bfd610b7354ea3fef749275f16819d60c186
+ms.openlocfilehash: 2f38ee3b8a50a4776709f1a5aa1f37af869a916b
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -36,10 +36,10 @@ Pour améliorer les capacités de détection, ATA a besoin des événements Wind
 > [!NOTE]
 > Pour les versions 1.8 et ultérieures d’ATA, la configuration de la collecte d’événements n’est plus nécessaire pour les passerelles légères ATA. La passerelle légère ATA peut désormais lire les événements localement, sans qu’il soit nécessaire de configurer le transfert d’événements.
 
-Outre la collecte et l’analyse du trafic réseau à destination et en provenance des contrôleurs de domaine, ATA peut utiliser des événements Windows pour améliorer les détections. Il utilise l’événement 4776 pour NTLM qui améliore plusieurs détections et les événements 4732, 4733, 4728, 4729, 4756 et 4757 pour améliorer la détection des modifications de groupes sensibles. Vous pouvez soit recevoir cet événement de votre serveur SIEM, soit définir le transfert d’événements Windows à partir de votre contrôleur de domaine. Les événements collectés fournissent à ATA des informations supplémentaires qui ne sont pas accessibles par le biais du trafic réseau du contrôleur de domaine.
+Outre la collecte et l’analyse du trafic réseau à destination et en provenance des contrôleurs de domaine, ATA peut utiliser des événements Windows pour améliorer les détections. Il utilise l’événement 4776 pour NTLM, qui améliore plusieurs détections et les événements 4732, 4733, 4728, 4729, 4756 et 4757 pour améliorer la détection des modifications de groupes sensibles. Vous pouvez soit recevoir cet événement de votre serveur SIEM, soit définir le transfert d’événements Windows à partir de votre contrôleur de domaine. Les événements collectés fournissent à ATA des informations supplémentaires qui ne sont pas accessibles par le biais du trafic réseau du contrôleur de domaine.
 
 #### <a name="siemsyslog"></a>SIEM/Syslog
-Pour qu’ATA puisse consommer des données provenant d’un serveur Syslog, vous devez effectuer les opérations suivantes :
+Pour qu’ATA puisse consommer des données provenant d’un serveur Syslog, vous devez effectuer les étapes suivantes :
 
 -   Configurez vos serveurs de passerelle ATA pour écouter et accepter les événements transférés à partir du serveur SIEM/Syslog.
 > [!NOTE]
@@ -76,7 +76,7 @@ ATA prend en charge les événements SIEM aux formats suivants :
 
     1.  Constante RsaSA (doit être indiquée).
 
-    2.  Horodateur de l’événement réel (vérifiez qu’il ne s’agit pas de l’horodateur de l’arrivée au serveur SIEM ou de l’envoi à ATA). De préférence avec une précision de l’ordre de la milliseconde (ceci est très important).
+    2.  Horodateur de l’événement réel (vérifiez qu’il ne s’agit pas de l’horodateur de l’arrivée au serveur SIEM ou de l’envoi à ATA). De préférence avec une précision de l’ordre de la milliseconde (ceci est important).
 
     3.  ID de l’événement Windows
 
@@ -107,7 +107,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|Le c
 
     -   externalId = ID de l’événement Windows.
 
-    -   rt = horodateur de l’événement réel (vérifiez qu’il ne s’agit pas de l’horodateur de l’arrivée au serveur SIEM ou de l’envoi à Microsoft). De préférence avec une précision de l’ordre de la milliseconde (ceci est très important).
+    -   rt = Horodateur de l’événement réel (vérifiez qu’il ne s’agit pas de l’horodateur de l’arrivée au serveur SIEM ou de l’envoi à ATA). De préférence avec une précision de l’ordre de la milliseconde (ceci est important).
 
     -   cat = nom du journal des événements Windows.
 
@@ -152,7 +152,7 @@ Code d’erreur : 0x0
 
     -   SourceName = nom du fournisseur d’événements Windows.
 
-    -   TimeGenerated = horodateur de l’événement réel (vérifiez qu’il ne s’agit pas de l’horodateur de l’arrivée au serveur SIEM ou de l’envoi à ATA). Le format doit être aaaaMMjjHHmmss.FFFFFF, avec de préférence une précision de l’ordre de la milliseconde (ceci est très important).
+    -   TimeGenerated = horodateur de l’événement réel (vérifiez qu’il ne s’agit pas de l’horodateur de l’arrivée au serveur SIEM ou de l’envoi à ATA). Le format doit être aaaaMMjjHHmmss.FFFFFF, avec de préférence une précision de l’ordre de la milliseconde (ceci est important).
 
     -   ComputerName = nom de l’hôte source.
 
@@ -175,7 +175,7 @@ Les champs requis sont les suivants :
 - Nom de domaine complet du contrôleur de domaine
 - ID de l’événement Windows
 
-TimeGenerated représente l’horodateur de l’événement réel (vérifiez qu’il ne s’agit pas de l’horodateur de l’arrivée au serveur SIEM ou de l’envoi à ATA). Le format doit être aaaaMMjjHHmmss.FFFFFF, avec de préférence une précision de l’ordre de la milliseconde (ceci est très important).
+TimeGenerated représente l’horodateur de l’événement réel (vérifiez qu’il ne s’agit pas de l’horodateur de l’arrivée au serveur SIEM ou de l’envoi à ATA). Le format doit être aaaaMMjjHHmmss.FFFFFF, avec de préférence une précision de l’ordre de la milliseconde (ceci est important).
 
 Message représente le texte de l’événement Windows d’origine.
 

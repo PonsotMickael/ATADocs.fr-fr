@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 06/23/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: bc3ad332e1a8af6259eadaecc4638f27fded67c6
-ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
+ms.openlocfilehash: 2172b6b8e1c54345841357e1f4d0a7dec2c346db
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -105,18 +105,18 @@ Voici la liste des principaux compteurs du centre ATA :
 > [!div class="mx-tableFixed"]
 |Compteur|Description|Seuil|Résolution des problèmes|
 |-----------|---------------|-------------|-------------------|
-|Microsoft ATA Center\EntityReceiver Entity Batch Block Size|Nombre de lots d’entités mis en file d’attente par le centre ATA.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener.  Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Microsoft ATA Center\NetworkActivityProcessor Network Activity Block Size|Nombre d’activités réseau en attente de traitement.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 50 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Microsoft ATA Center\EntityProfiler Network Activity Block Size|Nombre d’activités réseau en attente de profilage.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
-|Centre Microsoft ATA\Base de données &#42; Taille de bloc|Nombre d’activités réseau d’un type spécifique en attente d’écriture dans la base de données.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 50 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à **Processus des composants ATA** ci-dessus.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Microsoft ATA Center\EntityReceiver Entity Batch Block Size|Nombre de lots d’entités mis en file d’attente par le centre ATA.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener.  Reportez-vous à la section **Processus des composants ATA** précédente.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Microsoft ATA Center\NetworkActivityProcessor Network Activity Block Size|Nombre d’activités réseau en attente de traitement.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 50 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à la section **Processus des composants ATA** précédente.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Microsoft ATA Center\EntityProfiler Network Activity Block Size|Nombre d’activités réseau en attente de profilage.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 10 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à la section **Processus des composants ATA** précédente.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
+|Centre Microsoft ATA\Base de données &#42; Taille de bloc|Nombre d’activités réseau d’un type spécifique en attente d’écriture dans la base de données.|Doit être inférieur à la valeur maximale de -1 (valeur maximale par défaut : 50 000)|Vérifiez si un composant a atteint sa taille maximale et bloque les composants qui le précèdent jusqu’à NetworkListener. Reportez-vous à la section **Processus des composants ATA** précédente.<br /><br />Vérifiez qu’il n’existe aucun problème avec le processeur ou la mémoire.|
 
 
 > [!NOTE]
 > -   Les valeurs temporelles des compteurs sont exprimées en millisecondes.
-> -   Il est parfois plus pratique de surveiller tous les compteurs en même temps à l’aide du graphique « Rapport » (par exemple : surveillance en temps réel de l’ensemble des compteurs)
+> -   Il est parfois plus pratique de surveiller tous les compteurs en même temps à l’aide du graphique « Rapport » (par exemple : surveillance en temps réel de l’ensemble des compteurs).
 
 ## <a name="operating-system-counters"></a>Compteurs de système d’exploitation
-Voici la liste des principaux compteurs de système d’exploitation :
+Voici le tableau des principaux compteurs de système d’exploitation à prendre en compte :
 
 > [!div class="mx-tableFixed"]
 |Compteur|Description|Seuil|Résolution des problèmes|
@@ -125,7 +125,7 @@ Voici la liste des principaux compteurs de système d’exploitation :
 |Système\Commutateurs de contexte\s|Taux combiné auquel tous les processeurs commutent d’un thread à l’autre.|Inférieur à 5 000 cœurs&#42; (cœurs physiques)|Vérifiez si l’un des processus prend beaucoup plus de temps processeur qu’il ne devrait.<br /><br />Ajoutez des processeurs.<br /><br />Réduisez la quantité de trafic sur chaque serveur.<br /><br />Le compteur « Processeur(_Total)\% de temps processeur » peut être moins précis sur les serveurs virtuels. Dans ce cas, le moyen le plus précis de mesurer le manque de puissance du processeur est d’utiliser le compteur « System\Longueur de la file du processeur ».|
 |Système\Longueur de la file du processeur|Nombre de threads prêts à être exécutés et en attente de planification.|Inférieur à 5 cœurs&#42; (cœurs physiques)|Vérifiez si l’un des processus prend beaucoup plus de temps processeur qu’il ne devrait.<br /><br />Ajoutez des processeurs.<br /><br />Réduisez la quantité de trafic sur chaque serveur.<br /><br />Le compteur « Processeur(_Total)\% de temps processeur » peut être moins précis sur les serveurs virtuels. Dans ce cas, le moyen le plus précis de mesurer le manque de puissance du processeur est d’utiliser le compteur « System\Longueur de la file du processeur ».|
 |Mémoire\Mo disponibles|Quantité de mémoire physique (RAM) disponible pour l’allocation.|Doit être supérieur à 512|Vérifiez si l’un des processus prend beaucoup plus de mémoire physique qu’il ne devrait.<br /><br />Augmentez la quantité de mémoire physique.<br /><br />Réduisez la quantité de trafic sur chaque serveur.|
-|LogicalDisk(&#42;)\Moy. Disque s\Lecture|Latence moyenne de lecture des données à partir du disque (vous devez choisir le lecteur de base de données comme instance).|Doit être inférieur à 10 millisecondes|Vérifiez si l’un des processus utilise le lecteur de la base de données plus qu’il ne devrait.<br /><br />Consultez l’équipe ou le fournisseur chargé du stockage pour savoir si ce lecteur peut fournir la charge de travail actuelle avec une latence inférieure à 10 ms. La charge de travail actuelle peut être déterminée à l’aide des compteurs d’utilisation du disque.|
+|LogicalDisk(&#42;)\Moy. Disque s\Lecture|Latence moyenne de lecture des données à partir du disque (vous devez choisir le lecteur de base de données comme instance).|Doit être inférieur à 10 millisecondes|Vérifiez si l’un des processus utilise le lecteur de la base de données plus qu’il ne devrait.<br /><br />Consultez l’équipe ou le fournisseur en charge du stockage pour savoir si ce lecteur peut fournir la charge de travail actuelle avec une latence inférieure à 10 ms. La charge de travail actuelle peut être déterminée à l’aide des compteurs d’utilisation du disque.|
 |LogicalDisk(&#42;)\Moy. Disque s\Écriture|Latence moyenne d’écriture des données sur le disque (vous devez choisir le lecteur de base de données comme instance).|Doit être inférieur à 10 millisecondes|Vérifiez si l’un des processus utilise le lecteur de la base de données plus qu’il ne devrait.<br /><br />Consultez l’équipe ou le fournisseur en charge du stockage pour savoir si ce lecteur peut fournir la charge de travail actuelle avec une latence inférieure à 10 ms. La charge de travail actuelle peut être déterminée à l’aide des compteurs d’utilisation du disque.|
 |\LogicalDisk(&#42;)\Lectures disque\s|Taux d’opérations de lecture sur le disque.|Aucun seuil|Les compteurs d’utilisation du disque peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage.|
 |\LogicalDisk(&#42;)\Octets de lecture disque\s|Nombre d’octets lus par seconde sur le disque.|Aucun seuil|Les compteurs d’utilisation du disque peuvent apporter des informations utiles à la résolution des problèmes de latence de stockage.|

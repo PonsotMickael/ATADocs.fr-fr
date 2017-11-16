@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/25/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 5d639e84-2e37-43a9-9667-49be6c4fa8b7
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 7bd0f90acbb6a2d8eb84fd09bc4d859fff082273
-ms.sourcegitcommit: 5563c6861bb5db5cb73e058e5a51b4938b9a7d46
+ms.openlocfilehash: 07be2dad511158a9234c99287f7eefd7cc12ba83
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -74,7 +74,7 @@ Vous trouverez les événements ici :
 
 1022 – Alerte d’intégrité sur l’échec de la résolution des adresses IP externes du centre ATA 
  
-## <a name="ata-suspicious-ctivity-events"></a>Événements d’activités suspectes ATA
+## <a name="ata-suspicious-activity-events"></a>Événements d’activités suspectes ATA
 
 2001 – Activité suspecte de comportement anormal 
 
@@ -114,9 +114,9 @@ Vous trouverez les événements ici :
 
 2022 – Activité suspecte de Golden ticket 
 
-2023 – Activité suspecte de changement d’appartenance à un groupe sensible anormal 
-
 2023 – Activité suspecte d’attaque par force brute 
+
+2024 – Activité suspecte de changement d’appartenance à un groupe sensible anormal  
 
 ## <a name="ata-auditing-events"></a>Événements d’audit ATA
 
@@ -128,7 +128,7 @@ Vous trouverez les événements ici :
 
 3004 - Licence ATA activée
 
-3005 - Connexion à la console ATA
+3005 – Connexion à la console ATA
 
 3006 – Changement manuel de l’état d’activité d’intégrité 
 

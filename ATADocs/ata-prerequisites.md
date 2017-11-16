@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/25/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2f720118b1d9ac08f26b7057e5c7b6706ff4b0b1
-ms.sourcegitcommit: 0cc999b20e919abe4d6edaedee78185788a3e3b9
+ms.openlocfilehash: 29aef3eeddf6045d200f9b27809567f18a2fa2d0
+ms.sourcegitcommit: 4d9d1e089bbb50baceb87f273ddf2d3aaa9a78e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2017
+ms.lasthandoff: 11/14/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -56,9 +56,9 @@ Cette section répertorie les informations que vous devez rassembler ainsi que l
     > [!NOTE]
     > Si vous avez défini des listes de contrôle d’accès (ACL) personnalisées sur différentes unités d’organisation dans votre domaine, vérifiez que l’utilisateur sélectionné dispose d’autorisations d’accès en lecture à ces unités d’organisation.
 
--   N’installez pas Microsoft Message Analyzer sur une passerelle ATA ou une passerelle légère ATA. Le pilote de Message Analyzer est en conflit avec les pilotes de la passerelle ATA et de la passerelle légère ATA. Si vous exécutez Wireshark sur la passerelle ATA, vous devez redémarrer le service de passerelle Microsoft Advanced Threat Analytics après avoir arrêté la capture Wireshark. Si ce n’est pas le cas, la passerelle arrête la capture du trafic. Notez que l’exécution de Wireshark sur une passerelle légère ATA n’interfère pas avec la passerelle légère ATA.
+-   N’installez pas Microsoft Message Analyzer sur une passerelle ATA ou une passerelle légère ATA. Le pilote de Message Analyzer est en conflit avec les pilotes de la passerelle ATA et de la passerelle légère ATA. Si vous exécutez Wireshark sur la passerelle ATA, vous devez redémarrer le service de passerelle Microsoft Advanced Threat Analytics après avoir arrêté la capture Wireshark. Si ce n’est pas le cas, la passerelle arrête la capture du trafic. L’exécution de Wireshark sur une passerelle légère ATA n’interfère pas avec la passerelle légère ATA.
 
--    Recommandé : L’utilisateur doit disposer d’autorisations en lecture seule sur le conteneur Objets supprimés. ATA peut ainsi détecter la suppression en bloc d’objets du domaine. Pour plus d’informations sur la configuration des autorisations en lecture seule sur le conteneur Objets supprimés, consultez la section **Modifier les autorisations sur un conteneur d’objets supprimés** dans la rubrique [Afficher ou définir des autorisations sur un objet d’annuaire](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx).
+-    Recommandé : L’utilisateur doit disposer d’autorisations en lecture seule sur le conteneur Objets supprimés. ATA peut ainsi détecter la suppression en bloc d’objets du domaine. Pour plus d’informations sur la configuration des autorisations en lecture seule sur le conteneur Objets supprimés, consultez la section **Modifier les autorisations sur un conteneur d’objets supprimés** dans l'article [Afficher ou définir des autorisations sur un objet d’annuaire](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx).
 
 -   Facultatif : compte d’un utilisateur sans activité réseau. Ce compte est configuré comme l’utilisateur honeytoken ATA. Pour configurer l’utilisateur Honeytoken, vous devez disposer du SID du compte d’utilisateur, et non du nom d’utilisateur. Pour plus d’informations, consultez [Configurer des exclusions d’adresses IP et un utilisateur Honeytoken](install-ata-step7.md).
 
@@ -101,7 +101,7 @@ Le tableau suivant répertorie les ports qui, au minimum, doivent être ouverts 
 
 |Protocole|Transport|Port|Vers/À partir de|Sens|
 |------------|-------------|--------|-----------|-------------|
-|**SSL** (communications ATA)|TCP|443 ou configurable|Passerelle ATA|Entrant|
+|**SSL** (communications ATA)|TCP|443|Passerelle ATA|Entrant|
 |**HTTP** (facultatif)|TCP|80|Réseau d'entreprise|Entrant|
 |**HTTPS**|TCP|443|Réseau d’entreprise et passerelle ATA|Entrant|
 |**SMTP** (facultatif)|TCP|25|Serveur SMTP|Sortant|
@@ -206,7 +206,7 @@ Le tableau suivant répertorie les ports qui, au minimum, doivent être configur
 |DNS|TCP et UDP|53|Serveurs DNS|Sortant|
 |NTLM sur RPC|TCP|135|Tous les appareils sur le réseau|Sortant|
 |NetBIOS|UDP|137|Tous les appareils sur le réseau|Sortant|
-|SSL|TCP|443 ou comme configuré pour le service du centre|Centre ATA :<br /><br />- Adresse IP du service du centre<br />-   Adresse IP de la console|Sortant|
+|SSL|TCP|443|Centre ATA|Sortant|
 |Syslog (facultatif)|UDP|514|Serveur SIEM|Entrant|
 
 > [!NOTE]
@@ -262,7 +262,7 @@ Le tableau suivant répertorie les ports qui, au minimum, sont requis par la pas
 |DNS|TCP et UDP|53|Serveurs DNS|Sortant|
 |NTLM sur RPC|TCP|135|Tous les appareils sur le réseau|Sortant|
 |NetBIOS|UDP|137|Tous les appareils sur le réseau|Sortant|
-|SSL|TCP|443 ou comme configuré pour le service du centre|Centre ATA :<br /><br />- Adresse IP du service du centre<br />-   Adresse IP de la console|Sortant|
+|SSL|TCP|443|Centre ATA|Sortant|
 |Syslog (facultatif)|UDP|514|Serveur SIEM|Entrant|
 
 > [!NOTE]

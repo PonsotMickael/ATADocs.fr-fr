@@ -4,7 +4,7 @@ description: "Explique les différentes options de support pour les versions de 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -12,17 +12,17 @@ ms.technology:
 ms.assetid: a8afbd91-c888-4dfc-94ab-72e38745163e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f1092e1cf6c991785dbf8bad3b197b68a21c0833
-ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.openlocfilehash: f77f8ef71765dc71d690876d4043e1b3702b9971
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
 # <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Support des versions de Microsoft Advanced Threat Analytics (ATA)
 
-Microsoft prévoit de publier des mises à jour d’ATA plusieurs fois par an, chaque version de mise à jour étant prise en charge 12 mois à partir de sa date de publication générale (GA). Un support technique est assuré sur toute cette période de 12 mois. Toutefois, notre structure de support est désormais dynamique et évolue en deux phases de maintenance distinctes qui dépendent de la disponibilité de la dernière version.
+Microsoft prévoit de publier des mises à jour d’ATA plusieurs fois par an, chaque version de mise à jour étant prise en charge 12 mois à partir de sa date de publication générale (GA). Un support technique est assuré pendant les 12 mois. Toutefois, notre structure de support est désormais dynamique et évolue en deux phases de maintenance distinctes qui dépendent de la disponibilité de la dernière version.
 
 -   Phase de maintenance Mises à jour critiques et de sécurité : Quand vous exécutez la dernière version d’ATA, vous recevez des mises à jour de sécurité et des mises à jour critiques.
 

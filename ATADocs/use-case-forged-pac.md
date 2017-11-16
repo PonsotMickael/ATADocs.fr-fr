@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/4/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3db435e-9553-40a2-a2ad-278fad4f0ef5
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 842e9866c5fdb447f49600501c4486da6db902f2
-ms.sourcegitcommit: 4118dd4bd98994ec8a7ea170b09aa301a4be2c8a
+ms.openlocfilehash: 1820687d1340dfbef703129e5fad7d7a63cfd632
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -61,7 +61,7 @@ Quand l’attaquant essaie d’élever ses privilèges, ATA le détecte et marqu
 ATA indique dans l’alerte d’activité suspecte si l’élévation de privilèges à l’aide de données d’autorisation falsifiées a réussi ou échoué. Vous devez examiner à la fois les alertes de réussite et d’échec, car les tentatives ayant échoué peuvent toujours indiquer la présence d’un utilisateur malveillant dans votre environnement.
 
 ## <a name="investigating"></a>Examen
-Après avoir reçu l’alerte d’une élévation de privilèges à l’aide de données d’autorisation falsifiées dans ATA, vous devez déterminer ce qui doit être fait pour contenir l’attaque. Pour ce faire, vous devez tout d’abord classer l’alerte comme suit : 
+Après avoir reçu l’alerte d’une élévation de privilèges à l’aide de données d’autorisation falsifiées dans ATA, vous devez déterminer ce qui doit être fait pour contenir l’attaque. Pour ce faire, vous devez tout d’abord classer l’alerte comme un des types d'alerte suivants : 
 -   Vrai positif : action malveillante détectée par ATA
 -   Faux positif : fausse alerte. L’élévation de privilèges à l’aide de données d’autorisation falsifiées ne s’est pas produite (il s’agit d’un événement ATA interprété par erreur comme une attaque d’élévation de privilèges à l’aide de données d’autorisation falsifiées)
 -   Vrai positif bénin : action détectée par ATA qui est réelle, mais pas malveillante, comme un test de pénétration
@@ -76,7 +76,7 @@ Le graphique suivant vous aide à déterminer les étapes à suivre :
 
 
 2.  Si l’attaque d’élévation de privilèges à l’aide de données d’autorisation falsifiées a abouti :
-    -   Si le contrôleur de domaine sur lequel l’alerte a été déclenchée est correctement corrigé, il s’agit d’un faux positif. Dans ce cas, vous devez ignorer l’alerte et envoyer un e-mail de notification à l’équipe ATA à l’adresse ATAEval@microsoft.com pour que nous puissions améliorer en permanence nos détections. 
+    -   Si le contrôleur de domaine sur lequel l’alerte a été déclenchée est correctement corrigé, il s’agit d’un faux positif. Dans ce cas, vous devez ignorer l’alerte et envoyer un e-mail de notification à l’équipe ATA à l’adresse ATAEval@microsoft.com pour que nous puissions améliorer en permanence ses détections. 
     -   Si le contrôleur de domaine dans l’alerte n’est pas correctement corrigé :
         -   Si le service répertorié dans l’alerte n’a pas son propre mécanisme d’autorisation, il s’agit d’un vrai positif et vous devez exécuter le processus de réponse aux incidents de votre organisation. 
         -   Si le service listé dans l’alerte a un mécanisme d’autorisation interne qui demande des données d’autorisation, il peut être identifié par erreur comme une attaque d’élévation de privilèges à l’aide de données d’autorisation falsifiées. 

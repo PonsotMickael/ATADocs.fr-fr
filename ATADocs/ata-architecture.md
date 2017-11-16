@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/20/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 250c68f0efc7064f7ec4a4578342c935d04e815b
-ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
+ms.openlocfilehash: 66f5678285c203476aee3daafae22ac7b34d0ae2
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -95,7 +95,7 @@ Prenez en compte les critères suivants quand vous choisissez le nombre de centr
 
 -   Un centre ATA ne peut surveiller qu’une seule forêt Active Directory. Si vous avez plusieurs forêts Active Directory, vous avez besoin d’au moins un centre ATA par forêt Active Directory.
 
--    Dans les déploiements d’Active Directory à très grande échelle, un seul centre ATA peut ne pas être suffisant pour gérer le trafic de tous les contrôleurs de domaine. Dans ce cas, plusieurs centres ATA sont nécessaires. Le nombre de centres ATA doit être défini par la [planification de la capacité ATA](ata-capacity-planning.md).
+-    Dans les déploiements d’Active Directory à grande échelle, un seul centre ATA ne sera peut-être pas suffisant pour gérer le trafic de tous les contrôleurs de domaine. Dans ce cas, plusieurs centres ATA sont nécessaires. Le nombre de centres ATA doit être défini par la [planification de la capacité ATA](ata-capacity-planning.md).
 
 ## <a name="ata-gateway-and-ata-lightweight-gateway"></a>Passerelle ATA et passerelle légère ATA
 
@@ -161,14 +161,13 @@ Si Active Directory a besoin de davantage de puissance de calcul, le quota requi
 |60 %|15 %|10 %|15 %|Oui|
 
 
-
 ## <a name="your-network-components"></a>Composants du réseau
-Pour que vos composants réseau fonctionne avec ATA, vérifiez les éléments suivants :
+Pour utiliser ATA, veillez à vérifier que les composants suivants sont configurés.
 
 ### <a name="port-mirroring"></a>Mise en miroir des ports
-Si vous utilisez des passerelles ATA, vous devez configurer la mise en miroir des ports pour les contrôleurs de domaine à surveiller et définir la passerelle ATA comme destination à l’aide des commutateurs physiques ou virtuels. Une autre option consiste à utiliser des TAP réseau. ATA fonctionnera si plusieurs contrôleurs de domaine sont surveillés, mais pas tous. Toutefois, la détection sera moins efficace.
+Si vous utilisez des passerelles ATA, vous devez configurer la mise en miroir des ports pour les contrôleurs de domaine à surveiller et définir la passerelle ATA comme destination à l’aide des commutateurs physiques ou virtuels. Une autre option consiste à utiliser des TAP réseau. ATA fonctionne si plusieurs contrôleurs de domaine sont surveillés, mais pas tous. Toutefois, la détection est moins efficace.
 
-Même si tout le trafic réseau des contrôleurs de domaine est mis en miroir vers la passerelle ATA, seul un très petit pourcentage de ce trafic est envoyé (compressé) au centre ATA à des fins d’analyse.
+Même si tout le trafic réseau des contrôleurs de domaine est mis en miroir vers la passerelle ATA, seul un petit pourcentage de ce trafic est envoyé (compressé) au centre ATA à des fins d’analyse.
 
 Les contrôleurs de domaine et les passerelles ATA peuvent être physiques ou virtuels. Pour plus d’informations, consultez [Configurer la mise en miroir des ports](configure-port-mirroring.md).
 
@@ -178,7 +177,7 @@ Pour améliorer la détection ATA de l’attaque Pass-the-Hash, de l’attaque p
 
 -   Configuration de la passerelle ATA pour écouter les événements SIEM <br>Configurez votre serveur SIEM de manière à transférer des événements Windows spécifiques vers ATA. ATA prend en charge plusieurs fournisseurs SIEM. Pour plus d’informations, consultez [Configurer la collecte d’événements](configure-event-collection.md).
 
--   Configuration du transfert d’événements Windows<br>ATA peut aussi obtenir vos événements en configurant vos contrôleurs de domaine pour qu’ils transfèrent les événements Windows 4776, 4732, 4733, 4728, 4729, 4756 et 4757 à votre passerelle ATA. Cette méthode est particulièrement utile si vous n’avez pas de serveur SIEM ou si votre serveur SIEM n’est pas actuellement pris en charge par ATA. Pour plus d’informations sur le transfert d’événements Windows dans ATA, consultez [Configuration du transfert d’événements Windows](configure-event-collection.md#configuring-windows-event-forwarding). Notez que cela s’applique uniquement aux passerelles ATA physiques et non à la passerelle légère ATA.
+-   Configuration du transfert d’événements Windows<br>ATA peut aussi obtenir vos événements en configurant vos contrôleurs de domaine pour qu’ils transfèrent les événements Windows 4776, 4732, 4733, 4728, 4729, 4756 et 4757 à votre passerelle ATA. Cette méthode est particulièrement utile si vous n’avez pas de serveur SIEM ou si votre serveur SIEM n’est pas actuellement pris en charge par ATA. Pour plus d’informations sur le transfert d’événements Windows dans ATA, consultez [Configuration du transfert d’événements Windows](configure-event-collection.md#configuring-windows-event-forwarding). Cela s’applique uniquement aux passerelles ATA physiques et non à la passerelle légère ATA.
 
 ## <a name="related-videos"></a>Vidéos connexes
 - [Sélection du type de passerelle ATA approprié](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
