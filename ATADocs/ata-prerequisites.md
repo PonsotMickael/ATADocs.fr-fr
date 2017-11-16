@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d0d7ce6aae1bb59d266ddc0f7162ecfbc477b78a
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 29aef3eeddf6045d200f9b27809567f18a2fa2d0
+ms.sourcegitcommit: 4d9d1e089bbb50baceb87f273ddf2d3aaa9a78e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/14/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -101,7 +101,7 @@ Le tableau suivant répertorie les ports qui, au minimum, doivent être ouverts 
 
 |Protocole|Transport|Port|Vers/À partir de|Sens|
 |------------|-------------|--------|-----------|-------------|
-|**SSL** (communications ATA)|TCP|443 ou configurable|Passerelle ATA|Entrant|
+|**SSL** (communications ATA)|TCP|443|Passerelle ATA|Entrant|
 |**HTTP** (facultatif)|TCP|80|Réseau d'entreprise|Entrant|
 |**HTTPS**|TCP|443|Réseau d’entreprise et passerelle ATA|Entrant|
 |**SMTP** (facultatif)|TCP|25|Serveur SMTP|Sortant|
@@ -206,7 +206,7 @@ Le tableau suivant répertorie les ports qui, au minimum, doivent être configur
 |DNS|TCP et UDP|53|Serveurs DNS|Sortant|
 |NTLM sur RPC|TCP|135|Tous les appareils sur le réseau|Sortant|
 |NetBIOS|UDP|137|Tous les appareils sur le réseau|Sortant|
-|SSL|TCP|443 ou comme configuré pour le service du centre|Centre ATA :<br /><br />- Adresse IP du service du centre<br />-   Adresse IP de la console|Sortant|
+|SSL|TCP|443|Centre ATA|Sortant|
 |Syslog (facultatif)|UDP|514|Serveur SIEM|Entrant|
 
 > [!NOTE]
@@ -262,7 +262,7 @@ Le tableau suivant répertorie les ports qui, au minimum, sont requis par la pas
 |DNS|TCP et UDP|53|Serveurs DNS|Sortant|
 |NTLM sur RPC|TCP|135|Tous les appareils sur le réseau|Sortant|
 |NetBIOS|UDP|137|Tous les appareils sur le réseau|Sortant|
-|SSL|TCP|443 ou comme configuré pour le service du centre|Centre ATA :<br /><br />- Adresse IP du service du centre<br />-   Adresse IP de la console|Sortant|
+|SSL|TCP|443|Centre ATA|Sortant|
 |Syslog (facultatif)|UDP|514|Serveur SIEM|Entrant|
 
 > [!NOTE]
