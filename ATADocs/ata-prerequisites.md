@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/20/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 29aef3eeddf6045d200f9b27809567f18a2fa2d0
-ms.sourcegitcommit: 4d9d1e089bbb50baceb87f273ddf2d3aaa9a78e8
+ms.openlocfilehash: d3f112c455fbf2bbab2137d158cbd31fe6e02f7e
+ms.sourcegitcommit: 5a02c6d497265e65633f96f5f8264a29a18a1114
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/20/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -249,10 +249,15 @@ Vous pouvez déployer la passerelle légère ATA sur des contrôleurs de domaine
 Pour plus d’informations sur la configuration matérielle requise pour la passerelle légère ATA, consultez [Planification de la capacité ATA](ata-capacity-planning.md).
 
 ### <a name="time-synchronization"></a>Synchronisation de l’heure
+
 L’heure du serveur du centre ATA, des serveurs de la passerelle légère ATA et des contrôleurs de domaine doit être synchronisée pour que tout écart entre eux ne dépasse pas cinq minutes.
+
 ### <a name="network-adapters"></a>Cartes réseau
+
 La passerelle légère ATA surveille le trafic local sur toutes les cartes réseau du contrôleur de domaine. <br>
 Après le déploiement, vous pouvez utiliser la console ATA si vous voulez changer les cartes réseau analysées.
+
+La passerelle légère n’est pas prise en charge sur les contrôleurs de domaine exécutant Windows 2008 R2 avec l’association de carte réseau Broadcom activée.
 
 ### <a name="ports"></a>Ports
 Le tableau suivant répertorie les ports qui, au minimum, sont requis par la passerelle légère ATA :

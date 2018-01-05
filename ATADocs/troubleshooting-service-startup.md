@@ -1,11 +1,11 @@
 ---
-title: "Résolution des problèmes d’Advanced Threat Analytics en utilisant les journaux | Microsoft Docs"
-description: "Décrit comment vous pouvez utiliser les journaux ATA pour résoudre les problèmes"
+title: "Résolution des problèmes de démarrage du service Advanced Threat Analytics | Microsoft Docs"
+description: "Décrit comment résoudre les problèmes de démarrage d’ATA"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,17 +13,19 @@ ms.technology:
 ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 125376b1e3530481a3b9f62c4661dd10dce13f22
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 33ff11f592984b754521c562414ffeabd2d1f255
+ms.sourcegitcommit: 91158e5e63ce2021a1f5f85d47de03d963b7cb70
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/20/2017
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.8*
 
 
 
-# <a name="troubleshooting-ata-center-service-startup"></a>Résolution des problèmes de démarrage du service Centre ATA
+# <a name="troubleshooting-service-startup"></a>Résolution des problèmes de démarrage du service
+
+## <a name="troubleshooting-ata-center-service-startup"></a>Résolution des problèmes de démarrage du service Centre ATA
 
 Si votre centre ATA ne démarre pas, effectuez la procédure de dépannage suivante :
 
@@ -42,6 +44,22 @@ S’il peut démarrer, la plateforme est probablement opérationnelle. Sinon, il
         logman start "Microsoft ATA Center"
         sc start ATACenter
 
+## <a name="troubleshooting-ata-lightweight-gateway-startup"></a>Résolution des problèmes de démarrage de la passerelle légère ATA
+
+**Symptôme**
+
+Votre passerelle ATA ne démarre pas et vous obtenez cette erreur :<br></br>
+*System.Net.Http.HttpRequestException : Le code d’état de la réponse n’indique pas de réussite : 500 (Erreur interne du serveur)*
+
+**Description**
+
+Cela se produit parce que, dans le cadre du processus d’installation de la passerelle légère, ATA alloue un seuil de processeur qui permet à la passerelle légère d’utiliser le processeur avec une mémoire tampon de 15 %. Si vous avez configuré indépendamment un seuil à l’aide de la clé de Registre : ce conflit empêche la passerelle légère de démarrer. 
+
+**Résolution**
+
+1. Sous les clés de Registre, si vous trouvez une valeur DWORD appelée **Désactiver les compteurs de performances**, vérifiez qu’elle est définie sur **0** : `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\` `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance`
+ 
+2. Ensuite, redémarrez le service Pla. La passerelle légère ATA détecte automatiquement le changement et redémarre le service.
 
 
 ## <a name="see-also"></a>Voir aussi
