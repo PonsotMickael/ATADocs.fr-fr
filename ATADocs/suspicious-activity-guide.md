@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/13/2017
+ms.date: 12/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b72b60aabb616f6ef5f1307d9d229ae1229681d2
-ms.sourcegitcommit: 2550ea51d36a7411d84ef19c5af25595289b02bf
+ms.openlocfilehash: 0d951edf1037422c1ee52c8b1e35308665aad256
+ms.sourcegitcommit: 91158e5e63ce2021a1f5f85d47de03d963b7cb70
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 12/20/2017
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -301,19 +301,19 @@ Lors d’une reconnaissance à l’aide de l’énumération de comptes, un atta
 
 Dans cette détection, ATA peut détecter d'où vient l’attaque, le nombre total de tentatives et combien ont abouti. Si le nombre d’utilisateurs inconnus est trop élevé, ATA le détecte comme une activité suspecte. 
 
-**Investigation**
+**Examen**
 
 1. Cliquez sur l’alerte pour accéder à la page de détails correspondante. 
 
 2. Cet ordinateur hôte doit-il interroger le contrôleur de domaine pour savoir si des comptes existent (par exemple, des serveurs Exchange) ? <br></br>
 Est-ce qu’un script ou une application s’exécutant sur l’hôte pourrait générer ce comportement ? <br></br>
-Si la réponse à l’une de ces questions est oui, **fermez** l’activité suspecte (c’est un faux positif) et excluez cet hôte de l’activité suspecte.
+Si la réponse à l’une de ces questions est oui, **fermez** l’activité suspecte (c’est un vrai positif sans incidence) et excluez cet hôte de l’activité suspecte.
 
-3. Téléchargez les détails de l’alerte dans une feuille de calcul Excel pour voir clairement la liste des tentatives de comptes, avec d’un côté les comptes qui existent et de l’autre ceux qui n’existent pas. Si vous examinez la feuille des comptes qui n’existent pas et que vous pensez les connaître, il s’agit peut-être de comptes désactivés ou d’employés ayant quitté l’entreprise. Dans ce cas, il est peu probable que la tentative provienne d’un dictionnaire. Il s’agit très certainement d’une application ou d’un script qui vérifie quels comptes existent toujours dans Active Directory. C’est un vrai positif sans importance.
+3. Téléchargez les détails de l’alerte dans une feuille de calcul Excel pour voir clairement la liste des tentatives de comptes, avec d’un côté les comptes qui existent et de l’autre ceux qui n’existent pas. Si vous examinez la feuille des comptes qui n’existent pas et que vous pensez les connaître, il s’agit peut-être de comptes désactivés ou d’employés ayant quitté l’entreprise. Dans ce cas, il est peu probable que la tentative provienne d’un dictionnaire. Il s’agit très certainement d’une application ou d’un script qui vérifie les comptes qui existent toujours dans Active Directory, c’est donc un vrai positif sans incidence.
 
 3. Si les noms sont en grande partie inconnus, des tentatives ont-elle abouti à une correspondance à des noms de comptes existants dans Active Directory ? S’il n’y a aucune correspondance, la tentative n’a servi à rien, mais vous devez surveiller l’alerte pour voir si elle est mise à jour au fil du temps.
 
-4. Si l’une des tentatives obtient une correspondance à des noms de comptes existants, vous devez considérer cette alerte avec une priorité élevée. L’attaquant connaît l’existence de comptes dans votre environnement et peut essayer d’utiliser des attaques par force brute pour accéder à votre domaine en utilisant les noms d’utilisateur découverts. Vérifiez les noms de compte trouvés en recherchant d’autres activités suspectes. Regardez si des comptes sensibles se trouvent parmi les comptes trouvés.
+4. Si des tentatives correspondent à des noms de compte existants, l’attaquant connaît l’existence de comptes dans votre environnement et peut essayer d’utiliser des attaques par force brute pour accéder à votre domaine en utilisant les noms d’utilisateur découverts. Vérifiez les noms de compte trouvés en recherchant d’autres activités suspectes. Regardez si des comptes sensibles se trouvent parmi les comptes trouvés.
 
 
 **Correction**
@@ -350,6 +350,9 @@ Dans cette détection, aucune alerte n’est déclenchée durant le premier mois
 **Correction**
 
 Utilisez [l’outil SAMRi10](https://gallery.technet.microsoft.com/SAMRi10-Hardening-Remote-48d94b5b) pour mieux protéger votre environnement contre cette technique d’attaque.
+Si l’outil n’est pas applicable à votre contrôleur de domaine :
+1. L’ordinateur exécute-t-il un outil d’analyse des vulnérabilités ?  
+2. Vérifiez si les utilisateurs et groupes spécifiques interrogés dans l’attaque sont des comptes avec privilèges ou sensibles (par ex., PDG, directeur financier, gestion de l’informatique, etc.).  Si c’est le cas, examinez aussi les autres activités sur le point de terminaison et surveillez les ordinateurs auxquels les comptes interrogés sont connectés, car ils sont probablement la cible d’un mouvement latéral.
 
 ## <a name="reconnaissance-using-dns"></a>Reconnaissance à l’aide de DNS
 
