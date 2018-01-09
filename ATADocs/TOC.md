@@ -1,7 +1,7 @@
 # Comprendre et explorer
 ## [Qu’est-ce que Microsoft Advanced Threat Analytics ?](what-is-ata.md)
 ## [Quelles sont les menaces détectées par ATA ?](ata-threats.md)
-## Nouveautés d’ATA
+## Nouveautés dans ATA?
 ### [Nouveautés d’ATA version 1.8](whats-new-version-1.8.md)
 #### [Mise à jour vers ATA 1.8 : guide de migration](ata-update-1.8-migration-guide.md)
 ### [Nouveautés d’ATA version 1.7](whats-new-version-1.7.md)
@@ -31,7 +31,7 @@
 ### [1. Configurer la mise en miroir des ports](configure-port-mirroring.md)
 ### [2. Valider la mise en miroir des ports](validate-port-mirroring.md)
 ### [3. Configurer le transfert d’événements Windows](configure-event-collection.md)
-# Utilisation
+# Utiliser
 ## [Gestion de la base de données ATA](ata-database-management.md)
 ## [Centre d’intégrité ATA](ata-health-center.md)
 ## [Rapports ATA](reports.md)
@@ -45,10 +45,10 @@
 ## [Définir les paramètres du serveur Syslog et du serveur de messagerie](setting-syslog-email-server-settings.md)
 ## [Gestion des activités suspectes](working-with-suspicious-activities.md)
 ## [Utilisation de la console ATA](working-with-ata-console.md)
-## Informations de référence sur ATA
+## ATA Informations de référence
 ### [Informations de référence sur le journal SIEM](cef-format-sa.md)
-### [Informations de référence sur les ID d’événement](event-id-reference.md)
-# Investigation
+### [Référence de ID de l'événement](event-id-reference.md)
+# Étudier
 ## [Guide des activités suspectes](suspicious-activity-guide.md)
 # Dépannage
 ## [Utilisation des journaux d’audit](troubleshoot-audit.md)
@@ -58,3 +58,4 @@
 ## [Résolution des problèmes à l’aide de la base de données](troubleshooting-ata-using-ata-database.md)
 ## [Résolution des problèmes de démarrage du service](troubleshooting-service-startup.md)
 ## [Récupération d'urgence](disaster-recovery.md)
+# [Ressources](ata-resources.md)
