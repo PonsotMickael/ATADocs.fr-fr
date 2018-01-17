@@ -58,4 +58,4 @@
 ## [Résolution des problèmes à l’aide de la base de données](troubleshooting-ata-using-ata-database.md)
 ## [Résolution des problèmes de démarrage du service](troubleshooting-service-startup.md)
 ## [Récupération d'urgence](disaster-recovery.md)
-# [Ressources](ata-resources.md)
+# [Guide de préparation à ATA](ata-resources.md)
