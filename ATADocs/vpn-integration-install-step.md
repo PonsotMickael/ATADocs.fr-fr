@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e0aed853-ba52-46e1-9c55-b336271a68e7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2eab8649f225071ad548a8134b385d46f02b3222
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 8d7468103e14e31116c4b6cb9846ecdcd2bf0ef0
+ms.sourcegitcommit: 55f7ac32bcd4ac8edb8b8b3b47993bf96b9acce2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/15/2018
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -37,7 +37,6 @@ ATA s’intègre avec votre solution VPN en écoutant les événements de gestio
 
 -   Microsoft
 -   F5
--   Check Point
 -   Cisco ASA
 
 ## <a name="prerequisites"></a>Prérequis
@@ -46,7 +45,7 @@ Pour activer l’intégration VPN, veillez à définir les paramètres suivants 
 
 -   Ouvrir le port UDP 1813 sur vos passerelles ATA et vos passerelles légères ATA.
 
--   Connecter le centre ATA à Internet afin qu’il puisse interroger l’emplacement des adresses IP entrantes.
+-   Le Centre ATA doit pouvoir accéder à *ti.ata.azure.com* avec HTTPS (port 443) afin d’être en mesure d’interroger l’emplacement des adresses IP entrantes.
 
 L’exemple ci-dessous utilise Microsoft Routing and Remote Access Server (RRAS) pour décrire le processus de configuration VPN.
 
@@ -68,7 +67,7 @@ Effectuez les étapes suivantes sur votre serveur RRAS.
      
 ### <a name="configure-vpn-in-ata"></a>Configurer le VPN dans ATA
 
-ATA collecte les données VPN qui vous aident à profiler les emplacements depuis lesquels les ordinateurs se connectent au réseau et à pouvoir détecter les connexions VPN anormales.
+ATA collecte les données VPN et identifie quand et où les informations d’identification sont utilisées via le VPN, puis intègre ces données dans votre investigation. Vous obtenez ainsi des informations supplémentaires qui vous aideront à étudier les alertes signalées par ATA.
 
 Pour configurer les données VPN dans ATA :
 
@@ -88,8 +87,7 @@ Votre configuration est terminée et vous pouvez voir maintenant l’activité V
  
    ![Configuration du VPN](./media/vpn-user.png)
 
-Une fois que la passerelle ATA reçoit les événements VPN et les envoie au centre ATA pour traitement, le centre ATA nécessite une connectivité Internet pour permettre au port HTTPS 443 de résoudre les adresses IP externes dans les événements VPN pour leur géolocalisation.
-
+Une fois que la passerelle ATA reçoit les événements VPN et les envoie au Centre ATA pour traitement, celui-ci a besoin d’accéder à *ti.ata.azure.com* avec HTTPS (port 443) pour pouvoir résoudre les adresses IP externes dans les événements VPN de leur emplacement géographique.
 
 
 
