@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 2/1/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f35c495193806f1c1ccc00800402d9b0aca36982
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 7a5dd2c722244ec94ebf49555483ddd201b5ba54
+ms.sourcegitcommit: 7684a9942719a90444ab567ffe9b2ff86438c04b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 02/01/2018
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.8*
 
 
 # <a name="install-ata---step-1"></a>Installer ATA - Étape 1
@@ -90,6 +90,10 @@ Effectuez les opérations suivantes sur le serveur du centre ATA.
 
 1.  Vérifiez que le service nommé **Microsoft Advanced Threat Analytics Center** est en cours d’exécution.
 2.  Sur le Bureau, cliquez sur le raccourci **Microsoft Advanced Threat Analytics** pour vous connecter à la console ATA. Connectez-vous avec les mêmes informations d’identification utilisateur que celles que vous avez utilisées pour installer le centre ATA.
+
+### <a name="set-anti-virus-exclusions"></a>Définir des exclusions d’antivirus
+
+Après avoir installé le Centre ATA, vous devez exclure le répertoire de base de données MongoDB de l’analyse continue de votre application antivirus. L’emplacement par défaut dans la base de données est : **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data**.
 
 
 
