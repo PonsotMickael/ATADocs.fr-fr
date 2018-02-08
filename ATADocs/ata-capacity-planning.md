@@ -5,18 +5,18 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 2/1/2018
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
 ms.prod: 
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a0cc958cd7c802d02c96b6d7d3bc7e7180bd3d95
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 76173dfa0b41195e641235f8792723fa7b038a68
+ms.sourcegitcommit: 7684a9942719a90444ab567ffe9b2ff86438c04b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 02/01/2018
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -39,6 +39,9 @@ La manière recommandée la plus simple de déterminer la capacité pour votre d
 
 ![Exemple d’outil de planification des capacités](media/capacity tool.png)
 
+
+> [!NOTE]
+> Étant donné que les différents environnements varient et présentent plusieurs caractéristiques de trafic réseau particulières et imprévisibles, une fois que vous déployez initialement ATA et exécuter l’outil de dimensionnement, vous devrez peut-être ajuster et adapter votre déploiement au niveau de la capacité.
 
 
 Si pour une raison ou une autre, vous ne pouvez pas utiliser l’outil de dimensionnement ATA, collectez manuellement les informations du compteur de paquets/s de tous vos contrôleurs de domaine pendant 24 heures avec un intervalle de collecte court (environ 5 secondes). Ensuite, pour chaque contrôleur de domaine, vous devez calculer la moyenne quotidienne et la moyenne des périodes les plus occupées (15 minutes).
