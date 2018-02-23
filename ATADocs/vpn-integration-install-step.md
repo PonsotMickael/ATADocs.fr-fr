@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e0aed853-ba52-46e1-9c55-b336271a68e7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8d7468103e14e31116c4b6cb9846ecdcd2bf0ef0
-ms.sourcegitcommit: 55f7ac32bcd4ac8edb8b8b3b47993bf96b9acce2
+ms.openlocfilehash: f8a4e3ce06e775706f9bf05f5511d6b5ee53e8cc
+ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 02/21/2018
 ---
 *S’applique à : Advanced Threat Analytics version 1.8*
 
@@ -105,7 +105,7 @@ Une fois que la passerelle ATA reçoit les événements VPN et les envoie au Cen
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide de déploiement ATA POC](http://aka.ms/atapoc)
-- [Outil de dimensionnement ATA](http://aka.ms/atasizingtool)
+- [Outil de dimensionnement ATA](http://aka.ms/aatpsizingtool)
 - [Consultez le forum ATA !](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Configurer la collecte d’événements](configure-event-collection.md)
 - [Configuration requise pour ATA](ata-prerequisites.md)
