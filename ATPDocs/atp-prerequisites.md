@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 2/25/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 819eeb73c57e7b1de5e7e5e837aa2d6db2e0848d
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 3cb4eb8a914f1fd4be0c1ddb26f9be3964c529f7
+ms.sourcegitcommit: 26d833f7d9502db73876ced9879789db395224f7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 02/27/2018
 ---
 *S’applique à : Azure - Protection avancée contre les menaces*
 
@@ -51,7 +51,7 @@ Chaque espace de travail Azure ATP prend en charge une limite de forêt Active D
 Cette section répertorie les informations que vous devez rassembler ainsi que les comptes et entités réseau dont vous devez disposer avant de procéder à l’installation d’Azure ATP.
 
 
--   Compte d’utilisateur Azure AD **local** et mot de passe avec accès en lecture à tous les objets dans les domaines surveillés.
+-   Compte d’utilisateur AD **local** et mot de passe avec accès en lecture à tous les objets dans les domaines surveillés.
 
     > [!NOTE]
     > Si vous avez défini des listes de contrôle d’accès (ACL) personnalisées sur différentes unités d’organisation dans votre domaine, vérifiez que l’utilisateur sélectionné dispose d’autorisations d’accès en lecture à ces unités d’organisation.
@@ -129,7 +129,7 @@ Le capteur autonome Azure ATP nécessite au moins une carte de gestion et au moi
 ### <a name="ports"></a>Ports
 Le tableau suivant répertorie les ports qui, au minimum, doivent être configurés sur la carte de gestion pour satisfaire aux exigences du capteur autonome Azure ATP :
 
-|Protocole|Transport|Port|Vers/À partir de|Direction|
+|Protocole|Transport|Port|Vers/À partir de|Sens|
 |------------|-------------|--------|-----------|-------------|
 |LDAP|TCP et UDP|389|Contrôleurs de domaine|Sortant|
 |LDAP sécurisé (LDAPS)|TCP|636|Contrôleurs de domaine|Sortant|
@@ -193,7 +193,7 @@ Le capteur n’est pas pris en charge sur les contrôleurs de domaine exécutant
 ### <a name="ports"></a>Ports
 Le tableau suivant répertorie les ports qui, au minimum, sont requis par le capteur Azure ATP :
 
-|Protocole|Transport|Port|Vers/À partir de|Direction|
+|Protocole|Transport|Port|Vers/À partir de|Sens|
 |------------|-------------|--------|-----------|-------------|
 |SSL (*.atp.azure.com)|TCP|443|Service cloud Azure ATP|Sortant|
 |DNS|TCP et UDP|53|Serveurs DNS|Sortant|
@@ -218,5 +218,5 @@ Le tableau suivant répertorie les ports qui, au minimum, sont requis par le cap
 - [Outil de dimensionnement Azure ATP](http://aka.ms/aatpsizingtool)
 - [Architecture Azure ATP](atp-architecture.md)
 - [Installer ATP](install-atp-step1.md)
-- [Consultez le forum ATP !](https://aka.ms/azureatpcommunity)
+- [Consulter le forum ATP](https://aka.ms/azureatpcommunity)
 
