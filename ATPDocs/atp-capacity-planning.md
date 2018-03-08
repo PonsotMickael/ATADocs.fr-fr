@@ -5,18 +5,18 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.service: azure-advanced-threat-protection
 ms.prod: 
 ms.assetid: da0ee438-35f8-4097-b3a1-1354ad59eb32
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3939cba25f262991b000dbdd09bdfbf78f5102e7
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 0191ca50a5ea6328cc50ada6d9231ccb73da5c21
+ms.sourcegitcommit: 84556e94a3efdf20ca1ebf89a481550d7f8f0f69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/08/2018
 ---
 *S’applique à : Azure - Protection avancée contre les menaces*
 
@@ -40,7 +40,7 @@ La manière recommandée la plus simple de déterminer la capacité pour votre d
 Si, pour une raison ou une autre, vous ne pouvez pas utiliser l’outil de dimensionnement Azure ATP, collectez manuellement les informations du compteur de paquets/s de tous vos contrôleurs de domaine pendant 24 heures avec un intervalle de collecte court (environ 5 secondes). Ensuite, pour chaque contrôleur de domaine, vous devez calculer la moyenne quotidienne et la moyenne des périodes les plus occupées (15 minutes).
 Les sections suivantes expliquent comment collecter le compteur paquets/s dans un contrôleur de domaine.
 
-## <a name="choosing-the-right-sensor-type-for-your-deployment"></a>Choix du type de capteur approprié pour votre déploiement
+## Choix du type de capteur approprié pour votre déploiement<a name="choosing-the right-sensor-type-for-your-deployment"></a>
 Dans un déploiement Azure ATP, n’importe quelle combinaison de types de capteurs autonomes Azure ATP est prise en charge :
 
 - Uniquement des capteurs autonomes Azure ATP
@@ -82,7 +82,7 @@ Un capteur Azure ATP peut prendre en charge la surveillance d’un contrôleur d
 |75 000 à 100 000|3,50 |9,50|
 
 > [!NOTE]
-> - Nombre total de cœurs non multithreads installés sur ce contrôleur de domaine.<br>Même si le multithread est acceptable pour le capteur Azure ATP, vous devez compter les cœurs réels et non les cœurs multithreads lors de la planification de la capacité.
+> - Nombre total de cœurs installés sur ce contrôleur de domaine.<br>Nous vous recommandons de ne pas utiliser des cœurs hyper-thread.
 > - Quantité totale de mémoire installée sur ce contrôleur de domaine.
 > -   Si le contrôleur de domaine n’a pas les ressources demandées par le capteur Azure ATP, les performances du contrôleur de domaine ne sont pas affectées, mais le capteur Azure ATP risque de ne pas fonctionner comme prévu.
 > -   En cas d’exécution en tant que machine virtuelle, la mémoire dynamique ou toute autre fonctionnalité d’augmentation de la mémoire n’est pas prise en charge.

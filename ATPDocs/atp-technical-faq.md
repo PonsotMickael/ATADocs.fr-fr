@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/20/2018
+ms.date: 2/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c37b46f66715a34145b6123a9278fbc53d4f0d15
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 6a6a34b9a2aae0e507fe18872a31368cf3f3e9d0
+ms.sourcegitcommit: 21d8f9abf909fc5f0e0da03cd100fa8fb950baa4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 02/27/2018
 ---
 *S’applique à : Azure - Protection avancée contre les menaces*
 
@@ -27,7 +27,7 @@ Cet article fournit une liste de questions fréquemment posées sur Azure ATP et
 
 ## <a name="where-can-i-get-a-license-for-azure-advanced-threat-protection-atp"></a>Où puis-je obtenir une licence pour Azure - Protection avancée contre les menaces (ATP) ?
 
-Si vous avez acquis une licence pour Enterprise Mobility + Security 5 (EMS 5) directement sur le portail Office 365 ou par le modèle CSP (Cloud Solution Partner) et que vous n’avez pas d’accès à Azure ATP via le Centre de gestion des licences en volume Microsoft, contactez le service client Microsoft pour obtenir la procédure permettant d’activer Azure - Protection avancée contre les menaces (ATP).
+Si vous avez acquis une licence pour Enterprise Mobility + Security 5 (EMS E5) directement sur le portail Office 365 ou par le modèle d’attribution de licences CSP (Cloud Solution Partner) et que vous n’avez pas d’accès à Azure ATP via le Centre de gestion des licences en volume Microsoft, contactez le service client Microsoft pour obtenir la procédure permettant d’activer Azure - Protection avancée contre les menaces.
 
 ## <a name="what-should-i-do-if-the-azure-atp-sensor-or-standalone-sensor-doesnt-start"></a>Que dois-je faire si le capteur autonome ou le capteur Azure ATP ne démarre pas ?
 Examinez l’erreur la plus récente dans le journal des erreurs actuel (où Azure ATP est installé, sous le dossier « Logs »).
@@ -148,4 +148,4 @@ En outre, Microsoft effectue des vérifications des antécédents sur certains m
 - [Planification de la capacité Azure ATP](atp-capacity-planning.md)
 - [Configurer la collecte d’événements](configure-event-collection.md)
 - [Configuration du transfert d’événements Windows](configure-event-forwarding.md#configuring-windows-event-forwarding)
-- [Consultez le forum ATP !](https://aka.ms/azureatpcommunity)
+- [Consulter le forum ATP](https://aka.ms/azureatpcommunity)
