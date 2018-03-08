@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 47fa5ad5d6fb7800c7df4b878d16ec335e2b70e5
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: f077bbd9990affbb6c552c5ad8875fdfebbd70f2
+ms.sourcegitcommit: 84556e94a3efdf20ca1ebf89a481550d7f8f0f69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/08/2018
 ---
 *S’applique à : Azure - Protection avancée contre les menaces*
 
@@ -29,7 +29,7 @@ Pour que vos contrôleurs de domaine communiquent avec le service cloud, vous de
  
 1.  Vérifiez que l’**utilisateur actuel** a accès au point de terminaison de processeur à l’aide d’Internet Explorer, en accédant à l’URL suivante à partir du contrôleur de domaine : https://triprd1wcuse1sensorapi.eastus.cloudapp.azure.com (pour les États-Unis). Vous devez obtenir l’erreur 503 :
 
- ![service non disponible](/media/service-unavailable.png)
+ ![service non disponible](./media/service-unavailable.png)
  
 2.  Si vous n’obtenez pas l’erreur 503, passez en revue la configuration du proxy, puis réessayez.
 
@@ -39,11 +39,11 @@ Pour que vos contrôleurs de domaine communiquent avec le service cloud, vous de
 
 Si vous obtenez l’erreur «Erreur : le système n'a pas trouvé la clé ou la valeur de Registre spécifiée. », cela signifie qu’aucun proxy n’a été défini au niveau **LOCAL_SYSTEM**.
  
- ![erreur de système local proxy](/media/proxy-local-system-error.png)
+ ![erreur de système local proxy](./media/proxy-local-system-error.png)
 
 Si le résultat est « Résultat comparé : Différent », cela signifie que le proxy est défini pour **LOCAL_SYSTEM**, mais qu’il n’est pas le même que **CURRENT_USER** :
  
-  ![résultat de proxy comparé](/media/proxy-result-compared.png)
+  ![résultat de proxy comparé](./media/proxy-result-compared.png)
 
 5.  Si **LOCAL_SYSTEM** n’a pas les paramètres de proxy appropriés (non configurés ou différents de **CURRENT_USER**), vous pouvez être amené à copier le paramètre de proxy de **CURRENT_USER** pour **LOCAL_SYSTEM**. Veillez à sauvegarder cette clé de Registre avant de la modifier :
 
