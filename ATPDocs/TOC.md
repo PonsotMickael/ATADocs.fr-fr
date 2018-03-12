@@ -1,6 +1,7 @@
-# Comprendre et explorer - Préversion
+# Comprendre et explorer
 ## [Présentation d’Azure - Protection avancée contre les menaces](what-is-atp.md)
 ## [Forum Aux Questions](atp-technical-faq.md)
+## [Nouveautés dans Azure ATP](atp-whats-new.md)
 # Planification et conception
 ## [Prérequis d’Azure ATP](atp-prerequisites.md)
 ## [Architecture Azure ATP](atp-architecture.md)
@@ -19,7 +20,7 @@
 ### [Configurer la mise en miroir des ports](configure-port-mirroring.md)
 ### [Valider la mise en miroir des ports](validate-port-mirroring.md)
 ### [Configurer la collecte d’événements](configure-event-collection.md)
-### [Configurer les transferts d’événements Windows](configure-event-forwarding.md))
+### [Configurer les transferts d’événements Windows](configure-event-forwarding.md)
 ### [Configurer un proxy pour permettre la communication](configure-proxy.md)
 # Utiliser
 ## [Centre d’intégrité Azure ATP](atp-health-center.md)
