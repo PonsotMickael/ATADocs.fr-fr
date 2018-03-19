@@ -5,18 +5,18 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 3/11/2018
 ms.topic: get-started-article
 ms.service: azure-advanced-threat-protection
 ms.prod: 
 ms.assetid: da0ee438-35f8-4097-b3a1-1354ad59eb32
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0191ca50a5ea6328cc50ada6d9231ccb73da5c21
-ms.sourcegitcommit: 84556e94a3efdf20ca1ebf89a481550d7f8f0f69
+ms.openlocfilehash: 577b7a5105e8de773f57b1e00bc1c9cb51096799
+ms.sourcegitcommit: 912e453753156902618ae6ebb8489c2320c06fc6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/12/2018
 ---
 *S’applique à : Azure - Protection avancée contre les menaces*
 
@@ -68,8 +68,9 @@ Les considérations relatives à la mise en miroir des ports peuvent vous amener
 
 ## Dimensionnement du capteur autonome et du capteur Azure ATP <a name="sizing"></a>
 
-Un capteur Azure ATP peut prendre en charge la surveillance d’un contrôleur de domaine en fonction de la quantité de trafic réseau qu’il génère. Le tableau suivant est une estimation, la quantité finale analysée par le capteur étant dépendante du volume du trafic. 
-
+Un capteur Azure ATP peut prendre en charge la surveillance d’un contrôleur de domaine en fonction de la quantité de trafic réseau qu’il génère. Le tableau suivant est une estimation, la quantité finale analysée par le capteur étant dépendante du volume et de la distribution du trafic. 
+> [!NOTE]
+> La capacité d’UC et de mémoire suivante fait référence à la consommation propre du capteur, et pas à la capacité du contrôleur de domaine.
 
 |Paquets par seconde*|Cœurs de processeur|Mémoire (Go)|
 |----|----|-----|
@@ -82,12 +83,12 @@ Un capteur Azure ATP peut prendre en charge la surveillance d’un contrôleur d
 |75 000 à 100 000|3,50 |9,50|
 
 > [!NOTE]
-> - Nombre total de cœurs installés sur ce contrôleur de domaine.<br>Nous vous recommandons de ne pas utiliser des cœurs hyper-thread.
-> - Quantité totale de mémoire installée sur ce contrôleur de domaine.
-> -   Si le contrôleur de domaine n’a pas les ressources demandées par le capteur Azure ATP, les performances du contrôleur de domaine ne sont pas affectées, mais le capteur Azure ATP risque de ne pas fonctionner comme prévu.
+> - Nombre total de cœurs que le service de capteur va utiliser.<br>Nous vous recommandons de ne pas utiliser des cœurs hyper-thread.
+> - Quantité totale de mémoire que le service de capteur va utiliser.
+> -   Si le contrôleur de domaine n’a pas les ressources demandées par le capteur Azure ATP, ses performances ne sont pas affectées, mais le capteur Azure ATP risque de ne pas fonctionner comme prévu.
 > -   En cas d’exécution en tant que machine virtuelle, la mémoire dynamique ou toute autre fonctionnalité d’augmentation de la mémoire n’est pas prise en charge.
 > -   Pour bénéficier de performances optimales, choisissez **Hautes performances** comme **Option d’alimentation** pour le capteur Azure ATP.
-> -   Au moins 2 cœurs et 6 Go d’espace sont nécessaires, et 10 Go sont recommandés, dont l’espace requis pour les fichiers binaires Azure ATP.
+> -   Au moins 2 cœurs et 6 Go d’espace sont nécessaires, 10 Go sont recommandés, ce qui inclut l’espace nécessaire pour les fichiers binaires et les journaux Azure ATP.
 
 
 ## <a name="domain-controller-traffic-estimation"></a>Estimation du trafic des contrôleurs de domaine

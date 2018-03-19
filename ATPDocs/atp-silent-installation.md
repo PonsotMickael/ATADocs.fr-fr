@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2017
+ms.date: 3/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 862420fb6914dbf9ee57c36bc21103cc7dddf7af
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: f27020f1b4a5fa7aa8fefbda28eac0c2ad6c64d0
+ms.sourcegitcommit: 912e453753156902618ae6ebb8489c2320c06fc6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/12/2018
 ---
 *S’applique à : Azure - Protection avancée contre les menaces*
 
@@ -31,7 +31,10 @@ Azure ATP nécessite l’installation de Microsoft .NET Framework 4.7.
 
 Quand vous installez Azure ATP, le .Net Framework 4.7 est automatiquement installé dans le cadre du déploiement d’Azure ATP.
 
-> [!Note] 
+> [!IMPORTANT] 
+> Vérifiez que la dernière version du .Net Framework est installée. Si une version antérieure du .Net est installée, votre installation sans assistance d’Azure ATP reste bloquée dans une boucle et échoue. 
+
+> [!NOTE] 
 > L’installation du .Net Framework 4.7 peut nécessiter le redémarrage du serveur. Quand vous installez le capteur Azure ATP sur des contrôleurs de domaine, pensez à planifier une fenêtre de maintenance pour ces derniers.
 Quand vous utilisez la méthode d’installation sans assistance d’Azure ATP, le programme d’installation est configuré pour redémarrer automatiquement le serveur à la fin de l’installation (si nécessaire). En raison d’un bogue de Windows Installer, l’indicateur *norestart* ne peut pas être utilisé de façon fiable pour s’assurer que le serveur ne redémarre pas : veillez donc à exécuter seulement une installation sans assistance pendant une fenêtre de maintenance.
 
@@ -47,7 +50,7 @@ Pour suivre la progression du déploiement, surveillez les journaux d’installa
 
 Utilisez la commande suivante pour installer sans assistance le capteur Azure ATP :
 
-**Syntaxe**:
+**Syntaxe** :
 
     Azure ATP sensor Setup.exe [/AccessKey=<Access Key>] [/quiet] [/Help] [NetFrameworkCommandLineArguments ="/q"] 
    
@@ -82,7 +85,7 @@ Utilisez la commande suivante pour installer sans assistance le capteur Azure AT
 
 Utilisez la commande suivante pour mettre à jour sans assistance le capteur Azure ATP :
 
-**Syntaxe**:
+**Syntaxe** :
 
     Azure ATP  sensor Setup.exe [/quiet] [/Help] [NetFrameworkCommandLineArguments="/q"]
 

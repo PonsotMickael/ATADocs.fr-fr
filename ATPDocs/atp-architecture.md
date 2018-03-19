@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/27/2018
+ms.date: 3/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ffa58d4e6ca24773f7168dd94ad0596878eaf151
-ms.sourcegitcommit: 21d8f9abf909fc5f0e0da03cd100fa8fb950baa4
+ms.openlocfilehash: 640974bbeb0ff147b21da24d6ad6df2f54e9ab4d
+ms.sourcegitcommit: 912e453753156902618ae6ebb8489c2320c06fc6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 *S’applique à : Azure - Protection avancée contre les menaces*
 
@@ -74,6 +74,8 @@ Définir votre espace de travail principal en tant que **principal**. Un seul es
 
 > [!NOTE]
 > Azure ATP prend actuellement en charge la création de deux espaces de travail. Nous vous recommandons de créer un espace de travail principal pour votre environnement de production et un espace de travail supplémentaire comme environnement intermédiaire.
+> Après avoir supprimé un espace de travail, vous pouvez contacter le support pour le réactiver. Vous pouvez avoir au maximum trois espaces de travail supprimés. Pour augmenter le nombre d’espaces de travail enregistrés et supprimés, contactez le support Azure ATP.
+
 
 ### <a name="azure-atp-workspace-portal"></a>Portail d’espace de travail Azure ATP
 
@@ -119,6 +121,8 @@ Le **capteur Azure ATP** et le **capteur autonome Azure ATP** ont tous les deux 
 -   Transférer les données pertinentes au service cloud Azure ATP
 
 -   Surveillez plusieurs contrôleurs de domaine à partir d’un seul capteur autonome Azure ATP, ou surveillez un seul contrôleur de domaine pour un capteur Azure ATP.
+
+Azure ATP prend en charge jusqu’à 100 capteurs. Si vous voulez en installer plus, contactez le support Azure ATP.
 
 Le capteur autonome Azure ATP reçoit le trafic réseau et les événements Windows de votre réseau, et les traite dans les composants principaux suivants :
 
