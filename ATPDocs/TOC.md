@@ -36,10 +36,11 @@
 ## [Utilisation du portail d’espace de travail Azure ATP](workspace-portal.md)
 ## Informations de référence sur Azure ATP
 ### [Informations de référence sur le journal SIEM](cef-format-sa.md)
-# Étudier
+# Investiguer
 ## [Gestion des activités suspectes](working-with-suspicious-activities.md)
 ## [Guide des activités suspectes](suspicious-activity-guide.md)
 ## [Examiner les chemins de mouvement latéral avec Azure ATP](use-case-lateral-movement-path.md)
 ## [Examiner les entités](entity-profiles.md)
 # Résolution des problèmes
 ## [Résolution des problèmes connus](troubleshooting-atp-known-issues.md)
+## [Support et informations](atp-support.md)
