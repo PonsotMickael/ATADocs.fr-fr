@@ -1,25 +1,25 @@
 ---
-title: "Chemin de mise à niveau recommandé pour Advanced Threat Analytics (ATA) | Microsoft Docs"
-description: "Fournit des instructions pour mettre à niveau votre version d’Advanced Threat Analytics (ATA)."
-keywords: 
+title: Chemin de mise à niveau recommandé pour Advanced Threat Analytics (ATA) | Microsoft Docs
+description: Fournit des instructions pour mettre à niveau votre version d’Advanced Threat Analytics (ATA).
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/9/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b82c9da819302ef7cf3f94746b156c2053b20ca4
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 314c86b1a1e13dd20e52210e4b75ff5fe66ecd2c
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.9*
 
 # <a name="recommended-upgrade-path-for-ata"></a>Chemin de mise à niveau recommandé pour ATA
 Cet article fournit des informations sur les versions d’ATA (Advanced Threat Analytics) disponibles et sur le processus de mise à niveau d’ATA en fonction de la version que vous utilisez.
@@ -36,6 +36,7 @@ Cet article fournit des informations sur les versions d’ATA (Advanced Threat A
 |1.7 Update 2|1.7.5757|
 |1.8|1.8.6645|
 |1.8 Update 1|1.8.6765|
+|1.9|1.9.7312|
 
 ## <a name="ata-version-upgrade-matrix"></a>Matrice de mise à niveau des versions ATA
 

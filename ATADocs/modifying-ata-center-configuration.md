@@ -1,25 +1,24 @@
 ---
 title: Modifier la configuration du centre ATA (Advanced Threat Analytics) | Microsoft Docs
-description: "Décrit comment changer l’adresse IP, le port, l’URL de la console ou le certificat de votre centre ATA."
-keywords: 
+description: Décrit comment changer l’adresse IP, le port, l’URL de la console ou le certificat de votre centre ATA.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
-ms.topic: article
-ms.prod: 
+ms.date: 3/21/2018
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 93b27f15-f7e5-49bb-870a-d81d09dfe9fc
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4fe4569cd6477775e8a888d2acd05511f16fb5f6
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 294b9204f9ca6a40a835e5360a7011947e3255b4
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.9*
 
 
 
@@ -53,7 +52,9 @@ L’URL est utilisée dans les scénarios suivants :
     
 3. Attendez que les passerelles ATA se synchronisent. Elles disposent désormais de deux URL potentielles permettant d’accéder à la console ATA. Tant que la passerelle ATA peut se connecter avec l’URL d’origine, elle n’essaie pas la nouvelle.
 
-4. Une fois toutes les passerelles ATA synchronisées avec la configuration mise à jour, activez la nouvelle URL. Lorsque vous activez la nouvelle URL, les passerelles ATA utilisent la nouvelle URL pour accéder au centre ATA. Après la connexion au service du centre ATA, la passerelle ATA télécharge la configuration la plus récente et dispose uniquement de la nouvelle URL pour la console ATA. 
+4. Une fois que toutes les passerelles ATA sont synchronisées avec la configuration mise à jour, dans la page de configuration du Centre, cliquez sur le bouton **Activer** pour activer la nouvelle URL. Lorsque vous activez la nouvelle URL, les passerelles ATA utilisent la nouvelle URL pour accéder au centre ATA. Après la connexion au service du centre ATA, la passerelle ATA télécharge la configuration la plus récente et dispose uniquement de la nouvelle URL pour la console ATA. 
+5. 
+ ![Activer le certificat](media/center-activation.png)
 
 > [!NOTE]
 > -   Si une passerelle ATA était hors connexion lorsque vous avez activé la nouvelle URL et n’a jamais reçu la configuration mise à jour, vous devez manuellement mettre à jour le fichier JSON de configuration sur la passerelle ATA.

@@ -1,25 +1,25 @@
 ---
-title: "Configurer la mise en miroir des ports lors du déploiement d’Advanced Threat Analytics | Microsoft Docs"
-description: "Décrit les options de mise en miroir des ports et comment les configurer pour ATA"
-keywords: 
+title: Configurer la mise en miroir des ports lors du déploiement d’Advanced Threat Analytics | Microsoft Docs
+description: Décrit les options de mise en miroir des ports et comment les configurer pour ATA
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: fb9c6aa3962f7fc121f3737a32c9a5cfb2fcfb8e
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 9ed585d37363fbae2604fe0ea705a0ea30b9b283
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.9*
 
 
 
@@ -50,8 +50,8 @@ Vos contrôleurs de domaine et vos passerelles ATA peuvent être physiques ou vi
 |---------------|---------------------|------------------|
 |Virtuelle|Virtuel sur le même hôte|Le commutateur virtuel doit prendre en charge la mise en miroir des ports.<br /><br />Le fait de déplacer l’une des machines virtuelles vers un autre hôte où elle sera toute seule risque de briser la mise en miroir des ports.|
 |Virtuel|Virtuel sur des hôtes différents|Vérifiez que votre commutateur virtuel prend en charge ce scénario.|
-|Virtuel|Physique|Nécessite une carte réseau dédiée ; sinon, ATA détecte tout le trafic entrant et sortant de l’hôte, même le trafic qu’il envoie au centre ATA.|
-|Physique|Virtuel|Vérifiez que votre commutateur virtuel prend en charge ce scénario et configurez la mise en miroir des ports sur vos commutateurs physiques selon le cas :<br /><br />Si l’hôte virtuel se trouve sur le même commutateur physique, vous devez configurer SPAN au niveau du commutateur.<br /><br />Si l’hôte virtuel se trouve sur un autre commutateur, vous devez configurer RSPAN ou ERSPAN&#42;.|
+|Virtuelle|Physique|Nécessite une carte réseau dédiée ; sinon, ATA détecte tout le trafic entrant et sortant de l’hôte, même le trafic qu’il envoie au centre ATA.|
+|Physique|Virtuelle|Vérifiez que votre commutateur virtuel prend en charge ce scénario et configurez la mise en miroir des ports sur vos commutateurs physiques selon le cas :<br /><br />Si l’hôte virtuel se trouve sur le même commutateur physique, vous devez configurer SPAN au niveau du commutateur.<br /><br />Si l’hôte virtuel se trouve sur un autre commutateur, vous devez configurer RSPAN ou ERSPAN&#42;.|
 |Physique|Physique sur le même commutateur|Le commutateur physique doit prendre en charge SPAN/la mise en miroir des ports.|
 |Physique|Physique sur un autre commutateur|Exige que les commutateurs physiques prennent en charge RSPAN ou ERSPAN&#42;.|
 &#42; ERSPAN est uniquement pris en charge quand la décapsulation est effectuée avant l’analyse du trafic par ATA.

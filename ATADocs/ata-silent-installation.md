@@ -1,31 +1,31 @@
 ---
 title: Installer Advanced Threat Analytics sans assistance | Microsoft Docs
-description: "Cet article décrit comment installer ATA sans assistance."
-keywords: 
+description: Cet article décrit comment installer ATA sans assistance.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3210d9153cd6781ae13a784e1f2b5927e0703009
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 44002cc41abc39f3c70b7a2f5ff131604fd703ba
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.9*
 
 
 # <a name="ata-silent-installation"></a>Installation d’ATA sans assistance
 Cet article fournit des instructions pour installer ATA sans assistance.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 ATA version 1.8 nécessite l’installation du Microsoft .NET Framework 4.6.1. 
 

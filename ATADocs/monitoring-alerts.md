@@ -1,28 +1,28 @@
 ---
-title: "Présentation des alertes de surveillance d’ATA | Microsoft Docs"
-description: "Décrit comment utiliser les journaux ATA pour résoudre des problèmes"
-keywords: 
+title: Présentation des alertes de surveillance d’ATA | Microsoft Docs
+description: Décrit comment utiliser les journaux ATA pour résoudre des problèmes
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: b04fb8a4-b366-4b55-9d4c-6f054fa58a90
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0d3b57e852a18bf9602d3a75ab627c23496f7285
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 6506ecf445641e9789cb1817916089f5463ba289
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.9*
 
 
-
+# <a name="understanding-ata-monitoring-alerts"></a>Présentation des alertes de surveillance d’ATA
 Le centre d’intégrité ATA vous permet de savoir s’il existe un problème avec le déploiement d’ATA en déclenchant une alerte de surveillance.
 Cet article décrit toutes les alertes de surveillance pour chaque composant, en indiquant la cause et les étapes nécessaires pour résoudre le problème.
 ## <a name="ata-center-issues"></a>Problèmes du centre ATA

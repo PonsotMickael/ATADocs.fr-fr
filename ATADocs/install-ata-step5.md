@@ -1,25 +1,25 @@
 ---
-title: "Installer Advanced Threat Analytics - Étape 5 | Microsoft Docs"
-description: "La cinquième étape de la procédure d’installation d’ATA vous aide à configurer les paramètres de votre passerelle ATA."
-keywords: 
+title: Installer Advanced Threat Analytics - Étape 5 | Microsoft Docs
+description: La cinquième étape de la procédure d’installation d’ATA vous aide à configurer les paramètres de votre passerelle ATA.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 05af384d91e899c1c0bc50ec2da6147eb47adb82
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: d8a8f5df37422f98f6ea3357c672297395907a8d
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.9*
 
 
 
@@ -65,7 +65,7 @@ Une fois la passerelle ATA installée, procédez comme suit pour configurer ses 
 3. Si vous le souhaitez, vous pouvez définir le [détecteur Syslog et la collecte des transferts d’événements Windows](configure-event-collection.md). 
 4. Activez **Mettre la passerelle ATA à jour automatiquement** pour que cette passerelle ATA soit automatiquement mise à jour si vous mettez à jour le centre ATA à l’occasion de futures publications de version.
 
-5. Cliquez sur **Enregistrer**.
+5. Cliquez sur **Save**.
 
 
 ## <a name="validate-installations"></a>Valider les installations

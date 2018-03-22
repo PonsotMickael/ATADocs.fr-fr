@@ -1,25 +1,25 @@
 ---
-title: "Configurer le transfert des événements Windows dans Advanced Threat Analytics | Microsoft Docs"
-description: "Décrit les options de configuration du transfert des événements Windows avec ATA"
-keywords: 
+title: Configurer le transfert des événements Windows dans Advanced Threat Analytics | Microsoft Docs
+description: Décrit les options de configuration du transfert des événements Windows avec ATA
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 482b16462d115c7bcc2854d30c2ef19fce37f2c0
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 2c8f67d0c8d9020eb0e7ae16e8410db473ace044
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.9*
 
 
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 11/07/2017
 > Pour les versions 1.8 et ultérieures d’ATA, la configuration de la collecte d’événements n’est plus nécessaire pour les passerelles légères ATA. La passerelle légère ATA peut désormais lire les événements localement, sans qu’il soit nécessaire de configurer le transfert d’événements.
 
 
-Pour améliorer les capacités de détection, ATA a besoin des événements Windows suivants : 4776, 4732, 4733, 4728, 4729, 4756, 4757. Ils peuvent être lus automatiquement par la passerelle légère ATA ou, si la passerelle légère ATA n’est pas déployée, ils peuvent être transférés à la passerelle ATA de deux manières : en configurant la passerelle ATA afin qu’elle reste à l’écoute des événements SIEM ou en configurant le transfert d’événements Windows.
+Pour améliorer les capacités de détection, ATA a besoin des événements Windows suivants : 4776, 4732, 4733, 4728, 4729, 4756, 4757, 7045. Ils peuvent être lus automatiquement par la passerelle légère ATA ou, si la passerelle légère ATA n’est pas déployée, ils peuvent être transférés à la passerelle ATA de deux manières : en configurant la passerelle ATA afin qu’elle reste à l’écoute des événements SIEM ou en configurant le transfert d’événements Windows.
 
 
 
@@ -61,7 +61,7 @@ Après avoir ajouté le **Service réseau** au groupe **Lecteurs des journaux d�
    
     1.  Sélectionnez **Activé**.
     2.  Sous **Options**, cliquez sur **Afficher**.
-    3.  Sous **SubscriptionManagers**, entrez la valeur suivante et cliquez sur **OK** : *Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (par exemple : Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
+    3.  Sous **SubscriptionManagers**, entrez la valeur suivante et cliquez sur **OK** : *Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (Par exemple : Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
  
    ![Configurer l’image d’abonnement cible](media/wef 2 config target sub manager.png)
    

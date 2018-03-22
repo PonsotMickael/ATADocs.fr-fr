@@ -1,25 +1,25 @@
 ---
-title: "Résolution des problèmes d’Advanced Threat Analytics en utilisant la base de données | Microsoft Docs"
-description: "Décrit comment vous pouvez utiliser la base de données ATA pour résoudre les problèmes"
-keywords: 
+title: Résolution des problèmes d’Advanced Threat Analytics en utilisant la base de données | Microsoft Docs
+description: Décrit comment vous pouvez utiliser la base de données ATA pour résoudre les problèmes
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/31/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a08c3175c5b7d7d6006189f858b38026344decac
-ms.sourcegitcommit: 56c7d749b17745430e372e514accf537b3f215d0
+ms.openlocfilehash: 7bd17d6ac340f1acf0166aadbfcbb7f3ef164fc3
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 03/22/2018
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.9*
 
 
 

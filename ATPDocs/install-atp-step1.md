@@ -1,23 +1,23 @@
 ---
-title: "Installer Azure - Protection avancée contre les menaces – Étape 1 | Microsoft Docs"
-description: "La première étape pour installer Azure ATP implique la création d’un espace de travail pour votre déploiement Azure ATP."
-keywords: 
+title: Installer Azure - Protection avancée contre les menaces – Étape 1 | Microsoft Docs
+description: La première étape pour installer Azure ATP implique la création d’un espace de travail pour votre déploiement Azure ATP.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/11/2018
+ms.date: 3/15/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 15ee7d0b-9a0c-46b9-bc71-98d0b4619ed0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5eabf4fc3965e8745b7e2c0fbae4973deb358814
-ms.sourcegitcommit: 912e453753156902618ae6ebb8489c2320c06fc6
+ms.openlocfilehash: 833e0bdf61ce25a8c56d820ad04981cd44321ac2
+ms.sourcegitcommit: f9d07a6b1f2193f0d2906092e252eb1d7398b493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/16/2018
 ---
 *S’applique à : Azure - Protection avancée contre les menaces*
 
@@ -44,7 +44,7 @@ Après avoir vérifié que votre réseau est conforme aux exigences du capteur, 
 
 1.  Accédez au [portail d’espace de travail Azure ATP](https://portal.atp.azure.com).
 
-2.  Connectez-vous avec votre compte d’utilisateur local Azure Active Directory doté au moins d’un accès en lecture à tous les objets figurant dans les domaines analysés.
+2.  Connectez-vous avec votre compte d’utilisateur Azure Active Directory.
 
 ## <a name="step-2-create-a-workspace"></a>Étape 2. Créer un espace de travail
 

@@ -1,25 +1,25 @@
 ---
-title: "Modifier la configuration Advanced Threat Analytics - Mot de passe de connectivité de domaine | Microsoft Docs"
-description: "Décrit comment modifier le mot de passe de connectivité de domaine sur la passerelle ATA."
-keywords: 
+title: Modifier la configuration Advanced Threat Analytics - Mot de passe de connectivité de domaine | Microsoft Docs
+description: Décrit comment modifier le mot de passe de connectivité de domaine sur la passerelle ATA.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 652d3a9e20737d26e8776035690a180f6bd84593
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 47bd7e9cdd97d8343202be86954e82e69948afed
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.9*
 
 
 
@@ -48,7 +48,7 @@ Pour corriger ce problème, procédez comme suit pour mettre à jour le mot de p
 
     Si le centre ATA dispose d’une connectivité au domaine, utilisez le bouton **Tester la connexion** pour valider les informations d’identification
 
-5.  Cliquez sur **Enregistrer**.
+5.  Cliquez sur **Save**.
 
 6.  Après avoir modifié le mot de passe, vérifiez manuellement que le service de la passerelle ATA fonctionne sur les serveurs de la passerelle ATA.
 

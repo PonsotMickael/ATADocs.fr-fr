@@ -1,25 +1,25 @@
 ---
-title: "Présentation de la console Advanced Threat Analytics | Microsoft Docs"
-description: "Explique comment se connecter à la console ATA et à ses composants"
-keywords: 
+title: Présentation de la console Advanced Threat Analytics | Microsoft Docs
+description: Explique comment se connecter à la console ATA et à ses composants
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 26c093c4163593611b175f4f0002f443e593f952
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 2ecffce7d692a9f1ecea8d8c5220ce3b2dbf848e
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.9*
 
 
 
@@ -77,6 +77,10 @@ Quand une activité suspecte est détectée, la barre de notification s’ouvre 
 
 ![Image de la barre de notification ATA](media/notification-bar-1.7.png)
 
+### <a name="whats-new"></a>Nouveautés
+
+Après la publication d’une nouvelle version d’ATA, la fenêtre **Nouveautés** s’affiche en haut à droite pour vous indiquer ce qui a été ajouté dans la dernière version. Elle fournit également un lien vers le téléchargement de cette version.
+
 ### <a name="filtering-panel"></a>Filtrage du panneau
 
 Vous pouvez filtrer les activités suspectes qui s’affichent dans la chronologie des attaques ou sous l’onglet Activités suspectes du profil d’entité, selon leur l’état et leur niveau de gravité.
@@ -94,23 +98,6 @@ Le centre d’intégrité envoie des alertes quand un élément du déploiement�
 ![Image du centre d’intégrité ATA](media/ATA-Health-Issue.jpg)
 
 Quand votre système rencontre un problème, par exemple une erreur de connectivité ou une passerelle ATA déconnectée, l’icône du centre d’intégrité vous en informe à l’aide d’un point rouge. ![Image du point rouge du centre d’intégrité ATA](media/ATA-Health-Center-Alert-red-dot.png)
-
-### <a name="user-and-computer-profiles"></a>Profils d’utilisateur et d’ordinateur
-
-ATA crée un profil pour chaque utilisateur et chaque ordinateur du réseau. Le profil utilisateur contient des informations générales, telles que l’appartenance aux groupes, les connexions récentes et les ressources récemment consultées. Il fournit également une liste des emplacements où l’utilisateur s’est connecté via un VPN. Pour obtenir la liste des appartenances aux groupes considérées comme sensibles, consultez la liste ci-dessous.
-
-![Profil utilisateur](media/user-profile.png)
-
-Le profil d’ordinateur contient des informations générales, comme les connexions récentes et les ressources qui ont récemment fait l’objet d’un accès.
-
-![Profil d’ordinateur](media/computer-profile.png)
-
-ATA fournit des informations supplémentaires sur les entités (ordinateurs, appareils, utilisateurs) dans les pages suivantes : Résumé, Activités et Activités suspectes.
-
-Quand ATA n’est pas en mesure de résoudre complètement un profil, il l’indique par une icône représentant un cercle à demi rempli.
-
-
-![Image du profil non résolu dans ATA](media/ATA-Unresolved-Profile.jpg)
 
 ### <a name="sensitive-groups"></a>Groupes sensibles
 

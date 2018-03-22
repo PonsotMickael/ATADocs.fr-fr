@@ -1,25 +1,25 @@
 ---
-title: "Informations de référence sur les ID d’événement ATA | Microsoft Docs"
-description: "Fournit une liste des ID d’événement ATA et leurs descriptions."
-keywords: 
+title: Informations de référence sur les ID d’événement ATA | Microsoft Docs
+description: Fournit une liste des ID d’événement ATA et leurs descriptions.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d639e84-2e37-43a9-9667-49be6c4fa8b7
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 07be2dad511158a9234c99287f7eefd7cc12ba83
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: e9147f4333f481eaec4967dd32846bd123866941
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.9*
 
 
 # <a name="ata-event-id-reference"></a>Informations de référence sur les ID d’événement ATA
@@ -84,8 +84,6 @@ Vous trouverez les événements ici :
 
 2004 – Activité suspecte d’attaque par force brute LDAP 
 
-2005 – Activité suspecte d’échec de pré-authentification d’ordinateur 
-
 2006 – Activité suspecte de réplication des services d’annuaire 
 
 2007 – Activité suspecte de reconnaissance DNS 
@@ -97,8 +95,6 @@ Vous trouverez les événements ici :
 2013 – Activité suspecte de faux PAC 
 
 2014 – Activité suspecte des activités Honeytoken 
-
-2015 – Activité suspecte de mot de passe en texte clair LDAP 
 
 2016 – Activité suspecte de suppression massive d’objets 
 

@@ -1,25 +1,25 @@
 ---
-title: "Prérequis pour Advanced Threat Analytics | Microsoft Docs"
-description: "Décrit la configuration requise pour réussir le déploiement d’ATA dans votre environnement"
-keywords: 
+title: Prérequis pour Advanced Threat Analytics | Microsoft Docs
+description: Décrit la configuration requise pour réussir le déploiement d’ATA dans votre environnement
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/1/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: dd422a7feffcddc0f56b54b11d5dadb029457a8e
-ms.sourcegitcommit: 7684a9942719a90444ab567ffe9b2ff86438c04b
+ms.openlocfilehash: 419df4c4404bf26a85c1a955139d0dee6f50828e
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/22/2018
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.9*
 
 
 
@@ -68,7 +68,12 @@ Cette section répertorie les informations que vous devez rassembler ainsi que l
 ## <a name="ata-center-requirements"></a>Configuration requise pour le centre ATA
 Cette section décrit la configuration requise pour le centre ATA.
 ### <a name="general"></a>Général
-L’installation du centre ATA sur un serveur Windows Server 2012 R2 ou Windows Server 2016 est prise en charge. Le centre ATA peut être installé sur un serveur membre d’un domaine ou d’un groupe de travail.
+L’installation du centre ATA sur un serveur Windows Server 2012 R2 ou Windows Server 2016 est prise en charge. 
+
+ > [!NOTE]
+ > Le centre ATA ne prend pas en charge Windows Server Core.
+
+Le centre ATA peut être installé sur un serveur membre d’un domaine ou d’un groupe de travail.
 
 Avant d’installer le centre ATA sur Windows 2012 R2, vérifiez que la mise à jour suivante a été installée : [KB2919355](https://support.microsoft.com/kb/2919355/).
 
@@ -83,7 +88,8 @@ Si vous exécutez le centre ATA en tant que machine virtuelle, arrêtez le serve
 
 ### <a name="server-specifications"></a>Spécifications du serveur
 
-Sur un serveur physique, la base de données ATA nécessite la **désactivation** de l’accès mémoire non uniforme (NUMA) dans le BIOS. Votre système peut parler d’entrelacement de nœuds pour faire référence à NUMA, auquel cas vous devez **activer** l’entrelacement de nœuds pour désactiver NUMA. Pour plus d’informations, consultez la documentation du BIOS. <br>
+Sur un serveur physique, la base de données ATA nécessite la **désactivation** de l’accès mémoire non uniforme (NUMA) dans le BIOS. Votre système peut parler d’entrelacement de nœuds pour faire référence à NUMA, auquel cas vous devez **activer** l’entrelacement de nœuds pour désactiver NUMA. Pour plus d’informations, consultez la documentation du BIOS.<br>
+
 Pour bénéficier de performances optimales, choisissez **Hautes performances** comme **Option d’alimentation** pour le centre ATA.<br>
 Le nombre de contrôleurs de domaine que vous surveillez et la charge sur chacun des contrôleurs de domaine déterminent les spécifications serveur requises. Pour plus d’informations, consultez [Planification de la capacité ATA](ata-capacity-planning.md).
 
@@ -117,6 +123,7 @@ Le tableau suivant répertorie les ports qui, au minimum, doivent être ouverts 
 |**Kerberos** (facultatif si joint à un domaine)|TCP et UDP|88|Contrôleurs de domaine|Sortant|
 |**Netlogon** (facultatif si joint à un domaine)|TCP et UDP|445|Contrôleurs de domaine|Sortant|
 |**Horloge Windows** (facultatif si joint à un domaine)|UDP|123|Contrôleurs de domaine|Sortant|
+|**Netlogon (SMB, CIFS, SAM-R)**|TCP et UDP|445|Passerelles et appareils|Entrant et sortant|
 
 > [!NOTE]
 > LDAP est obligatoire pour tester les informations d’identification à utiliser entre les passerelles ATA et les contrôleurs de domaine. Le test est effectué à partir du centre ATA sur un contrôleur de domaine pour tester la validité de ces informations d’identification. Ensuite, la passerelle ATA utilise le protocole LDAP dans le cadre de son processus de résolution normal.
