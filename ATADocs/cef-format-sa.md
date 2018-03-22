@@ -1,25 +1,25 @@
 ---
-title: "Informations de référence sur le journal SIEM ATA | Microsoft Docs"
-description: "Fournit des exemples de journaux d’activités suspectes envoyés depuis ATA vers votre serveur SIEM."
-keywords: 
+title: Informations de référence sur le journal SIEM ATA | Microsoft Docs
+description: Fournit des exemples de journaux d’activités suspectes envoyés depuis ATA vers votre serveur SIEM.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 601b48ba-a327-4aff-a1f9-2377a2bb7a42
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: d9e226f06c407cb16a3486f81658e05433b00fb1
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 7c6eaba8f80dcc7a8fc767f2bb8168221fbc7207
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.9*
 
 
 # <a name="ata-siem-log-reference"></a>Informations de référence sur le journal SIEM ATA
@@ -86,12 +86,16 @@ Priorités : 3=Faible 5=Moyenne 10=Élevée
 14-05-2017          12:13:12               Auth.Warning    192.168.0.220     1 2017-05-14T09:13:12.102468+00:00 CENTER ATA 1116 EncryptionDowngradeSuspiciousAct ï»¿CEF:0|Microsoft|ATA|1.8.6455.41882|EncryptionDowngradeSuspiciousActivity|Activité de chiffrement du passage à une version antérieure|5|start=2017-05-14T09:13:03.3509467Z app=Kerberos msg=La méthode de chiffrement du champ ETYPE_INFO2 du message KRB_ERR de CLIENT2 a été passée à une version antérieure suivant un précédent comportement appris. Cela peut provenir d’un Skeleton Key sur DC3. externalId=2011 cs1Label=url cs1=https://center/suspiciousActivity/59181fa88ca1ec045cdfe630
 ### <a name="unusual-protocol-implementation"></a>Implémentation de protocole inhabituelle
 3  mai 12:28:19 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|AbnormalProtocolSuspiciousActivity|Mise en œuvre de protocole inhabituelle|5|start=2017-05-03T12:28:05.3561302Z app=Ntlm shost=CLIENT1 suser=Administrator outcome=Réussite msg=Tentative d’authentification de Administrator depuis CLIENT1 sur DC1 à l’aide d’une mise en œuvre de protocole inhabituelle réussie. Il s’agit peut-être de la conséquence de l’utilisation d’outils malveillants pour l’exécution d’attaques de type « Pass-the-Hash » et par force brute. cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909cce38ca1ec04d05f4ab4
-### <a name="sensitive-account-credentials-exposed"></a>Informations d’identification de compte sensibles exposées
-3  mai 13:23:18 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|LdapSimpleBindCleartextPasswordSuspiciousActivity|Informations d’identification de compte sensibles exposées|3|start=2017-05-03T13:23:09.7798589Z app=Ldap shost=CLIENT1 suser=Administrator msg=Les informations d’identification de Administrator ont été exposées en texte clair à l’aide d’une liaison simple LDAP à partir de CLIENT1. cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909d9c68ca1ec04d05f9918
-### <a name="services-exposing-account-credentials"></a>Services qui exposent les informations d’identification de compte
-3  mai 13:34:23 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|LdapSimpleBindCleartextPasswordSuspiciousActivity|Services qui exposent les informations d’identification de compte|3|start=2017-05-03T13:28:36.5159194Z app=Ldap shost=daf::220 msg=Les services exécutés sur daf::220 (daf::220) exposent les informations d’identification de compte en texte clair à l’aide d’une liaison simple LDAP. cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909dc5f8ca1ec04d05fa8b1
 ### <a name="pass-the-ticket"></a>Pass-the-Ticket
 4  mai 13:15:41 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|PassTheTicketSuspiciousActivity|Usurpation d’identité par attaque pass-the-ticket|10|start=2017-05-04T13:13:44.5160000Z app=Kerberos shost=CLIENT1 suser=Administrator request=krbtgt/DOMAIN1.TEST.LOCAL msg=Les tickets Kerberos de Administrator ont été volés de CLIENT2 vers CLIENT1 et utilisés pour accéder à krbtgt/DOMAIN1.TEST.LOCAL. cs2Label=ticketSourceComputer cs2=CLIENT2 cs3Label=ticketSourceComputerIpAddress cs3= cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/590b29168ca1ec0ba438acf6
+
+### <a name="monitoring-alert"></a>Alerte de monitoring
+30-01-2018T10:42:09.102595+00:00 CENTER ATA 4932 CenterDatabaseDisconnectedMonito ï»¿CEF:0|Microsoft|ATA|1.8.6765.50002|CenterDatabaseDisconnectedMonitoringAlert|CenterDatabaseDisconnectedMonitoringAlert|10|externalId=1005 cs1Label=url cs1=https://center/monitoring msg=La base de données qui est utilisée par le Centre, CENTER, est en panne. La dernière fois qu’elle a été vue fonctionner remonte au 30/01/2018 10:39:39 : 00 UTC.
+
+> [!NOTE]
+> Toutes les alertes de monitoring sont envoyées avec le même modèle que ci-dessus.
+
+
 
 ## <a name="see-also"></a>Voir aussi
 - [Prérequis au déploiement d’ATA](ata-prerequisites.md)

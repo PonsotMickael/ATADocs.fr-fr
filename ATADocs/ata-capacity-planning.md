@@ -1,24 +1,24 @@
 ---
-title: "Planification de votre déploiement Advanced Threat Analytics | Microsoft Docs"
-description: "Vous aide à planifier votre déploiement et à déterminer le nombre de serveurs ATA nécessaires pour prendre en charge votre réseau"
-keywords: 
+title: Planification de votre déploiement Advanced Threat Analytics | Microsoft Docs
+description: Vous aide à planifier votre déploiement et à déterminer le nombre de serveurs ATA nécessaires pour prendre en charge votre réseau
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/1/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
-ms.prod: 
+ms.prod: ''
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 76173dfa0b41195e641235f8792723fa7b038a68
-ms.sourcegitcommit: 7684a9942719a90444ab567ffe9b2ff86438c04b
+ms.openlocfilehash: e58fe62fc655fed8f17ae800dda20e022e198a26
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/22/2018
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.9*
 
 
 
@@ -28,7 +28,7 @@ Cet article vous aide à déterminer le nombre de serveurs ATA nécessaires pour
 > [!NOTE] 
 > Vous pouvez déployer le Centre ATA sur n’importe quel fournisseur IaaS du moment que vous respectez les critères de performance décrits dans cet article.
 
-##<a name="using-the-sizing-tool"></a>Utilisation de l’outil de dimensionnement
+## <a name="using-the-sizing-tool"></a>Utilisation de l’outil de dimensionnement
 La manière recommandée la plus simple de déterminer la capacité pour votre déploiement ATA est d’utiliser l’[outil de dimensionnement ATA](http://aka.ms/atasizingtool). Exécutez l’outil de dimensionnement ATA, puis dans les résultats du fichier Excel, utilisez les champs suivants pour déterminer la capacité ATA dont vous avez besoin :
 
 - Processeur et mémoire du centre ATA : Faites correspondre le champ **Paquets occupés/s** du tableau du centre ATA dans le fichier de résultats avec le champ **PAQUETS PAR SECONDE** dans le [tableau du centre ATA](#ata-center-sizing).
@@ -47,6 +47,9 @@ La manière recommandée la plus simple de déterminer la capacité pour votre d
 Si pour une raison ou une autre, vous ne pouvez pas utiliser l’outil de dimensionnement ATA, collectez manuellement les informations du compteur de paquets/s de tous vos contrôleurs de domaine pendant 24 heures avec un intervalle de collecte court (environ 5 secondes). Ensuite, pour chaque contrôleur de domaine, vous devez calculer la moyenne quotidienne et la moyenne des périodes les plus occupées (15 minutes).
 Les sections suivantes expliquent comment collecter le compteur paquets/s dans un contrôleur de domaine.
 
+
+> [!NOTE]
+> Étant donné que les différents environnements varient et présentent plusieurs caractéristiques de trafic réseau particulières et imprévisibles, une fois que vous déployez initialement ATA et exécuter l’outil de dimensionnement, vous devrez peut-être ajuster et adapter votre déploiement au niveau de la capacité.
 
 
 ### <a name="ata-center-sizing"></a>Dimensionnement du centre ATA
@@ -67,8 +70,7 @@ Le centre ATA nécessite l’équivalent de 30 jours de données qui est le min
 &#42;&#42;Nombres moyens (pic)
 > [!NOTE]
 > -   Le centre ATA peut gérer un maximum agrégé de 1 million de paquets par seconde provenant de l’ensemble des contrôleurs de domaine surveillés. Dans certains environnements, le même centre ATA peut gérer un trafic global supérieur à 1 million. Contactez askcesec@microsoft.com pour obtenir de l’assistance sur ce type d’environnements.
-> -   La quantité de stockage citée ici est une valeur nette. Vous devez toujours prendre en compte une croissance future et vérifier que le disque sur lequel réside la base de données dispose d’au moins 20 % d’espace libre.
-> -   Si l’espace libre atteint la valeur minimale de 20 % ou 200 Go, la collecte de données la plus ancienne est supprimée. La suppression continue jusqu’à obtenir 5 % ou 50 Go d’espace libre. Une fois ces valeurs atteintes, la collecte de données s’arrête.
+> -   Si l’espace libre atteint la valeur minimale de 20 % ou 200 Go, la collecte de données la plus ancienne est supprimée. S’il n’est pas possible de réduire la collecte de données à ce niveau, une alerte est consignée.  ATA continue de fonctionner jusqu’à ce que le seuil de 5 % ou de 50 Go d’espace disponible soit atteint.  S’il est atteint, ATA arrête de remplir la base de données et une nouvelle alerte est émise.
 > - Il vous est possible de déployer le Centre ATA sur n’importe quel fournisseur IaaS du moment que vous respectez les critères de performance qui sont décrits dans cet article.
 > -   La latence de stockage pour les activités de lecture et d’écriture doit être inférieure à 10 ms.
 > -   Le rapport entre les activités de lecture et d’écriture est d’environ 1 pour 3 en dessous de 100 000 paquets par seconde et de 1 pour 6 au-dessus de 100 000 paquets par seconde.
@@ -163,56 +165,6 @@ Les considérations relatives à la mise en miroir des ports peuvent vous amener
 > -   Pour bénéficier de performances optimales, choisissez **Hautes performances** comme **Option d’alimentation** pour la passerelle ATA.
 > -   Au moins 5 Go d’espace sont nécessaires, 10 Go sont recommandés, notamment pour les fichiers binaires ATA, les [journaux ATA](troubleshooting-ata-using-logs.md) et les [journaux des performances](troubleshooting-ata-using-perf-counters.md).
 
-
-## <a name="domain-controller-traffic-estimation"></a>Estimation du trafic des contrôleurs de domaine
-Il existe différents outils qui permettent de détecter le nombre moyen de paquets par seconde de vos contrôleurs de domaine. Si vous n’avez pas d’outil permettant d’effectuer le suivi de ce compteur, vous pouvez utiliser l’Analyseur de performances pour collecter les informations nécessaires.
-
-Pour déterminer le nombre de paquets par seconde, effectuez les étapes suivantes pour chaque contrôleur de domaine :
-
-1.  Ouvrez l’Analyseur de performances.
-
-    ![Image de l’Analyseur de performances](media/ATA-traffic-estimation-1.png)
-
-2.  Développez **Ensembles de collecteurs de données**.
-
-    ![Image d’Ensembles de collecteurs de données](media/ATA-traffic-estimation-2.png)
-
-3.  Cliquez avec le bouton droit sur **Défini par l’utilisateur**, puis sélectionnez **Nouveau** &gt; **Ensemble de collecteurs de données**.
-
-    ![Image du nouvel ensemble de collecteurs de données](media/ATA-traffic-estimation-3.png)
-
-4.  Entrez un nom pour l’ensemble de collecteurs, puis sélectionnez **Créer manuellement (avancé)**.
-
-5.  Sous **Quel type de données inclure ?**, sélectionnez **Créer des journaux de données et Compteur de performances**.
-
-    ![Image du type de données pour le nouvel ensemble de collecteurs de données](media/ATA-traffic-estimation-5.png)
-
-6.  Sous **Quels compteurs de performance enregistrer dans un journal ?**, cliquez sur **Ajouter**.
-
-7.  Développez **Carte réseau**. Sélectionnez **Paquets/s**, puis l’instance appropriée. Si vous n’êtes pas sûr, vous pouvez sélectionner **&lt;Toutes les instances&gt;**, puis cliquer sur **Ajouter** et **OK**.
-
-    > [!NOTE]
-    > Pour effectuer cette opération dans une ligne de commande, exécutez `ipconfig /all` pour afficher le nom de la carte réseau et sa configuration.
-
-    ![Image de l’ajout du compteur de performances](media/ATA-traffic-estimation-7.png)
-
-8.  Définissez l’**Intervalle d’échantillonnage** sur **1 seconde**.
-
-9. Définissez l’emplacement où vous voulez enregistrer les données.
-
-10. Sous **Créer l’ensemble de collecteurs de données**, sélectionnez **Démarrer maintenant cet ensemble de collecteurs de données**, puis cliquez sur **Terminer**.
-
-    Vous devez maintenant voir l’ensemble de collecteurs de données que vous venez de créer avec un triangle vert indiquant qu’il est activé.
-
-11. Au bout de 24 heures, arrêtez l’ensemble de collecteurs de données en cliquant dessus avec le bouton droit et en sélectionnant **Arrêter**.
-
-    ![Image de l’arrêt de l’ensemble de collecteurs de données](media/ATA-traffic-estimation-12.png)
-
-12. Dans l’Explorateur de fichiers, accédez au dossier où le fichier .blg a été enregistré, puis double-cliquez dessus pour l’ouvrir dans l’Analyseur de performances.
-
-13. Sélectionnez le compteur Paquets par seconde, puis enregistrez les valeurs moyenne et maximale.
-
-    ![Image du compteur Paquets par seconde](media/ATA-traffic-estimation-14.png)
 
 
 ## <a name="related-videos"></a>Vidéos connexes

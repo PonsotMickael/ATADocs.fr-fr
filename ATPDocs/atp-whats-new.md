@@ -1,28 +1,36 @@
 ---
-title: "Nouveautés d’Azure ATP | Microsoft Docs"
-description: "Décrit les dernières versions release d’Azure ATP et fournit des informations sur les nouveautés de chaque version."
-keywords: 
+title: Nouveautés d’Azure ATP | Microsoft Docs
+description: Décrit les dernières versions release d’Azure ATP et fournit des informations sur les nouveautés de chaque version.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/11/2018
+ms.date: 3/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4a81d84a46b9710c2376bbc50f699966a24138db
-ms.sourcegitcommit: 912e453753156902618ae6ebb8489c2320c06fc6
+ms.openlocfilehash: 6b3c9ddd1873b3139009a44e9c1f7a85ea3b6901
+ms.sourcegitcommit: adfa7a3a3918518b6b14b94d3c0a9f899142196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/19/2018
 ---
 *S’applique à : Azure - Protection avancée contre les menaces*
 
 
 # <a name="whats-new-in-azure-atp"></a>Nouveautés d’Azure ATP 
+
+## <a name="azure-atp-release-225"></a>Azure ATP version 2.25
+
+Date de publication : 18 mars 2018
+
+- L’authentification multifacteur (MFA) est maintenant prise en charge dans Azure ATP. Les locataires qui utilisent MFA peuvent maintenant accéder au portail Azure ATP.
+- Azure ATP propose désormais une page [**État du système**](https://health.atp.azure.com/) pour vous indiquer si le portail de gestion Espace de travail est opérationnel et actif, s’il existe des problèmes avec les détections et si la sonde est en mesure d’envoyer du trafic vers le cloud. Vous pouvez accéder à l’**État du système** dans la barre de menus Azure ATP.
+
 
 ## <a name="azure-atp-release-224"></a>Azure ATP version 2.24
 

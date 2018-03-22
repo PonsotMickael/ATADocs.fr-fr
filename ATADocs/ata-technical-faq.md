@@ -1,25 +1,25 @@
 ---
 title: Forum aux questions sur Advanced Threat Analytics | Microsoft Docs
-description: "Fournit des réponses aux questions les plus fréquentes sur ATA"
-keywords: 
+description: Fournit des réponses aux questions les plus fréquentes sur ATA
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: da225af4578d4673040315f8814b9067a46517ce
-ms.sourcegitcommit: d41dcc40196a165026fd27db7bbd74d87b8fedda
+ms.openlocfilehash: 5fe0e6f0d8c75c099aa6623cd0f5245c955d9ffa
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 03/22/2018
 ---
-*S’applique à : Advanced Threat Analytics version 1.8*
+*S’applique à : Advanced Threat Analytics version 1.9*
 
 # <a name="ata-frequently-asked-questions"></a>Forum aux questions sur ATA
 Cet article fournit des éléments d’informations et des réponses aux questions les plus fréquemment posées sur ATA.
@@ -83,7 +83,9 @@ Pour chaque journée complète produisant en moyenne 1 000 paquets/s, il vous 
 ## <a name="why-are-certain-accounts-considered-sensitive"></a>Pourquoi certains comptes sont-ils considérés comme sensibles ?
 Cela arrive quand un compte est membre de certains groupes désignés comme sensibles (par exemple : « Administrateurs du domaine »).
 
-Pour comprendre pourquoi un compte est sensible, vous pouvez examiner son appartenance au groupe pour déterminer à quels groupes sensibles il appartient. Le groupe auquel il appartient peut également être sensible en raison d’un autre groupe ; dans ce cas, répétez la procédure jusqu’à ce que vous trouviez le groupe sensible de plus haut niveau.
+Pour comprendre pourquoi un compte est sensible, vous pouvez examiner son appartenance au groupe pour déterminer à quels groupes sensibles il appartient. Le groupe auquel il appartient peut également être sensible en raison d’un autre groupe ; dans ce cas, répétez la procédure jusqu’à ce que vous trouviez le groupe sensible de plus haut niveau. 
+
+Vous pouvez aussi identifier manuellement un utilisateur, un groupe ou un ordinateur comme sensible. Pour plus d’informations, consultez [Identifier les comptes sensibles](tag-sensitive-accounts.md).
 
 ## <a name="how-do-i-monitor-a-virtual-domain-controller-using-ata"></a>Comment puis-je surveiller un contrôleur de domaine virtuel à l’aide d’ATA ?
 La plupart des contrôleurs de domaine virtuels peuvent être couverts par la passerelle légère ATA ; pour déterminer si celle-ci est appropriée pour votre environnement, consultez [Planification de la capacité ATA](ata-capacity-planning.md).
