@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 3/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 581a3257-32dc-453f-b84e-b9f99186f5d3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f9e19a1d033238f506fc0523bf50af6e204ba0cf
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: f2fd6f28eb6bf11aa3705f5320fcdae01d02f6d0
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 *S’applique à : Advanced Threat Analytics version 1.9*
 
@@ -46,6 +46,8 @@ En haut, vous pouvez voir les vignettes de résumé qui vous donnent un petit ap
 - Le nombre de ressources auxquelles l’utilisateur a accédé
 - À partir de quels emplacements l’utilisateur s’est connecté au VPN
 
+  ![menu des entités](media/entity-menu.png)
+
 Pour les ordinateurs, vous verrez :
 - Le nombre d’activités suspectes ouvertes pour l’ordinateur
 - Le nombre d’utilisateurs connectés à l’ordinateur
@@ -53,7 +55,7 @@ Pour les ordinateurs, vous verrez :
 - Le nombre d’emplacements sur l’ordinateur à partir desquels un accès au VPN a été effectué
 - La liste des adresses IP que l’ordinateur a utilisées
 
-![menu des entités](media/entity-menu.png)
+  ![ordinateur de menu des entités](media/entity-computer.png)
 
 À l’aide du bouton **Filtrer par**, situé au-dessus de la chronologie des activités, vous pouvez filtrer les activités par type d’activité. Vous pouvez également éliminer par filtrage un type spécifique (bruyant) d’activité. C’est vraiment utile pour votre investigation lorsque vous voulez comprendre les bases de ce que fait une entité sur le réseau. Vous pouvez également accéder à une date spécifique et exporter vers Excel les activités filtrées. Le fichier exporté fournit une page pour les modifications des services d’annuaire (éléments ayant changé dans Active Directory pour ce compte) et une page distincte pour les activités. 
 

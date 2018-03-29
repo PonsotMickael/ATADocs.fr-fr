@@ -1,23 +1,23 @@
 ---
 title: Utilisation des rapports Azure ATP | Microsoft Docs
-description: "Explique comment vous pouvez générer des rapports dans Azure ATP pour surveiller votre réseau."
-keywords: 
+description: Explique comment vous pouvez générer des rapports dans Azure ATP pour surveiller votre réseau.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 2/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2ebc0d9bb860bd93f14c4c511b034c740b59dffb
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 8d9c7f9208ce76e6c2ca915729b9c64f769ae7bd
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/28/2018
 ---
 *S’applique à : Azure - Protection avancée contre les menaces*
 
@@ -25,6 +25,7 @@ ms.lasthandoff: 02/21/2018
 # <a name="azure-atp-reports"></a>Rapports Azure ATP
 
 La section Rapports Azure ATP du portail d’espace de travail vous permet de générer des rapports contenant des informations sur l’état du système, sur l’intégrité du système et sur les activités suspectes détectées dans votre environnement.
+
 
 Pour accéder à la page Rapports, cliquez sur l’icône de rapport dans la barre de menus : ![icône de rapport](./media/atp-report-icon.png).
 Les rapports disponibles sont : 
@@ -51,6 +52,9 @@ Pour définir un rapport planifié :
 1. Dans la page **Rapports**, cliquez sur **Définir les rapports planifiés** ou, dans la page de configuration du portail d’espace de travail Azure ATP, sous Notifications et rapports, cliquez sur **Rapports planifiés**.
 
    ![Planification de rapports](./media/atp-sched-reports.png)
+ 
+ > [!NOTE]
+ > Les rapports quotidiens sont conçus pour être envoyés quelques instants après minuit, heure UTC.
 
 2. Cliquez sur **Planifier** en regard de votre type de rapport sélectionné pour définir la fréquence et l’adresse e-mail de remise des rapports, puis cliquez sur le signe plus en regard des adresses e-mail pour les ajouter et cliquez sur **Enregistrer**.
 
