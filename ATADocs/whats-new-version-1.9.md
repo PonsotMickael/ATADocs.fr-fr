@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 3/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 51de491c-49ba-4aff-aded-cc133a8ccf0b
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 4982e667d744a52d31535910ca9358fc503b8f34
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: f4a0776d52a69ba519e5cfdd0befb6bbd39d73c3
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="whats-new-in-ata-version-19"></a>Nouveautés d’ATA version 1.9
 
-La dernière version de la mise à jour d’ATA peut être [téléchargée à partir du Centre de téléchargement](https://www.microsoft.com/download/details.aspx?id=55536) ou la version complète peut être téléchargée à partir du [centre d’évaluation](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics).
+La dernière version de la mise à jour d’ATA peut être [téléchargée à partir du Centre de téléchargement](https://www.microsoft.com/download/details.aspx?id=56725) ou la version complète peut être téléchargée à partir du [centre d’évaluation](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics).
 
 Ces notes de publication fournissent des informations sur les mises à jour, les nouvelles fonctionnalités, les correctifs de bogue et les problèmes connus de cette version d’Advanced Threat Analytics.
 
@@ -53,7 +53,7 @@ Ces notes de publication fournissent des informations sur les mises à jour, les
 - Après l’installation d’une nouvelle version d’ATA, l’icône [**Nouveautés**](working-with-ata-console.md) apparaît dans la barre d’outils pour vous indiquer ce qui a été changé dans la dernière version. Elle fournit également un lien vers le journal des modifications détaillé de la version.
 
 
-## <a name="removed-and-deprecated-features"></a>Fonctionnalités supprimées et dépréciées
+## <a name="removed-and-deprecated-features"></a>Fonctionnalités supprimées et déconseillées
 
 - L’alerte de l’**activité suspecte Relation de confiance rompue** a été supprimée.
 - L’activité suspecte Mots de passe exposés en texte clair a été supprimée. Elle a été remplacée par le [**rapport Mots de passe exposés en texte clair**](reports.md).
