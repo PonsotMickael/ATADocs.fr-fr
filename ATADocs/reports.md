@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 3/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 38ea49b5-cd5e-43e5-bc39-5071f759633b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b7f921bb2eb655a929eb19c849788c1bf9f64527
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: 9a113d8d090c5a90a07043a0ef75e1be0fc840c3
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 *S’applique à : Advanced Threat Analytics version 1.9*
 
@@ -35,7 +35,7 @@ Les rapports disponibles sont :
 
 - **Mots de passe exposés en texte clair** : certains services utilisent le protocole LDAP non sécurisé pour envoyer des informations d’identification de compte en texte brut, y compris pour des comptes sensibles. Les attaquants qui surveillent le trafic réseau peuvent intercepter ces informations d’identification et les réutiliser à des fins malveillantes. Ce rapport liste tous les mots de passe de compte et d’ordinateur sources qu’ATA a détectés comme envoyés en texte clair. 
 
-- **Chemins de mouvement latéral pour les comptes sensibles** : ce rapport liste les comptes sensibles qui sont exposés via les chemins de mouvement latéral. Pour plus d’informations, consultez [Chemins de mouvement latéral](use-case-lateral-movement-path.md).
+- **Chemins d'accès de mouvement latéral pour les comptes sensibles** : ce rapport répertorie les comptes sensibles qui sont exposés via les chemins d’accès de mouvement latéral. Pour plus d’informations, consultez [Chemins de mouvement latéral](use-case-lateral-movement-path.md).
 
 Il existe deux façons de générer un rapport : à la demande ou en planifiant un rapport à envoyer périodiquement à votre adresse e-mail.
 
@@ -51,6 +51,9 @@ Pour définir un rapport planifié :
 1. Dans la page **Rapports**, cliquez sur **Définir les rapports planifiés** ou, dans la page de configuration de la console ATA, sous Notifications et rapports, cliquez sur **Rapports planifiés**.
 
    ![Planification de rapports](./media/ata-sched-reports.png)
+
+  > [!NOTE]
+  > Les rapports quotidiens sont conçus pour être envoyés quelques instants après minuit, heure UTC.
 
 2. Cliquez sur **Planifier** en regard de votre type de rapport sélectionné pour définir la fréquence et l’adresse e-mail de remise des rapports, puis cliquez sur le signe plus en regard des adresses e-mail pour les ajouter et cliquez sur **Enregistrer**.
 

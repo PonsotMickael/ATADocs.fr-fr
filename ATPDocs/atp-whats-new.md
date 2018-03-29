@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/18/2018
+ms.date: 3/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,25 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6b3c9ddd1873b3139009a44e9c1f7a85ea3b6901
-ms.sourcegitcommit: adfa7a3a3918518b6b14b94d3c0a9f899142196a
+ms.openlocfilehash: 0693bd3a25d6438874d422bedf8da05931a15d54
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 *S’applique à : Azure - Protection avancée contre les menaces*
 
 
 # <a name="whats-new-in-azure-atp"></a>Nouveautés d’Azure ATP 
+
+## <a name="azure-atp-release-226"></a>Azure ATP version 2.26
+
+Date de publication : 25 mars 2018
+
+- Quand Azure ATP vous avertit d’une activité suspecte que vous identifiez comme activité positive sans gravité (une action légitime qui n’est pas une activité suspecte) vous avez la possibilité d’exclure des ordinateurs et des adresses IP pour plus de détections, notamment : rétrogradation de chiffrement, LDAP force brute, PAC falsifié, Force brute et Pass-the-hash.
+-   Les performances du capteur Azure ATP ont été améliorées.
+-   Une nouvelle région a été ajoutée pour le déploiement de l’espace de travail, vous pouvez désormais déployer un espace de travail en Asie. 
+
 
 ## <a name="azure-atp-release-225"></a>Azure ATP version 2.25
 

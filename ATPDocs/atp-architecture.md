@@ -1,23 +1,23 @@
 ---
-title: "Architecture Azure - Protection avancée contre les menaces | Microsoft Docs"
-description: "Décrit l’architecture Azure - Protection avancée contre les menaces (ATP)"
-keywords: 
+title: Architecture Azure - Protection avancée contre les menaces | Microsoft Docs
+description: Décrit l’architecture Azure - Protection avancée contre les menaces (ATP)
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/11/2018
+ms.date: 3/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 640974bbeb0ff147b21da24d6ad6df2f54e9ab4d
-ms.sourcegitcommit: 912e453753156902618ae6ebb8489c2320c06fc6
+ms.openlocfilehash: 57f4eb56eaa0547d18421b17fb5804840e4997e3
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 *S’applique à : Azure - Protection avancée contre les menaces*
 
@@ -122,7 +122,7 @@ Le **capteur Azure ATP** et le **capteur autonome Azure ATP** ont tous les deux 
 
 -   Surveillez plusieurs contrôleurs de domaine à partir d’un seul capteur autonome Azure ATP, ou surveillez un seul contrôleur de domaine pour un capteur Azure ATP.
 
-Azure ATP prend en charge jusqu’à 100 capteurs. Si vous voulez en installer plus, contactez le support Azure ATP.
+Par défaut, Azure ATP prend en charge jusqu’à 100 capteurs. Si vous voulez en installer plus, contactez le support Azure ATP.
 
 Le capteur autonome Azure ATP reçoit le trafic réseau et les événements Windows de votre réseau, et les traite dans les composants principaux suivants :
 

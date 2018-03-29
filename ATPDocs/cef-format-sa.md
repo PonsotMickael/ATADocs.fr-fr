@@ -1,23 +1,23 @@
 ---
-title: "Informations de référence sur le journal SIEM Azure ATP | Microsoft Docs"
-description: "Fournit des exemples de journaux d’activités suspectes envoyés depuis Azure ATP vers votre serveur SIEM."
-keywords: 
+title: Informations de référence sur le journal SIEM Azure ATP | Microsoft Docs
+description: Fournit des exemples de journaux d’activités suspectes envoyés depuis Azure ATP vers votre serveur SIEM.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 3/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 5d466014d96edb2deecf0c5d7b937d9e576a57b0
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 0a632473490d157e2b85a30bdb82947982da9551
+ms.sourcegitcommit: 7c9fe4eb781bec71129310a6e0c5e76b022a0213
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/28/2018
 ---
 *S’applique à : Azure - Protection avancée contre les menaces*
 
@@ -106,4 +106,4 @@ Priorités :
 - [Planification de la capacité Azure ATP](atp-capacity-planning.md)
 - [Configurer la collecte d’événements](configure-event-collection.md)
 - [Configuration du transfert d’événements Windows](configure-event-forwarding.md#configuring-windows-event-forwarding)
-- [Consultez le forum ATP !](https://aka.ms/azureatpcommunity)
+- [Consulter le forum ATP](https://aka.ms/azureatpcommunity)

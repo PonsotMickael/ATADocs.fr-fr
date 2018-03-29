@@ -1,23 +1,23 @@
 ---
-title: "Installer Azure - Protection avancée contre les menaces – Étape 4 | Microsoft Docs"
-description: "La quatrième étape de la procédure d’installation d’Azure ATP vous permet d’installer le capteur autonome Azure ATP."
-keywords: 
+title: Installer Azure - Protection avancée contre les menaces – Étape 4 | Microsoft Docs
+description: La quatrième étape de la procédure d’installation d’Azure ATP vous permet d’installer le capteur autonome Azure ATP.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2017
+ms.date: 3/25/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 51911e39-76c7-4dcd-bc0b-ec6235d0403f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7b003882f21f22b3427fb95534ca2bde255b14e6
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 56b3cea2089c64e2c78361c44d049d6de67764b6
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/28/2018
 ---
 *S’applique à : Azure - Protection avancée contre les menaces*
 
@@ -35,11 +35,16 @@ Avant d’installer le capteur autonome Azure ATP sur un serveur dédié, confir
 
 
 > [!IMPORTANT]
->Vérifiez que .NET Framework 4.7 est installé sur l'ordinateur. Si .NET Framework 4.7 n’est pas installé, le package d’installation de capteur Azure ATP l’installe, ce qui nécessite un redémarrage du serveur. Vérifiez que l’ordinateur dispose d’une connectivité au point de terminaison du service cloud Azure ATP : https://triprd1wceuw1sensorapi.atp.azure.com (pour l’Europe) ou https://triprd1wcuse1sensorapi.atp.azure.com (pour les États-Unis).
+>Vérifiez que .NET Framework 4.7 est installé sur l'ordinateur. Si .NET Framework 4.7 n’est pas installé, le package d’installation de capteur Azure ATP l’installe, ce qui nécessite un redémarrage du serveur.
 
 Effectuez les étapes suivantes sur le contrôleur de domaine ou le serveur du capteur Azure ATP.
 
-1.  Extrayez les fichiers à partir du fichier zip. 
+1. Vérifiez que l’ordinateur dispose d’une connectivité au point de terminaison du service cloud Azure ATP approprié :
+  - https://triprd1wceuw1sensorapi.atp.azure.com (pour l’Europe)  
+  - https://triprd1wcuse1sensorapi.atp.azure.com (pour les États-Unis)
+  - https://triprd1wcasse1sensorapi.atp.azure.com (pour l’Asie)
+
+2. Extrayez les fichiers d’installation à partir du fichier zip. 
 > [!NOTE] 
 > L’installation directe à partir du fichier zip est vouée à l’échec.
 
@@ -69,7 +74,7 @@ Effectuez les étapes suivantes sur le contrôleur de domaine ou le serveur du c
 
       - Clé d’accès : valeur extraite du portail d’espace de travail à l’étape précédente.
     
-5. Cliquez sur **Suivant**. Les composants suivants sont installés et configurés pendant l’installation du capteur Azure ATP :
+5. Cliquez sur **Installer**. Les composants suivants sont installés et configurés pendant l’installation du capteur Azure ATP :
 
     -   KB 3047154 (pour Windows Server 2012 R2 uniquement)
 

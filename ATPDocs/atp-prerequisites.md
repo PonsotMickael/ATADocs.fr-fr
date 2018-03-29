@@ -1,23 +1,23 @@
 ---
-title: "Prérequis pour Azure - Protection avancée contre les menaces | Microsoft Docs"
-description: "Décrit la configuration requise pour réussir le déploiement d’Azure ATP dans votre environnement"
-keywords: 
+title: Prérequis pour Azure - Protection avancée contre les menaces | Microsoft Docs
+description: Décrit la configuration requise pour réussir le déploiement d’Azure ATP dans votre environnement
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/25/2018
+ms.date: 3/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3cb4eb8a914f1fd4be0c1ddb26f9be3964c529f7
-ms.sourcegitcommit: 26d833f7d9502db73876ced9879789db395224f7
+ms.openlocfilehash: 3c8e0b239c335981b2030021d1d4e319b2810fda
+ms.sourcegitcommit: 7c9fe4eb781bec71129310a6e0c5e76b022a0213
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/28/2018
 ---
 *S’applique à : Azure - Protection avancée contre les menaces*
 
@@ -131,11 +131,13 @@ Le tableau suivant répertorie les ports qui, au minimum, doivent être configur
 
 |Protocole|Transport|Port|Vers/À partir de|Sens|
 |------------|-------------|--------|-----------|-------------|
+|**Ports Internet**|||||
+|SSL (*.atp.azure.com)|TCP|443|Service cloud Azure ATP|Sortant|
+|**Ports internes**|||||
 |LDAP|TCP et UDP|389|Contrôleurs de domaine|Sortant|
 |LDAP sécurisé (LDAPS)|TCP|636|Contrôleurs de domaine|Sortant|
 |LDAP vers le catalogue global|TCP|3268|Contrôleurs de domaine|Sortant|
 |LDAPS vers le catalogue global|TCP|3269|Contrôleurs de domaine|Sortant|
-|SSL (*.atp.azure.com)|TCP|443|Service cloud Azure ATP|Sortant|
 |Kerberos|TCP et UDP|88|Contrôleurs de domaine|Sortant|
 |Netlogon (SMB, CIFS, SAM-R)|TCP et UDP|445|Contrôleurs de domaine|Sortant|
 |Horloge Windows|UDP|123|Contrôleurs de domaine|Sortant|
@@ -195,7 +197,9 @@ Le tableau suivant répertorie les ports qui, au minimum, sont requis par le cap
 
 |Protocole|Transport|Port|Vers/À partir de|Sens|
 |------------|-------------|--------|-----------|-------------|
+|**Ports Internet**|||||
 |SSL (*.atp.azure.com)|TCP|443|Service cloud Azure ATP|Sortant|
+|**Ports internes**|||||
 |DNS|TCP et UDP|53|Serveurs DNS|Sortant|
 |NTLM sur RPC|TCP|135|Tous les appareils sur le réseau|Sortant|
 |Netlogon (SMB, CIFS, SAM-R)|TCP/UDP|445|Contrôleurs de domaine|Sortant|
